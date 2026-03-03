@@ -248,7 +248,7 @@ LANGUAGE_COLORS = {
     "Portuguese": "#8bc34a",
     "Persian": "#795548",
     "Arabic": "#ff9800",
-    "Vietnamese": "#4caf50",
+    "Vietnamese": "#26c6da",
     "Turkish": "#ff5722",
     "Dutch": "#ff6f00",
     "Other": "#95a5a6",
