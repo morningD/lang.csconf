@@ -18,7 +18,6 @@ Visualizing the linguistic diversity of first authors across CCF-rated CS confer
 - **Trends** — Filter by CCF category (AI/DB/SE...) and rank (A/B/C/N) to see how things change over time
 - **CCF Classification** — Browse by rank (A/B/C/N) and category, inspired by [ccfddl](https://ccfddl.github.io)
 - **4 Languages** — UI available in English, 中文, 日本語, Deutsch
-- **Pixel Art Footer** — Rabbits, mushrooms, and weather animations (borrowed with love from [ModelGo](https://www.modelgo.li))
 
 ## Architecture
 
@@ -116,7 +115,6 @@ python -m pipeline.run_all --force
 - **趋势分析** — 按 CCF 分类（AI/DB/SE...）和等级（A/B/C/N）筛选，观察历年变化
 - **CCF 分类体系** — 按等级和类别浏览，灵感来自 [ccfddl](https://ccfddl.github.io)
 - **4 种界面语言** — 支持 English、中文、日本語、Deutsch
-- **像素风页脚** — 兔子、蘑菇和天气动画（来自 [ModelGo](https://www.modelgo.li)）
 
 ## 数据管道
 
