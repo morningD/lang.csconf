@@ -191,11 +191,6 @@ const funFacts = computed(() => {
 <template>
   <div class="min-h-screen py-8 px-4">
     <div class="max-w-7xl mx-auto">
-      <!-- Back button -->
-      <router-link to="/" class="inline-flex items-center gap-1 text-gray-400 hover:text-white mb-6 no-underline transition-colors">
-        <span>←</span> {{ t('conference.back_to_home') }}
-      </router-link>
-
       <!-- Loading -->
       <div v-if="loading" class="text-center py-20">
         <div class="text-4xl mb-4 animate-bounce">🗣️</div>
