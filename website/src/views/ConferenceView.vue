@@ -217,7 +217,7 @@ const funFacts = computed(() => {
             </div>
           </div>
           <div v-if="verdictGreeting" class="card px-4 py-3 bg-gradient-to-br from-indigo-900/40 to-purple-900/30 border-indigo-500/20 flex items-center gap-3 lg:flex-col lg:items-center lg:justify-center lg:text-center">
-            <div class="text-3xl shrink-0 lg:text-4xl leading-none">🗣️</div>
+            <div class="text-3xl shrink-0 lg:text-4xl leading-none flex items-center">🗣️</div>
             <div>
               <p class="text-xl font-bold text-white lg:text-2xl lg:mb-1">
                 Say <span class="text-indigo-300">{{ verdictGreeting.greeting }}</span>!
@@ -232,9 +232,9 @@ const funFacts = computed(() => {
         <!-- Chart -->
         <div class="mb-8">
           <div class="card p-6 bg-gray-800/50 border-gray-700/50">
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4">
               <h3 class="text-lg font-semibold text-white">{{ t('conference.language_over_years') }}</h3>
-              <div class="inline-flex rounded-lg overflow-hidden border border-gray-600">
+              <div class="inline-flex rounded-lg overflow-hidden border border-gray-600 shrink-0">
                 <button
                   @click="areaMode = 'absolute'"
                   class="px-3 py-1 text-xs font-medium transition-colors"

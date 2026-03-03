@@ -18,15 +18,15 @@ const activeCategory = ref('ALL')
 const categories = ['ALL', 'AI', 'DB', 'NW', 'SE', 'CG', 'CT', 'HI', 'SC', 'DS', 'MX']
 const categoryNames: Record<string, string> = {
   AI: 'Artificial Intelligence',
-  DB: 'Databases',
-  NW: 'Networking',
-  SE: 'Software Engineering',
-  CG: 'Computer Graphics',
-  CT: 'Computational Theory',
-  HI: 'Human-Computer Interaction',
-  SC: 'High-Performance Computing',
-  DS: 'Data Science',
-  MX: 'Interdisciplinary',
+  DB: 'Database / Data Mining / Information Retrieval',
+  NW: 'Computer Networking',
+  SE: 'Software Engineering / System Software / PL',
+  CG: 'Computer Graphics & Multimedia',
+  CT: 'Theory of Computation',
+  HI: 'Human-Computer Interaction & Ubiquittic Computing',
+  SC: 'Network & Information Security',
+  DS: 'Computer Architecture / Parallel & Distributed Computing / Storage',
+  MX: 'Interdisciplinary & Emerging',
 }
 const langGreetings: Record<string, string> = {
   Chinese: 'Nihao',
@@ -268,7 +268,7 @@ function getLangColor(lang: string) {
           </div>
 
           <!-- Sort -->
-          <div class="flex justify-center items-center gap-2 mb-6">
+          <div class="flex justify-center items-center gap-2 mb-6 flex-wrap">
             <span class="text-gray-500 text-xs mr-1">Sort:</span>
             <button
               v-for="opt in sortOptions"

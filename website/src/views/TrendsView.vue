@@ -19,15 +19,15 @@ const rankData = ref<RankStats | null>(null)
 const categories: (CCFCategory | 'ALL')[] = ['ALL', 'AI', 'DB', 'NW', 'SE', 'CG', 'CT', 'HI', 'SC', 'DS', 'MX']
 const categoryNames: Record<string, string> = {
   AI: 'Artificial Intelligence',
-  DB: 'Databases',
-  NW: 'Networking',
-  SE: 'Software Engineering',
-  CG: 'Computer Graphics',
-  CT: 'Computational Theory',
-  HI: 'Human-Computer Interaction',
-  SC: 'High Performance Computing',
-  DS: 'Cybersecurity',
-  MX: 'Interdisciplinary',
+  DB: 'Database / Data Mining / Information Retrieval',
+  NW: 'Computer Networking',
+  SE: 'Software Engineering / System Software / PL',
+  CG: 'Computer Graphics & Multimedia',
+  CT: 'Theory of Computation',
+  HI: 'Human-Computer Interaction & Ubiquittic Computing',
+  SC: 'Network & Information Security',
+  DS: 'Computer Architecture / Parallel & Distributed Computing / Storage',
+  MX: 'Interdisciplinary & Emerging',
 }
 const ranks: (CCFRank | 'ALL')[] = ['ALL', 'A', 'B', 'C', 'N']
 
@@ -180,9 +180,9 @@ const chartOption = computed(() => {
       <!-- Chart -->
       <div v-if="!loading">
         <div class="card p-6 bg-gray-800/50 border-gray-700/50">
-          <div class="flex items-center justify-between mb-4">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4">
             <h3 class="text-lg font-semibold text-white">{{ t('trends.year_over_year') }}</h3>
-            <div class="inline-flex rounded-lg overflow-hidden border border-gray-600">
+            <div class="inline-flex rounded-lg overflow-hidden border border-gray-600 shrink-0">
               <button
                 @click="trendMode = 'absolute'"
                 class="px-3 py-1 text-xs font-medium transition-colors"
