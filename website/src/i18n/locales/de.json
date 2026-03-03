@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "explore": "Entdecken",
+    "compare": "Vergleichen",
+    "trends": "Trends",
+    "about": "Info"
+  },
+  "home": {
+    "hero_title": "Welche Sprache spricht deine Konferenz?",
+    "hero_subtitle": "Wir haben {n} Paper analysiert, damit du es nicht musst",
+    "loading": "Turm zu Babel wird entschlüsselt...",
+    "papers_analyzed": "Analysierte Paper",
+    "conferences_tracked": "Verfolgte Konferenzen",
+    "languages_detected": "Erkannte Sprachen",
+    "years_of_data": "Jahre an Daten",
+    "global_distribution": "Sprachverteilung auf CS-Konferenzen",
+    "browse_conferences": "Nihao oder Hello?",
+    "browse_subtitle": "Finde heraus, welche Sprache deine Konferenz spricht",
+    "search_placeholder": "Konferenzen suchen...",
+    "all_ranks": "Alle",
+    "all_categories": "Alle Kategorien",
+    "dominant_language": "Dominant: {lang}",
+    "papers_count": "{n} Paper"
+  },
+  "conference": {
+    "title": "Konferenz-Explorer",
+    "language_over_years": "Sprachverteilung im Zeitverlauf",
+    "top_languages": "Top-Sprachen",
+    "fun_facts": "Fun Facts",
+    "total_papers": "Paper insgesamt",
+    "years_covered": "Abgedeckte Jahre",
+    "back_to_home": "Zurück zur Startseite"
+  },
+  "compare": {
+    "title": "Konferenzen vergleichen",
+    "subtitle": "Wähle 2-4 Konferenzen und schau, wer sprachlich die Nase vorn hat",
+    "add_conference": "Konferenz hinzufügen",
+    "select_conference": "Konferenz auswählen...",
+    "radar_chart": "Sprach-Radar",
+    "no_selection": "Wähle mindestens 2 Konferenzen zum Vergleichen"
+  },
+  "trends": {
+    "title": "Globale Trends",
+    "subtitle": "Wie sich die Sprachlandschaft der CS-Forschung verändert",
+    "filter_by_category": "Nach Kategorie filtern",
+    "filter_by_rank": "Nach Rang filtern",
+    "year_over_year": "Jahresvergleich"
+  },
+  "about": {
+    "title": "Über dieses Projekt",
+    "methodology": "Methodik",
+    "methodology_text": "Wir crawlen DBLP nach Erstautorennamen von Papern, die auf CCF-bewerteten CS-Konferenzen (2016-2025) veröffentlicht wurden, und nutzen dann namensbasierte Nationalitätsvorhersage, um wahrscheinliche Sprachhintergründe abzuleiten. Ja, wirklich nur anhand der Namen.",
+    "disclaimer": "Haftungsausschluss",
+    "disclaimer_text": "Namen sind furchtbare Indikatoren für Sprache. Wir haben es trotzdem gemacht. Dies ist eine lustige, unbeschwerte Visualisierung — keine seriöse soziolinguistische Studie. Keine Diskriminierung beabsichtigt.",
+    "data_sources": "Datenquellen",
+    "accuracy": "Hinweis zur Genauigkeit",
+    "accuracy_text": "Namensbasierte Nationalitätsvorhersage ist von Natur aus ungenau. Viele Faktoren (Migration, Heirat, kulturelle Durchmischung) machen Namen zu unzuverlässigen Indikatoren. Alle Ergebnisse bitte als grobe Schätzungen betrachten — nicht zu ernst nehmen!",
+    "credits": "Danksagungen",
+    "license": "Lizenz"
+  },
+  "common": {
+    "papers": "Paper",
+    "conference": "Konferenz",
+    "conferences": "Konferenzen",
+    "year": "Jahr",
+    "rank": "Rang",
+    "category": "Kategorie",
+    "language": "Sprache"
+  }
+}

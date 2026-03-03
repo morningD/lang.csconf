@@ -1,0 +1,97 @@
+name: Update Data
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Every Sunday at 3AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install pipeline dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      # Cache raw/classified data for incremental updates
+      - name: Restore raw authors cache
+        uses: actions/cache@v4
+        with:
+          path: data/raw/authors
+          key: raw-authors-${{ github.run_id }}
+          restore-keys: raw-authors-
+
+      - name: Restore classified authors cache
+        uses: actions/cache@v4
+        with:
+          path: data/classified/authors
+          key: classified-authors-${{ github.run_id }}
+          restore-keys: classified-authors-
+
+      - name: Run data pipeline
+        run: python -m pipeline.run_all
+
+      - name: Sync stats to website
+        run: rsync -av --delete data/stats/ website/public/data/stats/
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/stats/ website/public/data/stats/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit updated stats
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stats/ website/public/data/stats/
+          git commit -m "chore: update conference data [automated]"
+          git push
+
+      # Build and deploy website
+      - uses: pnpm/action-setup@v4
+        if: steps.changes.outputs.changed == 'true'
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        if: steps.changes.outputs.changed == 'true'
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: website/pnpm-lock.yaml
+
+      - name: Build website
+        if: steps.changes.outputs.changed == 'true'
+        working-directory: website
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.changes.outputs.changed == 'true'
+        with:
+          path: website/dist
+
+      - uses: actions/deploy-pages@v4
+        if: steps.changes.outputs.changed == 'true'
+        id: deployment
+        with:
+          error_count: 0

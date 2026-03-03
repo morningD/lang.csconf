@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "explore": "探索",
+    "compare": "比較",
+    "trends": "トレンド",
+    "about": "このサイトについて"
+  },
+  "home": {
+    "hero_title": "あなたの学会、何語をしゃべってる？",
+    "hero_subtitle": "{n} 本の論文を読み漁りました（あなたの代わりに）",
+    "loading": "バベルの塔を解読中...",
+    "papers_analyzed": "分析済み論文数",
+    "conferences_tracked": "追跡中の学会数",
+    "languages_detected": "検出された言語数",
+    "years_of_data": "データの年数",
+    "global_distribution": "CS学会の言語分布",
+    "browse_conferences": "NihaoそれともHello？",
+    "browse_subtitle": "あなたの学会、何語をしゃべってる？",
+    "search_placeholder": "学会を検索...",
+    "all_ranks": "すべて",
+    "all_categories": "すべてのカテゴリ",
+    "dominant_language": "主要言語：{lang}",
+    "papers_count": "{n} 本"
+  },
+  "conference": {
+    "title": "学会エクスプローラー",
+    "language_over_years": "年別言語分布",
+    "top_languages": "トップ言語",
+    "fun_facts": "おもしろ豆知識",
+    "total_papers": "論文総数",
+    "years_covered": "対象年数",
+    "back_to_home": "ホームに戻る"
+  },
+  "compare": {
+    "title": "学会バトル",
+    "subtitle": "2〜4つの学会を選んで、言語の多様性を比べてみよう",
+    "add_conference": "学会を追加",
+    "select_conference": "学会を選択...",
+    "radar_chart": "言語レーダー",
+    "no_selection": "比較するには最低2つの学会を選んでください"
+  },
+  "trends": {
+    "title": "グローバルトレンド",
+    "subtitle": "CS研究の言語地図はどう変わってきたのか",
+    "filter_by_category": "カテゴリで絞り込み",
+    "filter_by_rank": "ランクで絞り込み",
+    "year_over_year": "年次トレンド"
+  },
+  "about": {
+    "title": "このプロジェクトについて",
+    "methodology": "手法",
+    "methodology_text": "DBLPからCCF評価のCS学会（2016-2025）の筆頭著者名をクロールし、名前ベースの国籍推定で言語背景を推測しています。ええ、名前だけで。",
+    "disclaimer": "免責事項",
+    "disclaimer_text": "名前で言語を当てるなんて、正直かなり無理があります。でもやっちゃいました。これはあくまで楽しいビジュアライゼーションであり、厳密な社会言語学の研究ではありません。差別の意図は一切ありません。",
+    "data_sources": "データソース",
+    "accuracy": "精度について",
+    "accuracy_text": "名前ベースの国籍推定は本質的に不正確です。移住、結婚、文化の混合など、名前を当てにならなくする要因はたくさんあります。すべての結果はざっくりとした目安としてお楽しみください。",
+    "credits": "クレジット",
+    "license": "ライセンス"
+  },
+  "common": {
+    "papers": "本",
+    "conference": "学会",
+    "conferences": "学会",
+    "year": "年",
+    "rank": "ランク",
+    "category": "カテゴリ",
+    "language": "言語"
+  }
+}
