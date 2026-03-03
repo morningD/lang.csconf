@@ -14,6 +14,19 @@ const meta = ref<Meta | null>(null)
 const loading = ref(true)
 const error = ref<string | null>(null)
 
+const categoryNames: Record<string, string> = {
+  AI: 'Artificial Intelligence',
+  DB: 'Database / Data Mining / Information Retrieval',
+  NW: 'Computer Networking',
+  SE: 'Software Engineering / System Software / PL',
+  CG: 'Computer Graphics & Multimedia',
+  CT: 'Theory of Computation',
+  HI: 'Human-Computer Interaction & Ubiquittic Computing',
+  SC: 'Network & Information Security',
+  DS: 'Computer Architecture / Parallel & Distributed Computing / Storage',
+  MX: 'Interdisciplinary & Emerging',
+}
+
 const confId = computed(() => route.params.id as string)
 const areaMode = ref<'absolute' | 'ratio' | 'cumulative'>('absolute')
 
@@ -208,7 +221,7 @@ const funFacts = computed(() => {
               >
                 CCF {{ conference.rank }}
               </span>
-              <span class="text-sm px-3 py-1 rounded bg-gray-700 text-gray-300">{{ conference.category }}</span>
+              <span class="text-sm px-3 py-1 rounded bg-gray-700 text-gray-300">{{ categoryNames[conference.category] || conference.category }}</span>
             </div>
             <p class="text-gray-400">{{ conference.description }}</p>
             <div class="flex gap-6 mt-4 text-sm text-gray-500">
