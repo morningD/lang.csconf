@@ -19,7 +19,7 @@ onMounted(async () => {
     allConferences.value = confs
     meta.value = m
     if (confs.length >= 2) {
-      selectedIds.value = [confs[0].id, confs[1].id]
+      selectedIds.value = [confs[0]!.id, confs[1]!.id]
     }
   } catch (e) {
     console.error(e)
