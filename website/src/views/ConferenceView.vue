@@ -153,35 +153,37 @@ const totalPapers = computed(() => {
 const funFacts = computed(() => {
   if (!conference.value) return []
   const c = conference.value
-  const total = totalPapers.value
-  const sorted = Object.entries(c.total).sort((a, b) => b[1] - a[1])
+  const years = c.years.map(String)
   const facts: string[] = []
+  const sumValues = (obj: Record<string, number>) => Object.values(obj).reduce((a: number, b: number) => a + b, 0)
 
-  if (sorted.length > 0) {
-    const first = sorted[0]!
-    const topLang = first[0]
-    const topCount = first[1]
-    const pct = ((topCount / total) * 100).toFixed(1)
-    facts.push(`${topLang} authors wrote ${pct}% of all first-authored papers.`)
+  // Use latest year data for primary facts
+  const latestYear = years[years.length - 1]!
+  const latestData = c.by_year[latestYear] || {}
+  const latestTotal = sumValues(latestData)
+  const latestSorted = Object.entries(latestData).sort((a, b) => b[1] - a[1])
+
+  if (latestSorted.length > 0 && latestTotal > 0) {
+    const topLang = latestSorted[0]![0]
+    const pct = ((latestSorted[0]![1] / latestTotal) * 100).toFixed(1)
+    facts.push(`In ${latestYear}, ${topLang} authors wrote ${pct}% of first-authored papers.`)
   }
 
-  // Growth trend
-  const years = c.years.map(String)
-  if (years.length >= 2 && sorted.length > 0) {
+  // Growth trend of the overall top language
+  if (years.length >= 2 && latestSorted.length > 0) {
     const firstYear = years[0]!
-    const lastYear = years[years.length - 1]!
-    const topLang = sorted[0]![0]
-    const sumValues = (obj: Record<string, number>) => Object.values(obj).reduce((a: number, b: number) => a + b, 0)
-    const firstPct = (c.by_year[firstYear]?.[topLang] || 0) / Math.max(sumValues(c.by_year[firstYear] || {}), 1) * 100
-    const lastPct = (c.by_year[lastYear]?.[topLang] || 0) / Math.max(sumValues(c.by_year[lastYear] || {}), 1) * 100
+    const topLang = latestSorted[0]![0]
+    const firstTotal = sumValues(c.by_year[firstYear] || {})
+    const firstPct = (c.by_year[firstYear]?.[topLang] || 0) / Math.max(firstTotal, 1) * 100
+    const lastPct = (latestSorted[0]![1] / Math.max(latestTotal, 1)) * 100
     const change = lastPct - firstPct
     if (Math.abs(change) > 2) {
-      facts.push(`${topLang} representation ${change > 0 ? 'grew' : 'shrank'} by ${Math.abs(change).toFixed(1)}pp from ${firstYear} to ${lastYear}.`)
+      facts.push(`${topLang} representation ${change > 0 ? 'grew' : 'shrank'} by ${Math.abs(change).toFixed(1)}pp from ${firstYear} to ${latestYear}.`)
     }
   }
 
-  if (sorted.length >= 3) {
-    facts.push(`The top 3 language groups are: ${sorted.slice(0, 3).map(([l]) => l).join(', ')}.`)
+  if (latestSorted.length >= 3) {
+    facts.push(`Top 3 in ${latestYear}: ${latestSorted.slice(0, 3).map(([l]) => l).join(', ')}.`)
   }
 
   return facts

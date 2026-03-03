@@ -7,7 +7,7 @@ const PixelRobots = defineAsyncComponent(() => import('@/components/layout/Pixel
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-950 text-gray-100 flex flex-col">
+  <div class="min-h-screen bg-gray-950 text-gray-100 flex flex-col overflow-x-hidden">
     <AppHeader />
     <main class="flex-1 pt-14 pb-48">
       <RouterView />
