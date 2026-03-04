@@ -8,7 +8,17 @@ Visualizing the linguistic diversity of first authors across CCF-rated CS confer
 
 [English](#features) | [中文](#简介)
 
-> We analyzed 800,000+ papers so you don't have to. Names are terrible predictors of language. We did it anyway.
+> Names are terrible predictors of language. We did it anyway.
+
+## Data Coverage
+
+| Metric | Value |
+|--------|-------|
+| **Conferences** | 312 (CCF A: 57, B: 114, C: 116, N: 25) |
+| **Papers** | 837,858 |
+| **Year range** | 2010–2025 |
+| **Categories** | 10 (AI, DB, NW, SE, CG, CT, HI, SC, DS, MX) |
+| **Languages tracked** | 13 |
 
 ## Features
 
@@ -105,7 +115,17 @@ python -m pipeline.run_all --force
 
 🌐 **在线演示**: [morningD.github.io/lang.csconf](https://morningD.github.io/lang.csconf/)
 
-> 我们分析了 80 万+ 篇论文。基于姓名推断语言并不准确，但我们还是做了。
+> 基于姓名推断语言并不准确，但我们还是做了。
+
+## 数据收录
+
+| 指标 | 数值 |
+|------|------|
+| **会议数** | 312（CCF A: 57, B: 114, C: 116, N: 25） |
+| **论文数** | 837,858 |
+| **年份范围** | 2010–2025 |
+| **学科分类** | 10（AI、DB、NW、SE、CG、CT、HI、SC、DS、MX） |
+| **追踪语言数** | 13 |
 
 ## 功能特点
 
