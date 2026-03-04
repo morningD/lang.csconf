@@ -19,6 +19,16 @@ YEAR_MAX = 2025
 CCF_CATEGORIES = {"AI", "DB", "NW", "SE", "CG", "CT", "HI", "SC", "DS", "MX"}
 CCF_RANKS = {"A", "B", "C", "N"}
 
+# Override wrong DBLP keys from upstream ccf-deadlines
+DBLP_KEY_OVERRIDES = {
+    "icme": "icmcs",
+    "icpc": "iwpc",
+    "sigspatial": "gis",
+    "eusipcolyon": "eusipco",
+    "APWeb": "apweb",
+    "ccs": "asiaccs",  # AsiaCCS was pulling ACM CCS data
+}
+
 
 def clone_or_pull_repo():
     """Clone or pull the ccf-deadlines repository."""
@@ -61,6 +71,7 @@ def parse_conference_file(filepath: Path) -> list[dict]:
         dblp_key = conf.get("dblp")
         if not dblp_key:
             continue
+        dblp_key = DBLP_KEY_OVERRIDES.get(dblp_key, dblp_key)
 
         # Extract rank
         rank_info = conf.get("rank", {})
