@@ -212,7 +212,7 @@ const funFacts = computed(() => {
       <!-- Conference Detail -->
       <template v-else-if="conference">
         <!-- Header + Verdict -->
-        <div class="grid lg:grid-cols-3 gap-6 mb-8">
+        <div class="grid lg:grid-cols-3 items-start gap-6 mb-8">
           <div class="lg:col-span-2">
             <div class="flex items-center gap-3 mb-2">
               <h1 class="text-3xl md:text-4xl font-bold text-white">{{ conference.title }}</h1>
@@ -230,10 +230,10 @@ const funFacts = computed(() => {
               <span>{{ t('conference.years_covered') }}: <strong class="text-white">{{ conference.years[0] }}–{{ conference.years[conference.years.length - 1] }}</strong></span>
             </div>
           </div>
-          <div v-if="verdictGreeting" class="card px-4 py-4 bg-gradient-to-br from-indigo-900/40 to-purple-900/30 border-indigo-500/20 flex items-center gap-3 lg:flex-col lg:items-center lg:justify-center lg:text-center">
-            <div class="w-10 h-10 lg:w-12 lg:h-12 shrink-0 grid place-items-center text-3xl lg:text-4xl">🗣️</div>
+          <div v-if="verdictGreeting" class="card px-5 py-4 bg-gradient-to-br from-indigo-900/40 to-purple-900/30 border-indigo-500/20 flex flex-col justify-center">
             <div>
-              <p class="text-xl font-bold text-white lg:text-2xl lg:mb-1">
+              <p class="text-xl font-bold text-white lg:text-2xl">
+                <span class="text-xl">🗣️</span>
                 Say <span class="text-indigo-300">{{ verdictGreeting.greeting }}</span>!
               </p>
               <p class="text-gray-400 text-xs leading-relaxed">
