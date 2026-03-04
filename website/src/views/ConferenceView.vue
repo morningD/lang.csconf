@@ -71,15 +71,19 @@ const langGreetings: Record<string, string> = {
 
 const verdictGreeting = computed(() => {
   if (!conference.value) return null
-  const sorted = Object.entries(conference.value.total).sort((a, b) => b[1] - a[1])
+  const c = conference.value
+  const latestYear = String(c.years[c.years.length - 1])
+  const latestData = c.by_year[latestYear] || {}
+  const sorted = Object.entries(latestData).sort((a, b) => b[1] - a[1])
   if (sorted.length === 0) return null
   const topLang = sorted[0]![0]
-  const total = Object.values(conference.value.total).reduce((a, b) => a + b, 0)
+  const total = Object.values(latestData).reduce((a: number, b: number) => a + b, 0)
   const pct = Math.round(sorted[0]![1] / total * 100)
   return {
     greeting: langGreetings[topLang] || topLang,
     lang: topLang,
     pct,
+    year: latestYear,
     secondLang: sorted.length > 1 ? sorted[1]![0] : null,
     secondGreeting: sorted.length > 1 ? (langGreetings[sorted[1]![0]] || sorted[1]![0]) : null,
     secondPct: sorted.length > 1 ? Math.round(sorted[1]![1] / total * 100) : 0,
@@ -226,14 +230,14 @@ const funFacts = computed(() => {
               <span>{{ t('conference.years_covered') }}: <strong class="text-white">{{ conference.years[0] }}–{{ conference.years[conference.years.length - 1] }}</strong></span>
             </div>
           </div>
-          <div v-if="verdictGreeting" class="card px-4 py-3 bg-gradient-to-br from-indigo-900/40 to-purple-900/30 border-indigo-500/20 flex items-center gap-3 lg:flex-col lg:items-center lg:justify-center lg:text-center">
-            <div class="text-3xl shrink-0 lg:text-4xl leading-none flex items-center">🗣️</div>
+          <div v-if="verdictGreeting" class="card px-4 py-4 bg-gradient-to-br from-indigo-900/40 to-purple-900/30 border-indigo-500/20 flex items-center gap-3 lg:flex-col lg:items-center lg:justify-center lg:text-center">
+            <div class="w-10 h-10 lg:w-12 lg:h-12 shrink-0 grid place-items-center text-3xl lg:text-4xl">🗣️</div>
             <div>
               <p class="text-xl font-bold text-white lg:text-2xl lg:mb-1">
                 Say <span class="text-indigo-300">{{ verdictGreeting.greeting }}</span>!
               </p>
               <p class="text-gray-400 text-xs leading-relaxed">
-                {{ verdictGreeting.pct }}% speak {{ verdictGreeting.lang }}<template v-if="verdictGreeting.secondLang">, or try <span class="text-gray-300">{{ verdictGreeting.secondGreeting }}</span> ({{ verdictGreeting.secondPct }}%)</template>
+                In {{ verdictGreeting.year }}, {{ verdictGreeting.pct }}% speak {{ verdictGreeting.lang }}<template v-if="verdictGreeting.secondLang">, or try <span class="text-gray-300">{{ verdictGreeting.secondGreeting }}</span> ({{ verdictGreeting.secondPct }}%)</template>
               </p>
             </div>
           </div>
