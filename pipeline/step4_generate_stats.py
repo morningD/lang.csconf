@@ -142,6 +142,7 @@ def run(force: bool = False):
             "2015": {"name": "4th Edition (2015)", "partial": False},
             "2019": {"name": "5th Edition (2019)", "partial": False},
             "2022": {"name": "6th Edition (2022)", "partial": False},
+            "2026": {"name": "7th Edition (2026)", "partial": False},
         },
     }
     _write_json(STATS_DIR / "meta.json", meta_json)

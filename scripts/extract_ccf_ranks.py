@@ -41,7 +41,7 @@ CONF_ALIASES = {
     "ACSAC": "ACSAC",
     "ASIACRYPT": "ASIACRYPT",
     "ESORICS": "ESORICS",
-    "FSE": "FSE-CRYPTO",
+    "FSE-CRYPTO-DIRECT": "FSE-CRYPTO",
     "SOUPS": "SOUPS",
     "STOC": "STOC",
     "FOCS": "FOCS",
@@ -100,6 +100,22 @@ CONF_ALIASES = {
     "MobileHCI": "MOBILEHCI",
     "ICWSM": "ICWSM",
     "DIS": "DIS",
+    "ACM SIGOPS ATC\n（原 USENIX ATC）": "USENIXATC",
+    "ACM SIGOPS ATC\n（原USENIX ATC）": "USENIXATC",
+    "ACMSIGOPSATC\n（原USENIXATC）": "USENIXATC",
+    "ACMSIGOPSATC （原USENIXATC）": "USENIXATC",
+    "ACM SIGOPS ATC": "USENIXATC",
+    "SIG-\nMETRICS": "SIGMETRICS",
+    "SIG- METRICS": "SIGMETRICS",
+    "INTER-\nSPEECH": "INTERSPEECH",
+    "INTER- SPEECH": "INTERSPEECH",
+    "FSCD\n（原RTA）": "RTA",
+    "FSCD （原RTA）": "RTA",
+    "VR": "IEEEVR",
+    "IEEE BigData": "BIGDATA",
+    "IEEE CLOUD": "CLOUD",
+    "IEEEBigData": "BIGDATA",
+    "IEEECLOUD": "CLOUD",
 }
 
 
@@ -157,6 +173,11 @@ def extract_conferences_from_pdf(pdf_path: str) -> list[tuple[str, str]]:
                     if abbrev and abbrev != "None" and not abbrev.isdigit():
                         # Clean up newlines within abbreviation
                         abbrev = abbrev.replace("\n", " ").strip()
+                        # Disambiguate: "FSE" appears for both Fast Software Encryption
+                        # (crypto) and Foundations of Software Engineering (SE)
+                        full_name = str(row[2] or "")
+                        if abbrev == "FSE" and "Encryption" in full_name:
+                            abbrev = "FSE-CRYPTO-DIRECT"
                         conferences.append((abbrev, current_rank))
 
     return conferences
@@ -181,7 +202,7 @@ def main():
     results = {}  # conf_id -> {version: rank}
     unmatched = {}  # version -> list of unmatched abbreviations
 
-    for version in ["2012", "2015", "2019", "2022"]:
+    for version in ["2012", "2015", "2019", "2022", "2026"]:
         pdf_path = CCF_DIR / f"ccf-{version}.pdf"
         if not pdf_path.exists():
             print(f"Skipping {version} (not found)")

@@ -102,7 +102,7 @@ const verdictGreeting = computed(() => {
 const rankChangeMarkers = computed(() => {
   if (!conference.value?.rank_history) return []
   const rh = conference.value.rank_history
-  const versions = ['2011', '2012', '2015', '2019', '2022']
+  const versions = ['2011', '2012', '2015', '2019', '2022', '2026']
   const markers: { year: number; from: string; to: string }[] = []
 
   for (let i = 1; i < versions.length; i++) {
