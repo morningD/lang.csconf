@@ -42,6 +42,10 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# ML model files
+*.bin
+*.ftz
+
 # Logs
 *.log
 npm-debug.log*

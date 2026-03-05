@@ -12,6 +12,7 @@ export interface ConferenceIndex {
   latest_lang: string
   latest_pct: number
   latest_lang_pcts: Record<string, number>
+  latest_trend: number | null
 }
 
 export interface ConferenceDetail {

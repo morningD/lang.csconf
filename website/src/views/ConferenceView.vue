@@ -87,11 +87,26 @@ const verdictGreeting = computed(() => {
   const topLang = sorted[0]![0]
   const total = Object.values(latestData).reduce((a: number, b: number) => a + b, 0)
   const pct = Math.round(sorted[0]![1] / total * 100)
+  // YoY trend for dominant language
+  let trend: number | null = null
+  let prevYear: string | null = null
+  if (c.years.length >= 2) {
+    prevYear = String(c.years[c.years.length - 2])
+    const prevData = c.by_year[prevYear] || {}
+    const prevTotal = Object.values(prevData).reduce((a: number, b: number) => a + b, 0)
+    if (prevTotal > 0) {
+      const prevPct = Math.round((prevData[topLang] || 0) / prevTotal * 100)
+      trend = pct - prevPct
+    }
+  }
+
   return {
     greeting: langGreetings[topLang] || topLang,
     lang: topLang,
     pct,
     year: latestYear,
+    trend,
+    prevYear,
     secondLang: sorted.length > 1 ? sorted[1]![0] : null,
     secondGreeting: sorted.length > 1 ? (langGreetings[sorted[1]![0]] || sorted[1]![0]) : null,
     secondPct: sorted.length > 1 ? Math.round(sorted[1]![1] / total * 100) : 0,
@@ -283,10 +298,14 @@ const totalPapers = computed(() => {
 const latestAcceptRate = computed(() => {
   if (!conference.value?.accept_rates?.length) return null
   const entry = conference.value.accept_rates[0]!
-  return {
-    year: entry.year,
-    rate: Math.round(entry.accepted / entry.submitted * 1000) / 10,
+  const rate = Math.round(entry.accepted / entry.submitted * 1000) / 10
+  let trend: number | null = null
+  if (conference.value.accept_rates.length >= 2) {
+    const prev = conference.value.accept_rates[1]!
+    const prevRate = Math.round(prev.accepted / prev.submitted * 1000) / 10
+    trend = Math.round((rate - prevRate) * 10) / 10
   }
+  return { year: entry.year, rate, trend }
 })
 
 const showAcceptRateChart = ref(false)
@@ -421,7 +440,20 @@ const funFacts = computed(() => {
                 @mouseenter="showAcceptRateChart = true"
                 @mouseleave="showAcceptRateChart = false"
               >
-                {{ t('conference.accept_rate') }}: <strong class="text-white">{{ latestAcceptRate.rate }}%</strong> <span class="text-gray-600">({{ latestAcceptRate.year }})</span>
+                {{ t('conference.accept_rate') }}: <strong class="text-white">{{ latestAcceptRate.rate }}%</strong>
+                <span class="text-gray-600"> ({{ latestAcceptRate.year }}) </span>
+                <span
+                  v-if="latestAcceptRate.trend != null && latestAcceptRate.trend > 0"
+                  class="trend-up text-emerald-400 text-xs font-medium"
+                >↗ {{ latestAcceptRate.trend }}</span>
+                <span
+                  v-else-if="latestAcceptRate.trend != null && latestAcceptRate.trend < 0"
+                  class="trend-down text-orange-400 text-xs font-medium"
+                >↘ {{ Math.abs(latestAcceptRate.trend) }}</span>
+                <span
+                  v-else-if="latestAcceptRate.trend != null"
+                  class="trend-flat text-gray-500 text-xs font-medium"
+                >→ 0</span>
                 <Transition name="fade">
                   <div
                     v-if="showAcceptRateChart && conference!.accept_rates!.length > 1"
@@ -439,10 +471,13 @@ const funFacts = computed(() => {
             <div>
               <p class="text-xl font-bold text-white lg:text-2xl">
                 <span class="text-xl">🗣️</span>
-                Say <span class="text-indigo-300">{{ verdictGreeting.greeting }}</span>!
+                Say <span class="greeting-pop">{{ verdictGreeting.greeting }}</span>!
               </p>
               <p class="text-gray-400 text-xs leading-relaxed">
-                In {{ verdictGreeting.year }}, {{ verdictGreeting.pct }}% speak {{ verdictGreeting.lang }}<template v-if="verdictGreeting.secondLang">, or try <span class="text-gray-300">{{ verdictGreeting.secondGreeting }}</span> ({{ verdictGreeting.secondPct }}%)</template>
+                In {{ verdictGreeting.year }}, {{ verdictGreeting.pct }}% speak {{ verdictGreeting.lang }}
+                <span v-if="verdictGreeting.trend != null" :class="verdictGreeting.trend > 0 ? 'text-emerald-400' : verdictGreeting.trend < 0 ? 'text-orange-400' : 'text-gray-500'"
+                >(<span :class="verdictGreeting.trend > 0 ? 'trend-up' : verdictGreeting.trend < 0 ? 'trend-down' : 'trend-flat'">{{ verdictGreeting.trend > 0 ? '↗' : verdictGreeting.trend < 0 ? '↘' : '→' }} {{ Math.abs(verdictGreeting.trend) }}pp</span> vs {{ verdictGreeting.prevYear }})</span>
+                <template v-if="verdictGreeting.secondLang">, or try <span class="text-gray-300">{{ verdictGreeting.secondGreeting }}</span> ({{ verdictGreeting.secondPct }}%)</template>
               </p>
             </div>
           </div>
@@ -499,5 +534,61 @@ const funFacts = computed(() => {
 <style scoped>
 .fade-enter-active, .fade-leave-active { transition: opacity 0.15s ease; }
 .fade-enter-from, .fade-leave-to { opacity: 0; }
+
+.trend-up {
+  display: inline-block;
+  animation: slideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), glowGreen 2s ease-in-out 0.5s infinite;
+}
+
+.trend-down {
+  display: inline-block;
+  animation: slideDown 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), glowOrange 2s ease-in-out 0.5s infinite;
+}
+
+.trend-flat {
+  display: inline-block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes slideUp {
+  0% { transform: translate(-4px, 4px); opacity: 0; }
+  60% { transform: translate(1px, -1px); opacity: 1; }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes slideDown {
+  0% { transform: translate(-4px, -4px); opacity: 0; }
+  60% { transform: translate(1px, 1px); opacity: 1; }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes glowGreen {
+  0%, 100% { text-shadow: 0 0 2px transparent; }
+  50% { text-shadow: 0 0 6px rgba(52, 211, 153, 0.6); }
+}
+
+@keyframes glowOrange {
+  0%, 100% { text-shadow: 0 0 2px transparent; }
+  50% { text-shadow: 0 0 6px rgba(251, 146, 60, 0.6); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.greeting-pop {
+  background: linear-gradient(90deg, #a5b4fc 0%, #a5b4fc 40%, #e0e7ff 50%, #a5b4fc 60%, #a5b4fc 100%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2s ease-in-out 0.3s 1;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
 </style>
 

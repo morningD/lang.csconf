@@ -40,11 +40,12 @@ DBLP_KEY_OVERRIDES = {
     "icpc": "iwpc",
     "sigspatial": "gis",
     "eusipcolyon": "eusipco",
-    "APWeb": "apweb",
+    "APWeb": ["apweb", "waim"],  # APWeb-WAIM co-located; both DBLP streams needed
     "ccs": "asiaccs",  # AsiaCCS was pulling ACM CCS data
     "pkdd": ["pkdd", "ecml"],  # ECML-PKDD splits across two DBLP streams
     "sigsoft": ["sigsoft", "esec"],  # ESEC/FSE merges both SIGSOFT FSE and ESEC streams
     "cade": ["cade", "ijcar"],  # CADE/IJCAR alternates between CADE and IJCAR names
+    "huc": ["huc", "iswc"],  # UbiComp/ISWC co-located since 2016; both DBLP streams needed
 }
 
 

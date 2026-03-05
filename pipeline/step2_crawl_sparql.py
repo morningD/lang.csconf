@@ -1,4 +1,8 @@
-"""Step 2: Crawl DBLP via SPARQL for first authors of each conference/year (2010-2025)."""
+"""Step 2: Crawl DBLP via SPARQL for authors of each conference/year (2010-2025).
+
+Stores all authors with their ordinal position (1 = first author, 2 = second, etc.).
+Downstream steps (step3, step4) filter to first authors as needed.
+"""
 
 import json
 import sys
@@ -29,22 +33,22 @@ def _chunks(lst, n):
         yield lst[i : i + n]
 
 
-def _extract_first_authors(papers: list[dict]) -> list[dict]:
-    """Extract first author (ordinal == 1) from each paper."""
+def _extract_all_authors(papers: list[dict]) -> list[dict]:
+    """Extract all authors with ordinal from each paper."""
     results = []
     for paper in papers:
         authors = paper.get("authors", [])
-        first = next((a for a in authors if a["ordinal"] == 1), None)
-        if first:
+        for a in authors:
             results.append({
-                "name": first["name"],
+                "name": a["name"],
                 "title": paper["title"],
+                "ordinal": a["ordinal"],
             })
     return results
 
 
 def run(force: bool = False, conferences_filter: list[str] | None = None):
-    """Run step 2: SPARQL-based crawl of DBLP for first authors."""
+    """Run step 2: SPARQL-based crawl of DBLP for authors."""
     if not CONFERENCES_FILE.exists():
         print("No conferences.json found. Run step 1 first.")
         return
@@ -140,7 +144,7 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
                     continue
 
                 conf_id = conf["id"]
-                authors = _extract_first_authors(papers)
+                authors = _extract_all_authors(papers)
                 acc_key = (conf_id, year)
                 accumulated.setdefault(acc_key, []).extend(authors)
                 pbar.update(1)
@@ -148,17 +152,19 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
             # Small delay between batches to be polite
             time.sleep(0.2)
 
-    # Write accumulated results, deduplicating papers by normalized title
+    # Write accumulated results, deduplicating by (normalized title, name)
     for (conf_id, year), authors in accumulated.items():
         safe_id = _safe_filename(conf_id)
-        # Dedup by normalized title (lowercase, collapsed whitespace)
-        seen_titles: set[str] = set()
+        seen: set[tuple[str, str]] = set()
         unique_authors = []
+        unique_titles: set[str] = set()
         for a in authors:
             norm_title = " ".join(a["title"].lower().split())
-            if norm_title not in seen_titles:
-                seen_titles.add(norm_title)
+            key = (norm_title, a["name"])
+            if key not in seen:
+                seen.add(key)
                 unique_authors.append(a)
+                unique_titles.add(norm_title)
 
         dblp_value = next(
             c["dblp"] for c in conferences if c["id"] == conf_id
@@ -167,9 +173,9 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
             "conference": conf_id,
             "dblp": dblp_value,
             "year": year,
-            "total_papers": len(unique_authors),
+            "total_papers": len(unique_titles),
             "authors": [
-                {"name": a["name"], "title": a["title"], "year": year}
+                {"name": a["name"], "title": a["title"], "year": year, "ordinal": a["ordinal"]}
                 for a in unique_authors
             ],
         }

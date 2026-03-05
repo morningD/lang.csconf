@@ -346,12 +346,12 @@ def classify_name_rule(name: str) -> dict:
     best_score = scores[best_lang]
 
     if best_score < 0.4:
-        # Default to English for Western-style names without strong signals
+        # No strong signal — return Unknown so the ensemble defers to fastText
         return {
             'name': name,
             'nationality': 'Unknown',
-            'language': 'English',
-            'confidence': 0.3,
+            'language': 'Unknown',
+            'confidence': 0.0,
         }
 
     return {

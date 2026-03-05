@@ -106,7 +106,9 @@ def run(force: bool = False):
     for entry in all_data:
         conf_id = entry.get("conference", "").replace("/", "-")
         year = entry.get("year", 0)
-        authors = entry.get("authors", [])
+        all_authors = entry.get("authors", [])
+        # Filter to first authors only (ordinal == 1); default handles old files without ordinal
+        authors = [a for a in all_authors if a.get("ordinal", 1) == 1]
 
         if not conf_id or not year:
             continue
@@ -217,6 +219,15 @@ def run(force: bool = False):
         latest_pct = round(latest_dist.get(latest_lang, 0) / latest_total * 100, 1) if latest_dist else 0
         latest_lang_pcts = {lang: round(count / latest_total * 100, 1) for lang, count in latest_dist.items()}
 
+        # YoY trend for dominant language
+        latest_trend = None
+        if latest_year and len(years_sorted) >= 2:
+            prev_year = years_sorted[-2]
+            prev_dist = dict(year_data.get(prev_year, {}))
+            prev_total = max(sum(prev_dist.values()), 1)
+            prev_pct = round(prev_dist.get(latest_lang, 0) / prev_total * 100, 1)
+            latest_trend = round(latest_pct - prev_pct, 1)
+
         index.append({
             "id": conf_id,
             "title": meta.get("title", conf_id),
@@ -231,6 +242,7 @@ def run(force: bool = False):
             "latest_lang": latest_lang,
             "latest_pct": latest_pct,
             "latest_lang_pcts": latest_lang_pcts,
+            "latest_trend": latest_trend,
         })
     index.sort(key=lambda c: (-c["total_papers"],))
     _write_json(STATS_DIR / "conferences_index.json", index)

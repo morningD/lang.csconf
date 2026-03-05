@@ -67,6 +67,7 @@ const sortOptions = [
   { value: 'Korean', label: 'Annyeong' },
   { value: 'Indian', label: 'Namaste' },
   { value: 'papers', label: 'Papers' },
+  { value: 'trend', label: 'Trend' },
 ]
 function toggleSort(value: string) {
   if (value === 'default') {
@@ -126,6 +127,8 @@ const filteredConferences = computed(() => {
       let diff: number
       if (sortKey.value === 'papers') {
         diff = (Number(b.total_papers) || 0) - (Number(a.total_papers) || 0)
+      } else if (sortKey.value === 'trend') {
+        diff = (b.latest_trend ?? 0) - (a.latest_trend ?? 0)
       } else {
         const lang = sortKey.value
         const aScore = a.latest_lang_pcts?.[lang] || a.lang_pcts?.[lang] || 0
@@ -370,7 +373,22 @@ function onSearchClickOutside(e: MouseEvent) {
                   :style="{ backgroundColor: getLangColor(conf.latest_lang || conf.dominant_language) }"
                 ></div>
                 <span class="text-sm text-gray-400" :title="conf.latest_lang || conf.dominant_language">
-                  {{ langGreetings[conf.latest_lang || conf.dominant_language] || conf.dominant_language }} ({{ conf.latest_pct || conf.dominant_pct }}%) · {{ conf.latest_year }}
+                  {{ langGreetings[conf.latest_lang || conf.dominant_language] || conf.dominant_language }} ({{ conf.latest_pct || conf.dominant_pct }}%)
+                  <span
+                    v-if="conf.latest_trend != null && conf.latest_trend > 0"
+                    class="trend-up text-emerald-400 text-xs font-medium ml-0.5"
+                    :title="t('home.trend_tooltip', { pp: '+' + conf.latest_trend })"
+                  >↗ {{ conf.latest_trend }}</span>
+                  <span
+                    v-else-if="conf.latest_trend != null && conf.latest_trend < 0"
+                    class="trend-down text-orange-400 text-xs font-medium ml-0.5"
+                    :title="t('home.trend_tooltip', { pp: String(conf.latest_trend) })"
+                  >↘ {{ Math.abs(conf.latest_trend) }}</span>
+                  <span
+                    v-else-if="conf.latest_trend != null"
+                    class="trend-flat text-gray-500 text-xs font-medium ml-0.5"
+                  >→ 0</span>
+                   · {{ conf.latest_year }}
                 </span>
               </div>
               <!-- Mini progress bar -->
@@ -475,5 +493,47 @@ function onSearchClickOutside(e: MouseEvent) {
 
 .conf-card:hover::before {
   opacity: 1;
+}
+
+.trend-up {
+  display: inline-block;
+  animation: slideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), glowGreen 2s ease-in-out 0.5s infinite;
+}
+
+.trend-down {
+  display: inline-block;
+  animation: slideDown 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), glowOrange 2s ease-in-out 0.5s infinite;
+}
+
+.trend-flat {
+  display: inline-block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes slideUp {
+  0% { transform: translate(-4px, 4px); opacity: 0; }
+  60% { transform: translate(1px, -1px); opacity: 1; }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes slideDown {
+  0% { transform: translate(-4px, -4px); opacity: 0; }
+  60% { transform: translate(1px, 1px); opacity: 1; }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes glowGreen {
+  0%, 100% { text-shadow: 0 0 2px transparent; }
+  50% { text-shadow: 0 0 6px rgba(52, 211, 153, 0.6); }
+}
+
+@keyframes glowOrange {
+  0%, 100% { text-shadow: 0 0 2px transparent; }
+  50% { text-shadow: 0 0 6px rgba(251, 146, 60, 0.6); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 </style>
