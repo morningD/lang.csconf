@@ -45,7 +45,6 @@ DBLP_KEY_OVERRIDES = {
     "pkdd": ["pkdd", "ecml"],  # ECML-PKDD splits across two DBLP streams
     "sigsoft": ["sigsoft", "esec"],  # ESEC/FSE merges both SIGSOFT FSE and ESEC streams
     "cade": ["cade", "ijcar"],  # CADE/IJCAR alternates between CADE and IJCAR names
-    "huc": ["huc", "iswc"],  # UbiComp/ISWC co-located since 2016; both DBLP streams needed
 }
 
 
