@@ -4,7 +4,10 @@
   "description": "European Conference on Machine Learning and 25th Principles and Practice of Knowledge Discovery in Databases",
   "category": "DB",
   "rank": "B",
-  "dblp": "pkdd",
+  "dblp": [
+    "pkdd",
+    "ecml"
+  ],
   "years": [
     2010,
     2011,
@@ -25,18 +28,18 @@
   ],
   "by_year": {
     "2010": {
-      "English": 96,
-      "Indian": 1,
+      "English": 109,
       "Chinese": 14,
+      "Indian": 1,
       "Russian": 6,
       "Spanish": 4,
       "Japanese": 1,
-      "Vietnamese": 1,
+      "Vietnamese": 2,
       "Korean": 2,
       "German": 2
     },
     "2011": {
-      "English": 111,
+      "English": 120,
       "Persian": 2,
       "Chinese": 21,
       "Russian": 1,
@@ -50,58 +53,61 @@
       "Italian": 2
     },
     "2012": {
-      "English": 82,
+      "Indian": 5,
+      "English": 98,
       "Vietnamese": 3,
-      "Chinese": 28,
-      "Indian": 4,
+      "Chinese": 30,
       "Persian": 2,
       "Turkish": 1,
       "German": 1,
-      "Russian": 2,
+      "Russian": 3,
       "Japanese": 2,
       "Korean": 1
     },
     "2013": {
-      "Chinese": 31,
-      "English": 112,
-      "German": 1,
-      "Spanish": 3,
+      "Chinese": 32,
+      "English": 126,
+      "German": 2,
+      "Spanish": 4,
       "Vietnamese": 2,
       "Russian": 6,
-      "Indian": 3,
-      "Persian": 1
+      "Indian": 4,
+      "Persian": 1,
+      "Korean": 1
     },
     "2014": {
-      "English": 119,
-      "Chinese": 24,
+      "English": 159,
+      "Persian": 3,
+      "Chinese": 26,
       "German": 1,
-      "Vietnamese": 3,
-      "Korean": 4,
-      "Russian": 1,
+      "Vietnamese": 4,
+      "Korean": 5,
+      "Russian": 4,
       "French": 3,
       "Spanish": 4,
-      "Persian": 2,
       "Japanese": 2,
-      "Turkish": 1
+      "Turkish": 1,
+      "Indian": 1
     },
     "2015": {
-      "English": 105,
-      "Vietnamese": 4,
+      "English": 157,
+      "Vietnamese": 5,
       "Persian": 2,
       "Korean": 4,
-      "Chinese": 21,
-      "Russian": 6,
+      "Chinese": 24,
+      "Russian": 9,
       "German": 1,
       "Japanese": 2,
       "Indian": 3,
-      "French": 1
+      "French": 1,
+      "Spanish": 2
     },
     "2016": {
-      "English": 106,
-      "Chinese": 33,
+      "English": 120,
+      "Chinese": 34,
       "Russian": 7,
       "Vietnamese": 2,
-      "Korean": 3,
+      "Korean": 4,
       "Indian": 2,
       "French": 1,
       "Spanish": 2,
@@ -109,114 +115,238 @@
       "Persian": 1
     },
     "2017": {
-      "English": 106,
-      "Persian": 1,
-      "Chinese": 33,
-      "Russian": 6,
-      "Indian": 6,
+      "English": 228,
+      "Persian": 3,
+      "Chinese": 35,
+      "Russian": 10,
+      "Indian": 8,
       "Korean": 2,
-      "Japanese": 2,
-      "Italian": 1,
+      "Japanese": 3,
+      "Italian": 2,
       "Vietnamese": 1,
-      "German": 1,
-      "Spanish": 1
+      "German": 3,
+      "Spanish": 3
     },
     "2018": {
-      "Spanish": 3,
-      "Russian": 1,
-      "English": 6
+      "English": 61,
+      "Persian": 1,
+      "Chinese": 6,
+      "German": 1,
+      "Turkish": 2,
+      "Russian": 2,
+      "Indian": 1,
+      "Spanish": 3
     },
     "2019": {
-      "English": 111,
-      "Russian": 3,
-      "Chinese": 24,
+      "English": 161,
+      "Russian": 6,
+      "Chinese": 26,
       "Korean": 4,
-      "Vietnamese": 4,
-      "Japanese": 1,
+      "Vietnamese": 5,
+      "Japanese": 2,
       "German": 1,
-      "Indian": 2,
-      "Spanish": 1
+      "Indian": 4,
+      "Spanish": 2,
+      "Italian": 1,
+      "Persian": 1
     },
     "2020": {
-      "English": 236,
-      "Russian": 7,
-      "Korean": 4,
-      "Chinese": 29,
+      "English": 318,
+      "Russian": 8,
+      "Korean": 5,
+      "Chinese": 34,
       "Spanish": 5,
-      "German": 8,
+      "German": 9,
       "French": 2,
-      "Indian": 6,
-      "Vietnamese": 1,
+      "Indian": 8,
+      "Vietnamese": 3,
       "Japanese": 1,
-      "Persian": 3
+      "Persian": 3,
+      "Turkish": 1
     },
     "2021": {
       "Chinese": 148,
-      "English": 318,
+      "English": 334,
+      "Korean": 8,
       "Russian": 10,
       "Persian": 6,
       "French": 6,
-      "Spanish": 9,
+      "Spanish": 10,
       "Japanese": 3,
-      "German": 6,
+      "German": 7,
       "Vietnamese": 11,
       "Indian": 5,
-      "Korean": 8
+      "Italian": 1
     },
     "2022": {
-      "English": 9,
-      "Chinese": 2
+      "English": 44,
+      "Chinese": 4,
+      "Spanish": 1,
+      "Vietnamese": 1,
+      "Korean": 1
     },
     "2023": {
-      "English": 360,
-      "Chinese": 221,
+      "Turkish": 2,
+      "English": 384,
+      "Korean": 9,
+      "Chinese": 223,
+      "Spanish": 10,
       "Indian": 20,
       "German": 6,
       "Persian": 4,
-      "Korean": 8,
       "Vietnamese": 4,
-      "Spanish": 10,
       "Russian": 8,
-      "Japanese": 2,
-      "Turkish": 2
+      "Japanese": 2
     },
     "2024": {
-      "English": 139,
-      "Chinese": 105,
-      "Vietnamese": 9,
+      "Chinese": 106,
       "Indian": 9,
+      "English": 154,
       "Russian": 11,
+      "Vietnamese": 9,
       "Spanish": 1,
       "Japanese": 1,
       "Persian": 1,
-      "German": 2,
+      "German": 3,
       "Korean": 4
     },
     "2025": {
+      "Russian": 8,
       "English": 175,
+      "Persian": 3,
       "Chinese": 4,
       "Indian": 2,
-      "Russian": 8,
       "Spanish": 6,
       "German": 2,
       "French": 1,
-      "Persian": 3,
       "Turkish": 1
     }
   },
   "total": {
-    "English": 2191,
-    "Indian": 66,
-    "Chinese": 738,
-    "Russian": 83,
-    "Spanish": 53,
-    "Japanese": 20,
-    "Vietnamese": 47,
-    "Korean": 47,
-    "German": 36,
-    "Persian": 28,
-    "Turkish": 7,
-    "Italian": 3,
+    "English": 2748,
+    "Chinese": 767,
+    "Indian": 76,
+    "Russian": 99,
+    "Spanish": 61,
+    "Japanese": 22,
+    "Vietnamese": 54,
+    "Korean": 53,
+    "German": 43,
+    "Persian": 33,
+    "Turkish": 10,
+    "Italian": 6,
     "French": 14
+  },
+  "venues": {
+    "2025": {
+      "city": "Porto",
+      "country": "Portugal"
+    },
+    "2024": {
+      "city": "Vilnius",
+      "country": "Lithuania"
+    },
+    "2023": {
+      "city": "Turin",
+      "country": "Italy"
+    },
+    "2022": {
+      "city": "Grenoble",
+      "country": "France"
+    },
+    "2021": {
+      "city": "Bilbao",
+      "country": "Spain (Virtual Event)"
+    },
+    "2020": {
+      "city": "Ghent",
+      "country": "Belgium (Virtual Event)"
+    },
+    "2019": {
+      "city": "W&#252;rzburg",
+      "country": "Germany"
+    },
+    "2018": {
+      "city": "Dublin",
+      "country": "Ireland"
+    },
+    "2017": {
+      "city": "Skopje",
+      "country": "Macedonia"
+    },
+    "2016": {
+      "city": "Riva del Garda",
+      "country": "Italy"
+    },
+    "2015": {
+      "city": "Porto",
+      "country": "Portugal"
+    },
+    "2014": {
+      "city": "Nancy",
+      "country": "France"
+    },
+    "2013": {
+      "city": "Prague",
+      "country": "Czech Republic"
+    },
+    "2012": {
+      "city": "Bristol",
+      "country": "UK"
+    },
+    "2011": {
+      "city": "Athens",
+      "country": "Greece"
+    },
+    "2010": {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    "2009": {
+      "city": "Bled",
+      "country": "Slovenia"
+    },
+    "2008": {
+      "city": "Antwerp",
+      "country": "Belgium"
+    },
+    "2007": {
+      "city": "Warsaw",
+      "country": "Poland"
+    },
+    "2006": {
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    "2005": {
+      "city": "Porto",
+      "country": "Portugal"
+    },
+    "2004": {
+      "city": "Pisa",
+      "country": "Italy"
+    },
+    "2003": {
+      "city": "Cavtat-Dubrovnik",
+      "country": "Croatia"
+    },
+    "2002": {
+      "city": "Helsinki",
+      "country": "Finland"
+    },
+    "2001": {
+      "city": "Freiburg",
+      "country": "Germany"
+    },
+    "2000": {
+      "city": "Lyon",
+      "country": "France"
+    }
+  },
+  "rank_history": {
+    "2012": "B",
+    "2015": "B",
+    "2019": "B",
+    "2022": "B"
   }
 }

@@ -4,18 +4,33 @@
   "description": "The Conference on Automated Deduction (CADE)",
   "category": "CT",
   "rank": "B",
-  "dblp": "cade",
+  "dblp": [
+    "cade",
+    "ijcar"
+  ],
   "years": [
+    2010,
     2011,
+    2012,
     2013,
+    2014,
     2015,
+    2016,
     2017,
+    2018,
     2019,
+    2020,
     2021,
+    2022,
     2023,
+    2024,
     2025
   ],
   "by_year": {
+    "2010": {
+      "English": 41,
+      "Russian": 3
+    },
     "2011": {
       "English": 33,
       "Chinese": 1,
@@ -23,26 +38,52 @@
       "German": 1,
       "French": 1
     },
+    "2012": {
+      "English": 49,
+      "Russian": 2,
+      "Chinese": 2,
+      "French": 2,
+      "German": 1
+    },
     "2013": {
-      "English": 32,
+      "English": 39,
+      "German": 1,
       "Russian": 1,
       "Chinese": 1
     },
+    "2014": {
+      "English": 40,
+      "Chinese": 1
+    },
     "2015": {
-      "Chinese": 2,
       "English": 36,
+      "Chinese": 2,
       "Indian": 1,
       "French": 1,
       "Japanese": 1,
       "Russian": 1,
       "German": 1
     },
+    "2016": {
+      "English": 34,
+      "Russian": 1,
+      "Spanish": 1,
+      "German": 1,
+      "Chinese": 2
+    },
     "2017": {
       "English": 28,
+      "Spanish": 2,
       "Russian": 1,
       "Chinese": 2,
-      "German": 2,
-      "Spanish": 2
+      "German": 2
+    },
+    "2018": {
+      "Chinese": 2,
+      "English": 38,
+      "Russian": 5,
+      "Vietnamese": 1,
+      "Indian": 1
     },
     "2019": {
       "English": 28,
@@ -51,33 +92,116 @@
       "French": 1,
       "German": 1
     },
-    "2021": {
-      "English": 34,
-      "Korean": 1,
-      "Japanese": 1,
+    "2020": {
+      "English": 61,
       "German": 1,
+      "Russian": 1,
+      "Chinese": 2
+    },
+    "2021": {
+      "English": 35,
+      "German": 1,
+      "Japanese": 1,
+      "Korean": 1,
       "Chinese": 1
+    },
+    "2022": {
+      "English": 39,
+      "Chinese": 1,
+      "Russian": 1,
+      "Indian": 1,
+      "Spanish": 1,
+      "Japanese": 1
     },
     "2023": {
-      "English": 32,
+      "English": 33,
       "Chinese": 1
     },
+    "2024": {
+      "English": 49,
+      "Indian": 1
+    },
     "2025": {
-      "English": 34,
-      "French": 1,
+      "English": 35,
       "Japanese": 1,
-      "Chinese": 2
+      "Chinese": 2,
+      "French": 1
     }
   },
   "total": {
-    "English": 257,
-    "Chinese": 13,
-    "Russian": 6,
-    "German": 6,
-    "French": 4,
-    "Indian": 1,
-    "Japanese": 3,
-    "Spanish": 4,
+    "English": 618,
+    "Russian": 19,
+    "Chinese": 23,
+    "German": 10,
+    "French": 6,
+    "Indian": 4,
+    "Japanese": 4,
+    "Spanish": 6,
+    "Vietnamese": 1,
     "Korean": 1
+  },
+  "venues": {
+    "2025": {
+      "city": "Stuttgart",
+      "country": "Germany"
+    },
+    "2023": {
+      "city": "Rome",
+      "country": "Italy"
+    },
+    "2021": {
+      "city": "Virtual",
+      "country": null
+    },
+    "2019": {
+      "city": "Natal",
+      "country": "Brazil"
+    },
+    "2017": {
+      "city": "Gothenburg",
+      "country": "Sweden"
+    },
+    "2015": {
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    "2013": {
+      "city": "Lake Placid",
+      "country": "USA"
+    },
+    "2011": {
+      "city": "Wroclaw",
+      "country": "Poland"
+    },
+    "2009": {
+      "city": "Montreal",
+      "country": "Canada"
+    },
+    "2007": {
+      "city": "Bremen",
+      "country": "Germany"
+    },
+    "2005": {
+      "city": "Tallinn",
+      "country": "Estonia"
+    },
+    "2003": {
+      "city": "Miami Beach",
+      "country": "USA"
+    },
+    "2002": {
+      "city": "Copenhagen",
+      "country": "Denmark"
+    },
+    "2000": {
+      "city": "Pittsburgh",
+      "country": "USA"
+    }
+  },
+  "rank_history": {
+    "2012": "B",
+    "2015": "B",
+    "2019": "B",
+    "2022": "B"
   }
 }
