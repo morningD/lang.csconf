@@ -1,6 +1,7 @@
 export interface ConferenceIndex {
   id: string
   title: string
+  description: string
   category: string
   rank: string
   total_papers: number
@@ -19,10 +20,13 @@ export interface ConferenceDetail {
   description: string
   category: string
   rank: string
-  dblp: string
+  dblp: string | string[]
   years: number[]
   by_year: Record<string, Record<string, number>>
   total: Record<string, number>
+  venues?: Record<string, { city: string; country: string }>
+  rank_history?: Record<string, string>
+  accept_rates?: Array<{ year: number; submitted: number; accepted: number }>
 }
 
 export interface GlobalSummary {

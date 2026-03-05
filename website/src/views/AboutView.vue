@@ -49,6 +49,20 @@ const { t } = useI18n()
             <li class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">•</span>
               <div>
+                <a href="https://github.com/Xovee/cs-conf-stats" target="_blank" rel="noopener" class="text-blue-400 hover:underline">CS Conference Statistics</a>
+                (Xovee) — Primary acceptance rate data
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://github.com/emeryberger/csconferences" target="_blank" rel="noopener" class="text-blue-400 hover:underline">csconferences</a>
+                (Emery Berger) — Additional acceptance rate data
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
                 <strong>name2nat</strong> — Name-to-nationality prediction library
               </div>
             </li>

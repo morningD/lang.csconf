@@ -9,6 +9,7 @@ const route = useRoute()
 const { t } = useI18n()
 const { fetchConference, fetchMeta } = useDataFetch()
 
+const baseUrl = import.meta.env.BASE_URL
 const conference = ref<ConferenceDetail | null>(null)
 const meta = ref<Meta | null>(null)
 const loading = ref(true)
@@ -28,6 +29,13 @@ const categoryNames: Record<string, string> = {
 }
 
 const confId = computed(() => route.params.id as string)
+
+const dblpLinks = computed(() => {
+  if (!conference.value) return []
+  const dblp = conference.value.dblp
+  const keys = Array.isArray(dblp) ? dblp : dblp ? [dblp] : []
+  return keys.map(k => ({ key: k, url: `https://dblp.org/db/conf/${k}/` }))
+})
 const areaMode = ref<'absolute' | 'ratio' | 'cumulative'>('absolute')
 
 onMounted(async () => {
@@ -90,12 +98,34 @@ const verdictGreeting = computed(() => {
   }
 })
 
+// Compute rank change markers for the chart
+const rankChangeMarkers = computed(() => {
+  if (!conference.value?.rank_history) return []
+  const rh = conference.value.rank_history
+  const versions = ['2012', '2015', '2019', '2022']
+  const markers: { year: number; from: string; to: string }[] = []
+
+  for (let i = 1; i < versions.length; i++) {
+    const prev = rh[versions[i - 1]!]
+    const curr = rh[versions[i]!]
+    if (prev && curr && prev !== curr) {
+      // Place the marker at the CCF version year
+      markers.push({ year: parseInt(versions[i]!), from: prev, to: curr })
+    } else if (!prev && curr) {
+      // New addition
+      markers.push({ year: parseInt(versions[i]!), from: '—', to: curr })
+    }
+  }
+  return markers
+})
+
 // Stacked area chart: language distribution over years
 const areaOption = computed(() => {
   if (!conference.value || !meta.value) return {}
   const c = conference.value
   const years = c.years.map(String)
   const colors = meta.value.language_colors
+  const venues = c.venues || {}
 
   // Get top languages for this conference
   const topLangs = Object.entries(c.total)
@@ -106,51 +136,201 @@ const areaOption = computed(() => {
   const mode = areaMode.value
   const showPct = mode === 'ratio'
 
+  // Build rank change lookup for x-axis labels
+  const rankOrder: Record<string, number> = { A: 3, B: 2, C: 1 }
+  const rankChangeByYear: Record<string, { from: string; to: string; isUpgrade: boolean }> = {}
+  for (const m of rankChangeMarkers.value) {
+    if (years.includes(String(m.year))) {
+      rankChangeByYear[String(m.year)] = {
+        from: m.from,
+        to: m.to,
+        isUpgrade: (rankOrder[m.to] || 0) > (rankOrder[m.from] || 0),
+      }
+    }
+  }
+
   return {
     tooltip: {
       trigger: 'axis',
       axisPointer: { type: 'cross' },
-      valueFormatter: showPct ? (v: number) => v + '%' : undefined,
+      formatter: (params: any) => {
+        if (!Array.isArray(params) || params.length === 0) return ''
+        const year = params[0].axisValue
+        const lines = params
+          .filter((p: any) => p.value != null && p.value !== 0)
+          .map((p: any) => {
+            const val = showPct ? p.value + '%' : p.value
+            return `${p.marker} ${p.seriesName}: <b>${val}</b>`
+          })
+        // Always show actual paper count as total
+        const yearTotal = Object.values(c.by_year[year] || {}).reduce((a: number, b: number) => a + b, 0)
+        lines.push(`<b>Total: ${yearTotal} papers</b>`)
+        // Show venue if available
+        const venue = venues[year]
+        if (venue?.city) {
+          lines.push(`📍 ${venue.city}, ${venue.country}`)
+        }
+        return `<b>${year}</b><br>` + lines.join('<br>')
+      },
     },
     legend: { data: topLangs, textStyle: { color: '#aaa' }, top: 0 },
-    grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
-    xAxis: { type: 'category', data: years, boundaryGap: false, axisLabel: { color: '#aaa' }, axisLine: { lineStyle: { color: '#444' } } },
+    grid: { left: '3%', right: '4%', bottom: '12%', containLabel: true },
+    xAxis: {
+      type: 'category',
+      data: years,
+      boundaryGap: false,
+      axisLabel: {
+        interval: 0,
+        formatter: (year: string) => {
+          const venue = venues[year]
+          if (venue?.country) {
+            return `{year|${year}}\n{country|${venue.country}}`
+          }
+          return `{year|${year}}`
+        },
+        rich: {
+          year: { color: '#bbb', fontSize: 12, lineHeight: 16 },
+          country: { color: '#666', fontSize: 10, lineHeight: 14 },
+        },
+      },
+      axisLine: { lineStyle: { color: '#444' } },
+    },
     yAxis: {
       type: 'value',
       axisLabel: { color: '#aaa', formatter: showPct ? '{value}%' : '{value}' },
       splitLine: { lineStyle: { color: '#333' } },
     },
-    series: topLangs.map(lang => {
-      const cumSum: number[] = []
-      return {
-        name: lang,
-        type: 'line',
-        stack: 'total',
-        areaStyle: { opacity: 0.6 },
-        emphasis: { focus: 'series' },
-        smooth: true,
-        data: years.map((y, i) => {
-          const val = c.by_year[y]?.[lang] || 0
-          if (mode === 'ratio') {
-            const yearTotal = Object.values(c.by_year[y] || {}).reduce((a: number, b: number) => a + b, 0)
-            return yearTotal > 0 ? Math.round(val / yearTotal * 1000) / 10 : 0
+    series: [
+      ...topLangs.map((lang) => {
+        const cumSum: number[] = []
+        return {
+          name: lang,
+          type: 'line' as const,
+          stack: 'total',
+          areaStyle: { opacity: 0.6 },
+          emphasis: { focus: 'series' },
+          smooth: true,
+          data: years.map((y, i) => {
+            const val = c.by_year[y]?.[lang] || 0
+            if (mode === 'ratio') {
+              const yearTotal = Object.values(c.by_year[y] || {}).reduce((a: number, b: number) => a + b, 0)
+              return yearTotal > 0 ? Math.round(val / yearTotal * 1000) / 10 : 0
+            }
+            if (mode === 'cumulative') {
+              const prev = i > 0 ? cumSum[i - 1]! : 0
+              cumSum.push(prev + val)
+              return cumSum[i]
+            }
+            return val
+          }),
+          itemStyle: { color: colors[lang] || '#95a5a6' },
+        }
+      }),
+      // Custom series to draw vertical dashed lines at CCF rank change years
+      ...(Object.keys(rankChangeByYear).length > 0 ? [{
+        type: 'custom' as const,
+        name: '',
+        silent: true,
+        z: 10,
+        tooltip: { show: false },
+        renderItem: (params: any, api: any) => {
+          const x = api.coord([api.value(0), 0])[0]
+          const isUpgrade = api.value(1) === 1
+          const color = isUpgrade ? '#22c55e' : '#ef4444'
+          const label = api.value(2) as string
+          const top = params.coordSys.y
+          const bottom = params.coordSys.y + params.coordSys.height
+          return {
+            type: 'group' as const,
+            children: [
+              {
+                type: 'line' as const,
+                shape: { x1: x, y1: top, x2: x, y2: bottom },
+                style: { stroke: color, lineDash: [4, 4], lineWidth: 1.5 },
+              },
+              {
+                type: 'text' as const,
+                x, y: top - 4,
+                style: {
+                  text: label,
+                  fill: color,
+                  fontSize: 10,
+                  fontWeight: 'bold',
+                  align: 'center' as const,
+                  verticalAlign: 'bottom' as const,
+                  backgroundColor: 'rgba(0,0,0,0.7)',
+                  padding: [2, 4],
+                  borderRadius: 2,
+                },
+              },
+            ],
           }
-          if (mode === 'cumulative') {
-            const prev = i > 0 ? cumSum[i - 1]! : 0
-            cumSum.push(prev + val)
-            return cumSum[i]
-          }
-          return val
-        }),
-        itemStyle: { color: colors[lang] || '#95a5a6' },
-      }
-    }),
+        },
+        encode: { x: 0 },
+        data: Object.entries(rankChangeByYear).map(([year, rc]) => [
+          years.indexOf(year),
+          rc.isUpgrade ? 1 : 0,
+          `CCF ${rc.from}→${rc.to}`,
+        ]),
+      }] : []),
+    ],
   }
 })
 
 const totalPapers = computed(() => {
   if (!conference.value) return 0
   return Object.values(conference.value.total).reduce((a, b) => a + b, 0)
+})
+
+const latestAcceptRate = computed(() => {
+  if (!conference.value?.accept_rates?.length) return null
+  const entry = conference.value.accept_rates[0]!
+  return {
+    year: entry.year,
+    rate: Math.round(entry.accepted / entry.submitted * 1000) / 10,
+  }
+})
+
+const showAcceptRateChart = ref(false)
+
+const acceptRateChartOption = computed(() => {
+  if (!conference.value?.accept_rates?.length) return {}
+  const entries = [...conference.value.accept_rates].sort((a, b) => a.year - b.year)
+  const years = entries.map(e => String(e.year))
+  const rates = entries.map(e => Math.round(e.accepted / e.submitted * 1000) / 10)
+
+  return {
+    grid: { left: 36, right: 12, top: 8, bottom: 24 },
+    xAxis: {
+      type: 'category',
+      data: years,
+      axisLabel: { color: '#aaa', fontSize: 10 },
+      axisLine: { lineStyle: { color: '#444' } },
+    },
+    yAxis: {
+      type: 'value',
+      axisLabel: { color: '#aaa', fontSize: 10, formatter: '{value}%' },
+      splitLine: { lineStyle: { color: '#333' } },
+    },
+    tooltip: {
+      trigger: 'axis',
+      formatter: (params: any) => {
+        const p = params[0]
+        const entry = entries[p.dataIndex]!
+        return `<b>${p.axisValue}</b><br>Rate: ${p.value}%<br>${entry.accepted} / ${entry.submitted}`
+      },
+    },
+    series: [{
+      type: 'line',
+      data: rates,
+      smooth: true,
+      symbol: 'circle',
+      symbolSize: 4,
+      lineStyle: { color: '#818cf8', width: 2 },
+      itemStyle: { color: '#818cf8' },
+      areaStyle: { color: 'rgba(129,140,248,0.15)' },
+    }],
+  }
 })
 
 // Fun facts
@@ -224,10 +404,37 @@ const funFacts = computed(() => {
               </span>
               <span class="text-sm px-3 py-1 rounded bg-gray-700 text-gray-300">{{ categoryNames[conference.category] || conference.category }}</span>
             </div>
-            <p class="text-gray-400">{{ conference.description }}</p>
+            <span class="text-gray-400">{{ conference.description }}</span>
+            <a
+              v-for="link in dblpLinks"
+              :key="link.key"
+              :href="link.url"
+              target="_blank"
+              rel="noopener"
+              class="inline-block ml-1.5 align-middle opacity-50 hover:opacity-100 transition-opacity"
+              :title="`DBLP: ${link.key}`"
+            ><img :src="`${baseUrl}dblp-logo.png`" class="w-4 h-4" alt="DBLP"></a>
             <div class="flex gap-6 mt-4 text-sm text-gray-500">
               <span>{{ t('conference.total_papers') }}: <strong class="text-white">{{ totalPapers.toLocaleString() }}</strong></span>
               <span>{{ t('conference.years_covered') }}: <strong class="text-white">{{ conference.years[0] }}–{{ conference.years[conference.years.length - 1] }}</strong></span>
+              <span
+                v-if="latestAcceptRate"
+                class="relative cursor-default"
+                @mouseenter="showAcceptRateChart = true"
+                @mouseleave="showAcceptRateChart = false"
+              >
+                {{ t('conference.accept_rate') }}: <strong class="text-white">{{ latestAcceptRate.rate }}%</strong> <span class="text-gray-600">({{ latestAcceptRate.year }})</span>
+                <Transition name="fade">
+                  <div
+                    v-if="showAcceptRateChart && conference!.accept_rates!.length > 1"
+                    class="absolute left-0 top-full mt-2 z-50 bg-gray-800 border border-gray-600 rounded-lg shadow-xl p-3"
+                    style="width: 340px"
+                  >
+                    <p class="text-xs text-gray-400 mb-1">{{ t('conference.accept_rate_history') }}</p>
+                    <v-chart :option="acceptRateChartOption" style="height: 160px" autoresize />
+                  </div>
+                </Transition>
+              </span>
             </div>
           </div>
           <div v-if="verdictGreeting" class="card px-5 py-4 bg-gradient-to-br from-indigo-900/40 to-purple-900/30 border-indigo-500/20 flex flex-col justify-center">
@@ -290,3 +497,9 @@ const funFacts = computed(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active { transition: opacity 0.15s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+</style>
+

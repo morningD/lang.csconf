@@ -11,6 +11,9 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 CLASSIFIED_DIR = DATA_DIR / "classified" / "authors"
 RAW_DIR = DATA_DIR / "raw"
 STATS_DIR = DATA_DIR / "stats"
+VENUES_DIR = RAW_DIR / "venues"
+CCF_RANK_HISTORY_FILE = DATA_DIR / "ccf-versions" / "ccf_rank_history.json"
+ACCEPT_RATES_FILE = RAW_DIR / "accept_rates.json"
 
 
 def load_conferences() -> list[dict]:
@@ -31,6 +34,40 @@ def load_all_classified() -> list[dict]:
     return all_data
 
 
+def load_venues() -> dict[str, dict]:
+    """Load venue data per conference. Returns {conf_id: {year: {city, country}}}."""
+    venues = {}
+    if not VENUES_DIR.exists():
+        return venues
+    for f in VENUES_DIR.glob("*.json"):
+        with open(f, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        conf_id = data.get("conference", "")
+        raw_venues = data.get("venues", {})
+        # Simplify: only keep city and country
+        venues[conf_id] = {
+            year: {"city": v.get("city", ""), "country": v.get("country", "")}
+            for year, v in raw_venues.items()
+        }
+    return venues
+
+
+def load_rank_history() -> dict[str, dict]:
+    """Load CCF rank history. Returns {conf_id: {version: rank}}."""
+    if not CCF_RANK_HISTORY_FILE.exists():
+        return {}
+    with open(CCF_RANK_HISTORY_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_accept_rates() -> dict[str, list[dict]]:
+    """Load acceptance rates. Returns {conf_id: [{year, submitted, accepted}]}."""
+    if not ACCEPT_RATES_FILE.exists():
+        return {}
+    with open(ACCEPT_RATES_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def compute_language_distribution(authors: list[dict]) -> dict[str, int]:
     """Count authors by language group."""
     counts = defaultdict(int)
@@ -45,6 +82,9 @@ def run(force: bool = False):
     conferences = load_conferences()
     conf_meta = {c["id"]: c for c in conferences}
     all_data = load_all_classified()
+    all_venues = load_venues()
+    rank_history = load_rank_history()
+    accept_rates = load_accept_rates()
 
     if not all_data:
         print("No classified data found. Run step 3 first.")
@@ -64,7 +104,7 @@ def run(force: bool = False):
     conf_years_seen = defaultdict(set)
 
     for entry in all_data:
-        conf_id = entry.get("conference", "")
+        conf_id = entry.get("conference", "").replace("/", "-")
         year = entry.get("year", 0)
         authors = entry.get("authors", [])
 
@@ -120,6 +160,15 @@ def run(force: bool = False):
             "by_year": {str(y): dict(langs) for y, langs in sorted(year_data.items())},
             "total": dict(_sum_dicts(year_data.values())),
         }
+        # Add venue data if available
+        if conf_id in all_venues:
+            conf_stats["venues"] = all_venues[conf_id]
+        # Add rank history if available
+        if conf_id in rank_history:
+            conf_stats["rank_history"] = rank_history[conf_id]
+        # Add acceptance rates if available
+        if conf_id in accept_rates:
+            conf_stats["accept_rates"] = accept_rates[conf_id]
         _write_json(STATS_DIR / "by_conference" / f"{conf_id}.json", conf_stats)
 
     # 4. by_category/{category}.json
@@ -163,6 +212,7 @@ def run(force: bool = False):
         index.append({
             "id": conf_id,
             "title": meta.get("title", conf_id),
+            "description": meta.get("description", ""),
             "category": meta.get("category", "MX"),
             "rank": meta.get("rank", "N"),
             "total_papers": sum(total.values()),
