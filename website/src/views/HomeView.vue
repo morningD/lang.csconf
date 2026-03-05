@@ -219,11 +219,12 @@ const searchSuggestions = computed(() => {
   if (!q) return []
   const matches = conferences.value
     .filter(c => c.id.toLowerCase().includes(q) || c.title.toLowerCase().includes(q) || c.description.toLowerCase().includes(q))
-  // Sort: ID matches first, then title matches, then description-only matches
+  const rankOrder: Record<string, number> = { A: 0, B: 1, C: 2, N: 3 }
+  // Sort: ID matches first, then title matches, then description-only matches; within same group, by CCF rank
   matches.sort((a, b) => {
     const aId = a.id.toLowerCase().includes(q) ? 0 : a.title.toLowerCase().includes(q) ? 1 : 2
     const bId = b.id.toLowerCase().includes(q) ? 0 : b.title.toLowerCase().includes(q) ? 1 : 2
-    return aId - bId || a.id.localeCompare(b.id)
+    return aId - bId || (rankOrder[a.rank] ?? 3) - (rankOrder[b.rank] ?? 3) || a.id.localeCompare(b.id)
   })
   return matches
 })
