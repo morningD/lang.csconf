@@ -7,10 +7,12 @@ from pathlib import Path
 
 import yaml
 
-CACHE_DIR = Path(__file__).parent / ".cache"
+PIPELINE_DIR = Path(__file__).parent
+CACHE_DIR = PIPELINE_DIR / ".cache"
 CCF_REPO_URL = "https://github.com/ccfddl/ccf-deadlines.git"
 CCF_REPO_DIR = CACHE_DIR / "ccf-deadlines"
-OUTPUT_FILE = Path(__file__).parent.parent / "data" / "raw" / "conferences.json"
+OUTPUT_FILE = PIPELINE_DIR.parent / "data" / "raw" / "conferences.json"
+MANUAL_CONFERENCES_FILE = PIPELINE_DIR / "manual_conferences.json"
 
 YEAR_MIN = 2010
 YEAR_MAX = 2025
@@ -19,7 +21,20 @@ YEAR_MAX = 2025
 CCF_CATEGORIES = {"AI", "DB", "NW", "SE", "CG", "CT", "HI", "SC", "DS", "MX"}
 CCF_RANKS = {"A", "B", "C", "N"}
 
+# Override conference IDs to resolve naming conflicts
+# Key: (generated_id, dblp_key) → new_id
+ID_OVERRIDES = {
+    ("FSE", "fse"): "FSE-CRYPTO",  # Fast Software Encryption (crypto) conflicts with SIGSOFT FSE
+}
+
+# Override wrong CCF ranks from upstream ccf-deadlines
+# Key: generated_id → corrected rank
+RANK_OVERRIDES = {
+    "ACMSIGGRAPHASIA": "N",  # Not in any CCF list; ccf-deadlines wrongly marks it as A
+}
+
 # Override wrong DBLP keys from upstream ccf-deadlines
+# Values can be a string (single key) or a list (multiple streams to merge)
 DBLP_KEY_OVERRIDES = {
     "icme": "icmcs",
     "icpc": "iwpc",
@@ -27,6 +42,9 @@ DBLP_KEY_OVERRIDES = {
     "eusipcolyon": "eusipco",
     "APWeb": "apweb",
     "ccs": "asiaccs",  # AsiaCCS was pulling ACM CCS data
+    "pkdd": ["pkdd", "ecml"],  # ECML-PKDD splits across two DBLP streams
+    "sigsoft": ["sigsoft", "esec"],  # ESEC/FSE merges both SIGSOFT FSE and ESEC streams
+    "cade": ["cade", "ijcar"],  # CADE/IJCAR alternates between CADE and IJCAR names
 }
 
 
@@ -72,6 +90,7 @@ def parse_conference_file(filepath: Path) -> list[dict]:
         if not dblp_key:
             continue
         dblp_key = DBLP_KEY_OVERRIDES.get(dblp_key, dblp_key)
+        # dblp_key can now be a string or a list of strings
 
         # Extract rank
         rank_info = conf.get("rank", {})
@@ -98,8 +117,16 @@ def parse_conference_file(filepath: Path) -> list[dict]:
         if not years:
             years = set(range(YEAR_MIN, YEAR_MAX + 1))
 
+        generated_id = conf.get("title", "").upper().replace(" ", "").replace("/", "-")
+        # Apply ID overrides for naming conflicts
+        dblp_for_lookup = dblp_key if isinstance(dblp_key, str) else dblp_key[0]
+        final_id = ID_OVERRIDES.get((generated_id, dblp_for_lookup), generated_id)
+
+        # Apply rank overrides for wrong upstream CCF ranks
+        ccf_rank = RANK_OVERRIDES.get(final_id, ccf_rank)
+
         conferences.append({
-            "id": conf.get("title", "").upper().replace(" ", ""),
+            "id": final_id,
             "title": conf.get("title", ""),
             "description": conf.get("description", ""),
             "category": category,
@@ -121,16 +148,26 @@ def run(force: bool = False):
         return []
 
     all_conferences = []
-    seen_dblp = set()
+    seen_ids = set()
 
     # Parse all YAML files under conference/
     for yml_file in sorted(conference_dir.rglob("*.yml")):
         confs = parse_conference_file(yml_file)
         for conf in confs:
-            # Deduplicate by dblp key
-            if conf["dblp"] not in seen_dblp:
-                seen_dblp.add(conf["dblp"])
+            # Deduplicate by conference id (dblp can be a list now)
+            if conf["id"] not in seen_ids:
+                seen_ids.add(conf["id"])
                 all_conferences.append(conf)
+
+    # Merge manual conferences (not in ccf-deadlines)
+    if MANUAL_CONFERENCES_FILE.exists():
+        with open(MANUAL_CONFERENCES_FILE, "r", encoding="utf-8") as f:
+            manual = json.load(f)
+        for conf in manual:
+            if conf["id"] not in seen_ids:
+                seen_ids.add(conf["id"])
+                all_conferences.append(conf)
+                print(f"  Added manual conference: {conf['id']} ({conf['title']})")
 
     # Sort by rank (A first) then by title
     rank_order = {"A": 0, "B": 1, "C": 2, "N": 3}

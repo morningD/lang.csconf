@@ -54,24 +54,34 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
 
     if conferences_filter:
         filter_set = {c.upper() for c in conferences_filter}
-        conferences = [
-            c for c in conferences
-            if c["id"].upper() in filter_set
-            or c["title"].upper() in filter_set
-            or (c.get("dblp") and c["dblp"].upper() in filter_set)
-        ]
+
+        def _matches_filter(c):
+            if c["id"].upper() in filter_set or c["title"].upper() in filter_set:
+                return True
+            dblp = c.get("dblp")
+            if not dblp:
+                return False
+            dblp_keys = dblp if isinstance(dblp, list) else [dblp]
+            return any(k.upper() in filter_set for k in dblp_keys)
+
+        conferences = [c for c in conferences if _matches_filter(c)]
 
     AUTHORS_DIR.mkdir(parents=True, exist_ok=True)
 
     # Build (dblp_key, year) pairs, keyed back to conf metadata
+    # A conference with multiple dblp keys produces multiple pairs for the same year
     pair_to_conf: dict[tuple[str, int], dict] = {}
     pairs: list[tuple[str, int]] = []
+    # Track which (conf_id, year) combos need fetching (for multi-key merge)
+    pending_conf_years: set[tuple[str, int]] = set()
     skipped = 0
 
     for conf in conferences:
-        dblp_key = conf.get("dblp")
-        if not dblp_key or dblp_key == "NO DBLP":
+        dblp_value = conf.get("dblp")
+        if not dblp_value or dblp_value == "NO DBLP":
             continue
+        # Normalize to list of keys
+        dblp_keys = dblp_value if isinstance(dblp_value, list) else [dblp_value]
         conf_id = conf["id"]
         safe_id = _safe_filename(conf_id)
         for year in EXPECTED_YEARS:
@@ -79,9 +89,11 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
             if not force and output_file.exists():
                 skipped += 1
                 continue
-            pair = (dblp_key, year)
-            pair_to_conf[pair] = conf
-            pairs.append(pair)
+            for dblp_key in dblp_keys:
+                pair = (dblp_key, year)
+                pair_to_conf[pair] = conf
+                pairs.append(pair)
+            pending_conf_years.add((conf_id, year))
 
     total = len(pairs)
     print(f"SPARQL crawl: {total} pairs to fetch, {skipped} already cached")
@@ -92,6 +104,8 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
 
     done = 0
     errors = 0
+    # Accumulate authors per (conf_id, year) for multi-key merging
+    accumulated: dict[tuple[str, int], list[dict]] = {}
 
     with tqdm(total=total, desc="SPARQL crawl") as pbar:
         for batch in _chunks(pairs, BATCH_SIZE):
@@ -126,29 +140,45 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
                     continue
 
                 conf_id = conf["id"]
-                safe_id = _safe_filename(conf_id)
                 authors = _extract_first_authors(papers)
-
-                result = {
-                    "conference": conf_id,
-                    "dblp": dblp_key,
-                    "year": year,
-                    "total_papers": len(authors),
-                    "authors": [
-                        {"name": a["name"], "title": a["title"], "year": year}
-                        for a in authors
-                    ],
-                }
-
-                output_file = AUTHORS_DIR / f"{safe_id}_{year}.json"
-                with open(output_file, "w", encoding="utf-8") as f:
-                    json.dump(result, f, indent=2, ensure_ascii=False)
-
-                done += 1
+                acc_key = (conf_id, year)
+                accumulated.setdefault(acc_key, []).extend(authors)
                 pbar.update(1)
 
             # Small delay between batches to be polite
             time.sleep(0.2)
+
+    # Write accumulated results, deduplicating papers by normalized title
+    for (conf_id, year), authors in accumulated.items():
+        safe_id = _safe_filename(conf_id)
+        # Dedup by normalized title (lowercase, collapsed whitespace)
+        seen_titles: set[str] = set()
+        unique_authors = []
+        for a in authors:
+            norm_title = " ".join(a["title"].lower().split())
+            if norm_title not in seen_titles:
+                seen_titles.add(norm_title)
+                unique_authors.append(a)
+
+        dblp_value = next(
+            c["dblp"] for c in conferences if c["id"] == conf_id
+        )
+        result = {
+            "conference": conf_id,
+            "dblp": dblp_value,
+            "year": year,
+            "total_papers": len(unique_authors),
+            "authors": [
+                {"name": a["name"], "title": a["title"], "year": year}
+                for a in unique_authors
+            ],
+        }
+
+        output_file = AUTHORS_DIR / f"{safe_id}_{year}.json"
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+
+        done += 1
 
     print(f"Done: {done} saved, {errors} errors, {skipped} cached")
 
