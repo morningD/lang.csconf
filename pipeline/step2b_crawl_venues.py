@@ -131,6 +131,13 @@ def _fetch_venues_from_html(dblp_key: str) -> dict[str, dict]:
         # Location follows the colon: "EuroSys 2024: Athens, Greece"
         colon_idx = text.find(": ")
         if colon_idx == -1:
+            # No colon — check for [virtual]/[online] annotation (e.g. "24th FM 2021 [virtual]")
+            if re.search(r"\[virtual\]|\[online\]", text, re.I):
+                venues[year] = {
+                    "city": "Virtual",
+                    "country": None,
+                    "h2_text": text,
+                }
             continue
         location_str = text[colon_idx + 2:].strip()
 

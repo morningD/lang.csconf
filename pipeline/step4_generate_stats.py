@@ -103,6 +103,14 @@ def run(force: bool = False):
     total_papers = 0
     conf_years_seen = defaultdict(set)
 
+    # Build venue-year sets for correcting publication year → conference year.
+    # DBLP yearOfPublication can be 1 year later than the actual conference year
+    # (e.g., FM 2024 proceedings published in 2025). Venue data from DBLP index
+    # pages uses the real conference year, so we use it as ground truth.
+    venue_years: dict[str, set[int]] = {}
+    for conf_id_v, year_map in all_venues.items():
+        venue_years[conf_id_v] = {int(y) for y in year_map}
+
     for entry in all_data:
         conf_id = entry.get("conference", "").replace("/", "-")
         year = entry.get("year", 0)
@@ -112,6 +120,13 @@ def run(force: bool = False):
 
         if not conf_id or not year:
             continue
+
+        # Fix publication year offset: if venue data says year-1 is a real
+        # conference year but year is not, shift back to the conference year.
+        if conf_id in venue_years:
+            vy = venue_years[conf_id]
+            if year not in vy and (year - 1) in vy:
+                year = year - 1
 
         total_papers += len(authors)
         conf_years_seen[conf_id].add(year)
