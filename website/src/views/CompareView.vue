@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
 import type { ConferenceIndex, ConferenceDetail, Meta } from '@/types'
@@ -14,18 +14,22 @@ const selectedData = ref<ConferenceDetail[]>([])
 const loading = ref(true)
 
 onMounted(async () => {
+  document.addEventListener('click', onClickOutside)
   try {
     const [confs, m] = await Promise.all([fetchConferencesIndex(), fetchMeta()])
     allConferences.value = confs
     meta.value = m
-    if (confs.length >= 2) {
-      selectedIds.value = [confs[0]!.id, confs[1]!.id]
-    }
+    // Default: pick two CCF-A conferences with contrasting language profiles
+    selectedIds.value = ['ACMMM', 'LICS']
   } catch (e) {
     console.error(e)
   } finally {
     loading.value = false
   }
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', onClickOutside)
 })
 
 watch(selectedIds, async (ids) => {
@@ -43,9 +47,47 @@ function removeConference(id: string) {
   selectedIds.value = selectedIds.value.filter(i => i !== id)
 }
 
+const searchQuery = ref('')
+const showDropdown = ref(false)
+const dropdownRef = ref<HTMLElement | null>(null)
+
 const availableConferences = computed(() =>
-  allConferences.value.filter(c => !selectedIds.value.includes(c.id))
+  allConferences.value
+    .filter(c => !selectedIds.value.includes(c.id))
+    .sort((a, b) => a.id.localeCompare(b.id))
 )
+
+const filteredConferences = computed(() => {
+  const q = searchQuery.value.trim().toLowerCase()
+  if (!q) return availableConferences.value
+  const matches = availableConferences.value.filter(c =>
+    c.id.toLowerCase().includes(q) || c.title.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)
+  )
+  matches.sort((a, b) => {
+    const aId = a.id.toLowerCase().includes(q) ? 0 : a.title.toLowerCase().includes(q) ? 1 : 2
+    const bId = b.id.toLowerCase().includes(q) ? 0 : b.title.toLowerCase().includes(q) ? 1 : 2
+    return aId - bId || a.id.localeCompare(b.id)
+  })
+  return matches
+})
+
+function selectConference(id: string) {
+  addConference(id)
+  searchQuery.value = ''
+  showDropdown.value = false
+}
+
+function getRankColor(rank: string) {
+  const colors: Record<string, string> = { A: '#e74c3c', B: '#f39c12', C: '#3498db', N: '#95a5a6' }
+  return colors[rank] || '#95a5a6'
+}
+
+function onClickOutside(e: MouseEvent) {
+  if (dropdownRef.value && !dropdownRef.value.contains(e.target as Node)) {
+    showDropdown.value = false
+  }
+}
+
 
 // Radar chart
 const radarOption = computed(() => {
@@ -151,16 +193,35 @@ const barOption = computed(() => {
           <button @click="removeConference(id)" class="text-gray-400 hover:text-red-400">×</button>
         </div>
 
-        <select
-          v-if="selectedIds.length < 4"
-          @change="addConference(($event.target as HTMLSelectElement).value); ($event.target as HTMLSelectElement).value = ''"
-          class="bg-gray-800 text-gray-400 text-sm rounded-lg px-3 py-1.5 border border-gray-600 cursor-pointer"
-        >
-          <option value="">{{ t('compare.add_conference') }}...</option>
-          <option v-for="conf in availableConferences" :key="conf.id" :value="conf.id">
-            {{ conf.title }} ({{ conf.rank }})
-          </option>
-        </select>
+        <div v-if="selectedIds.length < 4" ref="dropdownRef" class="relative">
+          <input
+            v-model="searchQuery"
+            @focus="showDropdown = true"
+            :placeholder="`${t('compare.add_conference')}...`"
+            class="bg-gray-800 text-gray-300 text-sm rounded-lg px-3 py-1.5 border border-gray-600 w-56 outline-none focus:border-blue-500"
+          >
+          <ul
+            v-show="showDropdown"
+            class="absolute left-0 top-full mt-1 z-50 bg-gray-800 border border-gray-600 rounded-lg shadow-xl max-h-64 overflow-y-auto w-96 p-0 list-none"
+          >
+            <li
+              v-for="conf in filteredConferences"
+              :key="conf.id"
+              @mousedown.prevent="selectConference(conf.id)"
+              class="px-3 py-1.5 text-sm hover:bg-gray-700 cursor-pointer flex items-center justify-between gap-2"
+            >
+              <span class="truncate">
+                <span class="text-white font-medium">{{ conf.id }}</span>
+                <span class="text-gray-500 ml-1 text-xs">{{ conf.description }}</span>
+              </span>
+              <span
+                class="text-xs font-bold px-1.5 py-0.5 rounded shrink-0"
+                :style="{ backgroundColor: getRankColor(conf.rank) + '22', color: getRankColor(conf.rank) }"
+              >{{ conf.rank }}</span>
+            </li>
+            <li v-if="filteredConferences.length === 0" class="px-3 py-2 text-sm text-gray-500">No matches</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Charts -->

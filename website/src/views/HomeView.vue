@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
 import type { Meta, GlobalSummary, ConferenceIndex, CCFRank } from '@/types'
 
 const { t } = useI18n()
+const router = useRouter()
 const { fetchMeta, fetchGlobalSummary, fetchConferencesIndex } = useDataFetch()
 
 const meta = ref<Meta | null>(null)
@@ -85,6 +87,7 @@ function getSortLabel(opt: { value: string; label: string }) {
 const trendMode = ref<'absolute' | 'ratio'>('absolute')
 
 onMounted(async () => {
+  document.addEventListener('click', onSearchClickOutside)
   try {
     const [m, s, c] = await Promise.all([
       fetchMeta(),
@@ -101,6 +104,10 @@ onMounted(async () => {
   }
 })
 
+onUnmounted(() => {
+  document.removeEventListener('click', onSearchClickOutside)
+})
+
 const filteredConferences = computed(() => {
   let result = conferences.value
   if (activeRanks.value.size < 4) {
@@ -111,7 +118,7 @@ const filteredConferences = computed(() => {
   }
   if (searchQuery.value) {
     const q = searchQuery.value.toLowerCase()
-    result = result.filter(c => c.title.toLowerCase().includes(q) || c.id.toLowerCase().includes(q))
+    result = result.filter(c => c.title.toLowerCase().includes(q) || c.id.toLowerCase().includes(q) || c.description.toLowerCase().includes(q))
   }
   if (sortKey.value !== 'default') {
     const dir = sortDir.value === 'desc' ? 1 : -1
@@ -204,6 +211,35 @@ function getLangColor(lang: string) {
   return meta.value?.language_colors[lang] || '#95a5a6'
 }
 
+const showSearchSuggestions = ref(false)
+const searchDropdownRef = ref<HTMLElement | null>(null)
+
+const searchSuggestions = computed(() => {
+  const q = searchQuery.value.trim().toLowerCase()
+  if (!q) return []
+  const matches = conferences.value
+    .filter(c => c.id.toLowerCase().includes(q) || c.title.toLowerCase().includes(q) || c.description.toLowerCase().includes(q))
+  // Sort: ID matches first, then title matches, then description-only matches
+  matches.sort((a, b) => {
+    const aId = a.id.toLowerCase().includes(q) ? 0 : a.title.toLowerCase().includes(q) ? 1 : 2
+    const bId = b.id.toLowerCase().includes(q) ? 0 : b.title.toLowerCase().includes(q) ? 1 : 2
+    return aId - bId || a.id.localeCompare(b.id)
+  })
+  return matches
+})
+
+function goToConference(id: string) {
+  searchQuery.value = ''
+  showSearchSuggestions.value = false
+  router.push(`/conference/${id}`)
+}
+
+function onSearchClickOutside(e: MouseEvent) {
+  if (searchDropdownRef.value && !searchDropdownRef.value.contains(e.target as Node)) {
+    showSearchSuggestions.value = false
+  }
+}
+
 </script>
 
 <template>
@@ -224,11 +260,34 @@ function getLangColor(lang: string) {
 
           <!-- Search & Filters -->
           <div class="flex flex-col md:flex-row gap-4 mb-6 items-center justify-center">
-            <input
-              v-model="searchQuery"
-              :placeholder="t('home.search_placeholder')"
-              class="w-full md:w-80 px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
-            />
+            <div ref="searchDropdownRef" class="relative w-full md:w-96">
+              <input
+                v-model="searchQuery"
+                @focus="showSearchSuggestions = true"
+                :placeholder="t('home.search_placeholder')"
+                class="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+              />
+              <ul
+                v-show="showSearchSuggestions && searchSuggestions.length > 0"
+                class="absolute left-0 right-0 top-full mt-1 z-50 bg-gray-800 border border-gray-600 rounded-lg shadow-xl max-h-72 overflow-y-auto p-0 list-none"
+              >
+                <li
+                  v-for="conf in searchSuggestions"
+                  :key="conf.id"
+                  @mousedown.prevent="goToConference(conf.id)"
+                  class="px-4 py-2 text-sm hover:bg-gray-700 cursor-pointer flex items-center justify-between"
+                >
+                  <span class="truncate">
+                    <span class="text-white font-medium">{{ conf.id }}</span>
+                    <span class="text-gray-500 ml-2 text-xs">{{ conf.description }}</span>
+                  </span>
+                  <span
+                    class="text-xs font-bold px-1.5 py-0.5 rounded ml-2 shrink-0"
+                    :style="{ backgroundColor: getRankColor(conf.rank) + '22', color: getRankColor(conf.rank) }"
+                  >{{ conf.rank }}</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <!-- Rank Tabs (multi-select) -->
