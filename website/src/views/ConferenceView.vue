@@ -102,17 +102,15 @@ const verdictGreeting = computed(() => {
 const rankChangeMarkers = computed(() => {
   if (!conference.value?.rank_history) return []
   const rh = conference.value.rank_history
-  const versions = ['2012', '2015', '2019', '2022']
+  const versions = ['2011', '2012', '2015', '2019', '2022']
   const markers: { year: number; from: string; to: string }[] = []
 
   for (let i = 1; i < versions.length; i++) {
     const prev = rh[versions[i - 1]!]
     const curr = rh[versions[i]!]
     if (prev && curr && prev !== curr) {
-      // Place the marker at the CCF version year
       markers.push({ year: parseInt(versions[i]!), from: prev, to: curr })
     } else if (!prev && curr) {
-      // New addition
       markers.push({ year: parseInt(versions[i]!), from: '—', to: curr })
     }
   }

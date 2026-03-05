@@ -136,6 +136,13 @@ def run(force: bool = False):
         "year_range": [2010, 2025],
         "languages": LANGUAGE_GROUPS,
         "language_colors": LANGUAGE_COLORS,
+        "ccf_versions": {
+            "2011": {"name": "2nd Edition (2011)", "partial": True, "note": "Partial: DS, NW, SC, CG(C-only). Source: .doc file, may be inaccurate."},
+            "2012": {"name": "3rd Edition (2012)", "partial": False},
+            "2015": {"name": "4th Edition (2015)", "partial": False},
+            "2019": {"name": "5th Edition (2019)", "partial": False},
+            "2022": {"name": "6th Edition (2022)", "partial": False},
+        },
     }
     _write_json(STATS_DIR / "meta.json", meta_json)
 
