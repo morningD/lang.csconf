@@ -28,9 +28,15 @@ ID_OVERRIDES = {
 }
 
 # Override wrong CCF ranks from upstream ccf-deadlines
-# Key: generated_id → corrected rank
+# Key: final_id → corrected rank
 RANK_OVERRIDES = {
     "ACMSIGGRAPHASIA": "N",  # Not in any CCF list; ccf-deadlines wrongly marks it as A
+}
+
+# Override titles/IDs for co-located conferences where CCF only recognizes one
+# Key: final_id → {"id": new_id, "title": new_title}
+CONF_OVERRIDES = {
+    "UBICOMP-ISWC": {"id": "UBICOMP", "title": "UbiComp"},
 }
 
 # Override wrong DBLP keys from upstream ccf-deadlines
@@ -125,9 +131,14 @@ def parse_conference_file(filepath: Path) -> list[dict]:
         # Apply rank overrides for wrong upstream CCF ranks
         ccf_rank = RANK_OVERRIDES.get(final_id, ccf_rank)
 
+        # Apply conference overrides (rename co-located conferences)
+        conf_override = CONF_OVERRIDES.get(final_id, {})
+        final_id = conf_override.get("id", final_id)
+        title = conf_override.get("title", conf.get("title", ""))
+
         conferences.append({
             "id": final_id,
-            "title": conf.get("title", ""),
+            "title": title,
             "description": conf.get("description", ""),
             "category": category,
             "rank": ccf_rank,
