@@ -133,6 +133,14 @@ const rankChangeMarkers = computed(() => {
 })
 
 // Stacked area chart: language distribution over years
+const hasVirtualYears = computed(() => {
+  if (!conference.value) return false
+  const venues = conference.value.venues || {}
+  return Object.values(venues).some((v: any) =>
+    v?.city === 'Virtual' || /Virtual|Online/i.test(v?.country || '')
+  )
+})
+
 const areaOption = computed(() => {
   if (!conference.value || !meta.value) return {}
   const c = conference.value
@@ -197,7 +205,14 @@ const areaOption = computed(() => {
         formatter: (year: string) => {
           const venue = venues[year]
           if (venue?.country) {
-            return `{year|${year}}\n{country|${venue.country}}`
+            const isVirtual = venue.city === 'Virtual' || /Virtual|Online/i.test(venue.country)
+            let label = venue.country
+              .replace(/\s*\(Virtual.*?\)/gi, '')
+              .replace(/\s*\(Online\)/gi, '')
+              .replace(/\s*\(hybrid\)/gi, '')
+            if (!label || label === 'None') label = isVirtual ? 'Virtual' : ''
+            else if (isVirtual) label += '*'
+            return `{year|${year}}\n{country|${label || venue.country}}`
           }
           return `{year|${year}}`
         },
@@ -513,6 +528,7 @@ const funFacts = computed(() => {
               </div>
             </div>
             <v-chart :option="areaOption" style="height: 400px" autoresize />
+            <p v-if="hasVirtualYears" class="text-xs text-gray-500 mt-1 text-right">* Virtual / Online</p>
           </div>
         </div>
 
