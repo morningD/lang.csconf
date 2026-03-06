@@ -424,7 +424,7 @@ const funFacts = computed(() => {
       <!-- Conference Detail -->
       <template v-else-if="conference">
         <!-- Header + Verdict -->
-        <div class="grid lg:grid-cols-3 items-start gap-6 mb-8">
+        <div class="grid lg:grid-cols-3 items-stretch gap-6 mb-8">
           <div class="lg:col-span-2">
             <div class="flex items-center gap-3 mb-2">
               <h1 class="text-3xl md:text-4xl font-bold text-white">{{ conference.title }}</h1>
