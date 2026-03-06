@@ -31,39 +31,67 @@ const { t } = useI18n()
         <!-- Data Sources -->
         <section class="card p-6 bg-gray-800/50 border-gray-700/50">
           <h2 class="text-xl font-semibold text-white mb-3">{{ t('about.data_sources') }}</h2>
+          <p class="text-gray-400 text-sm mb-3">{{ t('about.data_sources_papers') }}</p>
           <ul class="space-y-3 text-gray-300">
             <li class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">•</span>
               <div>
                 <a href="https://dblp.org" target="_blank" rel="noopener" class="text-blue-400 hover:underline">DBLP</a>
-                — Computer science bibliography for author and publication data
+                — {{ t('about.src_dblp') }}
               </div>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">•</span>
               <div>
                 <a href="https://github.com/ccfddl/ccf-deadlines" target="_blank" rel="noopener" class="text-blue-400 hover:underline">CCF Deadlines</a>
-                — Conference list and CCF rankings
+                — {{ t('about.src_ccfddl') }}
               </div>
             </li>
+          </ul>
+          <p class="text-gray-400 text-sm mt-4 mb-3">{{ t('about.data_sources_classifier') }}</p>
+          <ul class="space-y-3 text-gray-300">
             <li class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">•</span>
               <div>
-                <a href="https://github.com/Xovee/cs-conf-stats" target="_blank" rel="noopener" class="text-blue-400 hover:underline">CS Conference Statistics</a>
-                (Xovee) — Primary acceptance rate data
+                <a href="https://github.com/zafercavdar/fasttext-langdetect" target="_blank" rel="noopener" class="text-blue-400 hover:underline">fast-langdetect</a>
+                — {{ t('about.src_fasttext') }}
+              </div>
+            </li>
+          </ul>
+          <p class="text-gray-400 text-sm mt-4 mb-3">{{ t('about.data_sources_accept') }}</p>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://github.com/Xovee/cs-conf-stats" target="_blank" rel="noopener" class="text-blue-400 hover:underline">cs-conf-stats</a>
+                (Xovee)
               </div>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">•</span>
               <div>
                 <a href="https://github.com/emeryberger/csconferences" target="_blank" rel="noopener" class="text-blue-400 hover:underline">csconferences</a>
-                (Emery Berger) — Additional acceptance rate data
+                (Emery Berger)
               </div>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">•</span>
               <div>
-                <strong>name2nat</strong> — Name-to-nationality prediction library
+                <a href="https://github.com/lixin4ever/Conference-Acceptance-Rate" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Conference-Acceptance-Rate</a>
+                (lixin4ever)
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://github.com/puzhuoliu/Computer-Security-Conference-Acceptance-Rate" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Security Conference Acceptance Rate</a>
+                (puzhuoliu)
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://www.conferences-computer.science/" target="_blank" rel="noopener" class="text-blue-400 hover:underline">conferences-computer.science</a>
               </div>
             </li>
           </ul>
