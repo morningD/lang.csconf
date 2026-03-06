@@ -10,13 +10,14 @@ SPARQL_ENDPOINT = "https://sparql.dblp.org/sparql"
 QUERY_TEMPLATE = """\
 PREFIX dblp: <https://dblp.org/rdf/schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?stream ?year ?paper ?title ?authorName ?ordinal WHERE {{
+SELECT ?stream ?year ?paper ?title ?venue ?authorName ?ordinal WHERE {{
   VALUES (?stream ?year) {{
 {values}
   }}
   ?paper dblp:publishedInStream ?stream .
   ?paper dblp:yearOfPublication ?year .
   ?paper dblp:title ?title .
+  ?paper dblp:publishedIn ?venue .
   ?paper dblp:hasSignature ?sig .
   ?sig dblp:signatureOrdinal ?ordinal .
   ?sig dblp:signatureDblpName ?authorName .
@@ -25,6 +26,12 @@ SELECT ?stream ?year ?paper ?title ?authorName ?ordinal WHERE {{
 
 # Regex to extract 2-digit year suffix from DBLP paper keys (e.g., "conf/acl/FooBar24" → 24)
 _URI_YEAR_RE = re.compile(r"(\d{2})[a-z]?$")
+
+# Venue patterns to exclude (workshop/companion proceedings mixed into main conf stream)
+_EXCLUDED_VENUE_RE = re.compile(
+    r"\bWorkshop|\bCompanion\b|\bTutorial\b",
+    re.IGNORECASE,
+)
 
 
 def _build_values_block(pairs: list[tuple[str, int]]) -> str:
@@ -77,8 +84,13 @@ def fetch_batch_sparql(
         key = stream_uri.removeprefix(stream_prefix)
         year = int(row["year"]["value"])
         title = row["title"]["value"]
+        venue = row.get("venue", {}).get("value", "")
         author_name = _clean_author_name(row["authorName"]["value"])
         ordinal = int(row["ordinal"]["value"])
+
+        # Skip workshop/companion proceedings mixed into the main conf stream
+        if _EXCLUDED_VENUE_RE.search(venue):
+            continue
 
         # Fix DBLP yearOfPublication bugs: extract real year from paper URI key.
         # E.g., conf/acl/ChangLLWWL24 → 2024, but DBLP says yearOfPublication=2014.
