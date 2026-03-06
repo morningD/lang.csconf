@@ -491,6 +491,7 @@ function onSearchClickOutside(e: MouseEvent) {
               <v-chart :option="trendOption" style="height: 370px" autoresize />
             </div>
           </div>
+          <p class="text-xs text-gray-500 mt-3 text-center">{{ t('home.data_lag_note') }}</p>
         </div>
       </section>
     </template>

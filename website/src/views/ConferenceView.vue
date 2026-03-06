@@ -204,15 +204,15 @@ const areaOption = computed(() => {
         interval: 0,
         formatter: (year: string) => {
           const venue = venues[year]
-          if (venue?.country) {
-            const isVirtual = venue.city === 'Virtual' || /Virtual|Online/i.test(venue.country)
-            let label = venue.country
+          if (venue?.country || venue?.city) {
+            const isVirtual = venue.city === 'Virtual' || /Virtual|Online/i.test(venue.country || '')
+            let label = (venue.country || '')
               .replace(/\s*\(Virtual.*?\)/gi, '')
               .replace(/\s*\(Online\)/gi, '')
               .replace(/\s*\(hybrid\)/gi, '')
-            if (!label || label === 'None') label = isVirtual ? 'Virtual' : ''
+            if (!label || label === 'None') label = isVirtual ? '*' : ''
             else if (isVirtual) label += '*'
-            return `{year|${year}}\n{country|${label || venue.country}}`
+            if (label) return `{year|${year}}\n{country|${label}}`
           }
           return `{year|${year}}`
         },
