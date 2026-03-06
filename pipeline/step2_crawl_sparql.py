@@ -18,7 +18,7 @@ RAW_DIR = DATA_DIR / "raw"
 AUTHORS_DIR = RAW_DIR / "authors"
 CONFERENCES_FILE = RAW_DIR / "conferences.json"
 
-EXPECTED_YEARS = list(range(2010, 2026))
+EXPECTED_YEARS = list(range(2010, 2027))
 BATCH_SIZE = 5
 MAX_RETRIES = 3
 
