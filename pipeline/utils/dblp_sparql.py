@@ -28,8 +28,9 @@ SELECT ?stream ?year ?paper ?title ?venue ?authorName ?ordinal WHERE {{
 _URI_YEAR_RE = re.compile(r"(\d{2})[a-z]?$")
 
 # Venue patterns to exclude (workshop/companion proceedings mixed into main conf stream)
+# Also excludes DBLP "@" workshop notation (e.g., "MLSA@PKDD/ECML")
 _EXCLUDED_VENUE_RE = re.compile(
-    r"\bWorkshop|\bCompanion\b|\bTutorial\b",
+    r"\bWorkshop|\bCompanion\b|\bTutorial\b|@",
     re.IGNORECASE,
 )
 
