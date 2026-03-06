@@ -207,7 +207,7 @@ const chartOption = computed(() => {
             </div>
           </div>
           <v-chart :option="chartOption" style="height: 450px" autoresize />
-          <p class="text-xs text-gray-500 mt-2 text-right">{{ t('home.data_lag_note') }}</p>
+          <p class="text-xs text-gray-500 mt-2 text-right">{{ t('home.data_lag_note', { year: meta?.year_range?.[1] ?? 2025 }) }}</p>
         </div>
       </div>
 

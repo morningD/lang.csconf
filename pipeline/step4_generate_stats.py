@@ -151,7 +151,7 @@ def run(force: bool = False):
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "total_papers": total_papers,
         "total_conferences": len(conf_years_seen),
-        "year_range": [2010, 2025],
+        "year_range": [min(global_by_year), max(global_by_year)] if global_by_year else [2010, 2025],
         "languages": LANGUAGE_GROUPS,
         "language_colors": LANGUAGE_COLORS,
         "ccf_versions": {
