@@ -1,5 +1,6 @@
 """DBLP SPARQL client — batch-query papers + authors via sparql.dblp.org."""
 
+import re
 from collections import defaultdict
 
 import requests
@@ -9,7 +10,7 @@ SPARQL_ENDPOINT = "https://sparql.dblp.org/sparql"
 QUERY_TEMPLATE = """\
 PREFIX dblp: <https://dblp.org/rdf/schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?stream ?year ?title ?authorName ?ordinal WHERE {{
+SELECT ?stream ?year ?paper ?title ?authorName ?ordinal WHERE {{
   VALUES (?stream ?year) {{
 {values}
   }}
@@ -21,6 +22,9 @@ SELECT ?stream ?year ?title ?authorName ?ordinal WHERE {{
   ?sig dblp:signatureDblpName ?authorName .
 }}
 """
+
+# Regex to extract 2-digit year suffix from DBLP paper keys (e.g., "conf/acl/FooBar24" → 24)
+_URI_YEAR_RE = re.compile(r"(\d{2})[a-z]?$")
 
 
 def _build_values_block(pairs: list[tuple[str, int]]) -> str:
@@ -75,6 +79,17 @@ def fetch_batch_sparql(
         title = row["title"]["value"]
         author_name = _clean_author_name(row["authorName"]["value"])
         ordinal = int(row["ordinal"]["value"])
+
+        # Fix DBLP yearOfPublication bugs: extract real year from paper URI key.
+        # E.g., conf/acl/ChangLLWWL24 → 2024, but DBLP says yearOfPublication=2014.
+        paper_uri = row["paper"]["value"]
+        paper_key = paper_uri.rsplit("/", 1)[-1]
+        m = _URI_YEAR_RE.search(paper_key)
+        if m:
+            suffix = int(m.group(1))
+            uri_year = 2000 + suffix if suffix <= 99 else 1900 + suffix
+            if uri_year != year and abs(uri_year - year) > 1:
+                year = uri_year
 
         paper_authors[(key, year, title)].append({
             "name": author_name,

@@ -138,7 +138,18 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
 
             for pair, papers in results.items():
                 dblp_key, year = pair
+                # The SPARQL result may re-bucket papers to a different year
+                # (e.g., DBLP tags ACL 2024 Findings as yearOfPublication=2014).
+                # Look up conf metadata from the queried pair first, then fall
+                # back to the same dblp_key with the corrected year.
                 conf = pair_to_conf.get(pair)
+                if conf is None:
+                    # Paper was re-bucketed to a year we didn't query for this key;
+                    # find conf metadata from any pair with the same dblp_key.
+                    conf = next(
+                        (c for (k, _), c in pair_to_conf.items() if k == dblp_key),
+                        None,
+                    )
                 if conf is None:
                     pbar.update(1)
                     continue
