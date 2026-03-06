@@ -3,11 +3,11 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
-import type { Meta, GlobalSummary, ConferenceIndex, CCFRank } from '@/types'
+import type { Meta, GlobalSummary, ConferenceIndex, CCFRank, RankStats } from '@/types'
 
 const { t } = useI18n()
 const router = useRouter()
-const { fetchMeta, fetchGlobalSummary, fetchConferencesIndex } = useDataFetch()
+const { fetchMeta, fetchGlobalSummary, fetchConferencesIndex, fetchRank } = useDataFetch()
 
 const meta = ref<Meta | null>(null)
 const summary = ref<GlobalSummary | null>(null)
@@ -87,17 +87,55 @@ function getSortLabel(opt: { value: string; label: string }) {
 }
 const trendMode = ref<'absolute' | 'ratio'>('absolute')
 
+// Chart rank filter (separate from card filter)
+const rankStatsMap = ref<Record<string, RankStats>>({})
+const chartRanks = ref<Set<CCFRank>>(new Set(['A', 'B', 'C', 'N']))
+function toggleChartRank(rank: CCFRank) {
+  const s = new Set(chartRanks.value)
+  if (s.has(rank)) {
+    if (s.size > 1) s.delete(rank)
+  } else {
+    s.add(rank)
+  }
+  chartRanks.value = s
+}
+
+// Merge selected rank data into a unified summary
+const chartSummary = computed(() => {
+  const total: Record<string, number> = {}
+  const byYear: Record<string, Record<string, number>> = {}
+  for (const rank of chartRanks.value) {
+    const rs = rankStatsMap.value[rank]
+    if (!rs) continue
+    for (const [lang, count] of Object.entries(rs.total)) {
+      total[lang] = (total[lang] || 0) + count
+    }
+    for (const [year, langs] of Object.entries(rs.by_year)) {
+      if (!byYear[year]) byYear[year] = {}
+      for (const [lang, count] of Object.entries(langs)) {
+        byYear[year][lang] = (byYear[year][lang] || 0) + count
+      }
+    }
+  }
+  return { total, by_year: byYear }
+})
+
 onMounted(async () => {
   document.addEventListener('click', onSearchClickOutside)
   try {
-    const [m, s, c] = await Promise.all([
+    const [m, s, c, rA, rB, rC, rN] = await Promise.all([
       fetchMeta(),
       fetchGlobalSummary(),
       fetchConferencesIndex(),
+      fetchRank('A'),
+      fetchRank('B'),
+      fetchRank('C'),
+      fetchRank('N'),
     ])
     meta.value = m
     summary.value = s
     conferences.value = c
+    rankStatsMap.value = { A: rA, B: rB, C: rC, N: rN }
   } catch (e) {
     console.error('Failed to load data:', e)
   } finally {
@@ -143,8 +181,9 @@ const filteredConferences = computed(() => {
 
 // Pie chart data
 const pieOption = computed(() => {
-  if (!summary.value || !meta.value) return {}
-  const total = summary.value.total
+  if (!meta.value) return {}
+  const total = chartSummary.value.total
+  if (Object.keys(total).length === 0) return {}
   const colors = meta.value.language_colors
   const data = Object.entries(total)
     .sort((a, b) => b[1] - a[1])
@@ -165,11 +204,13 @@ const pieOption = computed(() => {
 
 // Trend line chart
 const trendOption = computed(() => {
-  if (!summary.value || !meta.value) return {}
-  const byYear = summary.value.by_year
+  if (!meta.value) return {}
+  const byYear = chartSummary.value.by_year
+  const total = chartSummary.value.total
+  if (Object.keys(total).length === 0) return {}
   const years = Object.keys(byYear).sort()
   const colors = meta.value.language_colors
-  const topLangs = Object.entries(summary.value.total)
+  const topLangs = Object.entries(total)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 6)
     .map(([lang]) => lang)
@@ -410,7 +451,20 @@ function onSearchClickOutside(e: MouseEvent) {
       <!-- Global Distribution -->
       <section class="py-12 px-4">
         <div class="max-w-7xl mx-auto">
-          <h2 class="section-title text-center mb-8">{{ t('home.global_distribution') }}</h2>
+          <h2 class="section-title text-center mb-4">{{ t('home.global_distribution') }}</h2>
+          <div class="flex justify-center gap-2 mb-6">
+            <button
+              v-for="rank in ranks"
+              :key="'chart-' + rank"
+              @click="toggleChartRank(rank)"
+              class="px-3 py-1 rounded-lg text-xs font-medium transition-all"
+              :class="chartRanks.has(rank)
+                ? 'bg-blue-500 text-white'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'"
+            >
+              CCF {{ rank }}
+            </button>
+          </div>
           <div class="grid md:grid-cols-2 gap-8">
             <div class="card p-6 bg-gray-800/50 border-gray-700/50">
               <v-chart :option="pieOption" style="height: 400px" autoresize />
