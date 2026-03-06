@@ -51,6 +51,7 @@ DBLP_KEY_OVERRIDES = {
     "pkdd": ["pkdd", "ecml"],  # ECML-PKDD splits across two DBLP streams
     "sigsoft": ["sigsoft", "esec"],  # ESEC/FSE merges both SIGSOFT FSE and ESEC streams
     "cade": ["cade", "ijcar"],  # CADE/IJCAR alternates between CADE and IJCAR names
+    "visualization": ["visualization", "vast", "infovis", "scivis"],  # IEEE VIS splits across sub-conference streams
 }
 
 

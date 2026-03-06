@@ -368,7 +368,12 @@
     "description": "IEEE Visualization Conference",
     "category": "CG",
     "rank": "A",
-    "dblp": "visualization",
+    "dblp": [
+      "visualization",
+      "vast",
+      "infovis",
+      "scivis"
+    ],
     "years": [
       2023,
       2025
@@ -735,8 +740,8 @@
   },
   {
     "id": "USENIXATC",
-    "title": "ACM SIGOPS ATC",
-    "description": "ACM SIGOPS Annual Technical Conference",
+    "title": "USENIX ATC",
+    "description": "USENIX Annual Technical Conference",
     "category": "DS",
     "rank": "A",
     "dblp": "usenix",
@@ -4157,17 +4162,6 @@
     ]
   },
   {
-    "id": "ICVRV",
-    "title": "ICVRV",
-    "description": "International Conference on Virtual Reality and Visualization",
-    "category": "CG",
-    "rank": "C",
-    "dblp": "icvrv",
-    "years": [
-      2025
-    ]
-  },
-  {
     "id": "ICWE",
     "title": "ICWE",
     "description": "International Conference on Web Engineering",
@@ -4573,7 +4567,7 @@
   {
     "id": "ITC-ASIA",
     "title": "ITC-Asia",
-    "description": "International Test Conference in Asia",
+    "description": "IEEE International Test Conference in Asia",
     "category": "DS",
     "rank": "C",
     "dblp": "itc-asia",
@@ -5901,6 +5895,17 @@
       2022,
       2023,
       2024,
+      2025
+    ]
+  },
+  {
+    "id": "ICVRV",
+    "title": "ICVRV",
+    "description": "International Conference on Virtual Reality and Visualization",
+    "category": "CG",
+    "rank": "N",
+    "dblp": "icvrv",
+    "years": [
       2025
     ]
   },
