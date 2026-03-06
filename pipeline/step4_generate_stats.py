@@ -123,9 +123,10 @@ def run(force: bool = False):
 
         # Fix publication year offset: if venue data says year-1 is a real
         # conference year but year is not, shift back to the conference year.
+        # Clamp to 2010 to avoid pulling in pre-range data (e.g. IJCAI 2009).
         if conf_id in venue_years:
             vy = venue_years[conf_id]
-            if year not in vy and (year - 1) in vy:
+            if year not in vy and (year - 1) in vy and (year - 1) >= 2010:
                 year = year - 1
 
         total_papers += len(authors)
