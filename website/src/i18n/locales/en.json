@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "compare": "Compare",
+    "trends": "Trends",
+    "about": "About"
+  },
+  "home": {
+    "hero_title": "What language does your conference speak?",
+    "hero_subtitle": "We analyzed {n} papers so you don't have to",
+    "loading": "Parsing the tower of Babel...",
+    "papers_analyzed": "Papers Analyzed",
+    "conferences_tracked": "Conferences Tracked",
+    "languages_detected": "Languages Detected",
+    "years_of_data": "Years of Data",
+    "global_distribution": "CS Conferences Language Distribution",
+    "browse_conferences": "Should I say Nihao or Hello?",
+    "browse_subtitle": "Find out what language your conference speaks",
+    "search_placeholder": "Search conferences...",
+    "all_ranks": "All",
+    "all_categories": "All Categories",
+    "dominant_language": "Dominant: {lang}",
+    "papers_count": "{n} papers",
+    "trend_tooltip": "{pp}pp vs last year",
+    "data_lag_note": "{year} data may be incomplete: not all proceedings indexed by DBLP yet."
+  },
+  "conference": {
+    "title": "Conference Explorer",
+    "language_over_years": "Language Distribution Over Years",
+    "top_languages": "Top Languages",
+    "fun_facts": "Fun Facts",
+    "total_papers": "Total Papers",
+    "years_covered": "Years Covered",
+    "accept_rate": "Accept Rate",
+    "accept_rate_history": "Acceptance Rate History",
+    "rank_uncertain": "CCF 2011 (2nd edition) data is partial and may be inaccurate.",
+    "back_to_home": "Back to Home"
+  },
+  "compare": {
+    "title": "Compare Conferences",
+    "subtitle": "Pick 2-4 conferences to see how they stack up",
+    "add_conference": "Add Conference",
+    "select_conference": "Select a conference...",
+    "radar_chart": "Language Radar",
+    "no_selection": "Select at least 2 conferences to compare"
+  },
+  "trends": {
+    "title": "Global Trends",
+    "subtitle": "How the linguistic landscape of CS research is changing",
+    "filter_by_category": "Filter by Category",
+    "filter_by_rank": "Filter by Rank",
+    "year_over_year": "Year-over-Year Trends"
+  },
+  "about": {
+    "title": "About this Project",
+    "methodology": "Methodology",
+    "methodology_text": "We crawl DBLP via SPARQL for first author names of papers published at ~416 CCF-rated CS conferences (2010-2026), then classify names into 17 language groups using an ensemble of fastText language detection and rule-based surname matching.",
+    "disclaimer": "Disclaimer",
+    "disclaimer_text": "Names are terrible predictors of language. We did it anyway. This is meant as a fun, light-hearted visualization — not a rigorous sociolinguistic study. No discrimination intended.",
+    "data_sources": "Data Sources",
+    "data_sources_papers": "Papers & conferences",
+    "data_sources_classifier": "Name classifier",
+    "data_sources_accept": "Acceptance rates (merged from 6 sources)",
+    "src_dblp": "Author names, publication data, and venue information",
+    "src_ccf_pdf": "Conference list, CCF rankings and categories (extracted from official PDFs)",
+    "src_fasttext": "fastText lid.176.bin model for name-to-language classification",
+    "accuracy": "Accuracy Note",
+    "accuracy_text": "Name-based language inference is inherently imprecise. Many factors (immigration, marriage, cultural mixing) make names unreliable indicators. Treat all results as rough approximations.",
+    "credits": "Credits",
+    "license": "License"
+  },
+  "common": {
+    "papers": "papers",
+    "conference": "conference",
+    "conferences": "conferences",
+    "year": "year",
+    "rank": "rank",
+    "category": "category",
+    "language": "language"
+  }
+}

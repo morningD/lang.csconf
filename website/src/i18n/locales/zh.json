@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "首页",
+    "explore": "探索",
+    "compare": "对比",
+    "trends": "趋势",
+    "about": "关于"
+  },
+  "home": {
+    "hero_title": "你的会议说什么语言？",
+    "hero_subtitle": "我们翻了 {n} 篇论文，就为了这个无聊的统计",
+    "loading": "正在解码巴别塔...",
+    "papers_analyzed": "论文分析总量",
+    "conferences_tracked": "追踪会议数",
+    "languages_detected": "检测到的语言",
+    "years_of_data": "数据年份跨度",
+    "global_distribution": "CS会议语言分布",
+    "browse_conferences": "该说Nihao还是Hello？",
+    "browse_subtitle": "看看你的会议说什么语言",
+    "search_placeholder": "搜索会议...",
+    "all_ranks": "全部",
+    "all_categories": "所有类别",
+    "dominant_language": "主导语言：{lang}",
+    "papers_count": "{n} 篇论文",
+    "trend_tooltip": "较去年{pp}个百分点",
+    "data_lag_note": "{year} 年数据可能不完整：部分论文尚未被 DBLP 收录。"
+  },
+  "conference": {
+    "title": "会议探索",
+    "language_over_years": "历年语言分布",
+    "top_languages": "热门语言",
+    "fun_facts": "冷知识",
+    "total_papers": "论文总数",
+    "years_covered": "覆盖年份",
+    "accept_rate": "接收率",
+    "accept_rate_history": "历年接收率",
+    "rank_uncertain": "CCF 2011年（第2版）数据不完整，可能不准确。",
+    "back_to_home": "返回首页"
+  },
+  "compare": {
+    "title": "会议对比",
+    "subtitle": "选 2-4 个会议，看看谁更「国际化」",
+    "add_conference": "添加会议",
+    "select_conference": "选择一个会议...",
+    "radar_chart": "语言雷达图",
+    "no_selection": "至少选择 2 个会议才能对比"
+  },
+  "trends": {
+    "title": "全球趋势",
+    "subtitle": "CS 研究的语言版图是怎么悄悄变化的",
+    "filter_by_category": "按类别筛选",
+    "filter_by_rank": "按等级筛选",
+    "year_over_year": "逐年趋势"
+  },
+  "about": {
+    "title": "关于本项目",
+    "methodology": "研究方法",
+    "methodology_text": "我们通过 SPARQL 从 DBLP 爬取了约 416 个 CCF 评级 CS 会议（2010-2026）论文第一作者的姓名，然后用 fastText 语言检测 + 基于规则的姓氏匹配组合，将姓名分类为 17 个语言组。是的，就是这么简单粗暴。",
+    "disclaimer": "免责声明",
+    "disclaimer_text": "用名字来猜语言本来就不靠谱。但我们还是做了。这只是一个有趣的可视化——不是严肃的社会语言学研究。无意冒犯。",
+    "data_sources": "数据来源",
+    "data_sources_papers": "论文与会议",
+    "data_sources_classifier": "姓名分类器",
+    "data_sources_accept": "接收率（合并自 6 个来源）",
+    "src_dblp": "作者姓名、论文数据和会议举办地",
+    "src_ccf_pdf": "会议列表、CCF 等级和分类（从官方 PDF 提取）",
+    "src_fasttext": "fastText lid.176.bin 模型，用于姓名语言分类",
+    "accuracy": "准确性说明",
+    "accuracy_text": "基于姓名的语言推断天生就不精确。移民、婚姻、文化融合等因素都会让名字变得「不可信」。所有结果请当作粗略估计，认真你就输了。",
+    "credits": "致谢",
+    "license": "许可证"
+  },
+  "common": {
+    "papers": "篇论文",
+    "conference": "会议",
+    "conferences": "会议",
+    "year": "年份",
+    "rank": "等级",
+    "category": "类别",
+    "language": "语言"
+  }
+}
