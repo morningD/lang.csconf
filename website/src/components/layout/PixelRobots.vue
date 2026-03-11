@@ -2257,18 +2257,18 @@ function onSnakeClick(idx) {
           filter: bf.rainbowHue > 0 ? `hue-rotate(${bf.rainbowHue * 3.6}deg) saturate(${1 + bf.rainbowHue * 0.01})` : ''
         }">
         <g :transform="`translate(12 0) scale(${wingScale(bf.wingPhase)} 1) translate(-12 0)`">
-          <path d="M12 9 C8 3, 2 1, 1 5 C0 9, 5 13, 12 10" :fill="bf.colors.wing" opacity="0.85" />
-          <path d="M12 9 C8 3, 2 1, 1 5 C0 9, 5 13, 12 10" fill="none" :stroke="bf.colors.edge" stroke-width="0.6" opacity="0.5" />
-          <circle cx="5" cy="6" r="1.2" :fill="bf.colors.spot" opacity="0.25" />
-          <path d="M11 8 C8 4, 4 3, 3 5.5" fill="none" :stroke="bf.colors.wingLight" stroke-width="1" opacity="0.3" stroke-linecap="round" />
-          <path d="M12 10 C9 12, 3 13, 3 16 C3 18, 8 16, 12 11" :fill="bf.colors.wing" opacity="0.7" />
+          <path d="M12 9 C8 3, 2 1, 1 5 C0 9, 5 13, 12 10" :fill="bf.colors.wing" />
+          <path d="M12 9 C8 3, 2 1, 1 5 C0 9, 5 13, 12 10" fill="none" :stroke="bf.colors.edge" stroke-width="0.6" opacity="0.6" />
+          <circle cx="5" cy="6" r="1.2" :fill="bf.colors.spot" opacity="0.4" />
+          <path d="M11 8 C8 4, 4 3, 3 5.5" fill="none" :stroke="bf.colors.wingLight" stroke-width="1" opacity="0.5" stroke-linecap="round" />
+          <path d="M12 10 C9 12, 3 13, 3 16 C3 18, 8 16, 12 11" :fill="bf.colors.wing" opacity="0.9" />
         </g>
         <g :transform="`translate(12 0) scale(${wingScale(bf.wingPhase)} 1) translate(-12 0)`">
-          <path d="M12 9 C16 3, 22 1, 23 5 C24 9, 19 13, 12 10" :fill="bf.colors.wing" opacity="0.85" />
-          <path d="M12 9 C16 3, 22 1, 23 5 C24 9, 19 13, 12 10" fill="none" :stroke="bf.colors.edge" stroke-width="0.6" opacity="0.5" />
-          <circle cx="19" cy="6" r="1.2" :fill="bf.colors.spot" opacity="0.25" />
-          <path d="M13 8 C16 4, 20 3, 21 5.5" fill="none" :stroke="bf.colors.wingLight" stroke-width="1" opacity="0.3" stroke-linecap="round" />
-          <path d="M12 10 C15 12, 21 13, 21 16 C21 18, 16 16, 12 11" :fill="bf.colors.wing" opacity="0.7" />
+          <path d="M12 9 C16 3, 22 1, 23 5 C24 9, 19 13, 12 10" :fill="bf.colors.wing" />
+          <path d="M12 9 C16 3, 22 1, 23 5 C24 9, 19 13, 12 10" fill="none" :stroke="bf.colors.edge" stroke-width="0.6" opacity="0.6" />
+          <circle cx="19" cy="6" r="1.2" :fill="bf.colors.spot" opacity="0.4" />
+          <path d="M13 8 C16 4, 20 3, 21 5.5" fill="none" :stroke="bf.colors.wingLight" stroke-width="1" opacity="0.5" stroke-linecap="round" />
+          <path d="M12 10 C15 12, 21 13, 21 16 C21 18, 16 16, 12 11" :fill="bf.colors.wing" opacity="0.9" />
         </g>
         <ellipse cx="12" cy="10" rx="0.9" ry="3.8" :fill="bf.colors.body" />
         <path d="M12 6.5 Q10 3, 8 1.5" fill="none" :stroke="bf.colors.body" stroke-width="0.5" />
