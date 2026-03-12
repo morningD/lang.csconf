@@ -1,7 +1,7 @@
 """DBLP SPARQL client — batch-query papers + authors via sparql.dblp.org."""
 
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 import requests
 
@@ -38,6 +38,44 @@ _EXCLUDED_VENUE_RE = re.compile(
     r"\bWorkshop|\bCompanion\b|\bTutorial\b|@",
     re.IGNORECASE,
 )
+
+
+def _find_workshop_abbreviation_venues(
+    paper_venues: dict[tuple[str, int, str], str],
+) -> set[tuple[str, str]]:
+    """Detect abbreviated workshop venue names (e.g., ICCVW, ICSTW, DSN-W).
+
+    For each (key, year), find the dominant venue (most papers) and check if
+    other venues are workshop abbreviation variants: {dominant}W, {dominant}-W,
+    {dominant}EW (case-insensitive).
+
+    Returns set of (key, venue) pairs that should be excluded.
+    """
+    # Count papers per (key, venue), ignoring year to find stable dominant venue
+    key_venue_counts: dict[str, Counter] = defaultdict(Counter)
+    for (key, _year, _title), venue in paper_venues.items():
+        key_venue_counts[key][venue] += 1
+
+    exclude: set[tuple[str, str]] = set()
+    for key, counts in key_venue_counts.items():
+        dominant = counts.most_common(1)[0][0]
+        dom_upper = dominant.upper()
+        # Also check against stream key itself (e.g., key="iccv" → "ICCV")
+        # This handles edge cases where a batch only has workshop papers
+        key_upper = key.upper()
+        for venue in counts:
+            if venue == dominant:
+                continue
+            v = venue.upper()
+            # {Dominant}W, {Dominant}-W, {Dominant}EW
+            if v in (f"{dom_upper}W", f"{dom_upper}-W", f"{dom_upper}EW"):
+                exclude.add((key, venue))
+            # Also check against stream key: {KEY}W, {KEY}-W, {KEY}EW
+            elif key_upper != dom_upper and v in (
+                f"{key_upper}W", f"{key_upper}-W", f"{key_upper}EW"
+            ):
+                exclude.add((key, venue))
+    return exclude
 
 
 def _build_values_block(pairs: list[tuple[str, int]]) -> str:
@@ -82,7 +120,9 @@ def fetch_batch_sparql(
 
     # Parse: group rows by (stream, year, title) → collect authors
     # row keys: stream, year, title, authorName, ordinal
+    # Also track venue per paper for workshop abbreviation detection
     paper_authors: dict[tuple[str, int, str], list[dict]] = defaultdict(list)
+    paper_venues: dict[tuple[str, int, str], str] = {}
     stream_prefix = "https://dblp.org/streams/conf/"
 
     for row in data.get("results", {}).get("bindings", []):
@@ -120,10 +160,27 @@ def fetch_batch_sparql(
             if 2010 <= uri_year <= 2026 and uri_year != year:
                 year = uri_year
 
-        paper_authors[(key, year, title)].append({
+        paper_key_tuple = (key, year, title)
+        paper_authors[paper_key_tuple].append({
             "name": author_name,
             "ordinal": ordinal,
         })
+        paper_venues[paper_key_tuple] = venue
+
+    # Second pass: filter workshop abbreviation venues (e.g., ICCVW, ICSTW, DSN-W)
+    # These bypass the word-based _EXCLUDED_VENUE_RE filter.
+    ws_abbrev = _find_workshop_abbreviation_venues(paper_venues)
+    if ws_abbrev:
+        filtered = 0
+        for paper_key_tuple in list(paper_authors):
+            key, _year, _title = paper_key_tuple
+            venue = paper_venues.get(paper_key_tuple, "")
+            if (key, venue) in ws_abbrev:
+                del paper_authors[paper_key_tuple]
+                filtered += 1
+        if filtered:
+            venues_str = ", ".join(f"{v} (stream {k})" for k, v in sorted(ws_abbrev))
+            print(f"  Filtered {filtered} papers from workshop abbreviation venues: {venues_str}")
 
     # Group by (dblp_key, year) → list of papers with sorted authors
     result: dict[tuple[str, int], list[dict]] = defaultdict(list)

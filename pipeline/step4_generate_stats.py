@@ -101,6 +101,91 @@ def compute_language_distribution(authors: list[dict]) -> dict[str, int]:
     return dict(counts)
 
 
+def validate_paper_counts(
+    all_data: list[dict],
+    all_venues: dict[str, dict],
+) -> list[str]:
+    """Detect anomalies in paper counts.
+
+    Checks:
+    1. Papers exist for a year with no venue data (conference hasn't happened)
+    2. Paper count drops sharply vs recent years (excluding COVID 2020-2021)
+    3. Paper count spikes (>2x recent trend), suggesting workshop contamination
+
+    Returns list of warning messages.
+    """
+    COVID_YEARS = {2020, 2021}
+    warnings = []
+
+    # Build {conf_id: {year: paper_count}} from raw data
+    conf_year_papers: dict[str, dict[int, int]] = defaultdict(lambda: defaultdict(int))
+    for entry in all_data:
+        conf_id = entry.get("conference", "").replace("/", "-")
+        year = entry.get("year", 0)
+        if not conf_id or not year or year < 2010 or year > 2026:
+            continue
+        first_authors = [a for a in entry.get("authors", []) if a.get("ordinal", 1) == 1]
+        conf_year_papers[conf_id][year] = len(first_authors)
+
+    # Build venue year sets
+    venue_years: dict[str, set[int]] = {}
+    for conf_id, year_map in all_venues.items():
+        venue_years[conf_id] = {int(y) for y in year_map}
+
+    for conf_id, year_counts in sorted(conf_year_papers.items()):
+        vy = venue_years.get(conf_id, set())
+
+        # Check 1: papers exist for a year with no venue data
+        # (conference likely hasn't happened yet, or data is from workshops)
+        for year, count in sorted(year_counts.items()):
+            if count > 0 and vy and year not in vy:
+                warnings.append(
+                    f"  ANOMALY: {conf_id} {year} has {count} papers but NO venue data "
+                    f"(conference may not have happened yet)"
+                )
+
+        # Build sorted yearly data for trend analysis
+        sorted_years = sorted(year_counts.keys())
+        if len(sorted_years) < 3:
+            continue
+
+        for i, year in enumerate(sorted_years):
+            count = year_counts[year]
+            if count < 30:
+                continue
+
+            # Get recent prior years for comparison (up to 3, excluding COVID)
+            prior = []
+            for j in range(i - 1, -1, -1):
+                py = sorted_years[j]
+                if py not in COVID_YEARS:
+                    prior.append(year_counts[py])
+                if len(prior) >= 3:
+                    break
+
+            if not prior:
+                continue
+            recent_max = max(prior)
+            recent_avg = sum(prior) / len(prior)
+
+            # Check 2: sharp drop (< 40% of recent average, not a COVID year)
+            if year not in COVID_YEARS and recent_avg >= 30:
+                if count < recent_avg * 0.4:
+                    warnings.append(
+                        f"  ANOMALY: {conf_id} {year} has {count} papers, "
+                        f"recent avg {recent_avg:.0f} (sharp drop, possible data issue)"
+                    )
+
+            # Check 3: spike (> 2x recent max AND > 100 more papers)
+            if recent_max >= 30 and count > recent_max * 2 and count - recent_max > 100:
+                warnings.append(
+                    f"  ANOMALY: {conf_id} {year} has {count} papers, "
+                    f"recent max {recent_max} (>2x spike, possible workshop contamination)"
+                )
+
+    return warnings
+
+
 def run(force: bool = False):
     """Run step 4: generate aggregated statistics."""
     conferences = load_conferences()
@@ -113,6 +198,14 @@ def run(force: bool = False):
     if not all_data:
         print("No classified data found. Run step 3 first.")
         return
+
+    # Validate data before generating stats
+    anomalies = validate_paper_counts(all_data, all_venues)
+    if anomalies:
+        print(f"WARNING: {len(anomalies)} data anomalies detected:")
+        for w in anomalies:
+            print(w)
+        print()
 
     # Prepare output directories
     for subdir in ["by_conference", "by_category", "by_rank"]:
