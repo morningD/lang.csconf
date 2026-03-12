@@ -8,6 +8,7 @@
       "paper_source": "Where paper data was obtained: 'sparql' (default/omitted), 'search_api', 'website_scrape', 'manual', 'html_scrape', 'cross_filed', 'journal_scrape'",
       "paper_source_url": "URL of paper list if not from DBLP SPARQL",
       "accept_rate_source": "Where acceptance rate data came from",
+      "skip": "true — if set, step4 will exclude this conference-year from stats (e.g. joint conference papers already counted under another conference)",
       "status": "ok | noise | gap | virtual | partial | uninvestigated — for anomaly tracking",
       "note": "Free-text note for provenance and context"
     }
@@ -511,8 +512,9 @@
     "note": "Spike: 1553 vs max 632. Investigated 2026-03-12: joint COLING/LREC 2024 (venue h2 confirms). One-time merger, COLING 2025 back to 848."
   },
   "CONLL_2012": {
+    "skip": true,
     "status": "ok",
-    "note": "Spike: 155 vs max 51. Investigated 2026-03-12: EMNLP-CoNLL 2012 joint conference. 100% paper overlap with EMNLP_2012 — double-counted but both are legitimate conference records in DBLP."
+    "note": "Spike: 155 vs max 51. EMNLP-CoNLL 2012 joint conference. 100% paper overlap (155/155) with EMNLP_2012 — skip to avoid double-counting. Papers counted under EMNLP."
   },
   "FACCT_2022": {
     "status": "ok",
@@ -531,8 +533,18 @@
     "note": "Spike: 405 vs max 145. Investigated 2026-03-12: genuinely large proceedings (2888 pages). Includes 55 short papers (<=4 pages) + 350 regular papers. China-hosted years (2023, 2025) have larger acceptance. 2024 (Belgrade, 94 papers) was smaller."
   },
   "IJCNLP_2019": {
+    "skip": true,
     "status": "ok",
-    "note": "Spike: 732 vs max 343. Investigated 2026-03-12: EMNLP-IJCNLP 2019 joint conference. 100% paper overlap with EMNLP_2019. Same pattern for IJCNLP 2020/2021 (joint with ACL)."
+    "note": "Spike: 732 vs max 343. EMNLP-IJCNLP 2019 joint conference. 100% paper overlap (732/732) with EMNLP_2019 — skip to avoid double-counting. Papers counted under EMNLP."
+  },
+  "IJCNLP_2020": {
+    "status": "ok",
+    "note": "AACL-IJCNLP 2020: 809 papers, 710 (88%) overlapping with ACL_2020. 99 unique AACL papers retained after dedup. Overlapping papers removed from raw data."
+  },
+  "IJCNLP_2021": {
+    "skip": true,
+    "status": "ok",
+    "note": "ACL-IJCNLP 2021 joint conference. 100% paper overlap (458/458) with ACL_2021 — skip to avoid double-counting. Papers counted under ACL."
   },
   "PRCV_2023": {
     "status": "ok",
@@ -540,11 +552,11 @@
   },
   "UIC_2012": {
     "status": "ok",
-    "note": "Spike: 154 vs max 51. Investigated 2026-03-12: UIC/ATC 2012 joint venue. DBLP merges co-located conferences under one key. Papers from both UIC and ATC included."
+    "note": "Spike: 154 vs max 51. UIC/ATC 2012 joint venue. DBLP merges co-located conferences (ATC added 2012, ScalCom/CBDCom/IoP added 2016, SmartWorld/SCI added 2018) under conf/uic/. Cannot separate without manual per-paper curation. Counts include all co-located papers."
   },
   "UIC_2015": {
     "status": "ok",
-    "note": "Spike: 317 vs max 154. Investigated 2026-03-12: UIC/ATC/ScalCom 2015 joint venue. 3+ co-located conferences merged in DBLP. Grows with number of co-located events."
+    "note": "Spike: 317 vs max 154. UIC/ATC/ScalCom 2015: 3+ co-located conferences merged in DBLP. See UIC_2012 note for context."
   },
   "USENIXSECURITY_2021": {
     "status": "ok",
@@ -575,7 +587,7 @@
   },
   "HPDC_2010": {
     "status": "ok",
-    "note": "106 papers includes co-located workshop papers (ECMLS, LSAP, VTDC, MapReduce). Inflates comparison baseline for other years."
+    "note": "Originally 106 papers — included 50 co-located workshop papers (ECMLS 15, LSAP 11, VTDC 14, MapReduce 10). Workshop papers removed 2026-03-12, leaving 56 main conference papers (best papers + resources/clouds + data centers/virtualization + applications/provenance + posters)."
   },
   "ICA3PP_2016": {
     "status": "ok",

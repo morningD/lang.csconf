@@ -548,12 +548,46 @@
   ],
   "year_notes": {
     "2015": {
-      "status": "gap",
-      "note": "Sharp drop: 31 vs avg 123. Investigated 2026-03-12: TVCG journal publishing gap. Most VIS papers published in IEEE TVCG journal, not indexed in DBLP conf streams. Could recover ~100+ papers by scraping TVCG volumes."
+      "status": "ok",
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 104 papers from TVCG vol.22 issue 1 added to 31 conf papers → 135 total. VIS Year Y → TVCG Year(Y+1) Issue 1."
+    },
+    "2016": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 104 papers from TVCG vol.23 issue 1 added → 245 total."
+    },
+    "2017": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 101 papers from TVCG vol.24 issue 1 added → 236 total."
+    },
+    "2018": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 122 papers from TVCG vol.25 issue 1 added → 287 total."
+    },
+    "2019": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 120 papers from TVCG vol.26 issue 1 added → 322 total."
+    },
+    "2020": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 154 papers from TVCG vol.27 issue 2 added → 350 total. Exception: VIS 2020 in issue 2 (COVID delay)."
+    },
+    "2021": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 112 papers from TVCG vol.28 issue 1 added → 327 total."
     },
     "2022": {
-      "status": "gap",
-      "note": "Sharp drop: 55 vs avg 167. Investigated 2026-03-12: same TVCG journal gap as 2015. After 2021 InfoVis/SciVis/VAST merge into unified VIS, most papers go to TVCG."
+      "status": "ok",
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 120 papers from TVCG vol.29 issue 1 added to 55 conf papers → 175 total."
+    },
+    "2023": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 134 papers from TVCG vol.30 issue 1 added → 342 total."
+    },
+    "2024": {
+      "paper_source": "tvcg_journal",
+      "note": "TVCG gap recovered 2026-03-12: 130 papers from TVCG vol.31 issue 1 added → 229 total."
     }
   }
 }

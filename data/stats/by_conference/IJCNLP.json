@@ -10,9 +10,7 @@
     2013,
     2015,
     2017,
-    2019,
     2020,
-    2021,
     2022,
     2023,
     2025
@@ -85,58 +83,20 @@
       "Italian": 2,
       "Persian": 2
     },
-    "2019": {
-      "Chinese": 341,
-      "Russian": 14,
-      "English": 205,
-      "Italian": 15,
-      "Portuguese": 4,
-      "Spanish": 9,
-      "Other": 45,
-      "Indian": 19,
-      "French": 14,
-      "Japanese": 6,
-      "Vietnamese": 4,
-      "German": 24,
-      "Korean": 23,
-      "Dutch": 5,
-      "Persian": 2,
-      "Turkish": 2
-    },
     "2020": {
-      "English": 214,
-      "Chinese": 427,
-      "Indian": 14,
-      "Vietnamese": 11,
-      "Spanish": 9,
-      "Portuguese": 3,
-      "Other": 33,
-      "Japanese": 3,
-      "German": 36,
-      "Russian": 3,
-      "French": 16,
-      "Persian": 3,
-      "Korean": 21,
-      "Italian": 10,
-      "Dutch": 3,
-      "Turkish": 3
-    },
-    "2021": {
-      "Italian": 6,
-      "Chinese": 219,
-      "English": 148,
-      "German": 11,
-      "Russian": 5,
-      "Other": 20,
-      "Korean": 8,
-      "Vietnamese": 5,
+      "English": 27,
+      "Chinese": 53,
+      "Indian": 3,
+      "Vietnamese": 2,
+      "Spanish": 1,
       "Portuguese": 1,
-      "French": 8,
-      "Indian": 11,
-      "Dutch": 4,
+      "Other": 3,
+      "Japanese": 1,
+      "German": 3,
+      "Russian": 1,
+      "French": 2,
       "Persian": 1,
-      "Japanese": 5,
-      "Spanish": 6
+      "Korean": 1
     },
     "2022": {
       "Chinese": 60,
@@ -191,22 +151,22 @@
     }
   },
   "total": {
-    "Chinese": 1460,
-    "English": 1186,
-    "German": 144,
-    "Spanish": 63,
-    "Other": 232,
-    "Italian": 68,
-    "Russian": 37,
-    "French": 80,
-    "Vietnamese": 60,
-    "Dutch": 28,
-    "Japanese": 53,
-    "Indian": 124,
-    "Portuguese": 16,
-    "Korean": 92,
-    "Persian": 23,
-    "Turkish": 14
+    "Chinese": 526,
+    "English": 646,
+    "German": 76,
+    "Spanish": 40,
+    "Other": 137,
+    "Italian": 37,
+    "Russian": 16,
+    "French": 44,
+    "Vietnamese": 42,
+    "Dutch": 16,
+    "Japanese": 40,
+    "Indian": 83,
+    "Portuguese": 9,
+    "Korean": 41,
+    "Persian": 18,
+    "Turkish": 9
   },
   "venues": {
     "2025": {
@@ -273,8 +233,18 @@
       "note": "IJCNLP 2015 co-located as ACL-IJCNLP 2015. Papers filed under conf/acl/ in DBLP. 343 papers copied from ACL 2015 data."
     },
     "2019": {
+      "skip": true,
       "status": "ok",
-      "note": "Spike: 732 vs max 343. Investigated 2026-03-12: EMNLP-IJCNLP 2019 joint conference. 100% paper overlap with EMNLP_2019. Same pattern for IJCNLP 2020/2021 (joint with ACL)."
+      "note": "Spike: 732 vs max 343. EMNLP-IJCNLP 2019 joint conference. 100% paper overlap (732/732) with EMNLP_2019 — skip to avoid double-counting. Papers counted under EMNLP."
+    },
+    "2020": {
+      "status": "ok",
+      "note": "AACL-IJCNLP 2020: 809 papers, 710 (88%) overlapping with ACL_2020. 99 unique AACL papers retained after dedup. Overlapping papers removed from raw data."
+    },
+    "2021": {
+      "skip": true,
+      "status": "ok",
+      "note": "ACL-IJCNLP 2021 joint conference. 100% paper overlap (458/458) with ACL_2021 — skip to avoid double-counting. Papers counted under ACL."
     },
     "2023": {
       "status": "ok",

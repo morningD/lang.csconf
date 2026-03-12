@@ -283,11 +283,11 @@
   "year_notes": {
     "2012": {
       "status": "ok",
-      "note": "Spike: 154 vs max 51. Investigated 2026-03-12: UIC/ATC 2012 joint venue. DBLP merges co-located conferences under one key. Papers from both UIC and ATC included."
+      "note": "Spike: 154 vs max 51. UIC/ATC 2012 joint venue. DBLP merges co-located conferences (ATC added 2012, ScalCom/CBDCom/IoP added 2016, SmartWorld/SCI added 2018) under conf/uic/. Cannot separate without manual per-paper curation. Counts include all co-located papers."
     },
     "2015": {
       "status": "ok",
-      "note": "Spike: 317 vs max 154. Investigated 2026-03-12: UIC/ATC/ScalCom 2015 joint venue. 3+ co-located conferences merged in DBLP. Grows with number of co-located events."
+      "note": "Spike: 317 vs max 154. UIC/ATC/ScalCom 2015: 3+ co-located conferences merged in DBLP. See UIC_2012 note for context."
     }
   }
 }

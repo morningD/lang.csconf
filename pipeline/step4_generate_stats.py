@@ -275,6 +275,12 @@ def run(force: bool = False):
         if year < 2010 or year > 2026:
             continue
 
+        # Skip conference-years marked as "skip" in year notes
+        # (e.g., joint conferences where papers are already counted elsewhere)
+        yn = year_notes.get(conf_id, {}).get(str(year), {})
+        if yn.get("skip"):
+            continue
+
         # Count first authors only
         authors = [a for a in entry.get("authors", []) if a.get("ordinal", 1) == 1]
 

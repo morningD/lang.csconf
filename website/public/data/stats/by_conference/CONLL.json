@@ -8,7 +8,6 @@
   "years": [
     2010,
     2011,
-    2012,
     2013,
     2014,
     2015,
@@ -49,22 +48,6 @@
       "Japanese": 1,
       "Dutch": 1,
       "German": 1
-    },
-    "2012": {
-      "Chinese": 42,
-      "English": 56,
-      "Other": 13,
-      "Russian": 6,
-      "German": 8,
-      "Japanese": 4,
-      "Korean": 7,
-      "Indian": 5,
-      "French": 5,
-      "Turkish": 2,
-      "Italian": 4,
-      "Vietnamese": 1,
-      "Dutch": 1,
-      "Spanish": 1
     },
     "2013": {
       "Chinese": 10,
@@ -219,21 +202,21 @@
     }
   },
   "total": {
-    "Chinese": 194,
-    "Other": 84,
-    "English": 358,
-    "Russian": 32,
-    "French": 30,
-    "Spanish": 22,
-    "Dutch": 14,
-    "Korean": 21,
+    "Chinese": 152,
+    "Other": 71,
+    "English": 302,
+    "Russian": 26,
+    "French": 25,
+    "Spanish": 21,
+    "Dutch": 13,
+    "Korean": 14,
     "Portuguese": 6,
-    "Turkish": 8,
-    "Japanese": 17,
-    "German": 55,
-    "Indian": 28,
-    "Italian": 23,
-    "Vietnamese": 16,
+    "Turkish": 6,
+    "Japanese": 13,
+    "German": 47,
+    "Indian": 23,
+    "Italian": 19,
+    "Vietnamese": 15,
     "Persian": 7
   },
   "venues": {
@@ -343,8 +326,9 @@
   },
   "year_notes": {
     "2012": {
+      "skip": true,
       "status": "ok",
-      "note": "Spike: 155 vs max 51. Investigated 2026-03-12: EMNLP-CoNLL 2012 joint conference. 100% paper overlap with EMNLP_2012 — double-counted but both are legitimate conference records in DBLP."
+      "note": "Spike: 155 vs max 51. EMNLP-CoNLL 2012 joint conference. 100% paper overlap (155/155) with EMNLP_2012 — skip to avoid double-counting. Papers counted under EMNLP."
     },
     "2014": {
       "status": "ok",
