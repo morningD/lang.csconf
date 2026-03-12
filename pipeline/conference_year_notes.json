@@ -505,6 +505,34 @@
     "note": "Not indexed on DBLP."
   },
 
+  "_comment_search_api_manual": "=== MANUAL SEARCH API: Gaps manually filled via DBLP Search API + HTML ===",
+
+  "CICAI_2021": {
+    "paper_source": "search_api",
+    "status": "ok",
+    "note": "SPARQL returns 0 (DBLP key issue). 103 papers recovered via Search API. CAAI International Conference 1st edition."
+  },
+  "CICAI_2022": {
+    "paper_source": "search_api",
+    "status": "ok",
+    "note": "SPARQL returns 0 (DBLP key issue). 167 papers recovered via Search API. CAAI International Conference 2nd edition."
+  },
+  "CICAI_2023": {
+    "paper_source": "search_api",
+    "status": "ok",
+    "note": "SPARQL returns 0 (papers indexed under conf/cicba/ not conf/cicai/). 100 papers recovered via Search API."
+  },
+  "DRM_2010": {
+    "paper_source": "search_api",
+    "status": "ok",
+    "note": "DRM venue name contains 'Workshop' — caught by _EXCLUDED_VENUE_RE filter. 12 papers recovered via Search API bypass."
+  },
+  "DRM_2011": {
+    "paper_source": "html_scrape",
+    "status": "ok",
+    "note": "DRM venue name contains 'Workshop' — caught by filter. 7 papers recovered via HTML fallback (Search API returned 500)."
+  },
+
   "_comment_anomaly_spike": "=== ANOMALY SPIKE: Detected by step4, not yet fully investigated ===",
 
   "BIBM_2013": {

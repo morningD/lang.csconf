@@ -1,0 +1,73 @@
+{
+  "id": "CICAI",
+  "title": "CICAI",
+  "description": "CAAI International Conference on Artificial Intelligence",
+  "category": "AI",
+  "rank": "N",
+  "dblp": "cicai",
+  "years": [
+    2021,
+    2022,
+    2023
+  ],
+  "by_year": {
+    "2021": {
+      "English": 9,
+      "Chinese": 88,
+      "Other": 3,
+      "German": 3
+    },
+    "2022": {
+      "Chinese": 150,
+      "English": 10,
+      "Italian": 1,
+      "Other": 2,
+      "German": 4
+    },
+    "2023": {
+      "Chinese": 93,
+      "English": 5,
+      "Turkish": 1,
+      "Other": 1
+    }
+  },
+  "total": {
+    "English": 24,
+    "Chinese": 331,
+    "Other": 6,
+    "German": 7,
+    "Italian": 1,
+    "Turkish": 1
+  },
+  "venues": {
+    "2023": {
+      "city": "Fuzhou",
+      "country": "China"
+    },
+    "2022": {
+      "city": "Beijing",
+      "country": "China"
+    },
+    "2021": {
+      "city": "Hangzhou",
+      "country": "China"
+    }
+  },
+  "year_notes": {
+    "2021": {
+      "paper_source": "search_api",
+      "status": "ok",
+      "note": "SPARQL returns 0 (DBLP key issue). 103 papers recovered via Search API. CAAI International Conference 1st edition."
+    },
+    "2022": {
+      "paper_source": "search_api",
+      "status": "ok",
+      "note": "SPARQL returns 0 (DBLP key issue). 167 papers recovered via Search API. CAAI International Conference 2nd edition."
+    },
+    "2023": {
+      "paper_source": "search_api",
+      "status": "ok",
+      "note": "SPARQL returns 0 (papers indexed under conf/cicba/ not conf/cicai/). 100 papers recovered via Search API."
+    }
+  }
+}
