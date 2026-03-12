@@ -151,5 +151,16 @@
       "city": "Stanford",
       "country": "USA"
     }
+  },
+  "year_notes": {
+    "2018": {
+      "paper_source": "website_scrape",
+      "paper_source_url": "https://mlsys.org/Conferences/2019/Schedule",
+      "note": "SysML 2018 (renamed to MLSys). 116 papers scraped from mlsys.org. Marked _source=website_scrape."
+    },
+    "2019": {
+      "status": "ok",
+      "note": "Sharp drop: 32 vs avg 116. Investigated 2026-03-12: real small edition. Only 2nd edition (then SysML 2019). Avg inflated by MLSys 2018 (116 papers from 1st SysML workshop with invited/demo papers). Normal early trajectory: 32→34→52→51."
+    }
   }
 }

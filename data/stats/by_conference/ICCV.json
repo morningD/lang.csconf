@@ -180,6 +180,10 @@
     "Persian": 25
   },
   "venues": {
+    "2025": {
+      "city": "Honolulu",
+      "country": "United States"
+    },
     "2023": {
       "city": "Paris",
       "country": "France"
@@ -337,5 +341,16 @@
       "submitted": 300,
       "accepted": 60
     }
-  ]
+  ],
+  "year_notes": {
+    "2025": {
+      "date": "Jun 15-19 2025",
+      "location": "Honolulu, HI, USA",
+      "homepage": "https://iccv.thecvf.com/Conferences/2025",
+      "paper_source": "website_scrape",
+      "paper_source_url": "https://iccv.thecvf.com/Conferences/2025/AcceptedPapers",
+      "status": "ok",
+      "note": "1848 accepted papers scraped from CVF website. DBLP not yet indexed."
+    }
+  }
 }

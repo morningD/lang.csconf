@@ -294,5 +294,66 @@
     "2022": "B",
     "2026": "B"
   },
-  "note": "Since ~2015, papers are published in ACM TACO journal rather than conference proceedings. Data for 2015+ scraped from HiPEAC website API + DBLP cross-reference. 2018 data unavailable."
+  "note": "Since ~2015, papers are published in ACM TACO journal rather than conference proceedings. Data for 2015+ scraped from HiPEAC website API + DBLP cross-reference. 2018 data unavailable.",
+  "year_notes": {
+    "2018": {
+      "status": "partial",
+      "paper_source": "search_api",
+      "note": "HiPEAC API descriptions empty for 2018. Only 4 papers from search_api fallback — effectively a gap. No alternative data source found."
+    },
+    "2015": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6779/activities/",
+      "note": "Papers published in ACM TACO journal. 39 papers recovered via HiPEAC API + DBLP."
+    },
+    "2016": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6783/activities/",
+      "note": "Papers published in ACM TACO journal. 37 papers recovered via HiPEAC API + DBLP."
+    },
+    "2017": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6787/activities/",
+      "note": "Papers published in ACM TACO journal. 25 papers recovered via HiPEAC API + DBLP."
+    },
+    "2019": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6794/activities/",
+      "note": "Papers published in ACM TACO journal. 32 papers recovered via HiPEAC API + CrossRef."
+    },
+    "2020": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6799/activities/",
+      "note": "Papers published in ACM TACO journal. 28 papers recovered via HiPEAC API + CrossRef."
+    },
+    "2021": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6802/activities/",
+      "note": "Papers published in ACM TACO journal. 35 papers recovered via HiPEAC API + CrossRef."
+    },
+    "2022": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6805/activities/",
+      "note": "Papers published in ACM TACO journal. 18 papers recovered via HiPEAC API + CrossRef."
+    },
+    "2023": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6810/activities/",
+      "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef."
+    },
+    "2024": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6812/activities/",
+      "note": "Papers published in ACM TACO journal. 19 papers recovered via HiPEAC API + CrossRef."
+    },
+    "2025": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.hipeac.net/api/v3/events/6814/activities/",
+      "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef."
+    },
+    "2014": {
+      "paper_source": "search_api",
+      "note": "SPARQL gap filled by step2c. 30 papers."
+    }
+  }
 }

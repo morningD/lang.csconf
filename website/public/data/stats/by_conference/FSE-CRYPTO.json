@@ -320,5 +320,51 @@
     "2022": "B",
     "2026": "B"
   },
-  "note": "Since 2017, papers are published in IACR ToSC journal. Data for 2017+ scraped from fse.iacr.org program pages. No FSE in 2021."
+  "note": "Since 2017, papers are published in IACR ToSC journal. Data for 2017+ scraped from fse.iacr.org program pages. No FSE in 2021.",
+  "year_notes": {
+    "2017": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://www.nuee.nagoya-u.ac.jp/labs/tiwata/fse2017/program.html",
+      "note": "Papers published in IACR ToSC journal. 45 papers scraped from Nagoya University FSE 2017 program page."
+    },
+    "2018": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://fse.iacr.org/2018/acceptedpapers.html",
+      "note": "Papers published in IACR ToSC journal. 48 papers scraped from fse.iacr.org."
+    },
+    "2019": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://fse.iacr.org/2019/acceptedpapers.html",
+      "note": "Papers published in IACR ToSC journal. 36 papers scraped from fse.iacr.org."
+    },
+    "2020": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://fse.iacr.org/2020/currentProgram.php",
+      "note": "Papers published in IACR ToSC journal. 78 papers scraped from fse.iacr.org JSON API."
+    },
+    "2021": {
+      "status": "gap",
+      "note": "No FSE conference held in 2021 (skipped between 2020 and 2022)."
+    },
+    "2022": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://fse.iacr.org/2022/currentProgram.php",
+      "note": "Papers published in IACR ToSC journal. 78 papers scraped from fse.iacr.org JSON API."
+    },
+    "2023": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://fse.iacr.org/2023/currentProgram.php",
+      "note": "Papers published in IACR ToSC journal. 60 papers scraped from fse.iacr.org JSON API."
+    },
+    "2024": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://fse.iacr.org/2024/currentProgram.php",
+      "note": "Papers published in IACR ToSC journal. 50 papers scraped from fse.iacr.org JSON API."
+    },
+    "2025": {
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://fse.iacr.org/2025/currentProgram.php",
+      "note": "Papers published in IACR ToSC journal. 49 papers scraped from fse.iacr.org JSON API."
+    }
+  }
 }

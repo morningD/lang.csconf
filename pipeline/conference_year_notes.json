@@ -1,0 +1,709 @@
+{
+  "_schema": {
+    "description": "Per-conference-year metadata and notes. Keys are 'CONFID_YEAR'. Serves as the provenance log for all data decisions.",
+    "fields": {
+      "date": "Conference dates, e.g. 'Nov 21-24 2025'",
+      "location": "City, Country (or 'Virtual')",
+      "homepage": "Conference homepage URL",
+      "paper_source": "Where paper data was obtained: 'sparql' (default/omitted), 'search_api', 'website_scrape', 'manual', 'html_scrape', 'cross_filed', 'journal_scrape'",
+      "paper_source_url": "URL of paper list if not from DBLP SPARQL",
+      "accept_rate_source": "Where acceptance rate data came from",
+      "status": "ok | noise | gap | virtual | partial | uninvestigated — for anomaly tracking",
+      "note": "Free-text note for provenance and context"
+    }
+  },
+
+  "_comment_noise": "=== NOISE: Data that shouldn't exist or is from wrong conference ===",
+
+  "CADE_2010": {
+    "status": "noise",
+    "note": "CADE alternates with IJCAR; 2010 was an IJCAR year. These 43 papers may be from IJCAR proceedings cross-filed in the CADE DBLP stream."
+  },
+  "ICLR_2011": {
+    "status": "noise",
+    "note": "ICLR was founded in 2013. These 2 papers are DBLP indexing noise."
+  },
+  "WICSA_2010": {
+    "status": "noise",
+    "note": "WICSA did not hold a standalone 2010 conference (2009 was joint WICSA/ECSA in Cambridge). These 13 papers may be DBLP indexing artifacts."
+  },
+  "HIPEAC_2018": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "HiPEAC API descriptions empty for 2018. Only 4 papers from search_api fallback — effectively a gap. No alternative data source found."
+  },
+
+  "_comment_cross_filed": "=== CROSS-FILED: Papers published under another conference in DBLP ===",
+
+  "ECAI_2018": {
+    "paper_source": "cross_filed",
+    "note": "ECAI 2018 was joint IJCAI-ECAI. Papers cross-filed under conf/ijcai/ in DBLP. 870 papers copied from IJCAI data."
+  },
+  "ECAI_2022": {
+    "paper_source": "cross_filed",
+    "note": "ECAI 2022 was joint IJCAI-ECAI. Papers cross-filed under conf/ijcai/ in DBLP. 863 papers copied from IJCAI data."
+  },
+  "IJCNLP_2015": {
+    "paper_source": "cross_filed",
+    "note": "IJCNLP 2015 co-located as ACL-IJCNLP 2015. Papers filed under conf/acl/ in DBLP. 343 papers copied from ACL 2015 data."
+  },
+
+  "_comment_journal_scrape": "=== JOURNAL SCRAPE: Conference papers published in journals, recovered by manual scraping ===",
+
+  "ISMB_2011": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics27.html",
+    "note": "ISMB/ECCB 2011 (odd year, joint with ECCB). Papers in Bioinformatics journal supplement. 73 papers recovered. Anchor: nr13."
+  },
+  "ISMB_2013": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics29.html",
+    "note": "ISMB/ECCB 2013 (odd year). Papers in Bioinformatics journal supplement. 66 papers recovered. Anchor: nr13."
+  },
+  "ISMB_2015": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics31.html",
+    "note": "ISMB/ECCB 2015 (odd year). Papers in Bioinformatics journal supplement. 71 papers recovered. Anchor: nr12."
+  },
+  "ISMB_2017": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics33.html",
+    "note": "ISMB/ECCB 2017 (odd year). Papers in Bioinformatics journal supplement. 81 papers recovered. Anchor: nr14."
+  },
+  "ISMB_2019": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics35.html",
+    "note": "ISMB/ECCB 2019 (odd year). Papers in Bioinformatics journal supplement. 102 papers recovered. Anchor: nr14."
+  },
+  "ISMB_2021": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics37.html",
+    "note": "ISMB/ECCB 2021 (odd year). Papers in Bioinformatics journal supplement. 55 papers recovered. Anchor: nrSupplement1."
+  },
+  "ISMB_2023": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics39.html",
+    "note": "ISMB/ECCB 2023 (odd year). Papers in Bioinformatics journal supplement. 61 papers recovered. Anchor: nrSupplement-1."
+  },
+  "ISMB_2025": {
+    "status": "gap",
+    "note": "ISMB/ECCB 2025 (odd year). Bioinformatics journal supplement not yet available."
+  },
+
+  "HIPEAC_2015": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6779/activities/",
+    "note": "Papers published in ACM TACO journal. 39 papers recovered via HiPEAC API + DBLP."
+  },
+  "HIPEAC_2016": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6783/activities/",
+    "note": "Papers published in ACM TACO journal. 37 papers recovered via HiPEAC API + DBLP."
+  },
+  "HIPEAC_2017": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6787/activities/",
+    "note": "Papers published in ACM TACO journal. 25 papers recovered via HiPEAC API + DBLP."
+  },
+  "HIPEAC_2019": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6794/activities/",
+    "note": "Papers published in ACM TACO journal. 32 papers recovered via HiPEAC API + CrossRef."
+  },
+  "HIPEAC_2020": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6799/activities/",
+    "note": "Papers published in ACM TACO journal. 28 papers recovered via HiPEAC API + CrossRef."
+  },
+  "HIPEAC_2021": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6802/activities/",
+    "note": "Papers published in ACM TACO journal. 35 papers recovered via HiPEAC API + CrossRef."
+  },
+  "HIPEAC_2022": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6805/activities/",
+    "note": "Papers published in ACM TACO journal. 18 papers recovered via HiPEAC API + CrossRef."
+  },
+  "HIPEAC_2023": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6810/activities/",
+    "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef."
+  },
+  "HIPEAC_2024": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6812/activities/",
+    "note": "Papers published in ACM TACO journal. 19 papers recovered via HiPEAC API + CrossRef."
+  },
+  "HIPEAC_2025": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.hipeac.net/api/v3/events/6814/activities/",
+    "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef."
+  },
+
+  "FSE-CRYPTO_2017": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://www.nuee.nagoya-u.ac.jp/labs/tiwata/fse2017/program.html",
+    "note": "Papers published in IACR ToSC journal. 45 papers scraped from Nagoya University FSE 2017 program page."
+  },
+  "FSE-CRYPTO_2018": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://fse.iacr.org/2018/acceptedpapers.html",
+    "note": "Papers published in IACR ToSC journal. 48 papers scraped from fse.iacr.org."
+  },
+  "FSE-CRYPTO_2019": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://fse.iacr.org/2019/acceptedpapers.html",
+    "note": "Papers published in IACR ToSC journal. 36 papers scraped from fse.iacr.org."
+  },
+  "FSE-CRYPTO_2020": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://fse.iacr.org/2020/currentProgram.php",
+    "note": "Papers published in IACR ToSC journal. 78 papers scraped from fse.iacr.org JSON API."
+  },
+  "FSE-CRYPTO_2021": {
+    "status": "gap",
+    "note": "No FSE conference held in 2021 (skipped between 2020 and 2022)."
+  },
+  "FSE-CRYPTO_2022": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://fse.iacr.org/2022/currentProgram.php",
+    "note": "Papers published in IACR ToSC journal. 78 papers scraped from fse.iacr.org JSON API."
+  },
+  "FSE-CRYPTO_2023": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://fse.iacr.org/2023/currentProgram.php",
+    "note": "Papers published in IACR ToSC journal. 60 papers scraped from fse.iacr.org JSON API."
+  },
+  "FSE-CRYPTO_2024": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://fse.iacr.org/2024/currentProgram.php",
+    "note": "Papers published in IACR ToSC journal. 50 papers scraped from fse.iacr.org JSON API."
+  },
+  "FSE-CRYPTO_2025": {
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://fse.iacr.org/2025/currentProgram.php",
+    "note": "Papers published in IACR ToSC journal. 49 papers scraped from fse.iacr.org JSON API."
+  },
+
+  "_comment_website_scrape": "=== WEBSITE SCRAPE: Data scraped from conference or other websites ===",
+
+  "ICCV_2025": {
+    "date": "Jun 15-19 2025",
+    "location": "Honolulu, HI, USA",
+    "homepage": "https://iccv.thecvf.com/Conferences/2025",
+    "paper_source": "website_scrape",
+    "paper_source_url": "https://iccv.thecvf.com/Conferences/2025/AcceptedPapers",
+    "status": "ok",
+    "note": "1848 accepted papers scraped from CVF website. DBLP not yet indexed."
+  },
+  "MLSYS_2018": {
+    "paper_source": "website_scrape",
+    "paper_source_url": "https://mlsys.org/Conferences/2019/Schedule",
+    "note": "SysML 2018 (renamed to MLSys). 116 papers scraped from mlsys.org. Marked _source=website_scrape."
+  },
+
+  "_comment_search_api": "=== SEARCH API: Gaps auto-filled by step2c via DBLP Search API ===",
+
+  "ADMA_2021": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 61 papers."
+  },
+  "APPT_2011": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 13 papers."
+  },
+  "BLOCKSYS_2023": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 8 papers."
+  },
+  "EASE_2010": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 19 papers."
+  },
+  "ECOOP_2020": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 45 papers."
+  },
+  "ECSCW_2015": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 34 papers."
+  },
+  "GPC_2019": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 17 papers."
+  },
+  "GROUP_2025": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 30 papers."
+  },
+  "HIPEAC_2014": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 30 papers."
+  },
+  "ICECCS_2021": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 48 papers."
+  },
+  "ICLR_2016": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 80 papers."
+  },
+  "INDOCRYPT_2025": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 20 papers."
+  },
+  "IROS_2023": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 1196 papers."
+  },
+  "NAS_2019": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 17 papers."
+  },
+  "PEPM_2019": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 9 papers."
+  },
+  "PEPM_2020": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 5 papers."
+  },
+  "PEPM_2021": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 6 papers."
+  },
+  "PEPM_2022": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 2 papers."
+  },
+  "PEPM_2023": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 5 papers."
+  },
+  "PERCOM_2025": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 24 papers."
+  },
+  "SOUPS_2018": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 28 papers."
+  },
+  "SOUPS_2019": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 53 papers."
+  },
+  "SOUPS_2022": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 37 papers."
+  },
+  "SOUPS_2024": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 33 papers."
+  },
+  "SYSTOR_2020": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 10 papers."
+  },
+  "UBICOMP_2024": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 193 papers."
+  },
+  "UBICOMP_2025": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 322 papers."
+  },
+  "VINCI_2012": {
+    "paper_source": "search_api",
+    "note": "SPARQL gap filled by step2c. 17 papers."
+  },
+
+  "_comment_partial_gap": "=== PARTIAL GAP: SPARQL returned significantly fewer papers than expected, DBLP-side issue ===",
+
+  "NSDI_2011": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "14 papers vs median ~49. SPARQL indexing incomplete, step2c filled what it could. DBLP-side issue."
+  },
+  "PG_2010": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "16 papers vs median ~56. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "SCA_2021": {
+    "status": "partial",
+    "note": "3 papers vs median ~30. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "SCA_2019": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "10 papers. SPARQL gap filled by step2c but still low."
+  },
+  "SCA_2023": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "6 papers. SPARQL gap filled by step2c but still low."
+  },
+  "CSFW_2013": {
+    "status": "partial",
+    "note": "19 papers vs median ~32. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "APBC_2012": {
+    "status": "partial",
+    "note": "16 papers vs median ~34. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "APBC_2022": {
+    "status": "partial",
+    "note": "2 papers vs median ~34. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "MOBIQUITOUS_2015": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "18 papers vs median ~54. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "P2P_2015": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "16 papers vs median ~43. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "NPC_2016": {
+    "status": "partial",
+    "note": "17 papers vs median ~37. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "NPC_2017": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "19 papers vs median ~37. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "ICSS_2021": {
+    "status": "partial",
+    "note": "18 papers vs median ~36. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "ICSS_2024": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "14 papers vs median ~36. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "SSDBM_2024": {
+    "status": "partial",
+    "note": "19 papers vs median ~33. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "WISEC_2012": {
+    "status": "partial",
+    "note": "19 papers vs median ~34. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "WICON_2020": {
+    "status": "partial",
+    "note": "14 papers vs median ~34. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "WICON_2022": {
+    "status": "partial",
+    "note": "16 papers vs median ~34. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "WICON_2023": {
+    "status": "partial",
+    "note": "14 papers vs median ~34. SPARQL indexing incomplete. DBLP-side issue."
+  },
+  "RECOMB_2023": {
+    "status": "partial",
+    "paper_source": "search_api",
+    "note": "11 papers. SPARQL gap filled by step2c but still very low."
+  },
+
+  "_comment_journal_gap": "=== JOURNAL GAP: Papers published in journals, not recoverable ===",
+
+  "EMSOFT_2018": {
+    "status": "gap",
+    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 16 papers from SPARQL (incomplete)."
+  },
+  "EMSOFT_2020": {
+    "status": "gap",
+    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 15 papers from SPARQL (incomplete)."
+  },
+  "EMSOFT_2022": {
+    "status": "gap",
+    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 11 papers from SPARQL (incomplete)."
+  },
+  "EMSOFT_2024": {
+    "status": "gap",
+    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. No data."
+  },
+  "RECOMB_2021": {
+    "status": "gap",
+    "note": "Papers published in JCB journal. No data recoverable."
+  },
+
+  "_comment_no_dblp": "=== NO DBLP: Conference proceedings not on DBLP at all ===",
+
+  "MSST_2017": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP."
+  },
+  "MSST_2018": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP."
+  },
+  "MSST_2020": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP. No data."
+  },
+  "MSST_2021": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP. No data."
+  },
+  "MSST_2022": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP. No data."
+  },
+  "MSST_2023": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP. No data."
+  },
+  "MSST_2024": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP. No data."
+  },
+  "MSST_2025": {
+    "status": "gap",
+    "note": "Proceedings only on IEEE Xplore, not indexed on DBLP. No data."
+  },
+  "GPC_2014": {
+    "status": "gap",
+    "note": "No proceedings on DBLP."
+  },
+  "GPC_2015": {
+    "status": "gap",
+    "note": "No proceedings on DBLP."
+  },
+  "AMIA_2010": {
+    "status": "gap",
+    "note": "Not in DBLP conf stream."
+  },
+  "AMIA_2011": {
+    "status": "gap",
+    "note": "Not in DBLP conf stream."
+  },
+  "APBC_2023": {
+    "status": "gap",
+    "note": "Not indexed on DBLP."
+  },
+  "APBC_2024": {
+    "status": "gap",
+    "note": "Not indexed on DBLP."
+  },
+  "APBC_2025": {
+    "status": "gap",
+    "note": "Not indexed on DBLP."
+  },
+  "APBC_2026": {
+    "status": "gap",
+    "note": "Not indexed on DBLP."
+  },
+
+  "_comment_anomaly_spike": "=== ANOMALY SPIKE: Detected by step4, not yet fully investigated ===",
+
+  "BIBM_2013": {
+    "status": "ok",
+    "note": "Spike: 319 vs max 131. Investigated 2026-03-12: real growth. Conference permanently expanded ~2013, sustained trend to 1158 (2024)."
+  },
+  "COLING_2024": {
+    "status": "ok",
+    "note": "Spike: 1553 vs max 632. Investigated 2026-03-12: joint COLING/LREC 2024 (venue h2 confirms). One-time merger, COLING 2025 back to 848."
+  },
+  "CONLL_2012": {
+    "status": "ok",
+    "note": "Spike: 155 vs max 51. Investigated 2026-03-12: EMNLP-CoNLL 2012 joint conference. 100% paper overlap with EMNLP_2012 — double-counted but both are legitimate conference records in DBLP."
+  },
+  "FACCT_2022": {
+    "status": "ok",
+    "note": "Spike: 181 vs max 41. Investigated 2026-03-12: real growth. Young conference (started 2018), sustained growth to 206 (2025)."
+  },
+  "ICDCS_2017": {
+    "status": "ok",
+    "note": "Spike: 323 vs max 110. Investigated 2026-03-12: not workshop contamination. Starting 2017, DBLP indexes multiple ICDCS tracks (Industry, Applications, Vision, Short Papers, Demos, Posters) alongside main research track (~80-110 papers). Structural change in DBLP indexing."
+  },
+  "ICIC_2024": {
+    "status": "ok",
+    "note": "Spike: 864 vs max 337. Investigated 2026-03-12: real growth. Springer LNCS conference with accelerating expansion: 208→337→864→1206."
+  },
+  "ICPADS_2023": {
+    "status": "ok",
+    "note": "Spike: 405 vs max 145. Investigated 2026-03-12: genuinely large proceedings (2888 pages). Includes 55 short papers (<=4 pages) + 350 regular papers. China-hosted years (2023, 2025) have larger acceptance. 2024 (Belgrade, 94 papers) was smaller."
+  },
+  "IJCNLP_2019": {
+    "status": "ok",
+    "note": "Spike: 732 vs max 343. Investigated 2026-03-12: EMNLP-IJCNLP 2019 joint conference. 100% paper overlap with EMNLP_2019. Same pattern for IJCNLP 2020/2021 (joint with ACL)."
+  },
+  "PRCV_2023": {
+    "status": "ok",
+    "note": "Spike: 522 vs max 233. Investigated 2026-03-12: real growth. Chinese CV conference (Springer LNCS), sustained trend: 158→201→233→522→579→691."
+  },
+  "UIC_2012": {
+    "status": "ok",
+    "note": "Spike: 154 vs max 51. Investigated 2026-03-12: UIC/ATC 2012 joint venue. DBLP merges co-located conferences under one key. Papers from both UIC and ATC included."
+  },
+  "UIC_2015": {
+    "status": "ok",
+    "note": "Spike: 317 vs max 154. Investigated 2026-03-12: UIC/ATC/ScalCom 2015 joint venue. 3+ co-located conferences merged in DBLP. Grows with number of co-located events."
+  },
+  "USENIXSECURITY_2021": {
+    "status": "ok",
+    "note": "Spike: 247 vs max 113. Investigated 2026-03-12: real growth. Conference expanded to multiple submission cycles ~2020. Sustained growth to 487 (2025)."
+  },
+  "USENIXSECURITY_2022": {
+    "status": "ok",
+    "note": "Spike: 256 vs max 113. Investigated 2026-03-12: real growth. Same multi-cycle expansion as 2021. Sustained through 2025."
+  },
+
+  "_comment_anomaly_drop": "=== ANOMALY DROP: Detected by step4, investigated or partially known ===",
+
+  "CEC_2023": {
+    "status": "ok",
+    "note": "Sharp drop: 124 vs avg 336. Investigated 2026-03-12: real small edition. DBLP confirms 125 papers. CEC declining since 2020 (WCCI only in even years). Avg inflated by historically larger editions."
+  },
+  "CONLL_2014": {
+    "status": "ok",
+    "note": "Sharp drop: 33 vs avg 83. Investigated 2026-03-12: real small edition. Avg inflated by CoNLL 2012 shared task (155 papers). Normal range is 28-51 papers."
+  },
+  "HPCC_2017": {
+    "status": "ok",
+    "note": "Sharp drop: 88 papers vs recent avg 241. Investigated 2026-03-12: proceedings keys match — not a gap, likely smaller edition."
+  },
+  "HPDC_2011": {
+    "status": "ok",
+    "note": "Sharp drop: 34 vs avg 106. Investigated 2026-03-12: HPDC 2010 is the outlier (106 papers includes co-located workshop papers ECMLS/LSAP/VTDC/MapReduce). HPDC normally has 23-52 papers; 34 is expected."
+  },
+  "HPDC_2010": {
+    "status": "ok",
+    "note": "106 papers includes co-located workshop papers (ECMLS, LSAP, VTDC, MapReduce). Inflates comparison baseline for other years."
+  },
+  "ICA3PP_2016": {
+    "status": "ok",
+    "note": "Sharp drop: 52 papers vs recent avg 140. Investigated 2026-03-12: proceedings keys match — not a gap."
+  },
+  "ICA3PP_2022": {
+    "status": "ok",
+    "note": "Sharp drop: 43 papers vs recent avg 120. Investigated 2026-03-12: proceedings keys match — not a gap."
+  },
+  "IEEEVIS_2015": {
+    "status": "ok",
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 104 papers from TVCG vol.22 issue 1 added to 31 conf papers → 135 total. VIS Year Y → TVCG Year(Y+1) Issue 1."
+  },
+  "IEEEVIS_2016": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 104 papers from TVCG vol.23 issue 1 added → 245 total."
+  },
+  "IEEEVIS_2017": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 101 papers from TVCG vol.24 issue 1 added → 236 total."
+  },
+  "IEEEVIS_2018": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 122 papers from TVCG vol.25 issue 1 added → 287 total."
+  },
+  "IEEEVIS_2019": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 120 papers from TVCG vol.26 issue 1 added → 322 total."
+  },
+  "IEEEVIS_2020": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 154 papers from TVCG vol.27 issue 2 added → 350 total. Exception: VIS 2020 in issue 2 (COVID delay)."
+  },
+  "IEEEVIS_2021": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 112 papers from TVCG vol.28 issue 1 added → 327 total."
+  },
+  "IEEEVIS_2022": {
+    "status": "ok",
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 120 papers from TVCG vol.29 issue 1 added to 55 conf papers → 175 total."
+  },
+  "IEEEVIS_2023": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 134 papers from TVCG vol.30 issue 1 added → 342 total."
+  },
+  "IEEEVIS_2024": {
+    "paper_source": "tvcg_journal",
+    "note": "TVCG gap recovered 2026-03-12: 130 papers from TVCG vol.31 issue 1 added → 229 total."
+  },
+  "IEEEVR_2022": {
+    "status": "ok",
+    "note": "Sharp drop: 128 vs avg 326. Investigated 2026-03-12: avg inflated by VR 2019 (506 papers — included posters/demos/doctoral consortium). Post-2019 normal is ~130 papers. 128 is expected."
+  },
+  "IJCNLP_2023": {
+    "status": "ok",
+    "note": "Sharp drop: 132 vs avg 388. Investigated 2026-03-12: real small edition. AACL-IJCNLP 2023 was standalone regional conference (not joint with EMNLP/ACL like 2019-2021). 132 main proceedings papers is expected."
+  },
+  "ISPA_2014": {
+    "status": "ok",
+    "note": "Sharp drop: 33 papers vs recent avg 148. Investigated 2026-03-12: proceedings keys match — not a gap."
+  },
+  "MLSYS_2019": {
+    "status": "ok",
+    "note": "Sharp drop: 32 vs avg 116. Investigated 2026-03-12: real small edition. Only 2nd edition (then SysML 2019). Avg inflated by MLSys 2018 (116 papers from 1st SysML workshop with invited/demo papers). Normal early trajectory: 32→34→52→51."
+  },
+  "PDCAT_2014": {
+    "status": "ok",
+    "note": "Sharp drop: 30 vs avg 86. Investigated 2026-03-12: matches DBLP's own index (31 papers). Conference had organizational issues ~2014-2015 (2015 missing entirely). Genuinely small edition."
+  },
+  "WWW_2011": {
+    "status": "ok",
+    "note": "Sharp drop: 90 papers vs recent avg 249. Investigated 2026-03-12: due to Companion Volume split (84 main + 165 companion). Main track only is correct."
+  },
+
+  "_comment_venue": "=== VENUE METADATA: Conferences with venue info added manually ===",
+
+  "DAI_2025": {
+    "date": "Nov 21-24 2025",
+    "location": "London, UK",
+    "homepage": "https://adai.ai/dai/2025/",
+    "status": "ok"
+  },
+  "GROUP_2022": {
+    "date": "Jan 8-11 2023",
+    "location": "Hilton Head Island, SC, USA",
+    "homepage": "https://group.acm.org/conferences/group22/",
+    "status": "ok",
+    "note": "Originally GROUP 2022, postponed to Jan 2023. Relocated from Sanibel Island."
+  },
+  "ICDF2C_2025": {
+    "date": "Nov 17-19 2025",
+    "location": "Miami, FL, USA",
+    "homepage": "https://icdf2c.eai-conferences.org/2025/",
+    "status": "ok"
+  },
+  "OSDI_2020": {
+    "date": "Nov 4-6 2020",
+    "location": "Virtual",
+    "homepage": "https://www.usenix.org/conference/osdi20",
+    "status": "virtual",
+    "note": "Virtual event due to COVID-19."
+  },
+  "OSDI_2021": {
+    "date": "Jul 14-16 2021",
+    "location": "Virtual",
+    "homepage": "https://www.usenix.org/conference/osdi21",
+    "status": "virtual",
+    "note": "Virtual event due to COVID-19."
+  },
+  "PACT_2010": {
+    "date": "Sep 11-15 2010",
+    "location": "Vienna, Austria",
+    "status": "ok"
+  },
+  "SOUPS_2021": {
+    "date": "Aug 8-10 2021",
+    "location": "Virtual",
+    "homepage": "https://www.usenix.org/conference/soups2021",
+    "status": "virtual",
+    "note": "Virtual event due to COVID-19."
+  },
+  "USENIXATC_2021": {
+    "date": "Jul 14-16 2021",
+    "location": "Virtual",
+    "homepage": "https://www.usenix.org/conference/atc21",
+    "status": "virtual",
+    "note": "Virtual event due to COVID-19."
+  }
+}

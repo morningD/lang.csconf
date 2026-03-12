@@ -18,6 +18,7 @@ STATS_DIR = DATA_DIR / "stats"
 VENUES_DIR = RAW_DIR / "venues"
 CCF_RANK_HISTORY_FILE = DATA_DIR / "ccf-versions" / "ccf_rank_history.json"
 ACCEPT_RATES_FILE = RAW_DIR / "accept_rates.json"
+YEAR_NOTES_FILE = Path(__file__).parent / "conference_year_notes.json"
 
 
 def load_conferences() -> list[dict]:
@@ -90,6 +91,24 @@ def load_accept_rates() -> dict[str, list[dict]]:
         return {}
     with open(ACCEPT_RATES_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_year_notes() -> dict[str, dict[str, dict]]:
+    """Load per-conference-year notes. Returns {conf_id: {year_str: {note fields}}}."""
+    if not YEAR_NOTES_FILE.exists():
+        return {}
+    with open(YEAR_NOTES_FILE, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+    result: dict[str, dict[str, dict]] = {}
+    for key, entry in raw.items():
+        if key.startswith("_"):
+            continue
+        parts = key.rsplit("_", 1)
+        if len(parts) != 2:
+            continue
+        conf_id, year_str = parts
+        result.setdefault(conf_id, {})[year_str] = entry
+    return result
 
 
 def compute_language_distribution(authors: list[dict]) -> dict[str, int]:
@@ -202,6 +221,7 @@ def run(force: bool = False):
     all_venues = load_venues()
     rank_history = load_rank_history()
     accept_rates = load_accept_rates()
+    year_notes = load_year_notes()
 
     if not all_data:
         print("No classified data found. Run step 3 first.")
@@ -324,9 +344,12 @@ def run(force: bool = False):
         # Add acceptance rates if available
         if conf_id in accept_rates:
             conf_stats["accept_rates"] = accept_rates[conf_id]
-        # Add note if available
+        # Add note if available (conference-level)
         if meta.get("note"):
             conf_stats["note"] = meta["note"]
+        # Add per-year notes if available
+        if conf_id in year_notes:
+            conf_stats["year_notes"] = year_notes[conf_id]
         _write_json(STATS_DIR / "by_conference" / f"{conf_id}.json", conf_stats)
 
     # 4. by_category/{category}.json
