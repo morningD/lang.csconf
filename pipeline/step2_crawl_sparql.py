@@ -391,6 +391,23 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
 
         done += 1
 
+    # Clean up stale files: if force-crawl returned empty results for a
+    # (conf_id, year) that previously had data, delete the old file.
+    if force:
+        stale_deleted = 0
+        classified_dir = DATA_DIR / "classified" / "authors"
+        for conf_id, year in pending_conf_years:
+            if (conf_id, year) in accumulated:
+                continue  # has new data, already written above
+            safe_id = _safe_filename(conf_id)
+            for d in [AUTHORS_DIR, classified_dir]:
+                old_file = d / f"{safe_id}_{year}.json"
+                if old_file.exists():
+                    old_file.unlink()
+                    stale_deleted += 1
+        if stale_deleted:
+            print(f"Cleaned {stale_deleted} stale file(s) (empty after re-crawl)")
+
     print(f"Done: {done} saved, {errors} errors, {skipped} cached")
 
     # Post-process: merge files where yearOfPublication != conference year

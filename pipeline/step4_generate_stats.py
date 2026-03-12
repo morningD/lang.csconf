@@ -176,12 +176,20 @@ def validate_paper_counts(
                         f"recent avg {recent_avg:.0f} (sharp drop, possible data issue)"
                     )
 
-            # Check 3: spike (> 2x recent max AND > 100 more papers)
-            if recent_max >= 30 and count > recent_max * 2 and count - recent_max > 100:
-                warnings.append(
-                    f"  ANOMALY: {conf_id} {year} has {count} papers, "
-                    f"recent max {recent_max} (>2x spike, possible workshop contamination)"
+            # Check 3: spike detection
+            # If prior years show a consistent upward trend (each year >= previous),
+            # use a relaxed 3x threshold — the conference is genuinely growing.
+            # Otherwise use 2x for sudden jumps that suggest workshop contamination.
+            if recent_max >= 30 and count - recent_max > 100:
+                growing = len(prior) >= 2 and all(
+                    prior[k] >= prior[k + 1] for k in range(len(prior) - 1)
                 )
+                threshold = 3 if growing else 2
+                if count > recent_max * threshold:
+                    warnings.append(
+                        f"  ANOMALY: {conf_id} {year} has {count} papers, "
+                        f"recent max {recent_max} (>{threshold}x spike, possible workshop contamination)"
+                    )
 
     return warnings
 
