@@ -16,6 +16,10 @@
 
   "_comment_noise": "=== NOISE: Data that shouldn't exist or is from wrong conference ===",
 
+  "BIBM_2013": {
+    "status": "ok",
+    "note": "Spike: 319 vs max 131. Investigated 2026-03-12: DBLP structural change. 2010-2012 had separate workshop proceedings volume (bibmw20xx, 184-216 papers); from 2013 onward workshops merged into main proceedings. Not a data error — IEEE BIBM includes workshops in same proceedings since 2013."
+  },
   "CADE_2010": {
     "status": "noise",
     "note": "CADE alternates with IJCAR; 2010 was an IJCAR year. These 43 papers may be from IJCAR proceedings cross-filed in the CADE DBLP stream."
@@ -552,11 +556,43 @@
   },
   "UIC_2012": {
     "status": "ok",
-    "note": "Spike: 154 vs max 51. UIC/ATC 2012 joint venue. DBLP merges co-located conferences (ATC added 2012, ScalCom/CBDCom/IoP added 2016, SmartWorld/SCI added 2018) under conf/uic/. Cannot separate without manual per-paper curation. Counts include all co-located papers."
+    "note": "Co-located UIC/ATC 2012. Filtered 2026-03-12: removed ATC + 9 workshops via DBLP h2 sections. 154 → 55 UIC-only first-author papers."
+  },
+  "UIC_2013": {
+    "status": "ok",
+    "note": "Co-located UIC/ATC 2013. Filtered 2026-03-12: removed ATC + workshops via DBLP h2 sections. 98 → 43 UIC-only first-author papers."
+  },
+  "UIC_2014": {
+    "status": "ok",
+    "note": "Co-located UIC/ATC/ScalCom 2014. DBLP page has no section headers — cannot separate UIC from co-located conferences. 133 papers includes all co-located."
   },
   "UIC_2015": {
     "status": "ok",
-    "note": "Spike: 317 vs max 154. UIC/ATC/ScalCom 2015: 3+ co-located conferences merged in DBLP. See UIC_2012 note for context."
+    "note": "Co-located UIC/ATC/ScalCom 2015. DBLP page has no section headers — cannot separate. 317 papers includes all co-located."
+  },
+  "UIC_2016": {
+    "status": "ok",
+    "note": "Co-located UIC/ATC/ScalCom/CBDCom/IoP/SmartWorld 2016. DBLP page has no section headers — cannot separate. 166 papers includes all co-located."
+  },
+  "UIC_2017": {
+    "status": "ok",
+    "note": "Co-located SmartWorld/ScalCom/UIC/ATC/CBDCom/IoP/SCI 2017. DBLP page has no section headers — cannot separate. 282 papers includes all co-located."
+  },
+  "UIC_2018": {
+    "status": "ok",
+    "note": "Co-located SmartWorld/UIC/ATC/ScalCom/CBDCom/IoP/SCI 2018. Filtered 2026-03-12: removed 6 co-located conferences + 5 workshops within UIC section via DBLP h2+h3 sections. 320 → 127 UIC-only first-author papers (4 tracks + WiP)."
+  },
+  "UIC_2019": {
+    "status": "ok",
+    "note": "Co-located SmartWorld/ScalCom/UIC/ATC/CBDCom/IoP/SCI 2019. DBLP page has no section headers — cannot separate. 300 papers includes all co-located."
+  },
+  "UIC_2021": {
+    "status": "ok",
+    "note": "Co-located SmartWorld/ScalCom/UIC/ATC/IoP/SCI 2021. DBLP page has no section headers — cannot separate. 90 papers includes all co-located."
+  },
+  "UIC_2022": {
+    "status": "ok",
+    "note": "Co-located UIC/SmartWorld/ScalCom/DigitalTwin/PriComp/Meta 2022. DBLP page has no section headers — cannot separate. 339 papers includes all co-located."
   },
   "USENIXSECURITY_2021": {
     "status": "ok",

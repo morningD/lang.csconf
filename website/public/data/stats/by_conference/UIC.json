@@ -42,32 +42,25 @@
       "Persian": 1
     },
     "2012": {
-      "Chinese": 60,
-      "English": 55,
-      "German": 7,
-      "Korean": 9,
-      "Other": 6,
-      "French": 4,
-      "Japanese": 6,
-      "Spanish": 3,
-      "Vietnamese": 1,
-      "Persian": 1,
-      "Portuguese": 2
+      "English": 19,
+      "Chinese": 22,
+      "French": 2,
+      "Other": 3,
+      "Korean": 4,
+      "Japanese": 1,
+      "Spanish": 2,
+      "German": 2
     },
     "2013": {
-      "Chinese": 19,
-      "English": 38,
-      "Spanish": 9,
-      "Italian": 9,
-      "Turkish": 1,
-      "Vietnamese": 1,
-      "Japanese": 3,
-      "Other": 8,
+      "Chinese": 12,
+      "Spanish": 5,
+      "Italian": 3,
+      "English": 11,
+      "Japanese": 2,
       "Russian": 1,
-      "German": 1,
-      "Portuguese": 2,
+      "Portuguese": 1,
+      "Other": 3,
       "Korean": 3,
-      "Indian": 1,
       "French": 2
     },
     "2014": {
@@ -133,20 +126,13 @@
       "Turkish": 1
     },
     "2018": {
-      "French": 6,
-      "English": 48,
-      "Chinese": 226,
-      "Korean": 3,
-      "Japanese": 5,
-      "Persian": 6,
-      "Italian": 2,
-      "Other": 11,
-      "German": 5,
-      "Spanish": 3,
-      "Turkish": 2,
-      "Vietnamese": 1,
-      "Indian": 1,
-      "Dutch": 1
+      "English": 14,
+      "Chinese": 106,
+      "Persian": 1,
+      "Spanish": 1,
+      "Turkish": 1,
+      "Other": 3,
+      "French": 1
     },
     "2019": {
       "Chinese": 155,
@@ -190,22 +176,22 @@
     }
   },
   "total": {
-    "Chinese": 1245,
-    "French": 56,
-    "English": 554,
-    "Spanish": 52,
-    "Korean": 41,
-    "Other": 112,
-    "German": 62,
-    "Portuguese": 14,
-    "Vietnamese": 14,
-    "Japanese": 33,
-    "Persian": 25,
-    "Italian": 44,
-    "Turkish": 6,
+    "Chinese": 1080,
+    "French": 49,
+    "English": 457,
+    "Spanish": 45,
+    "Korean": 33,
+    "Other": 96,
+    "German": 51,
+    "Portuguese": 11,
+    "Vietnamese": 11,
+    "Japanese": 22,
+    "Persian": 19,
+    "Italian": 36,
     "Russian": 11,
-    "Indian": 18,
-    "Dutch": 9
+    "Indian": 16,
+    "Dutch": 8,
+    "Turkish": 4
   },
   "venues": {
     "2022": {
@@ -283,11 +269,43 @@
   "year_notes": {
     "2012": {
       "status": "ok",
-      "note": "Spike: 154 vs max 51. UIC/ATC 2012 joint venue. DBLP merges co-located conferences (ATC added 2012, ScalCom/CBDCom/IoP added 2016, SmartWorld/SCI added 2018) under conf/uic/. Cannot separate without manual per-paper curation. Counts include all co-located papers."
+      "note": "Co-located UIC/ATC 2012. Filtered 2026-03-12: removed ATC + 9 workshops via DBLP h2 sections. 154 → 55 UIC-only first-author papers."
+    },
+    "2013": {
+      "status": "ok",
+      "note": "Co-located UIC/ATC 2013. Filtered 2026-03-12: removed ATC + workshops via DBLP h2 sections. 98 → 43 UIC-only first-author papers."
+    },
+    "2014": {
+      "status": "ok",
+      "note": "Co-located UIC/ATC/ScalCom 2014. DBLP page has no section headers — cannot separate UIC from co-located conferences. 133 papers includes all co-located."
     },
     "2015": {
       "status": "ok",
-      "note": "Spike: 317 vs max 154. UIC/ATC/ScalCom 2015: 3+ co-located conferences merged in DBLP. See UIC_2012 note for context."
+      "note": "Co-located UIC/ATC/ScalCom 2015. DBLP page has no section headers — cannot separate. 317 papers includes all co-located."
+    },
+    "2016": {
+      "status": "ok",
+      "note": "Co-located UIC/ATC/ScalCom/CBDCom/IoP/SmartWorld 2016. DBLP page has no section headers — cannot separate. 166 papers includes all co-located."
+    },
+    "2017": {
+      "status": "ok",
+      "note": "Co-located SmartWorld/ScalCom/UIC/ATC/CBDCom/IoP/SCI 2017. DBLP page has no section headers — cannot separate. 282 papers includes all co-located."
+    },
+    "2018": {
+      "status": "ok",
+      "note": "Co-located SmartWorld/UIC/ATC/ScalCom/CBDCom/IoP/SCI 2018. Filtered 2026-03-12: removed 6 co-located conferences + 5 workshops within UIC section via DBLP h2+h3 sections. 320 → 127 UIC-only first-author papers (4 tracks + WiP)."
+    },
+    "2019": {
+      "status": "ok",
+      "note": "Co-located SmartWorld/ScalCom/UIC/ATC/CBDCom/IoP/SCI 2019. DBLP page has no section headers — cannot separate. 300 papers includes all co-located."
+    },
+    "2021": {
+      "status": "ok",
+      "note": "Co-located SmartWorld/ScalCom/UIC/ATC/IoP/SCI 2021. DBLP page has no section headers — cannot separate. 90 papers includes all co-located."
+    },
+    "2022": {
+      "status": "ok",
+      "note": "Co-located UIC/SmartWorld/ScalCom/DigitalTwin/PriComp/Meta 2022. DBLP page has no section headers — cannot separate. 339 papers includes all co-located."
     }
   }
 }

@@ -123,7 +123,8 @@ def compute_language_distribution(authors: list[dict]) -> dict[str, int]:
 def validate_paper_counts(
     all_data: list[dict],
     all_venues: dict[str, dict],
-) -> list[str]:
+    year_notes: dict[str, dict[str, dict]] | None = None,
+) -> tuple[list[str], list[str]]:
     """Detect anomalies in paper counts.
 
     Checks:
@@ -131,10 +132,29 @@ def validate_paper_counts(
     2. Paper count drops sharply vs recent years (excluding COVID 2020-2021)
     3. Paper count spikes (>2x recent trend), suggesting workshop contamination
 
-    Returns list of warning messages.
+    Anomalies documented in year_notes are separated as "known".
+    Conference-years with skip=true in year_notes are excluded entirely.
+
+    Returns (new_warnings, known_warnings).
     """
     COVID_YEARS = {2020, 2021}
-    warnings = []
+    if year_notes is None:
+        year_notes = {}
+    new_warnings = []
+    known_warnings = []
+
+    def _is_known(conf_id: str, year: int) -> bool:
+        return str(year) in year_notes.get(conf_id, {})
+
+    def _is_skipped(conf_id: str, year: int) -> bool:
+        yn = year_notes.get(conf_id, {}).get(str(year), {})
+        return bool(yn.get("skip"))
+
+    def _add(msg: str, conf_id: str, year: int):
+        if _is_known(conf_id, year):
+            known_warnings.append(msg)
+        else:
+            new_warnings.append(msg)
 
     # Build {conf_id: {year: paper_count}} from raw data
     conf_year_papers: dict[str, dict[int, int]] = defaultdict(lambda: defaultdict(int))
@@ -142,6 +162,8 @@ def validate_paper_counts(
         conf_id = entry.get("conference", "").replace("/", "-")
         year = entry.get("year", 0)
         if not conf_id or not year or year < 2010 or year > 2026:
+            continue
+        if _is_skipped(conf_id, year):
             continue
         first_authors = [a for a in entry.get("authors", []) if a.get("ordinal", 1) == 1]
         conf_year_papers[conf_id][year] = len(first_authors)
@@ -158,9 +180,10 @@ def validate_paper_counts(
         # (conference likely hasn't happened yet, or data is from workshops)
         for year, count in sorted(year_counts.items()):
             if count > 0 and vy and year not in vy:
-                warnings.append(
-                    f"  ANOMALY: {conf_id} {year} has {count} papers but NO venue data "
-                    f"(conference may not have happened yet)"
+                _add(
+                    f"  {conf_id} {year}: {count} papers but NO venue data "
+                    f"(conference may not have happened yet)",
+                    conf_id, year,
                 )
 
         # Build sorted yearly data for trend analysis
@@ -190,9 +213,10 @@ def validate_paper_counts(
             # Check 2: sharp drop (< 40% of recent average, not a COVID year)
             if year not in COVID_YEARS and recent_avg >= 30:
                 if count < recent_avg * 0.4:
-                    warnings.append(
-                        f"  ANOMALY: {conf_id} {year} has {count} papers, "
-                        f"recent avg {recent_avg:.0f} (sharp drop, possible data issue)"
+                    _add(
+                        f"  {conf_id} {year}: {count} papers, "
+                        f"recent avg {recent_avg:.0f} (sharp drop)",
+                        conf_id, year,
                     )
 
             # Check 3: spike detection
@@ -205,12 +229,13 @@ def validate_paper_counts(
                 )
                 threshold = 3 if growing else 2
                 if count > recent_max * threshold:
-                    warnings.append(
-                        f"  ANOMALY: {conf_id} {year} has {count} papers, "
-                        f"recent max {recent_max} (>{threshold}x spike, possible workshop contamination)"
+                    _add(
+                        f"  {conf_id} {year}: {count} papers, "
+                        f"recent max {recent_max} (>{threshold}x spike)",
+                        conf_id, year,
                     )
 
-    return warnings
+    return new_warnings, known_warnings
 
 
 def run(force: bool = False):
@@ -228,11 +253,14 @@ def run(force: bool = False):
         return
 
     # Validate data before generating stats
-    anomalies = validate_paper_counts(all_data, all_venues)
-    if anomalies:
-        print(f"WARNING: {len(anomalies)} data anomalies detected:")
-        for w in anomalies:
+    new_anomalies, known_anomalies = validate_paper_counts(all_data, all_venues, year_notes)
+    if new_anomalies:
+        print(f"WARNING: {len(new_anomalies)} NEW anomalies detected (not yet in conference_year_notes.json):")
+        for w in new_anomalies:
             print(w)
+        print()
+    if known_anomalies:
+        print(f"  ({len(known_anomalies)} known anomalies documented in notes, suppressed)")
         print()
 
     # Prepare output directories

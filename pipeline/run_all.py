@@ -1,6 +1,7 @@
 """Orchestrator: run all pipeline steps sequentially."""
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -18,6 +19,22 @@ def main():
 
     args = parser.parse_args()
     conferences_filter = args.conferences.split(",") if args.conferences else None
+
+    # Clean up macOS Finder duplicate files (" 2.json", " 3.json", etc.)
+    # These are created when Finder copies/moves files and cause data corruption.
+    data_dir = Path(__file__).parent.parent / "data"
+    finder_dup_re = re.compile(r".+ \d+\.json$")
+    cleaned = 0
+    for subdir in ["raw/authors", "raw/venues", "classified/authors"]:
+        d = data_dir / subdir
+        if not d.exists():
+            continue
+        for f in d.iterdir():
+            if finder_dup_re.match(f.name):
+                f.unlink()
+                cleaned += 1
+    if cleaned:
+        print(f"Cleaned {cleaned} macOS Finder duplicate file(s)\n")
 
     steps = [
         ("1", "Parse conferences", lambda: step1_parse_conferences.run(force=args.force)),
