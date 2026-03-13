@@ -532,6 +532,22 @@
     "status": "ok",
     "note": "DRM venue name contains 'Workshop' — caught by filter. 7 papers recovered via HTML fallback (Search API returned 500)."
   },
+  "FAST_2021": {
+    "paper_source": "search_api",
+    "date": "Feb 23-25 2021",
+    "location": "Virtual",
+    "homepage": "https://www.usenix.org/conference/fast21",
+    "status": "virtual",
+    "note": "Virtual event due to COVID-19. SPARQL returned 0 (gap), 28 papers recovered via Search API + HTML fallback. DBLP venue page has no h2 heading for 2021."
+  },
+  "HOTSTORAGE_2020": {
+    "paper_source": "search_api",
+    "date": "Jul 13-14 2020",
+    "location": "Virtual",
+    "homepage": "https://www.usenix.org/conference/hotstorage20",
+    "status": "virtual",
+    "note": "Virtual event due to COVID-19. SPARQL returned 0 (gap), 36 papers recovered via Search API. DBLP venue page has no h2 heading for 2020."
+  },
 
   "_comment_anomaly_spike": "=== ANOMALY SPIKE: Detected by step4, not yet fully investigated ===",
 

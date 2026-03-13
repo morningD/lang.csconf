@@ -95,13 +95,13 @@
       "Indian": 1
     },
     "2019": {
-      "English": 24,
+      "English": 40,
       "Indian": 1,
-      "Korean": 9,
+      "Korean": 15,
       "German": 1,
-      "Chinese": 18,
-      "Other": 3,
-      "Turkish": 1
+      "Chinese": 28,
+      "Other": 6,
+      "Turkish": 2
     },
     "2021": {
       "Chinese": 5,
@@ -141,18 +141,18 @@
     }
   },
   "total": {
-    "English": 120,
+    "English": 136,
     "German": 7,
     "Japanese": 2,
     "Indian": 8,
     "French": 5,
-    "Korean": 46,
-    "Other": 17,
-    "Chinese": 78,
+    "Korean": 52,
+    "Other": 20,
+    "Chinese": 88,
     "Italian": 2,
     "Russian": 4,
     "Spanish": 9,
-    "Turkish": 1,
+    "Turkish": 2,
     "Vietnamese": 2
   },
   "venues": {
@@ -219,5 +219,15 @@
   },
   "rank_history": {
     "2026": "C"
+  },
+  "year_notes": {
+    "2020": {
+      "paper_source": "search_api",
+      "date": "Jul 13-14 2020",
+      "location": "Virtual",
+      "homepage": "https://www.usenix.org/conference/hotstorage20",
+      "status": "virtual",
+      "note": "Virtual event due to COVID-19. SPARQL returned 0 (gap), 36 papers recovered via Search API. DBLP venue page has no h2 heading for 2020."
+    }
   }
 }

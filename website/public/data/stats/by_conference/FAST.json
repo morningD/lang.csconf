@@ -17,6 +17,7 @@
     2018,
     2019,
     2020,
+    2021,
     2022,
     2023,
     2024,
@@ -119,6 +120,13 @@
       "Indian": 4,
       "Spanish": 2
     },
+    "2021": {
+      "Chinese": 16,
+      "English": 7,
+      "Spanish": 2,
+      "Indian": 1,
+      "Korean": 2
+    },
     "2022": {
       "English": 7,
       "Chinese": 12,
@@ -150,14 +158,14 @@
     }
   },
   "total": {
-    "English": 140,
+    "English": 147,
     "Other": 19,
-    "Indian": 16,
+    "Indian": 17,
     "German": 19,
     "French": 4,
-    "Chinese": 190,
-    "Spanish": 8,
-    "Korean": 51,
+    "Chinese": 206,
+    "Spanish": 10,
+    "Korean": 53,
     "Russian": 4,
     "Vietnamese": 2,
     "Portuguese": 1,
@@ -165,6 +173,10 @@
     "Dutch": 1
   },
   "venues": {
+    "2026": {
+      "city": "Santa Clara",
+      "country": "USA"
+    },
     "2025": {
       "city": "Santa Clara",
       "country": "USA"
@@ -180,6 +192,10 @@
     "2022": {
       "city": "Santa Clara",
       "country": "USA"
+    },
+    "2021": {
+      "city": "Virtual",
+      "country": null
     },
     "2020": {
       "city": "Santa Clara",
@@ -372,5 +388,15 @@
       "submitted": 110,
       "accepted": 21
     }
-  ]
+  ],
+  "year_notes": {
+    "2021": {
+      "paper_source": "search_api",
+      "date": "Feb 23-25 2021",
+      "location": "Virtual",
+      "homepage": "https://www.usenix.org/conference/fast21",
+      "status": "virtual",
+      "note": "Virtual event due to COVID-19. SPARQL returned 0 (gap), 28 papers recovered via Search API + HTML fallback. DBLP venue page has no h2 heading for 2021."
+    }
+  }
 }
