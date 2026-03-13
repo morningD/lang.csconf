@@ -15,10 +15,14 @@ Visualizing the linguistic diversity of first authors across CCF-rated CS confer
 | Metric | Value |
 |--------|-------|
 | **Conferences** | 416 (CCF A/B/C + non-ranked) |
-| **Papers** | 885,533 |
+| **Papers** | 884,137 |
 | **Year range** | 2010–2026 |
 | **Categories** | 10 (AI, DB, NW, SE, CG, CT, HI, SC, DS, MX) |
 | **Languages tracked** | 17 |
+
+## Open Data
+
+The raw crawled dataset (884k+ first-author records from DBLP, 2010–2026) is available for download on the [Releases](https://github.com/morningD/lang.csconf/releases) page. The data has been extensively cleaned — see the [About page](https://morningD.github.io/lang.csconf/#/about) for details.
 
 ## Features
 
@@ -132,10 +136,14 @@ python -m pipeline.run_all --force
 | 指标 | 数值 |
 |------|------|
 | **会议数** | 416（CCF A/B/C + 未评级） |
-| **论文数** | 885,533 |
+| **论文数** | 884,137 |
 | **年份范围** | 2010–2026 |
 | **学科分类** | 10（AI、DB、NW、SE、CG、CT、HI、SC、DS、MX） |
 | **追踪语言数** | 17 |
+
+## 开放数据
+
+原始爬取数据集（88 万余条第一作者记录，来自 DBLP，2010–2026）可在 [Releases](https://github.com/morningD/lang.csconf/releases) 页面下载。数据经过多轮清洗——详见[关于页面](https://morningD.github.io/lang.csconf/#/about)。
 
 ## 功能特点
 

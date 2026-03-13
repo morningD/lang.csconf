@@ -103,6 +103,47 @@ const { t } = useI18n()
           </ul>
         </section>
 
+        <!-- Data Cleaning -->
+        <section class="card p-6 bg-gray-800/50 border-gray-700/50">
+          <h2 class="text-xl font-semibold text-white mb-3">{{ t('about.data_cleaning') }}</h2>
+          <p class="text-gray-300 leading-relaxed mb-3">{{ t('about.data_cleaning_intro') }}</p>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <span>{{ t('about.clean_workshop') }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <span>{{ t('about.clean_proceedings') }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <span>{{ t('about.clean_crossyear') }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <span>{{ t('about.clean_joint') }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <span>{{ t('about.clean_colocation') }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <span>{{ t('about.clean_gapfill') }}</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Open Data -->
+        <section class="card p-6 bg-green-900/20 border-green-700/30">
+          <h2 class="text-xl font-semibold text-green-400 mb-3">{{ t('about.open_data') }}</h2>
+          <p class="text-gray-300 leading-relaxed">
+            {{ t('about.open_data_text') }}
+            <a href="https://github.com/morningD/lang.csconf/releases" target="_blank" rel="noopener" class="text-green-400 hover:underline">GitHub Releases</a>.
+          </p>
+        </section>
+
         <!-- Credits -->
         <section class="card p-6 bg-gray-800/50 border-gray-700/50">
           <h2 class="text-xl font-semibold text-white mb-3">{{ t('about.credits') }}</h2>
