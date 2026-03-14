@@ -16,7 +16,9 @@
     2017,
     2018,
     2019,
-    2020
+    2020,
+    2022,
+    2023
   ],
   "by_year": {
     "2010": {
@@ -109,28 +111,45 @@
     },
     "2020": {
       "Other": 1,
+      "English": 10,
+      "German": 5,
+      "Chinese": 11,
+      "Dutch": 2,
+      "French": 2,
+      "Korean": 1,
+      "Italian": 1
+    },
+    "2022": {
       "English": 6,
-      "German": 2,
       "Chinese": 5,
-      "Dutch": 1,
-      "French": 1,
-      "Korean": 1
+      "Other": 2,
+      "German": 1,
+      "Spanish": 2
+    },
+    "2023": {
+      "Other": 2,
+      "Chinese": 5,
+      "English": 4,
+      "French": 2,
+      "German": 2,
+      "Spanish": 1
     }
   },
   "total": {
-    "English": 127,
-    "Chinese": 80,
-    "French": 19,
-    "German": 29,
-    "Dutch": 3,
-    "Other": 25,
+    "English": 141,
+    "Chinese": 96,
+    "French": 22,
+    "German": 35,
+    "Dutch": 4,
+    "Other": 29,
     "Portuguese": 2,
-    "Italian": 4,
+    "Italian": 5,
     "Korean": 13,
     "Vietnamese": 3,
     "Indian": 2,
     "Russian": 8,
-    "Japanese": 1
+    "Japanese": 1,
+    "Spanish": 3
   },
   "venues": {
     "2020": {
@@ -212,5 +231,30 @@
     "2019": "B",
     "2022": "B",
     "2026": "B"
+  },
+  "year_notes": {
+    "2021": {
+      "status": "gap",
+      "note": "Journal-first model: papers published in PACMCGIT. DBLP SPARQL returns 0. ACM DL has 16 papers. Needs journal scrape recovery.",
+      "paper_source": "pending_journal_scrape"
+    },
+    "2022": {
+      "status": "gap",
+      "note": "Journal-first model: papers published in PACMCGIT. DBLP SPARQL returns 0. ACM DL has proceedings. Needs journal scrape recovery.",
+      "paper_source": "pending_journal_scrape"
+    },
+    "2023": {
+      "status": "gap",
+      "note": "Journal-first model: papers published in PACMCGIT. DBLP SPARQL returns 0. ACM DL has proceedings. Needs journal scrape recovery.",
+      "paper_source": "pending_journal_scrape"
+    },
+    "2024": {
+      "status": "gap",
+      "note": "No proceedings found on ACM DL or DBLP. Conference may not have been held."
+    },
+    "2025": {
+      "status": "gap",
+      "note": "Only Companion Proceedings on ACM DL, no main conference papers."
+    }
   }
 }

@@ -1034,5 +1034,79 @@
   "CODES+ISSS_2024": {
     "status": "partial",
     "note": "12 papers. No TECS 5s for even years. Low count is structural."
+  },
+  "ANCS_2020": {
+    "status": "gap",
+    "note": "Conference not held in 2020 (COVID). No DBLP or ACM DL proceedings."
+  },
+  "ANCS_2022": {
+    "status": "gap",
+    "note": "Conference discontinued after 2021. No DBLP or ACM DL proceedings for 2022+."
+  },
+  "ANCS_2023": {
+    "status": "gap",
+    "note": "Conference discontinued after 2021."
+  },
+  "ANCS_2024": {
+    "status": "gap",
+    "note": "Conference discontinued after 2021."
+  },
+  "ANCS_2025": {
+    "status": "gap",
+    "note": "Conference discontinued after 2021."
+  },
+  "I3D_2021": {
+    "status": "ok",
+    "note": "Journal-first model: papers published in PACMCGIT. Recovered 16 papers from ACM DL event page.",
+    "paper_source": "acm_event_scrape",
+    "paper_source_url": "https://dl.acm.org/do/10.1145/event-15729/abs/"
+  },
+  "I3D_2022": {
+    "status": "ok",
+    "note": "Journal-first model: papers published in PACMCGIT. Recovered 16 papers from ACM DL event page.",
+    "paper_source": "acm_event_scrape",
+    "paper_source_url": "https://dl.acm.org/do/10.1145/event-16509/abs/"
+  },
+  "I3D_2023": {
+    "status": "ok",
+    "note": "Journal-first model: papers published in PACMCGIT. Recovered 16 papers from ACM DL event page.",
+    "paper_source": "acm_event_scrape",
+    "paper_source_url": "https://dl.acm.org/do/10.1145/event-16844/abs/"
+  },
+  "I3D_2024": {
+    "status": "gap",
+    "note": "No proceedings found on ACM DL or DBLP. Conference may not have been held."
+  },
+  "I3D_2025": {
+    "status": "gap",
+    "note": "Only Companion Proceedings on ACM DL, no main conference papers."
+  },
+  "MASS_2022": {
+    "status": "gap",
+    "note": "No DBLP SPARQL or IEEE Xplore results. Conference may not have been held."
+  },
+  "MASS_2023": {
+    "status": "gap",
+    "note": "No DBLP SPARQL or IEEE Xplore results. Conference may not have been held."
+  },
+  "MASS_2024": {
+    "status": "gap",
+    "note": "No DBLP SPARQL or IEEE Xplore results. Conference may not have been held."
+  },
+  "NOCS_2022": {
+    "status": "gap",
+    "note": "No DBLP SPARQL results. Conference may have been discontinued after 2021."
+  },
+  "NOCS_2023": {
+    "status": "gap",
+    "note": "Conference likely discontinued after 2021."
+  },
+  "NOCS_2024": {
+    "status": "gap",
+    "note": "Conference likely discontinued after 2021."
+  },
+  "NOCS_2025": {
+    "status": "gap",
+    "note": "Conference likely discontinued after 2021."
   }
 }
