@@ -398,5 +398,39 @@
       "submitted": 143,
       "accepted": 30
     }
-  ]
+  ],
+  "year_notes": {
+    "2019": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2019/18/5s",
+      "note": "23 TECS papers + 21 SPARQL = 44 total"
+    },
+    "2021": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2021/20/5s",
+      "note": "18 TECS papers + 11 SPARQL = 29 total"
+    },
+    "2023": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2023/22/5s",
+      "note": "17 TECS papers + 15 SPARQL = 32 total"
+    },
+    "2025": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2025/24/5s",
+      "note": "25 TECS papers + 12 SPARQL WiP = 37 total"
+    },
+    "2022": {
+      "status": "partial",
+      "note": "11 papers. No TECS 5s for even years. Low count is structural."
+    },
+    "2024": {
+      "status": "partial",
+      "note": "12 papers. No TECS 5s for even years. Low count is structural."
+    }
+  }
 }

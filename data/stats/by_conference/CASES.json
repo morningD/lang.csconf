@@ -415,6 +415,36 @@
       "paper_source": "journal_scrape",
       "paper_source_url": "https://dl.acm.org/toc/tecs/2021/20/5s",
       "note": "Papers published in ACM TECS Vol 20 No 5s (Articles 50-60). DBLP conf/cases/ only had 2 WiP papers. 11 full papers recovered via DBLP Search API + journal TOC."
+    },
+    "2019": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2019/18/5s",
+      "note": "16 TECS papers + 11 SPARQL WiP = 27 total"
+    },
+    "2023": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2023/22/5s",
+      "note": "21 TECS papers + 6 SPARQL WiP = 28 total (1 overlap)"
+    },
+    "2025": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2025/24/5s",
+      "note": "20 TECS papers + 8 SPARQL WiP = 28 total"
+    },
+    "2018": {
+      "status": "partial",
+      "note": "14 papers. No TECS 5s for even years (journal-first model). Low count is structural."
+    },
+    "2020": {
+      "status": "partial",
+      "note": "7 papers. No TECS 5s for even years. Low count is structural."
+    },
+    "2024": {
+      "status": "partial",
+      "note": "8 papers. No TECS 5s for even years (ACM DL 404). Low count is structural."
     }
   }
 }

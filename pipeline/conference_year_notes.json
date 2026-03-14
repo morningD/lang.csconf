@@ -410,20 +410,20 @@
   },
   "_comment_journal_gap": "=== JOURNAL GAP: Papers published in journals, not recoverable ===",
   "EMSOFT_2018": {
-    "status": "gap",
-    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 16 papers from SPARQL (incomplete)."
+    "status": "partial",
+    "note": "16 papers. No TECS 5s for even years. Low count is structural."
   },
   "EMSOFT_2020": {
-    "status": "gap",
-    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 15 papers from SPARQL (incomplete)."
+    "status": "partial",
+    "note": "15 papers. No TECS 5s for even years. Low count is structural."
   },
   "EMSOFT_2022": {
-    "status": "gap",
-    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 11 papers from SPARQL (incomplete)."
+    "status": "partial",
+    "note": "11 papers. No TECS 5s for even years. Low count is structural."
   },
   "EMSOFT_2024": {
     "status": "gap",
-    "note": "Papers published in ACM TECS journal, not in DBLP conf stream. No data."
+    "note": "No data. TECS 5s for 2024 not yet published (ACM DL 404). DBLP conf/ also empty."
   },
   "RECOMB_2021": {
     "status": "gap",
@@ -954,5 +954,85 @@
     "year": 2018,
     "status": "ok",
     "note": "Final year, 5 papers. Verified."
+  },
+  "CASES_2019": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2019/18/5s",
+    "note": "16 TECS papers + 11 SPARQL WiP = 27 total"
+  },
+  "CASES_2023": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2023/22/5s",
+    "note": "21 TECS papers + 6 SPARQL WiP = 28 total (1 overlap)"
+  },
+  "CASES_2025": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2025/24/5s",
+    "note": "20 TECS papers + 8 SPARQL WiP = 28 total"
+  },
+  "CODES+ISSS_2019": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2019/18/5s",
+    "note": "23 TECS papers + 21 SPARQL = 44 total"
+  },
+  "CODES+ISSS_2021": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2021/20/5s",
+    "note": "18 TECS papers + 11 SPARQL = 29 total"
+  },
+  "CODES+ISSS_2023": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2023/22/5s",
+    "note": "17 TECS papers + 15 SPARQL = 32 total"
+  },
+  "CODES+ISSS_2025": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2025/24/5s",
+    "note": "25 TECS papers + 12 SPARQL WiP = 37 total"
+  },
+  "EMSOFT_2019": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2019/18/5s",
+    "note": "2 new TECS papers + 66 already from SPARQL = 68 total"
+  },
+  "EMSOFT_2023": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2023/22/5s",
+    "note": "21 TECS papers + 9 SPARQL = 30 total"
+  },
+  "EMSOFT_2025": {
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2025/24/5s",
+    "note": "27 TECS papers + 7 SPARQL WiP = 34 total"
+  },
+  "CASES_2018": {
+    "status": "partial",
+    "note": "14 papers. No TECS 5s for even years (journal-first model). Low count is structural."
+  },
+  "CASES_2020": {
+    "status": "partial",
+    "note": "7 papers. No TECS 5s for even years. Low count is structural."
+  },
+  "CASES_2024": {
+    "status": "partial",
+    "note": "8 papers. No TECS 5s for even years (ACM DL 404). Low count is structural."
+  },
+  "CODES+ISSS_2022": {
+    "status": "partial",
+    "note": "11 papers. No TECS 5s for even years. Low count is structural."
+  },
+  "CODES+ISSS_2024": {
+    "status": "partial",
+    "note": "12 papers. No TECS 5s for even years. Low count is structural."
   }
 }

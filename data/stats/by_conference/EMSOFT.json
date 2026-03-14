@@ -422,20 +422,38 @@
   ],
   "year_notes": {
     "2018": {
-      "status": "gap",
-      "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 16 papers from SPARQL (incomplete)."
+      "status": "partial",
+      "note": "16 papers. No TECS 5s for even years. Low count is structural."
     },
     "2020": {
-      "status": "gap",
-      "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 15 papers from SPARQL (incomplete)."
+      "status": "partial",
+      "note": "15 papers. No TECS 5s for even years. Low count is structural."
     },
     "2022": {
-      "status": "gap",
-      "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 11 papers from SPARQL (incomplete)."
+      "status": "partial",
+      "note": "11 papers. No TECS 5s for even years. Low count is structural."
     },
     "2024": {
       "status": "gap",
-      "note": "Papers published in ACM TECS journal, not in DBLP conf stream. No data."
+      "note": "No data. TECS 5s for 2024 not yet published (ACM DL 404). DBLP conf/ also empty."
+    },
+    "2019": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2019/18/5s",
+      "note": "2 new TECS papers + 66 already from SPARQL = 68 total"
+    },
+    "2023": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2023/22/5s",
+      "note": "21 TECS papers + 9 SPARQL = 30 total"
+    },
+    "2025": {
+      "status": "ok",
+      "paper_source": "journal_scrape",
+      "paper_source_url": "https://dl.acm.org/toc/tecs/2025/24/5s",
+      "note": "27 TECS papers + 7 SPARQL WiP = 34 total"
     }
   }
 }
