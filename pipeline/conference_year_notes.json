@@ -13,12 +13,10 @@
       "note": "Free-text note for provenance and context"
     }
   },
-
   "_comment_noise": "=== NOISE: Data that shouldn't exist or is from wrong conference ===",
-
   "BIBM_2013": {
     "status": "ok",
-    "note": "Spike: 319 vs max 131. Investigated 2026-03-12: DBLP structural change. 2010-2012 had separate workshop proceedings volume (bibmw20xx, 184-216 papers); from 2013 onward workshops merged into main proceedings. Not a data error — IEEE BIBM includes workshops in same proceedings since 2013."
+    "note": "Spike: 319 vs max 131. Investigated 2026-03-12: real growth. Conference permanently expanded ~2013, sustained trend to 1158 (2024)."
   },
   "CADE_2010": {
     "status": "noise",
@@ -37,9 +35,7 @@
     "paper_source": "search_api",
     "note": "HiPEAC API descriptions empty for 2018. Only 4 papers from search_api fallback — effectively a gap. No alternative data source found."
   },
-
   "_comment_cross_filed": "=== CROSS-FILED: Papers published under another conference in DBLP ===",
-
   "ECAI_2018": {
     "paper_source": "cross_filed",
     "note": "ECAI 2018 was joint IJCAI-ECAI. Papers cross-filed under conf/ijcai/ in DBLP. 870 papers copied from IJCAI data."
@@ -52,9 +48,7 @@
     "paper_source": "cross_filed",
     "note": "IJCNLP 2015 co-located as ACL-IJCNLP 2015. Papers filed under conf/acl/ in DBLP. 343 papers copied from ACL 2015 data."
   },
-
   "_comment_journal_scrape": "=== JOURNAL SCRAPE: Conference papers published in journals, recovered by manual scraping ===",
-
   "ISMB_2011": {
     "paper_source": "journal_scrape",
     "paper_source_url": "https://dblp.org/db/journals/bioinformatics/bioinformatics27.html",
@@ -94,7 +88,6 @@
     "status": "gap",
     "note": "ISMB/ECCB 2025 (odd year). Bioinformatics journal supplement not yet available."
   },
-
   "HIPEAC_2015": {
     "paper_source": "journal_scrape",
     "paper_source_url": "https://www.hipeac.net/api/v3/events/6779/activities/",
@@ -145,7 +138,6 @@
     "paper_source_url": "https://www.hipeac.net/api/v3/events/6814/activities/",
     "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef."
   },
-
   "FSE-CRYPTO_2017": {
     "paper_source": "journal_scrape",
     "paper_source_url": "https://www.nuee.nagoya-u.ac.jp/labs/tiwata/fse2017/program.html",
@@ -190,9 +182,7 @@
     "paper_source_url": "https://fse.iacr.org/2025/currentProgram.php",
     "note": "Papers published in IACR ToSC journal. 49 papers scraped from fse.iacr.org JSON API."
   },
-
   "_comment_website_scrape": "=== WEBSITE SCRAPE: Data scraped from conference or other websites ===",
-
   "ICCV_2025": {
     "date": "Jun 15-19 2025",
     "location": "Honolulu, HI, USA",
@@ -207,9 +197,7 @@
     "paper_source_url": "https://mlsys.org/Conferences/2019/Schedule",
     "note": "SysML 2018 (renamed to MLSys). 116 papers scraped from mlsys.org. Marked _source=website_scrape."
   },
-
   "_comment_search_api": "=== SEARCH API: Gaps auto-filled by step2c via DBLP Search API ===",
-
   "ADMA_2021": {
     "paper_source": "search_api",
     "note": "SPARQL gap filled by step2c. 61 papers."
@@ -271,20 +259,28 @@
     "note": "SPARQL gap filled by step2c. 9 papers."
   },
   "PEPM_2020": {
-    "paper_source": "search_api",
-    "note": "SPARQL gap filled by step2c. 5 papers."
+    "conference": "PEPM",
+    "year": 2020,
+    "status": "ok",
+    "note": "Small workshop (5 papers). Normal. Verified."
   },
   "PEPM_2021": {
-    "paper_source": "search_api",
-    "note": "SPARQL gap filled by step2c. 6 papers."
+    "conference": "PEPM",
+    "year": 2021,
+    "status": "ok",
+    "note": "Small workshop (6 papers). Normal. Verified."
   },
   "PEPM_2022": {
-    "paper_source": "search_api",
-    "note": "SPARQL gap filled by step2c. 2 papers."
+    "conference": "PEPM",
+    "year": 2022,
+    "status": "ok",
+    "note": "Small workshop (2 papers). Verified."
   },
   "PEPM_2023": {
-    "paper_source": "search_api",
-    "note": "SPARQL gap filled by step2c. 5 papers."
+    "conference": "PEPM",
+    "year": 2023,
+    "status": "ok",
+    "note": "Small workshop (5 papers). Normal. Verified."
   },
   "PERCOM_2025": {
     "paper_source": "search_api",
@@ -322,9 +318,7 @@
     "paper_source": "search_api",
     "note": "SPARQL gap filled by step2c. 17 papers."
   },
-
   "_comment_partial_gap": "=== PARTIAL GAP: SPARQL returned significantly fewer papers than expected, DBLP-side issue ===",
-
   "NSDI_2011": {
     "status": "partial",
     "paper_source": "search_api",
@@ -414,9 +408,7 @@
     "paper_source": "search_api",
     "note": "11 papers. SPARQL gap filled by step2c but still very low."
   },
-
   "_comment_journal_gap": "=== JOURNAL GAP: Papers published in journals, not recoverable ===",
-
   "EMSOFT_2018": {
     "status": "gap",
     "note": "Papers published in ACM TECS journal, not in DBLP conf stream. Only 16 papers from SPARQL (incomplete)."
@@ -437,9 +429,7 @@
     "status": "gap",
     "note": "Papers published in JCB journal. No data recoverable."
   },
-
   "_comment_no_dblp": "=== NO DBLP: Conference proceedings not on DBLP at all ===",
-
   "MSST_2017": {
     "status": "gap",
     "note": "Proceedings only on IEEE Xplore, not indexed on DBLP."
@@ -504,9 +494,7 @@
     "status": "gap",
     "note": "Not indexed on DBLP."
   },
-
   "_comment_search_api_manual": "=== MANUAL SEARCH API: Gaps manually filled via DBLP Search API + HTML ===",
-
   "CICAI_2021": {
     "paper_source": "search_api",
     "status": "ok",
@@ -548,13 +536,7 @@
     "status": "virtual",
     "note": "Virtual event due to COVID-19. SPARQL returned 0 (gap), 36 papers recovered via Search API. DBLP venue page has no h2 heading for 2020."
   },
-
   "_comment_anomaly_spike": "=== ANOMALY SPIKE: Detected by step4, not yet fully investigated ===",
-
-  "BIBM_2013": {
-    "status": "ok",
-    "note": "Spike: 319 vs max 131. Investigated 2026-03-12: real growth. Conference permanently expanded ~2013, sustained trend to 1158 (2024)."
-  },
   "COLING_2024": {
     "status": "ok",
     "note": "Spike: 1553 vs max 632. Investigated 2026-03-12: joint COLING/LREC 2024 (venue h2 confirms). One-time merger, COLING 2025 back to 848."
@@ -646,9 +628,7 @@
     "status": "ok",
     "note": "Spike: 256 vs max 113. Investigated 2026-03-12: real growth. Same multi-cycle expansion as 2021. Sustained through 2025."
   },
-
   "_comment_anomaly_drop": "=== ANOMALY DROP: Detected by step4, investigated or partially known ===",
-
   "CEC_2023": {
     "status": "ok",
     "note": "Sharp drop: 124 vs avg 336. Investigated 2026-03-12: real small edition. DBLP confirms 125 papers. CEC declining since 2020 (WCCI only in even years). Avg inflated by historically larger editions."
@@ -743,9 +723,7 @@
     "status": "ok",
     "note": "Sharp drop: 90 papers vs recent avg 249. Investigated 2026-03-12: due to Companion Volume split (84 main + 165 companion). Main track only is correct."
   },
-
   "_comment_venue": "=== VENUE METADATA: Conferences with venue info added manually ===",
-
   "DAI_2025": {
     "date": "Nov 21-24 2025",
     "location": "London, UK",
@@ -797,5 +775,184 @@
     "homepage": "https://www.usenix.org/conference/atc21",
     "status": "virtual",
     "note": "Virtual event due to COVID-19."
+  },
+  "RULEML+RR_2010": {
+    "conference": "RULEML+RR",
+    "year": 2010,
+    "status": "ok",
+    "paper_source": "sparql",
+    "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+  },
+  "RULEML+RR_2011": {
+    "conference": "RULEML+RR",
+    "year": 2011,
+    "status": "ok",
+    "paper_source": "sparql",
+    "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+  },
+  "RULEML+RR_2012": {
+    "conference": "RULEML+RR",
+    "year": 2012,
+    "status": "ok",
+    "paper_source": "sparql",
+    "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+  },
+  "RULEML+RR_2013": {
+    "conference": "RULEML+RR",
+    "year": 2013,
+    "status": "ok",
+    "paper_source": "sparql",
+    "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+  },
+  "RULEML+RR_2014": {
+    "conference": "RULEML+RR",
+    "year": 2014,
+    "status": "ok",
+    "paper_source": "sparql",
+    "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+  },
+  "RULEML+RR_2015": {
+    "conference": "RULEML+RR",
+    "year": 2015,
+    "status": "ok",
+    "paper_source": "sparql",
+    "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+  },
+  "RULEML+RR_2016": {
+    "conference": "RULEML+RR",
+    "year": 2016,
+    "status": "ok",
+    "paper_source": "sparql",
+    "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+  },
+  "COOPIS_2010": {
+    "conference": "COOPIS",
+    "year": 2010,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2010.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2011": {
+    "conference": "COOPIS",
+    "year": 2011,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2011.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2012": {
+    "conference": "COOPIS",
+    "year": 2012,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2012.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2013": {
+    "conference": "COOPIS",
+    "year": 2013,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2013.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2014": {
+    "conference": "COOPIS",
+    "year": 2014,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2014.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2015": {
+    "conference": "COOPIS",
+    "year": 2015,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2015.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2016": {
+    "conference": "COOPIS",
+    "year": 2016,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2016.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2017": {
+    "conference": "COOPIS",
+    "year": 2017,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2017.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2018": {
+    "conference": "COOPIS",
+    "year": 2018,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2018.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2019": {
+    "conference": "COOPIS",
+    "year": 2019,
+    "status": "ok",
+    "paper_source": "html_scrape",
+    "paper_source_url": "https://dblp.org/db/conf/otm/otm2019.html",
+    "note": "CoopIS papers extracted from OTM federated proceedings via DBLP HTML section headers"
+  },
+  "COOPIS_2020": {
+    "conference": "COOPIS",
+    "year": 2020,
+    "status": "gap",
+    "note": "No conference held. OTM ended 2019, CoopIS restarted independently 2022."
+  },
+  "COOPIS_2021": {
+    "conference": "COOPIS",
+    "year": 2021,
+    "status": "gap",
+    "note": "No conference held. OTM ended 2019, CoopIS restarted independently 2022."
+  },
+  "CASES_2021": {
+    "conference": "CASES",
+    "year": 2021,
+    "status": "ok",
+    "paper_source": "journal_scrape",
+    "paper_source_url": "https://dl.acm.org/toc/tecs/2021/20/5s",
+    "note": "Papers published in ACM TECS Vol 20 No 5s (Articles 50-60). DBLP conf/cases/ only had 2 WiP papers. 11 full papers recovered via DBLP Search API + journal TOC."
+  },
+  "LISA_2015": {
+    "conference": "LISA",
+    "year": 2015,
+    "status": "ok",
+    "note": "Final year, 4 papers on DBLP. Verified."
+  },
+  "PEPM_2018": {
+    "conference": "PEPM",
+    "year": 2018,
+    "status": "ok",
+    "note": "Small workshop (8 papers). Normal. Verified."
+  },
+  "PEPM_2025": {
+    "conference": "PEPM",
+    "year": 2025,
+    "status": "ok",
+    "note": "Small workshop (7 papers). Normal. Verified."
+  },
+  "LOPSTR_2021": {
+    "conference": "LOPSTR",
+    "year": 2021,
+    "status": "ok",
+    "note": "9 papers. Low end of normal (8-29). Verified."
+  },
+  "WEBDB_2018": {
+    "conference": "WEBDB",
+    "year": 2018,
+    "status": "ok",
+    "note": "Final year, 5 papers. Verified."
   }
 }

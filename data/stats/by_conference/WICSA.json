@@ -4,14 +4,26 @@
   "description": "Working IEEE/IFIP Conference on Software Architecture",
   "category": "SE",
   "rank": "C",
-  "dblp": "wicsa",
+  "dblp": [
+    "wicsa",
+    "icsa"
+  ],
   "years": [
     2010,
     2011,
     2012,
     2014,
     2015,
-    2016
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
   ],
   "by_year": {
     "2010": {
@@ -72,34 +84,134 @@
       "German": 2
     },
     "2016": {
+      "Spanish": 3,
       "Other": 7,
       "German": 12,
-      "Dutch": 1,
       "English": 14,
-      "Chinese": 2,
-      "Spanish": 3,
       "French": 3,
       "Italian": 2,
+      "Chinese": 2,
       "Vietnamese": 1,
       "Turkish": 1,
-      "Portuguese": 1
+      "Portuguese": 1,
+      "Dutch": 1
+    },
+    "2017": {
+      "Chinese": 2,
+      "Other": 5,
+      "Italian": 5,
+      "German": 5,
+      "Vietnamese": 1,
+      "English": 12,
+      "Persian": 2,
+      "Spanish": 1,
+      "French": 1
+    },
+    "2018": {
+      "English": 9,
+      "German": 1,
+      "Italian": 4,
+      "Other": 2,
+      "Indian": 1,
+      "French": 2,
+      "Vietnamese": 1,
+      "Chinese": 2,
+      "Spanish": 1
+    },
+    "2019": {
+      "English": 9,
+      "Other": 4,
+      "Spanish": 1,
+      "Italian": 2,
+      "German": 5,
+      "Chinese": 1
+    },
+    "2020": {
+      "Vietnamese": 1,
+      "English": 4,
+      "Other": 3,
+      "Italian": 3,
+      "Spanish": 3,
+      "Chinese": 3,
+      "Portuguese": 2
+    },
+    "2021": {
+      "French": 2,
+      "Chinese": 1,
+      "German": 3,
+      "Other": 2,
+      "Italian": 1,
+      "English": 4,
+      "Vietnamese": 1,
+      "Portuguese": 1,
+      "Spanish": 1
+    },
+    "2022": {
+      "Other": 2,
+      "English": 7,
+      "French": 1,
+      "Portuguese": 1,
+      "Russian": 1,
+      "German": 2,
+      "Chinese": 1,
+      "Spanish": 1,
+      "Turkish": 1
+    },
+    "2023": {
+      "English": 28,
+      "Other": 13,
+      "Portuguese": 2,
+      "German": 6,
+      "Indian": 1,
+      "Russian": 2,
+      "Italian": 8,
+      "French": 4,
+      "Persian": 2,
+      "Spanish": 6,
+      "Dutch": 2,
+      "Chinese": 4
+    },
+    "2024": {
+      "Spanish": 5,
+      "English": 36,
+      "German": 12,
+      "Indian": 11,
+      "Chinese": 2,
+      "Persian": 1,
+      "Other": 6,
+      "Italian": 4,
+      "Dutch": 1,
+      "French": 1,
+      "Vietnamese": 1,
+      "Portuguese": 1,
+      "Turkish": 1
+    },
+    "2025": {
+      "Italian": 5,
+      "Chinese": 4,
+      "Other": 3,
+      "English": 10,
+      "Spanish": 2,
+      "French": 2,
+      "German": 1,
+      "Russian": 1
     }
   },
   "total": {
-    "English": 80,
-    "Italian": 16,
-    "French": 10,
-    "German": 34,
-    "Spanish": 10,
-    "Other": 26,
-    "Dutch": 12,
-    "Russian": 2,
-    "Turkish": 3,
-    "Chinese": 13,
-    "Indian": 2,
-    "Portuguese": 4,
-    "Persian": 3,
-    "Vietnamese": 2
+    "English": 199,
+    "Italian": 48,
+    "French": 23,
+    "German": 69,
+    "Spanish": 31,
+    "Other": 66,
+    "Dutch": 15,
+    "Russian": 6,
+    "Turkish": 5,
+    "Chinese": 33,
+    "Indian": 15,
+    "Portuguese": 11,
+    "Persian": 8,
+    "Vietnamese": 7
   },
   "venues": {
     "2016": {
@@ -149,6 +261,42 @@
     "2001": {
       "city": "Amsterdam",
       "country": "The Netherlands"
+    },
+    "2025": {
+      "city": "Odense",
+      "country": "Denmark"
+    },
+    "2024": {
+      "city": "Hyderabad",
+      "country": "India"
+    },
+    "2023": {
+      "city": "L'Aquila",
+      "country": "Italy"
+    },
+    "2022": {
+      "city": "Honolulu",
+      "country": "USA"
+    },
+    "2021": {
+      "city": "Stuttgart",
+      "country": "Germany"
+    },
+    "2020": {
+      "city": "Salvador",
+      "country": "Brazil"
+    },
+    "2019": {
+      "city": "Hamburg",
+      "country": "Germany"
+    },
+    "2018": {
+      "city": "Seattle",
+      "country": "USA"
+    },
+    "2017": {
+      "city": "Gothenburg",
+      "country": "Sweden"
     }
   },
   "rank_history": {
@@ -157,6 +305,7 @@
     "2022": "C",
     "2026": "C"
   },
+  "note": "WICSA renamed to ICSA in 2017. WICSA: 2011-2016, ICSA: 2017+.",
   "year_notes": {
     "2010": {
       "status": "noise",

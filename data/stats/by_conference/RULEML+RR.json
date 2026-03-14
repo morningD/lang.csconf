@@ -4,8 +4,18 @@
   "description": "International Joint Conference on Rules and Reasoning",
   "category": "AI",
   "rank": "N",
-  "dblp": "rulemlrr",
+  "dblp": [
+    "rulemlrr",
+    "ruleml"
+  ],
   "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
     2017,
     2018,
     2019,
@@ -17,6 +27,85 @@
     2025
   ],
   "by_year": {
+    "2010": {
+      "English": 16,
+      "Persian": 1,
+      "Russian": 1,
+      "Spanish": 2,
+      "Vietnamese": 1,
+      "Indian": 1,
+      "Other": 5,
+      "Dutch": 3,
+      "Italian": 3,
+      "German": 1,
+      "Chinese": 1,
+      "French": 2
+    },
+    "2011": {
+      "English": 31,
+      "German": 8,
+      "Other": 13,
+      "Spanish": 4,
+      "Italian": 7,
+      "Chinese": 3,
+      "Russian": 1,
+      "Portuguese": 4,
+      "French": 4,
+      "Persian": 1
+    },
+    "2012": {
+      "Vietnamese": 1,
+      "English": 13,
+      "Chinese": 4,
+      "Spanish": 7,
+      "French": 4,
+      "Other": 6,
+      "German": 3,
+      "Italian": 3,
+      "Russian": 1
+    },
+    "2013": {
+      "Other": 6,
+      "Italian": 3,
+      "Dutch": 3,
+      "English": 16,
+      "French": 2,
+      "Spanish": 1,
+      "German": 5,
+      "Chinese": 2
+    },
+    "2014": {
+      "Italian": 3,
+      "Other": 3,
+      "English": 9,
+      "German": 3,
+      "Dutch": 1,
+      "Chinese": 1,
+      "Spanish": 2,
+      "Russian": 1,
+      "Korean": 1
+    },
+    "2015": {
+      "German": 5,
+      "English": 10,
+      "Other": 5,
+      "French": 2,
+      "Dutch": 1,
+      "Spanish": 1,
+      "Indian": 1,
+      "Italian": 3,
+      "Chinese": 3
+    },
+    "2016": {
+      "English": 21,
+      "Other": 2,
+      "Italian": 4,
+      "Persian": 1,
+      "Chinese": 2,
+      "German": 2,
+      "Vietnamese": 2,
+      "French": 1
+    },
     "2017": {
       "English": 15,
       "Chinese": 3,
@@ -108,18 +197,20 @@
     }
   },
   "total": {
-    "English": 88,
-    "Chinese": 10,
-    "German": 27,
-    "Russian": 5,
-    "Spanish": 17,
-    "Italian": 33,
-    "Portuguese": 5,
-    "Dutch": 6,
-    "Other": 24,
-    "French": 11,
-    "Persian": 2,
-    "Indian": 2,
+    "English": 204,
+    "Persian": 5,
+    "Russian": 9,
+    "Spanish": 34,
+    "Vietnamese": 4,
+    "Indian": 4,
+    "Other": 64,
+    "Dutch": 14,
+    "Italian": 59,
+    "German": 54,
+    "Chinese": 26,
+    "French": 26,
+    "Portuguese": 9,
+    "Korean": 1,
     "Japanese": 1
   },
   "venues": {
@@ -158,6 +249,85 @@
     "2017": {
       "city": "London",
       "country": "UK"
+    },
+    "2010": {
+      "city": "Washington, DC",
+      "country": "USA"
+    },
+    "2011": {
+      "city": "Ft. Lauderdale, FL",
+      "country": "USA"
+    },
+    "2012": {
+      "city": "Montpellier",
+      "country": "France"
+    },
+    "2013": {
+      "city": "Seattle, WA",
+      "country": "USA"
+    },
+    "2014": {
+      "city": "Prague",
+      "country": "Czech Republic"
+    },
+    "2015": {
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    "2016": {
+      "city": "Stony Brook, NY",
+      "country": "USA"
+    }
+  },
+  "year_notes": {
+    "2010": {
+      "conference": "RULEML+RR",
+      "year": 2010,
+      "status": "ok",
+      "paper_source": "sparql",
+      "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+    },
+    "2011": {
+      "conference": "RULEML+RR",
+      "year": 2011,
+      "status": "ok",
+      "paper_source": "sparql",
+      "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+    },
+    "2012": {
+      "conference": "RULEML+RR",
+      "year": 2012,
+      "status": "ok",
+      "paper_source": "sparql",
+      "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+    },
+    "2013": {
+      "conference": "RULEML+RR",
+      "year": 2013,
+      "status": "ok",
+      "paper_source": "sparql",
+      "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+    },
+    "2014": {
+      "conference": "RULEML+RR",
+      "year": 2014,
+      "status": "ok",
+      "paper_source": "sparql",
+      "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+    },
+    "2015": {
+      "conference": "RULEML+RR",
+      "year": 2015,
+      "status": "ok",
+      "paper_source": "sparql",
+      "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
+    },
+    "2016": {
+      "conference": "RULEML+RR",
+      "year": 2016,
+      "status": "ok",
+      "paper_source": "sparql",
+      "note": "RuleML pre-merger data from conf/ruleml/ DBLP key"
     }
   }
 }

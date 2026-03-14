@@ -2075,18 +2075,9 @@
       2012,
       2013,
       2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
+      2015
+    ],
+    "note": "Defunct after 2021 (USENIX announcement). DBLP coverage ends 2015 (2016-2021 editions had no formal proceedings)."
   },
   {
     "id": "MICCAI",
@@ -2299,20 +2290,13 @@
     "years": [
       2010,
       2011,
-      2012,
       2013,
       2014,
       2015,
-      2016,
       2017,
       2018,
-      2019,
       2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
+      2021
     ]
   },
   {
@@ -2927,21 +2911,12 @@
     "rank": "C",
     "dblp": "appt",
     "years": [
-      2010,
       2011,
-      2012,
       2013,
-      2014,
       2015,
-      2016,
       2017,
-      2018,
       2019,
-      2020,
-      2021,
-      2022,
       2023,
-      2024,
       2025
     ]
   },
@@ -3144,22 +3119,11 @@
     "rank": "C",
     "dblp": "blocksys",
     "years": [
-      2010,
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
       2019,
       2020,
       2021,
       2022,
-      2023,
-      2024,
-      2025
+      2023
     ]
   },
   {
@@ -3170,22 +3134,10 @@
     "rank": "C",
     "dblp": "cadgraphics",
     "years": [
-      2010,
       2011,
-      2012,
       2013,
-      2014,
       2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
+      2023
     ]
   },
   {
@@ -3359,11 +3311,6 @@
     "rank": "C",
     "dblp": "cscloud",
     "years": [
-      2010,
-      2011,
-      2012,
-      2013,
-      2014,
       2015,
       2016,
       2017,
@@ -3373,8 +3320,7 @@
       2021,
       2022,
       2023,
-      2024,
-      2025
+      2024
     ]
   },
   {
@@ -3455,7 +3401,10 @@
     "description": "International Conference on Cooperative Information Systems",
     "category": "HI",
     "rank": "C",
-    "dblp": "coopis",
+    "dblp": [
+      "coopis",
+      "otm"
+    ],
     "years": [
       2010,
       2011,
@@ -3467,13 +3416,12 @@
       2017,
       2018,
       2019,
-      2020,
-      2021,
       2022,
       2023,
       2024,
       2025
-    ]
+    ],
+    "note": "2010-2019 papers under DBLP conf/otm/ (OTM Federated Conferences). 2020-2021 gap (COVID/transition). 2022+ independent under conf/coopis/."
   },
   {
     "id": "DAI",
@@ -3782,7 +3730,10 @@
     "description": "International Conference on Formal Structures for Computation and Deduction",
     "category": "CT",
     "rank": "C",
-    "dblp": "rta",
+    "dblp": [
+      "rta",
+      "fscd"
+    ],
     "years": [
       2010,
       2011,
@@ -3800,7 +3751,8 @@
       2023,
       2024,
       2025
-    ]
+    ],
+    "note": "RTA merged with TLCA to form FSCD in 2016. RTA: 2010-2015, FSCD: 2016+."
   },
   {
     "id": "FSTTCS",
@@ -4310,21 +4262,13 @@
     "dblp": "service",
     "years": [
       2010,
-      2011,
-      2012,
-      2013,
-      2014,
       2015,
       2016,
-      2017,
-      2018,
-      2019,
       2020,
       2021,
       2022,
       2023,
-      2024,
-      2025
+      2024
     ]
   },
   {
@@ -4924,13 +4868,6 @@
     "rank": "C",
     "dblp": "itc-asia",
     "years": [
-      2010,
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
       2017,
       2018,
       2019,
@@ -4938,8 +4875,7 @@
       2021,
       2022,
       2023,
-      2024,
-      2025
+      2024
     ]
   },
   {
@@ -5400,18 +5336,9 @@
       2012,
       2013,
       2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
+      2015
+    ],
+    "note": "Defunct after 2015. No successor."
   },
   {
     "id": "PAKDD",
@@ -5449,21 +5376,9 @@
     "years": [
       2010,
       2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
+      2013
+    ],
+    "note": "Workshop defunct after 2013. Held irregularly, no 2012 edition."
   },
   {
     "id": "PEPM",
@@ -6044,12 +5959,13 @@
     "description": "Working IEEE/IFIP Conference on Software Architecture",
     "category": "SE",
     "rank": "C",
-    "dblp": "wicsa",
+    "dblp": [
+      "wicsa",
+      "icsa"
+    ],
     "years": [
-      2010,
       2011,
       2012,
-      2013,
       2014,
       2015,
       2016,
@@ -6062,7 +5978,8 @@
       2023,
       2024,
       2025
-    ]
+    ],
+    "note": "WICSA renamed to ICSA in 2017. WICSA: 2011-2016, ICSA: 2017+."
   },
   {
     "id": "WISA",
@@ -6102,19 +6019,12 @@
       2011,
       2012,
       2013,
-      2014,
       2015,
       2016,
       2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
+      2018
+    ],
+    "note": "Workshop defunct after 2018. No DBLP data for 2019+."
   },
   {
     "id": "WISEC",
@@ -6270,22 +6180,12 @@
     "rank": "N",
     "dblp": "eacl",
     "years": [
-      2010,
-      2011,
       2012,
-      2013,
       2014,
-      2015,
-      2016,
       2017,
-      2018,
-      2019,
-      2020,
       2021,
-      2022,
       2023,
-      2024,
-      2025
+      2024
     ]
   },
   {
@@ -6481,15 +6381,9 @@
       2015,
       2016,
       2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
+      2018
+    ],
+    "note": "Defunct after 2018. No DBLP data for 2019+."
   },
   {
     "id": "PDCAT",
@@ -6547,7 +6441,10 @@
     "description": "International Joint Conference on Rules and Reasoning",
     "category": "AI",
     "rank": "N",
-    "dblp": "rulemlrr",
+    "dblp": [
+      "rulemlrr",
+      "ruleml"
+    ],
     "years": [
       2010,
       2011,
@@ -6591,20 +6488,9 @@
       2010,
       2011,
       2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
+      2019
+    ],
+    "note": "Defunct. Ran 1988-2012, one-off revival in 2019. No successor."
   },
   {
     "id": "VINCI",
