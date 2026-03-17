@@ -30,6 +30,13 @@ DBLP_MIRRORS = [
 
 HEADERS = {"User-Agent": "lang.csconf-venue-crawler/1.0 (research project)"}
 
+# Political sensitivity mapping: standardize region names
+REGION_TO_COUNTRY = {
+    "Taiwan": "Taiwan, CN",
+    "Hong Kong": "Hong Kong, CN",
+    "Macau": "Macau, CN",
+}
+
 
 def _parse_location(location: str) -> dict | None:
     """Parse a location string from a DBLP h2 heading into {city, country}.
@@ -84,6 +91,11 @@ def _parse_location(location: str) -> dict | None:
 
     # Last part is always the country (ignore intermediate state/province/region)
     country = parts[-1]
+
+    # Apply political sensitivity mapping
+    if country in REGION_TO_COUNTRY:
+        country = REGION_TO_COUNTRY[country]
+
     return {"city": city, "country": country}
 
 
