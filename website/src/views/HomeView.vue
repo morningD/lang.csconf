@@ -418,17 +418,17 @@ function onSearchClickOutside(e: MouseEvent) {
                   <span
                     v-if="conf.latest_trend != null && conf.latest_trend > 0"
                     class="trend-up text-emerald-400 text-xs font-medium ml-0.5"
-                    :title="t('home.trend_tooltip', { pp: '+' + conf.latest_trend })"
-                  >↗ {{ conf.latest_trend }}</span>
+                    :title="t('home.trend_tooltip', { pp: '+' + conf.latest_trend.toFixed(1) })"
+                  >↗ {{ conf.latest_trend.toFixed(1) }}</span>
                   <span
                     v-else-if="conf.latest_trend != null && conf.latest_trend < 0"
                     class="trend-down text-orange-400 text-xs font-medium ml-0.5"
-                    :title="t('home.trend_tooltip', { pp: String(conf.latest_trend) })"
-                  >↘ {{ Math.abs(conf.latest_trend) }}</span>
+                    :title="t('home.trend_tooltip', { pp: String(conf.latest_trend.toFixed(1)) })"
+                  >↘ {{ Math.abs(conf.latest_trend).toFixed(1) }}</span>
                   <span
                     v-else-if="conf.latest_trend != null"
                     class="trend-flat text-gray-500 text-xs font-medium ml-0.5"
-                  >→ 0</span>
+                  >→ 0.0</span>
                    · {{ conf.latest_year }}
                 </span>
               </div>

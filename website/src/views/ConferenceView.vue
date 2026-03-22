@@ -87,7 +87,7 @@ const verdictGreeting = computed(() => {
   const topLang = sorted[0]![0]
   const total = Object.values(latestData).reduce((a: number, b: number) => a + b, 0)
   const pct = Math.round(sorted[0]![1] / total * 100)
-  // YoY trend for dominant language
+  // YoY trend for dominant language (1 decimal precision)
   let trend: number | null = null
   let prevYear: string | null = null
   if (c.years.length >= 2) {
@@ -95,8 +95,9 @@ const verdictGreeting = computed(() => {
     const prevData = c.by_year[prevYear] || {}
     const prevTotal = Object.values(prevData).reduce((a: number, b: number) => a + b, 0)
     if (prevTotal > 0) {
-      const prevPct = Math.round((prevData[topLang] || 0) / prevTotal * 100)
-      trend = pct - prevPct
+      const latestPct1 = sorted[0]![1] / total * 100
+      const prevPct1 = (prevData[topLang] || 0) / prevTotal * 100
+      trend = Math.round((latestPct1 - prevPct1) * 10) / 10
     }
   }
 
@@ -461,15 +462,15 @@ const funFacts = computed(() => {
                 <span
                   v-if="latestAcceptRate.trend != null && latestAcceptRate.trend > 0"
                   class="trend-up text-emerald-400 text-xs font-medium"
-                >↗ {{ latestAcceptRate.trend }}</span>
+                >↗ {{ latestAcceptRate.trend.toFixed(1) }}</span>
                 <span
                   v-else-if="latestAcceptRate.trend != null && latestAcceptRate.trend < 0"
                   class="trend-down text-orange-400 text-xs font-medium"
-                >↘ {{ Math.abs(latestAcceptRate.trend) }}</span>
+                >↘ {{ Math.abs(latestAcceptRate.trend).toFixed(1) }}</span>
                 <span
                   v-else-if="latestAcceptRate.trend != null"
                   class="trend-flat text-gray-500 text-xs font-medium"
-                >→ 0</span>
+                >→ 0.0</span>
                 <Transition name="fade">
                   <div
                     v-if="showAcceptRateChart && conference!.accept_rates!.length > 1"
@@ -492,7 +493,7 @@ const funFacts = computed(() => {
               <p class="text-gray-400 text-xs leading-relaxed">
                 In {{ verdictGreeting.year }}, {{ verdictGreeting.pct }}% speak {{ verdictGreeting.lang }}
                 <span v-if="verdictGreeting.trend != null" :class="verdictGreeting.trend > 0 ? 'text-emerald-400' : verdictGreeting.trend < 0 ? 'text-orange-400' : 'text-gray-500'"
-                >(<span :class="verdictGreeting.trend > 0 ? 'trend-up' : verdictGreeting.trend < 0 ? 'trend-down' : 'trend-flat'">{{ verdictGreeting.trend > 0 ? '↗' : verdictGreeting.trend < 0 ? '↘' : '→' }} {{ Math.abs(verdictGreeting.trend) }}pp</span> vs {{ verdictGreeting.prevYear }})</span>
+                >(<span :class="verdictGreeting.trend > 0 ? 'trend-up' : verdictGreeting.trend < 0 ? 'trend-down' : 'trend-flat'">{{ verdictGreeting.trend > 0 ? '↗' : verdictGreeting.trend < 0 ? '↘' : '→' }} {{ Math.abs(verdictGreeting.trend).toFixed(1) }}pp</span> vs {{ verdictGreeting.prevYear }})</span>
                 <template v-if="verdictGreeting.secondLang">, or try <span class="text-gray-300">{{ verdictGreeting.secondGreeting }}</span> ({{ verdictGreeting.secondPct }}%)</template>
               </p>
             </div>

@@ -1736,12 +1736,12 @@ function onSnakeClick(idx) {
       class="holiday-decoration"
       :style="{
         left: d.x + 'px',
-        bottom: (['red-lantern','round-lantern','tanzaku','chunlian','fanous'].includes(d.type)
+        bottom: (['red-lantern','round-lantern','tanzaku','chunlian','fanous','crescent-star'].includes(d.type)
           ? groundY + 50 + Math.sin(d.wobblePhase * 0.5) * 5
           : ['ema','omamori'].includes(d.type)
           ? groundY + 40 + Math.sin(d.wobblePhase * 0.5) * 3
           : groundY) + 'px',
-        transform: `translateX(-50%) rotate(${Math.sin(d.wobblePhase) * (['red-lantern','round-lantern','chunlian','fanous'].includes(d.type) ? 4 : ['ema','omamori'].includes(d.type) ? 3 : 2)}deg)`
+        transform: `translateX(-50%) rotate(${Math.sin(d.wobblePhase) * (['red-lantern','round-lantern','chunlian','fanous','crescent-star'].includes(d.type) ? 4 : ['ema','omamori'].includes(d.type) ? 3 : 2)}deg)`
       }">
       <!-- Red lantern 红灯笼 -->
       <svg v-if="d.type === 'red-lantern'" width="36" height="62" viewBox="0 0 36 62">
