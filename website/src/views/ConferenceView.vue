@@ -202,7 +202,14 @@ const areaOption = computed(() => {
       data: years,
       boundaryGap: false,
       axisLabel: {
-        interval: 0,
+        interval: (index: number) => {
+          const isMobile = window.innerWidth < 640
+          if (!isMobile) return true
+          // On mobile, show every 2nd or 3rd label depending on data density
+          const step = years.length > 12 ? 2 : 1
+          return index % (step + 1) === 0
+        },
+        rotate: window.innerWidth < 640 ? 45 : 0,
         formatter: (year: string) => {
           const venue = venues[year]
           if (venue?.country || venue?.city) {
@@ -218,8 +225,8 @@ const areaOption = computed(() => {
           return `{year|${year}}`
         },
         rich: {
-          year: { color: '#bbb', fontSize: 12, lineHeight: 16 },
-          country: { color: '#666', fontSize: 10, lineHeight: 14 },
+          year: { color: '#bbb', fontSize: window.innerWidth < 640 ? 10 : 12, lineHeight: window.innerWidth < 640 ? 14 : 16 },
+          country: { color: '#666', fontSize: window.innerWidth < 640 ? 8 : 10, lineHeight: window.innerWidth < 640 ? 12 : 14 },
         },
       },
       axisLine: { lineStyle: { color: '#444' } },
