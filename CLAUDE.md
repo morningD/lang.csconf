@@ -6,8 +6,8 @@ Pipeline: conferences_base.json + CCF PDFs → DBLP SPARQL crawl → name classi
 
 ## Current Numbers (as of 2026-03-17)
 - **Conferences**: 416 in conferences_base.json, 411 in stats
-- **Papers**: 902,052 (after cross-year dedup + AAAI 2026 recovery + NeurIPS 2025 OpenReview crawl)
-- **Raw author files**: 5,763 (after publication-year-split merging + cross-year dedup)
+- **Papers**: 908,971 (after cross-year dedup + AAAI 2026 recovery + NeurIPS 2025 OpenReview crawl + ICLR 2026 + AISTATS 2026 + CoRL 2024/2025 + COLM 2024/2025)
+- **Raw author files**: 5,769 (after publication-year-split merging + cross-year dedup + OpenReview fills)
 - **Venue entries**: 158 entries updated for political sensitivity (Taiwan/Hong Kong/Macau → CN)
 
 ## CRITICAL: Safe Re-Crawl Procedure
@@ -19,6 +19,7 @@ Step 2 `--force` overwrites ALL `data/raw/authors/` files with fresh SPARQL data
 ```bash
 python -m pipeline.run_all --step 2 --force    # Re-crawl SPARQL
 python -m pipeline.run_all --step 2c --force    # Re-fill all gaps (MUST run after step 2 --force)
+python -m pipeline.run_all --step 2d --force    # Re-fill OpenReview gaps
 python -m pipeline.run_all --step 3 --force    # Re-classify
 python -m pipeline.run_all --step 4            # Regenerate stats
 rsync -av --delete data/stats/ website/public/data/stats/
@@ -39,12 +40,14 @@ pipeline/
 ├── step2_crawl_sparql.py           # Crawl DBLP SPARQL for all authors (with ordinal)
 ├── step2b_crawl_venues.py          # Crawl DBLP HTML index for venue city/country
 ├── step2c_fill_gaps.py             # Fill SPARQL indexing gaps via Search API + HTML
+├── step2d_crawl_openreview.py      # Crawl OpenReview for missing conference-year data + accept rates
 ├── step3_classify_names.py         # fastText + rule-based ensemble → language group
 ├── step4_generate_stats.py         # Aggregate stats (+ venues + rank_history + year_notes)
 ├── conference_year_notes.json      # Per-(conference, year) provenance log & metadata
 ├── utils/
 │   ├── dblp_sparql.py              # SPARQL client (batch queries, workshop + proceedings volume filtering)
 │   ├── dblp_search_api.py          # Search API + HTML scraping (for step2c)
+│   ├── openreview.py               # OpenReview v2 API client (for step2d)
 │   ├── filters.py                  # Shared data filters (proceedings volume detection)
 │   ├── years.py                    # Shared year-range constants (YEAR_FLOOR, year_ceiling, expected_years_range)
 │   ├── name_classifier.py          # fastText + rule-based ensemble
@@ -71,6 +74,7 @@ python -m pipeline.run_all --conferences CVPR     # Specific conference
 python -m pipeline.run_all --step 2 --force       # Re-crawl SPARQL
 python -m pipeline.run_all --step 2b --force      # Re-crawl all venues
 python -m pipeline.run_all --step 2c              # Fill SPARQL gaps
+python -m pipeline.run_all --step 2d              # Crawl OpenReview (supplementary)
 python -m pipeline.run_all --step 1b              # Update acceptance rates
 python scripts/extract_ccf_ranks.py               # Re-extract CCF ranks from PDFs
 rsync -av --delete data/stats/ website/public/data/stats/  # Sync to website
@@ -170,7 +174,20 @@ When Search API returns 500 errors, parse `<li class="entry">` blocks from proce
 
 **Format warning**: `fetch_papers_from_html()` returns nested `{title, authors: [{name, ordinal}]}`. Must flatten to `{name, title, year, ordinal}` before saving, else step3 crashes.
 
-### 4. DBLP Journal Supplement Scraping (manual)
+### 4. OpenReview (step2d) — Auto supplementary source
+OpenReview (openreview.net) hosts paper data for major AI/ML conferences, often available months before DBLP indexes the proceedings. Step2d automatically checks registered venues and fills missing conference-years.
+
+**Registered conferences**: NEURIPS, ICLR, ICML, AISTATS, CoRL, UAI, COLM (configured in `pipeline/utils/openreview.py` VENUE_REGISTRY).
+
+**Behavior**:
+- Only fills conference-years where no raw author file exists (incremental)
+- `--force` re-crawls only OpenReview-sourced files (`_source: "openreview"`), never overwrites SPARQL data
+- Also extracts acceptance rates when submission count is available (submitted > accepted)
+- Cleaned up stale classified files for re-classification by step3
+
+**Adding a new OpenReview conference**: Add entry to `VENUE_REGISTRY` in `pipeline/utils/openreview.py` with the venue-id pattern (e.g., `"CONF": "org.org/CONF/{year}/Conference"`).
+
+### 5. DBLP Journal Supplement Scraping (manual)
 For conferences that publish in journals (ISMB/ECCB → Bioinformatics Supplements).
 
 **ISMB odd years (2011-2023)**: Joint ISMB/ECCB papers published in Bioinformatics journal supplements, not `conf/ismb/`. Recovered 509 papers by scraping DBLP journal volume pages:
@@ -180,7 +197,7 @@ For conferences that publish in journals (ISMB/ECCB → Bioinformatics Supplemen
 - Skip non-paper entries (proceedings headers, awards, editorials)
 - Anchor mappings: 2023→`nrSupplement-1`, 2021→`nrSupplement1`, 2019/2017→`nr14`, 2015→`nr12`, 2013/2011→`nr13`
 
-### 5. Conference Website Scraping (manual)
+### 6. Conference Website Scraping (manual)
 For conferences with journal-first model and no DBLP conf entries.
 
 **HiPEAC (2015-2025)**: Papers published in ACM TACO journal, not in `conf/hipeac/`. Recovered 294 papers:
@@ -197,7 +214,7 @@ For conferences with journal-first model and no DBLP conf entries.
 - No FSE in 2021 (conference skipped between 2020 and 2022)
 - Filter out invited talks/keynotes from program data
 
-### 6. ACM TECS Journal Special Issues (ESWEEK conferences)
+### 7. ACM TECS Journal Special Issues (ESWEEK conferences)
 CASES, CODES+ISSS, and EMSOFT adopted a journal-first model from ~2017. Full papers publish in ACM TECS Vol N, No 5s (odd years: 2019, 2021, 2023, 2025). DBLP `conf/` entries only have WiP/Demo papers. Even years (2018, 2020, 2022, 2024) have no TECS 5s special issue (ACM DL returns 404); low paper counts for even years are structural.
 
 **Recovery procedure:**
@@ -211,7 +228,7 @@ CASES, CODES+ISSS, and EMSOFT adopted a journal-first model from ~2017. Full pap
 
 **Note:** ACM DL main page lazy-loads; use `?tocHeading=headingN` URLs for individual sections. Cloudflare may block — use Playwright or download BibTeX manually.
 
-### 7. Generic Website Scraping (manual, last resort)
+### 8. Generic Website Scraping (manual, last resort)
 For non-archival or completely unindexed conferences. Example: SysML/MLSys 2018 scraped from mlsys.org (116 papers). Mark with `_source: "website_scrape"`.
 
 ### Manual Gap Fill Procedure
@@ -232,7 +249,7 @@ if not papers:
 
 **All data provenance, gaps, anomalies, and investigation results are recorded in `pipeline/conference_year_notes.json`.** This is the single source of truth for per-(conference, year) metadata. As of 2026-03-14: 185+ entries covering noise (3), partial gaps (21), unrecoverable gaps (25), virtual events (6), and successfully recovered/ok entries (65+), plus uninvestigated entries.
 
-Summary of data sources (non-SPARQL): search_api (44), journal_scrape (25+), html_scrape (11), tvcg_journal (10), cross_filed (3), website_scrape (2).
+Summary of data sources (non-SPARQL): openreview (7), search_api (44), journal_scrape (25+), html_scrape (11), tvcg_journal (10), cross_filed (3), website_scrape (2).
 
 **When investigating or fixing data issues, always update `conference_year_notes.json` with results.** Change `status` from `uninvestigated` to `ok`/`partial`/`gap`/`noise` as appropriate, and add `paper_source`, `homepage`, and other metadata.
 

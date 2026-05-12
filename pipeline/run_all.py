@@ -8,7 +8,7 @@ from pathlib import Path
 # Add parent to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from pipeline import step1_parse_conferences, step1b_parse_accept_rates, step2_crawl_sparql, step2b_crawl_venues, step2c_fill_gaps, step3_classify_names, step4_generate_stats
+from pipeline import step1_parse_conferences, step1b_parse_accept_rates, step2_crawl_sparql, step2b_crawl_venues, step2c_fill_gaps, step2d_crawl_openreview, step3_classify_names, step4_generate_stats
 
 
 def main():
@@ -42,6 +42,7 @@ def main():
         ("2", "Crawl DBLP (SPARQL)", lambda: step2_crawl_sparql.run(force=args.force, conferences_filter=conferences_filter)),
         ("2b", "Crawl venues", lambda: step2b_crawl_venues.run(force=args.force, conferences_filter=conferences_filter)),
         ("2c", "Fill SPARQL gaps", lambda: step2c_fill_gaps.run(force=args.force, conferences_filter=conferences_filter)),
+        ("2d", "Crawl OpenReview", lambda: step2d_crawl_openreview.run(force=args.force, conferences_filter=conferences_filter)),
         ("3", "Classify names", lambda: step3_classify_names.run(force=args.force, conferences_filter=conferences_filter)),
         ("4", "Generate stats", lambda: step4_generate_stats.run(force=args.force)),
     ]
