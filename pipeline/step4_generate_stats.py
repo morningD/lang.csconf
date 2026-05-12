@@ -292,10 +292,11 @@ def run(force: bool = False):
         if not conf_id or not year:
             continue
 
-        # Fix publication year offset: if venue data says year-1 is a real
-        # conference year but year is not, shift back to the conference year.
-        # Clamp to 2010 to avoid pulling in pre-range data (e.g. IJCAI 2009).
-        if conf_id in venue_years:
+        # Fix publication year offset: DBLP yearOfPublication can lag the real
+        # conference year by 1. Only applies to SPARQL-sourced data where the
+        # year field may be the publication year rather than the conference year.
+        # OpenReview and other manual crawls already use the correct conference year.
+        if conf_id in venue_years and entry.get("_source", "sparql") == "sparql":
             vy = venue_years[conf_id]
             if year not in vy and (year - 1) in vy and (year - 1) >= 2010:
                 year = year - 1

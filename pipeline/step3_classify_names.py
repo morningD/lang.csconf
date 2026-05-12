@@ -69,6 +69,8 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
             "total_papers": data.get("total_papers", 0),
             "authors": classified_authors,
         }
+        if data.get("_source"):
+            result["_source"] = data["_source"]
 
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
