@@ -1,4 +1,14 @@
-"""Step 1b: Parse acceptance rates from multiple sources and merge."""
+"""Step 1b: Parse acceptance rates from multiple sources and merge.
+
+Sources (lowest → highest priority):
+  7. conferences-computer.science (web scrape)
+  6. puzhuoliu (security conferences)
+  5. lixin4ever (AI conferences)
+  4. emeryberger/csconferences
+  3. cs-conf-stats
+  2. ccf-deadlines
+  1. OpenReview (added by step2d, highest priority — first-party data)
+"""
 
 import csv
 import json
