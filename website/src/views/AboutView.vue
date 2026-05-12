@@ -43,6 +43,13 @@ const { t } = useI18n()
             <li class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">•</span>
               <div>
+                <a href="https://openreview.net" target="_blank" rel="noopener" class="text-blue-400 hover:underline">OpenReview</a>
+                — {{ t('about.src_openreview') }}
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
                 <a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/" target="_blank" rel="noopener" class="text-blue-400 hover:underline">CCF Recommended Lists</a>
                 — {{ t('about.src_ccf_pdf') }}
               </div>

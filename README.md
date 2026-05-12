@@ -15,14 +15,14 @@ Visualizing the linguistic diversity of first authors across CCF-rated CS confer
 | Metric | Value |
 |--------|-------|
 | **Conferences** | 416 (CCF A/B/C + non-ranked) |
-| **Papers** | 884,137 |
+| **Papers** | 908,971 |
 | **Year range** | 2010–2026 |
 | **Categories** | 10 (AI, DB, NW, SE, CG, CT, HI, SC, DS, MX) |
 | **Languages tracked** | 17 |
 
 ## Open Data
 
-The raw crawled dataset (884k+ first-author records from DBLP, 2010–2026) is available for download on the [Releases](https://github.com/morningD/lang.csconf/releases) page. The data has been extensively cleaned — see the [About page](https://morningD.github.io/lang.csconf/#/about) for details.
+The raw crawled dataset (900k+ first-author records from DBLP + OpenReview, 2010–2026) is available for download on the [Releases](https://github.com/morningD/lang.csconf/releases) page. The data has been extensively cleaned — see the [About page](https://morningD.github.io/lang.csconf/#/about) for details.
 
 ## Features
 
@@ -40,10 +40,11 @@ lang.csconf/
 ├── pipeline/          # Python: crawl DBLP + classify names → JSON stats
 │   ├── conferences_base.json      # Single source of truth for 416 conferences
 │   ├── step1_parse_conferences.py # Load base + apply CCF rank/category overrides
-│   ├── step1b_parse_accept_rates.py # Merge acceptance rates from 6 sources
+│   ├── step1b_parse_accept_rates.py # Merge acceptance rates from 7 sources
 │   ├── step2_crawl_sparql.py      # Crawl DBLP via SPARQL for all authors
 │   ├── step2b_crawl_venues.py     # Crawl DBLP for venue city/country
 │   ├── step2c_fill_gaps.py        # Fill SPARQL indexing gaps via Search API
+│   ├── step2d_crawl_openreview.py # Crawl OpenReview for AI/ML conferences
 │   ├── step3_classify_names.py    # Predict language from names (fastText + rules)
 │   ├── step4_generate_stats.py    # Aggregate statistics
 │   └── run_all.py                 # Orchestrator
@@ -96,10 +97,11 @@ python -m pipeline.run_all --force
 | Step | What it does |
 |------|-------------|
 | 1. Parse conferences | Loads `conferences_base.json`, applies CCF rank/category from extracted PDFs |
-| 1b. Accept rates | Merges acceptance rates from 6 upstream sources |
+| 1b. Accept rates | Merges acceptance rates from 7 upstream sources |
 | 2. Crawl DBLP | Fetches all author names via DBLP SPARQL endpoint |
 | 2b. Crawl venues | Scrapes DBLP HTML for conference city/country |
 | 2c. Fill gaps | Fills SPARQL indexing gaps via DBLP Search API |
+| 2d. OpenReview | Crawls OpenReview for AI/ML conferences (NeurIPS, ICLR, ICML, etc.) |
 | 3. Classify names | Predicts language using fastText + rule-based surname ensemble |
 | 4. Generate stats | Aggregates by conference, category, rank, year → JSON |
 
@@ -136,14 +138,14 @@ python -m pipeline.run_all --force
 | 指标 | 数值 |
 |------|------|
 | **会议数** | 416（CCF A/B/C + 未评级） |
-| **论文数** | 884,137 |
+| **论文数** | 908,971 |
 | **年份范围** | 2010–2026 |
 | **学科分类** | 10（AI、DB、NW、SE、CG、CT、HI、SC、DS、MX） |
 | **追踪语言数** | 17 |
 
 ## 开放数据
 
-原始爬取数据集（88 万余条第一作者记录，来自 DBLP，2010–2026）可在 [Releases](https://github.com/morningD/lang.csconf/releases) 页面下载。数据经过多轮清洗——详见[关于页面](https://morningD.github.io/lang.csconf/#/about)。
+原始爬取数据集（90 万余条第一作者记录，来自 DBLP + OpenReview，2010–2026）可在 [Releases](https://github.com/morningD/lang.csconf/releases) 页面下载。数据经过多轮清洗——详见[关于页面](https://morningD.github.io/lang.csconf/#/about)。
 
 ## 功能特点
 
@@ -159,10 +161,11 @@ python -m pipeline.run_all --force
 | 步骤 | 说明 |
 |------|------|
 | 1. 解析会议列表 | 加载 `conferences_base.json`，应用 CCF PDF 提取的等级和分类 |
-| 1b. 接收率 | 合并 6 个上游来源的接收率数据 |
+| 1b. 接收率 | 合并 7 个上游来源的接收率数据 |
 | 2. 爬取 DBLP | 通过 SPARQL 接口获取论文作者姓名 |
 | 2b. 爬取会议地点 | 从 DBLP HTML 抓取城市/国家信息 |
 | 2c. 补充缺失 | 通过 DBLP Search API 补充 SPARQL 索引空缺 |
+| 2d. OpenReview | 爬取 AI/ML 会议数据（NeurIPS、ICLR、ICML 等） |
 | 3. 姓名分类 | 使用 fastText + 规则姓氏匹配组合预测语言 |
 | 4. 生成统计 | 按会议、分类、等级、年份聚合 → JSON |
 
