@@ -6,7 +6,6 @@
   "rank": "A",
   "dblp": "iclr",
   "years": [
-    2011,
     2013,
     2014,
     2015,
@@ -22,9 +21,6 @@
     2025
   ],
   "by_year": {
-    "2011": {
-      "German": 2
-    },
     "2013": {
       "Other": 3,
       "English": 24,
@@ -79,23 +75,23 @@
       "Chinese": 46,
       "German": 9,
       "Other": 18,
+      "Russian": 4,
+      "Indian": 6,
       "Italian": 5,
       "Spanish": 6,
+      "Turkish": 1,
       "Korean": 8,
       "Vietnamese": 2,
-      "Indian": 6,
-      "Turkish": 1,
-      "Russian": 4,
       "French": 9,
-      "Dutch": 2,
-      "Persian": 1
+      "Persian": 1,
+      "Dutch": 2
     },
     "2018": {
       "English": 133,
       "German": 25,
       "Korean": 13,
       "Chinese": 68,
-      "Russian": 9,
+      "Other": 29,
       "Indian": 14,
       "Other": 29,
       "French": 16,
@@ -105,7 +101,13 @@
       "Turkish": 1,
       "Vietnamese": 4,
       "Dutch": 4,
+      "French": 16,
+      "Russian": 9,
       "Persian": 2,
+      "Italian": 8,
+      "Japanese": 1,
+      "Vietnamese": 4,
+      "Turkish": 1,
       "Portuguese": 1
     },
     "2019": {
@@ -118,12 +120,12 @@
       "Turkish": 2,
       "Russian": 15,
       "Other": 39,
-      "Persian": 4,
       "Vietnamese": 4,
-      "Spanish": 8,
-      "Korean": 19,
-      "Italian": 7,
       "French": 11,
+      "Italian": 7,
+      "Korean": 19,
+      "Spanish": 8,
+      "Persian": 4,
       "Portuguese": 3
     },
     "2020": {
@@ -132,16 +134,16 @@
       "English": 223,
       "Other": 50,
       "Italian": 12,
-      "Portuguese": 5,
-      "French": 17,
       "Korean": 31,
-      "Indian": 18,
-      "Vietnamese": 7,
       "German": 37,
+      "Portuguese": 5,
+      "Indian": 18,
+      "French": 17,
+      "Vietnamese": 7,
       "Persian": 8,
-      "Japanese": 2,
       "Turkish": 3,
       "Dutch": 7,
+      "Japanese": 2,
       "Spanish": 5
     },
     "2021": {
@@ -154,11 +156,11 @@
       "Dutch": 10,
       "Korean": 34,
       "German": 47,
-      "Italian": 12,
       "French": 8,
+      "Italian": 12,
+      "Spanish": 15,
       "Vietnamese": 12,
       "Turkish": 6,
-      "Spanish": 15,
       "Persian": 5,
       "Portuguese": 2
     },
@@ -173,9 +175,9 @@
       "Indian": 35,
       "Korean": 51,
       "Persian": 5,
-      "Italian": 21,
       "Vietnamese": 17,
       "Dutch": 7,
+      "Italian": 21,
       "Spanish": 13,
       "Turkish": 4,
       "Japanese": 2
@@ -206,21 +208,21 @@
       "Spanish": 24,
       "Persian": 8,
       "Indian": 45,
-      "Russian": 19,
       "Vietnamese": 27,
-      "Other": 129,
-      "French": 51,
-      "Italian": 45,
-      "Portuguese": 11,
       "Turkish": 7,
       "Japanese": 10,
+      "French": 51,
+      "Other": 129,
+      "Portuguese": 11,
+      "Russian": 19,
+      "Italian": 45,
       "Dutch": 10
     },
     "2025": {
-      "English": 911,
+      "English": 912,
       "Chinese": 1939,
       "German": 119,
-      "Korean": 156,
+      "Korean": 155,
       "Other": 170,
       "Persian": 14,
       "Japanese": 18,
@@ -229,25 +231,25 @@
       "French": 60,
       "Spanish": 38,
       "Turkish": 21,
-      "Dutch": 21,
+      "Russian": 43,
       "Vietnamese": 50,
-      "Portuguese": 11,
-      "Russian": 43
+      "Dutch": 21,
+      "Portuguese": 11
     }
   },
   "total": {
-    "German": 472,
     "Other": 668,
-    "English": 3236,
+    "English": 3237,
     "Spanish": 144,
     "French": 257,
     "Chinese": 5129,
     "Turkish": 55,
     "Vietnamese": 147,
     "Indian": 248,
+    "German": 470,
     "Italian": 224,
     "Russian": 163,
-    "Korean": 492,
+    "Korean": 491,
     "Dutch": 81,
     "Persian": 53,
     "Japanese": 47,
@@ -312,9 +314,14 @@
   },
   "accept_rates": [
     {
+      "year": 2026,
+      "submitted": 19814,
+      "accepted": 5343
+    },
+    {
       "year": 2025,
-      "submitted": 11565,
-      "accepted": 3710
+      "submitted": 11672,
+      "accepted": 3704
     },
     {
       "year": 2024,

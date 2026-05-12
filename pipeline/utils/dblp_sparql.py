@@ -6,6 +6,7 @@ from collections import Counter, defaultdict
 import requests
 
 from pipeline.utils.filters import is_proceedings_volume
+from pipeline.utils.years import YEAR_FLOOR, year_ceiling
 
 SPARQL_ENDPOINT = "https://sparql.dblp.org/sparql"
 
@@ -157,7 +158,7 @@ def fetch_batch_sparql(
             suffix = int(m.group(1))
             uri_year = 2000 + suffix if suffix <= 99 else 1900 + suffix
             # Only use URI year if it's in our data range (avoids noise like 2089)
-            if 2010 <= uri_year <= 2026 and uri_year != year:
+            if YEAR_FLOOR <= uri_year <= year_ceiling() and uri_year != year:
                 year = uri_year
 
         paper_key_tuple = (key, year, title)

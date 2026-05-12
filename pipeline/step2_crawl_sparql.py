@@ -1,4 +1,4 @@
-"""Step 2: Crawl DBLP via SPARQL for authors of each conference/year (2010-2025).
+"""Step 2: Crawl DBLP via SPARQL for authors of each conference/year.
 
 Stores all authors with their ordinal position (1 = first author, 2 = second, etc.).
 Downstream steps (step3, step4) filter to first authors as needed.
@@ -12,6 +12,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 from pipeline.utils.dblp_sparql import fetch_batch_sparql
+from pipeline.utils.years import YEAR_FLOOR, year_ceiling, expected_years_range
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 RAW_DIR = DATA_DIR / "raw"
@@ -19,7 +20,7 @@ AUTHORS_DIR = RAW_DIR / "authors"
 VENUES_DIR = RAW_DIR / "venues"
 CONFERENCES_FILE = RAW_DIR / "conferences.json"
 
-EXPECTED_YEARS = list(range(2010, 2027))
+EXPECTED_YEARS = expected_years_range()
 BATCH_SIZE = 5
 MAX_RETRIES = 3
 
@@ -352,7 +353,7 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
     # Write accumulated results, deduplicating by (normalized title, name)
     for (conf_id, year), authors in accumulated.items():
         # Skip out-of-range years (caused by URI year extraction bugs, e.g. 2089)
-        if year < 2010 or year > 2026:
+        if year < YEAR_FLOOR or year > year_ceiling():
             continue
 
         safe_id = _safe_filename(conf_id)

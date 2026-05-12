@@ -48,6 +48,10 @@ jobs:
       - name: Run data pipeline
         run: python -m pipeline.run_all
 
+      - name: Check pipeline errors
+        if: failure()
+        run: echo "::error::Pipeline step failed. Check logs for details."
+
       - name: Sync stats to website
         run: rsync -av --delete data/stats/ website/public/data/stats/
 

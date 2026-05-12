@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from pipeline.utils.nationality_to_lang import LANGUAGE_COLORS, LANGUAGE_GROUPS
+from pipeline.utils.years import YEAR_FLOOR, year_ceiling
 
 # Valid author filename: {CONFID}_{YEAR}.json (no spaces, year must be 4 digits)
 _VALID_AUTHOR_FILENAME = re.compile(r"^[A-Za-z0-9+&.\-]+_\d{4}\.json$")
@@ -161,7 +162,7 @@ def validate_paper_counts(
     for entry in all_data:
         conf_id = entry.get("conference", "").replace("/", "-")
         year = entry.get("year", 0)
-        if not conf_id or not year or year < 2010 or year > 2026:
+        if not conf_id or not year or year < YEAR_FLOOR or year > year_ceiling():
             continue
         if _is_skipped(conf_id, year):
             continue
@@ -300,7 +301,7 @@ def run(force: bool = False):
                 year = year - 1
 
         # Skip papers with out-of-range years (DBLP data errors, e.g. 2089)
-        if year < 2010 or year > 2026:
+        if year < YEAR_FLOOR or year > year_ceiling():
             continue
 
         # Skip conference-years marked as "skip" in year notes
@@ -334,7 +335,7 @@ def run(force: bool = False):
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "total_papers": total_papers,
         "total_conferences": len(conf_years_seen),
-        "year_range": [min(global_by_year), max(global_by_year)] if global_by_year else [2010, 2025],
+        "year_range": [min(global_by_year), max(global_by_year)] if global_by_year else [YEAR_FLOOR, year_ceiling()],
         "languages": LANGUAGE_GROUPS,
         "language_colors": LANGUAGE_COLORS,
         "ccf_versions": {

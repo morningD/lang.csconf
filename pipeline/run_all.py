@@ -46,6 +46,15 @@ def main():
         ("4", "Generate stats", lambda: step4_generate_stats.run(force=args.force)),
     ]
 
+    errors = []
+
+    def _run_step(step_id, name, func):
+        try:
+            func()
+        except Exception as e:
+            print(f"\n  ERROR in step {step_id}: {e}")
+            errors.append((step_id, name, str(e)))
+
     if args.step:
         matched = [(s, n, f) for s, n, f in steps if s == args.step]
         if not matched:
@@ -55,15 +64,21 @@ def main():
         print(f"\n{'='*60}")
         print(f"Step {step_id}: {name}")
         print(f"{'='*60}\n")
-        func()
+        _run_step(step_id, name, func)
     else:
         for step_id, name, func in steps:
             print(f"\n{'='*60}")
             print(f"Step {step_id}: {name}")
             print(f"{'='*60}\n")
-            func()
+            _run_step(step_id, name, func)
 
-    print("\nPipeline complete!")
+    if errors:
+        print(f"\nPipeline completed with {len(errors)} error(s):")
+        for step_id, name, msg in errors:
+            print(f"  Step {step_id} ({name}): {msg}")
+        sys.exit(1)
+    else:
+        print("\nPipeline complete!")
 
 
 if __name__ == "__main__":

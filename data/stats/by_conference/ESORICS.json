@@ -36,19 +36,15 @@
       "Persian": 2,
       "Japanese": 1,
       "Portuguese": 1,
-      "Korean": 1
+      "Korean": 1,
+      "Russian": 1
     },
     "2011": {
       "English": 22,
-      "Other": 8,
-      "German": 7,
-      "Dutch": 2,
-      "Spanish": 3,
-      "Chinese": 7,
-      "Vietnamese": 1,
       "Russian": 2,
-      "Italian": 3,
-      "French": 3
+      "French": 3,
+      "Vietnamese": 1,
+      "Dutch": 2
     },
     "2012": {
       "English": 33,
@@ -69,11 +65,31 @@
       "German": 8,
       "French": 4,
       "Spanish": 2,
-      "Other": 7,
-      "Italian": 6,
-      "Korean": 1,
-      "Portuguese": 2,
-      "Russian": 1
+      "Italian": 6
+    },
+    "2014": {
+      "Chinese": 23,
+      "German": 7,
+      "English": 23,
+      "Other": 10,
+      "French": 8,
+      "Spanish": 4,
+      "Italian": 2,
+      "Korean": 2,
+      "Dutch": 1,
+      "Persian": 1
+    },
+    "2015": {
+      "English": 23,
+      "Other": 5,
+      "Chinese": 17,
+      "Italian": 2,
+      "German": 5,
+      "French": 3,
+      "Spanish": 1,
+      "Persian": 1,
+      "Russian": 1,
+      "Korean": 1
     },
     "2014": {
       "English": 23,
@@ -136,7 +152,9 @@
       "German": 5,
       "Indian": 1,
       "Dutch": 1,
-      "Japanese": 1
+      "Japanese": 1,
+      "Spanish": 2,
+      "Persian": 1
     },
     "2019": {
       "English": 23,
@@ -186,12 +204,8 @@
       "German": 8,
       "French": 7,
       "Vietnamese": 2,
-      "Korean": 3,
-      "Turkish": 1,
-      "Russian": 1,
-      "Portuguese": 1,
-      "Spanish": 2,
-      "Indian": 1
+      "Indian": 1,
+      "Turkish": 1
     },
     "2023": {
       "French": 10,
@@ -226,13 +240,11 @@
       "Chinese": 30,
       "Korean": 5,
       "Italian": 6,
-      "French": 8,
-      "Dutch": 1,
-      "Spanish": 2,
-      "Vietnamese": 1,
+      "Other": 6,
       "Japanese": 2,
       "Indian": 1,
-      "Turkish": 1
+      "Turkish": 1,
+      "Dutch": 1
     }
   },
   "total": {
@@ -248,8 +260,9 @@
     "Japanese": 6,
     "Portuguese": 11,
     "Korean": 27,
-    "Dutch": 14,
+    "Russian": 13,
     "Vietnamese": 10,
+    "Dutch": 14,
     "Indian": 11,
     "Turkish": 4
   },
@@ -361,5 +374,12 @@
     "2019": "B",
     "2022": "B",
     "2026": "B"
-  }
+  },
+  "accept_rates": [
+    {
+      "year": 2024,
+      "submitted": 535,
+      "accepted": 86
+    }
+  ]
 }

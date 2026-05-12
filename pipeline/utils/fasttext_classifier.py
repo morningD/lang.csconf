@@ -13,9 +13,9 @@ def _ensure_init():
 
     from fast_langdetect import detect
 
-    # Smoke test — detect returns a list of dicts
-    result = detect("Pierre Dupont", model="full", k=1)
-    if not isinstance(result, list) or not result or "lang" not in result[0]:
+    # Smoke test — detect returns a dict with 'lang' and 'score'
+    result = detect("Pierre Dupont")
+    if not isinstance(result, dict) or "lang" not in result:
         raise RuntimeError("fast-langdetect smoke test failed: unexpected result format")
     _initialized = True
 
@@ -30,10 +30,9 @@ def classify_name_fasttext(name: str) -> dict:
     from fast_langdetect import detect
 
     try:
-        results = detect(name, model="full", k=1)
-        top = results[0]
-        iso_code = top["lang"]
-        confidence = float(top["score"])
+        result = detect(name)
+        iso_code = result["lang"]
+        confidence = float(result["score"])
         language = iso_to_language_group(iso_code)
 
         return {

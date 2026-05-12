@@ -27,7 +27,9 @@ AUTHORS_DIR = RAW_DIR / "authors"
 VENUES_DIR = RAW_DIR / "venues"
 CONFERENCES_FILE = RAW_DIR / "conferences.json"
 
-EXPECTED_YEARS = list(range(2010, 2027))
+from pipeline.utils.years import expected_years_range
+
+EXPECTED_YEARS = expected_years_range()
 
 # Gap detection thresholds
 # If SPARQL returned fewer than this many papers AND proceedings page has more
