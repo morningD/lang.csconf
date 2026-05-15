@@ -10,7 +10,7 @@ Pipeline: conferences_base.json + CCF PDFs → DBLP SPARQL crawl → name classi
 - **Raw author files**: 5,830
 - **Venue entries**: 416
 - **Year notes entries**: 230 (covering noise, gaps, recoveries, and provenance tracking)
-- **Affiliation data**: 31 conference-years (NEURIPS 2010-2025, ICLR 2018-2025, ICML 2017-2024, CoRL 2021-2024), ~43,759 papers with affiliations (95.4% coverage)
+- **Affiliation data**: 46 conference-years (NEURIPS 2010-2025, ICLR 2018-2026, ICML 2017-2025, CoRL 2021-2025, AISTATS 2025-2026, UAI 2024-2025, COLM 2024-2025), ~53,600 papers with affiliations (92.6% coverage)
 
 ## CRITICAL: Safe Re-Crawl Procedure
 **NEVER run `--step 2 --force` without immediately following with `--step 2c --force`.**
@@ -152,29 +152,46 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 
 **Institution normalization**: `_normalize_institution()` in step4 handles OpenReview artifacts (e.g., "Tsinghua University, Tsinghua University" → "Tsinghua University")
 - **OpenAlex polite pool**: `mailto=morningd.github@gmail.com`, $1/day free budget, resets at midnight UTC
-- **Output**: `data/raw/affiliations/{CONF}_{YEAR}.json` with `{papers: [{title, first_author, institution, institution_country, ...}]}`
-- **Stats**: step4 aggregates into top-20 institutions per conference with country codes
-- **UI**: Conference detail page shows horizontal bar chart with gradient colors + country flags
-- **Institution abbreviations**: `INST_ABBREV` dict in ConferenceView.vue maps 35+ long names to abbreviations
-- **Country flag overrides**: `COUNTRY_OVERRIDES` maps TW → CN for political sensitivity
-- **Profile cache**: Persistent JSON cache at `data/raw/affiliations/_profile_cache.json` (~11,700+ entries), shared across conferences
+- **Output**: `data/raw/affiliations/{CONF}_{YEAR}.json` with `{papers: [{title, first_author, institution, institution_country, ...}], source: "openreview"|"openalex"}`
+- **Stats**: step4 aggregates into top-20 institutions per conference with country codes + `sources` list
+- **UI**: Conference detail page shows "Top Affiliations" section with:
+  - Horizontal bar chart (ECharts): top 20 institutions, lavender-to-violet gradient bars, rounded corners
+  - **Country flags**: Emoji flags rendered via ECharts rich text (`{flag|emoji}`), fontSize 18 (1.5x the 12px text) for prominence
+  - **Institution abbreviations**: `INST_ABBREV` dict (35+ entries) maps long names to short forms (e.g., "Carnegie Mellon University" → "CMU", "University of Illinois Urbana-Champaign" → "UIUC")
+  - **Country flag overrides**: `COUNTRY_OVERRIDES` maps TW → CN (political sensitivity)
+  - **Data source display**: Dynamic links to data sources (OpenReview, OpenAlex, Marten Lienen et al., PaperCopilot) via `SOURCE_NAMES` mapping with `{label, url}` — rendered as blue hyperlinks with " + " separator
+  - **Coverage note**: Shows "Affiliation data covers N (P%) of M papers · Source1 + Source2"
+  - **Tooltip**: Full institution name + paper count + percentage on hover
+- **Stats JSON format** (`affiliations` key in per-conference JSON):
+  ```json
+  {
+    "total_covered": 24406, "total_papers": 25758, "coverage_pct": 94.8,
+    "sources": ["martenlienen", "openreview"],
+    "top": [{"name": "...", "count": 549, "pct": 2.13, "country": "US"}],
+    "by_year": {"2025": {"total_covered": ..., "top": [...]}}
+  }
+  ```
+- **Profile cache**: Persistent JSON cache at `data/raw/affiliations/_profile_cache.json` (~19,700 entries), shared across conferences
 
-**Completed affiliation data (as of 2026-05-14):**
+**Completed affiliation data (as of 2026-05-15):**
 
 | Conference | Years | Coverage | Source |
 |-----------|-------|----------|--------|
-| NEURIPS | 2010-2022 | 84-99% | martenlienen |
-| NEURIPS | 2023-2025 | 92-93% | OpenReview (crawled before strategy change) |
+| NEURIPS | 2010-2022 | 84-100% | martenlienen |
+| NEURIPS | 2023-2025 | 92-93% | OpenReview |
 | ICLR | 2018-2023 | 99% | martenlienen |
-| ICLR | 2024 | 93% | OpenReview (crawled before strategy change) |
+| ICLR | 2024 | 93% | OpenReview |
 | ICLR | 2025 | 88% | papercopilot |
+| ICLR | 2026 | 82% | OpenReview (current year) |
 | ICML | 2017-2024 | 97-99% | martenlienen |
+| ICML | 2025 | 84% | OpenReview (current year) |
 | CoRL | 2021-2024 | 85-92% | papercopilot |
-| ICLR 2026 | — | Pending | OR crawl (current year) |
-| AISTATS 2026 | — | Pending | OR crawl (current year) |
-| UAI 2026 | — | Pending | OR crawl (current year) |
-| COLM 2025-2026 | — | Pending | OR crawl (current year) |
-| ICML/NeurIPS 2026 | — | Pending | OR crawl (current year, when available) |
+| CoRL | 2025 | 77% | OpenReview (current year) |
+| AISTATS | 2025-2026 | 77-80% | OpenReview (current year) |
+| UAI | 2024-2025 | 74-76% | OpenReview |
+| COLM | 2024-2025 | 72-73% | OpenReview |
+
+Total: 46 conference-years, ~53,600 papers with affiliations (92.6% average coverage). Profile cache: ~19,700 entries.
 
 ## Key Technical Details
 

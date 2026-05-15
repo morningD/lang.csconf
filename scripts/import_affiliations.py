@@ -220,24 +220,49 @@ def _import_papercopilot(force: bool = False,
     """Import affiliations from papercopilot JSON datasets."""
     import urllib.request
 
-    # Conference files available in papercopilot
-    PAPERCOPILOT_FILES = {
-        ("ICLR", year): f"iclr/iclr{year}.json"
-        for year in range(2013, 2027)
+    # papercopilot directory → our conference ID + year range
+    # Conferences with reject/withdraw in data need filtering
+    _NEEDS_ACCEPT_FILTER = {"ICLR", "NEURIPS"}
+
+    _PC_CONFERENCES = {
+        # Tier 1: CCF-A
+        "cvpr": ("CVPR", 2013, 2025),
+        "iccv": ("ICCV", 2013, 2025),
+        "aaai": ("AAAI", 2021, 2025),
+        "siggraph": ("ACMSIGGRAPH", 2010, 2025),
+        "acmmm": ("ACMMM", 2024, 2024),
+        "acl": ("ACL", 2021, 2025),
+        "www": ("WWW", 2024, 2025),
+        # Tier 2: CCF-B
+        "emnlp": ("EMNLP", 2021, 2024),
+        "ijcai": ("IJCAI", 2020, 2024),
+        "uai": ("UAI", 2019, 2024),
+        "icra": ("ICRA", 2010, 2024),
+        "eccv": ("ECCV", 2018, 2024),
+        "colt": ("COLT", 2011, 2024),
+        "coling": ("COLING", 2020, 2025),
+        "naacl": ("NAACL", 2021, 2025),
+        # Tier 3: Fill gaps in existing
+        "iclr": ("ICLR", 2013, 2026),
+        "icml": ("ICML", 2013, 2024),
+        "aistats": ("AISTATS", 2010, 2025),
+        # Tier 4: CCF-C/N bonus
+        "acml": ("ACML", 2010, 2024),
+        "iros": ("IROS", 2010, 2024),
+        "corl": ("CoRL", 2021, 2025),
+        "rss": ("RSS", 2010, 2025),
+        "wacv": ("WACV", 2020, 2025),
+        "siggraphasia": ("ACMSIGGRAPHASIA", 2018, 2024),
+        "3dv": ("3DV", 2025, 2025),
+        "alt": ("ALT", 2025, 2025),
+        # Also available but aff=0%: kdd (skip)
     }
-    PAPERCOPILOT_FILES.update({
-        ("NEURIPS", year): f"neurips/neurips{year}.json"
-        for year in range(2020, 2025)
-    })
-    PAPERCOPILOT_FILES.update({
-        ("ICML", year): f"icml/icml{year}.json"
-        for year in range(2017, 2025)
-    })
-    # Add CoRL
-    PAPERCOPILOT_FILES.update({
-        ("CoRL", year): f"corl/corl{year}.json"
-        for year in range(2021, 2025)
-    })
+
+    # Build file list
+    PAPERCOPILOT_FILES = {}
+    for pdir, (conf_id, y_start, y_end) in sorted(_PC_CONFERENCES.items()):
+        for year in range(y_start, y_end + 1):
+            PAPERCOPILOT_FILES[(conf_id, year)] = f"{pdir}/{pdir}{year}.json"
 
     base_url = "https://raw.githubusercontent.com/papercopilot/paperlists/main/"
 
@@ -258,7 +283,7 @@ def _import_papercopilot(force: bool = False,
             continue
 
         url = base_url + filename
-        print(f"  Downloading {filename}...", end=" ", flush=True)
+        print(f"  {conf_id} {year} ({filename})...", end=" ", flush=True)
 
         try:
             req = urllib.request.Request(url)
@@ -269,24 +294,26 @@ def _import_papercopilot(force: bool = False,
             continue
 
         if not isinstance(data, list):
-            print(f"SKIPPED (not a list)")
+            print(f"SKIPPED (not a list, {type(data).__name__})")
             continue
 
         print(f"{len(data)} papers", end=" ", flush=True)
 
-        # Filter to accepted papers only
-        _ACCEPT_STATUSES = {
-            "accept", "accepted", "accept (oral)", "accept (spotlight)",
-            "accept (poster)", "poster", "spotlight", "talk", "oral",
-        }
-        accepted = []
-        for p in data:
-            status = p.get("status", "").lower().strip()
-            if status in _ACCEPT_STATUSES or status.startswith("accept"):
-                accepted.append(p)
-
-        if not accepted:
-            # Try all papers (some datasets don't have status)
+        # Filter to accepted papers only for conferences with reject data
+        if conf_id in _NEEDS_ACCEPT_FILTER:
+            _ACCEPT_STATUSES = {
+                "accept", "accepted", "accept (oral)", "accept (spotlight)",
+                "accept (poster)", "poster", "spotlight", "talk", "oral",
+                "journal",
+            }
+            accepted = []
+            for p in data:
+                status = p.get("status", "").lower().strip()
+                if status in _ACCEPT_STATUSES or status.startswith("accept"):
+                    accepted.append(p)
+            if not accepted:
+                accepted = data
+        else:
             accepted = data
 
         print(f"({len(accepted)} accepted)", end=" ", flush=True)
@@ -297,21 +324,18 @@ def _import_papercopilot(force: bool = False,
             title = p.get("title", "").strip()
             if not title:
                 continue
-            authors_str = p.get("author", "")
             affs_str = p.get("aff", "")
 
-            authors = authors_str.split(";") if authors_str else []
             affs = affs_str.split(";") if affs_str else []
-
-            first_author = authors[0].strip() if authors else ""
             first_aff = affs[0].strip() if affs else ""
+
+            # Handle "uni1+uni2" co-affiliation: take first
+            if "+" in first_aff:
+                first_aff = first_aff.split("+")[0].strip()
 
             if first_aff:
                 norm = _normalize_title(title)
-                affil_lookup[norm] = {
-                    "first_author": first_author,
-                    "affiliation": first_aff,
-                }
+                affil_lookup[norm] = {"affiliation": first_aff}
 
         # Match against our raw data
         raw_papers = _load_raw_paper_titles(conf_id, year)
