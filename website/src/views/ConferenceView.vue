@@ -412,6 +412,140 @@ const funFacts = computed(() => {
 
   return facts
 })
+
+// Affiliation horizontal bar chart
+const INST_ABBREV: Record<string, string> = {
+  'Chinese Academy of Sciences': 'CAS',
+  'University of California, Berkeley': 'UC Berkeley',
+  'University of California, Los Angeles': 'UCLA',
+  'University of California, San Diego': 'UC San Diego',
+  'University of Illinois Urbana-Champaign': 'UIUC',
+  'Georgia Institute of Technology': 'Georgia Tech',
+  'University of Texas at Austin': 'UT Austin',
+  'University of Massachusetts Amherst': 'UMass',
+  'University of Maryland': 'UMD',
+  'Hong Kong University of Science and Technology': 'HKUST',
+  'Chinese University of Hong Kong': 'CUHK',
+  'University of Hong Kong': 'HKU',
+  'Pohang University of Science and Technology': 'POSTECH',
+  'Nanyang Technological University': 'NTU',
+  'National University of Singapore': 'NUS',
+  'University of Science and Technology of China': 'USTC',
+  'National Chiao Tung University': 'NYCU',
+  'National Taiwan University': 'NTU Taiwan',
+  'Shanghai Jiao Tong University': 'SJTU',
+  'Harbin Institute of Technology': 'HIT',
+  'University of British Columbia': 'UBC',
+  'University of New South Wales': 'UNSW',
+  'TU Munich': 'TUM',
+  'Ludwig Maximilian University of Munich': 'LMU Munich',
+  'Humboldt University of Berlin': 'HU Berlin',
+  'Friedrich-Alexander-Universität Erlangen-Nürnberg': 'FAU',
+  'Tel Aviv University': 'TAU',
+  'Indian Institute of Technology Bombay': 'IIT Bombay',
+  'Indian Institute of Science': 'IISc',
+  'Pierre and Marie Curie University': 'UPMC',
+  'Polytechnic University of Milan': 'PoliMi',
+  'Sapienza University of Rome': 'Sapienza',
+  'KTH Royal Institute of Technology': 'KTH',
+  'Tokyo Institute of Technology': 'Tokyo Tech',
+  'University of Pennsylvania': 'UPenn',
+  'Carnegie Mellon University': 'CMU',
+  'Massachusetts Institute of Technology': 'MIT',
+}
+const abbreviateInst = (name: string) => INST_ABBREV[name] || name
+
+const COUNTRY_OVERRIDES: Record<string, string> = { TW: 'CN' }
+const countryFlag = (code: string) => {
+  const c = COUNTRY_OVERRIDES[code] || code
+  return String.fromCodePoint(...[...c.toUpperCase()].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65))
+}
+
+const SOURCE_NAMES: Record<string, { label: string; url: string }> = {
+  openreview: { label: 'OpenReview', url: 'https://openreview.net' },
+  openalex: { label: 'OpenAlex', url: 'https://openalex.org' },
+  martenlienen: { label: 'Marten Lienen et al.', url: 'https://github.com/martenlienen/icml-neurips-iclr-dataset' },
+  papercopilot: { label: 'PaperCopilot', url: 'https://github.com/papercopilot/paperlists' },
+}
+const sourceLinks = (sources: string[]) =>
+  (sources || [])
+    .map(s => {
+      const info = SOURCE_NAMES[s]
+      return info
+        ? `<a href="${info.url}" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">${info.label}</a>`
+        : s
+    })
+    .join(' + ')
+
+const affiliationChartOption = computed(() => {
+  if (!conference.value?.affiliations) return {}
+  const affil = conference.value.affiliations
+  const top = affil.top.slice(0, 20)
+  if (!top.length) return {}
+
+  const items = top.slice().reverse()
+  const labels = items.map(e => {
+    const flag = e.country ? countryFlag(e.country) : ''
+    const short = abbreviateInst(e.name)
+    return flag ? `${short} {flag|${flag}}` : short
+  })
+  const counts = items.map(e => e.count)
+  const pcts = items.map(e => e.pct)
+  const cleanNames = items.map(e => e.name)
+
+  // gradient: bottom bar (top institution) = soft lavender, top bar = vivid violet
+  const n = labels.length
+  const barColors = labels.map((_: any, i: number) => {
+    const t = n > 1 ? i / (n - 1) : 0
+    const r = Math.round(159 - t * 50)
+    const g = Math.round(180 - t * 140)
+    const b = Math.round(252 - t * 35)
+    return `rgb(${r},${g},${b})`
+  })
+
+  return {
+    tooltip: {
+      trigger: 'axis' as const,
+      axisPointer: { type: 'shadow' as const },
+      formatter: (params: any) => {
+        const p = params[0]
+        return `${cleanNames[p.dataIndex]}<br/>${p.value} papers (${pcts[p.dataIndex]?.toFixed(1)}%)`
+      },
+    },
+    grid: { left: 190, right: 60, top: 10, bottom: 20 },
+    xAxis: {
+      type: 'value' as const,
+      axisLabel: { color: '#9ca3af' },
+      splitLine: { lineStyle: { color: '#374151' } },
+    },
+    yAxis: {
+      type: 'category' as const,
+      data: labels,
+      axisLabel: {
+        color: '#d1d5db',
+        fontSize: 12,
+        rich: {
+          flag: { fontSize: 18, align: 'center' },
+        },
+      },
+    },
+    series: [{
+      type: 'bar' as const,
+      data: counts.map((v, i) => ({
+        value: v,
+        itemStyle: { color: barColors[i], borderRadius: [0, 4, 4, 0] },
+      })),
+      barMaxWidth: 24,
+      label: {
+        show: true,
+        position: 'right' as const,
+        formatter: (p: any) => `${p.value}`,
+        color: '#9ca3af',
+        fontSize: 11,
+      },
+    }],
+  }
+})
 </script>
 
 <template>
@@ -550,6 +684,19 @@ const funFacts = computed(() => {
               {{ fact }}
             </li>
           </ul>
+        </div>
+
+        <!-- Top Affiliations -->
+        <div v-if="conference.affiliations" class="card p-6 bg-gray-800/50 border-gray-700/50 mb-8">
+          <h3 class="text-lg font-semibold text-white mb-2">{{ t('conference.top_affiliations') }}</h3>
+          <p class="text-xs text-gray-500 mb-4">
+            {{ t('conference.affiliation_coverage', {
+              covered: `${conference.affiliations.total_covered} (${conference.affiliations.coverage_pct}%)`,
+              total: conference.affiliations.total_papers
+            }) }}
+            · <span v-html="sourceLinks(conference.affiliations.sources)" />
+          </p>
+          <v-chart :option="affiliationChartOption" style="height: 480px" autoresize />
         </div>
       </template>
     </div>

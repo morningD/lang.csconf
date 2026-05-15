@@ -121,6 +121,86 @@ def compute_language_distribution(authors: list[dict]) -> dict[str, int]:
     return dict(counts)
 
 
+def load_affiliations() -> dict[str, dict[int, dict]]:
+    """Load affiliation data from step2e.
+
+    Returns: {conf_id: {year: affiliation_data}}
+    """
+    affil_dir = Path(__file__).parent.parent / "data" / "raw" / "affiliations"
+    if not affil_dir.exists():
+        return {}
+
+    result: dict[str, dict[int, dict]] = {}
+    for f in sorted(affil_dir.glob("*.json")):
+        try:
+            data = json.loads(f.read_text(encoding="utf-8"))
+            conf_id = data.get("conference", "").replace("/", "-")
+            year = data.get("year", 0)
+            if conf_id and year:
+                result.setdefault(conf_id, {})[year] = data
+        except (json.JSONDecodeError, KeyError):
+            continue
+    return result
+
+
+def _normalize_institution(name: str) -> str:
+    """Normalize institution name from OpenReview/OpenAlex."""
+    # Remove trailing ", Same Name" pattern (OpenReview artifact)
+    parts = [p.strip() for p in name.split(",")]
+    if len(parts) == 2 and parts[0].lower() == parts[1].lower():
+        name = parts[0]
+    # Remove "Department of ..." prefixes
+    for prefix in ("Department of ", "School of ", "Faculty of "):
+        if name.startswith(prefix):
+            rest = name[len(prefix):]
+            # Only strip if rest looks like a university name
+            if any(kw in rest.lower() for kw in ("university", "institute", "college")):
+                name = rest
+    return name.strip()
+
+
+def compute_affiliation_top(affil_data: dict, top_n: int = 20) -> dict:
+    """Compute top-N affiliation distribution from step2e data.
+
+    Returns: {"total_covered": int, "total_papers": int, "coverage_pct": float,
+              "top": [{"name": str, "count": int, "pct": float, "country": str}, ...]}
+    """
+    papers = affil_data.get("papers", [])
+    total = affil_data.get("total_papers", len(papers))
+    covered = sum(1 for p in papers if p.get("institution"))
+
+    inst_counts: dict[str, int] = defaultdict(int)
+    inst_countries: dict[str, str] = {}
+    for p in papers:
+        inst = p.get("institution")
+        if inst:
+            inst = _normalize_institution(inst)
+            inst_counts[inst] += 1
+            country = p.get("institution_country", "")
+            if country and inst not in inst_countries:
+                inst_countries[inst] = country
+
+    # Sort by count descending, take top-N
+    sorted_insts = sorted(inst_counts.items(), key=lambda x: -x[1])[:top_n]
+
+    top = [
+        {
+            "name": name,
+            "count": count,
+            "pct": round(100 * count / max(total, 1), 2),
+            **({"country": inst_countries[name]} if name in inst_countries else {}),
+        }
+        for name, count in sorted_insts
+    ]
+
+    return {
+        "total_covered": covered,
+        "total_papers": total,
+        "coverage_pct": round(100 * covered / max(total, 1), 1),
+        "top": top,
+    }
+
+
 def validate_paper_counts(
     all_data: list[dict],
     all_venues: dict[str, dict],
@@ -248,6 +328,7 @@ def run(force: bool = False):
     rank_history = load_rank_history()
     accept_rates = load_accept_rates()
     year_notes = load_year_notes()
+    all_affiliations = load_affiliations()
 
     if not all_data:
         print("No classified data found. Run step 3 first.")
@@ -386,6 +467,36 @@ def run(force: bool = False):
         # Add per-year notes if available
         if conf_id in year_notes:
             conf_stats["year_notes"] = year_notes[conf_id]
+        # Add affiliation data if available
+        if conf_id in all_affiliations:
+            conf_affils = all_affiliations[conf_id]
+            years_with_data = [y for y in conf_years_seen.get(conf_id, set()) if y in conf_affils]
+
+            if years_with_data:
+                # Aggregate all years for overall top
+                all_papers = [p for y in years_with_data for p in conf_affils[y].get("papers", [])]
+                total_papers = sum(conf_affils[y].get("total_papers", 0) for y in years_with_data)
+
+                affil_top = compute_affiliation_top({
+                    "total_papers": total_papers,
+                    "papers": all_papers,
+                })
+
+                if affil_top["total_covered"] > 0:
+                    # Add per-year breakdown
+                    by_year = {}
+                    sources = set()
+                    for y in years_with_data:
+                        year_top = compute_affiliation_top(conf_affils[y])
+                        if year_top["total_covered"] > 0:
+                            by_year[str(y)] = year_top
+                        src = conf_affils[y].get("source", "")
+                        if src:
+                            sources.add(src)
+
+                    affil_top["by_year"] = by_year
+                    affil_top["sources"] = sorted(sources)
+                    conf_stats["affiliations"] = affil_top
         _write_json(STATS_DIR / "by_conference" / f"{conf_id}.json", conf_stats)
 
     # 4. by_category/{category}.json

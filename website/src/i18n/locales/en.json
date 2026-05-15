@@ -35,7 +35,10 @@
     "accept_rate": "Accept Rate",
     "accept_rate_history": "Acceptance Rate History",
     "rank_uncertain": "CCF 2011 (2nd edition) data is partial and may be inaccurate.",
-    "back_to_home": "Back to Home"
+    "back_to_home": "Back to Home",
+    "top_affiliations": "Top Affiliations",
+    "affiliation_coverage": "Affiliation data covers {covered} of {total} papers",
+    "affiliation_source_note": "Data from {sources}"
   },
   "compare": {
     "title": "Compare Conferences",
@@ -66,6 +69,13 @@
     "src_openreview": "Supplementary paper data and acceptance rates for AI/ML conferences (NeurIPS, ICLR, ICML, etc.) — often available months before DBLP",
     "src_ccf_pdf": "Conference list, CCF rankings and categories (extracted from official PDFs)",
     "src_fasttext": "fastText lid.176.bin model for name-to-language classification",
+    "data_sources_affiliations": "Author affiliations",
+    "src_or_affiliation": "First-author institution data from author profiles (current-year conferences)",
+    "src_martenlienen": "Pre-compiled affiliation dataset for NeurIPS, ICML, and ICLR (2006-2024)",
+    "src_papercopilot": "Pre-compiled affiliation data for ICLR, CoRL, and other conferences (2023+)",
+    "src_openalex": "First-author institution data via title matching. Coverage varies by publisher.",
+    "affiliation_accuracy": "Affiliation Coverage Note",
+    "affiliation_accuracy_text": "Affiliation data is sourced from multiple providers with varying coverage. Historical data (NeurIPS/ICML/ICLR) uses pre-compiled datasets with 85-99% coverage. Current-year data uses OpenReview profiles. Other conferences use OpenAlex, where coverage depends on publisher: IEEE/ACM/Springer conferences typically have 70-90% coverage. The coverage percentage shown on each conference page indicates data completeness.",
     "accuracy": "Accuracy Note",
     "accuracy_text": "Name-based language inference is inherently imprecise. Many factors (immigration, marriage, cultural mixing) make names unreliable indicators. Treat all results as rough approximations.",
     "data_cleaning": "Data Cleaning",

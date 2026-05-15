@@ -4,12 +4,13 @@
 Visualizing linguistic diversity of first authors across CCF-rated CS conferences (2010–2026).
 Pipeline: conferences_base.json + CCF PDFs → DBLP SPARQL crawl → name classification → JSON stats → Vue 3 website.
 
-## Current Numbers (as of 2026-05-12)
+## Current Numbers (as of 2026-05-14)
 - **Conferences**: 416 in conferences_base.json, 413 in stats
 - **Papers**: 908,971
 - **Raw author files**: 5,830
 - **Venue entries**: 416
 - **Year notes entries**: 230 (covering noise, gaps, recoveries, and provenance tracking)
+- **Affiliation data**: 31 conference-years (NEURIPS 2010-2025, ICLR 2018-2025, ICML 2017-2024, CoRL 2021-2024), ~43,759 papers with affiliations (95.4% coverage)
 
 ## CRITICAL: Safe Re-Crawl Procedure
 **NEVER run `--step 2 --force` without immediately following with `--step 2c --force`.**
@@ -42,6 +43,7 @@ pipeline/
 ├── step2b_crawl_venues.py          # Crawl DBLP HTML index for venue city/country
 ├── step2c_fill_gaps.py             # Fill SPARQL indexing gaps via Search API + HTML
 ├── step2d_crawl_openreview.py      # Crawl OpenReview for missing conference-year data + accept rates
+├── step2e_fetch_affiliations.py    # Fetch first-author affiliations (OpenReview profiles + OpenAlex)
 ├── step3_classify_names.py         # fastText + rule-based ensemble → language group
 ├── step4_generate_stats.py         # Aggregate stats (+ venues + rank_history + year_notes)
 ├── conference_year_notes.json      # Per-(conference, year) provenance log & metadata
@@ -49,6 +51,7 @@ pipeline/
 │   ├── dblp_sparql.py              # SPARQL client (batch queries, workshop + proceedings volume filtering)
 │   ├── dblp_search_api.py          # Search API + HTML scraping (for step2c)
 │   ├── openreview.py               # OpenReview v2 API client (for step2d)
+│   ├── openalex_client.py          # OpenAlex API client (for step2e affiliations)
 │   ├── filters.py                  # Shared data filters (proceedings volume detection)
 │   ├── years.py                    # Shared year-range constants (YEAR_FLOOR, year_ceiling, expected_years_range)
 │   ├── name_classifier.py          # fastText + rule-based ensemble
@@ -61,13 +64,17 @@ data/
 ├── raw/authors/{CONF}_{YEAR}.json  # All authors with ordinal field
 ├── raw/venues/{CONF}.json          # {year: {city, country, h2_text}}
 ├── raw/accept_rates.json           # Merged from 7 sources (incl. OpenReview)
+├── raw/affiliations/{CONF}_{YEAR}.json  # First-author institution data (OpenReview + OpenAlex)
+├── raw/affiliations/_profile_cache.json # Persistent OpenReview profile→institution cache (~11,700 entries)
 ├── classified/authors/             # Author data with language predictions
 ├── ccf-versions/ccf_rank_history.json  # {conf: {version: {rank, category}}}
 └── stats/                          # Pre-computed JSON for website
 scripts/
 ├── extract_ccf_ranks.py            # Extract ranks + categories from CCF PDFs
 ├── crawl_neurips2025.py            # One-time: NeurIPS 2025 from OpenReview (now automated via step2d)
-└── crawl_iclr2026.py               # One-time: ICLR 2026 from OpenReview (now automated via step2d)
+├── crawl_iclr2026.py               # One-time: ICLR 2026 from OpenReview (now automated via step2d)
+├── import_affiliations.py          # Import affiliations from pre-compiled datasets (martenlienen, papercopilot)
+└── crawl_affiliations.sh           # Resilient OpenReview profile crawler with stall detection + auto-restart
 ```
 
 ## Pipeline Commands
@@ -78,6 +85,8 @@ python -m pipeline.run_all --step 2 --force       # Re-crawl SPARQL
 python -m pipeline.run_all --step 2b --force      # Re-crawl all venues
 python -m pipeline.run_all --step 2c              # Fill SPARQL gaps
 python -m pipeline.run_all --step 2d              # Crawl OpenReview (supplementary)
+python -m pipeline.run_all --step 2e              # Fetch affiliations (OpenReview + OpenAlex)
+python scripts/import_affiliations.py              # Import from pre-compiled datasets (martenlienen + papercopilot)
 python -m pipeline.run_all --step 1b              # Update acceptance rates
 python scripts/extract_ccf_ranks.py               # Re-extract CCF ranks from PDFs
 rsync -av --delete data/stats/ website/public/data/stats/  # Sync to website
@@ -101,6 +110,71 @@ cd website && pnpm build                 # Production build (vue-tsc + Vite)
 ### Incremental Update
 Without `--force`, steps 2/3 skip existing files. Step 4 always regenerates.
 To re-fetch a conference: `rm data/raw/authors/CVPR_*.json data/classified/authors/CVPR_*.json` then re-run.
+
+### Affiliation Data (Top Institutions)
+
+**Data fusion strategy** (2026-05-14, after cross-validation of 3 sources):
+
+**Cross-validation results (ICLR 2024, 2090 common papers across 3 sources):**
+- 30.8% all 3 agree exactly; 54.1% PC+ML agree; 21.5% all different
+- Discrepancies are expected: OR uses profile registration info (current employer), ML/PC use paper PDF affiliations (formal at time of submission)
+- **Aggregate conclusion**: Top-10 institution rankings are consistent across all sources; absolute counts vary ~30-50% but relative order is stable
+
+**Data source priority:**
+
+| Priority | Source | Use for | License | Quality |
+|----------|--------|---------|---------|---------|
+| 1 | `martenlienen/icml-neurips-iclr-dataset` | NeurIPS 2006-2024, ICML 2017-2024, ICLR 2018-2024 | No explicit license (fact data from OpenReview, CC BY 4.0 origin) | Highest — scraped from paper pages, 100% self-consistent |
+| 2 | `papercopilot/paperlists` | ICLR 2025, CoRL 2021-2024 (where martenlienen has no data) | No explicit license (fact data from OpenReview) | High for 2023+; near-zero for older years |
+| 3 | OpenReview profile API | **Current year only** (2026 conferences) | CC BY 4.0 (submission metadata) | Good for current year; 40% discrepancy vs paper affiliations for historical data |
+| 4 | OpenAlex title matching | Non-OpenReview conferences (IEEE/ACM/Springer) | CC0 | 70-90% for publisher-indexed conferences; not yet run at scale |
+
+**Key rule: OpenReview API crawling is ONLY for current-year conferences.** Historical data uses pre-compiled datasets exclusively.
+- Rationale: OR profile institution reflects current employer, which drifts over time. For current-year conferences, this drift is minimal. For historical years, paper PDF affiliations (from martenlienen/papercopilot) are more accurate.
+- AISTATS/UAI/COLM historical years will show "no affiliation data" in UI until pre-compiled sources become available.
+
+**Import commands:**
+```bash
+python scripts/import_affiliations.py --source martenlienen   # Import historical data (NeurIPS/ICML/ICLR)
+python scripts/import_affiliations.py --source papercopilot   # Import recent data (ICLR 2025, CoRL)
+python -m pipeline.run_all --step 2e                          # OR crawl for current year only (skips existing)
+bash scripts/crawl_affiliations.sh                            # Resilient OR crawl with auto-restart
+```
+
+**Import script learnings:**
+- papercopilot `status` field varies: ICLR 2020 uses "Poster"/"Spotlight"/"Talk" instead of "Accept" — must handle all variants
+- papercopilot `aff` field uses semicolons as author separators (e.g., `"MIT;Stanford"`) — first element is first author's affiliation
+- papercopilot `aff` fields are empty for older years (ICLR <2024, ICML <2023) — only useful for 2023+
+- martenlienen stops at 2024 (author stopped updating in 2025 due to website format change)
+- Title normalization achieves ~97% match rate between pre-compiled sources and our DBLP titles
+
+**Attribution:** About page credits OpenReview (CC BY 4.0), OpenAlex (CC0), martenlienen, papercopilot.
+
+**Institution normalization**: `_normalize_institution()` in step4 handles OpenReview artifacts (e.g., "Tsinghua University, Tsinghua University" → "Tsinghua University")
+- **OpenAlex polite pool**: `mailto=morningd.github@gmail.com`, $1/day free budget, resets at midnight UTC
+- **Output**: `data/raw/affiliations/{CONF}_{YEAR}.json` with `{papers: [{title, first_author, institution, institution_country, ...}]}`
+- **Stats**: step4 aggregates into top-20 institutions per conference with country codes
+- **UI**: Conference detail page shows horizontal bar chart with gradient colors + country flags
+- **Institution abbreviations**: `INST_ABBREV` dict in ConferenceView.vue maps 35+ long names to abbreviations
+- **Country flag overrides**: `COUNTRY_OVERRIDES` maps TW → CN for political sensitivity
+- **Profile cache**: Persistent JSON cache at `data/raw/affiliations/_profile_cache.json` (~11,700+ entries), shared across conferences
+
+**Completed affiliation data (as of 2026-05-14):**
+
+| Conference | Years | Coverage | Source |
+|-----------|-------|----------|--------|
+| NEURIPS | 2010-2022 | 84-99% | martenlienen |
+| NEURIPS | 2023-2025 | 92-93% | OpenReview (crawled before strategy change) |
+| ICLR | 2018-2023 | 99% | martenlienen |
+| ICLR | 2024 | 93% | OpenReview (crawled before strategy change) |
+| ICLR | 2025 | 88% | papercopilot |
+| ICML | 2017-2024 | 97-99% | martenlienen |
+| CoRL | 2021-2024 | 85-92% | papercopilot |
+| ICLR 2026 | — | Pending | OR crawl (current year) |
+| AISTATS 2026 | — | Pending | OR crawl (current year) |
+| UAI 2026 | — | Pending | OR crawl (current year) |
+| COLM 2025-2026 | — | Pending | OR crawl (current year) |
+| ICML/NeurIPS 2026 | — | Pending | OR crawl (current year, when available) |
 
 ## Key Technical Details
 
@@ -190,7 +264,15 @@ OpenReview (openreview.net) hosts paper data for major AI/ML conferences, often 
 
 **Adding a new OpenReview conference**: Add entry to `VENUE_REGISTRY` in `pipeline/utils/openreview.py` with the venue-id pattern (e.g., `"CONF": "org.org/CONF/{year}/Conference"`).
 
-### 5. DBLP Journal Supplement Scraping (manual)
+**SSL issues**: OpenReview API (`api2.openreview.net`) has intermittent SSL errors (`SSLEOFError: UNEXPECTED_EOF_WHILE_READING`). Workaround: `s.verify = False` + `urllib3.disable_warnings()` in `_session()`. Some conference-years may fail with `ConnectionError` — retry later.
+
+### 4b. OpenReview Affiliation Enrichment (step 2e, automatic)
+For the 7 OpenReview conferences, step 2e fetches first-author profiles to extract institution data:
+- Profile API: `GET /profiles?id=~Profile_Name` → `content.history[0].institution.{name, country}`
+- Rate limited to ~3 RPS (`time.sleep(0.3)` per profile fetch)
+- Persistent profile cache at `data/raw/affiliations/_profile_cache.json` avoids re-fetching known profiles
+- Coverage: ~92-93% for NeurIPS/ICLR/ICML papers (profile IDs available for most authors)
+- `_normalize_institution()` handles OpenReview artifacts like repeated names in institution field
 For conferences that publish in journals (ISMB/ECCB → Bioinformatics Supplements).
 
 **ISMB odd years (2011-2023)**: Joint ISMB/ECCB papers published in Bioinformatics journal supplements, not `conf/ismb/`. Recovered 509 papers by scraping DBLP journal volume pages:

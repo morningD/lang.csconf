@@ -1,0 +1,4340 @@
+{
+  "conference": "ICML",
+  "year": 2018,
+  "total_papers": 621,
+  "total_matched": 603,
+  "total_with_affiliation": 603,
+  "coverage_pct": 97.1,
+  "source": "martenlienen",
+  "papers": [
+    {
+      "title": "Noisy Natural Gradient as Variational Inference.",
+      "first_author": "Guodong Zhang",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Policy Optimization as Wasserstein Gradient Flows.",
+      "first_author": "Ruiyi Zhang",
+      "matched": true,
+      "institution": "Duke University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Accelerating Greedy Coordinate Descent Methods.",
+      "first_author": "Haihao Lu",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Local Density Estimation in High Dimensions.",
+      "first_author": "Xian Wu",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "LEAPSANDBOUNDS: A Method for Approximately Optimal Algorithm Configuration.",
+      "first_author": "Gellért Weisz",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bilevel Programming for Hyperparameter Optimization and Meta-Learning.",
+      "first_author": "Luca Franceschi",
+      "matched": true,
+      "institution": "Istituto Italiano di Tecnologia - University College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bayesian Optimization of Combinatorial Structures.",
+      "first_author": "Ricardo Baptista",
+      "matched": true,
+      "institution": "Massachusetts Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Constant-Time Predictive Distributions for Gaussian Processes.",
+      "first_author": "Geoff Pleiss",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "To Understand Deep Learning We Need to Understand Kernel Learning.",
+      "first_author": "Mikhail Belkin",
+      "matched": true,
+      "institution": "Ohio State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Limitations of First-Order Approximation in GAN Dynamics.",
+      "first_author": "Jerry Li",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Towards Black-box Iterative Machine Teaching.",
+      "first_author": "Weiyang Liu",
+      "matched": true,
+      "institution": "Georgia Tech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Progress & Compress: A scalable framework for continual learning.",
+      "first_author": "Jonathan Schwarz",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Act in Decentralized Partially Observable MDPs.",
+      "first_author": "Jilles Steeve Dibangoye",
+      "matched": true,
+      "institution": "INRIA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Path-Level Network Transformation for Efficient Architecture Search.",
+      "first_author": "Han Cai",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Racing Thompson: an Efficient Algorithm for Thompson Sampling with Non-conjugate Priors.",
+      "first_author": "Yichi Zhou",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Disentangled Sequential Autoencoder.",
+      "first_author": "Yingzhen Li",
+      "matched": true,
+      "institution": "Microsoft Research Cambridge",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Power of Interpolation: Understanding the Effectiveness of SGD in Modern Over-parametrized Learning.",
+      "first_author": "Siyuan Ma",
+      "matched": true,
+      "institution": "The Ohio State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Generalization Error of Dictionary Learning with Moreau Envelopes.",
+      "first_author": "Alexandros Georgogiannis",
+      "matched": true,
+      "institution": "TECHNICAL UNIVERSITY OF CRETE",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Make the Minority Great Again: First-Order Regret Bound for Contextual Bandits.",
+      "first_author": "Zeyuan Allen-Zhu",
+      "matched": true,
+      "institution": "Microsoft Research AI",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Rates of Convergence of Spectral Methods for Graphon Estimation.",
+      "first_author": "Jiaming Xu",
+      "matched": true,
+      "institution": "Duke University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Stochastic AUC Maximization with O(1/n)-Convergence Rate.",
+      "first_author": "Mingrui Liu",
+      "matched": true,
+      "institution": "The University of Iowa",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Variational Network Inference: Strong and Stable with Concrete Support.",
+      "first_author": "Amir Dezfouli",
+      "matched": true,
+      "institution": "UNSW",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions.",
+      "first_author": "Junru Wu",
+      "matched": true,
+      "institution": "Texas A&M University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Approximation Algorithms for Cascading Prediction Models.",
+      "first_author": "Matthew Streeter",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Mechanics of n-Player Differentiable Games.",
+      "first_author": "David Balduzzi",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Partial Optimality and Fast Lower Bounds for Weighted Correlation Clustering.",
+      "first_author": "Jan-Hendrik Lange",
+      "matched": true,
+      "institution": "Max Planck Institute for Informatics",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction.",
+      "first_author": "Siyuan Qi",
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Maximization of Non-Submodular, Monotonic Functions on the Integer Lattice.",
+      "first_author": "Alan Kuhnle",
+      "matched": true,
+      "institution": "University of Florida",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Towards Binary-Valued Gates for Robust LSTM Training.",
+      "first_author": "Zhuohan Li",
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Estimation of Markov Chain via Rank-constrained Likelihood.",
+      "first_author": "Xudong Li",
+      "matched": true,
+      "institution": "Princeton Univerisity",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Towards Fast Computation of Certified Robustness for ReLU Networks.",
+      "first_author": "Tsui-Wei Weng",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Level-Set Methods for Finite-Sum Constrained Convex Optimization.",
+      "first_author": "Qihang Lin",
+      "matched": true,
+      "institution": "Univ Iowa",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Hierarchical Adaptive Forgetting Variational Filter.",
+      "first_author": "Vincent Moens",
+      "matched": true,
+      "institution": "Université catholique de Louvain",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "DCFNet: Deep Neural Network with Decomposed Convolutional Filters.",
+      "first_author": "Qiang Qiu",
+      "matched": true,
+      "institution": "Duke University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Variance Reduction Method with Stochastic Batch Size.",
+      "first_author": "Xuanqing Liu",
+      "matched": true,
+      "institution": "University of California, Davis",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic Variance-Reduced Cubic Regularized Newton Method.",
+      "first_author": "Dongruo Zhou",
+      "matched": true,
+      "institution": "University of California, Los Angeles",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Conditional Gradient Framework for Composite Convex Minimization with Applications to Semidefinite Programming.",
+      "first_author": "Alp Yurtsever",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Hidden Vulnerability of Distributed Learning in Byzantium.",
+      "first_author": "El Mahdi El Mhamdi",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Spectrum of Random Features Maps of High Dimensional Data.",
+      "first_author": "Zhenyu Liao",
+      "matched": true,
+      "institution": "L2S, CentraleSupelec",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Decentralized Submodular Maximization: Bridging Discrete and Continuous Settings.",
+      "first_author": "Aryan Mokhtari",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stein Points.",
+      "first_author": "Wilson Ye Chen",
+      "matched": true,
+      "institution": "University of Technology Sydney",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Boo(n) for Evaluating Architecture Performance.",
+      "first_author": "Ondrej Bajgar",
+      "matched": true,
+      "institution": "IBM Watson",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Algorithmic Framework of Variable Metric Over-Relaxed Hybrid Proximal Extra-Gradient Method.",
+      "first_author": "Li Shen",
+      "matched": true,
+      "institution": "Tencent AI Lab",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Error Compensated Quantized SGD and its Applications to Large-scale Distributed Optimization.",
+      "first_author": "Jiaxiang Wu",
+      "matched": true,
+      "institution": "Tencent AI Lab",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Continuous and Discrete-time Accelerated Stochastic Mirror Descent for Strongly Convex Functions.",
+      "first_author": "Pan Xu",
+      "matched": true,
+      "institution": "University of California, Los Angeles",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast and Sample Efficient Inductive Matrix Completion via Multi-Phase Procrustes Flow.",
+      "first_author": "Xiao Zhang",
+      "matched": true,
+      "institution": "University of Virginia",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Spotlight: Optimizing Device Placement for Training Deep Neural Networks.",
+      "first_author": "Yuanxiang Gao",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Information Theoretic Guarantees for Empirical Risk Minimization with Applications to Model Selection and Large-Scale Optimization.",
+      "first_author": "Ibrahim M. Alabdulmohsin",
+      "matched": true,
+      "institution": "Saudi Aramco",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Proportional Allocation: Simple, Distributed, and Diverse Matching with High Entropy.",
+      "first_author": "Shipra Agrawal",
+      "matched": true,
+      "institution": "Columbia",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient Gradient-Free Variational Inference using Policy Search.",
+      "first_author": "Oleg Arenz",
+      "matched": true,
+      "institution": "TU Darmstadt",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adversarial Distillation of Bayesian Neural Network Posteriors.",
+      "first_author": "Kuan-Chieh Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Transfer in Deep Reinforcement Learning Using Successor Features and Generalised Policy Improvement.",
+      "first_author": "André Barreto",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A probabilistic framework for multi-view feature learning with many-to-many associations via neural networks.",
+      "first_author": "Akifumi Okuno",
+      "matched": true,
+      "institution": "Kyoto University / RIKEN AIP",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Addressing Function Approximation Error in Actor-Critic Methods.",
+      "first_author": "Scott Fujimoto",
+      "matched": true,
+      "institution": "McGill University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Extreme Learning to Rank via Low Rank Assumption.",
+      "first_author": "Minhao Cheng",
+      "matched": true,
+      "institution": "UC Davis",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "GEP-PG: Decoupling Exploration and Exploitation in Deep Reinforcement Learning Algorithms.",
+      "first_author": "Cédric Colas",
+      "matched": true,
+      "institution": "Inria",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Implicit Regularization in Nonconvex Statistical Estimation: Gradient Descent Converges Linearly for Phase Retrieval and Matrix Completion.",
+      "first_author": "Cong Ma",
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Local Private Hypothesis Testing: Chi-Square Tests.",
+      "first_author": "Marco Gaboardi",
+      "matched": true,
+      "institution": "Univeristy at Buffalo",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Clipped Action Policy Gradient.",
+      "first_author": "Yasuhiro Fujita",
+      "matched": true,
+      "institution": "Preferred Networks, Inc.",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gradient Descent for Sparse Rank-One Matrix Completion for Crowd-Sourced Aggregation of Sparsely Interacting Workers.",
+      "first_author": "Yao Ma",
+      "matched": true,
+      "institution": "Boston University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Functional Gradient Boosting based on Residual Network Perception.",
+      "first_author": "Atsushi Nitanda",
+      "matched": true,
+      "institution": "The University of Tokyo / RIKEN",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Not All Samples Are Created Equal: Deep Learning with Importance Sampling.",
+      "first_author": "Angelos Katharopoulos",
+      "matched": true,
+      "institution": "Idiap",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Weightless: Lossy weight encoding for deep neural network compression.",
+      "first_author": "Brandon Reagen",
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Constraining the Dynamics of Deep Probabilistic Models.",
+      "first_author": "Marco Lorenzi",
+      "matched": true,
+      "institution": "Inria Sophia Antipolis",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Can Deep Reinforcement Learning Solve Erdos-Selfridge-Spencer Games?",
+      "first_author": "Maithra Raghu",
+      "matched": true,
+      "institution": "Google Brain / Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Speed Up Structured Output Prediction.",
+      "first_author": "Xingyuan Pan",
+      "matched": true,
+      "institution": "University of Utah",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dissipativity Theory for Accelerating Stochastic Variance Reduction: A Unified Analysis of SVRG and Katyusha Using Semidefinite Programs.",
+      "first_author": "Bin Hu",
+      "matched": true,
+      "institution": "University of Wisconsin-Madison",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Accelerated Spectral Ranking.",
+      "first_author": "Arpit Agarwal",
+      "matched": true,
+      "institution": "University of Pennsylvania",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Safe Element Screening for Submodular Function Minimization.",
+      "first_author": "Weizhong Zhang",
+      "matched": true,
+      "institution": "Tencent AI Lab",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fixing a Broken ELBO.",
+      "first_author": "Alexander A. Alemi",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness.",
+      "first_author": "Michael J. Kearns",
+      "matched": true,
+      "institution": "University of Pennsylvania",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Tempered Adversarial Networks.",
+      "first_author": "Mehdi S. M. Sajjadi",
+      "matched": true,
+      "institution": "Max Planck Institute for Intelligent Systems",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "DRACO: Byzantine-resilient Distributed Training via Redundant Gradients.",
+      "first_author": "Lingjiao Chen",
+      "matched": true,
+      "institution": "University of Wisconsin-Madison",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Matrix Norms in Data Streams: Faster, Multi-Pass and Row-Order.",
+      "first_author": "Vladimir Braverman",
+      "matched": true,
+      "institution": "Johns Hopkins University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Fast and Scalable Joint Estimator for Integrating Additional Knowledge in Learning Multiple Related Sparse Gaussian Graphical Models.",
+      "first_author": "Beilun Wang",
+      "matched": true,
+      "institution": "University of Virginia",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Candidates vs. Noises Estimation for Large Multi-Class Classification Problem.",
+      "first_author": "Lei Han",
+      "matched": true,
+      "institution": "Tencent AI Lab",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV).",
+      "first_author": "Been Kim",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "CRAFTML, an Efficient Clustering-based Random Forest for Extreme Multi-label Learning.",
+      "first_author": "Wissam Siblini",
+      "matched": true,
+      "institution": "Orange Labs",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic Training of Graph Convolutional Networks with Variance Reduction.",
+      "first_author": "Jianfei Chen",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning by Playing Solving Sparse Reward Tasks from Scratch.",
+      "first_author": "Martin A. Riedmiller",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Curriculum Learning by Transfer Learning: Theory and Experiments with Deep Networks.",
+      "first_author": "Daphna Weinshall",
+      "matched": true,
+      "institution": "Hebrew University of Jerusalem, Israel",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Variance Regularized Counterfactual Risk Minimization via Variational Divergence Minimization.",
+      "first_author": "Hang Wu",
+      "matched": true,
+      "institution": "Georgia Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient end-to-end learning for quantizable representations.",
+      "first_author": "Yeonwoo Jeong",
+      "matched": true,
+      "institution": "Seoul National University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Tree Edit Distance Learning via Adaptive Symbol Embeddings.",
+      "first_author": "Benjamin Paaßen",
+      "matched": true,
+      "institution": "Bielefeld University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Well-Tempered Lasso.",
+      "first_author": "Yuanzhi Li",
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Scalable Approximate Bayesian Inference for Particle Tracking Data.",
+      "first_author": "Ruoxi Sun",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep Reinforcement Learning in Continuous Action Spaces: a Case Study in the Game of Simulated Curling.",
+      "first_author": "Kyowoon Lee",
+      "matched": true,
+      "institution": "UNIST",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Tighter Variational Bounds are Not Necessarily Better.",
+      "first_author": "Tom Rainforth",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Policy Representations in Multiagent Systems.",
+      "first_author": "Aditya Grover",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Model-Level Dual Learning.",
+      "first_author": "Yingce Xia",
+      "matched": true,
+      "institution": "University of Science and Technology of China",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Which Training Methods for GANs do actually Converge?",
+      "first_author": "Lars M. Mescheder",
+      "matched": true,
+      "institution": "MPI Tübingen",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Design of Experiments for Model Discrimination Hybridising Analytical and Data-Driven Approaches.",
+      "first_author": "Simon Olofsson",
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Provable Variable Selection for Streaming Features.",
+      "first_author": "Jing Wang",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Meta-Learning by Adjusting Priors Based on Extended PAC-Bayes Theory.",
+      "first_author": "Ron Amit",
+      "matched": true,
+      "institution": "Technion – Israel Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep Variational Reinforcement Learning for POMDPs.",
+      "first_author": "Maximilian Igl",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Relationship between Data Efficiency and Error for Uncertainty Sampling.",
+      "first_author": "Stephen Mussmann",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "MentorNet: Learning Data-Driven Curriculum for Very Deep Neural Networks on Corrupted Labels.",
+      "first_author": "Lu Jiang",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dynamical Isometry and a Mean Field Theory of RNNs: Gating Enables Signal Propagation in Recurrent Neural Networks.",
+      "first_author": "Minmin Chen",
+      "matched": true,
+      "institution": "Google research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Inter and Intra Topic Structure Learning with Word Embeddings.",
+      "first_author": "He Zhao",
+      "matched": true,
+      "institution": "FIT, Monash University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Probabilistic Recurrent State-Space Models.",
+      "first_author": "Andreas Doerr",
+      "matched": true,
+      "institution": "Bosch Center for Artificial Intelligence, Max Planck Institute for Intelligent Systems",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Binary Latent Variable Models: A Tensor Eigenpair Approach.",
+      "first_author": "Ariel Jaffe",
+      "matched": true,
+      "institution": "Weizmann Institute of Science",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Entropy-SGD optimizes the prior of a PAC-Bayes bound: Generalization properties of Entropy-SGD and data-dependent priors.",
+      "first_author": "Gintare Karolina Dziugaite",
+      "matched": true,
+      "institution": "University of Cambridge",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Differentially Private Database Release via Kernel Mean Embeddings.",
+      "first_author": "Matej Balog",
+      "matched": true,
+      "institution": "University of Cambridge and MPI Tübingen",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Computational Optimal Transport: Complexity by Accelerated Gradient Descent Is Better Than by Sinkhorn's Algorithm.",
+      "first_author": "Pavel E. Dvurechensky",
+      "matched": true,
+      "institution": "Weierstrass Institute for Applied Analysis and Stochastics",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Budgeted Experiment Design for Causal Structure Learning.",
+      "first_author": "AmirEmad Ghassami",
+      "matched": true,
+      "institution": "UIUC",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "K-Beam Minimax: Efficient Optimization for Deep Adversarial Learning.",
+      "first_author": "Jihun Hamm",
+      "matched": true,
+      "institution": "The Ohio State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Discovering and Removing Exogenous State Variables and Rewards for Reinforcement Learning.",
+      "first_author": "Thomas G. Dietterich",
+      "matched": true,
+      "institution": "(organization)",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep Linear Networks with Arbitrary Loss: All Local Minima Are Global.",
+      "first_author": "Thomas Laurent",
+      "matched": true,
+      "institution": "Loyola Marymount University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Spurious Local Minima are Common in Two-Layer ReLU Neural Networks.",
+      "first_author": "Itay Safran",
+      "matched": true,
+      "institution": "Weizmann Institute of Science",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adaptive Three Operator Splitting.",
+      "first_author": "Fabian Pedregosa",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improved Training of Generative Adversarial Networks using Representative Features.",
+      "first_author": "Duhyeon Bang",
+      "matched": true,
+      "institution": "Yonsei univ.",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Variational Bayesian dropout: pitfalls and fixes.",
+      "first_author": "Jiri Hron",
+      "matched": true,
+      "institution": "University of Cambridge",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Optimal Control Approach to Deep Learning and Applications to Discrete-Weight Neural Networks.",
+      "first_author": "Qianxiao Li",
+      "matched": true,
+      "institution": "Institute of High Performance Computing, A*STAR, Singapore",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Equivalence of Multicategory SVM and Simplex Cone SVM: Fast Computations and Statistical Theory.",
+      "first_author": "Guillaume Pouliot",
+      "matched": true,
+      "institution": "University of Chicago",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning.",
+      "first_author": "Tabish Rashid",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stronger Generalization Bounds for Deep Nets via a Compression Approach.",
+      "first_author": "Sanjeev Arora",
+      "matched": true,
+      "institution": "Princeton University and Institute for Advanced Study",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Black-Box Variational Inference for Stochastic Differential Equations.",
+      "first_author": "Thomas Ryder",
+      "matched": true,
+      "institution": "Newcastle University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "PDE-Net: Learning PDEs from Data.",
+      "first_author": "Zichao Long",
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Spectral Approach to Gradient Estimation for Implicit Distributions.",
+      "first_author": "Jiaxin Shi",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Competitive Multi-agent Inverse Reinforcement Learning with Sub-optimal Demonstrations.",
+      "first_author": "Xingyu Wang",
+      "matched": true,
+      "institution": "IEMS, Northwestern University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep Asymmetric Multi-task Feature Learning.",
+      "first_author": "Haebeom Lee",
+      "matched": true,
+      "institution": "UNIST",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Practical Contextual Bandits with Regression Oracles.",
+      "first_author": "Dylan J. Foster",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Scalable Bilinear Learning Using State and Action Features.",
+      "first_author": "Yichen Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learning Equations for Extrapolation and Control.",
+      "first_author": "Subham S. Sahoo",
+      "matched": true,
+      "institution": "Indian Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry.",
+      "first_author": "Maximilian Nickel",
+      "matched": true,
+      "institution": "Facebook AI Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "GradNorm: Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks.",
+      "first_author": "Zhao Chen",
+      "matched": true,
+      "institution": "Magic Leap, Inc",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Sound Abstraction and Decomposition of Probabilistic Programs.",
+      "first_author": "Steven Holtzen",
+      "matched": true,
+      "institution": "University of California, Los Angeles",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Robust Approach to Sequential Information Theoretic Planning.",
+      "first_author": "Sue Zheng",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "INSPECTRE: Privately Estimating the Unseen.",
+      "first_author": "Jayadev Acharya",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning the Reward Function for a Misspecified Model.",
+      "first_author": "Erik Talvitie",
+      "matched": true,
+      "institution": "Franklin & Marshall College",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Semantic Loss Function for Deep Learning with Symbolic Knowledge.",
+      "first_author": "Jingyi Xu",
+      "matched": true,
+      "institution": "University of California, Los Angeles",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On Matching Pursuit and Coordinate Descent.",
+      "first_author": "Francesco Locatello",
+      "matched": true,
+      "institution": "ETH Zurich - Max Planck Institute",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fully Decentralized Multi-Agent Reinforcement Learning with Networked Agents.",
+      "first_author": "Kaiqing Zhang",
+      "matched": true,
+      "institution": "University of Illinois at Urbana-Champaign (UIUC)",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data.",
+      "first_author": "Amjad Almahairi",
+      "matched": true,
+      "institution": "Element AI",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Submodular Hypergraphs: p-Laplacians, Cheeger Inequalities and Spectral Clustering.",
+      "first_author": "Pan Li",
+      "matched": true,
+      "institution": "University of Illinois Urbana-Champaign",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adversarial Attack on Graph Structured Data.",
+      "first_author": "Hanjun Dai",
+      "matched": true,
+      "institution": "Georgia Tech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures.",
+      "first_author": "Lasse Espeholt",
+      "matched": true,
+      "institution": "Google Brain Amsterdam",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Augment and Reduce: Stochastic Inference for Large Categorical Distributions.",
+      "first_author": "Francisco J. R. Ruiz",
+      "matched": true,
+      "institution": "University of Cambridge / Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bayesian Model Selection for Change Point Detection and Clustering.",
+      "first_author": "Othmane Mazhar",
+      "matched": true,
+      "institution": "KTH Royal Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Kernel Recursive ABC: Point Estimation with Intractable Likelihood.",
+      "first_author": "Takafumi Kajihara",
+      "matched": true,
+      "institution": "NEC",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Is Generator Conditioning Causally Related to GAN Performance?",
+      "first_author": "Augustus Odena",
+      "matched": true,
+      "institution": "Google Brain",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Binary Classification with Karmic, Threshold-Quasi-Concave Metrics.",
+      "first_author": "Bowei Yan",
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Optimization, Fast and Slow: Optimally Switching between Local and Bayesian Optimization.",
+      "first_author": "Mark McLeod",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Measuring abstract reasoning in neural networks.",
+      "first_author": "Adam Santoro",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gated Path Planning Networks.",
+      "first_author": "Lisa Lee",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Message Passing Stein Variational Gradient Descent.",
+      "first_author": "Jingwei Zhuo",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Markov Modulated Gaussian Cox Processes for Semi-Stationary Intensity Modeling of Events Data.",
+      "first_author": "Minyoung Kim",
+      "matched": true,
+      "institution": "SeoulTech, Rutgers University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gradient Descent Learns One-hidden-layer CNN: Don't be Afraid of Spurious Local Minima.",
+      "first_author": "Simon S. Du",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Clustering Semi-Random Mixtures of Gaussians.",
+      "first_author": "Pranjal Awasthi",
+      "matched": true,
+      "institution": "Northwestern University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Goodness-of-fit Testing for Discrete Distributions via Stein Discrepancy.",
+      "first_author": "Jiasen Yang",
+      "matched": true,
+      "institution": "Purdue University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "RLlib: Abstractions for Distributed Reinforcement Learning.",
+      "first_author": "Eric Liang",
+      "matched": true,
+      "institution": "University of California, Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Orthogonality-Promoting Distance Metric Learning: Convex Relaxation and Theoretical Analysis.",
+      "first_author": "Pengtao Xie",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "DICOD: Distributed Convolutional Coordinate Descent for Convolutional Sparse Coding.",
+      "first_author": "Thomas Moreau",
+      "matched": true,
+      "institution": "CMLA, ENS Paris-Saclay",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic Variance-Reduced Policy Gradient.",
+      "first_author": "Matteo Papini",
+      "matched": true,
+      "institution": "Politecnico di Milano",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "NetGAN: Generating Graphs via Random Walks.",
+      "first_author": "Aleksandar Bojchevski",
+      "matched": true,
+      "institution": "Technical University of Munich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep Models of Interactions Across Sets.",
+      "first_author": "Jason S. Hartford",
+      "matched": true,
+      "institution": "University of British Columbia",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Mitigating Bias in Adaptive Data Gathering via Differential Privacy.",
+      "first_author": "Seth Neel",
+      "matched": true,
+      "institution": "University of Pennsylvania",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Differentiable Abstract Interpretation for Provably Robust Neural Networks.",
+      "first_author": "Matthew Mirman",
+      "matched": true,
+      "institution": "ETH Zürich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Parallel and Streaming Algorithms for K-Core Decomposition.",
+      "first_author": "Hossein Esfandiari",
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Hierarchical Multi-Label Classification Networks.",
+      "first_author": "Jonatas Wehrmann",
+      "matched": true,
+      "institution": "Pontifícia Universidade Catolica do Rio Grande do Sul - PUCRS",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On Acceleration with Noise-Corrupted Gradients.",
+      "first_author": "Michael Cohen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Minimal I-MAP MCMC for Scalable Structure Discovery in Causal DAG Models.",
+      "first_author": "Raj Agrawal",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Beyond the One-Step Greedy Approach in Reinforcement Learning.",
+      "first_author": "Yonathan Efroni",
+      "matched": true,
+      "institution": "Technion",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Accurate Inference for Adaptive Linear Models.",
+      "first_author": "Yash Deshpande",
+      "matched": true,
+      "institution": "Massachusetts Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SADAGRAD: Strongly Adaptive Stochastic Gradient Methods.",
+      "first_author": "Zaiyi Chen",
+      "matched": true,
+      "institution": "University of Science and Technology of China",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "CoVeR: Learning Covariate-Specific Vector Representations with Tensor Decompositions.",
+      "first_author": "Kevin Tian",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Structured Output Learning with Abstention: Application to Accurate Opinion Prediction.",
+      "first_author": "Alexandre Garcia",
+      "matched": true,
+      "institution": "Telecom Paristech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "End-to-End Learning for the Deep Multivariate Probit Model.",
+      "first_author": "Di Chen",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On Learning Sparsely Used Dictionaries from Incomplete Samples.",
+      "first_author": "Thanh Van Nguyen",
+      "matched": true,
+      "institution": "Iowa State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Universal Planning Networks: Learning Generalizable Representations for Visuomotor Control.",
+      "first_author": "Aravind Srinivas",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Near Optimal Frequent Directions for Sketching Dense and Sparse Matrices.",
+      "first_author": "Zengfeng Huang",
+      "matched": true,
+      "institution": "Fudan University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Reviving and Improving Recurrent Back-Propagation.",
+      "first_author": "Renjie Liao",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adaptive Sampled Softmax with Kernel Based Sampling.",
+      "first_author": "Guy Blanc",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Minibatch Gibbs Sampling on Large Graphical Models.",
+      "first_author": "Christopher De Sa",
+      "matched": true,
+      "institution": "Cornell",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gradient Coding from Cyclic MDS Codes and Expander Graphs.",
+      "first_author": "Netanel Raviv",
+      "matched": true,
+      "institution": "California Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Reinforcing Adversarial Robustness using Model Confidence Induced by Adversarial Training.",
+      "first_author": "Xi Wu",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Implicit Generative Models with the Method of Learned Moments.",
+      "first_author": "Suman V. Ravuri",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Approximate Spectral Clustering for Dynamic Networks.",
+      "first_author": "Lionel Martin",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dropout Training, Data-dependent Regularization, and Generalization Bounds.",
+      "first_author": "Wenlong Mou",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Edge Density Barrier: Computational-Statistical Tradeoffs in Combinatorial Inference.",
+      "first_author": "Hao Lu",
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Structured Evolution with Compact Architectures for Scalable Policy Optimization.",
+      "first_author": "Krzysztof Choromanski",
+      "matched": true,
+      "institution": "Google Brain Robotics",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep One-Class Classification.",
+      "first_author": "Lukas Ruff",
+      "matched": true,
+      "institution": "Hasso Plattner Institute",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Rectify Heterogeneous Models with Semantic Mapping.",
+      "first_author": "Han-Jia Ye",
+      "matched": true,
+      "institution": "Nanjing University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Uncertainty Bellman Equation and Exploration.",
+      "first_author": "Brendan O'Donoghue",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Let's be Honest: An Optimal No-Regret Framework for Zero-Sum Games.",
+      "first_author": "Ehsan Asadi Kangarshahi",
+      "matched": true,
+      "institution": "University of Cambridge",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Extracting Automata from Recurrent Neural Networks Using Queries and Counterexamples.",
+      "first_author": "Gail Weiss",
+      "matched": true,
+      "institution": "Technion",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Not to Cry Wolf: Distantly Supervised Multitask Learning in Critical Care.",
+      "first_author": "Patrick Schwab",
+      "matched": true,
+      "institution": "ETH Zurich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Representation Tradeoffs for Hyperbolic Embeddings.",
+      "first_author": "Frederic Sala",
+      "matched": true,
+      "institution": "Stanford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Nonconvex Optimization for Regression with Fairness Constraints.",
+      "first_author": "Junpei Komiyama",
+      "matched": true,
+      "institution": "U-Tokyo",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Reductions Approach to Fair Classification.",
+      "first_author": "Alekh Agarwal",
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Blind Justice: Fairness with Encrypted Sensitive Attributes.",
+      "first_author": "Niki Kilbertus",
+      "matched": true,
+      "institution": "MPI Tübingen & Cambridge",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Multicalibration: Calibration for the (Computationally-Identifiable) Masses.",
+      "first_author": "Úrsula Hébert-Johnson",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Estimation and Analysis Framework for the Rasch Model.",
+      "first_author": "Andrew S. Lan",
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "StrassenNets: Deep Learning with a Multiplication Budget.",
+      "first_author": "Michael Tschannen",
+      "matched": true,
+      "institution": "ETH Zurich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Differentiable Dynamic Programming for Structured Prediction and Attention.",
+      "first_author": "Arthur Mensch",
+      "matched": true,
+      "institution": "Inria Parietal",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fitting New Speakers Based on a Short Untranscribed Sample.",
+      "first_author": "Eliya Nachmani",
+      "matched": true,
+      "institution": "Facebook AI Research and Tel Aviv University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Efficient, Generalized Bellman Update For Cooperative Inverse Reinforcement Learning.",
+      "first_author": "Dhruv Malik",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Locally Private Hypothesis Testing.",
+      "first_author": "Or Sheffet",
+      "matched": true,
+      "institution": "University of Alberta",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Best Arm Identification in Linear Bandits with Linear Dimension Dependency.",
+      "first_author": "Chao Tao",
+      "matched": true,
+      "institution": "Indiana University Bloomington",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SQL-Rank: A Listwise Approach to Collaborative Ranking.",
+      "first_author": "Liwei Wu",
+      "matched": true,
+      "institution": "University of California, Davis",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Robust and Scalable Models of Microbiome Dynamics.",
+      "first_author": "Travis E. Gibson",
+      "matched": true,
+      "institution": "Harvard Medical School",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "oi-VAE: Output Interpretable VAEs for Nonlinear Group Factor Analysis.",
+      "first_author": "Samuel K. Ainsworth",
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Comparing Dynamics: Deep Neural Networks versus Glassy Systems.",
+      "first_author": "Marco Baity-Jesi",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Characterizing Implicit Bias in Terms of Optimization Geometry.",
+      "first_author": "Suriya Gunasekar",
+      "matched": true,
+      "institution": "Toyota Technological Institute at Chicago",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dynamic Evaluation of Neural Sequence Models.",
+      "first_author": "Ben Krause",
+      "matched": true,
+      "institution": "University of Edinburgh",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Decomposition of Uncertainty in Bayesian Deep Learning for Efficient and Risk-sensitive Learning.",
+      "first_author": "Stefan Depeweg",
+      "matched": true,
+      "institution": "TU Munich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Analysis of Minimax Error Rate for Crowdsourcing and Its Application to Worker Clustering Model.",
+      "first_author": "Hideaki Imamura",
+      "matched": true,
+      "institution": "The University of Tokyo",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "PixelSNAIL: An Improved Autoregressive Generative Model.",
+      "first_author": "Xi Chen",
+      "matched": true,
+      "institution": "covariant.ai",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Dynamics of Learning: A Random Matrix Approach.",
+      "first_author": "Zhenyu Liao",
+      "matched": true,
+      "institution": "L2S, CentraleSupelec",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Mutual Information Neural Estimation.",
+      "first_author": "Mohamed Ishmael Belghazi",
+      "matched": true,
+      "institution": "MILA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Smoothed Action Value Functions for Learning Gaussian Policies.",
+      "first_author": "Ofir Nachum",
+      "matched": true,
+      "institution": "Google Brain",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Differentially Private Identity and Equivalence Testing of Discrete Distributions.",
+      "first_author": "Maryam Aliakbarpour",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Theoretical Analysis of Image-to-Image Translation with Adversarial Learning.",
+      "first_author": "Xudong Pan",
+      "matched": true,
+      "institution": "Fudan University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Structured Control Nets for Deep Reinforcement Learning.",
+      "first_author": "Mario Srouji",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Reinforcement Learning with Function-Valued Action Spaces for Partial Differential Equation Control.",
+      "first_author": "Yangchen Pan",
+      "matched": true,
+      "institution": "University of Alberta",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Towards End-to-End Prosody Transfer for Expressive Speech Synthesis with Tacotron.",
+      "first_author": "R. J. Skerry-Ryan",
+      "matched": true,
+      "institution": "Google, Inc.",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "End-to-end Active Object Tracking via Reinforcement Learning.",
+      "first_author": "Wenhan Luo",
+      "matched": true,
+      "institution": "Tencent AI Lab",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Knowledge Transfer with Jacobian Matching.",
+      "first_author": "Suraj Srinivas",
+      "matched": true,
+      "institution": "Idiap",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Reweight Examples for Robust Deep Learning.",
+      "first_author": "Mengye Ren",
+      "matched": true,
+      "institution": "Uber ATG / University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient First-Order Algorithms for Adaptive Signal Denoising.",
+      "first_author": "Dmitrii Ostrovskii",
+      "matched": true,
+      "institution": "INRIA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Does Distributionally Robust Supervised Learning Give Robust Classifiers?",
+      "first_author": "Weihua Hu",
+      "matched": true,
+      "institution": "The University of Tokyo",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Nonoverlap-Promoting Variable Selection.",
+      "first_author": "Pengtao Xie",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "RadialGAN: Leveraging multiple datasets to improve target-specific predictive models using Generative Adversarial Networks.",
+      "first_author": "Jinsung Yoon",
+      "matched": true,
+      "institution": "University of California, Los Angeles",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Lightweight Stochastic Optimization for Minimizing Finite Sums with Infinite Data.",
+      "first_author": "Shuai Zheng",
+      "matched": true,
+      "institution": "Hong Kong University of Science and Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Efficient Semismooth Newton Based Algorithm for Convex Clustering.",
+      "first_author": "Yancheng Yuan",
+      "matched": true,
+      "institution": "National University of Singapore",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Minimax Concave Penalized Multi-Armed Bandit Model with High-Dimensional Convariates.",
+      "first_author": "Xue Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Faster Derivative-Free Stochastic Algorithm for Shared Memory Machines.",
+      "first_author": "Bin Gu",
+      "matched": true,
+      "institution": "University of Pittsburgh",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improving the Privacy and Accuracy of ADMM-Based Distributed Algorithms.",
+      "first_author": "Xueru Zhang",
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Max-Mahalanobis Linear Discriminant Analysis Networks.",
+      "first_author": "Tianyu Pang",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Characterizing and Learning Equivalence Classes of Causal DAGs under Interventions.",
+      "first_author": "Karren D. Yang",
+      "matched": true,
+      "institution": "Massachusetts Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dynamic Regret of Strongly Adaptive Methods.",
+      "first_author": "Lijun Zhang",
+      "matched": true,
+      "institution": "Nanjing University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Nearly Optimal Robust Subspace Tracking.",
+      "first_author": "Praneeth Narayanamurthy",
+      "matched": true,
+      "institution": "Iowa State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient Bias-Span-Constrained Exploration-Exploitation in Reinforcement Learning.",
+      "first_author": "Ronan Fruit",
+      "matched": true,
+      "institution": "Inria Lille Nord-Europe",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Approximate Leave-One-Out for Fast Parameter Tuning in High Dimensions.",
+      "first_author": "Shuaiwen Wang",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Semi-Implicit Variational Inference.",
+      "first_author": "Mingzhang Yin",
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Exploiting the Potential of Standard Convolutional Autoencoders for Image Restoration by Evolutionary Search.",
+      "first_author": "Masanori Suganuma",
+      "matched": true,
+      "institution": "RIKEN AIP / Tohoku University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Tropical Geometry of Deep Neural Networks.",
+      "first_author": "Liwen Zhang",
+      "matched": true,
+      "institution": "University of Chicago",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Massively Parallel Algorithms and Hardness for Single-Linkage Clustering under 𝓁p Distances.",
+      "first_author": "Grigory Yaroslavtsev",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Focused Hierarchical RNNs for Conditional Sequence Processing.",
+      "first_author": "Nan Rosemary Ke",
+      "matched": true,
+      "institution": "MILA, University of Montreal",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep Density Destructors.",
+      "first_author": "David I. Inouye",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Streaming Principal Component Analysis in Noisy Settings.",
+      "first_author": "Teodor Vanislavov Marinov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Asynchronous Stochastic Quasi-Newton MCMC for Non-Convex Optimization.",
+      "first_author": "Umut Simsekli",
+      "matched": true,
+      "institution": "Telecom ParisTech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Mixed batches and symmetric discriminators for GAN training.",
+      "first_author": "Thomas Lucas",
+      "matched": true,
+      "institution": "Inria",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adversarial Time-to-Event Modeling.",
+      "first_author": "Paidamoyo Chapfuwa",
+      "matched": true,
+      "institution": "Duke University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Leveraging Well-Conditioned Bases: Streaming and Distributed Summaries in Minkowski p-Norms.",
+      "first_author": "Graham Cormode",
+      "matched": true,
+      "institution": "Alan Turing Institute & University of Warwick",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Kernelized Synaptic Weight Matrices.",
+      "first_author": "Lorenz K. Müller",
+      "matched": true,
+      "institution": "ETH Zurich and University of Zurich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music.",
+      "first_author": "Adam Roberts",
+      "matched": true,
+      "institution": "Google Brain",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Rapid Adaptation with Conditionally Shifted Neurons.",
+      "first_author": "Tsendsuren Munkhdalai",
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Optimization of Deep Networks: Implicit Acceleration by Overparameterization.",
+      "first_author": "Sanjeev Arora",
+      "matched": true,
+      "institution": "Princeton University and Institute for Advanced Study",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.",
+      "first_author": "Tuomas Haarnoja",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Multi-Fidelity Black-Box Optimization with Hierarchical Partitions.",
+      "first_author": "Rajat Sen",
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Spline Filters For End-to-End Deep Learning.",
+      "first_author": "Randall Balestriero",
+      "matched": true,
+      "institution": "Rice University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Explain: An Information-Theoretic Perspective on Model Interpretation.",
+      "first_author": "Jianbo Chen",
+      "matched": true,
+      "institution": "University of California, Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fourier Policy Gradients.",
+      "first_author": "Matthew Fellows",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Loss Decomposition for Fast Learning in Large Output Spaces.",
+      "first_author": "Ian En-Hsu Yen",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Composite Marginal Likelihood Methods for Random Utility Models.",
+      "first_author": "Zhibing Zhao",
+      "matched": true,
+      "institution": "Rensselaer Polytechnic Institute",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "K-means clustering using random matrix sparsification.",
+      "first_author": "Kaushik Sinha",
+      "matched": true,
+      "institution": "Wichita State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Online Linear Quadratic Control.",
+      "first_author": "Alon Cohen",
+      "matched": true,
+      "institution": "Google Inc.",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Batch Bayesian Optimization via Multi-objective Acquisition Ensemble for Automated Analog Circuit Design.",
+      "first_author": "Wenlong Lyu",
+      "matched": true,
+      "institution": "Fudan University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improved Regret Bounds for Thompson Sampling in Linear Quadratic Control Problems.",
+      "first_author": "Marc Abeille",
+      "matched": true,
+      "institution": "Criteo",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost.",
+      "first_author": "Noam Shazeer",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Accelerating Natural Gradient with Higher-Order Invariance.",
+      "first_author": "Yang Song",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Generalization of Equivariance and Convolution in Neural Networks to the Action of Compact Groups.",
+      "first_author": "Risi Kondor",
+      "matched": true,
+      "institution": "The University of Chicago",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Parameterized Algorithms for the Matrix Completion Problem.",
+      "first_author": "Robert Ganian",
+      "matched": true,
+      "institution": "TU Wien",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Adversarially Fair and Transferable Representations.",
+      "first_author": "David Madras",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stein Variational Gradient Descent Without Gradient.",
+      "first_author": "Jun Han",
+      "matched": true,
+      "institution": "Dartmouth College",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adversarially Regularized Autoencoders.",
+      "first_author": "Junbo Jake Zhao",
+      "matched": true,
+      "institution": "NYU / Facebook AI Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "High-Quality Prediction Intervals for Deep Learning: A Distribution-Free, Ensembled Approach.",
+      "first_author": "Tim Pearce",
+      "matched": true,
+      "institution": "University of Cambridge / The Alan Turing Institute",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Competitive Caching with Machine Learned Advice.",
+      "first_author": "Thodoris Lykouris",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "CyCADA: Cycle-Consistent Adversarial Domain Adaptation.",
+      "first_author": "Judy Hoffman",
+      "matched": true,
+      "institution": "UC Berkeley and Georgia Tech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Semi-Amortized Variational Autoencoders.",
+      "first_author": "Yoon Kim",
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Error Estimation for Randomized Least-Squares Algorithms via the Bootstrap.",
+      "first_author": "Miles E. Lopes",
+      "matched": true,
+      "institution": "University of California, Davis",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Classification from Pairwise Similarity and Unlabeled Data.",
+      "first_author": "Han Bao",
+      "matched": true,
+      "institution": "The University of Tokyo / RIKEN",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Mirage of Action-Dependent Baselines in Reinforcement Learning.",
+      "first_author": "George Tucker",
+      "matched": true,
+      "institution": "Google Brain",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Compressing Neural Networks using the Variational Information Bottleneck.",
+      "first_author": "Bin Dai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Approximation Guarantees for Adaptive Sampling.",
+      "first_author": "Eric Balkanski",
+      "matched": true,
+      "institution": "Harvard",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Geometry Score: A Method For Comparing Generative Adversarial Networks.",
+      "first_author": "Valentin Khrulkov",
+      "matched": true,
+      "institution": "Skolkovo Institute Of Science And Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Multilinear Structure of ReLU Networks.",
+      "first_author": "Thomas Laurent",
+      "matched": true,
+      "institution": "Loyola Marymount University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Programmatically Interpretable Reinforcement Learning.",
+      "first_author": "Abhinav Verma",
+      "matched": true,
+      "institution": "Rice University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improving Sign Random Projections With Additional Information.",
+      "first_author": "Keegan Kang",
+      "matched": true,
+      "institution": "Singapore University Of Technology And Design",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improving Regression Performance with Distributional Losses.",
+      "first_author": "Ehsan Imani",
+      "matched": true,
+      "institution": "University of Alberta",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Kronecker Recurrent Units.",
+      "first_author": "Cijo Jose",
+      "matched": true,
+      "institution": "Idiap Research Institute",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gradient-Based Meta-Learning with Learned Layerwise Metric and Subspace.",
+      "first_author": "Yoonho Lee",
+      "matched": true,
+      "institution": "Pohang University of Science and Techonology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Black-box Adversarial Attacks with Limited Queries and Information.",
+      "first_author": "Andrew Ilyas",
+      "matched": true,
+      "institution": "Massachusetts Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Using Inherent Structures to design Lean 2-layer RBMs.",
+      "first_author": "Abhishek Bansal",
+      "matched": true,
+      "institution": "IBM Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Do Outliers Ruin Collaboration?",
+      "first_author": "Mingda Qiao",
+      "matched": true,
+      "institution": "IIIS, Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Regret Minimization for Partially Observable Deep Reinforcement Learning.",
+      "first_author": "Peter H. Jin",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Convergence guarantees for a class of non-convex and non-smooth optimization problems.",
+      "first_author": "Koulik Khamaru",
+      "matched": true,
+      "institution": "University Of California Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Open Category Detection with PAC Guarantees.",
+      "first_author": "Si Liu",
+      "matched": true,
+      "institution": "Oregon State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples.",
+      "first_author": "Anish Athalye",
+      "matched": true,
+      "institution": "MIT CSAIL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Dynamics of Linear Denoising Autoencoders.",
+      "first_author": "Arnu Pretorius",
+      "matched": true,
+      "institution": "Stellenbosch University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Data Summarization at Scale: A Two-Stage Submodular Approach.",
+      "first_author": "Marko Mitrovic",
+      "matched": true,
+      "institution": "Yale University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Solving Partial Assignment Problems using Random Clique Complexes.",
+      "first_author": "Charu Sharma",
+      "matched": true,
+      "institution": "Indian Institute of Technology Hyderabad",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fairness Without Demographics in Repeated Loss Minimization.",
+      "first_author": "Tatsunori B. Hashimoto",
+      "matched": true,
+      "institution": "Stanford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bayesian Uncertainty Estimation for Batch Normalized Deep Networks.",
+      "first_author": "Mattias Teye",
+      "matched": true,
+      "institution": "KTH / EA SEED",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Parallel Bayesian Network Structure Learning.",
+      "first_author": "Tian Gao",
+      "matched": true,
+      "institution": "IBM Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "prDeep: Robust Phase Retrieval with a Flexible Deep Network.",
+      "first_author": "Christopher A. Metzler",
+      "matched": true,
+      "institution": "Rice University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning unknown ODE models with Gaussian processes.",
+      "first_author": "Markus Heinonen",
+      "matched": true,
+      "institution": "Aalto University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Deep ResNet Blocks Sequentially using Boosting Theory.",
+      "first_author": "Furong Huang",
+      "matched": true,
+      "institution": "University of Maryland College Park",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Yes, but Did It Work?: Evaluating Variational Inference.",
+      "first_author": "Yuling Yao",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Compact Neural Networks with Regularization.",
+      "first_author": "Samet Oymak",
+      "matched": true,
+      "institution": "University of California, Riverside",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Representations and Generative Models for 3D Point Clouds.",
+      "first_author": "Panos Achlioptas",
+      "matched": true,
+      "institution": "Stanford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Signal and Noise Statistics Oblivious Orthogonal Matching Pursuit.",
+      "first_author": "Sreejith Kallummil",
+      "matched": true,
+      "institution": "Qualcomm India Private Limited",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Optimal Tuning for Divide-and-conquer Kernel Ridge Regression with Massive Data.",
+      "first_author": "Ganggang Xu",
+      "matched": true,
+      "institution": "SUNY-Binghamton University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient ModelBased Deep Reinforcement Learning with Variational State Tabulation.",
+      "first_author": "Dane S. Corneil",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning.",
+      "first_author": "Yunbo Wang",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Parallel WaveNet: Fast High-Fidelity Speech Synthesis.",
+      "first_author": "Aäron van den Oord",
+      "matched": true,
+      "institution": "Google Deepmind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Maximum-A-Posteriori Perturbation Models for Structured Prediction in Polynomial Time.",
+      "first_author": "Asish Ghoshal",
+      "matched": true,
+      "institution": "Purdue University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Search with MCTSnets.",
+      "first_author": "Arthur Guez",
+      "matched": true,
+      "institution": "Google DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Subspace Embedding and Linear Regression with Orlicz Norm.",
+      "first_author": "Alexandr Andoni",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Improved nearest neighbor search using auxiliary information and priority functions.",
+      "first_author": "Omid Keivani",
+      "matched": true,
+      "institution": "Wichita State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning One Convolutional Layer with Overlapping Patches.",
+      "first_author": "Surbhi Goel",
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning with Abandonment.",
+      "first_author": "Sven Schmit",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Asynchronous Byzantine Machine Learning (the case of SGD).",
+      "first_author": "Georgios Damaskinos",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Explicit Inductive Bias for Transfer Learning with Convolutional Networks.",
+      "first_author": "Xuhong Li",
+      "matched": true,
+      "institution": "CNRS/UTC Heudiasyc",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adaptive Exploration-Exploitation Tradeoff for Opportunistic Bandits.",
+      "first_author": "Huasen Wu",
+      "matched": true,
+      "institution": "Twitter",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Graph Networks as Learnable Physics Engines for Inference and Control.",
+      "first_author": "Alvaro Sanchez-Gonzalez",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Convergent TREE BACKUP and RETRACE with Function Approximation.",
+      "first_author": "Ahmed Touati",
+      "matched": true,
+      "institution": "MILA / FAIR",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Differentiable Compositional Kernel Learning for Gaussian Processes.",
+      "first_author": "Shengyang Sun",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Selecting Representative Examples for Program Synthesis.",
+      "first_author": "Yewen Pu",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Invariance of Weight Distributions in Rectified MLPs.",
+      "first_author": "Russell Tsuchida",
+      "matched": true,
+      "institution": "The University of Queensland",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Decoupling Gradient-Like Learning Rules from Representations.",
+      "first_author": "Philip S. Thomas",
+      "matched": true,
+      "institution": "University of Massachusetts Amherst",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Anonymous Walk Embeddings.",
+      "first_author": "Sergey Ivanov",
+      "matched": true,
+      "institution": "Criteo",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Decoding in Sequence Models Using Discrete Latent Variables.",
+      "first_author": "Lukasz Kaiser",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Longer-term Dependencies in RNNs with Auxiliary Losses.",
+      "first_author": "Trieu H. Trinh",
+      "matched": true,
+      "institution": "Google Brain",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Deep Bayesian Nonparametric Tracking.",
+      "first_author": "Aonan Zhang",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Weakly Submodular Maximization Beyond Cardinality Constraints: Does Randomization Help Greedy?",
+      "first_author": "Lin Chen",
+      "matched": true,
+      "institution": "Yale University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Delay-tolerant Proximal-Gradient Algorithm for Distributed Learning.",
+      "first_author": "Konstantin Mishchenko",
+      "matched": true,
+      "institution": "King Abdullah University of Science & Technology (KAUST)",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Implicit Quantile Networks for Distributional Reinforcement Learning.",
+      "first_author": "Will Dabney",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Explore via Meta-Policy Gradient.",
+      "first_author": "Tianbing Xu",
+      "matched": true,
+      "institution": "Baidu Research, USA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Chi-square Generative Adversarial Network.",
+      "first_author": "Chenyang Tao",
+      "matched": true,
+      "institution": "Duke University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Analyzing Uncertainty in Neural Machine Translation.",
+      "first_author": "Myle Ott",
+      "matched": true,
+      "institution": "Facebook",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Data-Dependent Stability of Stochastic Gradient Descent.",
+      "first_author": "Ilja Kuzborskij",
+      "matched": true,
+      "institution": "University of Milan",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Accurate Uncertainties for Deep Learning Using Calibrated Regression.",
+      "first_author": "Volodymyr Kuleshov",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Delayed Impact of Fair Machine Learning.",
+      "first_author": "Lydia T. Liu",
+      "matched": true,
+      "institution": "University of California Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Policy Optimization with Demonstrations.",
+      "first_author": "Bingyi Kang",
+      "matched": true,
+      "institution": "National University of Singapore",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Neural Autoregressive Flows.",
+      "first_author": "Chin-Wei Huang",
+      "matched": true,
+      "institution": "MILA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Lyapunov Functions for First-Order Methods: Tight Automated Convergence Guarantees.",
+      "first_author": "Adrien B. Taylor",
+      "matched": true,
+      "institution": "INRIA/ENS",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Continuous-Time Flows for Efficient Inference and Density Estimation.",
+      "first_author": "Changyou Chen",
+      "matched": true,
+      "institution": "SUNY at Buffalo",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Trainable Calibration Measures For Neural Networks From Kernel Mean Embeddings.",
+      "first_author": "Aviral Kumar",
+      "matched": true,
+      "institution": "IIT Bombay",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Composable Planning with Attributes.",
+      "first_author": "Amy Zhang",
+      "matched": true,
+      "institution": "Facebook AI Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Overcoming Catastrophic Forgetting with Hard Attention to the Task.",
+      "first_author": "Joan Serrà",
+      "matched": true,
+      "institution": "Telefónica Research, Barcelona",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Registered Point Processes from Idiosyncratic Observations.",
+      "first_author": "Hongteng Xu",
+      "matched": true,
+      "institution": "InfiniaML, Inc.",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Least-Squares Temporal Difference Learning for the Linear Quadratic Regulator.",
+      "first_author": "Stephen Tu",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "First Order Generative Adversarial Networks.",
+      "first_author": "Calvin Seward",
+      "matched": true,
+      "institution": "Zalando Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Weighted Kendall and High-order Kernels for Permutations.",
+      "first_author": "Yunlong Jiao",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "One-Shot Segmentation in Clutter.",
+      "first_author": "Claudio Michaelis",
+      "matched": true,
+      "institution": "Universty of Tübingen",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Progressive Batching L-BFGS Method for Machine Learning.",
+      "first_author": "Raghu Bollapragada",
+      "matched": true,
+      "institution": "Northwestern University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Classification-Based Study of Covariate Shift in GAN Distributions.",
+      "first_author": "Shibani Santurkar",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Celer: a Fast Solver for the Lasso with Dual Extrapolation.",
+      "first_author": "Mathurin Massias",
+      "matched": true,
+      "institution": "INRIA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Noise2Noise: Learning Image Restoration without Clean Data.",
+      "first_author": "Jaakko Lehtinen",
+      "matched": true,
+      "institution": "Aalto University & NVIDIA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Image Transformer.",
+      "first_author": "Niki Parmar",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Randomized Block Cubic Newton Method.",
+      "first_author": "Nikita Doikov",
+      "matched": true,
+      "institution": "National Research University Higher School of Economics",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Online Convolutional Sparse Coding with Sample-Dependent Dictionary.",
+      "first_author": "Yaqing Wang",
+      "matched": true,
+      "institution": "Hong Kong University of Science and Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Crowdsourcing with Arbitrary Adversaries.",
+      "first_author": "Matthäus Kleindessner",
+      "matched": true,
+      "institution": "Rutgers University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Probably Approximately Metric-Fair Learning.",
+      "first_author": "Gal Yona",
+      "matched": true,
+      "institution": "Weizmann Institute of Science",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Essentially No Barriers in Neural Network Energy Landscape.",
+      "first_author": "Felix Draxler",
+      "matched": true,
+      "institution": "Heidelberg University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Pathwise Derivatives Beyond the Reparameterization Trick.",
+      "first_author": "Martin Jankowiak",
+      "matched": true,
+      "institution": "Uber AI Labs",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "TACO: Learning Task Decomposition via Temporal Alignment for Control.",
+      "first_author": "Kyriacos Shiarlis",
+      "matched": true,
+      "institution": "Latent Logic LTD",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic Wasserstein Barycenters.",
+      "first_author": "Sebastian Claici",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Covariate Adjusted Precision Matrix Estimation via Nonconvex Optimization.",
+      "first_author": "Jinghui Chen",
+      "matched": true,
+      "institution": "University of Virginia",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Pseudo-task Augmentation: From Deep Multitask Learning to Intratask Sharing-and Back.",
+      "first_author": "Elliot Meyerson",
+      "matched": true,
+      "institution": "UT Austin - Sentient Technologies",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Projection-Free Online Optimization with Stochastic Gradient: From Convexity to Submodularity.",
+      "first_author": "Lin Chen",
+      "matched": true,
+      "institution": "Yale University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "State Abstractions for Lifelong Reinforcement Learning.",
+      "first_author": "David Abel",
+      "matched": true,
+      "institution": "Brown University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Firing Bandits: Optimizing Crowdfunding.",
+      "first_author": "Lalit Jain",
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Global Convergence of Policy Gradient Methods for the Linear Quadratic Regulator.",
+      "first_author": "Maryam Fazel",
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Lipschitz Continuity in Model-based Reinforcement Learning.",
+      "first_author": "Kavosh Asadi",
+      "matched": true,
+      "institution": "Brown University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Time Limits in Reinforcement Learning.",
+      "first_author": "Fabio Pardo",
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dynamical Isometry and a Mean Field Theory of CNNs: How to Train 10, 000-Layer Vanilla Convolutional Neural Networks.",
+      "first_author": "Lechao Xiao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Comparison-Based Random Forests.",
+      "first_author": "Siavash Haghiri",
+      "matched": true,
+      "institution": "University of Tübingen",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Finding Influential Training Samples for Gradient Boosted Decision Trees.",
+      "first_author": "Boris Sharchilev",
+      "matched": true,
+      "institution": "Yandex",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "DiCE: The Infinitely Differentiable Monte Carlo Estimator.",
+      "first_author": "Jakob N. Foerster",
+      "matched": true,
+      "institution": "Facebook AI Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Limits of Estimating Heterogeneous Treatment Effects: Guidelines for Practical Algorithm Design.",
+      "first_author": "Ahmed M. Alaa",
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Optimization Landscape and Expressivity of Deep CNNs.",
+      "first_author": "Quynh Nguyen",
+      "matched": true,
+      "institution": "Saarland University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Modeling Sparse Deviations for Compressed Sensing using Generative Models.",
+      "first_author": "Manik Dhar",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Variable Selection via Penalized Neural Network: a Drop-Out-One Loss Approach.",
+      "first_author": "Mao Ye",
+      "matched": true,
+      "institution": "PURDUE UNIVERSITY",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Optimize Combinatorial Functions.",
+      "first_author": "Nir Rosenfeld",
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Convolutional Imputation of Matrix Networks.",
+      "first_author": "Qingyun Sun",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Independent Causal Mechanisms.",
+      "first_author": "Giambattista Parascandolo",
+      "matched": true,
+      "institution": "Max Planck Institute for Intelligent Systems and ETH Zurich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Closed-form Marginal Likelihood in Gamma-Poisson Matrix Factorization.",
+      "first_author": "Louis Filstroff",
+      "matched": true,
+      "institution": "CNRS, Toulouse",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Binary Partitions with Approximate Minimum Impurity.",
+      "first_author": "Eduardo Sany Laber",
+      "matched": true,
+      "institution": "PUC-RIO",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Orthogonal Recurrent Neural Networks with Scaled Cayley Transform.",
+      "first_author": "Kyle Helfrich",
+      "matched": true,
+      "institution": "University of Kentucky",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic PCA with 𝓁2 and 𝓁1 Regularization.",
+      "first_author": "Poorya Mianjy",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TAPAS: Tricks to Accelerate (encrypted) Prediction As a Service.",
+      "first_author": "Amartya Sanyal",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dependent Relational Gamma Process Models for Longitudinal Networks.",
+      "first_author": "Sikun Yang",
+      "matched": true,
+      "institution": "TU Darmstadt",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "More Robust Doubly Robust Off-policy Evaluation.",
+      "first_author": "Mehrdad Farajtabar",
+      "matched": true,
+      "institution": "Georgia Tech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Understanding and Simplifying One-Shot Architecture Search.",
+      "first_author": "Gabriel Bender",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Graphical Nonconvex Optimization via an Adaptive Convex Relaxation.",
+      "first_author": "Qiang Sun",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Conditional Neural Processes.",
+      "first_author": "Marta Garnelo",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Distributed Clustering via LSH Based Data Partitioning.",
+      "first_author": "Aditya Bhaskara",
+      "matched": true,
+      "institution": "University of Utah",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis.",
+      "first_author": "Yuxuan Wang",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Primal-Dual Analysis of Global Optimality in Nonconvex Low-Rank Matrix Recovery.",
+      "first_author": "Xiao Zhang",
+      "matched": true,
+      "institution": "University of Virginia",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient Neural Audio Synthesis.",
+      "first_author": "Nal Kalchbrenner",
+      "matched": true,
+      "institution": "Google Brain Amsterdam",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bounding and Counting Linear Regions of Deep Neural Networks.",
+      "first_author": "Thiago Serra",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fair and Diverse DPP-Based Data Summarization.",
+      "first_author": "L. Elisa Celis",
+      "matched": true,
+      "institution": "Yale",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SMAC: Simultaneous Mapping and Clustering Using Spectral Decompositions.",
+      "first_author": "Chandrajit Bajaj",
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Shampoo: Preconditioned Stochastic Tensor Optimization.",
+      "first_author": "Vineet Gupta",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "The Limits of Maxing, Ranking, and Preference Learning.",
+      "first_author": "Moein Falahatgar",
+      "matched": true,
+      "institution": "UC San Diego",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Training Neural Machines with Trace-Based Supervision.",
+      "first_author": "Matthew Mirman",
+      "matched": true,
+      "institution": "ETH Zürich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning in Integer Latent Variable Models with Nested Automatic Differentiation.",
+      "first_author": "Daniel Sheldon",
+      "matched": true,
+      "institution": "University of Massachusetts Amherst",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gradually Updated Neural Networks for Large-Scale Image Recognition.",
+      "first_author": "Siyuan Qiao",
+      "matched": true,
+      "institution": "Johns Hopkins University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Mean Field Multi-Agent Reinforcement Learning.",
+      "first_author": "Yaodong Yang",
+      "matched": true,
+      "institution": "University College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Detecting non-causal artifacts in multivariate linear regression models.",
+      "first_author": "Dominik Janzing",
+      "matched": true,
+      "institution": "Amazon Research Tübingen",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Long Term Dependencies via Fourier Recurrent Units.",
+      "first_author": "Jiong Zhang",
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Alternating Randomized Block Coordinate Descent.",
+      "first_author": "Jelena Diakonikolas",
+      "matched": true,
+      "institution": "Boston University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Prediction Rule Reshaping.",
+      "first_author": "Matt Bonakdarpour",
+      "matched": true,
+      "institution": "University of Chicago",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Scalable Deletion-Robust Submodular Maximization: Data Summarization with Privacy and Fairness Constraints.",
+      "first_author": "Ehsan Kazemi",
+      "matched": true,
+      "institution": "Yale",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Hierarchical Clustering with Structural Constraints.",
+      "first_author": "Vaggos Chatziafratis",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SAFFRON: an Adaptive Algorithm for Online Control of the False Discovery Rate.",
+      "first_author": "Aaditya Ramdas",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Diffusion using Hyperparameters.",
+      "first_author": "Dimitris Kalimeris",
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Generalization without Systematicity: On the Compositional Skills of Sequence-to-Sequence Recurrent Networks.",
+      "first_author": "Brenden M. Lake",
+      "matched": true,
+      "institution": "New York University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast and Scalable Bayesian Deep Learning by Weight-Perturbation in Adam.",
+      "first_author": "Mohammad Emtiyaz Khan",
+      "matched": true,
+      "institution": "RIKEN",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Semi-Supervised Learning on Data Streams via Temporal Label Propagation.",
+      "first_author": "Tal Wagner",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Discovering Interpretable Representations for Both Deep Generative and Discriminative Models.",
+      "first_author": "Tameem Adel",
+      "matched": true,
+      "institution": "University of Cambridge",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Hierarchical Long-term Video Prediction without Supervision.",
+      "first_author": "Nevan Wichers",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Causal Bandits with Propagating Inference.",
+      "first_author": "Akihiro Yabe",
+      "matched": true,
+      "institution": "NEC Corporation",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Localized Spatio-Temporal Models From Streaming Data.",
+      "first_author": "Muhammad Osama",
+      "matched": true,
+      "institution": "Uppsala University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Discrete-Continuous Mixtures in Probabilistic Programming: Generalized Semantics and Inference Algorithms.",
+      "first_author": "Yi Wu",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "PIPPS: Flexible Model-Based Policy Search Robust to the Curse of Chaos.",
+      "first_author": "Paavo Parmas",
+      "matched": true,
+      "institution": "Okinawa Institute of Science and Technology Graduate University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Differentially Private Matrix Completion Revisited.",
+      "first_author": "Prateek Jain",
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Gradient-Based Methods with Exponential Rate: A Hybrid Control Framework.",
+      "first_author": "Arman Sharifi Kolarijani",
+      "matched": true,
+      "institution": "Delft University of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improving the Gaussian Mechanism for Differential Privacy: Analytical Calibration and Optimal Denoising.",
+      "first_author": "Borja Balle",
+      "matched": true,
+      "institution": "Amazon Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Machine Theory of Mind.",
+      "first_author": "Neil C. Rabinowitz",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Junction Tree Variational Autoencoder for Molecular Graph Generation.",
+      "first_author": "Wengong Jin",
+      "matched": true,
+      "institution": "MIT Computer Science and Artificial Intelligence Laboratory",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adversarial Learning with Local Coordinate Coding.",
+      "first_author": "Jiezhang Cao",
+      "matched": true,
+      "institution": "South China University of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Iterative, Sketching-based Framework for Ridge Regression.",
+      "first_author": "Agniva Chowdhury",
+      "matched": true,
+      "institution": "Purdue University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Differentiable plasticity: training plastic neural networks with backpropagation.",
+      "first_author": "Thomas Miconi",
+      "matched": true,
+      "institution": "Uber AI Labs",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Spline Theory of Deep Networks.",
+      "first_author": "Randall Balestriero",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Testing Sparsity over Known and Unknown Bases.",
+      "first_author": "Siddharth Barman",
+      "matched": true,
+      "institution": "Indian Institute of Science",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gradient Primal-Dual Algorithm Converges to Second-Order Stationary Solution for Nonconvex Distributed Optimization Over Networks.",
+      "first_author": "Mingyi Hong",
+      "matched": true,
+      "institution": "University of Minnesota",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "GAIN: Missing Data Imputation using Generative Adversarial Nets.",
+      "first_author": "Jinsung Yoon",
+      "matched": true,
+      "institution": "University of California, Los Angeles",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Been There, Done That: Meta-Learning with Episodic Recall.",
+      "first_author": "Samuel Ritter",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Memory Access Patterns.",
+      "first_author": "Milad Hashemi",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "LaVAN: Localized and Visible Adversarial Noise.",
+      "first_author": "Danny Karmon",
+      "matched": true,
+      "institution": "Bar Ilan University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Spectrally Approximating Large Graphs with Smaller Graphs.",
+      "first_author": "Andreas Loukas",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Online Learning with Abstention.",
+      "first_author": "Corinna Cortes",
+      "matched": true,
+      "institution": "Google Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "D2: Decentralized Training over Decentralized Data.",
+      "first_author": "Hanlin Tang",
+      "matched": true,
+      "institution": "University of Rochester",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Bellman Updates for Robust MDPs.",
+      "first_author": "Chin Pang Ho",
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On Nesting Monte Carlo Estimators.",
+      "first_author": "Tom Rainforth",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Decoupled Parallel Backpropagation with Convergence Guarantee.",
+      "first_author": "Zhouyuan Huo",
+      "matched": true,
+      "institution": "University of Pittsburgh",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Synthesizing Programs for Images using Reinforced Adversarial Learning.",
+      "first_author": "Yaroslav Ganin",
+      "matched": true,
+      "institution": "Montreal Institute for Learning Algorithms",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Probabilistic Boolean Tensor Decomposition.",
+      "first_author": "Tammo Rukat",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Composite Functional Gradient Learning of Generative Adversarial Models.",
+      "first_author": "Rie Johnson",
+      "matched": true,
+      "institution": "RJ Research Consulting",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "CRVI: Convex Relaxation for Variational Inference.",
+      "first_author": "Ghazal Fazelnia",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Representation Learning on Graphs with Jumping Knowledge Networks.",
+      "first_author": "Keyulu Xu",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Synthesizing Robust Adversarial Examples.",
+      "first_author": "Anish Athalye",
+      "matched": true,
+      "institution": "MIT CSAIL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Detecting and Correcting for Label Shift with Black Box Predictors.",
+      "first_author": "Zachary C. Lipton",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Structured Variationally Auto-encoded Optimization.",
+      "first_author": "Xiaoyu Lu",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Autoregressive Convolutional Neural Networks for Asynchronous Time Series.",
+      "first_author": "Mikolaj Binkowski",
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Generative Temporal Models with Spatial Memory for Partially Observed Environments.",
+      "first_author": "Marco Fraccaro",
+      "matched": true,
+      "institution": "Technical University of Denmark",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dissecting Adam: The Sign, Magnitude and Variance of Stochastic Gradients.",
+      "first_author": "Lukas Balles",
+      "matched": true,
+      "institution": "Max Planck Institute for Intelligent Systems",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Katyusha X: Practical Momentum Method for Stochastic Sum-of-Nonconvex Optimization.",
+      "first_author": "Zeyuan Allen-Zhu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learn from Your Neighbor: Learning Multi-modal Mappings from Sparse Annotations.",
+      "first_author": "Ashwin Kalyan",
+      "matched": true,
+      "institution": "Georgia Tech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Investigating Human Priors for Playing Video Games.",
+      "first_author": "Rachit Dubey",
+      "matched": true,
+      "institution": "University of California, Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic Video Generation with a Learned Prior.",
+      "first_author": "Emily Denton",
+      "matched": true,
+      "institution": "New York University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Scalable Gaussian Processes with Grid-Structured Eigenfunctions (GP-GRIEF).",
+      "first_author": "Trefor W. Evans",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Geodesic Convolutional Shape Optimization.",
+      "first_author": "Pierre Baqué",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning in Reproducing Kernel Krein Spaces.",
+      "first_author": "Dino Oglic",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Conditional Noise-Contrastive Estimation of Unnormalised Models.",
+      "first_author": "Ciwan Ceylan",
+      "matched": true,
+      "institution": "RWTH",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "State Space Gaussian Processes with Non-Gaussian Likelihood.",
+      "first_author": "Hannes Nickisch",
+      "matched": true,
+      "institution": "Philips Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Iterative Amortized Inference.",
+      "first_author": "Joseph Marino",
+      "matched": true,
+      "institution": "Caltech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Communication-Computation Efficient Gradient Coding.",
+      "first_author": "Min Ye",
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Approximate message passing for amplitude based optimization.",
+      "first_author": "Junjie Ma",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Noisin: Unbiased Regularization for Recurrent Neural Networks.",
+      "first_author": "Adji Bousso Dieng",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Transfer Learning via Learning to Transfer.",
+      "first_author": "Ying Wei",
+      "matched": true,
+      "institution": "Tencent AI Lab",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "MAGAN: Aligning Biological Manifolds.",
+      "first_author": "Matthew Amodio",
+      "matched": true,
+      "institution": "Yale University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Theory of Variance Reduction for Stochastic Gradient Monte Carlo.",
+      "first_author": "Niladri S. Chatterji",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Hierarchical Text Generation and Planning for Strategic Dialogue.",
+      "first_author": "Denis Yarats",
+      "matched": true,
+      "institution": "Facebook AI Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "WHInter: A Working set algorithm for High-dimensional sparse second order Interaction models.",
+      "first_author": "Marine Le Morvan",
+      "matched": true,
+      "institution": "Mines Paristech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Coded Sparse Matrix Multiplication.",
+      "first_author": "Sinong Wang",
+      "matched": true,
+      "institution": "The Ohio State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stein Variational Message Passing for Continuous Graphical Models.",
+      "first_author": "Dilin Wang",
+      "matched": true,
+      "institution": "UT Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Hierarchical Imitation and Reinforcement Learning.",
+      "first_author": "Hoang Minh Le",
+      "matched": true,
+      "institution": "Caltech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Optimizing the Latent Space of Generative Networks.",
+      "first_author": "Piotr Bojanowski",
+      "matched": true,
+      "institution": "Facebook",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Latent Space Policies for Hierarchical Reinforcement Learning.",
+      "first_author": "Tuomas Haarnoja",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Structured Variational Learning of Bayesian Neural Networks with Horseshoe Priors.",
+      "first_author": "Soumya Ghosh",
+      "matched": true,
+      "institution": "IBM Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adversarial Risk and the Dangers of Evaluating Against Weak Attacks.",
+      "first_author": "Jonathan Uesato",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models.",
+      "first_author": "Jiaxuan You",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "BOHB: Robust and Efficient Hyperparameter Optimization at Scale.",
+      "first_author": "Stefan Falkner",
+      "matched": true,
+      "institution": "University of Freiburg",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Exploring Hidden Dimensions in Parallelizing Convolutional Neural Networks.",
+      "first_author": "Zhihao Jia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Bayesian Quadrature for Multiple Related Integrals.",
+      "first_author": "Xiaoyue Xi",
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SparseMAP: Differentiable Sparse Structured Inference.",
+      "first_author": "Vlad Niculae",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improving Optimization in Models With Continuous Symmetry Breaking.",
+      "first_author": "Robert Bamler",
+      "matched": true,
+      "institution": "UC Irvine",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Importance Weighted Transfer of Samples in Reinforcement Learning.",
+      "first_author": "Andrea Tirinzoni",
+      "matched": true,
+      "institution": "Politecnico di Milano",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Non-Linear Motor Control by Local Learning in Spiking Neural Networks.",
+      "first_author": "Aditya Gilra",
+      "matched": true,
+      "institution": "University of Bonn",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Ranking Distributions based on Noisy Sorting.",
+      "first_author": "Adil El Mesaoudi-Paul",
+      "matched": true,
+      "institution": "University of Paderborn",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Unbiased Objective Estimation in Predictive Optimization.",
+      "first_author": "Shinji Ito",
+      "matched": true,
+      "institution": "NEC Corporation",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Asynchronous Decentralized Parallel Stochastic Gradient Descent.",
+      "first_author": "Xiangru Lian",
+      "matched": true,
+      "institution": "University of Rochester",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Configurable Markov Decision Processes.",
+      "first_author": "Alberto Maria Metelli",
+      "matched": true,
+      "institution": "Politecnico di Milano",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Large-Scale Sparse Inverse Covariance Estimation via Thresholding and Max-Det Matrix Completion.",
+      "first_author": "Richard Y. Zhang",
+      "matched": true,
+      "institution": "University of California, Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Low-Dimensional Temporal Representations.",
+      "first_author": "Bing Su",
+      "matched": true,
+      "institution": "Institute of Software, Chinese Academy of Sciences",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Neural Dynamic Programming for Musical Self Similarity.",
+      "first_author": "Christian J. Walder",
+      "matched": true,
+      "institution": "Data61, the Australian National University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Active Learning with Logged Data.",
+      "first_author": "Songbai Yan",
+      "matched": true,
+      "institution": "University of California San Diego",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Branch.",
+      "first_author": "Maria-Florina Balcan",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Nonparametric Regression with Comparisons: Escaping the Curse of Dimensionality with Ordinal Information.",
+      "first_author": "Yichong Xu",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Residual Unfairness in Fair Machine Learning from Prejudiced Data.",
+      "first_author": "Nathan Kallus",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Theoretical Explanation for Perplexing Behaviors of Backpropagation-based Visualizations.",
+      "first_author": "Weili Nie",
+      "matched": true,
+      "institution": "Rice University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SBEED: Convergent Reinforcement Learning with Nonlinear Function Approximation.",
+      "first_author": "Bo Dai",
+      "matched": true,
+      "institution": "Georgia Institute of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Topological Mixture Estimation.",
+      "first_author": "Steve Huntsman",
+      "matched": true,
+      "institution": "BAE Systems FAST Labs",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient and Consistent Adversarial Bipartite Matching.",
+      "first_author": "Rizal Fathony",
+      "matched": true,
+      "institution": "University of Illinois at Chicago",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Understanding the Loss Surface of Neural Networks for Binary Classification.",
+      "first_author": "Shiyu Liang",
+      "matched": true,
+      "institution": "UIUC",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Dimensionality-Driven Learning with Noisy Labels.",
+      "first_author": "Xingjun Ma",
+      "matched": true,
+      "institution": "The University of Melbourne",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Black Box FDR.",
+      "first_author": "Wesley Tansey",
+      "matched": true,
+      "institution": "Columbia University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bandits with Delayed, Aggregated Anonymous Feedback.",
+      "first_author": "Ciara Pike-Burke",
+      "matched": true,
+      "institution": "Lancaster University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Theoretical Analysis of Sparse Subspace Clustering with Missing Entries.",
+      "first_author": "Manolis C. Tsakiris",
+      "matched": true,
+      "institution": "Johns Hopkins University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Autoregressive Quantile Networks for Generative Modeling.",
+      "first_author": "Georg Ostrovski",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Out-of-sample extension of graph adjacency spectral embedding.",
+      "first_author": "Keith D. Levin",
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Two-Step Computation of the Exact GAN Wasserstein Distance.",
+      "first_author": "Huidong Liu",
+      "matched": true,
+      "institution": "Stony Brook University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Alternative View: When Does SGD Escape Local Minima?",
+      "first_author": "Robert Kleinberg",
+      "matched": true,
+      "institution": "Cornell",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Escaping Saddles with Stochastic Gradients.",
+      "first_author": "Hadi Daneshmand",
+      "matched": true,
+      "institution": "ETH Zurich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Improved Large-Scale Graph Learning through Ridge Spectral Sparsification.",
+      "first_author": "Daniele Calandriello",
+      "matched": true,
+      "institution": "INRIA Lille",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Local Convergence Properties of SAGA/Prox-SVRG and Acceleration.",
+      "first_author": "Clarice Poon",
+      "matched": true,
+      "institution": "University of Cambridge",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SGD and Hogwild! Convergence Without the Bounded Gradients Assumption.",
+      "first_author": "Lam M. Nguyen",
+      "matched": true,
+      "institution": "Lehigh University & IBM T.J. Watson Research Center",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning to Coordinate with Coordination Graphs in Repeated Single-Stage Multi-Agent Decision Problems.",
+      "first_author": "Eugenio Bargiacchi",
+      "matched": true,
+      "institution": "Vrije Universiteit Brussel",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Towards More Efficient Stochastic Decentralized Learning: Faster Convergence and Sparse Communication.",
+      "first_author": "Zebang Shen",
+      "matched": true,
+      "institution": "Zhejiang University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Using Reward Machines for High-Level Task Specification and Decomposition in Reinforcement Learning.",
+      "first_author": "Rodrigo Toro Icarte",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Variational Inference and Model Selection with Generalized Evidence Bounds.",
+      "first_author": "Liqun Chen",
+      "matched": true,
+      "institution": "Duke University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Orthogonal Machine Learning: Power and Limitations.",
+      "first_author": "Ilias Zadik",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Neural Inverse Rendering for General Reflectance Photometric Stereo.",
+      "first_author": "Tatsunori Taniai",
+      "matched": true,
+      "institution": "RIKEN AIP",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "High Performance Zero-Memory Overhead Direct Convolutions.",
+      "first_author": "Jiyuan Zhang",
+      "matched": true,
+      "institution": "Cargenie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Non-convex Conditional Gradient Sliding.",
+      "first_author": "Chao Qu",
+      "matched": true,
+      "institution": "technion",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Large-Scale Cox Process Inference using Variational Fourier Features.",
+      "first_author": "S. T. John",
+      "matched": true,
+      "institution": "PROWLER.io",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Transformation Autoregressive Networks.",
+      "first_author": "Junier B. Oliva",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Coordinated Exploration in Concurrent Reinforcement Learning.",
+      "first_author": "Maria Dimakopoulou",
+      "matched": true,
+      "institution": "Stanford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Distributed Asynchronous Optimization with Unbounded Delays: How Slow Can You Go?",
+      "first_author": "Zhengyuan Zhou",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Information-theoretic Bayesian Optimisation.",
+      "first_author": "Bin Xin Ru",
+      "matched": true,
+      "institution": "University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Riemannian Stochastic Recursive Gradient Algorithm with Retraction and Vector Transport and Its Convergence Analysis.",
+      "first_author": "Hiroyuki Kasai",
+      "matched": true,
+      "institution": "The University of Electro-Communications",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Neural Program Synthesis from Diverse Demonstration Videos.",
+      "first_author": "Shao-Hua Sun",
+      "matched": true,
+      "institution": "University of Southern California",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Byzantine-Robust Distributed Learning: Towards Optimal Statistical Rates.",
+      "first_author": "Dong Yin",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "DVAE++: Discrete Variational Autoencoders with Overlapping Transformations.",
+      "first_author": "Arash Vahdat",
+      "matched": true,
+      "institution": "Quadrant.ai, D-Wave",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "ContextNet: Deep learning for Star Galaxy Classification.",
+      "first_author": "Noble Kennamer",
+      "matched": true,
+      "institution": "University of California, Irvine",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Steady-States of Iterative Algorithms over Graphs.",
+      "first_author": "Hanjun Dai",
+      "matched": true,
+      "institution": "Georgia Tech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Path Consistency Learning in Tsallis Entropy Regularized MDPs.",
+      "first_author": "Yinlam Chow",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "BOCK : Bayesian Optimization with Cylindrical Kernels.",
+      "first_author": "ChangYong Oh",
+      "matched": true,
+      "institution": "University of Amsterdam",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bounds on the Approximation Power of Feedforward Neural Networks.",
+      "first_author": "Mohammad Mehrabi",
+      "matched": true,
+      "institution": "Sharif University of Technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Quasi-Monte Carlo Variational Inference.",
+      "first_author": "Alexander Buchholz",
+      "matched": true,
+      "institution": "ENSAE-CREST Paris",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Hyperbolic Entailment Cones for Learning Hierarchical Embeddings.",
+      "first_author": "Octavian-Eugen Ganea",
+      "matched": true,
+      "institution": "ETH Zurich",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Probabilistic Theory of Supervised Similarity Learning for Pointwise ROC Curve Optimization.",
+      "first_author": "Robin Vogel",
+      "matched": true,
+      "institution": "Télécom ParisTech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Optimal Rates of Sketched-regularized Algorithms for Least-Squares Regression over Hilbert Spaces.",
+      "first_author": "Junhong Lin",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stagewise Safe Bayesian Optimization with Gaussian Processes.",
+      "first_author": "Yanan Sui",
+      "matched": true,
+      "institution": "Stanford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Cut-Pursuit Algorithm for Regularizing Nonsmooth Functionals with Graph Total Variation.",
+      "first_author": "Hugo Raguet",
+      "matched": true,
+      "institution": "LIVE (CNRS)",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Efficient Neural Architecture Search via Parameter Sharing.",
+      "first_author": "Hieu Pham",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Deep Predictive Coding Network for Object Recognition.",
+      "first_author": "Haiguang Wen",
+      "matched": true,
+      "institution": "Purdue University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Tight Regret Bounds for Bayesian Optimization in One Dimension.",
+      "first_author": "Jonathan Scarlett",
+      "matched": true,
+      "institution": "National University of Singapore",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Contextual Graph Markov Model: A Deep and Generative Approach to Graph Processing.",
+      "first_author": "Davide Bacciu",
+      "matched": true,
+      "institution": "University of Pisa",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Self-Imitation Learning.",
+      "first_author": "Junhyuk Oh",
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Visualizing and Understanding Atari Agents.",
+      "first_author": "Samuel Greydanus",
+      "matched": true,
+      "institution": "Oregon State University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Frank-Wolfe with Subsampling Oracle.",
+      "first_author": "Thomas Kerdreux",
+      "matched": true,
+      "institution": "INRIA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Policy and Value Transfer in Lifelong Reinforcement Learning.",
+      "first_author": "David Abel",
+      "matched": true,
+      "institution": "Brown University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Understanding Generalization and Optimization Performance of Deep CNNs.",
+      "first_author": "Pan Zhou",
+      "matched": true,
+      "institution": "National University of Singapore",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Semiparametric Contextual Bandits.",
+      "first_author": "Akshay Krishnamurthy",
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Recurrent Predictive State Policy Networks.",
+      "first_author": "Ahmed Hefny",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning and Memorization.",
+      "first_author": "Satrajit Chatterjee",
+      "matched": true,
+      "institution": "Two Sigma Investments",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Distributed Second-Order Algorithm You Can Trust.",
+      "first_author": "Celestine Dünner",
+      "matched": true,
+      "institution": "IBM Research",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Automatic Goal Generation for Reinforcement Learning Agents.",
+      "first_author": "Carlos Florensa",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Optimal Distributed Learning with Multi-pass Stochastic Gradient Methods.",
+      "first_author": "Junhong Lin",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Video Prediction with Appearance and Motion Conditions.",
+      "first_author": "Yunseok Jang",
+      "matched": true,
+      "institution": "Seoul National University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Attention-based Deep Multiple Instance Learning.",
+      "first_author": "Maximilian Ilse",
+      "matched": true,
+      "institution": "University of Amsterdam",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic Proximal Algorithms for AUC Maximization.",
+      "first_author": "Michael Natole",
+      "matched": true,
+      "institution": "University at Albany",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "An Inference-Based Policy Gradient Method for Learning Options.",
+      "first_author": "Matthew J. A. Smith",
+      "matched": true,
+      "institution": "McGill University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Beyond 1/2-Approximation for Submodular Maximization on Massive Data Streams.",
+      "first_author": "Ashkan Norouzi-Fard",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Revealing Common Statistical Behaviors in Heterogeneous Populations.",
+      "first_author": "Andrey Zhitnikov",
+      "matched": true,
+      "institution": "Technion",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bucket Renormalization for Approximate Inference.",
+      "first_author": "Sungsoo Ahn",
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Analyzing the Robustness of Nearest Neighbors to Adversarial Examples.",
+      "first_author": "Yizhen Wang",
+      "matched": true,
+      "institution": "UCSD",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "MISSION: Ultra Large-Scale Feature Selection using Count-Sketches.",
+      "first_author": "Amirali Aghazadeh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Predict and Constrain: Modeling Cardinality in Deep Structured Prediction.",
+      "first_author": "Nataly Brukhim",
+      "matched": true,
+      "institution": "Tel Aviv University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "JointGAN: Multi-Domain Joint Distribution Learning with Generative Adversarial Nets.",
+      "first_author": "Yunchen Pu",
+      "matched": true,
+      "institution": "Duke",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stochastic Variance-Reduced Hamilton Monte Carlo Methods.",
+      "first_author": "Difan Zou",
+      "matched": true,
+      "institution": "University of Virginia",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Low-Rank Riemannian Optimization on Positive Semidefinite Stochastic Matrices with Applications to Graph Clustering.",
+      "first_author": "Ahmed Douik",
+      "matched": true,
+      "institution": "California Institute of technology",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Mix & Match Agent Curricula for Reinforcement Learning.",
+      "first_author": "Wojciech Marian Czarnecki",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Semi-Supervised Learning via Compact Latent Space Clustering.",
+      "first_author": "Konstantinos Kamnitsas",
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Continual Reinforcement Learning with Complex Synapses.",
+      "first_author": "Christos Kaplanis",
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "QuantTree: Histograms for Change Detection in Multivariate Data Streams.",
+      "first_author": "Giacomo Boracchi",
+      "matched": true,
+      "institution": "Politecnico di Milano",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Temporal Poisson Square Root Graphical Models.",
+      "first_author": "Sinong Geng",
+      "matched": true,
+      "institution": "UW-Madison; Princeton University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Constrained Interacting Submodular Groupings.",
+      "first_author": "Andrew Cotter",
+      "matched": true,
+      "institution": "Google AI",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Power of Over-parametrization in Neural Networks with Quadratic Activation.",
+      "first_author": "Simon S. Du",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Active Testing: An Efficient and Robust Framework for Estimating Accuracy.",
+      "first_author": "Phuc Xuan Nguyen",
+      "matched": true,
+      "institution": "UC Irvine",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning a Mixture of Two Multinomial Logits.",
+      "first_author": "Flavio Chierichetti",
+      "matched": true,
+      "institution": "Sapienza University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Canonical Tensor Decomposition for Knowledge Base Completion.",
+      "first_author": "Timothée Lacroix",
+      "matched": true,
+      "institution": "Facebook",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Semantic Representations for Unsupervised Domain Adaptation.",
+      "first_author": "Shaoan Xie",
+      "matched": true,
+      "institution": "Sun Yat-sen University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Adversarial Regression with Multiple Learners.",
+      "first_author": "Liang Tong",
+      "matched": true,
+      "institution": "Vanderbilt University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Weakly Consistent Optimal Pricing Algorithms in Repeated Posted-Price Auctions with Strategic Buyer.",
+      "first_author": "Alexey Drutsa",
+      "matched": true,
+      "institution": "Yandex",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "ADMM and Accelerated ADMM as Continuous Dynamical Systems.",
+      "first_author": "Guilherme França",
+      "matched": true,
+      "institution": "Johns Hopkins University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Problem Dependent Reinforcement Learning Bounds Which Can Identify Bandit Structure in MDPs.",
+      "first_author": "Andrea Zanette",
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Generalized Robust Bayesian Committee Machine for Large-scale Gaussian Process Regression.",
+      "first_author": "Haitao Liu",
+      "matched": true,
+      "institution": "Rolls-Royce@NTU Corp Lab",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Feedback-Based Tree Search for Reinforcement Learning.",
+      "first_author": "Daniel R. Jiang",
+      "matched": true,
+      "institution": "Facebook",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning Hidden Markov Models from Pairwise Co-occurrences with Application to Topic Modeling.",
+      "first_author": "Kejun Huang",
+      "matched": true,
+      "institution": "University of Minnesota",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Spatio-temporal Bayesian On-line Changepoint Detection with Model Selection.",
+      "first_author": "Jeremias Knoblauch",
+      "matched": true,
+      "institution": "Warwick University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Bayesian Coreset Construction via Greedy Iterative Geodesic Ascent.",
+      "first_author": "Trevor Campbell",
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Quickshift++: Provably Good Initializations for Sample-Based Mean Shift.",
+      "first_author": "Heinrich Jiang",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Thompson Sampling for Combinatorial Semi-Bandits.",
+      "first_author": "Siwei Wang",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stability and Generalization of Learning Algorithms that Converge to Global Optima.",
+      "first_author": "Zachary Charles",
+      "matched": true,
+      "institution": "University of Wisconsin-Madison",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Disentangling by Factorising.",
+      "first_author": "Hyunjik Kim",
+      "matched": true,
+      "institution": "DeepMind, University of Oxford",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Self-Bounded Prediction Suffix Tree via Approximate String Matching.",
+      "first_author": "Dongwoo Kim",
+      "matched": true,
+      "institution": "The Australian National University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Nonparametric variable importance using an augmented neural network with multi-task learning.",
+      "first_author": "Jean Feng",
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "WSNet: Compact and Efficient Networks Through Weight Sampling.",
+      "first_author": "Xiaojie Jin",
+      "matched": true,
+      "institution": "National University of Singapore",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "MSplit LBI: Realizing Feature Selection and Dense Estimation Simultaneously in Few-shot and Zero-shot Learning.",
+      "first_author": "Bo Zhao",
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "AutoPrognosis: Automated Clinical Prognostic Modeling via Bayesian Optimization with Structured Kernel Learning.",
+      "first_author": "Ahmed M. Alaa",
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Neural Relational Inference for Interacting Systems.",
+      "first_author": "Thomas N. Kipf",
+      "matched": true,
+      "institution": "University of Amsterdam",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Provable Defenses against Adversarial Examples via the Convex Outer Adversarial Polytope.",
+      "first_author": "Eric Wong",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Distributed Nonparametric Regression under Communication Constraints.",
+      "first_author": "Yuancheng Zhu",
+      "matched": true,
+      "institution": "University of Pennsylvania",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "On the Implicit Bias of Dropout.",
+      "first_author": "Poorya Mianjy",
+      "matched": true,
+      "institution": "Johns Hopkins University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Inference Suboptimality in Variational Autoencoders.",
+      "first_author": "Chris Cremer",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Stabilizing Gradients for Deep Neural Networks via Efficient SVD Parameterization.",
+      "first_author": "Jiong Zhang",
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Modeling Others using Oneself in Multi-Agent Reinforcement Learning.",
+      "first_author": "Roberta Raileanu",
+      "matched": true,
+      "institution": "NYU",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Fast Parametric Learning with Activation Memorization.",
+      "first_author": "Jack W. Rae",
+      "matched": true,
+      "institution": "DeepMind",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Beyond Finite Layer Neural Networks: Bridging Deep Architectures and Numerical Differential Equations.",
+      "first_author": "Yiping Lu",
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Gradient descent with identity initialization efficiently learns positive definite linear transformations.",
+      "first_author": "Peter L. Bartlett",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Inductive Two-layer Modeling with Parametric Bregman Transfer.",
+      "first_author": "Vignesh Ganapathiraman",
+      "matched": true,
+      "institution": "University of Illinois at Chicago",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Network Global Testing by Counting Graphlets.",
+      "first_author": "Jiashun Jin",
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Greed is Still Good: Maximizing Monotone Submodular+Supermodular (BP) Functions.",
+      "first_author": "Wenruo Bai",
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "SIGNSGD: Compressed Optimisation for Non-Convex Problems.",
+      "first_author": "Jeremy Bernstein",
+      "matched": true,
+      "institution": "Caltech",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Unified Framework for Structured Low-rank Matrix Learning.",
+      "first_author": "Pratik Jawanpuria",
+      "matched": true,
+      "institution": "Microsoft",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "A Simple Stochastic Variance Reduced Algorithm with Fast Convergence Rates.",
+      "first_author": "Kaiwen Zhou",
+      "matched": true,
+      "institution": "The Chinese University of Hong Kong",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Hierarchical Deep Generative Models for Multi-Rate Multivariate Time Series.",
+      "first_author": "Zhengping Che",
+      "matched": true,
+      "institution": "University of Southern California",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Neural Networks Should Be Wide Enough to Learn Disconnected Decision Regions.",
+      "first_author": "Quynh Nguyen",
+      "matched": true,
+      "institution": "Saarland University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Learning K-way D-dimensional Discrete Codes for Compact Embedding Representations.",
+      "first_author": "Ting Chen",
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Linear Spectral Estimators and an Application to Phase Retrieval.",
+      "first_author": "Ramina Ghods",
+      "matched": true,
+      "institution": "Cornell University",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Born-Again Neural Networks.",
+      "first_author": "Tommaso Furlanello",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Feasible Arm Identification.",
+      "first_author": "Julian Katz-Samuels",
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Self-Consistent Trajectory Autoencoder: Hierarchical Reinforcement Learning with Trajectory Embeddings.",
+      "first_author": "John D. Co-Reyes",
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "martenlienen"
+    },
+    {
+      "title": "Compiling Combinatorial Prediction Games.",
+      "first_author": "Frédéric Koriche",
+      "matched": true,
+      "institution": "CRIL UMR CNRS 8188, Univ. Artois",
+      "imported_from": "martenlienen"
+    }
+  ]
+}

@@ -35,7 +35,10 @@
     "accept_rate": "採択率",
     "accept_rate_history": "採択率の推移",
     "rank_uncertain": "CCF 2011年（第2版）のデータは不完全で、不正確な場合があります。",
-    "back_to_home": "ホームに戻る"
+    "back_to_home": "ホームに戻る",
+    "top_affiliations": "トップ機関",
+    "affiliation_coverage": "所属機関データは {total} 論文中 {covered} 論文をカバー",
+    "affiliation_source_note": "データ提供：{sources}"
   },
   "compare": {
     "title": "学会バトル",
@@ -66,6 +69,13 @@
     "src_openreview": "AI/ML学会の補助論文データと採択率（NeurIPS、ICLR、ICMLなど）— DBLPより数ヶ月早く利用可能",
     "src_ccf_pdf": "学会リスト、CCFランキングとカテゴリ（公式PDFから抽出）",
     "src_fasttext": "fastText lid.176.binモデルによる名前の言語分類",
+    "data_sources_affiliations": "著者の所属機関",
+    "src_or_affiliation": "OpenReview 著者プロフィールからの筆頭著者所属データ（当年会議）",
+    "src_martenlienen": "NeurIPS、ICML、ICLR の事前編集済み所属データセット（2006-2024）",
+    "src_papercopilot": "ICLR、CoRL 等の事前編集済み所属データ（2023年以降）",
+    "src_openalex": "タイトルマッチングによる筆頭著者所属データ。出版元によりカバー率が異なります。",
+    "affiliation_accuracy": "所属データのカバレージに関する注意",
+    "affiliation_accuracy_text": "所属データは複数のデータソースから取得しており、カバー率は異なります。過去データ（NeurIPS/ICML/ICLR）は事前編集済みデータセットを使用し、カバー率 85-99%。当年データは OpenReview プロフィールを使用。その他の会議は OpenAlex を使用し、カバー率は出版元に依存します。各会議ページに表示されるカバー率はデータの完全性を示しています。",
     "accuracy": "精度について",
     "accuracy_text": "名前ベースの言語推定は本質的に不正確です。移住、結婚、文化の混合など、名前を当てにならなくする要因はたくさんあります。すべての結果はざっくりとした目安としてお楽しみください。",
     "data_cleaning": "データクリーニング",

@@ -6,7 +6,7 @@ import { createApp } from 'vue'
 import ECharts from 'vue-echarts'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
-import { PieChart, LineChart, BarChart, RadarChart, CustomChart } from 'echarts/charts'
+import { PieChart, LineChart, BarChart, RadarChart, CustomChart, TreemapChart } from 'echarts/charts'
 import {
   TitleComponent,
   TooltipComponent,
@@ -22,6 +22,7 @@ use([
   BarChart,
   RadarChart,
   CustomChart,
+  TreemapChart,
   TitleComponent,
   TooltipComponent,
   LegendComponent,

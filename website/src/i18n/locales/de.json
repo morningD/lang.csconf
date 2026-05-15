@@ -35,7 +35,10 @@
     "accept_rate": "Akzeptanzrate",
     "accept_rate_history": "Verlauf der Akzeptanzrate",
     "rank_uncertain": "CCF 2011 (2. Ausgabe) Daten sind unvollständig und möglicherweise ungenau.",
-    "back_to_home": "Zurück zur Startseite"
+    "back_to_home": "Zurück zur Startseite",
+    "top_affiliations": "Top-Institutionen",
+    "affiliation_coverage": "Zugehörigkeitsdaten decken {covered} von {total} Papern ab",
+    "affiliation_source_note": "Daten von {sources}"
   },
   "compare": {
     "title": "Konferenzen vergleichen",
@@ -66,6 +69,13 @@
     "src_openreview": "Ergänzende Paperdaten und Akzeptanzraten für AI/ML-Konferenzen (NeurIPS, ICLR, ICML usw.) — oft Monate vor DBLP verfügbar",
     "src_ccf_pdf": "Konferenzliste, CCF-Rankings und Kategorien (aus offiziellen PDFs extrahiert)",
     "src_fasttext": "fastText lid.176.bin-Modell zur Sprachklassifikation von Namen",
+    "data_sources_affiliations": "Autorenzugehörigkeiten",
+    "src_or_affiliation": "Erstautoren-Zugehörigkeitsdaten aus OpenReview-Profilen (aktuelle Konferenzen)",
+    "src_martenlienen": "Vorkompilierter Zugehörigkeitsdatensatz für NeurIPS, ICML und ICLR (2006-2024)",
+    "src_papercopilot": "Vorkompilierte Zugehörigkeitsdaten für ICLR, CoRL u.a. (ab 2023)",
+    "src_openalex": "Erstautoren-Zugehörigkeitsdaten via Titelsuche. Die Abdeckung variiert je nach Verlag.",
+    "affiliation_accuracy": "Hinweis zur Zugehörigkeitsabdeckung",
+    "affiliation_accuracy_text": "Zugehörigkeitsdaten stammen aus mehreren Quellen mit unterschiedlicher Abdeckung. Historische Daten (NeurIPS/ICML/ICLR) nutzen vorkompilierte Datensätze mit 85-99% Abdeckung. Aktuelle Jahresdaten nutzen OpenReview-Profile. Andere Konferenzen nutzen OpenAlex, wo die Abdeckung vom Verlag abhängt. Der auf jeder Konferenzseite angezeigte Abdeckungsprozentsatz zeigt die Datenvollständigkeit an.",
     "accuracy": "Hinweis zur Genauigkeit",
     "accuracy_text": "Namensbasierte Sprachvorhersage ist von Natur aus ungenau. Viele Faktoren (Migration, Heirat, kulturelle Durchmischung) machen Namen zu unzuverlässigen Indikatoren. Alle Ergebnisse bitte als grobe Schätzungen betrachten — nicht zu ernst nehmen!",
     "data_cleaning": "Datenbereinigung",

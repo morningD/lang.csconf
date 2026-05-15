@@ -108,6 +108,43 @@ const { t } = useI18n()
               </div>
             </li>
           </ul>
+          <p class="text-gray-400 text-sm mt-4 mb-3">{{ t('about.data_sources_affiliations') }}</p>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://openreview.net" target="_blank" rel="noopener" class="text-blue-400 hover:underline">OpenReview</a>
+                — {{ t('about.src_or_affiliation') }}
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://github.com/martenlienen/icml-neurips-iclr-dataset" target="_blank" rel="noopener" class="text-blue-400 hover:underline">icml-neurips-iclr-dataset</a>
+                (martenlienen) — {{ t('about.src_martenlienen') }}
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://github.com/papercopilot/paperlists" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Paperlists</a>
+                (papercopilot) — {{ t('about.src_papercopilot') }}
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://openalex.org" target="_blank" rel="noopener" class="text-blue-400 hover:underline">OpenAlex</a>
+                — {{ t('about.src_openalex') }}
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Affiliation Accuracy -->
+        <section class="card p-6 bg-yellow-900/20 border-yellow-700/30">
+          <h2 class="text-xl font-semibold text-yellow-400 mb-3">{{ t('about.affiliation_accuracy') }}</h2>
+          <p class="text-gray-300 leading-relaxed">{{ t('about.affiliation_accuracy_text') }}</p>
         </section>
 
         <!-- Data Cleaning -->

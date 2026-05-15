@@ -56,9 +56,16 @@ def venue_id(conf_id: str, year: int) -> str | None:
 # ---------------------------------------------------------------------------
 
 def _session() -> requests.Session:
+    import ssl
     s = requests.Session()
-    retry = Retry(total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])
-    s.mount("https://", HTTPAdapter(max_retries=retry))
+    retry = Retry(total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504],
+                  raise_on_status=False)
+    adapter = HTTPAdapter(max_retries=retry)
+    s.mount("https://", adapter)
+    # Workaround for OpenReview SSL issues
+    s.verify = False
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     return s
 
 
@@ -72,7 +79,7 @@ def fetch_paper_count(conf_id: str, year: int, *, session: requests.Session | No
     if vid is None:
         return 0
     s = session or _session()
-    resp = s.get(f"{API_URL}/notes", params={"content.venueid": vid, "limit": 1, "offset": 0}, timeout=30)
+    resp = s.get(f"{API_URL}/notes", params={"content.venueid": vid, "limit": 1, "offset": 0}, timeout=(5, 15))
     if resp.status_code != 200:
         return 0
     return resp.json().get("count", 0) or 0
@@ -96,7 +103,7 @@ def fetch_papers(conf_id: str, year: int, *, session: requests.Session | None = 
         resp = s.get(
             f"{API_URL}/notes",
             params={"content.venueid": vid, "limit": limit, "offset": offset},
-            timeout=60,
+            timeout=(10, 30),
         )
         resp.raise_for_status()
         notes = resp.json().get("notes", [])

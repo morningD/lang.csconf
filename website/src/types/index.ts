@@ -29,6 +29,7 @@ export interface ConferenceDetail {
   rank_history?: Record<string, string>
   accept_rates?: Array<{ year: number; submitted: number; accepted: number }>
   note?: string
+  affiliations?: AffiliationData
 }
 
 export interface GlobalSummary {
@@ -61,3 +62,25 @@ export interface RankStats {
 
 export type CCFRank = 'A' | 'B' | 'C' | 'N'
 export type CCFCategory = 'AI' | 'DB' | 'NW' | 'SE' | 'CG' | 'CT' | 'HI' | 'SC' | 'DS' | 'MX'
+
+export interface AffiliationData {
+  total_covered: number
+  total_papers: number
+  coverage_pct: number
+  top: AffiliationEntry[]
+  by_year?: Record<string, AffiliationYearData>
+}
+
+export interface AffiliationEntry {
+  name: string
+  count: number
+  pct: number
+  country?: string
+}
+
+export interface AffiliationYearData {
+  total_covered: number
+  total_papers: number
+  coverage_pct: number
+  top: AffiliationEntry[]
+}
