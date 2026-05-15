@@ -69,6 +69,7 @@ export interface AffiliationData {
   coverage_pct: number
   top: AffiliationEntry[]
   by_year?: Record<string, AffiliationYearData>
+  sources?: string[]
 }
 
 export interface AffiliationEntry {

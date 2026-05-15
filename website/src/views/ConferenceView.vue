@@ -694,7 +694,7 @@ const affiliationChartOption = computed(() => {
               covered: `${conference.affiliations.total_covered} (${conference.affiliations.coverage_pct}%)`,
               total: conference.affiliations.total_papers
             }) }}
-            · <span v-html="sourceLinks(conference.affiliations.sources)" />
+            · <span v-html="sourceLinks(conference.affiliations.sources ?? [])" />
           </p>
           <v-chart :option="affiliationChartOption" style="height: 480px" autoresize />
         </div>
