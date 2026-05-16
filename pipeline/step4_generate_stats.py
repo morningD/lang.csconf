@@ -143,20 +143,436 @@ def load_affiliations() -> dict[str, dict[int, dict]]:
     return result
 
 
-def _normalize_institution(name: str) -> str:
-    """Normalize institution name from OpenReview/OpenAlex."""
-    # Remove trailing ", Same Name" pattern (OpenReview artifact)
+# Canonical institution mapping: raw_name → (canonical_name, country_code)
+# Covers all institutions appearing in any conference's top-10.
+# For entries with long addresses (papercopilot), we strip to the core institution.
+_INST_MAP: dict[str, tuple[str, str]] = {
+    # --- US Universities ---
+    "Stanford University": ("Stanford University", "US"),
+    "Carnegie Mellon University": ("Carnegie Mellon University", "US"),
+    "Massachusetts Institute of Technology": ("Massachusetts Institute of Technology", "US"),
+    "MIT": ("Massachusetts Institute of Technology", "US"),
+    "Princeton University": ("Princeton University", "US"),
+    "UC Berkeley": ("University of California, Berkeley", "US"),
+    "University of California, Berkeley": ("University of California, Berkeley", "US"),
+    "University of Southern California": ("University of Southern California", "US"),
+    "Georgia Institute of Technology": ("Georgia Institute of Technology", "US"),
+    "Harvard University": ("Harvard University", "US"),
+    "Cornell University": ("Cornell University", "US"),
+    "University of Washington": ("University of Washington", "US"),
+    "Duke University": ("Duke University", "US"),
+    "Columbia University": ("Columbia University", "US"),
+    "University of Pennsylvania": ("University of Pennsylvania", "US"),
+    "Johns Hopkins University": ("Johns Hopkins University", "US"),
+    "University of Maryland, College Park": ("University of Maryland, College Park", "US"),
+    "University of California, San Diego": ("University of California, San Diego", "US"),
+    "University of California San Diego": ("University of California, San Diego", "US"),
+    "University of California, Irvine": ("University of California, Irvine", "US"),
+    "University of Texas at Austin": ("University of Texas at Austin", "US"),
+    "University of Illinois at Urbana-Champaign": ("University of Illinois at Urbana-Champaign", "US"),
+    "University of Illinois, Urbana Champaign": ("University of Illinois at Urbana-Champaign", "US"),
+    "Purdue University": ("Purdue University", "US"),
+    "UNC Chapel Hill": ("University of North Carolina at Chapel Hill", "US"),
+    "Arizona State University": ("Arizona State University", "US"),
+    "University of Michigan - Ann Arbor": ("University of Michigan", "US"),
+    "Yale University": ("Yale University", "US"),
+    "Toyota Technological Institute at Chicago": ("Toyota Technological Institute at Chicago", "US"),
+    "Department of Computer Science": ("Department of Computer Science", "US"),
+    # CMU sub-units (papercopilot long addresses)
+    "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA": ("Carnegie Mellon University", "US"),
+    "The Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA": ("Carnegie Mellon University", "US"),
+    "The Robotics Institute, Carnegie Mellon University": ("Carnegie Mellon University", "US"),
+    "Robotics Institute, Carnegie Mellon University": ("Carnegie Mellon University", "US"),
+    "Language Technologies Institute, Carnegie Mellon University": ("Carnegie Mellon University", "US"),
+    "Mechanical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA": ("Carnegie Mellon University", "US"),
+    # MIT sub-units
+    "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology, Cambridge, MA, USA": ("Massachusetts Institute of Technology", "US"),
+    "Mechanical Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA": ("Massachusetts Institute of Technology", "US"),
+    # Other US sub-units
+    "Mechanical Engineering, Johns Hopkins University, Baltimore, MD, USA": ("Johns Hopkins University", "US"),
+    "Mechanical Engineering, University of California, Berkeley, CA, USA": ("University of California, Berkeley", "US"),
+    "GRASP Laboratory, University of Pennsylvania, Philadelphia, PA, USA": ("University of Pennsylvania", "US"),
+    "GRASP Laboratory, University of Pennsylvania": ("University of Pennsylvania", "US"),
+    "Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA": ("Georgia Institute of Technology", "US"),
+    # --- US Companies ---
+    "Google": ("Google", "US"),
+    "Google Research": ("Google", "US"),
+    "Amazon": ("Amazon", "US"),
+    "NVIDIA": ("NVIDIA", "US"),
+    "Microsoft Research": ("Microsoft Research", "US"),
+    "IBM Research": ("IBM Research", "US"),
+    "Adobe Research": ("Adobe", "US"),
+    "Adobe": ("Adobe", "US"),
+    # --- China Universities ---
+    "Tsinghua University": ("Tsinghua University", "CN"),
+    "Peking University": ("Peking University", "CN"),
+    "Zhejiang University": ("Zhejiang University", "CN"),
+    "University of Science and Technology of China": ("University of Science and Technology of China", "CN"),
+    "Shanghai Jiao Tong University": ("Shanghai Jiao Tong University", "CN"),
+    "Shanghai Jiaotong University": ("Shanghai Jiao Tong University", "CN"),
+    "Fudan University": ("Fudan University", "CN"),
+    "Harbin Institute of Technology": ("Harbin Institute of Technology", "CN"),
+    "Beijing University of Posts and Telecommunications": ("Beijing University of Posts and Telecommunications", "CN"),
+    "University of Electronic Science and Technology of China": ("University of Electronic Science and Technology of China", "CN"),
+    "Huazhong University of Science and Technology": ("Huazhong University of Science and Technology", "CN"),
+    "Renmin University of China": ("Renmin University of China", "CN"),
+    "Beihang University": ("Beihang University", "CN"),
+    "Shandong University": ("Shandong University", "CN"),
+    "Beijing Institute of Technology": ("Beijing Institute of Technology", "CN"),
+    "University of Chinese Academy of Sciences": ("University of Chinese Academy of Sciences", "CN"),
+    "University of Chinese Academy of Sciences, Beijing, China": ("University of Chinese Academy of Sciences", "CN"),
+    "Nanjing University": ("Nanjing University", "CN"),
+    # China sub-units
+    "College of Computer Science and Technology, Zhejiang University": ("Zhejiang University", "CN"),
+    "Gaoling School of Artificial Intelligence, Renmin University of China": ("Renmin University of China", "CN"),
+    "Wangxuan Institute of Computer Technology, Peking University": ("Peking University", "CN"),
+    "Computer Science, Fudan University": ("Fudan University", "CN"),
+    "College of Information Science and Electronic Engineering, Zhejiang University, Hangzhou, China": ("Zhejiang University", "CN"),
+    "National Key Laboratory for Novel Software Technology, Nanjing University, Nanjing 210023, China": ("Nanjing University", "CN"),
+    "Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China": ("Institute of Information Engineering, CAS", "CN"),
+    "College of Intelligence and Computing, Tianjin University, Tianjin, China": ("Tianjin University", "CN"),
+    "Computer Science and Technology, Soochow University, Suzhou, China": ("Soochow University", "CN"),
+    "Computer Science and Technology, Soochow University, China": ("Soochow University", "CN"),
+    "Computer Science and Information Engineering, National Taiwan University": ("National Taiwan University", "TW"),
+    # --- Hong Kong ---
+    "The Chinese University of Hong Kong": ("Chinese University of Hong Kong", "HK"),
+    "Chinese University of Hong Kong": ("Chinese University of Hong Kong", "HK"),
+    "The University of Hong Kong": ("University of Hong Kong", "HK"),
+    "University of Hong Kong": ("University of Hong Kong", "HK"),
+    "City University of Hong Kong": ("City University of Hong Kong", "HK"),
+    "Computer Science, Hong Kong Baptist University, Hong Kong SAR, China": ("Hong Kong Baptist University", "HK"),
+    # --- UK ---
+    "University of Oxford": ("University of Oxford", "GB"),
+    "University of Cambridge": ("University of Cambridge", "GB"),
+    # --- Germany ---
+    "Technical University of Munich": ("Technical University of Munich", "DE"),
+    "Computer Science, University of Freiburg, Germany": ("University of Freiburg", "DE"),
+    "Eberhard-Karls-Universität Tübingen": ("University of Tübingen", "DE"),
+    "Institute for Anthropomatics and Robotics, Karlsruhe Institute of Technology, Karlsruhe, Germany": ("Karlsruhe Institute of Technology", "DE"),
+    "Institute of Robotics and Mechatronics, German Aerospace Center (DLR), Wessling, Germany": ("German Aerospace Center (DLR)", "DE"),
+    "Technische Universität Wien": ("TU Wien", "AT"),
+    # --- Switzerland ---
+    "ETH Zürich": ("ETH Zurich", "CH"),
+    "ETHZ - ETH Zurich": ("ETH Zurich", "CH"),
+    # --- Canada ---
+    "University of Toronto": ("University of Toronto", "CA"),
+    # --- Singapore ---
+    "National University of Singapore": ("National University of Singapore", "SG"),
+    "Electrical and Electronic Engineering, Nanyang Technological University, Singapore": ("Nanyang Technological University", "SG"),
+    # --- Japan ---
+    "The University of Tokyo": ("University of Tokyo", "JP"),
+    "Graduate School of System Informatics, Kobe University": ("Kobe University", "JP"),
+    "Graduate School of Informatics, Kyoto University": ("Kyoto University", "JP"),
+    "Graduate School of Systems Engineering, Wakayama University": ("Wakayama University", "JP"),
+    # --- Korea ---
+    "KAIST": ("KAIST", "KR"),
+    "Seoul National University": ("Seoul National University", "KR"),
+    # --- Israel ---
+    "Tel Aviv University": ("Tel Aviv University", "IL"),
+    "Weizmann Institute of Science": ("Weizmann Institute of Science", "IL"),
+    # --- Australia ---
+    "Australian National University": ("Australian National University", "AU"),
+    # --- Italy ---
+    "Department of Advanced Robotics, Istituto Italiano di Tecnologia, Genova, Italy": ("Istituto Italiano di Tecnologia", "IT"),
+    # --- Netherlands ---
+    "University of Amsterdam": ("University of Amsterdam", "NL"),
+    # --- Finland ---
+    "University of Helsinki": ("University of Helsinki", "FI"),
+    "Tampere University": ("Tampere University", "FI"),
+    # --- Spain ---
+    "Universitat Pompeu Fabra": ("Universitat Pompeu Fabra", "ES"),
+    # --- UAE ---
+    "Mohamed bin Zayed University of Artificial Intelligence": ("MBZUAI", "AE"),
+    # Additional papercopilot variants (with/without address)
+    "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology": ("Massachusetts Institute of Technology", "US"),
+    "GRASP Lab, University of Pennsylvania": ("University of Pennsylvania", "US"),
+    "Mechanical Engineering, Stanford University, Stanford, CA, USA": ("Stanford University", "US"),
+    "University of Bonn, Germany": ("University of Bonn", "DE"),
+    # --- Major universities not in initial top-110 but common in raw data ---
+    "Nanyang Technological University": ("Nanyang Technological University", "SG"),
+    "New York University": ("New York University", "US"),
+    "University of California, Los Angeles": ("University of California, Los Angeles", "US"),
+    "ETH Zurich": ("ETH Zurich", "CH"),
+    "DeepMind": ("Google DeepMind", "GB"),
+    "Google DeepMind": ("Google DeepMind", "GB"),
+    "Google Brain": ("Google DeepMind", "GB"),
+    "Korea Advanced Institute of Science & Technology": ("KAIST", "KR"),
+    "Korea Advanced Institute of Science and Technology": ("KAIST", "KR"),
+    "Korea Advanced Institute of Science and Technology (KAIST)": ("KAIST", "KR"),
+    "Microsoft": ("Microsoft", "US"),
+    "Northeastern University": ("Northeastern University", "US"),
+    "Imperial College London": ("Imperial College London", "GB"),
+    "University of Michigan": ("University of Michigan", "US"),
+    "University of Michigan, Ann Arbor": ("University of Michigan", "US"),
+    "University of Michigan - Ann Arbor": ("University of Michigan", "US"),
+    "Hong Kong University of Science and Technology": ("HKUST", "HK"),
+    "The Hong Kong University of Science and Technology": ("HKUST", "HK"),
+    "HKUST": ("HKUST", "HK"),
+    "Alibaba Group": ("Alibaba", "CN"),
+    "EPFL": ("EPFL", "CH"),
+    "EPFL - EPF Lausanne": ("EPFL", "CH"),
+    "Apple": ("Apple", "US"),
+    "South China University of Technology": ("South China University of Technology", "CN"),
+    "Yonsei University": ("Yonsei University", "KR"),
+    "University of Illinois Urbana-Champaign": ("University of Illinois at Urbana-Champaign", "US"),
+    "UIUC": ("University of Illinois at Urbana-Champaign", "US"),
+    "University of British Columbia": ("University of British Columbia", "CA"),
+    "INRIA": ("INRIA", "FR"),
+    "Inria": ("INRIA", "FR"),
+    "University of Edinburgh": ("University of Edinburgh", "GB"),
+    "Boston University": ("Boston University", "US"),
+    "The University of Texas at Austin": ("University of Texas at Austin", "US"),
+    "University of Texas, Austin": ("University of Texas at Austin", "US"),
+    "UT Austin": ("University of Texas at Austin", "US"),
+    "University of Alberta": ("University of Alberta", "CA"),
+    "University of Chicago": ("University of Chicago", "US"),
+    "Rutgers University": ("Rutgers University", "US"),
+    "Wuhan University": ("Wuhan University", "CN"),
+    "Rice University": ("Rice University", "US"),
+    "Michigan State University": ("Michigan State University", "US"),
+    "University College London": ("University College London", "GB"),
+    "UCLA": ("University of California, Los Angeles", "US"),
+    "Xidian University": ("Xidian University", "CN"),
+    "ShanghaiTech University": ("ShanghaiTech University", "CN"),
+    "University of Waterloo": ("University of Waterloo", "CA"),
+    "University of Wisconsin-Madison": ("University of Wisconsin-Madison", "US"),
+    "University of Wisconsin - Madison": ("University of Wisconsin-Madison", "US"),
+    "Korea University": ("Korea University", "KR"),
+    "Southeast University": ("Southeast University", "CN"),
+    "Tianjin University": ("Tianjin University", "CN"),
+    "East China Normal University": ("East China Normal University", "CN"),
+    "Northwestern University": ("Northwestern University", "US"),
+    "ByteDance Inc.": ("ByteDance", "CN"),
+    "Pennsylvania State University": ("Pennsylvania State University", "US"),
+    "Brown University": ("Brown University", "US"),
+    "University of Maryland": ("University of Maryland, College Park", "US"),
+    "Facebook": ("Meta", "US"),
+    "Facebook AI Research": ("Meta", "US"),
+    "Meta": ("Meta", "US"),
+    "Meta AI": ("Meta", "US"),
+    "Institute of Automation, Chinese Academy of Sciences": ("Institute of Automation, CAS", "CN"),
+    "Nanjing University of Science and Technology": ("Nanjing University of Science and Technology", "CN"),
+    "Technion": ("Technion", "IL"),
+    "Technion - Israel Institute of Technology": ("Technion", "IL"),
+    "McGill University": ("McGill University", "CA"),
+    "Dalian University of Technology": ("Dalian University of Technology", "CN"),
+    "National University of Defense Technology": ("National University of Defense Technology", "CN"),
+    "University of California, Santa Barbara": ("University of California, Santa Barbara", "US"),
+    "Xi'an Jiaotong University": ("Xi'an Jiaotong University", "CN"),
+    "Xi'an Jiaotong University": ("Xi'an Jiaotong University", "CN"),
+    "Tongji University": ("Tongji University", "CN"),
+    "Sun Yat-sen University": ("Sun Yat-sen University", "CN"),
+    "SUN YAT-SEN UNIVERSITY": ("Sun Yat-sen University", "CN"),
+    "University of Virginia": ("University of Virginia", "US"),
+    "UC San Diego": ("University of California, San Diego", "US"),
+    "Texas A&M University": ("Texas A&M University", "US"),
+    "Texas A&M University - College Station": ("Texas A&M University", "US"),
+    "Xiamen University": ("Xiamen University", "CN"),
+    "University of Massachusetts Amherst": ("University of Massachusetts Amherst", "US"),
+    "Simon Fraser University": ("Simon Fraser University", "CA"),
+    "University of California Berkeley": ("University of California, Berkeley", "US"),
+    "The Chinese University of Hong Kong, Shenzhen": ("Chinese University of Hong Kong, Shenzhen", "CN"),
+    "The Ohio State University": ("Ohio State University", "US"),
+    "Ohio State University, Columbus": ("Ohio State University", "US"),
+    "National Taiwan University": ("National Taiwan University", "TW"),
+    "Aalto University": ("Aalto University", "FI"),
+    "Monash University": ("Monash University", "AU"),
+    "University of Sydney": ("University of Sydney", "AU"),
+    "The University of Sydney": ("University of Sydney", "AU"),
+    "California Institute of Technology": ("California Institute of Technology", "US"),
+    "Caltech": ("California Institute of Technology", "US"),
+    "The Hong Kong Polytechnic University": ("Hong Kong Polytechnic University", "HK"),
+    "Hong Kong Polytechnic University": ("Hong Kong Polytechnic University", "HK"),
+    "Shanghai Artificial Intelligence Laboratory": ("Shanghai AI Lab", "CN"),
+    "Shanghai AI Laboratory": ("Shanghai AI Lab", "CN"),
+    "Singapore Management University": ("Singapore Management University", "SG"),
+    "University of Tübingen": ("University of Tübingen", "DE"),
+    "Technische Universität München": ("Technical University of Munich", "DE"),
+    "Stony Brook University": ("Stony Brook University", "US"),
+    "University of Notre Dame": ("University of Notre Dame", "US"),
+    "OpenAI": ("OpenAI", "US"),
+    "Sichuan University": ("Sichuan University", "CN"),
+    "CMU": ("Carnegie Mellon University", "US"),
+    "CMU, Carnegie Mellon University": ("Carnegie Mellon University", "US"),
+    "Georgia Tech": ("Georgia Institute of Technology", "US"),
+    "University of Minnesota": ("University of Minnesota", "US"),
+    "University of Technology Sydney": ("University of Technology Sydney", "AU"),
+    "University of California, Davis": ("University of California, Davis", "US"),
+    "University of Copenhagen": ("University of Copenhagen", "DK"),
+    "Tencent AI Lab": ("Tencent", "CN"),
+    "Tencent": ("Tencent", "CN"),
+    "KAUST": ("KAUST", "SA"),
+    "King Abdullah University of Science and Technology": ("KAUST", "SA"),
+    "Delft University of Technology": ("Delft University of Technology", "NL"),
+    "MIT CSAIL": ("Massachusetts Institute of Technology", "US"),
+    "Stanford": ("Stanford University", "US"),
+    "University of Rochester": ("University of Rochester", "US"),
+    "Westlake University": ("Westlake University", "CN"),
+    "Rensselaer Polytechnic Institute": ("Rensselaer Polytechnic Institute", "US"),
+    "Nankai University": ("Nankai University", "CN"),
+    "Shenzhen University": ("Shenzhen University", "CN"),
+    "University of Utah": ("University of Utah", "US"),
+    "Politecnico di Milano": ("Politecnico di Milano", "IT"),
+    "University of Central Florida": ("University of Central Florida", "US"),
+    "Beijing Jiaotong University": ("Beijing Jiaotong University", "CN"),
+    "Oregon State University": ("Oregon State University", "US"),
+    "Huawei Noah's Ark Lab": ("Huawei", "CN"),
+    "Huawei Technologies Ltd.": ("Huawei", "CN"),
+    "KTH Royal Institute of Technology": ("KTH Royal Institute of Technology", "SE"),
+    "Virginia Tech": ("Virginia Tech", "US"),
+    "POSTECH": ("POSTECH", "KR"),
+    "Hong Kong Baptist University": ("Hong Kong Baptist University", "HK"),
+    "State Key Laboratory for Novel Software Technology, Nanjing University, China": ("Nanjing University", "CN"),
+    "State Key Lab of CAD&CG, Zhejiang University": ("Zhejiang University", "CN"),
+    "University of the Chinese Academy of Sciences": ("University of Chinese Academy of Sciences", "CN"),
+    "Southern University of Science and Technology": ("Southern University of Science and Technology", "CN"),
+    "Nanjing University of Aeronautics and Astronautics": ("Nanjing University of Aeronautics and Astronautics", "CN"),
+    "Bar-Ilan University": ("Bar-Ilan University", "IL"),
+    "Indian Institute of Science": ("Indian Institute of Science", "IN"),
+    "Sungkyunkwan University": ("Sungkyunkwan University", "KR"),
+    "Jilin University": ("Jilin University", "CN"),
+    "Washington University in St. Louis": ("Washington University in St. Louis", "US"),
+    "Northwestern Polytechnical University": ("Northwestern Polytechnical University", "CN"),
+    "Tokyo Institute of Technology": ("Tokyo Institute of Technology", "JP"),
+    "Osaka University": ("Osaka University", "JP"),
+    "Ohio State University": ("Ohio State University", "US"),
+    "University of Melbourne": ("University of Melbourne", "AU"),
+    "George Mason University": ("George Mason University", "US"),
+    "University of California, Santa Cruz": ("University of California, Santa Cruz", "US"),
+    "National Yang Ming Chiao Tung University": ("National Yang Ming Chiao Tung University", "TW"),
+    "École Polytechnique": ("École Polytechnique", "FR"),
+    "University of California, Riverside": ("University of California, Riverside", "US"),
+    "Max Planck Institute for Informatics": ("Max Planck Institute for Informatics", "DE"),
+    "Max Planck Institute for Intelligent Systems": ("Max Planck Institute for Intelligent Systems", "DE"),
+    "Microsoft Research Asia": ("Microsoft Research Asia", "CN"),
+    "AWS AI Labs": ("Amazon", "US"),
+    "CISPA Helmholtz Center for Information Security": ("CISPA", "DE"),
+    "Harbin Institute of Technology, Shenzhen": ("Harbin Institute of Technology, Shenzhen", "CN"),
+    "Université de Montréal": ("Université de Montréal", "CA"),
+    "University of Bristol": ("University of Bristol", "GB"),
+    "North Carolina State University": ("North Carolina State University", "US"),
+    "Rochester Institute of Technology": ("Rochester Institute of Technology", "US"),
+    "Dartmouth College": ("Dartmouth College", "US"),
+    "University of Pittsburgh": ("University of Pittsburgh", "US"),
+    "Eindhoven University of Technology": ("Eindhoven University of Technology", "NL"),
+    "University of North Carolina at Chapel Hill": ("University of North Carolina at Chapel Hill", "US"),
+    "Queen Mary University of London": ("Queen Mary University of London", "GB"),
+    "Delft University of Technology": ("Delft University of Technology", "NL"),
+    "Ludwig-Maximilians-Universität München": ("LMU Munich", "DE"),
+    "University of Trento": ("University of Trento", "IT"),
+    "Ant Group": ("Ant Group", "CN"),
+    "SenseTime Research": ("SenseTime", "CN"),
+    "Soochow University": ("Soochow University", "CN"),
+    "University of Freiburg": ("University of Freiburg", "DE"),
+    "Istituto Italiano di Tecnologia": ("Istituto Italiano di Tecnologia", "IT"),
+    "Karlsruhe Institute of Technology": ("Karlsruhe Institute of Technology", "DE"),
+    "German Aerospace Center (DLR)": ("German Aerospace Center (DLR)", "DE"),
+    "Kobe University": ("Kobe University", "JP"),
+    "Kyoto University": ("Kyoto University", "JP"),
+    "Wakayama University": ("Wakayama University", "JP"),
+    "Nanjing University": ("Nanjing University", "CN"),
+    "Tianjin University": ("Tianjin University", "CN"),
+    "DAMO Academy, Alibaba Group": ("Alibaba", "CN"),
+}
+
+
+def _normalize_institution(name: str) -> tuple[str, str]:
+    """Normalize institution name → (canonical_name, country_code).
+
+    Strategy:
+    1. Exact lookup in _INST_MAP
+    2. Pattern-based extraction: strip dept/school/lab prefixes, country/address suffixes
+    3. Match extracted core against known institution names
+    """
+    if not name:
+        return "", ""
+
+    name = name.strip()
+
+    # Direct lookup
+    if name in _INST_MAP:
+        return _INST_MAP[name]
+
+    # Case-insensitive lookup
+    name_lower = name.lower()
+    for key, val in _INST_MAP.items():
+        if key.lower() == name_lower:
+            return val
+
+    # Strip trailing ", Same Name" pattern (OpenReview artifact)
     parts = [p.strip() for p in name.split(",")]
     if len(parts) == 2 and parts[0].lower() == parts[1].lower():
         name = parts[0]
-    # Remove "Department of ..." prefixes
-    for prefix in ("Department of ", "School of ", "Faculty of "):
-        if name.startswith(prefix):
-            rest = name[len(prefix):]
-            # Only strip if rest looks like a university name
-            if any(kw in rest.lower() for kw in ("university", "institute", "college")):
-                name = rest
-    return name.strip()
+
+    # --- Pattern-based extraction ---
+    # Extract the likely core institution from "Dept/Lab/School, University, City, State, Country" patterns
+    # Strategy: find the part that contains "University", "Institute", "College", etc.
+    comma_parts = [p.strip() for p in name.split(",")]
+
+    # Try to find a comma-separated segment that looks like a known institution
+    core_candidates = []
+    for part in comma_parts:
+        pl = part.lower()
+        if any(kw in pl for kw in ("university", "institute", "college", "technol")):
+            core_candidates.append(part)
+
+    # If we found institution-like segments, try matching them
+    if core_candidates:
+        for candidate in core_candidates:
+            if candidate in _INST_MAP:
+                return _INST_MAP[candidate]
+            # Case-insensitive
+            cl = candidate.lower()
+            for key, val in _INST_MAP.items():
+                if key.lower() == cl:
+                    return val
+
+    # Try stripping known prefixes and re-matching
+    prefixes_to_strip = [
+        "Department of ", "Dept. of ", "School of ", "Faculty of ",
+        "College of ", "Graduate School of ",
+    ]
+    stripped = name
+    for prefix in prefixes_to_strip:
+        if stripped.startswith(prefix):
+            stripped = stripped[len(prefix):]
+            break
+
+    if stripped in _INST_MAP:
+        return _INST_MAP[stripped]
+    sl = stripped.lower()
+    for key, val in _INST_MAP.items():
+        if key.lower() == sl:
+            return val
+
+    # Strip address suffixes: ", City, ST, USA" / ", Country" / ", Country Code"
+    # Find the university/institute part and strip everything after the last university-like segment
+    address_suffixes = [
+        r",\s*[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*,\s*[A-Z]{2},\s*USA$",
+        r",\s*[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*,\s*[A-Z]{2}$",
+        r",\s*(?:China|Germany|France|Italy|UK|Japan|Korea|Singapore|Canada|Australia|India|Brazil|Spain|Netherlands|Switzerland|Austria|Sweden|Finland|Israel)$",
+        r",\s*[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*,\s*(?:China|Germany|France|Italy|UK|Japan|Korea|Singapore)$",
+        r",\s*(?:China|Germany|France|Italy|UK|Japan|Korea|Singapore|Canada|Australia)$",
+        r",\s*HK SAR,\s*China$",
+        r",\s*Hong Kong SAR,\s*China$",
+    ]
+    import re as _re
+    for suffix_re in address_suffixes:
+        cleaned = _re.sub(suffix_re, "", stripped)
+        if cleaned != stripped and cleaned in _INST_MAP:
+            return _INST_MAP[cleaned]
+        if cleaned != stripped:
+            cl2 = cleaned.lower()
+            for key, val in _INST_MAP.items():
+                if key.lower() == cl2:
+                    return val
+            stripped = cleaned
+
+    # Special: "X, Same X" → X (OpenReview duplication)
+    if len(comma_parts) == 2 and comma_parts[0].lower() == comma_parts[1].lower():
+        stripped = comma_parts[0]
+
+    return stripped, ""
 
 
 def compute_affiliation_top(affil_data: dict, top_n: int = 20) -> dict:
@@ -172,13 +588,17 @@ def compute_affiliation_top(affil_data: dict, top_n: int = 20) -> dict:
     inst_counts: dict[str, int] = defaultdict(int)
     inst_countries: dict[str, str] = {}
     for p in papers:
-        inst = p.get("institution")
-        if inst:
-            inst = _normalize_institution(inst)
-            inst_counts[inst] += 1
-            country = p.get("institution_country", "")
-            if country and inst not in inst_countries:
-                inst_countries[inst] = country
+        raw_inst = p.get("institution")
+        if raw_inst:
+            canon, country = _normalize_institution(raw_inst)
+            inst_counts[canon] += 1
+            # Prefer mapping country, fall back to raw data country
+            if country:
+                inst_countries[canon] = country
+            else:
+                raw_country = p.get("institution_country", "")
+                if raw_country and canon not in inst_countries:
+                    inst_countries[canon] = raw_country
 
     # Sort by count descending, take top-N
     sorted_insts = sorted(inst_counts.items(), key=lambda x: -x[1])[:top_n]
@@ -188,7 +608,7 @@ def compute_affiliation_top(affil_data: dict, top_n: int = 20) -> dict:
             "name": name,
             "count": count,
             "pct": round(100 * count / max(total, 1), 2),
-            **({"country": inst_countries[name]} if name in inst_countries else {}),
+            "country": inst_countries.get(name, ""),
         }
         for name, count in sorted_insts
     ]
