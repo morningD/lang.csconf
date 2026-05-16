@@ -474,9 +474,6 @@ _INST_MAP: dict[str, tuple[str, str]] = {
     "Tianjin University": ("Tianjin University", "CN"),
     "DAMO Academy, Alibaba Group": ("Alibaba", "CN"),
     # Remaining variants found in top-20s
-    "Massachusetts Institute of Technology (MIT)": ("Massachusetts Institute of Technology", "US"),
-    "University College London (UCL)": ("University College London", "GB"),
-    "King Abdullah University of Science and Technology (KAUST)": ("KAUST", "SA"),
     "Criteo": ("Criteo", "FR"),
     "York University": ("York University", "CA"),
     "Stevens Institute of Technology": ("Stevens Institute of Technology", "US"),
@@ -500,6 +497,9 @@ def _normalize_institution(name: str) -> tuple[str, str]:
         return "", ""
 
     name = name.strip()
+
+    # Strip trailing parenthetical abbreviations: "University (MIT)" → "University"
+    name = re.sub(r'\s*\([A-Z]{2,}(?:[- &][A-Z]+)*\)\s*$', '', name)
 
     # Direct lookup
     if name in _INST_MAP:
