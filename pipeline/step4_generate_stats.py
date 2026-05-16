@@ -473,6 +473,18 @@ _INST_MAP: dict[str, tuple[str, str]] = {
     "Nanjing University": ("Nanjing University", "CN"),
     "Tianjin University": ("Tianjin University", "CN"),
     "DAMO Academy, Alibaba Group": ("Alibaba", "CN"),
+    # Remaining variants found in top-20s
+    "Massachusetts Institute of Technology (MIT)": ("Massachusetts Institute of Technology", "US"),
+    "University College London (UCL)": ("University College London", "GB"),
+    "King Abdullah University of Science and Technology (KAUST)": ("KAUST", "SA"),
+    "Criteo": ("Criteo", "FR"),
+    "York University": ("York University", "CA"),
+    "Stevens Institute of Technology": ("Stevens Institute of Technology", "US"),
+    "Moscow Institute of Physics and Technology": ("Moscow Institute of Physics and Technology", "RU"),
+    "Courant Institute of Mathematical Sciences, NYU": ("New York University", "US"),
+    "Institue for Advanced Study, Princeton": ("Institute for Advanced Study", "US"),
+    "Saarland Informatics Campus, Max-Planck Institute": ("Max Planck Institute for Informatics", "DE"),
+    "Sorbonne Université - Faculté des Sciences (Paris VI)": ("Sorbonne Université", "FR"),
 }
 
 

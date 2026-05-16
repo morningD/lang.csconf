@@ -816,3 +816,12 @@ const affiliationChartOption = computed(() => {
 }
 </style>
 
+<style>
+/* Make ECharts SVG text selectable (for copying institution names) */
+.echarts svg text {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  cursor: text;
+}
+</style>
+
