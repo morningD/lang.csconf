@@ -4,13 +4,13 @@
 Visualizing linguistic diversity of first authors across CCF-rated CS conferences (2010–2026).
 Pipeline: conferences_base.json + CCF PDFs → DBLP SPARQL crawl → name classification → JSON stats → Vue 3 website.
 
-## Current Numbers (as of 2026-05-14)
+## Current Numbers (as of 2026-05-16)
 - **Conferences**: 416 in conferences_base.json, 413 in stats
 - **Papers**: 908,971
 - **Raw author files**: 5,830
 - **Venue entries**: 416
 - **Year notes entries**: 230 (covering noise, gaps, recoveries, and provenance tracking)
-- **Affiliation data**: 46 conference-years (NEURIPS 2010-2025, ICLR 2018-2026, ICML 2017-2025, CoRL 2021-2025, AISTATS 2025-2026, UAI 2024-2025, COLM 2024-2025), ~53,600 papers with affiliations (92.6% coverage)
+- **Affiliation data**: ~210 conference-years across 27 conferences (incl. CVPR, AAAI, ICRA, IROS, ACL, EMNLP, SIGGRAPH, etc.), ~150,000 papers with affiliations. Institution normalization via `_INST_MAP` (~250 entries) + pattern-based fallback in step4.
 
 ## CRITICAL: Safe Re-Crawl Procedure
 **NEVER run `--step 2 --force` without immediately following with `--step 2c --force`.**
@@ -150,14 +150,30 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 
 **Attribution:** About page credits OpenReview (CC BY 4.0), OpenAlex (CC0), martenlienen, papercopilot.
 
-**Institution normalization**: `_normalize_institution()` in step4 handles OpenReview artifacts (e.g., "Tsinghua University, Tsinghua University" → "Tsinghua University")
+**Institution normalization**: `_normalize_institution()` in step4 handles all institution name normalization → `(canonical_name, country_code)`. Returns a tuple, not just a string.
+- **Normalization pipeline** (in order):
+  1. Strip trailing parenthetical content: `re.sub(r'\s*\([^)]+\)\s*$', '', name)` — handles `(MIT)`, `(Guangzhou)`, `(Shenzhen)`, `(KAIST)` etc.
+  2. Exact lookup in `_INST_MAP` (~250 entries): raw name → (canonical, country)
+  3. Case-insensitive lookup fallback
+  4. OpenReview duplicate cleanup: "X, X" → "X"
+  5. Prefix stripping: "Department/School/Faculty of ..." → rest
+  6. Comma-separated segment matching: find the segment containing "university"/"institute" and match against map
+  7. Address suffix stripping: remove ", City, ST, USA" / ", Country" patterns
+- **Key design decisions & pitfalls:**
+  - **Parenthetical stripping is generic, not per-variant**: Don't add individual map entries for "(MIT)", "(UCL)", "(KAUST)" — one regex rule handles all. Only add map entries when the base name itself differs (e.g., "UC Berkeley" vs "University of California, Berkeley").
+  - **Campuses are merged, not split**: "HKUST (Guangzhou)" → "HKUST", "HIT (Shenzhen)" → "Harbin Institute of Technology". Different campuses are in the same country and we don't distinguish them.
+  - **papercopilot long addresses**: Many entries have full department + address (e.g., "Mechanical Engineering, MIT, Cambridge, MA, USA", "Computer Science, University of Freiburg, Germany"). The comma-segment matching + address stripping handles most of these. Remaining edge cases go in `_INST_MAP`.
+  - **Country codes come from the map, not raw data**: papercopilot has no country field, OpenReview is often empty. The `_INST_MAP` is the authoritative source for country codes. Raw `institution_country` is only used as fallback.
+  - **Only top-10 need normalization**: The mapping focuses on institutions appearing in any conference's top-10 (~110 unique names). New institutions entering top-10 in the future will need new map entries.
+  - **`_INST_MAP` vs `INST_ABBREV`**: `_INST_MAP` (in step4) maps raw → canonical names for aggregation. `INST_ABBREV` (in ConferenceView.vue) maps canonical → display abbreviations. Both dicts must stay in sync when adding new institutions.
 - **OpenAlex polite pool**: `mailto=morningd.github@gmail.com`, $1/day free budget, resets at midnight UTC
 - **Output**: `data/raw/affiliations/{CONF}_{YEAR}.json` with `{papers: [{title, first_author, institution, institution_country, ...}], source: "openreview"|"openalex"}`
 - **Stats**: step4 aggregates into top-20 institutions per conference with country codes + `sources` list
 - **UI**: Conference detail page shows "Top Affiliations" section with:
-  - Horizontal bar chart (ECharts): top 20 institutions, lavender-to-violet gradient bars, rounded corners
+  - Horizontal bar chart (ECharts SVG renderer): top 20 institutions, lavender-to-violet gradient bars, rounded corners
+  - **SVG renderer** (`SVGRenderer` in main.ts, NOT `CanvasRenderer`): Required so chart text labels are selectable/copyable. Canvas-rendered text is not selectable. CSS `user-select: text` on `.echarts svg text` overrides ECharts' default `user-select: none`.
   - **Country flags**: Emoji flags rendered via ECharts rich text (`{flag|emoji}`), fontSize 18 (1.5x the 12px text) for prominence
-  - **Institution abbreviations**: `INST_ABBREV` dict (35+ entries) maps long names to short forms (e.g., "Carnegie Mellon University" → "CMU", "University of Illinois Urbana-Champaign" → "UIUC")
+  - **Institution abbreviations**: `INST_ABBREV` dict (85+ entries) maps canonical names to short forms (e.g., "Carnegie Mellon University" → "CMU", "University of Illinois at Urbana-Champaign" → "UIUC")
   - **Country flag overrides**: `COUNTRY_OVERRIDES` maps TW → CN (political sensitivity)
   - **Data source display**: Dynamic links to data sources (OpenReview, OpenAlex, Marten Lienen et al., PaperCopilot) via `SOURCE_NAMES` mapping with `{label, url}` — rendered as blue hyperlinks with " + " separator
   - **Coverage note**: Shows "Affiliation data covers N (P%) of M papers · Source1 + Source2"
@@ -173,7 +189,7 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
   ```
 - **Profile cache**: Persistent JSON cache at `data/raw/affiliations/_profile_cache.json` (~19,700 entries), shared across conferences
 
-**Completed affiliation data (as of 2026-05-15):**
+**Completed affiliation data (as of 2026-05-16):**
 
 | Conference | Years | Coverage | Source |
 |-----------|-------|----------|--------|
@@ -185,13 +201,22 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 | ICLR | 2026 | 82% | OpenReview (current year) |
 | ICML | 2017-2024 | 97-99% | martenlienen |
 | ICML | 2025 | 84% | OpenReview (current year) |
-| CoRL | 2021-2024 | 85-92% | papercopilot |
-| CoRL | 2025 | 77% | OpenReview (current year) |
-| AISTATS | 2025-2026 | 77-80% | OpenReview (current year) |
-| UAI | 2024-2025 | 74-76% | OpenReview |
-| COLM | 2024-2025 | 72-73% | OpenReview |
+| CVPR | 2013-2025 | 84% | papercopilot |
+| AAAI | 2021-2025 | 94% | papercopilot |
+| ACL | 2021-2025 | 95% | papercopilot |
+| ACMSIGGRAPH | 2010-2025 | 61% | papercopilot |
+| ICRA | 2010-2024 | 95% | papercopilot |
+| IROS | 2010-2024 | 98% | papercopilot |
+| EMNLP | 2021-2024 | 86% | papercopilot |
+| IJCAI | 2020-2024 | 95% | papercopilot |
+| COLT | 2011-2024 | 95% | papercopilot |
+| AISTATS | 2010-2025 | 88% | papercopilot |
+| CORL | 2021-2025 | 84% | papercopilot + OpenReview |
+| RSS | 2010-2025 | 72% | papercopilot |
+| WACV | 2020-2025 | 90% | papercopilot |
+| + 7 more (ACML, ACMMM, ICCV, WWW, COLING, NAACL, UAI, etc.) | | 60-98% | papercopilot |
 
-Total: 46 conference-years, ~53,600 papers with affiliations (92.6% average coverage). Profile cache: ~19,700 entries.
+Total: ~210 conference-years across 27 conferences, ~150,000 papers with affiliations.
 
 ## Key Technical Details
 
