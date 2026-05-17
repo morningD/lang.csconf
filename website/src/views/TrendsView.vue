@@ -293,7 +293,7 @@ const countryFlag = (code: string) => {
 }
 
 // Affiliation rank filter: 'ALL' or 'A'
-const affilRank = ref<'ALL' | 'A'>('ALL')
+const affilRank = ref<'ALL' | 'A'>('A')
 
 // Active affiliation slice based on category + rank filters
 const activeAffilSlice = computed<AffiliationTrendSlice | null>(() => {
@@ -313,6 +313,19 @@ const AFFIL_COLORS = [
   '#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de',
   '#3ba272', '#fc8452', '#9a60b4', '#ea7ccc', '#48b8d0',
 ]
+
+// Stable color per institution name (consistent across modes)
+const instColorCache = new Map<string, string>()
+function instColor(name: string): string {
+  let c = instColorCache.get(name)
+  if (c) return c
+  // Simple hash → pick from AFFIL_COLORS
+  let hash = 0
+  for (let i = 0; i < name.length; i++) hash = ((hash << 5) - hash + name.charCodeAt(i)) | 0
+  c = AFFIL_COLORS[Math.abs(hash) % AFFIL_COLORS.length]!
+  instColorCache.set(name, c)
+  return c
+}
 
 const affilChartOption = computed(() => {
   const slice = activeAffilSlice.value
@@ -398,6 +411,8 @@ const affilChartOption = computed(() => {
   return {
     tooltip: {
       trigger: 'axis',
+      confine: true,
+      extraCssText: 'max-width: 320px; white-space: normal; word-break: break-word;',
       formatter: (params: any) => {
         if (!Array.isArray(params)) return ''
         const year = params[0].axisValue
@@ -427,7 +442,7 @@ const affilChartOption = computed(() => {
       splitLine: { lineStyle: { color: '#333' } },
     },
     series: top10.map((name, i) => {
-      const color = AFFIL_COLORS[i % AFFIL_COLORS.length]
+      const color = instColor(name)
       const flag = institutions[name]?.country ? countryFlag(institutions[name].country) : ''
       const label = flag ? `${abbreviateInst(name)} ${flag}` : abbreviateInst(name)
       return {
