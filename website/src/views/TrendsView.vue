@@ -310,8 +310,10 @@ const activeAffilSlice = computed<AffiliationTrendSlice | null>(() => {
 const affilMode = ref<'absolute' | 'ratio' | 'cumulative'>('ratio')
 
 const AFFIL_COLORS = [
-  '#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de',
-  '#3ba272', '#fc8452', '#9a60b4', '#ea7ccc', '#48b8d0',
+  '#e6194b', '#3cb44b', '#4363d8', '#f58231', '#911eb4',
+  '#42d4f4', '#f032e6', '#bfef45', '#fabed4', '#469990',
+  '#dcbeff', '#9A6324', '#fffac8', '#800000', '#aaffc3',
+  '#808000', '#ffd8b1', '#000075', '#a9a9a9', '#000000',
 ]
 
 // Stable color per institution name (consistent across modes)
