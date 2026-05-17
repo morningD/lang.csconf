@@ -309,22 +309,15 @@ const activeAffilSlice = computed<AffiliationTrendSlice | null>(() => {
 
 const affilMode = ref<'absolute' | 'ratio' | 'cumulative'>('ratio')
 
-const AFFIL_COLORS = [
-  '#e6194b', '#3cb44b', '#4363d8', '#f58231', '#911eb4',
-  '#42d4f4', '#f032e6', '#bfef45', '#fabed4', '#469990',
-  '#dcbeff', '#9A6324', '#fffac8', '#800000', '#aaffc3',
-  '#808000', '#ffd8b1', '#000075', '#a9a9a9', '#000000',
-]
-
-// Stable color per institution name (consistent across modes)
+// Stable color per institution — golden angle hue for max distinction, bright on dark bg
 const instColorCache = new Map<string, string>()
 function instColor(name: string): string {
   let c = instColorCache.get(name)
   if (c) return c
-  // Simple hash → pick from AFFIL_COLORS
   let hash = 0
   for (let i = 0; i < name.length; i++) hash = ((hash << 5) - hash + name.charCodeAt(i)) | 0
-  c = AFFIL_COLORS[Math.abs(hash) % AFFIL_COLORS.length]!
+  const hue = ((Math.abs(hash) * 137.508) % 360) | 0
+  c = `hsl(${hue}, 70%, 65%)`
   instColorCache.set(name, c)
   return c
 }
@@ -413,22 +406,7 @@ const affilChartOption = computed(() => {
   return {
     tooltip: {
       trigger: 'axis',
-      confine: true,
-      extraCssText: 'max-width: 320px; white-space: normal; word-break: break-word;',
-      formatter: (params: any) => {
-        if (!Array.isArray(params)) return ''
-        const year = params[0].axisValue
-        const lines = params.map((p: any) => {
-          const flag = institutions[p.seriesName]?.country
-            ? countryFlag(institutions[p.seriesName]!.country)
-            : ''
-          const displayVal = showPct
-            ? `${Math.round(p.value * 100) / 100}%`
-            : String(p.value)
-          return `${flag} ${p.seriesName}: ${displayVal}`
-        })
-        return year + '\n' + lines.join('\n')
-      },
+      valueFormatter: showPct ? (v: number) => `${Math.round(v * 100) / 100}%` : undefined,
     },
     grid: { left: '3%', right: 140, bottom: '3%', top: 10, containLabel: false },
     xAxis: {
