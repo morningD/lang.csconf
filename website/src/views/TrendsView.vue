@@ -309,17 +309,27 @@ const activeAffilSlice = computed<AffiliationTrendSlice | null>(() => {
 
 const affilMode = ref<'absolute' | 'ratio' | 'cumulative'>('ratio')
 
-// Stable color per institution — golden angle hue for max distinction, bright on dark bg
-const instColorCache = new Map<string, string>()
-function instColor(name: string): string {
-  let c = instColorCache.get(name)
-  if (c) return c
-  let hash = 0
-  for (let i = 0; i < name.length; i++) hash = ((hash << 5) - hash + name.charCodeAt(i)) | 0
-  const hue = ((Math.abs(hash) * 137.508) % 360) | 0
-  c = `hsl(${hue}, 70%, 65%)`
-  instColorCache.set(name, c)
-  return c
+// 10 hand-picked colors: max visual distinction, bright enough for dark bg
+const PALETTE = [
+  '#e06c75', // red
+  '#61afef', // blue
+  '#98c379', // green
+  '#e5c07b', // yellow
+  '#c678dd', // purple
+  '#56b6c2', // cyan
+  '#d19a66', // orange
+  '#be5046', // dark red
+  '#7ec8e3', // sky blue
+  '#c3a6ff', // lavender
+]
+
+// Assign colors to a set of institution names deterministically:
+// sort names alphabetically, assign palette by position, return map
+function assignColors(names: string[]): Map<string, string> {
+  const sorted = [...names].sort()
+  const map = new Map<string, string>()
+  sorted.forEach((name, i) => map.set(name, PALETTE[i % PALETTE.length]!))
+  return map
 }
 
 const affilChartOption = computed(() => {
@@ -338,6 +348,9 @@ const affilChartOption = computed(() => {
   }
   totals.sort((a, b) => b[1] - a[1])
   const top10 = totals.slice(0, 10).map(([name]) => name)
+
+  // Assign stable colors to this set of institutions
+  const colorMap = assignColors(top10)
 
   const showPct = mode === 'ratio'
 
@@ -422,7 +435,7 @@ const affilChartOption = computed(() => {
       splitLine: { lineStyle: { color: '#333' } },
     },
     series: top10.map((name, i) => {
-      const color = instColor(name)
+      const color = colorMap.get(name)!
       const flag = institutions[name]?.country ? countryFlag(institutions[name].country) : ''
       const label = flag ? `${abbreviateInst(name)} ${flag}` : abbreviateInst(name)
       return {
