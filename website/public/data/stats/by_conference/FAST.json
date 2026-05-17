@@ -401,5 +401,36 @@
       "status": "virtual",
       "note": "Virtual event due to COVID-19. SPARQL returned 0 (gap), 28 papers recovered via Search API + HTML fallback. DBLP venue page has no h2 heading for 2021."
     }
+  },
+  "affiliations": {
+    "total_covered": 1,
+    "total_papers": 131,
+    "coverage_pct": 0.8,
+    "top": [
+      {
+        "name": "Google",
+        "count": 1,
+        "pct": 0.76,
+        "country": "US"
+      }
+    ],
+    "by_year": {
+      "2023": {
+        "total_covered": 1,
+        "total_papers": 29,
+        "coverage_pct": 3.4,
+        "top": [
+          {
+            "name": "Google",
+            "count": 1,
+            "pct": 3.45,
+            "country": "US"
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }

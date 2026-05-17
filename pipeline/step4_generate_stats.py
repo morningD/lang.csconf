@@ -999,7 +999,129 @@ def run(force: bool = False):
     index.sort(key=lambda c: (-c["total_papers"],))
     _write_json(STATS_DIR / "conferences_index.json", index)
 
+    # 7. affiliation_trends.json — institution trends for the Trends page
+    generate_affiliation_trends(all_affiliations, conf_meta)
+
     print(f"Stats generated: {total_papers} papers across {len(conf_years_seen)} conferences → {STATS_DIR}")
+
+
+def generate_affiliation_trends(
+    all_affiliations: dict[str, dict[int, dict]],
+    conf_meta_map: dict[str, dict],
+) -> None:
+    """Generate affiliation_trends.json for the Trends page.
+
+    Aggregates institution counts by year across all conferences,
+    broken down by category and rank (A only).
+    """
+    # Accumulators: {slice_key: {year: {institution: count}}}
+    global_inst: dict[int, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    cat_inst: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    rank_inst: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    inst_countries: dict[str, str] = {}
+
+    # Coverage tracking: {slice_key: {year: {covered, total}}}
+    global_cov: dict[int, dict[str, int]] = defaultdict(lambda: {"covered": 0, "total": 0})
+    cat_cov: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: {"covered": 0, "total": 0}))
+    rank_cov: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: {"covered": 0, "total": 0}))
+
+    # Conference-years per year per slice
+    global_conf_years: dict[int, set[str]] = defaultdict(set)
+    cat_conf_years: dict[str, dict[int, set[str]]] = defaultdict(lambda: defaultdict(set))
+    rank_conf_years: dict[str, dict[int, set[str]]] = defaultdict(lambda: defaultdict(set))
+
+    for conf_id, years_data in all_affiliations.items():
+        meta = conf_meta_map.get(conf_id, {})
+        category = meta.get("category", "MX")
+        rank = meta.get("rank", "N")
+
+        for year, affil_data in years_data.items():
+            if year < YEAR_FLOOR or year > year_ceiling():
+                continue
+
+            papers = affil_data.get("papers", [])
+            total_papers = affil_data.get("total_papers", len(papers))
+            covered = sum(1 for p in papers if p.get("institution"))
+
+            # Update coverage
+            global_cov[year]["covered"] += covered
+            global_cov[year]["total"] += total_papers
+            cat_cov[category][year]["covered"] += covered
+            cat_cov[category][year]["total"] += total_papers
+            rank_cov[rank][year]["covered"] += covered
+            rank_cov[rank][year]["total"] += total_papers
+
+            global_conf_years[year].add(conf_id)
+            cat_conf_years[category][year].add(conf_id)
+            rank_conf_years[rank][year].add(conf_id)
+
+            for p in papers:
+                raw_inst = p.get("institution")
+                if not raw_inst:
+                    continue
+                canon, country = _normalize_institution(raw_inst)
+                if not canon:
+                    continue
+                if country:
+                    inst_countries[canon] = country
+                global_inst[year][canon] += 1
+                cat_inst[category][year][canon] += 1
+                rank_inst[rank][year][canon] += 1
+
+    def _build_slice(
+        inst_data: dict[int, dict[str, int]],
+        cov_data: dict[int, dict[str, int]],
+        conf_yrs: dict[int, set[str]],
+    ) -> dict:
+        if not inst_data:
+            return None
+        years = sorted(inst_data.keys())
+        # Aggregate total per institution across all years
+        totals: dict[str, int] = defaultdict(int)
+        for yr_data in inst_data.values():
+            for inst, cnt in yr_data.items():
+                totals[inst] += cnt
+        institutions = {}
+        for inst in totals:
+            institutions[inst] = {
+                "country": inst_countries.get(inst, ""),
+                "by_year": {str(y): inst_data[y].get(inst, 0) for y in years},
+            }
+        return {
+            "years": [str(y) for y in years],
+            "institutions": institutions,
+            "total_by_year": {str(y): sum(inst_data[y].values()) for y in years},
+            "coverage_by_year": {
+                str(y): {"covered": cov_data[y]["covered"], "total": cov_data[y]["total"]}
+                for y in years
+            },
+            "conferences_by_year": {str(y): sorted(conf_yrs[y]) for y in years},
+        }
+
+    result = {}
+    g = _build_slice(global_inst, global_cov, global_conf_years)
+    if g:
+        result["global"] = g
+
+    # by_category: only categories with data
+    by_cat = {}
+    for cat in sorted(cat_inst):
+        s = _build_slice(cat_inst[cat], cat_cov[cat], cat_conf_years[cat])
+        if s:
+            by_cat[cat] = s
+    if by_cat:
+        result["by_category"] = by_cat
+
+    # by_rank: only rank A for now
+    if "A" in rank_inst:
+        s = _build_slice(rank_inst["A"], rank_cov["A"], rank_conf_years["A"])
+        if s:
+            result["by_rank"] = {"A": s}
+
+    _write_json(STATS_DIR / "affiliation_trends.json", result)
+    total_insts = len(result.get("global", {}).get("institutions", {}))
+    total_years = len(result.get("global", {}).get("years", []))
+    print(f"Affiliation trends: {total_insts} institutions across {total_years} years")
 
 
 def _sum_dicts(dicts) -> dict:

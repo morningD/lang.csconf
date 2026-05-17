@@ -85,3 +85,17 @@ export interface AffiliationYearData {
   coverage_pct: number
   top: AffiliationEntry[]
 }
+
+export interface AffiliationTrends {
+  global: AffiliationTrendSlice
+  by_category: Record<string, AffiliationTrendSlice>
+  by_rank: Record<string, AffiliationTrendSlice>
+}
+
+export interface AffiliationTrendSlice {
+  years: string[]
+  institutions: Record<string, { country: string; by_year: Record<string, number> }>
+  total_by_year: Record<string, number>
+  coverage_by_year: Record<string, { covered: number; total: number }>
+  conferences_by_year?: Record<string, string[]>
+}

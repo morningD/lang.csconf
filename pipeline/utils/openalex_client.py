@@ -3,31 +3,60 @@
 OpenAlex (openalex.org) provides structured institution data (ROR IDs,
 display names, raw affiliation strings) for scholarly works. Coverage
 depends on publisher: IEEE/ACM/Springer papers typically have 70-90%
-affiliation coverage; arXiv/Curran Associates papers have near-zero.
+affiliation coverage; USENIX/arXiv have near-zero.
 
-Rate limit: 10 req/sec in the polite pool (with mailto parameter).
+Rate limit: $1/day free per API key. title.search costs $0.001/query.
+Multiple keys rotate for higher daily throughput.
 """
 
 from __future__ import annotations
 
+import itertools
 import time
+from pathlib import Path
 
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 API_URL = "https://api.openalex.org"
-MAILTO = "morningd.github@gmail.com"
+
+# Load API keys from external file (not tracked in git)
+_KEYS_FILE = Path(__file__).resolve().parents[2] / "scripts" / "openalex_keys.txt"
+
+
+def _load_keys() -> list[str]:
+    """Load API keys from scripts/openalex_keys.txt, one per line."""
+    keys: list[str] = []
+    if _KEYS_FILE.exists():
+        for line in _KEYS_FILE.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#"):
+                keys.append(line)
+    if not keys:
+        # Fallback to polite pool (no key, lower rate limit)
+        return []
+    return keys
+
+
+_API_KEYS = _load_keys()
+_key_cycle = itertools.cycle(_API_KEYS) if _API_KEYS else None
 
 # Fields we need from the works endpoint
 _WORK_FIELDS = "id,doi,title,authorships"
 
 
-def _session() -> requests.Session:
+def _session(api_key: str | None = None) -> requests.Session:
     s = requests.Session()
     retry = Retry(total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])
     s.mount("https://", HTTPAdapter(max_retries=retry))
-    s.params = {"mailto": MAILTO}
+    if api_key:
+        s.params = {"api_key": api_key}
+    elif _key_cycle:
+        s.params = {"api_key": next(_key_cycle)}
+    else:
+        # Polite pool fallback (no key)
+        s.params = {"mailto": "morningd.github@gmail.com"}
     return s
 
 

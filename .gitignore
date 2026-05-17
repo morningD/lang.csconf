@@ -47,6 +47,12 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Secrets
+scripts/openalex_keys.txt
+
+# Temporary crawl logs
+data/raw/affiliations/_crawl_log.txt
+
 # ML model files
 *.bin
 *.ftz

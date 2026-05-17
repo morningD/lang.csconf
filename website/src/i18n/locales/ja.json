@@ -37,7 +37,6 @@
     "rank_uncertain": "CCF 2011年（第2版）のデータは不完全で、不正確な場合があります。",
     "back_to_home": "ホームに戻る",
     "top_affiliations": "トップ機関",
-    "affiliation_coverage": "所属機関データは {total} 論文中 {covered} 論文をカバー",
     "affiliation_source_note": "データ提供：{sources}"
   },
   "compare": {
@@ -50,10 +49,15 @@
   },
   "trends": {
     "title": "グローバルトレンド",
-    "subtitle": "CS研究の言語地図はどう変わってきたのか",
+    "subtitle": "CS研究の変遷 — 言語、機関、そして更多",
     "filter_by_category": "カテゴリで絞り込み",
     "filter_by_rank": "ランクで絞り込み",
-    "year_over_year": "年次トレンド"
+    "year_over_year": "言語トレンド",
+    "affiliation_title": "トップ機関トレンド",
+    "affiliation_all": "すべて",
+    "affiliation_no_data": "このフィルター条件では機関データがありません",
+    "affiliation_coverage": "機関データ：{conferences}会議、{years}年、{pct}%カバレッジ",
+    "affiliation_lag_note": "{year}年のデータは不完全な可能性があります。"
   },
   "about": {
     "title": "このプロジェクトについて",
