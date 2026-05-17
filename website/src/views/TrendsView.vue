@@ -335,7 +335,7 @@ const affilChartOption = computed(() => {
 
   // Helper to compute chart value for a given institution/year
   const chartVal = (name: string, y: string, idx: number) => {
-    const val = institutions[name].by_year[y] || 0
+    const val = institutions[name]?.by_year?.[y] || 0
     if (mode === 'ratio') {
       const totalYear = slice.total_by_year[y] || 1
       return totalYear > 0 ? Math.round(val / totalYear * 10000) / 100 : 0
@@ -343,7 +343,7 @@ const affilChartOption = computed(() => {
     if (mode === 'cumulative') {
       let sum = 0
       for (let j = 0; j <= idx; j++) {
-        sum += institutions[name].by_year[years[j]] || 0
+        sum += institutions[name]?.by_year?.[years[j]!] || 0
       }
       return sum
     }
@@ -351,8 +351,8 @@ const affilChartOption = computed(() => {
   }
 
   // Sort top10 by last-year value DESC; tiebreak by previous year DESC
-  const lastY = years[years.length - 1]
-  const prevY = years.length >= 2 ? years[years.length - 2] : lastY
+  const lastY = years[years.length - 1]!
+  const prevY = years.length >= 2 ? years[years.length - 2]! : lastY
   top10.sort((a, b) => {
     const va = chartVal(a, lastY, years.length - 1)
     const vb = chartVal(b, lastY, years.length - 1)
@@ -366,7 +366,7 @@ const affilChartOption = computed(() => {
   const allVals: number[] = []
   for (const name of top10) {
     for (let idx = 0; idx < years.length; idx++) {
-      allVals.push(chartVal(name, years[idx], idx))
+      allVals.push(chartVal(name, years[idx]!, idx))
     }
   }
   const dataMax = Math.max(...allVals, 1)
@@ -389,9 +389,9 @@ const affilChartOption = computed(() => {
   const labelPixelY = lastVals.map(toPixelY)
   const labelDy: number[] = new Array(top10.length).fill(0)
   for (let i = 1; i < top10.length; i++) {
-    const prevEffectiveY = labelPixelY[i - 1] + labelDy[i - 1]
-    if (labelPixelY[i] - prevEffectiveY < minLabelGap) {
-      labelDy[i] = prevEffectiveY + minLabelGap - labelPixelY[i]
+    const prevEffectiveY = labelPixelY[i - 1]! + labelDy[i - 1]!
+    if (labelPixelY[i]! - prevEffectiveY < minLabelGap) {
+      labelDy[i] = prevEffectiveY + minLabelGap - labelPixelY[i]!
     }
   }
 
@@ -403,7 +403,7 @@ const affilChartOption = computed(() => {
         const year = params[0].axisValue
         const lines = params.map((p: any) => {
           const flag = institutions[p.seriesName]?.country
-            ? countryFlag(institutions[p.seriesName].country)
+            ? countryFlag(institutions[p.seriesName]!.country)
             : ''
           const displayVal = showPct
             ? `${Math.round(p.value * 100) / 100}%`
