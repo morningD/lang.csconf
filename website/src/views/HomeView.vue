@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
 import type { Meta, GlobalSummary, ConferenceIndex, CCFRank, RankStats } from '@/types'
 
 const { t } = useI18n()
 const router = useRouter()
+const route = useRoute()
 const { fetchMeta, fetchGlobalSummary, fetchConferencesIndex, fetchRank } = useDataFetch()
 
 const meta = ref<Meta | null>(null)
@@ -14,8 +15,12 @@ const summary = ref<GlobalSummary | null>(null)
 const conferences = ref<ConferenceIndex[]>([])
 const loading = ref(true)
 const searchQuery = ref('')
-const activeRanks = ref<Set<CCFRank>>(new Set(['A']))
-const activeCategory = ref('ALL')
+
+// Initialize filters from URL query params
+const activeRanks = ref<Set<CCFRank>>(new Set(
+  (route.query.rank as string || 'A').split(',').filter(Boolean) as CCFRank[]
+))
+const activeCategory = ref((route.query.category as string) || 'ALL')
 
 const categories = ['ALL', 'AI', 'DB', 'NW', 'SE', 'CG', 'CT', 'HI', 'SC', 'DS', 'MX']
 const categoryNames: Record<string, string> = {
@@ -58,6 +63,17 @@ function toggleRank(rank: CCFRank) {
   }
   activeRanks.value = s
 }
+
+// Sync filters to URL query params (without adding history entries)
+watch([activeRanks, activeCategory], () => {
+  router.replace({
+    query: {
+      ...route.query,
+      rank: [...activeRanks.value].sort().join(','),
+      category: activeCategory.value,
+    }
+  })
+}, { deep: true })
 const sortKey = ref('default')
 const sortDir = ref<'desc' | 'asc'>('desc')
 const sortOptions = [
