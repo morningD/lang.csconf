@@ -36,6 +36,9 @@ EXPECTED_YEARS = expected_years_range()
 # than MIN_EXPECTED, it's a gap.
 MAX_SPARQL_FOR_GAP = 20
 MIN_EXPECTED_FOR_GAP = 30
+# Underfill ratio: if paper count < median * this ratio, treat as underfilled gap
+# (e.g., 20 papers when median is 179 is clearly incomplete)
+UNDERFILL_RATIO = 0.4
 
 
 def _safe_filename(conf_id: str) -> str:
@@ -66,25 +69,24 @@ def _get_venue_years(conf_id: str) -> set[int]:
     return {int(y) for y in data.get("venues", {}).keys()}
 
 
-def _local_median(year_counts: dict[int, tuple[int, dict]], venue_years: set[int],
-                   target_year: int, window: int = 3) -> int:
-    """Compute median paper count using a ±window year range around target_year.
+def _local_max(year_counts: dict[int, tuple[int, dict]], venue_years: set[int],
+                target_year: int, window: int = 3) -> int:
+    """Get max paper count from prior years (only before target_year).
 
-    Only considers years with venue data (conference actually happened).
-    Falls back to global median if the window has fewer than 2 data points.
+    Only looks backward to avoid false positives from natural conference growth.
+    e.g., 2011 shouldn't be compared against 2014 which naturally has more papers.
+    Falls back to any prior year if the window has no data.
     """
-    window_counts = sorted(
+    window_counts = [
         c for y, (c, _) in year_counts.items()
-        if y in venue_years and abs(y - target_year) <= window
-    )
-    if len(window_counts) < 2:
-        # Fall back to global median if window too small
-        window_counts = sorted(
-            c for y, (c, _) in year_counts.items() if y in venue_years
-        )
+        if y in venue_years and y < target_year and target_year - y <= window
+    ]
     if not window_counts:
-        return 0
-    return window_counts[len(window_counts) // 2]
+        window_counts = [
+            c for y, (c, _) in year_counts.items()
+            if y in venue_years and y < target_year
+        ]
+    return max(window_counts) if window_counts else 0
 
 
 def detect_gaps(
@@ -136,12 +138,25 @@ def detect_gaps(
             if year not in venue_years:
                 continue
 
-            # Case 1: Raw file exists but has very few papers
+            # Use max recent paper count to handle rapidly growing conferences
+            max_recent = _local_max(year_counts, venue_years, year)
+
+            if max_recent < MIN_EXPECTED_FOR_GAP:
+                continue
+
             if year in year_counts:
                 total_papers, data = year_counts[year]
-                if total_papers >= MAX_SPARQL_FOR_GAP:
+                # Absolute threshold: well below MAX_SPARQL_FOR_GAP → definite gap
+                if total_papers < MAX_SPARQL_FOR_GAP:
+                    pass  # falls through to candidate check
+                # Underfill detection: papers exist but far below expected max recent.
+                # Catches cases where step2c partially filled from incomplete DBLP data
+                # (e.g., 20 papers for a conference that normally has 150+).
+                elif total_papers < max_recent * UNDERFILL_RATIO:
+                    pass  # falls through to candidate check
+                else:
                     continue
-                # Check if already filled by a previous run
+                # Check if already filled by a previous run (unless force)
                 if not force and data.get("_source") == "search_api":
                     continue
             else:
@@ -149,13 +164,7 @@ def detect_gaps(
                 total_papers = 0
                 data = {}
 
-            # Use ±3-year local median to adapt to growing/shrinking conferences
-            median_papers = _local_median(year_counts, venue_years, year)
-
-            if median_papers < MIN_EXPECTED_FOR_GAP:
-                continue
-
-            candidate_years.append((year, total_papers, median_papers, data))
+            candidate_years.append((year, total_papers, max_recent, data))
 
         if not candidate_years:
             continue
@@ -166,7 +175,7 @@ def detect_gaps(
         for dblp_key in dblp_keys:
             proceedings_years.update(check_proceedings_years(dblp_key))
 
-        for year, total_papers, median_papers, data in candidate_years:
+        for year, total_papers, max_recent, data in candidate_years:
             if year not in proceedings_years:
                 continue
 
@@ -176,7 +185,7 @@ def detect_gaps(
                 "dblp_keys": dblp_keys,
                 "conf": conf,
                 "sparql_papers": total_papers,
-                "median_papers": median_papers,
+                "max_recent": max_recent,
             })
 
     return gaps

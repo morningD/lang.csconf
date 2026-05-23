@@ -307,13 +307,17 @@ Only merge when CCF recognizes as single entity. Co-located ≠ merged.
 Fastest, most complete for well-indexed conferences. Batch queries with workshop filtering.
 
 ### 2. DBLP Search API (step2c) — Auto gap fill
-Detects gaps: SPARQL < 20 papers AND venue data exists AND ±3-year median ≥ 30.
+Detects gaps using two criteria (venue data must exist AND max prior ≥ 30):
+- **Absolute gap**: < 20 papers from SPARQL
+- **Underfill**: papers exist but < 40% of max prior 3 years' count (e.g., 20 papers when prior years had 150+)
+- Uses backward-only window (no future years) to avoid false positives from natural conference growth
+
 Fills via `venue:{keyword} year:{year}` queries, filtered to proceedings page keys.
 
 **Detection limitations:**
-- Circular median: When ALL conference years are gaps (0 papers), median=0 → no detection (affected ACCV)
-- Small conferences: Median below MIN_EXPECTED=30 → missed (affected SOUPS pre-2017)
-- Partial gaps: 20-50% of expected papers above threshold → missed (affected IEEEVIS 2024)
+- Circular: When ALL conference years are gaps (0 papers), max_prior=0 → no detection (affected ACCV)
+- Small conferences: max_prior below MIN_EXPECTED=30 → missed (affected SOUPS pre-2017)
+- Partial gaps: 20-40% of expected papers above threshold → missed (affected IEEEVIS 2024)
 
 ### 3. DBLP HTML Scraping (step2c fallback)
 When Search API returns 500 errors, parse `<li class="entry">` blocks from proceedings pages.
@@ -487,6 +491,7 @@ Workshop filtering reduced total from ~957k to ~884k. Workshop abbreviation filt
 | 6 defunct/renamed conferences | Conferences stopped or renamed | Notes added: P2P, PASTE, LISA, TOOLS, RTA→FSCD, WICSA→ICSA |
 | OpenReview data merged into wrong year | step4 publication-year correction applied to non-SPARQL data | Step4 only corrects SPARQL-sourced data (`_source == "sparql"`) |
 | step3 dropping `_source` field | step3 output didn't preserve `_source` from raw files | step3 now copies `_source` to classified output |
+| ASPLOS 2026 only 20/155 papers | step2c partially filled from incomplete DBLP data (only Volume 1 indexed at the time); hard-coded `MAX_SPARQL_FOR_GAP=20` threshold didn't re-detect | Underfill detection: `total < max_prior * 0.4` catches partial data below expected baseline |
 
 ## Academic Database Verification via Playwright
 
