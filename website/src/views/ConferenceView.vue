@@ -479,7 +479,7 @@ const INST_ABBREV: Record<string, string> = {
   'University of Michigan': 'UMich',
   'University of North Carolina at Chapel Hill': 'UNC',
   'Pennsylvania State University': 'Penn State',
-  'University of Waterloo': 'Waterloo',
+  'University of Waterloo': 'UWaterloo',
   'University of Edinburgh': 'Edinburgh',
   'University College London': 'UCL',
   'Imperial College London': 'Imperial',

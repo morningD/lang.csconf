@@ -224,6 +224,11 @@ _INST_MAP: dict[str, tuple[str, str]] = {
     "University of the Chinese Academy of Sciences": ("Chinese Academy of Sciences", "CN"),
     "Institute of Computing Technology": ("Chinese Academy of Sciences", "CN"),
     "Institute of Computing Technology, Chinese Academy of Sciences": ("Chinese Academy of Sciences", "CN"),
+    "Institute of Software": ("Chinese Academy of Sciences", "CN"),
+    "Institute of Software, Chinese Academy of Sciences": ("Chinese Academy of Sciences", "CN"),
+    "Chinese Information Processing Laboratory, Institute of Software, Chinese Academy of Sciences, Beijing, China": ("Chinese Academy of Sciences", "CN"),
+    "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences": ("Chinese Academy of Sciences", "CN"),
+    "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences, China": ("Chinese Academy of Sciences", "CN"),
     "Nanjing University": ("Nanjing University", "CN"),
     # China sub-units
     "College of Computer Science and Technology, Zhejiang University": ("Zhejiang University", "CN"),
