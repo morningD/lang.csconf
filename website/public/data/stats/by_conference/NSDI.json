@@ -418,5 +418,110 @@
       "paper_source": "search_api",
       "note": "14 papers vs median ~49. SPARQL indexing incomplete, step2c filled what it could. DBLP-side issue."
     }
+  },
+  "affiliations": {
+    "total_covered": 6,
+    "total_papers": 291,
+    "coverage_pct": 2.1,
+    "top": [
+      {
+        "name": "Johns Hopkins University",
+        "count": 1,
+        "pct": 0.34,
+        "country": "US"
+      },
+      {
+        "name": "Peking University",
+        "count": 1,
+        "pct": 0.34,
+        "country": "CN"
+      },
+      {
+        "name": "IMDEA Software Institute",
+        "count": 1,
+        "pct": 0.34,
+        "country": "ES"
+      },
+      {
+        "name": "Tsinghua University",
+        "count": 1,
+        "pct": 0.34,
+        "country": "CN"
+      },
+      {
+        "name": "SBS CyberSecurity",
+        "count": 1,
+        "pct": 0.34,
+        "country": "US"
+      },
+      {
+        "name": "Université de Rennes",
+        "count": 1,
+        "pct": 0.34,
+        "country": "FR"
+      }
+    ],
+    "by_year": {
+      "2023": {
+        "total_covered": 1,
+        "total_papers": 96,
+        "coverage_pct": 1.0,
+        "top": [
+          {
+            "name": "Johns Hopkins University",
+            "count": 1,
+            "pct": 1.04,
+            "country": "US"
+          }
+        ]
+      },
+      "2024": {
+        "total_covered": 4,
+        "total_papers": 112,
+        "coverage_pct": 3.6,
+        "top": [
+          {
+            "name": "Peking University",
+            "count": 1,
+            "pct": 0.89,
+            "country": "CN"
+          },
+          {
+            "name": "IMDEA Software Institute",
+            "count": 1,
+            "pct": 0.89,
+            "country": "ES"
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 0.89,
+            "country": "CN"
+          },
+          {
+            "name": "SBS CyberSecurity",
+            "count": 1,
+            "pct": 0.89,
+            "country": "US"
+          }
+        ]
+      },
+      "2025": {
+        "total_covered": 1,
+        "total_papers": 83,
+        "coverage_pct": 1.2,
+        "top": [
+          {
+            "name": "Université de Rennes",
+            "count": 1,
+            "pct": 1.2,
+            "country": "FR"
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }

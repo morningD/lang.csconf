@@ -326,5 +326,67 @@
       "status": "virtual",
       "note": "Virtual event due to COVID-19."
     }
+  },
+  "affiliations": {
+    "total_covered": 3,
+    "total_papers": 161,
+    "coverage_pct": 1.9,
+    "top": [
+      {
+        "name": "Master's College",
+        "count": 1,
+        "pct": 0.62,
+        "country": "US"
+      },
+      {
+        "name": "Stanford University",
+        "count": 1,
+        "pct": 0.62,
+        "country": "US"
+      },
+      {
+        "name": "LRZ",
+        "count": 1,
+        "pct": 0.62,
+        "country": ""
+      }
+    ],
+    "by_year": {
+      "2024": {
+        "total_covered": 2,
+        "total_papers": 53,
+        "coverage_pct": 3.8,
+        "top": [
+          {
+            "name": "Master's College",
+            "count": 1,
+            "pct": 1.89,
+            "country": "US"
+          },
+          {
+            "name": "Stanford University",
+            "count": 1,
+            "pct": 1.89,
+            "country": "US"
+          }
+        ]
+      },
+      "2025": {
+        "total_covered": 1,
+        "total_papers": 53,
+        "coverage_pct": 1.9,
+        "top": [
+          {
+            "name": "LRZ",
+            "count": 1,
+            "pct": 1.89,
+            "country": ""
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }

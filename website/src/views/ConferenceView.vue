@@ -468,7 +468,6 @@ const INST_ABBREV: Record<string, string> = {
   'Beijing University of Posts and Telecommunications': 'BUPT',
   'Huazhong University of Science and Technology': 'HUST',
   'Renmin University of China': 'RUC',
-  'University of Chinese Academy of Sciences': 'UCAS',
   'Hong Kong Polytechnic University': 'PolyU',
   'Hong Kong Baptist University': 'HKBU',
   'Beihang University': 'Beihang',
