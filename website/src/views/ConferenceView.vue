@@ -738,7 +738,7 @@ const affiliationChartOption = computed(() => {
         </div>
 
         <!-- Top Affiliations -->
-        <div v-if="conference.affiliations?.coverage_pct >= 50" class="card p-6 bg-gray-800/50 border-gray-700/50 mb-8">
+        <div v-if="conference.affiliations && conference.affiliations.coverage_pct >= 50" class="card p-6 bg-gray-800/50 border-gray-700/50 mb-8">
           <h3 class="text-lg font-semibold text-white mb-2">{{ t('conference.top_affiliations') }}</h3>
           <p class="text-xs text-gray-500 mb-4">
             {{ t('conference.affiliation_coverage', {
