@@ -1,0 +1,929 @@
+{
+  "conference": "NDSS",
+  "year": 2023,
+  "total_papers": 94,
+  "total_matched": 90,
+  "total_with_affiliation": 87,
+  "coverage_pct": 92.6,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Breaking and Fixing Virtual Channels: Domino Attack and Donner.",
+      "first_author": "Lukas Aumayr",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007162",
+      "doi": "https://doi.org/10.14722/ndss.2023.24370",
+      "institution": "TU Wien",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/04d836q62"
+    },
+    {
+      "title": "Tactics, Threats & Targets: Modeling Disinformation and its Mitigation.",
+      "first_author": "Muhammad Shujaat Mirza",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Evasion Attacks and Defenses on Smart Home Physical Event Verification.",
+      "first_author": "Muslum Ozgur Ozmen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007228",
+      "doi": "https://doi.org/10.14722/ndss.2023.23070",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "ProbFlow : Using Probabilistic Programming in Anonymous Communication Networks.",
+      "first_author": "Hussein Darir",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007074",
+      "doi": "https://doi.org/10.14722/ndss.2023.24140",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Cryptographic Oracle-based Conditional Payments.",
+      "first_author": "Varun Madathil",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007130",
+      "doi": "https://doi.org/10.14722/ndss.2023.24024",
+      "institution": "North Carolina State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04tj63d06"
+    },
+    {
+      "title": "No Grammar, No Problem: Towards Fuzzing the Linux Kernel without System-Call Descriptions.",
+      "first_author": "Alexander Bulekov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DOITRUST: Dissecting On-chain Compromised Internet Domains via Graph Learning.",
+      "first_author": "Shuo Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007087",
+      "doi": "https://doi.org/10.14722/ndss.2023.24322",
+      "institution": null
+    },
+    {
+      "title": "Fine-Grained Trackability in Protocol Executions.",
+      "first_author": "Ksenia Budykho",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007094",
+      "doi": "https://doi.org/10.14722/ndss.2023.24289",
+      "institution": "University of Surrey",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/00ks66431"
+    },
+    {
+      "title": "Sometimes, You Aren't What You Do: Mimicry Attacks against Provenance Graph Host Intrusion Detection Systems.",
+      "first_author": "Akul Goyal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ReScan: A Middleware Framework for Realistic and Robust Black-box Web Application Scanning.",
+      "first_author": "Kostas Drakonakis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007098",
+      "doi": "https://doi.org/10.14722/ndss.2023.24169",
+      "institution": "Technical University of Crete",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/03f8bz564"
+    },
+    {
+      "title": "ChargePrint: A Framework for Internet-Scale Discovery and Security Analysis of EV Charging Management Systems.",
+      "first_author": "Tony Nasr",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007016",
+      "doi": "https://doi.org/10.14722/ndss.2023.23084",
+      "institution": "Concordia University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0420zvk78"
+    },
+    {
+      "title": "The \"Beatrix\" Resurrections: Robust Backdoor Detection via Gram Matrices.",
+      "first_author": "Wanlun Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007135",
+      "doi": "https://doi.org/10.14722/ndss.2023.23069",
+      "institution": "Swinburne University of Technology",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/031rekg67"
+    },
+    {
+      "title": "MyTEE: Own the Trusted Execution Environment on Embedded Devices.",
+      "first_author": "Seung-Kyun Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007153",
+      "doi": "https://doi.org/10.14722/ndss.2023.23041",
+      "institution": "Chungnam National University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/0227as991"
+    },
+    {
+      "title": "Your Router is My Prober: Measuring IPv6 Networks via ICMP Rate Limiting Side Channels.",
+      "first_author": "Long Pan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007097",
+      "doi": "https://doi.org/10.14722/ndss.2023.23049",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "SoundLock: A Novel User Authentication Scheme for VR Devices Using Auditory-Pupillary Response.",
+      "first_author": "Huadi Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007193",
+      "doi": "https://doi.org/10.14722/ndss.2023.24298",
+      "institution": "The University of Texas at Arlington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/019kgqr73"
+    },
+    {
+      "title": "Attacks as Defenses: Designing Robust Audio CAPTCHAs Using Attacks on Automatic Speech Recognition Systems.",
+      "first_author": "Hadi Abdullah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007038",
+      "doi": "https://doi.org/10.14722/ndss.2023.24243",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "CHKPLUG: Checking GDPR Compliance of WordPress Plugins via Cross-language Code Property Graph.",
+      "first_author": "Faysal Hossain Shezan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007235",
+      "doi": "https://doi.org/10.14722/ndss.2023.24610",
+      "institution": null
+    },
+    {
+      "title": "RoVISQ: Reduction of Video Service Quality via Adversarial Attacks on Deep Learning-based Video Compression.",
+      "first_author": "Jung-Woo Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4311005685",
+      "doi": "https://doi.org/10.14722/ndss.2023.23165",
+      "institution": "University of California, San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "Anomaly Detection in the Open World: Normality Shift Detection, Explanation, and Adaptation.",
+      "first_author": "Dongqi Han",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "StealthyIMU: Stealing Permission-protected Private Information From Smartphone Voice Assistant Using Zero-Permission Sensors.",
+      "first_author": "Ke Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007172",
+      "doi": "https://doi.org/10.14722/ndss.2023.24077",
+      "institution": "University of California, San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "QUICforge: Client-side Request Forgery in QUIC.",
+      "first_author": "Konrad Yuri Gbur",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007114",
+      "doi": "https://doi.org/10.14722/ndss.2023.23072",
+      "institution": "Technische Universität Berlin",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/03v4gjf40"
+    },
+    {
+      "title": "VICEROY: GDPR-/CCPA-compliant Enforcement of Verifiable Accountless Consumer Requests.",
+      "first_author": "Scott Jordan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3162009166",
+      "doi": "https://doi.org/10.14722/ndss.2023.23074",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "OptRand: Optimistically Responsive Reconfigurable Distributed Randomness.",
+      "first_author": "Adithya Bhat",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007059",
+      "doi": "https://doi.org/10.14722/ndss.2023.24832",
+      "institution": "Rochester Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00v4yb702"
+    },
+    {
+      "title": "Him of Many Faces: Characterizing Billion-scale Adversarial and Benign Browser Fingerprints on Commercial Websites.",
+      "first_author": "Shujiang Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007143",
+      "doi": "https://doi.org/10.14722/ndss.2023.24394",
+      "institution": "Johns Hopkins University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00za53h95"
+    },
+    {
+      "title": "BEAGLE: Forensics of Deep Learning Backdoor Attack for Better Defense.",
+      "first_author": "Siyuan Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007922",
+      "doi": "https://doi.org/10.14722/ndss.2023.24944",
+      "institution": "Rutgers Sexual and Reproductive Health and Rights",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/00rcvgx40"
+    },
+    {
+      "title": "OBI: a multi-path oblivious RAM for forward-and-backward-secure searchable encryption.",
+      "first_author": "Zhiqiang Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007139",
+      "doi": "https://doi.org/10.14722/ndss.2023.24423",
+      "institution": "Changsha University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03yph8055"
+    },
+    {
+      "title": "PPA: Preference Profiling Attack Against Federated Learning.",
+      "first_author": "Chunyi Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007185",
+      "doi": "https://doi.org/10.14722/ndss.2023.23171",
+      "institution": "Institute of Information Engineering",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04r53se39"
+    },
+    {
+      "title": "Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors.",
+      "first_author": "Mir Masood Ali",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007054",
+      "doi": "https://doi.org/10.14722/ndss.2023.24072",
+      "institution": "University of Illinois Chicago",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02mpq6x41"
+    },
+    {
+      "title": "LOKI: State-Aware Fuzzing Framework for the Implementation of Blockchain Consensus Protocols.",
+      "first_author": "Fuchen Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007167",
+      "doi": "https://doi.org/10.14722/ndss.2023.24078",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "VulHawk: Cross-architecture Vulnerability Detection with Entropy-based Binary Code Search.",
+      "first_author": "Zhenhao Luo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007217",
+      "doi": "https://doi.org/10.14722/ndss.2023.24415",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "An OS-agnostic Approach to Memory Forensics.",
+      "first_author": "Andrea Oliveri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007116",
+      "doi": "https://doi.org/10.14722/ndss.2023.23398",
+      "institution": "EURECOM",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/00sse7z02"
+    },
+    {
+      "title": "Automata-Based Automated Detection of State Machine Bugs in Protocol Implementations.",
+      "first_author": "Paul Fiterau-Brostean",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007121",
+      "doi": "https://doi.org/10.14722/ndss.2023.23068",
+      "institution": "Uppsala University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/048a87296"
+    },
+    {
+      "title": "Copy-on-Flip: Hardening ECC Memory Against Rowhammer Attacks.",
+      "first_author": "Andrea Di Dio",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007096",
+      "doi": "https://doi.org/10.14722/ndss.2023.24337",
+      "institution": "Vrije Universiteit Amsterdam",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/008xxew50"
+    },
+    {
+      "title": "A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities.",
+      "first_author": "Zihao Jin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007043",
+      "doi": "https://doi.org/10.14722/ndss.2023.24305",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing.",
+      "first_author": "Seongil Wi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007132",
+      "doi": "https://doi.org/10.14722/ndss.2023.24200",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05apxxy63"
+    },
+    {
+      "title": "Drone Security and the Mysterious Case of DJI's DroneID.",
+      "first_author": "Nico Schiller",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007088",
+      "doi": "https://doi.org/10.14722/ndss.2023.24217",
+      "institution": "Ruhr University Bochum",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04tsk2644"
+    },
+    {
+      "title": "REaaS: Enabling Adversarially Robust Downstream Classifiers via Robust Encoder as a Service.",
+      "first_author": "Wenjie Qu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007057",
+      "doi": "https://doi.org/10.14722/ndss.2023.24444",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Smarter Contracts: Detecting Vulnerabilities in Smart Contracts with Deep Transfer Learning.",
+      "first_author": "Christoph Sendner",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007147",
+      "doi": "https://doi.org/10.14722/ndss.2023.23263",
+      "institution": "University of Würzburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00fbnyb24"
+    },
+    {
+      "title": "Folk Models of Misinformation on Social Media.",
+      "first_author": "Filipo Sharevski",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007209",
+      "doi": "https://doi.org/10.14722/ndss.2023.24293",
+      "institution": "DePaul University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04xtx5t16"
+    },
+    {
+      "title": "On the Anonymity of Peer-To-Peer Network Anonymity Schemes Used by Cryptocurrencies.",
+      "first_author": "Piyush Kumar Sharma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007232",
+      "doi": "https://doi.org/10.14722/ndss.2023.23241",
+      "institution": "KU Leuven",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/05f950310"
+    },
+    {
+      "title": "MetaWave: Attacking mmWave Sensing with Meta-material-enhanced Tags.",
+      "first_author": "Xingyu Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007222",
+      "doi": "https://doi.org/10.14722/ndss.2023.24348",
+      "institution": "University of Colorado Denver",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02hh7en24"
+    },
+    {
+      "title": "A Systematic Study of the Consistency of Two-Factor Authentication User Journeys on Top-Ranked Websites.",
+      "first_author": "Sanam Ghorbani Lyastani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007111",
+      "doi": "https://doi.org/10.14722/ndss.2023.23362",
+      "institution": "Helmholtz Center for Information Security",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02njgxr09"
+    },
+    {
+      "title": "Detecting Unknown Encrypted Malicious Traffic in Real Time via Flow Interaction Graph Analysis.",
+      "first_author": "Chuanpu Fu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007233",
+      "doi": "https://doi.org/10.14722/ndss.2023.23080",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Un-Rocking Drones: Foundations of Acoustic Injection Attacks and Recovery Thereof.",
+      "first_author": "Jinseob Jeong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007084",
+      "doi": "https://doi.org/10.14722/ndss.2023.24112",
+      "institution": "Agency for Defense Development",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05fhe0r85"
+    },
+    {
+      "title": "Post-GDPR Threat Hunting on Android Phones: Dissecting OS-level Safeguards of User-unresettable Identifiers.",
+      "first_author": "Mark Huasong Meng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007144",
+      "doi": "https://doi.org/10.14722/ndss.2023.23176",
+      "institution": "The University of Queensland",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/00rqy9422"
+    },
+    {
+      "title": "SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications.",
+      "first_author": "An Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007182",
+      "doi": "https://doi.org/10.14722/ndss.2023.24632",
+      "institution": "University of Georgia",
+      "institution_country": null,
+      "raw_affiliation": "University of Georgia"
+    },
+    {
+      "title": "I Still Know What You Watched Last Sunday: Privacy of the HbbTV Protocol in the European Smart TV Landscape.",
+      "first_author": "Carlotta Tagliaro",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007237",
+      "doi": "https://doi.org/10.14722/ndss.2023.24102",
+      "institution": "TU Wien",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/04d836q62"
+    },
+    {
+      "title": "How to Count Bots in Longitudinal Datasets of IP Addresses.",
+      "first_author": "Leon Böck",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007145",
+      "doi": "https://doi.org/10.14722/ndss.2023.24002",
+      "institution": "Technical University of Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    },
+    {
+      "title": "Adversarial Robustness for Tabular Data through Cost and Utility Awareness.",
+      "first_author": "Klim Kireev",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007133",
+      "doi": "https://doi.org/10.14722/ndss.2023.24924",
+      "institution": "Spring Techno (Germany)",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/03ex76y18"
+    },
+    {
+      "title": "A Robust Counting Sketch for Data Plane Intrusion Detection.",
+      "first_author": "Sian Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007055",
+      "doi": "https://doi.org/10.14722/ndss.2023.23102",
+      "institution": "Ewha Womans University Medical Center",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03exgrk66"
+    },
+    {
+      "title": "Double and Nothing: Understanding and Detecting Cryptocurrency Giveaway Scams.",
+      "first_author": "Xigao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007095",
+      "doi": "https://doi.org/10.14722/ndss.2023.24584",
+      "institution": "Stony Brook University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05qghxh33"
+    },
+    {
+      "title": "Accountable Javascript Code Delivery.",
+      "first_author": "Ilkan Esiyok",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007091",
+      "doi": "https://doi.org/10.14722/ndss.2023.24096",
+      "institution": "Helmholtz Center for Information Security",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02njgxr09"
+    },
+    {
+      "title": "BlockScope: Detecting and Investigating Propagated Vulnerabilities in Forked Blockchain Projects.",
+      "first_author": "Xiao Yi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4321524221",
+      "doi": "https://doi.org/10.14722/ndss.2023.24222",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Trellis: Robust and Scalable Metadata-private Anonymous Broadcast.",
+      "first_author": "Simon Langowski",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007119",
+      "doi": "https://doi.org/10.14722/ndss.2023.23088",
+      "institution": "MIT CSAIL",
+      "institution_country": null,
+      "raw_affiliation": "MIT CSAIL"
+    },
+    {
+      "title": "Brokenwire : Wireless Disruption of CCS Electric Vehicle Charging.",
+      "first_author": "Sebastian Köhler",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007188",
+      "doi": "https://doi.org/10.14722/ndss.2023.23251",
+      "institution": "University of Oxford",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/052gg0110"
+    },
+    {
+      "title": "BinaryInferno: A Semantic-Driven Approach to Field Inference for Binary Message Formats.",
+      "first_author": "Jared Chandler",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007064",
+      "doi": "https://doi.org/10.14722/ndss.2023.23131",
+      "institution": "Defense Advanced Research Projects Agency",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02caytj08"
+    },
+    {
+      "title": "Assessing the Impact of Interface Vulnerabilities in Compartmentalized Software.",
+      "first_author": "Hugo Lefeuvre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4313680582",
+      "doi": "https://doi.org/10.14722/ndss.2023.24117",
+      "institution": "University of Manchester",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/027m9bs27"
+    },
+    {
+      "title": "InfoMasker: Preventing Eavesdropping Using Phoneme-Based Noise.",
+      "first_author": "Peng Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007093",
+      "doi": "https://doi.org/10.14722/ndss.2023.24457",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "Ghost Domain Reloaded: Vulnerable Links in Domain Name Delegation and Revocation.",
+      "first_author": "Xiang Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007211",
+      "doi": "https://doi.org/10.14722/ndss.2023.23005",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "FUZZILLI: Fuzzing for JavaScript JIT Compiler Vulnerabilities.",
+      "first_author": "Samuel Groß",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007042",
+      "doi": "https://doi.org/10.14722/ndss.2023.24290",
+      "institution": "Technische Universität Braunschweig",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/010nsgg66"
+    },
+    {
+      "title": "He-HTLC: Revisiting Incentives in HTLC.",
+      "first_author": "Sarisht Wadhwa",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007934",
+      "doi": "https://doi.org/10.14722/ndss.2023.24775",
+      "institution": "Duke University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00py81415"
+    },
+    {
+      "title": "DARWIN: Survival of the Fittest Fuzzing Mutators.",
+      "first_author": "Patrick Jauernig",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307205415",
+      "doi": "https://doi.org/10.14722/ndss.2023.23159",
+      "institution": "Technical University of Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    },
+    {
+      "title": "Preventing SIM Box Fraud Using Device Model Fingerprinting.",
+      "first_author": "Beomseok Oh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007164",
+      "doi": "https://doi.org/10.14722/ndss.2023.24416",
+      "institution": "Kootenay Association for Science & Technology",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/011pv9p44"
+    },
+    {
+      "title": "AuthentiSense: A Scalable Behavioral Biometrics Authentication Scheme using Few-Shot Learning for Mobile Platforms.",
+      "first_author": "Hossein Fereidooni",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007060",
+      "doi": "https://doi.org/10.14722/ndss.2023.23194",
+      "institution": "Technical University of Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    },
+    {
+      "title": "Fusion: Efficient and Secure Inference Resilient to Malicious Servers.",
+      "first_author": "Caiqin Dong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007070",
+      "doi": "https://doi.org/10.14722/ndss.2023.23199",
+      "institution": "Jinan University,",
+      "institution_country": null,
+      "raw_affiliation": "Jinan University,"
+    },
+    {
+      "title": "Faster Secure Comparisons with Offline Phase for Efficient Private Set Intersection.",
+      "first_author": "Florian Kerschbaum",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007040",
+      "doi": "https://doi.org/10.14722/ndss.2023.23198",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "Machine Unlearning of Features and Labels.",
+      "first_author": "Alexander Warnecke",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3193974325",
+      "doi": "https://doi.org/10.14722/ndss.2023.23087",
+      "institution": "Technische Universität Braunschweig",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/010nsgg66"
+    },
+    {
+      "title": "Let Me Unwind That For You: Exceptions to Backward-Edge Protection.",
+      "first_author": "Victor Duta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007005",
+      "doi": "https://doi.org/10.14722/ndss.2023.23295",
+      "institution": "Vrije Universiteit Amsterdam",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/008xxew50"
+    },
+    {
+      "title": "Real Threshold ECDSA.",
+      "first_author": "Harry W. H. Wong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007517",
+      "doi": "https://doi.org/10.14722/ndss.2023.24817",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "POSE: Practical Off-chain Smart Contract Execution.",
+      "first_author": "Tommaso Frassetto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4306311943",
+      "doi": "https://doi.org/10.14722/ndss.2023.23118",
+      "institution": "Technical University of Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    },
+    {
+      "title": "HeteroScore: Evaluating and Mitigating Cloud Security Threats Brought by Heterogeneity.",
+      "first_author": "Chongzhou Fang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007176",
+      "doi": "https://doi.org/10.14722/ndss.2023.24996",
+      "institution": "University of California, Davis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05rrcem69"
+    },
+    {
+      "title": "Private Certifier Intersection.",
+      "first_author": "Bishakh Chandra Ghosh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007010",
+      "doi": "https://doi.org/10.14722/ndss.2023.23563",
+      "institution": null
+    },
+    {
+      "title": "RR: A Fault Model for Efficient TEE Replication.",
+      "first_author": "Baltasar Dinis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007146",
+      "doi": "https://doi.org/10.14722/ndss.2023.24001",
+      "institution": "Instituto de Engenharia de Sistemas e Computadores Investigação e Desenvolvimento",
+      "institution_country": "PT",
+      "institution_ror": "https://ror.org/04mqy3p58"
+    },
+    {
+      "title": "Access Your Tesla without Your Awareness: Compromising Keyless Entry System of Model 3.",
+      "first_author": "Xinyi Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007105",
+      "doi": "https://doi.org/10.14722/ndss.2023.24082",
+      "institution": "Shanghai Fudan Microelectronics Group Co., Ltd",
+      "institution_country": null,
+      "raw_affiliation": "Shanghai Fudan Microelectronics Group Co., Ltd"
+    },
+    {
+      "title": "Hope of Delivery: Extracting User Locations From Mobile Instant Messengers.",
+      "first_author": "Theodor Schnitzler",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307010612",
+      "doi": "https://doi.org/10.14722/ndss.2023.23188",
+      "institution": "TU Dortmund University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01k97gp34"
+    },
+    {
+      "title": "BARS: Local Robustness Certification for Deep Learning based Traffic Analysis Systems.",
+      "first_author": "Kai Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007187",
+      "doi": "https://doi.org/10.14722/ndss.2023.24508",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables.",
+      "first_author": "Yanzuo Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007045",
+      "doi": "https://doi.org/10.14722/ndss.2023.24103",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Focusing on Pinocchio's Nose: A Gradients Scrutinizer to Thwart Split-Learning Hijacking Attacks Using Intrinsic Attributes.",
+      "first_author": "Jiayun Fu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007921",
+      "doi": "https://doi.org/10.14722/ndss.2023.24874",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Securing Federated Sensitive Topic Classification against Poisoning Attacks.",
+      "first_author": "Tianyue Chu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307300892",
+      "doi": "https://doi.org/10.14722/ndss.2023.23112",
+      "institution": "IMDEA Networks",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/04mm9fg30"
+    },
+    {
+      "title": "RAI2: Responsible Identity Audit Governing the Artificial Intelligence.",
+      "first_author": "Tian Dong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007136",
+      "doi": "https://doi.org/10.14722/ndss.2023.241012",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Towards Automatic and Precise Heap Layout Manipulation for General-Purpose Programs.",
+      "first_author": "Runhao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007134",
+      "doi": "https://doi.org/10.14722/ndss.2023.23232",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "The Power of Bamboo: On the Post-Compromise Security for Searchable Symmetric Encryption.",
+      "first_author": "Tianyang Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007090",
+      "doi": "https://doi.org/10.14722/ndss.2023.24725",
+      "institution": "University of Wollongong",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/00jtmb277"
+    },
+    {
+      "title": "Partitioning Ethereum without Eclipsing It.",
+      "first_author": "Hwanjo Heo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007065",
+      "doi": "https://doi.org/10.14722/ndss.2023.24465",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05apxxy63"
+    },
+    {
+      "title": "Browser Permission Mechanisms Demystified.",
+      "first_author": "Kazuki Nomoto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007039",
+      "doi": "https://doi.org/10.14722/ndss.2023.23109",
+      "institution": "Waseda University",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/00ntfnx83"
+    },
+    {
+      "title": "Efficient Dynamic Proof of Retrievability for Cold Storage.",
+      "first_author": "Tung Le",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007056",
+      "doi": "https://doi.org/10.14722/ndss.2023.23307",
+      "institution": "University of South Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/032db5x82"
+    },
+    {
+      "title": "Parakeet: Practical Key Transparency for End-to-End Encrypted Messaging.",
+      "first_author": "Harjasleen Malvai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007072",
+      "doi": "https://doi.org/10.14722/ndss.2023.24545",
+      "institution": "International University of the Caribbean",
+      "institution_country": "JM",
+      "institution_ror": "https://ror.org/02rv57d03"
+    },
+    {
+      "title": "Extrapolating Formal Analysis to Uncover Attacks in Bluetooth Passkey Entry Pairing.",
+      "first_author": "Mohit Kumar Jangid",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007009",
+      "doi": "https://doi.org/10.14722/ndss.2023.23119",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "Backdoor Attacks Against Dataset Distillation.",
+      "first_author": "Yugeng Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007138",
+      "doi": "https://doi.org/10.14722/ndss.2023.24287",
+      "institution": "Helmholtz Center for Information Security",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02njgxr09"
+    },
+    {
+      "title": "Do Not Give a Dog Bread Every Time He Wags His Tail: Stealing Passwords through Content Queries (CONQUER) Attacks.",
+      "first_author": "Chongqing Lei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007120",
+      "doi": "https://doi.org/10.14722/ndss.2023.24005",
+      "institution": "Southeast University,",
+      "institution_country": null,
+      "raw_affiliation": "Southeast University,"
+    },
+    {
+      "title": "Privacy-Preserving Database Fingerprinting.",
+      "first_author": "Tianxi Ji",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007229",
+      "doi": "https://doi.org/10.14722/ndss.2023.24693",
+      "institution": "Texas Tech University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0405mnx93"
+    },
+    {
+      "title": "Thwarting Smartphone SMS Attacks at the Radio Interface Layer.",
+      "first_author": "Haohuang Wen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007123",
+      "doi": "https://doi.org/10.14722/ndss.2023.24432",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "Paralyzing Drones via EMI Signal Injection on Sensory Communication Channels.",
+      "first_author": "Joon-Ha Jang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007071",
+      "doi": "https://doi.org/10.14722/ndss.2023.24616",
+      "institution": "Samsung SDS (South Korea)",
+      "institution_country": null,
+      "institution_ror": "https://ror.org/0476bn305"
+    },
+    {
+      "title": "REDsec: Running Encrypted Discretized Neural Networks in Seconds.",
+      "first_author": "Lars Folkerts",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007231",
+      "doi": "https://doi.org/10.14722/ndss.2023.24034",
+      "institution": "University of Delaware",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01sbq1a82"
+    },
+    {
+      "title": "EdgeTDC: On the Security of Time Difference of Arrival Measurements in CAN Bus Systems.",
+      "first_author": "Marc Roeschlin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4324007179",
+      "doi": "https://doi.org/10.14722/ndss.2023.24271",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    }
+  ]
+}

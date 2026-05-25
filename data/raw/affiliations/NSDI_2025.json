@@ -1,0 +1,519 @@
+{
+  "conference": "NSDI",
+  "year": 2025,
+  "total_papers": 83,
+  "total_matched": 4,
+  "total_with_affiliation": 1,
+  "coverage_pct": 1.2,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Vegeta: Enabling Parallel Smart Contract Execution in Leaderless Blockchains.",
+      "first_author": "Tianjing Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mitigating Scalability Walls of RDMA-based Container Networks.",
+      "first_author": "Wei Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Building an Elastic Block Storage over EBOFs Using Shadow Views.",
+      "first_author": "Sheng Jiang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Tooth: Toward Optimal Balance of Video QoE and Redundancy Cost by Fine-Grained FEC in Cloud Gaming Streaming.",
+      "first_author": "Congkai An",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7112801974",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "NDD: A Decision Diagram for Network Verification.",
+      "first_author": "Zechun Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Eden: Developer-Friendly Application-Integrated Far Memory.",
+      "first_author": "Anil Yelam",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Scaling IP Lookup to Large Databases using the CRAM Lens.",
+      "first_author": "Robert Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416083527",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "ONCache: A Cache-Based Low-Overhead Container Overlay Network.",
+      "first_author": "Shengkai Lin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ByteCheckpoint: A Unified Checkpointing System for Large Foundation Model Development.",
+      "first_author": "Borui Wan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7113553986",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "VEP: A Two-stage Verification Toolchain for Full eBPF Programmability.",
+      "first_author": "Xiwei Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Minder: Faulty Machine Detection for Large-scale Distributed Model Training.",
+      "first_author": "Yangtao Deng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "White-Boxing RDMA with Packet-Granular Software Control.",
+      "first_author": "Chenxingyu Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Rajomon: Decentralized and Coordinated Overload Control for Latency-Sensitive Microservices.",
+      "first_author": "Jiali Xing",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SimAI: Unifying Architecture Design and Performance Tuning for Large-Scale Large Language Model Training with Scalability and Precision.",
+      "first_author": "Xizheng Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Achieving Wire-Latency Storage Systems by Exploiting Hardware ACKs.",
+      "first_author": "Qing Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GREEN: Carbon-efficient Resource Scheduling for Machine Learning Clusters.",
+      "first_author": "Kaiqiang Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Pushing the Limits of In-Network Caching for Key-Value Stores.",
+      "first_author": "Gyuyeong Kim",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "When P4 Meets Run-to-completion Architecture.",
+      "first_author": "Hao Zheng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AutoCCL: Automated Collective Communication Tuning for Accelerating Distributed and Parallel DNN Training.",
+      "first_author": "Guanbin Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Unlocking ECMP Programmability for Precise Traffic Control.",
+      "first_author": "Yadong Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learnings from Deploying Network QoS Alignment to Application Priorities for Storage Services.",
+      "first_author": "Matthew Buckley",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating Design Space Exploration for LLM Training Systems with Multi-experiment Parallel Simulation.",
+      "first_author": "Fei Gui",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Verifying maximum link loads in a changing world.",
+      "first_author": "Tibor Schneider",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PreAcher: Secure and Practical Password Pre-Authentication by Content Delivery Networks.",
+      "first_author": "Shihan Lin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Layered Formal Methods Approach to Answering Queue-related Queries.",
+      "first_author": "Divya Raghunathan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Dissecting and Streamlining the Interactive Loop of Mobile Cloud Gaming.",
+      "first_author": "Yang Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Resolving Packets from Counters: Enabling Multi-scale Network Traffic Super Resolution via Composable Large Traffic Model.",
+      "first_author": "Xizheng Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AsTree: An Audio Subscription Architecture Enabling Massive-Scale Multi-Party Conferencing.",
+      "first_author": "Tong Meng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HA/TCP: A Reliable and Scalable Framework for TCP Network Functions.",
+      "first_author": "Haoyu Gu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Suppressing BGP Zombies with Route Status Transparency.",
+      "first_author": "Yosef Edery Anahory",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "One-Size-Fits-None: Understanding and Enhancing Slow-Fault Tolerance in Modern Distributed Systems.",
+      "first_author": "Ruiming Lu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "eTran: Extensible Kernel Transport with eBPF.",
+      "first_author": "Zhongjie Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Enabling Silent Telemetry Data Transmission with InvisiFlow.",
+      "first_author": "Yinda Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Ladder: A Convergence-based Structured DAG Blockchain for High Throughput and Low Latency.",
+      "first_author": "Dengcheng Hu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Benefits and Limitations of User Interrupts for Preemptive Userspace Scheduling.",
+      "first_author": "Linsong Guo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Shoal++: High Throughput DAG BFT Can Be Fast and Robust!",
+      "first_author": "Balaji Arun",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "From Address Blocks to Authorized Prefixes: Redesigning RPKI ROV with a Hierarchical Hashing Scheme for Fast and Memory-Efficient Validation.",
+      "first_author": "Zedong Ni",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ValidaTor: Domain Validation over Tor.",
+      "first_author": "Jens Frieß",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ClubHeap: A High-Speed and Scalable Priority Queue for Programmable Packet Scheduling.",
+      "first_author": "Zhikang Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CATO: End-to-End Optimization of ML-Based Traffic Analysis Pipelines.",
+      "first_author": "Gerry Wan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Smart Casual Verification of the Confidential Consortium Framework.",
+      "first_author": "Heidi Howard",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Understanding and Profiling NVMe-over-TCP Using ntprof.",
+      "first_author": "Yuyuan Kang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Large Network UWB Localization: Algorithms and Implementation.",
+      "first_author": "Nakul Garg",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GPU-Disaggregated Serving for Deep Learning Recommendation Models at Scale.",
+      "first_author": "Lingyun Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Securing Public Cloud Networks with Efficient Role-based Micro-Segmentation.",
+      "first_author": "Sathiya Kumaran Mani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SIRD: A Sender-Informed, Receiver-Driven Datacenter Transport Protocol.",
+      "first_author": "Konstantinos Prasopoulos",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Pyrrha: Congestion-Root-Based Flow Control to Eliminate Head-of-Line Blocking in Datacenter.",
+      "first_author": "Kexin Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GRANNY: Granular Management of Compute-Intensive Applications in the Cloud.",
+      "first_author": "Carlos Segarra",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DISC: Backpressure Mitigation In Multi-tier Applications With Distributed Shared Connection.",
+      "first_author": "Brice Ekane",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4417409715",
+      "doi": null,
+      "institution": "Université de Rennes",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/015m7wh34"
+    },
+    {
+      "title": "Beehive: A Scalable Disaggregated Memory Runtime Exploiting Asynchrony of Multithreaded Programs.",
+      "first_author": "Quanxi Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Quicksand: Harnessing Stranded Datacenter Resources with Granular Computing.",
+      "first_author": "Zhenyuan Ruan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learning Production-Optimized Congestion Control Selection for Alibaba Cloud CDN.",
+      "first_author": "Xuan Zeng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Everything Matters in Programmable Packet Scheduling.",
+      "first_author": "Albert Gran Alcoz",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "State-Compute Replication: Parallelizing High-Speed Stateful Packet Processing.",
+      "first_author": "Qiongwen Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Building Massive MIMO Baseband Processing on a Single-Node Supercomputer.",
+      "first_author": "Xincheng Xie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Optimizing RLHF Training for Large Language Models with Stage Fusion.",
+      "first_author": "Yinmin Zhong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Self-Clocked Round-Robin Packet Scheduling.",
+      "first_author": "Erfan Sharafzadeh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On Temporal Verification of Stateful P4 Programs.",
+      "first_author": "Delong Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Making Serverless Pay-For-Use a Reality with Leopard.",
+      "first_author": "Tingjia Cao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MTP: Transport for In-Network Computing.",
+      "first_author": "Tao Ji",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CEGS: Configuration Example Generalizing Synthesizer.",
+      "first_author": "Jianmin Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PRED: Performance-oriented Random Early Detection for Consistently Stable Performance in Datacenters.",
+      "first_author": "Xinle Du",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient Multi-WAN Transport for 5G with OTTER.",
+      "first_author": "Mary Hogan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "High-level Programming for Application Networks.",
+      "first_author": "Xiangfeng Zhu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Energy Efficient 5G vRAN Servers.",
+      "first_author": "Anuj Kalia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "BFTBrain: Adaptive BFT Consensus with Reinforcement Learning.",
+      "first_author": "Chenyuan Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Pineapple: Unifying Multi-Paxos and Atomic Shared Registers.",
+      "first_author": "Tigran Bantikyan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Region-based Content Enhancement for Efficient Video Analytics at the Edge.",
+      "first_author": "Weijun Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PAPAYA Federated Analytics Stack: Engineering Privacy, Scalability and Practicality.",
+      "first_author": "Harish Srinivas",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Enabling Portable and High-Performance SmartNIC Programs with Alkali.",
+      "first_author": "Jiaxin Lin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CellReplay: Towards accurate record-and-replay for cellular networks.",
+      "first_author": "William Sentosa",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SuperServe: Fine-Grained Inference Serving for Unpredictable Workloads.",
+      "first_author": "Alind Khare",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient Direct-Connect Topologies for Collective Communications.",
+      "first_author": "Liangyu Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MeshTest: End-to-End Testing for Service Mesh Traffic Management.",
+      "first_author": "Naiqian Zheng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ODRP: On-Demand Remote Paging with Programmable RDMA.",
+      "first_author": "Zixuan Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Enhancing Network Failure Mitigation with Performance-Aware Ranking.",
+      "first_author": "Pooria Namyar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Evolution of Aegis: Fault Diagnosis for AI Model Training Service in Production.",
+      "first_author": "Jianbo Dong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mowgli: Passively Learned Rate Control for Real-Time Video.",
+      "first_author": "Neil Agarwal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mutant: Learning Congestion Control from Existing Protocols via Online Reinforcement Learning.",
+      "first_author": "Lorenzo Pappone",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Runtime Protocol Refinement Checking for Distributed Protocol Implementations.",
+      "first_author": "Ding Ding",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "OptiReduce: Resilient and Tail-Optimal AllReduce for Distributed Deep Learning in the Cloud.",
+      "first_author": "Ertza Warraich",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Holmes: Localizing Irregularities in LLM Training with Mega-scale GPU Clusters.",
+      "first_author": "Zhiyi Yao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Preventing Network Bottlenecks: Accelerating Datacenter Services with Hotspot-Aware Placement for Compute and Storage.",
+      "first_author": "Hamid Hajabdolali Bazzaz",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

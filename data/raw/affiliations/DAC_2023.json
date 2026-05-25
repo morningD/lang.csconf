@@ -1,0 +1,3181 @@
+{
+  "conference": "DAC",
+  "year": 2023,
+  "total_papers": 322,
+  "total_matched": 310,
+  "total_with_affiliation": 309,
+  "coverage_pct": 96.0,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Lightning Talk: Model, Framework and Integration for In-Storage Computing with Computational SSDs.",
+      "first_author": "Tianyu Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Battle Against Fluctuating Quantum Noise: Compression-Aided Framework to Enable Robust Quantum Neural Network.",
+      "first_author": "Zhirui Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763749",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247922",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "Lightning Talk 6: Bringing Together Foundation Models and Edge Devices.",
+      "first_author": "Nick Eliopoulos",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764046",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247694",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "Don't-Care Aware ESOP Extraction via Reduced Decomposition-Tree Exploration.",
+      "first_author": "Chun-Yu Wei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FSPA: An FeFET-based Sparse Matrix-Dense Vector Multiplication Accelerator.",
+      "first_author": "Xiaoyu Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764804",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247895",
+      "institution": "Institute of Computing Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0090r4d87"
+    },
+    {
+      "title": "SaGraph: A Similarity-aware Hardware Accelerator for Temporal Graph Processing.",
+      "first_author": "Jin Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765013",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247966",
+      "institution": "Zhejiang Lab",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02m2h7991"
+    },
+    {
+      "title": "RL-CCD: Concurrent Clock and Data Optimization using Attention-Based Self-Supervised Reinforcement Learning.",
+      "first_author": "Yi-Chen Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763539",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248008",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "BP-NTT: Fast and Compact in-SRAM Number Theoretic Transform with Bit-Parallel Modular Multiplication.",
+      "first_author": "Jingyao Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763993",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247691",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "Fast Adversarial Training with Dynamic Batch-level Attack Control.",
+      "first_author": "Jaewon Jung",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764269",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247930",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "DmTSAR-ILP: Allocating a Unified Domain Platform for Streaming Applications.",
+      "first_author": "Bruno Morais",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764841",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247833",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Shoggoth: Towards Efficient Edge-Cloud Collaborative Real-Time Video Inference via Adaptive Online Learning.",
+      "first_author": "Liang Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763940",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247821",
+      "institution": "Ping An (China)",
+      "institution_country": null,
+      "institution_ror": "https://ror.org/004yv2z91"
+    },
+    {
+      "title": "PseudoSC: A Binary Approximation to Stochastic Computing within Latent Operation-Space for Ultra-Lightweight on-Edge DNNs.",
+      "first_author": "Jihe Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764616",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247851",
+      "institution": "Northwestern Polytechnical University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01y0j0j86"
+    },
+    {
+      "title": "TiPU: A Spatial-Locality-Aware Near-Memory Tile Processing Unit for 3D Point Cloud Neural Network.",
+      "first_author": "Jiapei Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763864",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247870",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "ACGraph: Accelerating Streaming Graph Processing via Dependence Hierarchy.",
+      "first_author": "Zihan Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764867",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247904",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "MES-Attacks: Software-Controlled Covert Channels based on Mutual Exclusion and Synchronization.",
+      "first_author": "Chaoqun Shen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764847",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247792",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "Venus: A Versatile Deep Neural Network Accelerator Architecture Design for Multiple Applications.",
+      "first_author": "Jiaqi Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764750",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247897",
+      "institution": "George Washington University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00y4zzh67"
+    },
+    {
+      "title": "PIM-HLS: An Automatic Hardware Generation Tool for Heterogeneous Processing-In-Memory-based Neural Network Accelerators.",
+      "first_author": "Yu Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764554",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247755",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Toward Optimal Filler Cell Insertion with Complex Implant Layer Constraints.",
+      "first_author": "Peng Zou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764043",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247752",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Invited: Algorithms and Architectures for Accelerating Long Read Sequence Analysis.",
+      "first_author": "Hasindu Gamaarachchi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763999",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247772",
+      "institution": "Garvan Institute of Medical Research",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/01b3dvp57"
+    },
+    {
+      "title": "Lightning Talk: Private and Secure Edge AI with Hyperdimensional Computing.",
+      "first_author": "Xiaofan Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765277",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247820",
+      "institution": "University of California, San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "TD-Magic: From Pictures of Timing Diagrams To Formal Specifications.",
+      "first_author": "Jie He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765273",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247685",
+      "institution": "TU Wien",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/04d836q62"
+    },
+    {
+      "title": "G-QED: Generalized QED Pre-silicon Verification beyond Non-Interfering Hardware Accelerators.",
+      "first_author": "Saranyu Chattopadhyay",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764792",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247903",
+      "institution": "EE Dept",
+      "institution_country": null,
+      "raw_affiliation": "EE Dept"
+    },
+    {
+      "title": "PIMCOMP: A Universal Compilation Framework for Crossbar-based PIM DNN Accelerators.",
+      "first_author": "Xiaotian Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763580",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247928",
+      "institution": "Institute of Computing Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0090r4d87"
+    },
+    {
+      "title": "TOTAL: Multi-Corners Timing Optimization Based on Transfer and Active Learning.",
+      "first_author": "Wei W. Xing",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764091",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247914",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "Lamellar DSA-aware Detailed Routing Considering Double Patterning and Short Template Minimization.",
+      "first_author": "Kuei-Lin Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765232",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247724",
+      "institution": "National Taiwan University of Science and Technology",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00q09pe49"
+    },
+    {
+      "title": "CorcPUM: Efficient Processing Using Cross-Point Memory via Cooperative Row-Column Access Pipelining and Adaptive Timing Optimization in Subarrays.",
+      "first_author": "Chengning Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764156",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247700",
+      "institution": "Wuhan National Laboratory for Optoelectronics",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03c9ncn37"
+    },
+    {
+      "title": "Algorithms and Hardware for Efficient Processing of Logic-based Neural Networks.",
+      "first_author": "Jingkai Hong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764810",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247667",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "HDSuper: Algorithm-Hardware Co-design for Light-weight High-quality Super-Resolution Accelerator.",
+      "first_author": "Liang Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763841",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247683",
+      "institution": "University of Electronic Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04qr3zq92"
+    },
+    {
+      "title": "Unified Agile Accuracy Assessment in Computing-in-Memory Neural Accelerators by Layerwise Dynamical Isometry.",
+      "first_author": "Xuan-Jun Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763503",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247782",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "A Convolution Neural Network Accelerator Design with Weight Mapping and Pipeline Optimization.",
+      "first_author": "Lixia Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763617",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247977",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Accelerating Sparse Attention with a Reconfigurable Non-volatile Processing-In-Memory Architecture.",
+      "first_author": "Qilin Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764227",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247908",
+      "institution": "Duke University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00py81415"
+    },
+    {
+      "title": "Response Time Analysis and Optimization of DAG Tasks Exploiting Mutually Exclusive Execution.",
+      "first_author": "Haochun Liang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765316",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247927",
+      "institution": "Northeastern University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03awzbc87"
+    },
+    {
+      "title": "Uint-Packing: Multiply Your DNN Accelerator Performance via Unsigned Integer DSP Packing.",
+      "first_author": "Jingwei Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765296",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247773",
+      "institution": "Southeast University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04ct4d772"
+    },
+    {
+      "title": "Lightning Talk: The Incredible Shrinking Black Box Model.",
+      "first_author": "Patrick Schaumont",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763679",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247721",
+      "institution": "Worcester Polytechnic Institute",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05ejpqr48"
+    },
+    {
+      "title": "Reinforcement Learning-based Analog Circuit Optimizer using gm/ID for Sizing.",
+      "first_author": "Minjeong Choi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AutoDCIM: An Automated Digital CIM Compiler.",
+      "first_author": "Jia Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765206",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247976",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "MPass: Bypassing Learning-based Static Malware Detectors.",
+      "first_author": "Jialai Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765276",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247858",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "STRIVE: Enabling Choke Point Detection and Timing Error Resilience in a Low-Power Tensor Processing Unit.",
+      "first_author": "Noel Daniel Gundi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764772",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247879",
+      "institution": "Utah State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00h6set76"
+    },
+    {
+      "title": "C2PI: An Efficient Crypto-Clear Two-Party Neural Network Private Inference.",
+      "first_author": "Yuke Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4367189859",
+      "doi": "https://doi.org/10.48550/arxiv.2304.13266",
+      "institution": null
+    },
+    {
+      "title": "BWA-NIMC: Budget-based Workload Allocation for Hybrid Near/In-Memory-Computing.",
+      "first_author": "Chi-Tse Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765260",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247819",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "DSPIMM: A Fully Digital SParse In-Memory Matrix Vector Multiplier for Communication Applications.",
+      "first_author": "Amitesh Sridharan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764904",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247829",
+      "institution": "Arizona State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03efmqc40"
+    },
+    {
+      "title": "Mckeycutter: A High-throughput Key Generator of Classic McEliece on Hardware.",
+      "first_author": "Yihong Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763832",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247918",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "SpMMPlu: A Compiler Plug-in with Sparse IR for Efficient Sparse Matrix Multiplication.",
+      "first_author": "Tao Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764318",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247957",
+      "institution": "Huawei Technologies (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/056gzgs71"
+    },
+    {
+      "title": "OmniBoost: Boosting Throughput of Heterogeneous Embedded Devices under Multi-DNN Workload.",
+      "first_author": "Andreas Karatzas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764983",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247989",
+      "institution": "Southern Illinois University Carbondale",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/049kefs16"
+    },
+    {
+      "title": "Morphable CIM: Improving Operation Intensity and Depthwise Capability for SRAM-CIM Architecture.",
+      "first_author": "Yun-Chen Lo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763737",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247750",
+      "institution": "National Tsing Hua University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00zdnkx70"
+    },
+    {
+      "title": "Efficient ILT via Multi-level Lithography Simulation.",
+      "first_author": "Shuyuan Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763932",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247704",
+      "institution": "Shanghai Fudan Microelectronics (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02vfj3j86"
+    },
+    {
+      "title": "Lightning Talk: Efficient Embedded Machine Learning Deployment on Edge and IoT Devices.",
+      "first_author": "Sudeep Pasricha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764463",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247845",
+      "institution": "Colorado State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03k1gpj17"
+    },
+    {
+      "title": "ADAPTIVE: Agent-Based Learning for Bounding Time in Mixed-Criticality Systems.",
+      "first_author": "Behnaz Ranjbar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763487",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248007",
+      "institution": "TU Dresden",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/042aqky30"
+    },
+    {
+      "title": "Contention-Free Configured Grant Scheduling for 5G URLLC Traffic.",
+      "first_author": "Tianyu Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764695",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247842",
+      "institution": "University of Connecticut",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02der9h97"
+    },
+    {
+      "title": "DeepOHeat: Operator Learning-based Ultra-fast Thermal Simulation in 3D-IC Design.",
+      "first_author": "Ziyue Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764223",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247998",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "Lightning Talk: The Next Wave of High-level Synthesis.",
+      "first_author": "Deming Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764979",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247880",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Towards A Formally Verified Fully Homomorphic Encryption Compute Engine.",
+      "first_author": "Jeremy Casas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763978",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247836",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "MixPipe: Efficient Bidirectional Pipeline Parallelism for Training Large-Scale Models.",
+      "first_author": "Weigang Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763939",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247730",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Toward Parallelism-Optimal Topology Generation for Wavelength-Routed Optical NoC Designs.",
+      "first_author": "Kuan-Cheng Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764054",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247996",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "STCG: State-Aware Test Case Generation for Simulink Models.",
+      "first_author": "Zhuo Su",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763603",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247787",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Cryogenic In-Memory Matrix-Vector Multiplication using Ferroelectric Superconducting Quantum Interference Device (FE-SQUID).",
+      "first_author": "Shamiul Alam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763568",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247669",
+      "institution": "University of Tennessee at Knoxville",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/020f3ap87"
+    },
+    {
+      "title": "An FPGA-Compatible TRNG with Ultra-High Throughput and Energy Efficiency.",
+      "first_author": "Zhaojun Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764161",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247746",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Global Floorplanning via Semidefinite Programming.",
+      "first_author": "Wei Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763992",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247967",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "Accelerating DNN Inference with Heterogeneous Multi-DPU Engines.",
+      "first_author": "Zelin Du",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765150",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247793",
+      "institution": "Shandong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04gtjhw98"
+    },
+    {
+      "title": "Leaky MDU: ARM Memory Disambiguation Unit Uncovered and Vulnerabilities Exposed.",
+      "first_author": "Chang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764061",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247985",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "UpTime: Towards Flow-based In-Memory Computing with High Fault-Tolerance.",
+      "first_author": "Sven Thijssen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764146",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247692",
+      "institution": "University of Central Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/036nfer12"
+    },
+    {
+      "title": "Hybrid Obfuscation of Chiplet-Based Systems.",
+      "first_author": "Yousef Safari",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765075",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247738",
+      "institution": "McGill University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01pxwe438"
+    },
+    {
+      "title": "DRPTM: A Decoupled Read-efficient High-scalable Persistent Transactional Memory.",
+      "first_author": "Wenkai Liang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763877",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247971",
+      "institution": "Harbin Institute of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01yqg2h08"
+    },
+    {
+      "title": "BlueFace: Integrating an Accelerator into the Core's Pipeline through Algorithm-Interface Co-Design for Real-Time SoCs.",
+      "first_author": "Zhe Jiang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "When Monte-Carlo Dropout Meets Multi-Exit: Optimizing Bayesian Neural Networks on FPGA.",
+      "first_author": "Hongxiang Fan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764918",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247954",
+      "institution": "Samsung (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01w6gjq94"
+    },
+    {
+      "title": "Reinforcement Learning-Assisted Management for Convertible SSDs.",
+      "first_author": "Qian Wei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763331",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247929",
+      "institution": "Shandong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04gtjhw98"
+    },
+    {
+      "title": "Bit-Serial Cache: Exploiting Input Bit Vector Repetition to Accelerate Bit-Serial Inference.",
+      "first_author": "Yun-Chen Lo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765251",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247749",
+      "institution": "National Tsing Hua University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00zdnkx70"
+    },
+    {
+      "title": "How to Boost Deep Neural Networks for Computer Vision.",
+      "first_author": "Soonhoi Ha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763468",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247892",
+      "institution": "Seoul National University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04h9pn542"
+    },
+    {
+      "title": "Hardware-Aware Graph Neural Network Automated Design for Edge Computing Platforms.",
+      "first_author": "Ao Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764393",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247875",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "Thermal Scaffolding for Ultra-Dense 3D Integrated Circuits.",
+      "first_author": "Dennis Rich",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763835",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247815",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "A digital 3D TCAM accelerator for the inference phase of Random Forest.",
+      "first_author": "Chieh-Lin Tsai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764676",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247695",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "Invited: Building Robust Quantum System Software for Technology-Specific Characteristics.",
+      "first_author": "Tirthak Patel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763943",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248010",
+      "institution": "Rice University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008zs3103"
+    },
+    {
+      "title": "Hardware Support for Durable Atomic Instructions for Persistent Parallel Programming.",
+      "first_author": "Khan Shaikhul Hadi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763968",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247729",
+      "institution": "University of Central Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/036nfer12"
+    },
+    {
+      "title": "AGD: A Learning-based Optimization Framework for EDA and its Application to Gate Sizing.",
+      "first_author": "Phuoc Pham",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763848",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247924",
+      "institution": "Incheon National University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/02xf7p935"
+    },
+    {
+      "title": "HammerDodger: A Lightweight Defense Framework against RowHammer Attack on DNNs.",
+      "first_author": "Cheng Gongye",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765014",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247671",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Automated Design of Complex Analog Circuits with Multiagent based Reinforcement Learning.",
+      "first_author": "Jinxin Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764190",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247909",
+      "institution": "State Key Laboratory of ASIC and System",
+      "institution_country": null,
+      "institution_ror": "https://ror.org/01mamgv83"
+    },
+    {
+      "title": "(Invited) Predictive analytics for cryogenic CMOS in future quantum computing systems.",
+      "first_author": "Rajiv V. Joshi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764049",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247978",
+      "institution": "IBM Research - Thomas J. Watson Research Center",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0265w5591"
+    },
+    {
+      "title": "On a Moreau Envelope Wirelength Model for Analytical Global Placement.",
+      "first_author": "Peiyu Liao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763494",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247712",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Equality Saturation for Datapath Synthesis: A Pathway to Pareto Optimality.",
+      "first_author": "Ecenur Ustun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763476",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247948",
+      "institution": "Cornell University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05bnh6r87"
+    },
+    {
+      "title": "Correlation-guided Placement for Nonvolatile FPGAs.",
+      "first_author": "Mengying Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764083",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247963",
+      "institution": "Shandong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04gtjhw98"
+    },
+    {
+      "title": "Late Breaking Results: Weight Decay is ALL You Need for Neural Network Sparsification.",
+      "first_author": "Xizi Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764798",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247950",
+      "institution": "Huazhong Agricultural University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023b72294"
+    },
+    {
+      "title": "Robust Tickets Can Transfer Better: Drawing More Transferable Subnetworks in Transfer Learning.",
+      "first_author": "Yonggan Fu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764075",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247920",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "ASMCap: An Approximate String Matching Accelerator for Genome Sequence Analysis Based on Capacitive Content Addressable Memory.",
+      "first_author": "Hongtao Zhong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764040",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247937",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Late Breaking Results: Fast Fair Medical Applications? Hybrid Vision Models Achieve the Fairness on the Edge.",
+      "first_author": "Changdi Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763416",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247761",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Disjoint-Path and Golden-Pin Based Irregular PCB Routing with Complex Constraints.",
+      "first_author": "Qinghai Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764000",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247728",
+      "institution": "Fuzhou University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/011xvna82"
+    },
+    {
+      "title": "Formal Verification of Restoring Dividers made Fast and Simple.",
+      "first_author": "Jiteshri Dasari",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764073",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247789",
+      "institution": "University of Massachusetts Amherst",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0072zz521"
+    },
+    {
+      "title": "A Universal Method for Task Allocation on FP-FPS Multiprocessor Systems with Spin Locks.",
+      "first_author": "Shuai Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764127",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247711",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "Late Breaking Results: RL-LPO: Reinforcement Learning Based Leakage Power Optimization Framework with Graph Neural Network.",
+      "first_author": "Peng Cao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765022",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247707",
+      "institution": "Southeast University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04ct4d772"
+    },
+    {
+      "title": "EDGE: Efficient DAG-based Global Routing Engine.",
+      "first_author": "Jinwei Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765309",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247702",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Machine Learning-based Thermally-Safe Cache Contention Mitigation in Clustered Manycores.",
+      "first_author": "Mohammed Bakr Sikal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764144",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247708",
+      "institution": "Karlsruhe Institute of Technology",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04t3en479"
+    },
+    {
+      "title": "Optimal Synthesis of Multi-Controlled Qudit Gates.",
+      "first_author": "Wei Zi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764965",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247925",
+      "institution": "Institute of Computing Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0090r4d87"
+    },
+    {
+      "title": "Emerging Hardware Technologies and 3D System Integration for Ubiquitous Machine Intelligence.",
+      "first_author": "Haitong Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764862",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247990",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "IFHE: Intermediate-Feature Heterogeneity Enhancement for Image Synthesis in Data-Free Knowledge Distillation.",
+      "first_author": "Yi Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764556",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247717",
+      "institution": "Chongqing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023rhb549"
+    },
+    {
+      "title": "PASNet: Polynomial Architecture Search Framework for Two-party Computation-based Secure Neural Network Deployment.",
+      "first_author": "Hongwu Peng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765144",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247663",
+      "institution": "University of Connecticut",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02der9h97"
+    },
+    {
+      "title": "XPert: Peripheral Circuit & Neural Architecture Co-search for Area and Energy-efficient Xbar-based Computing.",
+      "first_author": "Abhishek Moitra",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764939",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247676",
+      "institution": "Yale University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03v76x132"
+    },
+    {
+      "title": "AmgR: Algebraic Multigrid Accelerated on ReRAM.",
+      "first_author": "Mingjia Fan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764035",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247881",
+      "institution": "China University of Petroleum, Beijing",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/041qf4r12"
+    },
+    {
+      "title": "ANAS: Asynchronous Neuromorphic Hardware Architecture Search Based on a System-Level Simulator.",
+      "first_author": "Jian Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764239",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247850",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "SEO: Safety-Aware Energy Optimization Framework for Multi-Sensor Neural Controllers at the Edge.",
+      "first_author": "Mohanad Odema",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764079",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247751",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "TFix: Exploiting the Natural Redundancy of Ternary Neural Networks for Fault Tolerant In-Memory Vector Matrix Multiplication.",
+      "first_author": "Akul Malhotra",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763838",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247835",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "DARIC: A Data Reuse-Friendly CGRA for Parallel Data Access via Elastic FIFOs.",
+      "first_author": "Dajiang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764501",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247862",
+      "institution": "Chongqing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023rhb549"
+    },
+    {
+      "title": "Late Breaking Results: Scalable and Efficient Hyperdimensional Computing for Network Intrusion Detection.",
+      "first_author": "Junyao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765215",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247859",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "AccALS: Accelerating Approximate Logic Synthesis by Selection of Multiple Local Approximate Changes.",
+      "first_author": "Xuan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764677",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247856",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "cVTS: A Constrained Voronoi Tree Search Method for High Dimensional Analog Circuit Synthesis.",
+      "first_author": "Aidong Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764871",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247994",
+      "institution": "Shanghai Fudan Microelectronics (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02vfj3j86"
+    },
+    {
+      "title": "ChaosINTC: A Secure Interrupt Management Mechanism against Interrupt-based Attacks on TEE.",
+      "first_author": "Yifan Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763726",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247744",
+      "institution": "University of Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05qbk4x57"
+    },
+    {
+      "title": "Quixote: Improving Fidelity of Quantum Program by Independent Execution of Controlled Gates.",
+      "first_author": "Enhyeok Jang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764107",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247757",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "Compiler Optimization for Quantum Computing Using Reinforcement Learning.",
+      "first_author": "Nils Quetschlich",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763898",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248002",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "Discerning Limitations of GNN-based Attacks on Logic Locking.",
+      "first_author": "Armin Darjani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763948",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247847",
+      "institution": "TU Dresden",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/042aqky30"
+    },
+    {
+      "title": "Property-Based Timing Analysis and Optimization for Complex Cyber-Physical Real-Time Systems.",
+      "first_author": "Jian-Jia Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765116",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247807",
+      "institution": "TU Dortmund University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01k97gp34"
+    },
+    {
+      "title": "Restructure-Tolerant Timing Prediction via Multimodal Fusion.",
+      "first_author": "Ziyi Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764525",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247802",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Map-and-Conquer: Energy-Efficient Mapping of Dynamic Neural Nets onto Heterogeneous MPSoCs.",
+      "first_author": "Halima Bouzidi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764053",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247722",
+      "institution": "Université Polytechnique Hauts-de-France",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02ezch769"
+    },
+    {
+      "title": "A Memory-Efficient Edge Inference Accelerator with XOR-based Model Compression.",
+      "first_author": "Hyunseung Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763534",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248005",
+      "institution": "Seoul National University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04h9pn542"
+    },
+    {
+      "title": "Input-Aware Dynamic Timestep Spiking Neural Networks for Efficient In-Memory Computing.",
+      "first_author": "Yuhang Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763804",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247869",
+      "institution": "Yale University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03v76x132"
+    },
+    {
+      "title": "In-Memory Neural Network Accelerator based on eDRAM Cell with Enhanced Retention Time.",
+      "first_author": "Inhwan Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764212",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247975",
+      "institution": "Pohang University of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04xysgw12"
+    },
+    {
+      "title": "RL-MUL: Multiplier Design Optimization with Deep Reinforcement Learning.",
+      "first_author": "Dongsheng Zuo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765017",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247941",
+      "institution": "HKUST(GZ)",
+      "institution_country": null,
+      "raw_affiliation": "HKUST(GZ)"
+    },
+    {
+      "title": "A Database Dependent Framework for K-Input Maximum Fanout-Free Window Rewriting.",
+      "first_author": "Xuliang Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763572",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247727",
+      "institution": "Hong Kong Baptist University",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/0145fw131"
+    },
+    {
+      "title": "GenFuzz: GPU-accelerated Hardware Fuzzing using Genetic Algorithm with Multiple Inputs.",
+      "first_author": "Dian-Lun Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763846",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247942",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "Range-Invariant Approximation of Non-Linear Operations for Efficient BERT Fine-Tuning.",
+      "first_author": "Janghyeon Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765242",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247958",
+      "institution": "Hanyang University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/046865y68"
+    },
+    {
+      "title": "An Iterative Method for Mapping-Aware Frequency Regulation in Dataflow Circuits.",
+      "first_author": "Carmine Rizzi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765072",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247686",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "FLNA: An Energy-Efficient Point Cloud Feature Learning Accelerator with Dataflow Decoupling.",
+      "first_author": "Dongxu Lyu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763936",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247674",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "HTVM: Efficient Neural Network Deployment On Heterogeneous TinyML Platforms.",
+      "first_author": "Josse Van Delm",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763938",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247664",
+      "institution": "KU Leuven",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/05f950310"
+    },
+    {
+      "title": "DiffPattern: Layout Pattern Generation via Discrete Diffusion.",
+      "first_author": "Zixiao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763651",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248009",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Compact and High-Performance TCAM Based on Scaled Double-Gate FeFETs.",
+      "first_author": "Liu Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763336",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247849",
+      "institution": "University of Notre Dame",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00mkhxb43"
+    },
+    {
+      "title": "Power Side-Channel Vulnerability Assessment of Lightweight Cryptographic Scheme, XOODYAK.",
+      "first_author": "Anupam Golder",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Reaction Time Analysis of Event-Triggered Processing Chains with Data Refreshing.",
+      "first_author": "Yue Tang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763819",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248012",
+      "institution": "Northeastern University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03awzbc87"
+    },
+    {
+      "title": "On-Device Unsupervised Image Segmentation.",
+      "first_author": "Junhuan Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764056",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247959",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "HexaMesh: Scaling to Hundreds of Chiplets with an Optimized Chiplet Arrangement.",
+      "first_author": "Patrick Iff",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764109",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248006",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Don't Cross Me! Cross-layer System Security.",
+      "first_author": "Najmeh Nazari",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lightning Talk: Can memory technologies meet demands of data abundant applications?",
+      "first_author": "Vijaykrishnan Narayanan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764068",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247853",
+      "institution": "Pennsylvania State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04p491231"
+    },
+    {
+      "title": "Learning-based Data Separation for Write Amplification Reduction in Solid State Drives.",
+      "first_author": "Penghao Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763961",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247795",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "IP Protection in TinyML.",
+      "first_author": "Jinwen Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765218",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247898",
+      "institution": "Washington University in St. Louis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01yc7t268"
+    },
+    {
+      "title": "AdaGL: Adaptive Learning for Agile Distributed Training of Gigantic GNNs.",
+      "first_author": "Ruisi Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765310",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248003",
+      "institution": "University of California, San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "Neuromorphic Swarm on RRAM Compute-in-Memory Processor for Solving QUBO Problem.",
+      "first_author": "Ashwin Sanjay Lele",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764345",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247852",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "ReRAM-based graph attention network with node-centric edge searching and hamming similarity.",
+      "first_author": "Ruibin Mao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765047",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247735",
+      "institution": "University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/02zhqgq86"
+    },
+    {
+      "title": "Return-to-Non-Secure Vulnerabilities on ARM Cortex-M TrustZone: Attack and Defense.",
+      "first_author": "Zheyuan Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763927",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247972",
+      "institution": "University at Buffalo, State University of New York",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y64my43"
+    },
+    {
+      "title": "Processor Vulnerability Discovery.",
+      "first_author": "Yongqiang Lyu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763708",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247906",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "VITAL: Vision Transformer Neural Networks for Accurate Smartphone Heterogeneity Resilient Indoor Localization.",
+      "first_author": "Danish Gufran",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763865",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247684",
+      "institution": "Colorado State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03k1gpj17"
+    },
+    {
+      "title": "Lightning Talk: Efficiency and Programmability of DNN Accelerators and GPUs.",
+      "first_author": "Won Woo Ro",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763653",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247689",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "ALMOST: Adversarial Learning to Mitigate Oracle-less ML Attacks via Synthesis Tuning.",
+      "first_author": "Animesh Basak Chowdhury",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763882",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247921",
+      "institution": "New York University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0190ak572"
+    },
+    {
+      "title": "PIE-DRAM: Postponing IECC to Enhance DRAM performance with access table.",
+      "first_author": "JaeHwa Jeon",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764089",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247841",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "Heterogeneous Reconfigurable Accelerators: Trends and Perspectives.",
+      "first_author": "Wayne Luk",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764145",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247723",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "Lightning Talk: Bridging Neuro-Dynamics and Cognition.",
+      "first_author": "Mohsen Imani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764071",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247931",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "Invited: Accelerating Genome Analysis via Algorithm-Architecture Co-Design.",
+      "first_author": "Onur Mutlu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763533",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247887",
+      "institution": "ETH,Z&#x00FC;rich",
+      "institution_country": null,
+      "raw_affiliation": "ETH,Z&#x00FC;rich"
+    },
+    {
+      "title": "Condense: A Framework for Device and Frequency Adaptive Neural Network Models on the Edge.",
+      "first_author": "Yifan Gong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765321",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247713",
+      "institution": "Universidad del Noreste",
+      "institution_country": "MX",
+      "institution_ror": "https://ror.org/02ahky613"
+    },
+    {
+      "title": "Holistic WCRT Analysis for Global Fixed-Priority Preemptive Multiprocessor Scheduling.",
+      "first_author": "Guoqi Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763809",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247970",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "PIMA-LPN: Processing-in-memory Acceleration for Efficient LPN-based Post-Quantum Cryptography.",
+      "first_author": "Lin Ding",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764821",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247891",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "ActiWate: Adaptive and Design-agnostic Active Watermarking for IP Ownership in Modern SoCs.",
+      "first_author": "Zahin Ibnat",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764568",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247688",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "Orchestrated Scheduling and Partitioning for Improved Address Translation in GPUs.",
+      "first_author": "Bingyao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763881",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247943",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "Architecture 2.0: Challenges and Opportunities.",
+      "first_author": "Vijay Janapa Reddi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386767098",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247808",
+      "institution": "Harvard University Press",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/006v7bf86"
+    },
+    {
+      "title": "Processing-In-Hierarchical-Memory Architecture for Billion-Scale Approximate Nearest Neighbor Search.",
+      "first_author": "Zhenhua Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763970",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247946",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Neurogenesis Dynamics-inspired Spiking Neural Network Training Acceleration.",
+      "first_author": "Shaoyi Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765233",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247810",
+      "institution": "University of Connecticut",
+      "institution_country": null,
+      "raw_affiliation": "University of Connecticut"
+    },
+    {
+      "title": "WinoTrain: Winograd-Aware Training for Accurate Full 8-bit Convolution Acceleration.",
+      "first_author": "Pierpaolo Morì",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764427",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247805",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "Rubick: A Synthesis Framework for Spatial Architectures via Dataflow Decomposition.",
+      "first_author": "Zizhang Luo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763501",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247743",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Architecting Selective Refresh based Multi-Retention Cache for Heterogeneous System (ARMOUR).",
+      "first_author": "Sukarn Agarwal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763627",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247878",
+      "institution": "University of Edinburgh",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01nrxwf90"
+    },
+    {
+      "title": "Gamora: Graph Learning based Symbolic Reasoning for Large-Scale Boolean Networks.",
+      "first_author": "Nan Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764162",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247828",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "Graph Representation Learning for Microarchitecture Design Space Exploration.",
+      "first_author": "Xiaoling Yi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764824",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247687",
+      "institution": "Shanghai Fudan Microelectronics (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02vfj3j86"
+    },
+    {
+      "title": "NTT-PIM: Row-Centric Architecture and Mapping for Efficient Number-Theoretic Transform on PIM.",
+      "first_author": "Jaewoo Park",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765257",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247747",
+      "institution": "Ulsan National Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/017cjz748"
+    },
+    {
+      "title": "R-TOSS: A Framework for Real-Time Object Detection using Semi-Structured Pruning.",
+      "first_author": "Abhishek Balasubramaniam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765012",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247917",
+      "institution": "Colorado State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03k1gpj17"
+    },
+    {
+      "title": "AVX Timing Side-Channel Attacks against Address Space Layout Randomization.",
+      "first_author": "Hyunwoo Choi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763963",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247741",
+      "institution": "The Affiliated Institute of ETRI",
+      "institution_country": null,
+      "raw_affiliation": "The Affiliated Institute of ETRI"
+    },
+    {
+      "title": "Occamy: Memory-efficient GPU Compiler for DNN Inference.",
+      "first_author": "Jaeho Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763803",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247839",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "Fast FPGA Accelerator of Graph Cut Algorithm with Out-of-order Parallel Execution in Folding Grid Architecture.",
+      "first_author": "Guangyao Yan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764007",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247784",
+      "institution": "Shanghai Advanced Research Institute",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02br7py06"
+    },
+    {
+      "title": "OpenDRC: An Efficient Open-Source Design Rule Checking Engine with Hierarchical GPU Acceleration.",
+      "first_author": "Zhuolun He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765021",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247734",
+      "institution": "Shanghai Artificial Intelligence Laboratory",
+      "institution_country": null,
+      "institution_ror": "https://ror.org/03wkvpx79"
+    },
+    {
+      "title": "DBPS: Dynamic Block Size and Precision Scaling for Efficient DNN Training Supported by RISC-V ISA Extensions.",
+      "first_author": "Seunghyun Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764384",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248013",
+      "institution": "Korea University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/047dqcg40"
+    },
+    {
+      "title": "Hybrid Gate-Pulse Model for Variational Quantum Algorithms.",
+      "first_author": "Zhiding Liang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765283",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247923",
+      "institution": "University of Notre Dame",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00mkhxb43"
+    },
+    {
+      "title": "Stochastic-HMDs: Adversarial-Resilient Hardware Malware Detectors via Undervolting.",
+      "first_author": "Md. Shohidul Islam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764070",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247980",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "PSMiner: A Pattern-Aware Accelerator for High-Performance Streaming Graph Pattern Mining.",
+      "first_author": "Hao Qi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764630",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247902",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Towards Efficient Convolutional Neural Network for Embedded Hardware via Multi-Dimensional Pruning.",
+      "first_author": "Hao Kong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763457",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247965",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "APPEND: Rethinking ASIP Synthesis in the Era of AI.",
+      "first_author": "Cangyuan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764114",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247872",
+      "institution": "Institute of Computing Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0090r4d87"
+    },
+    {
+      "title": "Efficient Transformer Inference with Statically Structured Sparse Attention.",
+      "first_author": "Steve Dai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763875",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247993",
+      "institution": "NVIDIA",
+      "institution_country": null,
+      "raw_affiliation": "NVIDIA"
+    },
+    {
+      "title": "Lightning Talk 21: EDA with ML, Rule-Based, or Both?",
+      "first_author": "Youngsoo Shin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Dynamic Sparse Training via Balancing the Exploration-Exploitation Trade-off.",
+      "first_author": "Shaoyi Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764188",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247716",
+      "institution": "University of Connecticut",
+      "institution_country": null,
+      "raw_affiliation": "University of Connecticut"
+    },
+    {
+      "title": "Fault Injection in Native Logic-in-Memory Computation on Neuromorphic Hardware.",
+      "first_author": "Felix Staudigl",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764674",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247742",
+      "institution": "RWTH Aachen University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04xfq0f34"
+    },
+    {
+      "title": "On EDA-Driven Learning for SAT Solving.",
+      "first_author": "Min Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763888",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248001",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "ExploreFault: Identifying Exploitable Fault Models in Block Ciphers with Reinforcement Learning.",
+      "first_author": "Hao Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763488",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247953",
+      "institution": "Texas A&M University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01f5ytq51"
+    },
+    {
+      "title": "PATRONoC: Parallel AXI Transport Reducing Overhead for Networks-on-Chip targeting Multi-Accelerator DNN Platforms at the Edge.",
+      "first_author": "Vikram Jain",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764655",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247800",
+      "institution": "KU Leuven",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/05f950310"
+    },
+    {
+      "title": "Lift: Exploiting Hybrid Stacked Memory for Energy-Efficient Processing of Graph Convolutional Networks.",
+      "first_author": "Jiaxian Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764001",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247871",
+      "institution": "Shenzhen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01vy4gh70"
+    },
+    {
+      "title": "HAWEN: Hardware Accelerator for Thread Wake-Ups in Linux Event Notification.",
+      "first_author": "Lars Nolte",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764557",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247823",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "Invited: Pre-silicon Side Channel and Fault Analysis.",
+      "first_author": "Jasper Van Woudenberg",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764948",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247882",
+      "institution": "Jisc",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01rv9gx86"
+    },
+    {
+      "title": "Stalker: A Framework to Analyze Fragility of Cryptographic Libraries under Hardware Fault Models.",
+      "first_author": "Guorui Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763471",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247932",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "EP-ORAM: Efficient NVM-Friendly Path Eviction for Ring ORAM in Hybrid Memory.",
+      "first_author": "Mehrnoosh Raoufi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763594",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247714",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "Mixed-cell-height Placement with Minimum-Implant-Area and Drain-to-Drain Abutment Constraints.",
+      "first_author": "Guohao Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763712",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247857",
+      "institution": "Shanghai Fudan Microelectronics (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02vfj3j86"
+    },
+    {
+      "title": "Flex-SFU: Accelerating DNN Activation Functions by Non-Uniform Piecewise Approximation.",
+      "first_author": "Enrico Reggiani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764151",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247855",
+      "institution": "Barcelona Supercomputing Center",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/05sd8tv96"
+    },
+    {
+      "title": "Intermittent-Aware Neural Network Pruning.",
+      "first_author": "Chih-Chia Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763935",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247825",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "Privacy-Preserving DNN Training with Prefetched Meta-Keys on Heterogeneous Neural Network Accelerators.",
+      "first_author": "Qiushi Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764208",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247964",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Accelerating Sparse LU Factorization with Density-Aware Adaptive Matrix Multiplication for Circuit Simulation.",
+      "first_author": "Tengcheng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764095",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247767",
+      "institution": "China University of Petroleum, Beijing",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/041qf4r12"
+    },
+    {
+      "title": "Lightning Talk: Power and Performance Reconciliation - from Tradeoff to Win-Win.",
+      "first_author": "Jiang Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764030",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247854",
+      "institution": "Texas A&M University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01f5ytq51"
+    },
+    {
+      "title": "Glass Interposer Integration of Logic and Memory Chiplets: PPA and Power/Signal Integrity Benefits.",
+      "first_author": "Pruek Vanna-Iampikul",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763889",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247949",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "A High-accurate Multi-objective Exploration Framework for Design Space of CPU.",
+      "first_author": "Duo Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763467",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247790",
+      "institution": "Institute of Computing Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0090r4d87"
+    },
+    {
+      "title": "Fine-Grained QoS Control via Tightly-Coupled Bandwidth Monitoring and Regulation for FPGA-based Heterogeneous SoCs.",
+      "first_author": "Gianluca Brilli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764684",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247840",
+      "institution": "University of Modena and Reggio Emilia",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/02d4c4y02"
+    },
+    {
+      "title": "FIONA: Fine-grained Incoherent Optical DNN Accelerator Search for Superior Efficiency and Robustness.",
+      "first_author": "Mengquan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764031",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247725",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "RQ-DNN: Reliable Quantization for Fault-tolerant Deep Neural Networks.",
+      "first_author": "Insu Choi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763792",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247670",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement.",
+      "first_author": "Siting Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765175",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247794",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Scalable Optimal Layout Synthesis for NISQ Quantum Processors.",
+      "first_author": "Wan-Hsuan Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764200",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247760",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "Emerging Trends in Multi-Accelerator and Distributed System for ML: Devices, Architectures, Tools and Applications.",
+      "first_author": "Muhammad Shafique",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Comprehensive Integration of Hyperdimensional Computing with Deep Learning towards Neuro-Symbolic AI.",
+      "first_author": "Hyunsei Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763810",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248004",
+      "institution": "Daegu Gyeongbuk Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03frjya69"
+    },
+    {
+      "title": "PROPHET: Predictive On-Chip Power Meter in Hardware Accelerator for DNN.",
+      "first_author": "Jian Peng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765241",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247979",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Specialization meets Flexibility: a Heterogeneous Architecture for High-Efficiency, High-flexibility AR/VR Processing.",
+      "first_author": "Arpan Suravi Prasad",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "INVITED: Design Automation Needs for Monolithic 3D ICs: Accomplishments and Gaps.",
+      "first_author": "Lingjun Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763791",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247666",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "General-Purpose Gate-Level Simulation with Partition-Agnostic Parallelism.",
+      "first_author": "Zizheng Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763614",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247907",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "PertNAS: Architectural Perturbations for Memory-Efficient Neural Architecture Search.",
+      "first_author": "Afzal Ahmad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763745",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247756",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "FPDsim: A Structural Simulator For Power Grid Analysis Of Flat Panel Display.",
+      "first_author": "Chengtao An",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764012",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247770",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "ZKROWNN: Zero Knowledge Right of Ownership for Neural Networks.",
+      "first_author": "Nojan Sheybani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763924",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247798",
+      "institution": "University of California, San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "NetBooster: Empowering Tiny Deep Learning By Standing on the Shoulders of Deep Giants.",
+      "first_author": "Zhongzhi Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763783",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247827",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "High Performance, Low Power Matrix Multiply Design on ACAP: from Architecture, Design Challenges and DSE Perspectives.",
+      "first_author": "Jinming Zhuang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lightning Talk: Memory-Centric Computing.",
+      "first_author": "Onur Mutlu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764076",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247896",
+      "institution": "ETH Z&#x00FC;rich",
+      "institution_country": null,
+      "raw_affiliation": "ETH Z&#x00FC;rich"
+    },
+    {
+      "title": "BLITZCRANK: Factor Graph Accelerator for Motion Planning.",
+      "first_author": "Yuhui Hao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763593",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247780",
+      "institution": "Tianjin University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/012tb2g32"
+    },
+    {
+      "title": "Improving Standard-Cell Design Flow using Factored Form Optimization.",
+      "first_author": "Alessandro Tempia Calvino",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764873",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247905",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "Late Breaking Results From Hybrid Design Automation for Field-coupled Nanotechnologies.",
+      "first_author": "Simon Toni Hofmann",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763717",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247933",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "Memory-Efficient and Real-Time SPAD-based dToF Depth Sensor with Spatial and Statistical Correlation.",
+      "first_author": "Shiyao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763445",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247771",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Late Breaking Results: Test Selection For RTL Coverage By Unsupervised Learning From Fast Functional Simulation.",
+      "first_author": "Rongjian Liang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764844",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247936",
+      "institution": "Nvidia (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03jdj4y14"
+    },
+    {
+      "title": "Automating Constraint-Aware Datapath Optimization using E-Graphs.",
+      "first_author": "Samuel Coward",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763903",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247797",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "Lightning Talk: Unlocking the Potential of the Analog Domain: Exploring the Next Frontier in Hardware Security.",
+      "first_author": "Waleed Khalil",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386767131",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247783",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "Invited: Caching in Automated Data Centric Vehicles for Edge Computing Scenarios.",
+      "first_author": "Nora Sperling",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765026",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247983",
+      "institution": "Technische Universität Braunschweig",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/010nsgg66"
+    },
+    {
+      "title": "Ever more optimized simulations of fermionic systems on a quantum computer.",
+      "first_author": "Qingfeng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764048",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247693",
+      "institution": "University of Maryland, College Park",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047s2c258"
+    },
+    {
+      "title": "Critical Paths Prediction under Multiple Corners Based on BiLSTM Network.",
+      "first_author": "Qianqian Song",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763894",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247984",
+      "institution": "Southeast University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04ct4d772"
+    },
+    {
+      "title": "Sparse Hamming Graph: A Customizable Network-on-Chip Topology.",
+      "first_author": "Patrick Iff",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765266",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247754",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "CUDA Quantum: The Platform for Integrated Quantum-Classical Computing.",
+      "first_author": "Jin-Sung Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764008",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247886",
+      "institution": "Nvidia (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03jdj4y14"
+    },
+    {
+      "title": "CSQ: Growing Mixed-Precision Quantization Scheme with Bi-level Continuous Sparsification.",
+      "first_author": "Lirui Xiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765314",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247982",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Faster and Stronger Lossless Compression with Optimized Autoregressive Framework.",
+      "first_author": "Yu Mao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763455",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247866",
+      "institution": "City University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/03q8dnn23"
+    },
+    {
+      "title": "Chiplets: How Small is too Small?",
+      "first_author": "Alexander Graening",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763434",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247947",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "Late Breaking Results: An Efficient Bridge-based Compression Algorithm for Topologically Quantum Error Corrected Circuits.",
+      "first_author": "Wei-Hsiang Tseng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764704",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247656",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "Rethinking Programming Frameworks for In-Storage Processing.",
+      "first_author": "Yu-Chia Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763359",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247919",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "UpPipe: A Novel Pipeline Management on In-Memory Processors for RNA-seq Quantification.",
+      "first_author": "Liang-Chi Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764197",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247915",
+      "institution": "National Cheng Kung University,Department of CSIE,Tainan,Taiwan R.O.C",
+      "institution_country": null,
+      "raw_affiliation": "National Cheng Kung University,Department of CSIE,Tainan,Taiwan R.O.C"
+    },
+    {
+      "title": "Invited: Autonomous Driving Digital Twin Empowered Design Automation: An Industry Perspective.",
+      "first_author": "Bo Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763348",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247889",
+      "institution": "Bio, Tech and Beyond (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03ryzec43"
+    },
+    {
+      "title": "HUNTER: Releasing Persistent Memory Write Performance with A Novel PM-DRAM Collaboration Architecture.",
+      "first_author": "Yanqi Pan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765234",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247940",
+      "institution": "Harbin Institute of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01yqg2h08"
+    },
+    {
+      "title": "APP: Enabling Soft Real-Time Execution on Densely-Populated Hybrid Memory System.",
+      "first_author": "Zheng-Wei Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765090",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247672",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "DistHD: A Learner-Aware Dynamic Encoding Method for Hyperdimensional Classification.",
+      "first_author": "Junyao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763441",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247876",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "System-level Innovation for the Next Decade AI Performance, Power, Area with Co-optimization.",
+      "first_author": "Marcus Pan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Invited: Automated Code generation for Information Technology Tasks in YAML through Large Language Models.",
+      "first_author": "Saurabh Pujar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763802",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247987",
+      "institution": "IBM Research",
+      "institution_country": null,
+      "raw_affiliation": "IBM Research"
+    },
+    {
+      "title": "ZoneKV: A Space-Efficient Key-Value Store for ZNS SSDs.",
+      "first_author": "Mingchen Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763965",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247926",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "vPIM: Efficient Virtual Address Translation for Scalable Processing-in-Memory Architectures.",
+      "first_author": "Amel Fatima",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763422",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247745",
+      "institution": "University of Virginia",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0153tk833"
+    },
+    {
+      "title": "RLAlloc: A Deep Reinforcement Learning-Assisted Resource Allocation Framework for Enhanced Both I/O Throughput and QoS Performance of Multi-Streamed SSDs.",
+      "first_author": "Mengquan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763637",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247988",
+      "institution": "Hunan University of Science and Engineering",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04ymz0q33"
+    },
+    {
+      "title": "Invited: Algorithm-Software-Hardware Co-Design for Deep Learning Acceleration.",
+      "first_author": "Zhengang Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763895",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247939",
+      "institution": "Universidad del Noreste",
+      "institution_country": "MX",
+      "institution_ror": "https://ror.org/02ahky613"
+    },
+    {
+      "title": "RESPECT: Reinforcement Learning based Edge Scheduling on Pipelined Coral Edge TPUs.",
+      "first_author": "Jiaqi Yin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764047",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247706",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "Layout Decomposition via Boolean Satisfiability.",
+      "first_author": "Hongduo Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764829",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247883",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "An Efficient Accelerator for Point-based and Voxel-based Point Cloud Neural Networks.",
+      "first_author": "Xinhao Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763681",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247806",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Late Breaking Results: COPPER: Computation Obfuscation by Producing Permutations for Encoding Randomly.",
+      "first_author": "Kevin Hutto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763432",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247703",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Work or Sleep: Freshness-Aware Energy Scheduling for Wireless Powered Communication Networks with Interference Consideration.",
+      "first_author": "Ling Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765109",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247675",
+      "institution": "Shandong University of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02mr3ar13"
+    },
+    {
+      "title": "MTL-Designer: An Integrated Flow for Analysis and Synthesis of Microstrip Transmission Line.",
+      "first_author": "Qipan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763719",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247759",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "CHAM: A Customized Homomorphic Encryption Accelerator for Fast Matrix-Vector Product.",
+      "first_author": "Xuanle Ren",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764044",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247696",
+      "institution": "Alibaba Group (Cayman Islands)",
+      "institution_country": "KY",
+      "institution_ror": "https://ror.org/00mnrxf72"
+    },
+    {
+      "title": "Optimizing the Performance of NDP Operations by Retrieving File Semantics in Storage.",
+      "first_author": "Lin Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764279",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247986",
+      "institution": "Chongqing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023rhb549"
+    },
+    {
+      "title": "PVC-RAM:Process Variation Aware Charge Domain In-Memory Computing 6T-SRAM for DNNs.",
+      "first_author": "Sai Shubham",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764627",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247893",
+      "institution": "Indian Institute of Technology Gandhinagar",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/0036p5w23"
+    },
+    {
+      "title": "Fault-Tolerance-Oriented Physical Design for Fully Programmable Valve Array Biochips.",
+      "first_author": "Genggeng Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764159",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247720",
+      "institution": "Fuzhou University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/011xvna82"
+    },
+    {
+      "title": "PUMICE: Processing-using-Memory Integration with a Scalar Pipeline for Symbiotic Execution.",
+      "first_author": "Socrates S. Wong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763619",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247818",
+      "institution": "Cornell University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05bnh6r87"
+    },
+    {
+      "title": "Invited: Buried Power Rails and Back-side Power Grids: Prospects and Challenges.",
+      "first_author": "S. S. Teja Nibhanupudi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763976",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247775",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Fair Will Go On: A Collaboration-Aware Fairness Scheme for NVMe SSD in Cloud Storage System.",
+      "first_author": "Yang Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764817",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247718",
+      "institution": "Wuhan National Laboratory for Optoelectronics",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03c9ncn37"
+    },
+    {
+      "title": "PowerPruning: Selecting Weights and Activations for Power-Efficient Neural Network Acceleration.",
+      "first_author": "Richard Petri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763937",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247868",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "PTStore: Lightweight Architectural Support for Page Table Isolation.",
+      "first_author": "Wende Tan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764134",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247657",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Late Breaking Results: Analytical Placement for 3D ICs with Multiple Manufacturing Technologies.",
+      "first_author": "Yan-Jen Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763986",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247864",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "HAIMA: A Hybrid SRAM and DRAM Accelerator-in-Memory Architecture for Transformer.",
+      "first_author": "Yan Ding",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763995",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247913",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "Ising-CF: A Pathbreaking Collaborative Filtering Method Through Efficient Ising Machine Learning.",
+      "first_author": "Zhuo Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765220",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247860",
+      "institution": "University of Rochester",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/022kthw22"
+    },
+    {
+      "title": "Smart Detection of Obfuscated Thermal Covert Channel Attacks in Many-core Processors.",
+      "first_author": "Jeferson González-Gómez",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763581",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247844",
+      "institution": "Embedded Systems (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04742eh45"
+    },
+    {
+      "title": "A Fast Secure Deletion Strategy for High-Density Flash Memory through WOM-v Codes.",
+      "first_author": "Jinhua Cui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764267",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247911",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "DriverJar: Lightweight Device Driver Isolation for ARM.",
+      "first_author": "Huamao Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763686",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247974",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "Lightning Talk: A Perspective on Neuromorphic Computing.",
+      "first_author": "Deepika Sharma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765301",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247997",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "Profile-Driven Banded Smith-Waterman acceleration for Short Read Alignment.",
+      "first_author": "Konstantina Koliogeorgi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763670",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247740",
+      "institution": "Institute of Communication and Computer Systems",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/0483fn738"
+    },
+    {
+      "title": "Seeking the Yield Barrier: High-Dimensional SRAM Evaluation Through Optimal Manifold.",
+      "first_author": "Yanfang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763825",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247952",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "Invited: A Scalable Formal Approach for Correctness-Assured Hardware Design.",
+      "first_author": "Jin Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763692",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247673",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "EagleRec: Edge-Scale Recommendation System Acceleration with Inter-Stage Parallelism Optimization on GPUs.",
+      "first_author": "Yongbo Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764803",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247679",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "SimLL: Similarity-Based Logic Locking Against Machine Learning Attacks.",
+      "first_author": "Subhajit Dutta Chowdhury",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763595",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247822",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Automatic End-to-End Joint Optimization for Kernel Compilation on DSPs.",
+      "first_author": "Xiaolei Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763491",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247901",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "ML-CGRA: An Integrated Compilation Framework to Enable Efficient Machine Learning Acceleration on CGRAs.",
+      "first_author": "Yixuan Luo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763463",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247873",
+      "institution": "University of Rochester",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/022kthw22"
+    },
+    {
+      "title": "Lightning Talk: All Routes to Timing Closure.",
+      "first_author": "Iris Hui-Ru Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763660",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247801",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "Late Breaking Results: Configurable Ring Oscillators as a Side-Channel Countermeasure.",
+      "first_author": "Hassan Nassar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763718",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247786",
+      "institution": "Karlsruhe Institute of Technology",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04t3en479"
+    },
+    {
+      "title": "Physics-aware Roughness Optimization for Diffractive Optical Neural Networks.",
+      "first_author": "Shanglin Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764027",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247715",
+      "institution": "University of Connecticut",
+      "institution_country": null,
+      "raw_affiliation": "University of Connecticut"
+    },
+    {
+      "title": "Graph-Based Simultaneous Placement and Routing for Two-Dimensional Directed Self-Assembly Technology.",
+      "first_author": "Wei-Hsu Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763578",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247804",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "TF-MVP: Novel Sparsity-Aware Transformer Accelerator with Mixed-Length Vector Pruning.",
+      "first_author": "Eunji Yoo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764135",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247799",
+      "institution": "Pohang University of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04xysgw12"
+    },
+    {
+      "title": "Physics-Informed Optical Kernel Regression Using Complex-valued Neural Fields.",
+      "first_author": "Guojin Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764988",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247680",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "BERRY: Bit Error Robustness for Energy-Efficient Reinforcement Learning-Based Autonomous Systems.",
+      "first_author": "Zishen Wan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764660",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247999",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Invited: Waving the Double-Edged Sword: Building Resilient CAVs with Edge and Cloud Computing.",
+      "first_author": "Xiangguo Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764036",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247809",
+      "institution": "Northwestern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/000e0be47"
+    },
+    {
+      "title": "NNTesting: Neural Network Fault Attacks Detection Using Gradient-Based Test Vector Generation.",
+      "first_author": "Antian Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763967",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247885",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "Advances and Trends on On-Chip Compute-in-Memory Macros and Accelerators.",
+      "first_author": "Jae-Sun Seo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763973",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248014",
+      "institution": "Arizona State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03efmqc40"
+    },
+    {
+      "title": "Late Breaking Results: PVT-Sensitive Delay Fitting for High-Performance Computing.",
+      "first_author": "Ding-Hao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763989",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247900",
+      "institution": "National Yang Ming Chiao Tung University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00se2k293"
+    },
+    {
+      "title": "Rethinking AIG Resynthesis in Parallel.",
+      "first_author": "Tianji Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764462",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247961",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Partition Based Differential Testing for Finding Embedded Code Generation Bugs in Simulink.",
+      "first_author": "He Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764176",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247877",
+      "institution": "Dalian University of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023hj5876"
+    },
+    {
+      "title": "Primer: Fast Private Transformer Inference on Encrypted Data.",
+      "first_author": "Mengxin Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764217",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247719",
+      "institution": "Indiana University Bloomington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02k40bc56"
+    },
+    {
+      "title": "LRSDP: Low-Rank SDP for Triple Patterning Lithography Layout Decomposition.",
+      "first_author": "Yu Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764301",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247846",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Optimizing Data Reuse for CGRA Mapping Using Polyhedral-based Loop Transformations.",
+      "first_author": "Liao Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765289",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248011",
+      "institution": "Chongqing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023rhb549"
+    },
+    {
+      "title": "Bumblebee: A MemCache Design for Die-stacked and Off-chip Heterogeneous Memory Systems.",
+      "first_author": "Yifan Hua",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764052",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248000",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "HyperAttack: An Efficient Attack Framework for HyperDimensional Computing.",
+      "first_author": "Fangxin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763504",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247811",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Energy-Efficient On-Chip Training for Customized Home-based Rehabilitation Systems.",
+      "first_author": "A. Alper Goksoy",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765097",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247777",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Instant-NeRF: Instant On-Device Neural Radiance Field Training via Algorithm-Accelerator Co-Designed Near-Memory Processing.",
+      "first_author": "Yang Katie Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765002",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247710",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Lightning Talk: The New Era of Computational Cognitive Intelligence.",
+      "first_author": "Nikil D. Dutt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763913",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247865",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "Victor: A Variation-resilient Approach Using Cell-Clustered Charge-domain computing for High-density High-throughput MLC CiM.",
+      "first_author": "Mingyen Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764202",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247934",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Fault Tolerance in Time-Sensitive Networking with Mixed-Critical Traffic.",
+      "first_author": "Wenhong Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765070",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247817",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "A Matching Based Escape Routing Algorithm with Variable Design Rules and Constraints.",
+      "first_author": "Qinghai Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763911",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247781",
+      "institution": "Tan Kah Kee Innovation Laboratory",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05jxgts87"
+    },
+    {
+      "title": "Invited: Compute Express Link™ (CXL™): An Open Interconnect for Cloud Infrastructure.",
+      "first_author": "Debendra Das Sharma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764211",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247726",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "INVITED: Generalizing the ISA to the ILA: A Software/Hardware Interface for Accelerator-rich Platforms.",
+      "first_author": "Bo-Yuan Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764543",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247894",
+      "institution": "Intel (Taiwan)",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/03gezv924"
+    },
+    {
+      "title": "Mitigating Distribution Shift for Congestion Optimization in Global Placement.",
+      "first_author": "Su Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764099",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247660",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Lightning Talk: Trinity - Assured Neuro-symbolic Model Inspired by Hierarchical Predictive Coding.",
+      "first_author": "Susmit Jha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763861",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247803",
+      "institution": "Menlo School",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01240pn49"
+    },
+    {
+      "title": "EENet: Energy Efficient Neural Networks with Run-time Power Management.",
+      "first_author": "Xiangjie Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765240",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247701",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Pathfinding Model and Lagrangian-Based Global Routing.",
+      "first_author": "Pengju Yao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764800",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247969",
+      "institution": "Fuzhou University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/011xvna82"
+    },
+    {
+      "title": "SCAGuard: Detection and Classification of Cache Side-Channel Attacks via Attack Behavior Modeling and Similarity Comparison.",
+      "first_author": "Limin Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765089",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247890",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "MeG2: In-Memory Acceleration for Genome Graphs Analysis.",
+      "first_author": "Yu Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Model-Specific End-to-End Design Methodology for Resource-Constrained TinyML Hardware.",
+      "first_author": "Yanchi Dong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764955",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247791",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "HBP: Hierarchically Balanced Pruning and Accelerator Co-Design for Efficient DNN Inference.",
+      "first_author": "Ao Ren",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763942",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247785",
+      "institution": "Chongqing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023rhb549"
+    },
+    {
+      "title": "RMP-MEM: A HW/SW Reconfigurable Multi-Port Memory Architecture for Multi-PEA Oriented CGRA.",
+      "first_author": "Qidie Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764966",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247776",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "A Comprehensive Automated Exploration Framework for Systolic Array Designs.",
+      "first_author": "Suhail Basalama",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763439",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10248016",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "VideoFlip: Adversarial Bit Flips for Reducing Video Service Quality.",
+      "first_author": "Jung-Woo Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764745",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247863",
+      "institution": "University of California, San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "GDSII-Guard: ECO Anti-Trojan Optimization with Exploratory Timing-Security Trade-Offs.",
+      "first_author": "Xinming Wei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763368",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247697",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Muffin: A Framework Toward Multi-Dimension AI Fairness by Uniting Off-the-Shelf Models.",
+      "first_author": "Yi Sheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763907",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247765",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "On the Unpredictability of SPICE Simulations for Side-Channel Leakage Verification of Masked Cryptographic Circuits.",
+      "first_author": "Kazuki Monta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764533",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247834",
+      "institution": "Kobe University",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/03tgsfw79"
+    },
+    {
+      "title": "MARS: Exploiting Multi-Level Parallelism for DNN Workloads on Adaptive Multi-Accelerator Systems.",
+      "first_author": "Guan Shen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764246",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247992",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Orchestrating Measurement-Based Quantum Computation over Photonic Quantum Processors.",
+      "first_author": "Yingheng Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763823",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247944",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "Memory and Computation Coordinated Mapping of DNNs onto Complex Heterogeneous SoC.",
+      "first_author": "Size Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764003",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247951",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Sidekick: Near Data Processing for Clustering Enhanced by Automatic Memory Disaggregation.",
+      "first_author": "Sanghoon Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764935",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247769",
+      "institution": "Daegu Gyeongbuk Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03frjya69"
+    },
+    {
+      "title": "AdaS: A Fast and Energy-Efficient CNN Accelerator Exploiting Bit-Sparsity.",
+      "first_author": "Xiaolong Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765191",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247662",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Any-Angle Routing for Redistribution Layers in 2.5D IC Packages.",
+      "first_author": "Min-Hsuan Chung",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764970",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247899",
+      "institution": "National Taiwan University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/05bqach95"
+    },
+    {
+      "title": "Lightweight Structural Choices Operator for Technology Mapping.",
+      "first_author": "Antoine Grosnit",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763909",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247838",
+      "institution": "Huawei Technologies (Sweden)",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/0500fyd17"
+    },
+    {
+      "title": "Efficient Non-Linear Adder for Stochastic Computing with Approximate Spatial-Temporal Sorting Network.",
+      "first_author": "Yixuan Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764307",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247826",
+      "institution": "School of Integrated Circuits",
+      "institution_country": null,
+      "raw_affiliation": "School of Integrated Circuits"
+    },
+    {
+      "title": "Mantra: Mutation Testing of Hardware Design Code Based on Real Bugs.",
+      "first_author": "Jiang Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764794",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247962",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "RoSE: Robust Analog Circuit Parameter Optimization with Sampling-Efficient Reinforcement Learning.",
+      "first_author": "Jian Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765237",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247991",
+      "institution": "Washington University in St. Louis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01yc7t268"
+    },
+    {
+      "title": "CPE: An Energy-Efficient Edge-Device Training with Multi-dimensional Compression Mechanism.",
+      "first_author": "Zhou Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764085",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247968",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "SPET: Transparent SRAM Allocation and Model Partitioning for Real-time DNN Tasks on Edge TPU.",
+      "first_author": "Changhun Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764509",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247661",
+      "institution": "Ajou University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03tzb2h73"
+    },
+    {
+      "title": "An Extension to Basis-Hypervectors for Learning from Circular Data in Hyperdimensional Computing.",
+      "first_author": "Igor Nunes",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763951",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247736",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "SE3: Sequential Equivalence Checking for Non-Cycle-Accurate Design Transformations †.",
+      "first_author": "You Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763524",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247912",
+      "institution": "Northwestern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/000e0be47"
+    },
+    {
+      "title": "AccShield: a New Trusted Execution Environment with Machine-Learning Accelerators.",
+      "first_author": "Wei Ren",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764604",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247768",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "PUFFER: A Routability-Driven Placement Framework via Cell Padding with Multiple Features and Strategy Exploration.",
+      "first_author": "Zhijie Cai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765302",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247681",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Lightning Talk: Scaling Up Quantum Compilation - Challenges and Opportunities.",
+      "first_author": "Jason Cong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386765095",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247677",
+      "institution": "UCLA,Computer Science Department,Los Angeles,CA,90095",
+      "institution_country": null,
+      "raw_affiliation": "UCLA,Computer Science Department,Los Angeles,CA,90095"
+    },
+    {
+      "title": "Design Automation for Cryogenic CMOS Circuits.",
+      "first_author": "Victor M. van Santen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386764951",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247824",
+      "institution": "University of Stuttgart",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04vnq7t77"
+    },
+    {
+      "title": "COSA:Co-Operative Systolic Arrays for Multi-head Attention Mechanism in Neural Network using Hybrid Data Reuse and Fusion Methodologies.",
+      "first_author": "Zhican Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763770",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247678",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Safe DNN-type Controller Synthesis for Nonlinear Systems via Meta Reinforcement Learning.",
+      "first_author": "Hanrui Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763862",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247837",
+      "institution": "Shanghai Key Laboratory of Trustworthy Computing",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/030qbr085"
+    },
+    {
+      "title": "NMExplorer: An Efficient Exploration Framework for DIMM-based Near-Memory Tensor Reduction.",
+      "first_author": "Cong Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4386763946",
+      "doi": "https://doi.org/10.1109/dac56929.2023.10247764",
+      "institution": "Beijing Advanced Sciences and Innovation Center",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05qm21180"
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "conference": "OSDI",
+  "year": 2023,
+  "total_papers": 55,
+  "total_matched": 4,
+  "total_with_affiliation": 0,
+  "coverage_pct": 0.0,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Flor: An Open High Performance RDMA Framework Over Heterogeneous RNICs.",
+      "first_author": "Qiang Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Chardonnay: Fast and General Datacenter Transactions for On-Disk Databases.",
+      "first_author": "Tamer Eldeeb",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "EINNET: Optimizing Tensor Programs with Derivation-Based Transformations.",
+      "first_author": "Liyan Zheng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Userspace Bypass: Accelerating Syscall-intensive Applications.",
+      "first_author": "Zhe Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "VBASE: Unifying Online Vector Similarity Search and Relational Queries via Relaxed Monotonicity.",
+      "first_author": "Qianxi Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Characterizing Off-path SmartNIC for Accelerating Distributed Systems.",
+      "first_author": "Xingda Wei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Security and Performance in the Delegated User-level Virtualization.",
+      "first_author": "Jiahao Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Verifying vMVCC, a high-performance transaction library using multi-version concurrency control.",
+      "first_author": "Yun-Sheng Chang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Triangulating Python Performance Issues with SCALENE.",
+      "first_author": "Emery D. Berger",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Effectively Scheduling Computational Graphs of Deep Neural Networks toward Their Domain-Specific Accelerators.",
+      "first_author": "Jie Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Encrypted Databases Made Secure Yet Maintainable.",
+      "first_author": "Mingyu Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Global Capacity Management With Flux.",
+      "first_author": "Marius Eriksen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Ensō: A Streaming Interface for NIC-Application Communication.",
+      "first_author": "Hugo Sadok",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Honeycomb: Secure and Efficient GPU Executions via Static Validation.",
+      "first_author": "Haohui Mai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "RON: One-Way Circular Shortest Routing to Achieve Efficient and Bounded-waiting Spinlocks.",
+      "first_author": "Shiwu Lo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Karma: Resource Allocation for Dynamic Demands.",
+      "first_author": "Midhul Vuppalapati",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378768748",
+      "doi": "https://doi.org/10.48550/arxiv.2305.17222",
+      "institution": null
+    },
+    {
+      "title": "NCC: Natural Concurrency Control for Strictly Serializable Datastores by Avoiding the Timestamp-Inversion Pitfall.",
+      "first_author": "Haonan Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378510288",
+      "doi": "https://doi.org/10.48550/arxiv.2305.14270",
+      "institution": null
+    },
+    {
+      "title": "Hydro: Surrogate-Based Hyperparameter Tuning Service in Datacenters.",
+      "first_author": "Qinghao Hu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ExoFlow: A Universal Workflow System for Exactly-Once DAGs.",
+      "first_author": "Siyuan Zhuang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Relational Debugging - Pinpointing Root Causes of Performance Problems.",
+      "first_author": "Xiang (Jenny) Ren",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Hyrax: Fail-in-Place Server Operation in Cloud Platforms.",
+      "first_author": "Jialun Lyu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SEPH: Scalable, Efficient, and Predictable Hashing on Persistent Memory.",
+      "first_author": "Chao Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving.",
+      "first_author": "Zhuohan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4321853806",
+      "doi": "https://doi.org/10.48550/arxiv.2302.11665",
+      "institution": null
+    },
+    {
+      "title": "Optimizing Dynamic Neural Networks with Brainstorm.",
+      "first_author": "Weihao Cui",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TAILCHECK: A Lightweight Heap Overflow Detection Mechanism with Page Protection and Tagged Pointers.",
+      "first_author": "Amogha Udupa Shankaranarayana Gopal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ShRing: Networking with Shared Receive Rings.",
+      "first_author": "Boris Pismenny",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Ship your Critical Section, Not Your Data: Enabling Transparent Delegation with TCLOCKS.",
+      "first_author": "Vishal Gupta",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing.",
+      "first_author": "Xingda Wei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Spoq: Scaling Machine-Checkable Systems Verification in Coq.",
+      "first_author": "Xupeng Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Sharding the State Machine: Automated Modular Reasoning for Complex Concurrent Systems.",
+      "first_author": "Travis Hance",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "eZNS: An Elastic Zoned Namespace for Commodity ZNS SSDs.",
+      "first_author": "Jaehong Min",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Extensible Orchestration and Protection Framework for Confidential Cloud Computing.",
+      "first_author": "Adil Ahmad",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Kerveros: Efficient and Scalable Cloud Admission Control.",
+      "first_author": "Sultan Mahmud Sajal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SMART: A High-Performance Adaptive Radix Tree for Disaggregated Memory.",
+      "first_author": "Xuchuan Luo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Conveyor: One-Tool-Fits-All Continuous Software Deployment at Meta.",
+      "first_author": "Boris Grubic",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "K9db: Privacy-Compliant Storage For Web Applications By Construction.",
+      "first_author": "Kinan Dak Albab",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accountable authentication with privacy protection: The Larch system for universal login.",
+      "first_author": "Emma Dauterman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378945765",
+      "doi": "https://doi.org/10.48550/arxiv.2305.19241",
+      "institution": null
+    },
+    {
+      "title": "BWoS: Formally Verified Block-based Work Stealing for Parallel Processing.",
+      "first_author": "Jiawei Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LVMT: An Efficient Authenticated Storage for Blockchain.",
+      "first_author": "Chenxing Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Automated Verification of Idempotence for Stateful Serverless Applications.",
+      "first_author": "Haoran Ding",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Cocktailer: Analyzing and Optimizing Dynamic Control Flow in Deep Learning.",
+      "first_author": "Chen Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Replicating Persistent Memory Key-Value Stores with Efficient RDMA Abstraction.",
+      "first_author": "Qing Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Johnny Cache: the End of DRAM Cache Conflicts (in Tiered Main Memory Systems).",
+      "first_author": "Baptiste Lepers",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Take Out the TraChe: Maximizing (Tra)nsactional Ca(che) Hit Rate.",
+      "first_author": "Audrey Cheng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MGG: Accelerating Graph Neural Networks with Fine-Grained Intra-Kernel Communication-Computation Pipelining on Multi-GPU Platforms.",
+      "first_author": "Yuke Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Core slicing: closing the gap between leaky confidential VMs and bare-metal cloud.",
+      "first_author": "Ziqiao Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Nimble: Rollback Protection for Confidential Cloud Services.",
+      "first_author": "Sebastian Angel",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Defcon: Preventing Overload with Graceful Feature Degradation.",
+      "first_author": "Justin Meza",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Cilantro: Performance-Aware Resource Allocation for General Objectives via Online Feedback.",
+      "first_author": "Romil Bhardwaj",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Welder: Scheduling Deep Learning Memory Access via Tile-graph.",
+      "first_author": "Yining Shi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ServiceRouter: Hyperscale and Minimal Cost Service Mesh at Meta.",
+      "first_author": "Harshit Saokar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ScaleDB: A Scalable, Asynchronous In-Memory Database.",
+      "first_author": "Syed Akbar Mehdi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ORC: Increasing Cloud Memory Density via Object Reuse with Capabilities.",
+      "first_author": "Vasily A. Sartakov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models.",
+      "first_author": "Fan Lai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Detecting Transactional Bugs in Database Engines via Graph-Based Oracle Construction.",
+      "first_author": "Zu-Ming Jiang",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

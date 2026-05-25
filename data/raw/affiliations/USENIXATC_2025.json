@@ -1,0 +1,647 @@
+{
+  "conference": "USENIXATC",
+  "year": 2025,
+  "total_papers": 100,
+  "total_matched": 17,
+  "total_with_affiliation": 1,
+  "coverage_pct": 1.0,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "GREYHOUND: Hunting Fail-Slows in Hybrid-Parallel Training at Scale.",
+      "first_author": "Tianyuan Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7128328977",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Weaver: Efficient Multi-LLM Serving with Attention Offloading.",
+      "first_author": "Shiwei Gao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Emulating Space Computing Networks with RHONE.",
+      "first_author": "Liying Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416479444",
+      "doi": "https://doi.org/10.1145/3680207.3765603",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Fast ACS: Low-Latency File-Based Ordered Message Delivery at Scale.",
+      "first_author": "Sushant Kumar Gupta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4417086406",
+      "doi": "https://doi.org/10.48550/arxiv.2512.04096",
+      "institution": null
+    },
+    {
+      "title": "SolFS: An Operation-Log Versioning File System for Hash-free Efficient Mobile Cloud Backup.",
+      "first_author": "Riwei Pan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Para-ksm: Parallelized Memory Deduplication with Data Streaming Accelerator.",
+      "first_author": "Houxiang Ji",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ShieldReduce: Fine-Grained Shielded Data Reduction.",
+      "first_author": "Jingyuan Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Katz: Efficient Workflow Serving for Diffusion Models with Many Adapters.",
+      "first_author": "Suyi Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7112746674",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination.",
+      "first_author": "Davide Rovelli",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception.",
+      "first_author": "Shulai Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Primus: Unified Training System for Large-Scale Deep Learning Recommendation Models.",
+      "first_author": "Jixi Shan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating Distributed Graph Learning by Using Collaborative In-Network Multicast and Aggregation.",
+      "first_author": "Zhaoyi Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7111852272",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "DRack: A CXL-Disaggregated Rack Architecture to Boost Inter-Rack Communication.",
+      "first_author": "Xu Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Inferring Likely Counting-related Atomicity Program Properties for Persistent Memory.",
+      "first_author": "Yunmo Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LogCrisp: Fast Aggregated Analysis on Large-scale Compressed Logs by Enabling Two-Phase Pattern Extraction and Vectorized Queries.",
+      "first_author": "Junyu Wei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AnchorNet: Bridging Live and Collaborative Streaming with a Unified Architecture.",
+      "first_author": "Tong Meng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GeneralSparse: Bridging the Gap in SpMM for Pruned Large Language Model Inference on GPUs.",
+      "first_author": "Yaoyu Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Rex: Closing the language-verifier gap with safe and usable kernel extensions.",
+      "first_author": "Jinghao Jia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CLONE: Customizing LLMs for Efficient Latency-Aware Inference at the Edge.",
+      "first_author": "Chunlin Tian",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4415134919",
+      "doi": "https://doi.org/10.48550/arxiv.2506.02847",
+      "institution": null
+    },
+    {
+      "title": "Resource Multiplexing in Tuning and Serving Large Language Models.",
+      "first_author": "Yongjun He",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PPipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism.",
+      "first_author": "Z. Jonny Kong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4417262449",
+      "doi": "https://doi.org/10.48550/arxiv.2507.18748",
+      "institution": null
+    },
+    {
+      "title": "ASTERINAS: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small and Sound TCB.",
+      "first_author": "Yuke Peng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization.",
+      "first_author": "Yaqi Xia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SNARY: A High-Performance and Generic SmartNIC-accelerated Retrieval System.",
+      "first_author": "Qiaoyin Gan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DDLumos: Understanding and Detecting Atomic DDL Bugs in DBMSs.",
+      "first_author": "Zhiyong Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating Nested Virtualization with HyperTurtle.",
+      "first_author": "Ori Ben Zur",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards High-Performance Transactional Stateful Serverless Workflows with Affinity-Aware Leasing.",
+      "first_author": "Jianjun Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PMR: Fast Application Response via Parallel Memory Reclaim on Mobile Devices.",
+      "first_author": "Wentong Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "QFactory: Accelerating Quantized Large Language Model Serving with Qtile Graphs.",
+      "first_author": "Qihao Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Bluetooth Low Energy Security Testing with Combinatorial Methods.",
+      "first_author": "Dominik-Philip Schreiber",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Revealing Floating-Point Accumulation Orders in Software/Hardware Implementations.",
+      "first_author": "Peichen Xie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage.",
+      "first_author": "Jiansheng Qiu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Unveiling Compiler Faults via Attribute-Guided Compilation Space Exploration.",
+      "first_author": "Jiangchang Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On-Demand Container Partitioning for Distributed ML.",
+      "first_author": "Giovanni Bartolomeo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MARC: Motion-Aware Rate Control for Mobile E-commerce Cloud Rendering.",
+      "first_author": "Yuankang Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FLB: Fine-grained Load Balancing for Lossless Datacenter Networks.",
+      "first_author": "Jinbin Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7113486906",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Optimizing Input Minimization in Kernel Fuzzing.",
+      "first_author": "Hui Guo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Colocating ML Inference and Training with Fast GPU Memory Handover.",
+      "first_author": "Jiali Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Swift: Fast Performance Tuning with GAN-Generated Configurations.",
+      "first_author": "Chao Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GMI-DRL: Empowering Multi-GPU DRL with Adaptive-Grained Parallelism.",
+      "first_author": "Yuke Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Separate but Together: Integrating Remote Attestation into TLS.",
+      "first_author": "Carsten Weinhold",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "WIC: Hiding Producer-Consumer Synchronization Delays with Warp-Level Interrupt-based GPU Communications.",
+      "first_author": "Jiajian Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Optimus: Accelerating Large-Scale Multi-Modal LLM Training by Bubble Exploitation.",
+      "first_author": "Weiqi Feng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Crash Consistency in Block-Level Caching Systems: An Open CAS Case Study.",
+      "first_author": "Shaohua Duan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Koala Benchmarks for the Shell: Characterization and Implications.",
+      "first_author": "Evangelos Lamprou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learning-Enhanced High-Throughput Pattern Matching Based on Programmable Data Plane.",
+      "first_author": "Guanglin Duan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7112693560",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "TGW: Operating an Efficient and Resilient Cloud Gateway at Scale.",
+      "first_author": "Yifan Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "JENGA: Enhancing LLM Long-Context Fine-tuning with Contextual Token Sparsity.",
+      "first_author": "Tuowei Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GPREEMPT: GPU Preemptive Scheduling Made General and Efficient.",
+      "first_author": "Ruwen Fan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Minos : A Lightweight and Dynamic Defense against Traffic Analysis in Programmable Data Planes.",
+      "first_author": "Zihao Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Internet Connection Splitting: What's Old is New Again.",
+      "first_author": "Gina Yuan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Turbocharge ANNS on Real Processing-in-Memory by Enabling Fine-Grained Per-PIM-Core Scheduling.",
+      "first_author": "Puqing Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Cuckoo for Clients: Disaggregated Cuckoo Hashing.",
+      "first_author": "Stewart Grant",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider.",
+      "first_author": "Jiahao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4415133953",
+      "doi": "https://doi.org/10.48550/arxiv.2506.02634",
+      "institution": null
+    },
+    {
+      "title": "AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Blocks.",
+      "first_author": "Shichen Zhan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Universal Checkpointing: A Flexible and Efficient Distributed Checkpointing System for Large-Scale DNN Training with Reconfigurable Parallelism.",
+      "first_author": "Xinyu Lian",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Converos: Practical Model Checking for Verifying Rust OS Kernel Concurrency.",
+      "first_author": "Ruize Tang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CAFault: Enhance Fault Injection Technique in Practical Distributed Systems via Abundant Fault-Dependent Configurations.",
+      "first_author": "Yuanliang Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "IRHash: Efficient Multi-Language Compiler Caching by IR-Level Hashing.",
+      "first_author": "Tobias Landsberg",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HEC: Equivalence Verification Checking for Code Transformation via Equality Saturation.",
+      "first_author": "Jiaqi Yin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416071090",
+      "doi": "https://doi.org/10.48550/arxiv.2506.02290",
+      "institution": null
+    },
+    {
+      "title": "Roaming Free in the VR World with MP2.",
+      "first_author": "Yifei Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HyCache: Hybrid Caching for Accelerating DNN Input Preprocessing Pipelines.",
+      "first_author": "Keshav Vinayak Jha",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DEEPSERVE: Serverless Large Language Model Serving at Scale.",
+      "first_author": "Junhao Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4406840981",
+      "doi": "https://doi.org/10.48550/arxiv.2501.14417",
+      "institution": null
+    },
+    {
+      "title": "mTuner: Accelerating Parameter-Efficient Fine-Tuning on Multi-GPU Servers with Elastic Tensor.",
+      "first_author": "Kezhao Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference.",
+      "first_author": "Minchen Yu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors.",
+      "first_author": "Neel Patel",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mitigating Resource Usage Dependency in Sorting-based KV Stores on Hybrid Storage Devices via Operation Decoupling.",
+      "first_author": "Qingyang Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PathWeaver: A High-Throughput Multi-GPU System for Graph-Based Approximate Nearest Neighbor Search.",
+      "first_author": "Sukjin Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4414878355",
+      "doi": "https://doi.org/10.48550/arxiv.2507.17094",
+      "institution": null
+    },
+    {
+      "title": "Understanding and Detecting Fail-Slow Hardware Failure Bugs in Cloud Systems.",
+      "first_author": "Gen Dong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PluS: Highly Efficient and Expandable ML Compiler with Pluggable Graph Schedules.",
+      "first_author": "Ruofan Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Opening Up Kernel-Bypass TCP Stacks.",
+      "first_author": "Shinichi Awamoto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7127253319",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Chitu: Avoiding Unnecessary Fallback in Byzantine Consensus.",
+      "first_author": "Rongji Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MemoryTrap: Booby Trapping Memory to Counter Memory Disclosure Attacks with Hardware Support.",
+      "first_author": "Chenke Luo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FlexPipe: Maximizing Training Efficiency for Transformer-based Models with Variable-Length Inputs.",
+      "first_author": "Hairui Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Z-LFS: A Zoned Namespace-tailored Log-structured File System for Commodity Small-zone ZNS SSDs.",
+      "first_author": "Inhwi Hwang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SAVE: Software-Implemented Fault Tolerance for Model Inference against GPU Memory Bit Flips.",
+      "first_author": "Wenxin Zheng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "NetKeeper: Enhancing Network Resilience with Autonomous Network Configuration Update on Traffic Patterns and Anomalies.",
+      "first_author": "Zhaoyang Wan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Obscura: Concealing Recomputation Overhead in Training of Large Language Models with Bubble-filling Pipeline Transformation.",
+      "first_author": "Yuzhou Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA.",
+      "first_author": "Ruili Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training.",
+      "first_author": "Tiancheng Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416850345",
+      "doi": "https://doi.org/10.48550/arxiv.2507.00217",
+      "institution": null
+    },
+    {
+      "title": "Cosmic: Cost-Effective Support for Cloud-Assisted 3D Printing.",
+      "first_author": "Yuan Yao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SpaceExit: Enabling Efficient Adaptive Computing in Space with Early Exits.",
+      "first_author": "Jiacheng Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Barre: Empowering Simplified and Versatile Programmable Congestion Control in High-Speed AI Clusters.",
+      "first_author": "Yajuan Peng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating Model Training on Ascend Chips: An Industrial System for Profiling, Analysis and Optimization.",
+      "first_author": "Yuhang Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Optimal Rack-scale μs-level CPU Scheduling through In-Network Workload Shaping.",
+      "first_author": "Xudong Liao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7118151091",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Bin2Wrong: a Unified Fuzzing Framework for Uncovering Semantic Errors in Binary-to-C Decompilers.",
+      "first_author": "Zao Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "μEFI: A Microkernel-Style UEFI with Isolation and Transparency.",
+      "first_author": "Le Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DShuffle: DPU-Optimized Shuffle Framework for Large-scale Data Processing.",
+      "first_author": "Chen Ding",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Poby: SmartNIC-accelerated Image Provisioning for Coldstart in Clouds.",
+      "first_author": "Zihao Chang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Toppings: CPU-Assisted, Rank-Aware Adapter Serving for LLM Inference.",
+      "first_author": "Suyi Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Identifying and Analyzing Pitfalls in GNN Systems.",
+      "first_author": "Yidong Gong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LITESHIELD: Secure Containers via Lightweight, Composable Userspace μKernel Services.",
+      "first_author": "Kaesi Manakkal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HypeReca: Distributed Heterogeneous In-Memory Embedding Database for Training Recommender Models.",
+      "first_author": "Jiaao He",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PopFetcher: Towards Accelerated Mixture-of-Experts Training Via Popularity Based Expert-Wise Prefetch.",
+      "first_author": "Junyi Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7131749931",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Burst Computing: Quick, Sudden, Massively Parallel Processing on Serverless Resources.",
+      "first_author": "Daniel Barcelona Pons",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PageFlex: Flexible and Efficient User-space Delegation of Linux Paging Policies with eBPF.",
+      "first_author": "Anil Yelam",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "STORM: a Multipath QUIC Scheduler for Quick Streaming Media Transport under Unstable Mobile Networks.",
+      "first_author": "Liekun Hu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SwCC: Software-Programmable and Per-Packet Congestion Control in RDMA Engine.",
+      "first_author": "Hongjing Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fast Distributed Transactions for RDMA-based Disaggregated Memory.",
+      "first_author": "Haodi Lu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LEOCraft: Towards Designing Performant LEO Networks.",
+      "first_author": "Suvam Basak",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

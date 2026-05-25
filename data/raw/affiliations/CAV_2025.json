@@ -1,0 +1,785 @@
+{
+  "conference": "CAV",
+  "year": 2025,
+  "total_papers": 79,
+  "total_matched": 76,
+  "total_with_affiliation": 74,
+  "coverage_pct": 93.7,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Counting Abstraction and Decidability for the Verification of Structured Parameterized Networks.",
+      "first_author": "Marius Bozga",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543543",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_13",
+      "institution": "Institut polytechnique de Grenoble",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/05sbt2524"
+    },
+    {
+      "title": "Lean-Auto: An Interface Between Lean 4 and Automated Theorem Provers.",
+      "first_author": "Yicheng Qian",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543539",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_10",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Arithmetizing Shape Analysis.",
+      "first_author": "Sebastian Wolff",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412533011",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_3",
+      "institution": "New York University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0190ak572"
+    },
+    {
+      "title": "Fifteen Years of Viper.",
+      "first_author": "Marco Eilers",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532871",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_5",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Verifying PETSc Vector Components Using CIVL.",
+      "first_author": "Venkata Dhavala",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532885",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_7",
+      "institution": "University of Delaware",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01sbq1a82"
+    },
+    {
+      "title": "Approximate Probabilistic Bisimulation for Continuous-Time Markov Chains.",
+      "first_author": "Timm Spork",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514931",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_3",
+      "institution": "Technische Universität Dresden",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/042aqky30"
+    },
+    {
+      "title": "Robust Probabilistic Bisimilarity for Labelled Markov Chains.",
+      "first_author": "Syyeda Zainab Fatmi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514770",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_12",
+      "institution": "University of Oxford",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/052gg0110"
+    },
+    {
+      "title": "Verifying Fault-Tolerance of Quantum Error Correction Codes.",
+      "first_author": "Kean Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544349",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_1",
+      "institution": "University of Pennsylvania",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00b30xv10"
+    },
+    {
+      "title": "Efficient Probabilistic Model Checking for Relational Reachability.",
+      "first_author": "Lina Gerlach",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532888",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_6",
+      "institution": "RWTH Aachen University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04xfq0f34"
+    },
+    {
+      "title": "ModelVerification.jl: A Comprehensive Toolbox for Formally Verifying Deep Neural Networks.",
+      "first_author": "Tianhao Wei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514823",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_18",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "Counterexample-Guided Commutativity.",
+      "first_author": "Marcel Ebbinghaus",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543550",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_18",
+      "institution": "University of Freiburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/0245cg223"
+    },
+    {
+      "title": "NeuralSAT: A High-Performance Verification Tool for Deep Neural Networks.",
+      "first_author": "Hai Duong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514774",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_19",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "Space Explanations of Neural Network Classification.",
+      "first_author": "Faezeh Labbaf",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543559",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_15",
+      "institution": "Università della Svizzera italiana",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/03c4atk17"
+    },
+    {
+      "title": "Data-Driven Verification of Procedural Programs with Integer Arrays.",
+      "first_author": "Ahmed Bouajjani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544334",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_16",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "Engineering an Efficient Probabilistic Exact Model Counter.",
+      "first_author": "Mate Soos",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543571",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_5",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "Automata Learning from Preference and Equivalence Queries.",
+      "first_author": "Eric Hsiung",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544401",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_5",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Charon: An Analysis Framework for Rust.",
+      "first_author": "Son Ho",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544358",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_18",
+      "institution": "Microsoft Research (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/05k87vq12"
+    },
+    {
+      "title": "A Misconception-Driven Adaptive Tutor for Linear Temporal Logic.",
+      "first_author": "Siddhartha Prasad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544510",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_9",
+      "institution": "Brown University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gq02987"
+    },
+    {
+      "title": "Floating-Point Neural Networks are Provably Robust Universal Approximators.",
+      "first_author": "Geonho Hwang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514800",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_14",
+      "institution": "Gwangju Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/024kbgz78"
+    },
+    {
+      "title": "Sprout: A Verifier for Symbolic Multiparty Protocols.",
+      "first_author": "Elaine Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543542",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_16",
+      "institution": "New York University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0190ak572"
+    },
+    {
+      "title": "PyEuclid: A Versatile Formal Plane Geometry System in Python.",
+      "first_author": "Zhaoyu Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544362",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_20",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "D-Hammer: Efficient Equational Reasoning for Labelled Dirac Notation.",
+      "first_author": "Yingte Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544531",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_3",
+      "institution": "Max Planck Institute for Security and Privacy",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00bj0r217"
+    },
+    {
+      "title": "Automatic Verification of Floating-Point Accumulation Networks.",
+      "first_author": "David Kai Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543544",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_12",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Accelerating Markov Chain Model Checking: Good-for-Games Meets Unambiguous Automata.",
+      "first_author": "Yong Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514814",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_13",
+      "institution": null
+    },
+    {
+      "title": "On the Almost-Sure Termination of Probabilistic Counter Programs.",
+      "first_author": "Sergei Novozhilov",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514840",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_4",
+      "institution": null
+    },
+    {
+      "title": "Scaling GR(1) Synthesis via a Compositional Frameworkfor LTL Discrete Event Control.",
+      "first_author": "Hernán Gagliardi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544424",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_10",
+      "institution": "University of Buenos Aires",
+      "institution_country": "AR",
+      "institution_ror": "https://ror.org/0081fs513"
+    },
+    {
+      "title": "Full LTL Synthesis over Infinite-State Arenas.",
+      "first_author": "Shaun Azzopardi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544410",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_13",
+      "institution": "University of Malta",
+      "institution_country": "MT",
+      "institution_ror": "https://ror.org/03a62bv60"
+    },
+    {
+      "title": "Branching Bisimulation Learning.",
+      "first_author": "Alessandro Abate",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544522",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_8",
+      "institution": "University of Oxford",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/052gg0110"
+    },
+    {
+      "title": "Veil: A Framework for Automated and Interactive Verification of Transition Systems.",
+      "first_author": "George Pîrlea",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543568",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_2",
+      "institution": "National University of Singapore",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/01tgyzw49"
+    },
+    {
+      "title": "Panini: An Efficient and Flexible Knowledge Compiler.",
+      "first_author": "Yong Lai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543519",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_6",
+      "institution": "Jilin University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00js3aw79"
+    },
+    {
+      "title": "Introducing Certificates to the Hardware Model Checking Competition.",
+      "first_author": "Nils Froleyks",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532975",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_14",
+      "institution": "Johannes Kepler University of Linz",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/052r2xn60"
+    },
+    {
+      "title": "Automated Verification of Consistency in Zero-Knowledge Proof Circuits.",
+      "first_author": "Jon Stephens",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412533017",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_16",
+      "institution": "Healthwise",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0379w2016"
+    },
+    {
+      "title": "Regex Decision Procedures in Extended RE#.",
+      "first_author": "Ian Erik Varatalu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543573",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_7",
+      "institution": "Tallinn University of Technology",
+      "institution_country": "EE",
+      "institution_ror": "https://ror.org/0443cwa12"
+    },
+    {
+      "title": "Accelerating Automated Program Verifiers by Automatic Proof Localization.",
+      "first_author": "Kiran Gopinathan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543551",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_9",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "The Vampire Diary.",
+      "first_author": "Filip Bártek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543566",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_4",
+      "institution": "Czech Technical University in Prague",
+      "institution_country": "CZ",
+      "institution_ror": "https://ror.org/03kqpb082"
+    },
+    {
+      "title": "On the Complexity of Checking Mixed Isolation Levels for SQL Transactions.",
+      "first_author": "Ahmed Bouajjani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544513",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_15",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "$\\mathbf{{\\textsc {PyCaliper}}}$: Python-Embedded Infrastructure for RTL Verification and Specification Synthesis.",
+      "first_author": "Adwait Godbole",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543528",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_21",
+      "institution": "University of California, Berkeley",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an7q238"
+    },
+    {
+      "title": "Automated Parameterized Verification of a Railway Protection System with Dafny.",
+      "first_author": "Roberto Cavada",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544421",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_17",
+      "institution": "Fondazione Bruno Kessler",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/01j33xk10"
+    },
+    {
+      "title": "Compositional Abstraction for Timed Systems with Broadcast Synchronization.",
+      "first_author": "Hanyue Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532877",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_8",
+      "institution": "Tongji University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03rc6as71"
+    },
+    {
+      "title": "Deeply Optimizing the SAT Solver for the IC3 Algorithm.",
+      "first_author": "Yuheng Su",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412533022",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_12",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "A Formally Verified Robustness Certifier for Neural Networks.",
+      "first_author": "James Tobler",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514913",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_15",
+      "institution": "The University of Queensland",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/00rqy9422"
+    },
+    {
+      "title": "Integer Reasoning Modulo Different Constants in SMT.",
+      "first_author": "Elizaveta Pertseva",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532935",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_17",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Extending AALpy with Passive Learning: A Generalized State-Merging Approach.",
+      "first_author": "Benjamin von Berg",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544494",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_6",
+      "institution": "Graz University of Technology",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/00d7xrm67"
+    },
+    {
+      "title": "Btor2-Select: Machine Learning Based Algorithm Selection for Hardware Model Checking.",
+      "first_author": "Zhengyang Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532934",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_15",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "Counter Example Guided Reactive Synthesis for LTL Modulo Theories*.",
+      "first_author": "Andoni Rodríguez",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Policy Verification in Stochastic Dynamical Systems Using Logarithmic Neural Certificates.",
+      "first_author": "Thom Badings",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514810",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_16",
+      "institution": "Radboud University Nijmegen",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/016xsfp80"
+    },
+    {
+      "title": "Deductive Synthesis of Reinforcement Learning Agents for Infinite Horizon Tasks.",
+      "first_author": "Yuning Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544449",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_4",
+      "institution": "Rutgers, The State University of New Jersey",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05vt9qd57"
+    },
+    {
+      "title": "lean-smt: An SMT Tactic for Discharging Proof Goals in Lean.",
+      "first_author": "Abdalrhman Mohamed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543529",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_11",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Small Decision Trees for MDPs with Deductive Synthesis.",
+      "first_author": "Roman Andriushchenko",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514688",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_8",
+      "institution": "Brno University of Technology",
+      "institution_country": "CZ",
+      "institution_ror": "https://ror.org/03613d656"
+    },
+    {
+      "title": "An Intermediate Program Representation for Optimizing Stream-Based Languages.",
+      "first_author": "Jan Baumeister",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543524",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_20",
+      "institution": "Helmholtz Center for Information Security",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02njgxr09"
+    },
+    {
+      "title": "A Formally Verified IEEE 754 Floating-Point Implementation of Interval Iteration for MDPs.",
+      "first_author": "Bram Kohlen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412515023",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_6",
+      "institution": "University of Twente",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/006hf6230"
+    },
+    {
+      "title": "QSM-Cutoff: Systematic Derivation of Quantified Cutoff Formulas for Distributed Protocols.",
+      "first_author": "Yun-Rong Luo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543552",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_14",
+      "institution": "University of Michigan",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00jmfr291"
+    },
+    {
+      "title": "Issy: A Comprehensive Tool for Specification and Synthesis of Infinite-State Reactive Systems.",
+      "first_author": "Philippe Heim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544306",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_14",
+      "institution": "Helmholtz Center for Information Security",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02njgxr09"
+    },
+    {
+      "title": "Automatic Synthesis of Smooth Infinite Horizon Paths Satisfying Linear Temporal Logic Specifications.",
+      "first_author": "Samuel Williams",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544269",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_12",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Raven: An SMT-Based Concurrency Verifier.",
+      "first_author": "Ekanshdeep Gupta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412578529",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_4",
+      "institution": "New York University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0190ak572"
+    },
+    {
+      "title": "Approximating Fixpoints of Approximated Functions.",
+      "first_author": "Paolo Baldan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514849",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_9",
+      "institution": "University of Padua",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/00240q980"
+    },
+    {
+      "title": "Infinite-State Liveness Checking with rlive.",
+      "first_author": "Alessandro Cimatti",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532884",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_11",
+      "institution": "Fondazione Bruno Kessler",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/01j33xk10"
+    },
+    {
+      "title": "sfGPUMC: A Stateless Model Checker for GPU Weak Memory Concurrency.",
+      "first_author": "Soham Chakraborty",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "INTERLEAVE: A Faster Symbolic Algorithm for Maximal End Component Decomposition.",
+      "first_author": "Suguman Bansal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514791",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_7",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Assessing the Quality of Binomial Samplers: A Statistical Distance Framework.",
+      "first_author": "Uddalok Sarkar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514797",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_11",
+      "institution": "Indian Statistical Institute",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/00q2w1j53"
+    },
+    {
+      "title": "Structural Operational Semantics for Functional and Security Verification of Pipelined Processors.",
+      "first_author": "Robert J. Colvin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532986",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_18",
+      "institution": "Defence Science and Technology Group",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/05ddrvt52"
+    },
+    {
+      "title": "The rIC3 Hardware Model Checker.",
+      "first_author": "Yuheng Su",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412533104",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_9",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Polyregular Model Checking.",
+      "first_author": "Aliaume Lopez",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543567",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_1",
+      "institution": "University of Warsaw",
+      "institution_country": "PL",
+      "institution_ror": "https://ror.org/039bjqg32"
+    },
+    {
+      "title": "Scaling Up Proactive Enforcement.",
+      "first_author": "François Hublet",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543516",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_19",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Automated Verification of Monotonic Data Structure Traversals in C.",
+      "first_author": "Matthew Sotoudeh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532873",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_2",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "FeynmanDD: Quantum Circuit Analysis with Classical Decision Diagrams.",
+      "first_author": "Ziyuan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544511",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_2",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Relational Hoare Logic for Realistically Modelled Machine Code.",
+      "first_author": "Denis Mazzucato",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412532817",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_19",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "Supermartingale Certificates for Quantitative Omega-Regular Verification and Control.",
+      "first_author": "Thomas A. Henzinger",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514827",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_2",
+      "institution": "Institute of Science and Technology Austria",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/03gnh5541"
+    },
+    {
+      "title": "POPACheck: A Model Checker for Probabilistic Pushdown Automata.",
+      "first_author": "Francesco Pontiggia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514936",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_5",
+      "institution": "TU Wien",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/04d836q62"
+    },
+    {
+      "title": "Surfer - An Extensible Waveform Viewer.",
+      "first_author": "Frans Skarman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544367",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_19",
+      "institution": "Linköping University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/05ynxx418"
+    },
+    {
+      "title": "LearnLib: 10 years later.",
+      "first_author": "Markus Frohme",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412544495",
+      "doi": "https://doi.org/10.1007/978-3-031-98685-7_7",
+      "institution": "TU Dortmund University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01k97gp34"
+    },
+    {
+      "title": "Verified and Optimized Implementation of Orthologic Proof Search.",
+      "first_author": "Simon Guilloud",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543513",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_8",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "sfHornStr: Invariant Synthesis for Regular Model Checking as Constrained Horn Clauses.",
+      "first_author": "Hongjian Jiang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "StatWhy: Formal Verification Tool for Statistical Hypothesis Testing Programs.",
+      "first_author": "Yusuke Kawamoto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514848",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_10",
+      "institution": "National Institute of Advanced Industrial Science and Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/01703db54"
+    },
+    {
+      "title": "Property Directed Reachability with Extended Resolution.",
+      "first_author": "Andrew Luka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412533027",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_13",
+      "institution": "Technion – Israel Institute of Technology",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qryx823"
+    },
+    {
+      "title": "StarV: A Qualitative and Quantitative Verification Tool for Learning-Enabled Systems.",
+      "first_author": "Hoang-Dung Tran",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514798",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_17",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "Verifying Tree-Manipulating Programs via CHCs.",
+      "first_author": "Marco Faella",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412533018",
+      "doi": "https://doi.org/10.1007/978-3-031-98668-0_1",
+      "institution": "University of Naples Federico II",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/05290cv24"
+    },
+    {
+      "title": "Quantitative Supermartingale Certificates.",
+      "first_author": "Alessandro Abate",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412514950",
+      "doi": "https://doi.org/10.1007/978-3-031-98679-6_1",
+      "institution": "University of Oxford",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/052gg0110"
+    },
+    {
+      "title": "Decision Heuristics in MCSat.",
+      "first_author": "Thomas Hader",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412543523",
+      "doi": "https://doi.org/10.1007/978-3-031-98682-6_3",
+      "institution": "TU Wien",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/04d836q62"
+    }
+  ]
+}

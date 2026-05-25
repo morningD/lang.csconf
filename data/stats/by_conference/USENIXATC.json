@@ -438,5 +438,86 @@
       "status": "virtual",
       "note": "Virtual event due to COVID-19."
     }
+  },
+  "affiliations": {
+    "total_covered": 4,
+    "total_papers": 242,
+    "coverage_pct": 1.7,
+    "top": [
+      {
+        "name": "University of California, Santa Barbara",
+        "count": 1,
+        "pct": 0.41,
+        "country": "US"
+      },
+      {
+        "name": "James",
+        "count": 1,
+        "pct": 0.41,
+        "country": ""
+      },
+      {
+        "name": "Huazhong University of Science and Technology",
+        "count": 1,
+        "pct": 0.41,
+        "country": "CN"
+      },
+      {
+        "name": "Peking University",
+        "count": 1,
+        "pct": 0.41,
+        "country": "CN"
+      }
+    ],
+    "by_year": {
+      "2023": {
+        "total_covered": 1,
+        "total_papers": 65,
+        "coverage_pct": 1.5,
+        "top": [
+          {
+            "name": "University of California, Santa Barbara",
+            "count": 1,
+            "pct": 1.54,
+            "country": "US"
+          }
+        ]
+      },
+      "2024": {
+        "total_covered": 2,
+        "total_papers": 77,
+        "coverage_pct": 2.6,
+        "top": [
+          {
+            "name": "James",
+            "count": 1,
+            "pct": 1.3,
+            "country": ""
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 1,
+            "pct": 1.3,
+            "country": "CN"
+          }
+        ]
+      },
+      "2025": {
+        "total_covered": 1,
+        "total_papers": 100,
+        "coverage_pct": 1.0,
+        "top": [
+          {
+            "name": "Peking University",
+            "count": 1,
+            "pct": 1.0,
+            "country": "CN"
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }

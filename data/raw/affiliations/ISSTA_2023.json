@@ -1,0 +1,1383 @@
+{
+  "conference": "ISSTA",
+  "year": 2023,
+  "total_papers": 138,
+  "total_matched": 136,
+  "total_with_affiliation": 136,
+  "coverage_pct": 98.6,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Reducing the Memory Footprint of IFDS-Based Data-Flow Analyses using Fine-Grained Garbage Collection.",
+      "first_author": "Dongjie He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155604",
+      "doi": "https://doi.org/10.1145/3597926.3598041",
+      "institution": "UNSW Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/03r8z3t63"
+    },
+    {
+      "title": "Automatically Reproducing Android Bug Reports using Natural Language Processing and Reinforcement Learning.",
+      "first_author": "Zhaoxu Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154514",
+      "doi": "https://doi.org/10.1145/3597926.3598066",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Detecting State Inconsistency Bugs in DApps via On-Chain Transaction Replay and Fuzzing.",
+      "first_author": "Mingxi Ye",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154650",
+      "doi": "https://doi.org/10.1145/3597926.3598057",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "Catamaran: Low-Overhead Memory Safety Enforcement via Parallel Acceleration.",
+      "first_author": "Yiyu Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154458",
+      "doi": "https://doi.org/10.1145/3597926.3598098",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Tai-e: A Developer-Friendly Static Analysis Framework for Java by Harnessing the Good Designs of Classics.",
+      "first_author": "Tian Tan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155580",
+      "doi": "https://doi.org/10.1145/3597926.3598120",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "GrayC: Greybox Fuzzing of Compilers and Analysers for C.",
+      "first_author": "Karine Even-Mendoza",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154578",
+      "doi": "https://doi.org/10.1145/3597926.3598130",
+      "institution": "King's College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/0220mzb33"
+    },
+    {
+      "title": "DDLDroid: Efficiently Detecting Data Loss Issues in Android Apps.",
+      "first_author": "Yuhao Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155712",
+      "doi": "https://doi.org/10.1145/3597926.3598089",
+      "institution": "Nanjing University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00xp9wg62"
+    },
+    {
+      "title": "Systematic Testing of the Data-Poisoning Robustness of KNN.",
+      "first_author": "Yannan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154593",
+      "doi": "https://doi.org/10.1145/3597926.3598129",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Synthesizing Speech Test Cases with Text-to-Speech? An Empirical Study on the False Alarms in Automated Speech Recognition Testing.",
+      "first_author": "Julia Kaiwen Lau",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155447",
+      "doi": "https://doi.org/10.1145/3597926.3598126",
+      "institution": "Monash University Malaysia",
+      "institution_country": "MY",
+      "institution_ror": "https://ror.org/00yncr324"
+    },
+    {
+      "title": "Enhancing REST API Testing with NLP Techniques.",
+      "first_author": "Myeongsoo Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154515",
+      "doi": "https://doi.org/10.1145/3597926.3598131",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "June: A Type Testability Transformation for Improved ATG Performance.",
+      "first_author": "Dan Bruce",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155572",
+      "doi": "https://doi.org/10.1145/3597926.3598055",
+      "institution": "Microsoft (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01rw27z95"
+    },
+    {
+      "title": "Towards Efficient Fine-Tuning of Pre-trained Code Models: An Experimental Study and Beyond.",
+      "first_author": "Ensheng Shi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154386",
+      "doi": "https://doi.org/10.1145/3597926.3598036",
+      "institution": "Xi'an Jiaotong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/017zhmm22"
+    },
+    {
+      "title": "Fuzzing Deep Learning Compilers with HirGen.",
+      "first_author": "Haoyang Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378465442",
+      "doi": "https://doi.org/10.1145/3597926.3598053",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "CODEP: Grammatical Seq2Seq Model for General-Purpose Code Generation.",
+      "first_author": "Yihong Dong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155659",
+      "doi": "https://doi.org/10.1145/3597926.3598048",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "An Empirical Study on Concurrency Bugs in Interrupt-Driven Embedded Software.",
+      "first_author": "Chao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155551",
+      "doi": "https://doi.org/10.1145/3597926.3598140",
+      "institution": "Beijing Institute of Control Engineering, China / Beijing Sunwise Information Technology, China",
+      "institution_country": null,
+      "raw_affiliation": "Beijing Institute of Control Engineering, China / Beijing Sunwise Information Technology, China"
+    },
+    {
+      "title": "Harnessing Large Language Models for Simulink Toolchain Testing and Developing Diverse Open-Source Corpora of Simulink Models for Metric and Evolution Analysis.",
+      "first_author": "Sohil Lal Shrestha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384129302",
+      "doi": "https://doi.org/10.1145/3597926.3605233",
+      "institution": "The University of Texas at Arlington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/019kgqr73"
+    },
+    {
+      "title": "CydiOS: A Model-Based Testing Framework for iOS Apps.",
+      "first_author": "Shuohan Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154624",
+      "doi": "https://doi.org/10.1145/3597926.3598033",
+      "institution": "Hong Kong Polytechnic University",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/0030zas98"
+    },
+    {
+      "title": "API2Vec: Learning Representations of API Sequences for Malware Detection.",
+      "first_author": "Lei Cui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384129390",
+      "doi": "https://doi.org/10.1145/3597926.3598054",
+      "institution": "Zhongguancun Laboratory, China",
+      "institution_country": null,
+      "raw_affiliation": "Zhongguancun Laboratory, China"
+    },
+    {
+      "title": "Automatic Testing and Benchmarking for Configurable Static Analysis Tools.",
+      "first_author": "Austin Mordahl",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384129308",
+      "doi": "https://doi.org/10.1145/3597926.3605232",
+      "institution": "University of Texas at Dallas, USA",
+      "institution_country": null,
+      "raw_affiliation": "University of Texas at Dallas, USA"
+    },
+    {
+      "title": "Beware of the Unexpected: Bimodal Taint Analysis.",
+      "first_author": "Yiu Wai Chow",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154448",
+      "doi": "https://doi.org/10.1145/3597926.3598050",
+      "institution": "University of Stuttgart",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04vnq7t77"
+    },
+    {
+      "title": "Pattern-Based Peephole Optimizations with Java JIT Tests.",
+      "first_author": "Zhiqiang Zang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154398",
+      "doi": "https://doi.org/10.1145/3597926.3598038",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "BehAVExplor: Behavior Diversity Guided Testing for Autonomous Driving Systems.",
+      "first_author": "Mingfei Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155506",
+      "doi": "https://doi.org/10.1145/3597926.3598072",
+      "institution": "Singapore Management University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/050qmg959"
+    },
+    {
+      "title": "ConfFix: Repairing Configuration Compatibility Issues in Android Apps.",
+      "first_author": "Huaxun Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154606",
+      "doi": "https://doi.org/10.1145/3597926.3598074",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "To Kill a Mutant: An Empirical Study of Mutation Testing Kills.",
+      "first_author": "Hang Du",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154653",
+      "doi": "https://doi.org/10.1145/3597926.3598090",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "Testing Graph Database Engines via Query Partitioning.",
+      "first_author": "Matteo Kamm",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155660",
+      "doi": "https://doi.org/10.1145/3597926.3598044",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "TreeLine and SlackLine: Grammar-Based Performance Fuzzing on Coffee Break.",
+      "first_author": "Ziyad Alsaeed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155641",
+      "doi": "https://doi.org/10.1145/3597926.3604925",
+      "institution": "Qassim University",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/01wsfe280"
+    },
+    {
+      "title": "Large Language Models Are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models.",
+      "first_author": "Yinlin Deng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378591002",
+      "doi": "https://doi.org/10.1145/3597926.3598067",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "SlipCover: Near Zero-Overhead Code Coverage for Python.",
+      "first_author": "Juan Altmayer Pizzorno",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378513026",
+      "doi": "https://doi.org/10.1145/3597926.3598128",
+      "institution": "University of Massachusetts Amherst",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0072zz521"
+    },
+    {
+      "title": "Dependency-Aware Metamorphic Testing of Datalog Engines.",
+      "first_author": "Muhammad Numair Mansur",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154415",
+      "doi": "https://doi.org/10.1145/3597926.3598052",
+      "institution": "Max Planck Institute for Software Systems",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02pe2kf23"
+    },
+    {
+      "title": "More Precise Regression Test Selection via Reasoning about Semantics-Modifying Changes.",
+      "first_author": "Yu Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154501",
+      "doi": "https://doi.org/10.1145/3597926.3598086",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "CodeGrid: A Grid Representation of Code.",
+      "first_author": "Abdoul Kader Kaboré",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155305",
+      "doi": "https://doi.org/10.1145/3597926.3598141",
+      "institution": "University of Luxembourg",
+      "institution_country": "LU",
+      "institution_ror": "https://ror.org/036x5ad56"
+    },
+    {
+      "title": "That's a Tough Call: Studying the Challenges of Call Graph Construction for WebAssembly.",
+      "first_author": "Daniel Lehmann",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CILIATE: Towards Fairer Class-Based Incremental Learning by Dataset and Training Refinement.",
+      "first_author": "Xuanqi Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155520",
+      "doi": "https://doi.org/10.1145/3597926.3598071",
+      "institution": "Xi'an Jiaotong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/017zhmm22"
+    },
+    {
+      "title": "How Effective Are Neural Networks for Fixing Security Vulnerabilities.",
+      "first_author": "Yi Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378942602",
+      "doi": "https://doi.org/10.1145/3597926.3598135",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "GPUHarbor: Testing GPU Memory Consistency at Large (Experience Paper).",
+      "first_author": "Reese Levine",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155482",
+      "doi": "https://doi.org/10.1145/3597926.3598095",
+      "institution": "University of California, Santa Cruz",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03s65by71"
+    },
+    {
+      "title": "Understanding and Tackling Label Errors in Deep Learning-Based Vulnerability Detection (Experience Paper).",
+      "first_author": "Xu Nie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155620",
+      "doi": "https://doi.org/10.1145/3597926.3598037",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "DDLDroid: A Static Analyzer for Automatically Detecting Data Loss Issues in Android Applications.",
+      "first_author": "Yuhao Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155648",
+      "doi": "https://doi.org/10.1145/3597926.3604916",
+      "institution": "Nanjing University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00xp9wg62"
+    },
+    {
+      "title": "ACETest: Automated Constraint Extraction for Testing Deep Learning Operators.",
+      "first_author": "Jingyi Shi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378770802",
+      "doi": "https://doi.org/10.1145/3597926.3598088",
+      "institution": "University of Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05qbk4x57"
+    },
+    {
+      "title": "Semantic-Based Neural Network Repair.",
+      "first_author": "Richard Schumi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4380988914",
+      "doi": "https://doi.org/10.1145/3597926.3598045",
+      "institution": "Singapore Management University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/050qmg959"
+    },
+    {
+      "title": "1dFuzz: Reproduce 1-Day Vulnerabilities with Directed Differential Fuzzing.",
+      "first_author": "Songtao Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155568",
+      "doi": "https://doi.org/10.1145/3597926.3598102",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "RobotBT: Behavior-Tree-Based Test-Case Specification for the Robot Framework.",
+      "first_author": "Sven Peldszus",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155422",
+      "doi": "https://doi.org/10.1145/3597926.3604924",
+      "institution": "Ruhr University Bochum",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04tsk2644"
+    },
+    {
+      "title": "ωTest: WebView-Oriented Testing for Android Applications.",
+      "first_author": "Jiajun Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4379925121",
+      "doi": "https://doi.org/10.1145/3597926.3598112",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "An Empirical Study of Functional Bugs in Android Apps.",
+      "first_author": "Yiheng Xiong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155409",
+      "doi": "https://doi.org/10.1145/3597926.3598138",
+      "institution": "East China Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02n96ep67"
+    },
+    {
+      "title": "Security Checking of Trigger-Action-Programming Smart Home Integrations.",
+      "first_author": "Lei Bu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154477",
+      "doi": "https://doi.org/10.1145/3597926.3598084",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Transforming Test Suites into Croissants.",
+      "first_author": "Yang Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154506",
+      "doi": "https://doi.org/10.1145/3597926.3598119",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Fine-Grained Code Clone Detection with Block-Based Splitting of Abstract Syntax Tree.",
+      "first_author": "Tiancheng Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154639",
+      "doi": "https://doi.org/10.1145/3597926.3598040",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "ECSTATIC: Automatic Configuration-Aware Testing and Debugging of Static Analysis Tools.",
+      "first_author": "Austin Mordahl",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154577",
+      "doi": "https://doi.org/10.1145/3597926.3604918",
+      "institution": "University of Texas at Dallas, USA",
+      "institution_country": null,
+      "raw_affiliation": "University of Texas at Dallas, USA"
+    },
+    {
+      "title": "Green Fuzzer Benchmarking.",
+      "first_author": "Jiradet Ounjai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384129350",
+      "doi": "https://doi.org/10.1145/3597926.3598144",
+      "institution": "Max Planck Institute for Software Systems",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02pe2kf23"
+    },
+    {
+      "title": "EDHOC-Fuzzer: An EDHOC Protocol State Fuzzer.",
+      "first_author": "Konstantinos Sagonas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155490",
+      "doi": "https://doi.org/10.1145/3597926.3604922",
+      "institution": "Uppsala University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/048a87296"
+    },
+    {
+      "title": "Type Automata.",
+      "first_author": "Ori Roth",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154540",
+      "doi": "https://doi.org/10.1145/3597926.3605237",
+      "institution": "Technion – Israel Institute of Technology",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qryx823"
+    },
+    {
+      "title": "SmartState: Detecting State-Reverting Vulnerabilities in Smart Contracts via Fine-Grained State-Dependency Analysis.",
+      "first_author": "Zeqin Liao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154486",
+      "doi": "https://doi.org/10.1145/3597926.3598111",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "DeUEDroid: Detecting Underground Economy Apps Based on UTG Similarity.",
+      "first_author": "Zhuo Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154425",
+      "doi": "https://doi.org/10.1145/3597926.3598051",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "Definition and Detection of Defects in NFT Smart Contracts.",
+      "first_author": "Shuo Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154512",
+      "doi": "https://doi.org/10.1145/3597926.3598063",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "RustSmith: Random Differential Compiler Testing for Rust.",
+      "first_author": "Mayank Sharma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154483",
+      "doi": "https://doi.org/10.1145/3597926.3604919",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "Virtual Reality (VR) Automated Testing in the Wild: A Case Study on Unity-Based VR Applications.",
+      "first_author": "Dhia Elhaq Rzig",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154362",
+      "doi": "https://doi.org/10.1145/3597926.3598134",
+      "institution": "University of Michigan–Dearborn",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/035wtm547"
+    },
+    {
+      "title": "KDAlloc: The KLEE Deterministic Allocator: Deterministic Memory Allocation during Symbolic Execution and Test Case Replay.",
+      "first_author": "Daniel Schemmel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154494",
+      "doi": "https://doi.org/10.1145/3597926.3604921",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "iSyn: Semi-automated Smart Contract Synthesis from Legal Financial Agreements.",
+      "first_author": "Pengcheng Fang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155611",
+      "doi": "https://doi.org/10.1145/3597926.3598091",
+      "institution": "Case Western Reserve University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/051fd9666"
+    },
+    {
+      "title": "Splendor: Static Detection of Stored XSS in Modern Web Applications.",
+      "first_author": "He Su",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154608",
+      "doi": "https://doi.org/10.1145/3597926.3598116",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "GenCoG: A DSL-Based Approach to Generating Computation Graphs for TVM Testing.",
+      "first_author": "Zihan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155658",
+      "doi": "https://doi.org/10.1145/3597926.3598105",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "RefBERT: A Two-Stage Pre-trained Framework for Automatic Rename Refactoring.",
+      "first_author": "Hao Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155525",
+      "doi": "https://doi.org/10.1145/3597926.3598092",
+      "institution": "Xiamen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00mcjh785"
+    },
+    {
+      "title": "Guiding Greybox Fuzzing with Mutation Testing.",
+      "first_author": "Vasudev Vikram",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155735",
+      "doi": "https://doi.org/10.1145/3597926.3598107",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "Understanding Breaking Changes in the Wild.",
+      "first_author": "Dhanushka Jayasuriya",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155578",
+      "doi": "https://doi.org/10.1145/3597926.3598147",
+      "institution": "University of Auckland",
+      "institution_country": "NZ",
+      "institution_ror": "https://ror.org/03b94tp07"
+    },
+    {
+      "title": "AGORA: Automated Generation of Test Oracles for REST APIs.",
+      "first_author": "Juan C. Alonso",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155543",
+      "doi": "https://doi.org/10.1145/3597926.3598114",
+      "institution": "Universidad de Sevilla",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/03yxnpp24"
+    },
+    {
+      "title": "Beyond \"Protected\" and \"Private\": An Empirical Security Analysis of Custom Function Modifiers in Smart Contracts.",
+      "first_author": "Yuzhou Fang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154487",
+      "doi": "https://doi.org/10.1145/3597926.3598125",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Rare Path Guided Fuzzing.",
+      "first_author": "Seemanta Saha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154455",
+      "doi": "https://doi.org/10.1145/3597926.3598136",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "Green Fuzzing: A Saturation-Based Stopping Criterion using Vulnerability Prediction.",
+      "first_author": "Stephan Lipp",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155571",
+      "doi": "https://doi.org/10.1145/3597926.3598043",
+      "institution": "TU Munich, Germany",
+      "institution_country": null,
+      "raw_affiliation": "TU Munich, Germany"
+    },
+    {
+      "title": "A Comprehensive Study on Quality Assurance Tools for Java.",
+      "first_author": "Han Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378760032",
+      "doi": "https://doi.org/10.1145/3597926.3598056",
+      "institution": "East China Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02n96ep67"
+    },
+    {
+      "title": "Guided Retraining to Enhance the Detection of Difficult Android Malware.",
+      "first_author": "Nadia Daoudi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384129584",
+      "doi": "https://doi.org/10.1145/3597926.3598123",
+      "institution": "University of Luxembourg",
+      "institution_country": "LU",
+      "institution_ror": "https://ror.org/036x5ad56"
+    },
+    {
+      "title": "Validating Multimedia Content Moderation Software via Semantic Fusion.",
+      "first_author": "Wenxuan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155751",
+      "doi": "https://doi.org/10.1145/3597926.3598079",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "ROME: Testing Image Captioning Systems via Recursive Object Melting.",
+      "first_author": "Boxi Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4379539330",
+      "doi": "https://doi.org/10.1145/3597926.3598094",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "KeenTune: Automated Tuning Tool for Cloud Application Performance Testing and Optimization.",
+      "first_author": "Qinglong Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154571",
+      "doi": "https://doi.org/10.1145/3597926.3604920",
+      "institution": "Alibaba Group (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00k642b80"
+    },
+    {
+      "title": "NodeRT: Detecting Races in Node.js Applications Practically.",
+      "first_author": "Jingyao Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155446",
+      "doi": "https://doi.org/10.1145/3597926.3598139",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "COME: Commit Message Generation with Modification Embedding.",
+      "first_author": "Yichen He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154619",
+      "doi": "https://doi.org/10.1145/3597926.3598096",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "Who Judges the Judge: An Empirical Study on Online Judge Tests.",
+      "first_author": "Kaibo Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155752",
+      "doi": "https://doi.org/10.1145/3597926.3598060",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Fuzzing Embedded Systems using Debug Interfaces.",
+      "first_author": "Max Eisele",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154462",
+      "doi": "https://doi.org/10.1145/3597926.3598115",
+      "institution": "Saarland University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01jdpyv68"
+    },
+    {
+      "title": "EvoSpex: A Search-Based Tool for Postcondition Inference.",
+      "first_author": "Facundo Molina",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154563",
+      "doi": "https://doi.org/10.1145/3597926.3604928",
+      "institution": "IMDEA Software",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/04xvfkh51"
+    },
+    {
+      "title": "Alligator in Vest: A Practical Failure-Diagnosis Framework via Arm Hardware Features.",
+      "first_author": "Yiming Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154401",
+      "doi": "https://doi.org/10.1145/3597926.3598106",
+      "institution": "Hong Kong Polytechnic University",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/0030zas98"
+    },
+    {
+      "title": "Hybrid Inlining: A Framework for Compositional and Context-Sensitive Static Analysis.",
+      "first_author": "Jiangchao Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154649",
+      "doi": "https://doi.org/10.1145/3597926.3598042",
+      "institution": "Ant Group, China",
+      "institution_country": null,
+      "raw_affiliation": "Ant Group, China"
+    },
+    {
+      "title": "Testing Automated Driving Systems by Breaking Many Laws Efficiently.",
+      "first_author": "Xiaodong Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155524",
+      "doi": "https://doi.org/10.1145/3597926.3598108",
+      "institution": "Singapore Management University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/050qmg959"
+    },
+    {
+      "title": "PExReport-Maven: Creating Pruned Executable Cross-Project Failure Reports in Maven Build System.",
+      "first_author": "Sunzhou Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155536",
+      "doi": "https://doi.org/10.1145/3597926.3604929",
+      "institution": "The University of Texas at San Antonio",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01kd65564"
+    },
+    {
+      "title": "DeFiTainter: Detecting Price Manipulation Vulnerabilities in DeFi Protocols.",
+      "first_author": "Queping Kong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155542",
+      "doi": "https://doi.org/10.1145/3597926.3598124",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "Towards More Realistic Evaluation for Neural Test Oracle Generation.",
+      "first_author": "Zhongxin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155677",
+      "doi": "https://doi.org/10.1145/3597926.3598080",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "Icicle: A Re-designed Emulator for Grey-Box Firmware Fuzzing.",
+      "first_author": "Michael Chesser",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155638",
+      "doi": "https://doi.org/10.1145/3597926.3598039",
+      "institution": "University of Adelaide",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/00892tw58"
+    },
+    {
+      "title": "Improving Bit-Blasting for Nonlinear Integer Constraints.",
+      "first_author": "Fuqi Jia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154591",
+      "doi": "https://doi.org/10.1145/3597926.3598034",
+      "institution": "Institute of Software",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/033dfsn42"
+    },
+    {
+      "title": "Concept-Based Automated Grading of CS-1 Programming Assignments.",
+      "first_author": "Zhiyu Fan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154581",
+      "doi": "https://doi.org/10.1145/3597926.3598049",
+      "institution": "National University of Singapore",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/01tgyzw49"
+    },
+    {
+      "title": "An Empirical Study on the Effects of Obfuscation on Static Machine Learning-Based Malicious JavaScript Detectors.",
+      "first_author": "Kunlun Ren",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154408",
+      "doi": "https://doi.org/10.1145/3597926.3598146",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Interpreters for GNN-Based Vulnerability Detection: Are We There Yet?",
+      "first_author": "Yutao Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155466",
+      "doi": "https://doi.org/10.1145/3597926.3598145",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "In Defense of Simple Techniques for Neural Network Test Case Selection.",
+      "first_author": "Shenglin Bao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155407",
+      "doi": "https://doi.org/10.1145/3597926.3598073",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "CONCORD: Clone-Aware Contrastive Learning for Source Code.",
+      "first_author": "Yangruibo Ding",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154459",
+      "doi": "https://doi.org/10.1145/3597926.3598035",
+      "institution": "Columbia University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj8s172"
+    },
+    {
+      "title": "PhysCov: Physical Test Coverage for Autonomous Vehicles.",
+      "first_author": "Carl Hildebrandt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155669",
+      "doi": "https://doi.org/10.1145/3597926.3598069",
+      "institution": "University of Virginia",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0153tk833"
+    },
+    {
+      "title": "Detecting Vulnerabilities in Linux-Based Embedded Firmware with SSE-Based On-Demand Alias Analysis.",
+      "first_author": "Kai Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155508",
+      "doi": "https://doi.org/10.1145/3597926.3598062",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Vectorizing Program Ingredients for Better JVM Testing.",
+      "first_author": "Tianchang Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155703",
+      "doi": "https://doi.org/10.1145/3597926.3598075",
+      "institution": "Tianjin University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/012tb2g32"
+    },
+    {
+      "title": "ModelObfuscator: Obfuscating Model Information to Protect Deployed ML-Based Systems.",
+      "first_author": "Mingyi Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4380551114",
+      "doi": "https://doi.org/10.1145/3597926.3598113",
+      "institution": "Monash University",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/02bfwt286"
+    },
+    {
+      "title": "CGuard: Scalable and Precise Object Bounds Protection for C.",
+      "first_author": "Piyus Kedia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154394",
+      "doi": "https://doi.org/10.1145/3597926.3598137",
+      "institution": "Indraprastha Institute of Information Technology Delhi",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/03vfp4g33"
+    },
+    {
+      "title": "A Bayesian Framework for Automated Debugging.",
+      "first_author": "Sungmin Kang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155665",
+      "doi": "https://doi.org/10.1145/3597926.3598103",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05apxxy63"
+    },
+    {
+      "title": "Exploring Missed Optimizations in WebAssembly Optimizers.",
+      "first_author": "Zhibo Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154547",
+      "doi": "https://doi.org/10.1145/3597926.3598068",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "SBDT: Search-Based Differential Testing of Certificate Parsers in SSL/TLS Implementations.",
+      "first_author": "Chu Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155689",
+      "doi": "https://doi.org/10.1145/3597926.3598110",
+      "institution": "Qufu Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03ceheh96"
+    },
+    {
+      "title": "Behaviorally Typed State Machines in TypeScript for Heterogeneous Swarms.",
+      "first_author": "Roland Kuhn",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4380994285",
+      "doi": "https://doi.org/10.1145/3597926.3604917",
+      "institution": "Actyx, Germany",
+      "institution_country": null,
+      "raw_affiliation": "Actyx, Germany"
+    },
+    {
+      "title": "FairRec: Fairness Testing for Deep Recommender Systems.",
+      "first_author": "Huizhong Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155632",
+      "doi": "https://doi.org/10.1145/3597926.3598058",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "What You See Is What You Get? It Is Not the Case! Detecting Misleading Icons for Mobile Applications.",
+      "first_author": "Linlin Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155512",
+      "doi": "https://doi.org/10.1145/3597926.3598076",
+      "institution": "Southern University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/049tv2d57"
+    },
+    {
+      "title": "Third-Party Library Dependency for Large-Scale SCA in the C/C++ Ecosystem: How Far Are We?",
+      "first_author": "Ling Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154537",
+      "doi": "https://doi.org/10.1145/3597926.3598143",
+      "institution": "Southern University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/049tv2d57"
+    },
+    {
+      "title": "Automated Program Repair from Fuzzing Perspective.",
+      "first_author": "Youngjae Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155607",
+      "doi": "https://doi.org/10.1145/3597926.3598101",
+      "institution": "Ulsan National Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/017cjz748"
+    },
+    {
+      "title": "Detecting Condition-Related Bugs with Control Flow Graph Neural Network.",
+      "first_author": "Jian Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155577",
+      "doi": "https://doi.org/10.1145/3597926.3598142",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "LiResolver: License Incompatibility Resolution for Open Source Software.",
+      "first_author": "Sihan Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4382323326",
+      "doi": "https://doi.org/10.1145/3597926.3598085",
+      "institution": "Nankai University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01y1kjr75"
+    },
+    {
+      "title": "Improving Binary Code Similarity Transformer Models by Semantics-Driven Instruction Deemphasis.",
+      "first_author": "Xiangzhe Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154511",
+      "doi": "https://doi.org/10.1145/3597926.3598121",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "GDsmith: Detecting Bugs in Cypher Graph Database Engines.",
+      "first_author": "Ziyue Hua",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154496",
+      "doi": "https://doi.org/10.1145/3597926.3598046",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Applying and Extending the Delta Debugging Algorithm for Elevator Dispatching Algorithms (Experience Paper).",
+      "first_author": "Pablo Valle",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378768596",
+      "doi": "https://doi.org/10.1145/3597926.3598117",
+      "institution": "Mondragon Unibertsitatea",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/00wvqgd19"
+    },
+    {
+      "title": "Loop Invariant Inference through SMT Solving Enhanced Reinforcement Learning.",
+      "first_author": "Shiwen Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155522",
+      "doi": "https://doi.org/10.1145/3597926.3598047",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "Simulation-Based Validation for Autonomous Driving Systems.",
+      "first_author": "Changwen Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155414",
+      "doi": "https://doi.org/10.1145/3597926.3598100",
+      "institution": "Institute of Software",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/033dfsn42"
+    },
+    {
+      "title": "Oven: Safe and Live Communication Protocols in Scala, using Synthetic Behavioural Type Analysis.",
+      "first_author": "Francisco Ferreira",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Reasoning about MLIR Semantics through Effects and Handlers.",
+      "first_author": "Pingshi Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154543",
+      "doi": "https://doi.org/10.1145/3597926.3605239",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "Extracting Inline Tests from Unit Tests.",
+      "first_author": "Yu Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155440",
+      "doi": "https://doi.org/10.1145/3597926.3598149",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Quantitative Robustness Analysis of Neural Networks.",
+      "first_author": "Mara Downing",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154586",
+      "doi": "https://doi.org/10.1145/3597926.3605231",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "Eunomia: Enabling User-Specified Fine-Grained Search in Symbolically Executing WebAssembly Binaries.",
+      "first_author": "Ningyu He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154469",
+      "doi": "https://doi.org/10.1145/3597926.3598064",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "CoopHance: Cooperative Enhancement for Robustness of Deep Learning Systems.",
+      "first_author": "Quan Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155496",
+      "doi": "https://doi.org/10.1145/3597926.3598093",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Precise and Efficient Patch Presence Test for Android Applications against Code Obfuscation.",
+      "first_author": "Zifan Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384129320",
+      "doi": "https://doi.org/10.1145/3597926.3598061",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Fairness Testing for Recommender Systems.",
+      "first_author": "Huizhong Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154404",
+      "doi": "https://doi.org/10.1145/3597926.3605235",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "MetaData262: Automatic Test Suite Selection for Partial JavaScript Implementations.",
+      "first_author": "Frederico Ramos",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155729",
+      "doi": "https://doi.org/10.1145/3597926.3604923",
+      "institution": "Instituto Superior Técnico",
+      "institution_country": null,
+      "institution_ror": "https://ror.org/03db2by73"
+    },
+    {
+      "title": "Testing the Compiler for a New-Born Programming Language: An Industrial Case Study (Experience Paper).",
+      "first_author": "Yingquan Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155457",
+      "doi": "https://doi.org/10.1145/3597926.3598077",
+      "institution": "Tianjin University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/012tb2g32"
+    },
+    {
+      "title": "Back Deduction Based Testing for Word Sense Disambiguation Ability of Machine Translation Systems.",
+      "first_author": "Jun Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154468",
+      "doi": "https://doi.org/10.1145/3597926.3598081",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Type Batched Program Reduction.",
+      "first_author": "Golnaz Gharachorlu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378589447",
+      "doi": "https://doi.org/10.1145/3597926.3598065",
+      "institution": "Simon Fraser University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0213rcc28"
+    },
+    {
+      "title": "Automated Generation of Security-Centric Descriptions for Smart Contract Bytecode.",
+      "first_author": "Yu Pan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155757",
+      "doi": "https://doi.org/10.1145/3597926.3598132",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "ItyFuzz: Snapshot-Based Fuzzer for Smart Contract.",
+      "first_author": "Chaofan Shou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155618",
+      "doi": "https://doi.org/10.1145/3597926.3598059",
+      "institution": "University of California, Berkeley",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an7q238"
+    },
+    {
+      "title": "Quantitative Policy Repair for Access Control on the Cloud.",
+      "first_author": "William Eiers",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154579",
+      "doi": "https://doi.org/10.1145/3597926.3598078",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "DeepAtash: Focused Test Generation for Deep Learning Systems.",
+      "first_author": "Tahereh Zohdinasab",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155612",
+      "doi": "https://doi.org/10.1145/3597926.3598109",
+      "institution": "Università della Svizzera italiana",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/03c4atk17"
+    },
+    {
+      "title": "Systematically Producing Test Orders to Detect Order-Dependent Flaky Tests.",
+      "first_author": "Chengpeng Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155715",
+      "doi": "https://doi.org/10.1145/3597926.3598083",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "A Tale of Two Approximations: Tightening Over-Approximation for DNN Robustness Verification via Under-Approximation.",
+      "first_author": "Zhiyi Xue",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4378718389",
+      "doi": "https://doi.org/10.1145/3597926.3598127",
+      "institution": "East China Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02n96ep67"
+    },
+    {
+      "title": "Data Constraint Mining for Automatic Reconciliation Scripts Generation.",
+      "first_author": "Tianxiao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384129370",
+      "doi": "https://doi.org/10.1145/3597926.3598122",
+      "institution": "Alibaba Group (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00k642b80"
+    },
+    {
+      "title": "DyCL: Dynamic Neural Network Compilation Via Program Rewriting and Graph Optimization.",
+      "first_author": "Simin Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155663",
+      "doi": "https://doi.org/10.1145/3597926.3598082",
+      "institution": "University of Texas at Dallas, USA",
+      "institution_country": null,
+      "raw_affiliation": "University of Texas at Dallas, USA"
+    },
+    {
+      "title": "Latent Imitator: Generating Natural Individual Discriminatory Instances for Black-Box Fairness Testing.",
+      "first_author": "Yisong Xiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154513",
+      "doi": "https://doi.org/10.1145/3597926.3598099",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "SymRustC: A Hybrid Fuzzer for Rust.",
+      "first_author": "Frédéric Tuong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154545",
+      "doi": "https://doi.org/10.1145/3597926.3604927",
+      "institution": "Simon Fraser University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0213rcc28"
+    },
+    {
+      "title": "OCFI: Make Function Entry Identification Hard Again.",
+      "first_author": "Chengbin Pang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155653",
+      "doi": "https://doi.org/10.1145/3597926.3598097",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Improving Spectrum-Based Localization of Multiple Faults by Iterative Test Suite Reduction.",
+      "first_author": "Dylan Callaghan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154428",
+      "doi": "https://doi.org/10.1145/3597926.3598148",
+      "institution": "Stellenbosch University",
+      "institution_country": "ZA",
+      "institution_ror": "https://ror.org/05bk57929"
+    },
+    {
+      "title": "Quantitative Symbolic Similarity Analysis.",
+      "first_author": "Laboni Sarker",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154518",
+      "doi": "https://doi.org/10.1145/3597926.3605238",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "Toward Automated Detecting Unanticipated Price Feed in Smart Contract.",
+      "first_author": "Yifan Mo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154641",
+      "doi": "https://doi.org/10.1145/3597926.3598133",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "Building Critical Testing Scenarios for Autonomous Driving from Real Accidents.",
+      "first_author": "Xudong Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155445",
+      "doi": "https://doi.org/10.1145/3597926.3598070",
+      "institution": "Institute of Software",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/033dfsn42"
+    },
+    {
+      "title": "Silent Compiler Bug De-duplication via Three-Dimensional Analysis.",
+      "first_author": "Chen Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384154509",
+      "doi": "https://doi.org/10.1145/3597926.3598087",
+      "institution": "Tianjin University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/012tb2g32"
+    },
+    {
+      "title": "Finding Short Slow Inputs Faster with Grammar-Based Search.",
+      "first_author": "Ziyad Alsaeed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4384155721",
+      "doi": "https://doi.org/10.1145/3597926.3598118",
+      "institution": "Qassim University",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/01wsfe280"
+    }
+  ]
+}

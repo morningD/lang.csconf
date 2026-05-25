@@ -1,0 +1,547 @@
+{
+  "conference": "EUROSYS",
+  "year": 2023,
+  "total_papers": 54,
+  "total_matched": 53,
+  "total_with_affiliation": 53,
+  "coverage_pct": 98.1,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Aggregate VM: Why Reduce or Evict VM's Resources When You Can Borrow Them From Other Nodes?",
+      "first_author": "Ho-Ren Chuang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260319",
+      "doi": "https://doi.org/10.1145/3552326.3587452",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "With Great Freedom Comes Great Opportunity: Rethinking Resource Allocation for Serverless Functions.",
+      "first_author": "Muhammad Bilal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3169257120",
+      "doi": "https://doi.org/10.1145/3552326.3567506",
+      "institution": "Instituto de Engenharia de Sistemas e Computadores Investigação e Desenvolvimento",
+      "institution_country": "PT",
+      "institution_ror": "https://ror.org/04mqy3p58"
+    },
+    {
+      "title": "Chipmunk: Investigating Crash-Consistency in Persistent-Memory File Systems.",
+      "first_author": "Hayley LeBlanc",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260585",
+      "doi": "https://doi.org/10.1145/3552326.3567498",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Nephele: Extending Virtualization Environments for Cloning Unikernel-based VMs.",
+      "first_author": "Costin Lupu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260699",
+      "doi": "https://doi.org/10.1145/3552326.3587454",
+      "institution": "Universitatea Națională de Știință și Tehnologie Politehnica București",
+      "institution_country": "RO",
+      "institution_ror": "https://ror.org/0558j5q12"
+    },
+    {
+      "title": "Model Checking Guided Testing for Distributed Systems.",
+      "first_author": "Dong Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372259572",
+      "doi": "https://doi.org/10.1145/3552326.3587442",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Tabi: An Efficient Multi-Level Inference System for Large Language Models.",
+      "first_author": "Yiding Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4388874804",
+      "doi": "https://doi.org/10.1145/3552326.3587438",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "ALT: Breaking the Wall between Data Layout and Loop Optimizations for Deep Learning Compilation.",
+      "first_author": "Zhiying Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372258391",
+      "doi": "https://doi.org/10.1145/3552326.3587440",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "SiloD: A Co-design of Caching and Scheduling for Deep Learning Clusters.",
+      "first_author": "Hanyu Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372261197",
+      "doi": "https://doi.org/10.1145/3552326.3567499",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "vTMM: Tiered Memory Management for Virtual Machines.",
+      "first_author": "Sai Sha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263020",
+      "doi": "https://doi.org/10.1145/3552326.3587449",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Pocket: ML Serving from the Edge.",
+      "first_author": "Misun Park",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372267076",
+      "doi": "https://doi.org/10.1145/3552326.3587459",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Omni-Paxos: Breaking the Barriers of Partial Connectivity.",
+      "first_author": "Harald Ng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372258860",
+      "doi": "https://doi.org/10.1145/3552326.3587441",
+      "institution": "KTH Royal Institute of Technology",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/026vcq606"
+    },
+    {
+      "title": "DiLOS: Do Not Trade Compatibility for Performance in Memory Disaggregation.",
+      "first_author": "Wonsup Yoon",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263679",
+      "doi": "https://doi.org/10.1145/3552326.3567488",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05apxxy63"
+    },
+    {
+      "title": "TEA: A General-Purpose Temporal Graph Random Walk Engine.",
+      "first_author": "Chengying Huan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372259563",
+      "doi": "https://doi.org/10.1145/3552326.3567491",
+      "institution": "Baidu (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03vs3wt56"
+    },
+    {
+      "title": "Egeria: Efficient DNN Training with Knowledge-Guided Layer Freezing.",
+      "first_author": "Yiding Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260356",
+      "doi": "https://doi.org/10.1145/3552326.3587451",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Saba: Rethinking Datacenter Network Allocation from Application's Perspective.",
+      "first_author": "M. R. Siavash Katebzadeh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260309",
+      "doi": "https://doi.org/10.1145/3552326.3587450",
+      "institution": "University of Edinburgh",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01nrxwf90"
+    },
+    {
+      "title": "R2C: AOCR-Resilient Diversity with Reactive and Reflective Camouflage.",
+      "first_author": "Felix Berlakovich",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372261670",
+      "doi": "https://doi.org/10.1145/3552326.3587439",
+      "institution": "Universität der Bundeswehr München",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05kkv3f82"
+    },
+    {
+      "title": "Mumak: Efficient and Black-Box Bug Detection for Persistent Memory.",
+      "first_author": "João Gonçalves",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372262689",
+      "doi": "https://doi.org/10.1145/3552326.3587447",
+      "institution": "Instituto de Engenharia de Sistemas e Computadores Investigação e Desenvolvimento",
+      "institution_country": "PT",
+      "institution_ror": "https://ror.org/04mqy3p58"
+    },
+    {
+      "title": "Integrating Non-Volatile Main Memory in a Deterministic Database.",
+      "first_author": "Yu Chen Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260680",
+      "doi": "https://doi.org/10.1145/3552326.3567494",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "Morty: Scaling Concurrency Control with Re-Execution.",
+      "first_author": "Matthew Burke",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372267675",
+      "doi": "https://doi.org/10.1145/3552326.3567500",
+      "institution": "Cornell University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05bnh6r87"
+    },
+    {
+      "title": "MariusGNN: Resource-Efficient Out-of-Core Training of Graph Neural Networks.",
+      "first_author": "Roger Waleffe",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372267520",
+      "doi": "https://doi.org/10.1145/3552326.3567501",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Diagnosing Kernel Concurrency Failures with AITIA.",
+      "first_author": "Dae R. Jeong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263411",
+      "doi": "https://doi.org/10.1145/3552326.3567486",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05apxxy63"
+    },
+    {
+      "title": "DRAMHiT: A Hash Table Architected for the Speed of DRAM.",
+      "first_author": "Vikram Narayanan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372265742",
+      "doi": "https://doi.org/10.1145/3552326.3587457",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "All-Flash Array Key-Value Cache for Large Objects.",
+      "first_author": "Jinhyung Koo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263684",
+      "doi": "https://doi.org/10.1145/3552326.3567509",
+      "institution": "Daegu Gyeongbuk Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03frjya69"
+    },
+    {
+      "title": "OLPart: Online Learning based Resource Partitioning for Colocating Multiple Latency-Critical Jobs on Commodity Computers.",
+      "first_author": "Ruobing Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4323557467",
+      "doi": "https://doi.org/10.1145/3552326.3567490",
+      "institution": "Nankai University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01y1kjr75"
+    },
+    {
+      "title": "Understanding and Optimizing Workloads for Unified Resource Management in Large Cloud Platforms.",
+      "first_author": "Chengzhi Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4390712964",
+      "doi": "https://doi.org/10.1145/3552326.3587437",
+      "institution": "University of Macau",
+      "institution_country": "MO",
+      "institution_ror": "https://ror.org/01r4q9n85"
+    },
+    {
+      "title": "Accelerating Graph Mining Systems with Subgraph Morphing.",
+      "first_author": "Kasra Jamshidi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263931",
+      "doi": "https://doi.org/10.1145/3552326.3567489",
+      "institution": "Simon Fraser University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0213rcc28"
+    },
+    {
+      "title": "Viper: A Fast Snapshot Isolation Checker.",
+      "first_author": "Jian Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372258288",
+      "doi": "https://doi.org/10.1145/3552326.3567492",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Fail through the Cracks: Cross-System Interaction Failures in Modern Cloud Systems.",
+      "first_author": "Lilia Tang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372262732",
+      "doi": "https://doi.org/10.1145/3552326.3587448",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Making Dynamic Page Coalescing Effective on Virtualized Clouds.",
+      "first_author": "Weiwei Jia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263035",
+      "doi": "https://doi.org/10.1145/3552326.3567487",
+      "institution": "University of Rhode Island",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/013ckk937"
+    },
+    {
+      "title": "Hi-Speed DNN Training with Espresso: Unleashing the Full Potential of Gradient Compression with Near-Optimal Usage Strategies.",
+      "first_author": "Zhuang Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372267133",
+      "doi": "https://doi.org/10.1145/3552326.3567505",
+      "institution": "Rice University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008zs3103"
+    },
+    {
+      "title": "Palette Load Balancing: Locality Hints for Serverless Functions.",
+      "first_author": "Mania Abdi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260324",
+      "doi": "https://doi.org/10.1145/3552326.3567496",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Efficient and Safe I/O Operations for Intermittent Systems.",
+      "first_author": "Eren Yildiz",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4392571194",
+      "doi": "https://doi.org/10.1145/3552326.3587435",
+      "institution": "Ege University",
+      "institution_country": "TR",
+      "institution_ror": "https://ror.org/02eaafc18"
+    },
+    {
+      "title": "Diablo: A Benchmark Suite for Blockchains.",
+      "first_author": "Vincent Gramoli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260561",
+      "doi": "https://doi.org/10.1145/3552326.3567482",
+      "institution": "The University of Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/0384j8v12"
+    },
+    {
+      "title": "LogGrep: Fast and Cheap Cloud Log Storage by Exploiting both Static and Runtime Patterns.",
+      "first_author": "Junyu Wei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263685",
+      "doi": "https://doi.org/10.1145/3552326.3567484",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "FlowKV: A Semantic-Aware Store for Large-Scale State Management of Stream Processing Engines.",
+      "first_author": "Gyewon Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372258380",
+      "doi": "https://doi.org/10.1145/3552326.3567493",
+      "institution": "FriendliAI, Seoul, Republic of Korea",
+      "institution_country": null,
+      "raw_affiliation": "FriendliAI, Seoul, Republic of Korea"
+    },
+    {
+      "title": "NearPM: A Near-Data Processing System for Storage-Class Applications.",
+      "first_author": "Yasas Seneviratne",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263745",
+      "doi": "https://doi.org/10.1145/3552326.3587456",
+      "institution": "University of Virginia",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0153tk833"
+    },
+    {
+      "title": "ICE: Collaborating Memory and Process Management for User Experience on Resource-limited Mobile Devices.",
+      "first_author": "Changlong Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372261640",
+      "doi": "https://doi.org/10.1145/3552326.3567497",
+      "institution": "East China Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02n96ep67"
+    },
+    {
+      "title": "Effective Performance Issue Diagnosis with Value-Assisted Cost Profiling.",
+      "first_author": "Lingmei Weng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260326",
+      "doi": "https://doi.org/10.1145/3552326.3587444",
+      "institution": "Columbia University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj8s172"
+    },
+    {
+      "title": "Dissecting BFT Consensus: In Trusted Components we Trust!",
+      "first_author": "Suyash Gupta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372262739",
+      "doi": "https://doi.org/10.1145/3552326.3587455",
+      "institution": "University of California, Berkeley",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an7q238"
+    },
+    {
+      "title": "Unikernel Linux (UKL).",
+      "first_author": "Ali Raza",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372266579",
+      "doi": "https://doi.org/10.1145/3552326.3587458",
+      "institution": "Boston University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05qwgg493"
+    },
+    {
+      "title": "FlexPass: A Case for Flexible Credit-based Transport for Datacenter Networks.",
+      "first_author": "Hwijoon Lim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372261641",
+      "doi": "https://doi.org/10.1145/3552326.3587453",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05apxxy63"
+    },
+    {
+      "title": "DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan.",
+      "first_author": "Jin Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fast and Efficient Model Serving Using Multi-GPUs with Direct-Host-Access.",
+      "first_author": "Jinwoo Jeong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263604",
+      "doi": "https://doi.org/10.1145/3552326.3567508",
+      "institution": "Ajou University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03tzb2h73"
+    },
+    {
+      "title": "A2TP: Aggregator-aware In-network Aggregation for Multi-tenant Learning.",
+      "first_author": "Zhaoyi Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4401352466",
+      "doi": "https://doi.org/10.1145/3552326.3587436",
+      "institution": "Central South University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00f1zfq44"
+    },
+    {
+      "title": "Foxhound: Server-Grade Observability for Network-Augmented Applications.",
+      "first_author": "Lucas Castanheira",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372267405",
+      "doi": "https://doi.org/10.1145/3552326.3567502",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "Safe and Practical GPU Computation in TrustZone.",
+      "first_author": "Heejin Park",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260654",
+      "doi": "https://doi.org/10.1145/3552326.3567483",
+      "institution": "Apple (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/059hsda18"
+    },
+    {
+      "title": "CFS: Scaling Metadata Service for Distributed File System via Pruned Scope of Critical Sections.",
+      "first_author": "Yiduo Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372258399",
+      "doi": "https://doi.org/10.1145/3552326.3587443",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "REFL: Resource-Efficient Federated Learning.",
+      "first_author": "Ahmed M. Abdelmoniem",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286888406",
+      "doi": "https://doi.org/10.1145/3552326.3567485",
+      "institution": "Queen Mary University of London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/026zzn846"
+    },
+    {
+      "title": "FrozenHot Cache: Rethinking Cache Management for Modern Hardware.",
+      "first_author": "Ziyue Qiu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372260792",
+      "doi": "https://doi.org/10.1145/3552326.3587446",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "Lyra: Elastic Scheduling for Deep Learning Clusters.",
+      "first_author": "Jiamin Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372262787",
+      "doi": "https://doi.org/10.1145/3552326.3587445",
+      "institution": "City University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/03q8dnn23"
+    },
+    {
+      "title": "RIO: Order-Preserving and CPU-Efficient Remote Storage Access.",
+      "first_author": "Xiaojian Liao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4306802925",
+      "doi": "https://doi.org/10.1145/3552326.3567495",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Groundhog: Efficient Request Isolation in FaaS.",
+      "first_author": "Mohamed Alzayat",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263930",
+      "doi": "https://doi.org/10.1145/3552326.3567503",
+      "institution": "Max Planck Institute for Software Systems",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02pe2kf23"
+    },
+    {
+      "title": "OFence: Pairing Barriers to Find Concurrency Bugs in the Linux Kernel.",
+      "first_author": "Baptiste Lepers",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263900",
+      "doi": "https://doi.org/10.1145/3552326.3567504",
+      "institution": "The University of Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/0384j8v12"
+    },
+    {
+      "title": "WAFFLE: Exposing Memory Ordering Bugs Efficiently with Active Delay Injection.",
+      "first_author": "Bogdan Alexandru Stoica",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4372263378",
+      "doi": "https://doi.org/10.1145/3552326.3567507",
+      "institution": "University of Chicago",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/024mw5h28"
+    }
+  ]
+}
