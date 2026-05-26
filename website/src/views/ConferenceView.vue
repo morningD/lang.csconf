@@ -528,9 +528,40 @@ const sourceLinks = (sources: string[]) =>
     })
     .join(' + ')
 
+interface ActiveAffil {
+  total_papers: number
+  total_covered: number
+  coverage_pct: number
+  top: { name: string; count: number; pct: number; country?: string }[]
+  sources?: string[]
+  year?: string
+}
+
+const affilLatestOnly = ref(true)
+
+const activeAffilData = computed<ActiveAffil | null>(() => {
+  const affil = conference.value?.affiliations
+  if (!affil) return null
+  if (!affilLatestOnly.value) return affil as ActiveAffil
+  const byYear = affil.by_year
+  if (!byYear) return affil as ActiveAffil
+  const years = Object.keys(byYear).filter(y => byYear[y]?.top?.length)
+  if (years.length <= 1) return affil as ActiveAffil
+  const latestYear = years.sort().pop()!
+  const yd = byYear[latestYear]!
+  return {
+    total_papers: yd.total_papers,
+    total_covered: yd.total_covered,
+    coverage_pct: yd.total_papers > 0 ? Math.round(100 * yd.total_covered / yd.total_papers * 10) / 10 : 0,
+    top: yd.top,
+    sources: affil.sources,
+    year: latestYear,
+  }
+})
+
 const affiliationChartOption = computed(() => {
-  if (!conference.value?.affiliations) return {}
-  const affil = conference.value.affiliations
+  const affil = activeAffilData.value
+  if (!affil) return {}
   const top = affil.top.slice(0, 20)
   if (!top.length) return {}
 
@@ -739,12 +770,27 @@ const affiliationChartOption = computed(() => {
 
         <!-- Top Affiliations -->
         <div v-if="conference.affiliations && conference.affiliations.coverage_pct >= 50" class="card p-6 bg-gray-800/50 border-gray-700/50 mb-8">
-          <h3 class="text-lg font-semibold text-white mb-2">{{ t('conference.top_affiliations') }}</h3>
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-white">{{ t('conference.top_affiliations') }}</h3>
+            <label v-if="conference!.affiliations!.by_year && Object.keys(conference!.affiliations!.by_year).filter(y => conference!.affiliations!.by_year?.[y]?.top?.length).length > 1" class="flex items-center gap-2 text-sm text-gray-400 cursor-pointer select-none">
+              <input type="checkbox" v-model="affilLatestOnly" class="accent-violet-500" />
+              {{ t('conference.affiliation_latest_only') }}
+            </label>
+          </div>
           <p class="text-xs text-gray-500 mb-4">
-            {{ t('conference.affiliation_coverage', {
-              covered: `${conference.affiliations.total_covered} (${conference.affiliations.coverage_pct}%)`,
-              total: conference.affiliations.total_papers
-            }) }}
+            <template v-if="activeAffilData?.year">
+              {{ t('conference.affiliation_coverage_year', {
+                year: activeAffilData.year,
+                covered: `${activeAffilData.total_covered} (${activeAffilData.coverage_pct}%)`,
+                total: activeAffilData.total_papers
+              }) }}
+            </template>
+            <template v-else>
+              {{ t('conference.affiliation_coverage', {
+                covered: `${conference.affiliations.total_covered} (${conference.affiliations.coverage_pct}%)`,
+                total: conference.affiliations.total_papers
+              }) }}
+            </template>
             · <span v-html="sourceLinks(conference.affiliations.sources ?? [])" />
           </p>
           <v-chart :option="affiliationChartOption" style="height: 480px" autoresize />
