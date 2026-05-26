@@ -4,13 +4,13 @@
 Visualizing linguistic diversity of first authors across CCF-rated CS conferences (2010–2026).
 Pipeline: conferences_base.json + CCF PDFs → DBLP SPARQL crawl → name classification → JSON stats → Vue 3 website.
 
-## Current Numbers (as of 2026-05-24)
+## Current Numbers (as of 2026-05-26)
 - **Conferences**: 416 in conferences_base.json, 413 in stats
 - **Papers**: 908,971
 - **Raw author files**: 5,830
 - **Venue entries**: 416
 - **Year notes entries**: 230 (covering noise, gaps, recoveries, and provenance tracking)
-- **Affiliation data**: ~310 conference-years across 64 conferences. ~220,000 papers with affiliations. Sources: papercopilot (~210 conf-years), martenlienen (~50 conf-years), OpenAlex (~72 conf-years, ongoing), OpenReview (~15 conf-years). Institution normalization via `_INST_MAP` (~250 entries) + pattern-based fallback in step4.
+- **Affiliation data**: 264 conference-years across 75 conferences. ~147,000 papers with affiliations (86.8% coverage). Sources: OpenAlex (149 conf-years), papercopilot (91 conf-years), OpenReview (13 conf-years), martenlienen (11 conf-years). Institution normalization via `_INST_MAP` (~250 entries) + pattern-based fallback in step4.
 
 ## CRITICAL: Safe Re-Crawl Procedure
 **NEVER run `--step 2 --force` without immediately following with `--step 2c --force`.**
@@ -191,7 +191,7 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
   ```
 - **Profile cache**: Persistent JSON cache at `data/raw/affiliations/_profile_cache.json` (~19,700 entries), shared across conferences
 
-**Completed affiliation data (as of 2026-05-24):**
+**Completed affiliation data (as of 2026-05-26):**
 
 | Conference | Years | Coverage | Source |
 |-----------|-------|----------|--------|
@@ -220,8 +220,10 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 | ASPLOS, CAV, CCS, CSCW, DAC, EUROSYS, FM, FOCS, FSE, HPCA, HPDC, ICDE, ICSE, ISCA, ISSTA, LICS | 2023-2025 | 85-98% | OpenAlex |
 | CHI, IEEEVR, INFOCOM, EUROYCRPT, EUROSYS, IEEEVIS | 2023-2025 | 50-97% | OpenAlex |
 | ACL, CRYPTO, INFOCOM 2025 | 2023-2025 | 8-44% | OpenAlex (low: poor indexing) |
+| MICRO, MOBICOM, NDSS, NSDI, OOPSLA, OSDI, PLDI, POPL, PPOPP, RTSS, S&P, SC, SIGCOMM, SIGIR, SIGKDD, SIGMOD, SODA, SOSP, STOC, UBICOMP, UIST, USENIXATC, USENIXSECURITY, VLDB, WWW | 2023-2025 | 85-98% (ACM/IEEE), 1-5% (USENIX) | OpenAlex |
+| FAST | 2023-2025 | 67-80% | OpenAlex |
 
-Total: ~310 conference-years across 64 conferences, ~220,000 papers with affiliations.
+Total: 264 conference-years across 75 conferences, ~147,000 papers with affiliations (86.8%).
 
 ### Affiliation Trends (Trends Page)
 
