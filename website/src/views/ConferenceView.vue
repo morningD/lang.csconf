@@ -532,7 +532,7 @@ interface ActiveAffil {
   total_papers: number
   total_covered: number
   coverage_pct: number
-  top: { name: string; count: number; pct: number; country?: string }[]
+  top: { name: string; count: number; pct: number; country?: string; rank?: number }[]
   sources?: string[]
   year?: string
 }
@@ -574,20 +574,20 @@ const affiliationChartOption = computed(() => {
     if (idx > 0) {
       const prevYear = years[idx - 1]!
       const prevData = byYear[prevYear]!
-      prevRankMap = new Map(prevData.top.map((e: any, i: number) => [e.name, i + 1]))
+      // Use rank field from data (handles ties); fallback to index+1
+      prevRankMap = new Map(prevData.top.map((e: any, i: number) => [e.name, e.rank ?? (i + 1)]))
     }
   }
 
   const items = top.slice().reverse()
-  const prevTopN = prevRankMap ? Math.max(...prevRankMap.values(), 20) : 20
-  const currentRankStart = top.length
-  const labels = items.map((e, i) => {
+  const prevMaxRank = prevRankMap ? Math.max(...prevRankMap.values()) : 100
+  const labels = items.map((e) => {
     const flag = e.country ? countryFlag(e.country) : ''
     const short = abbreviateInst(e.name)
-    const curRank = currentRankStart - i
+    const curRank = e.rank ?? (top.indexOf(e) + 1)
     let badge = ''
     if (prevRankMap) {
-      const prevRank = prevRankMap.get(e.name) ?? (prevTopN + 1)
+      const prevRank = prevRankMap.get(e.name) ?? (prevMaxRank + 1)
       const diff = prevRank - curRank
       if (diff > 0) badge = ` {rank_up|↑${diff}}`
       else if (diff < 0) badge = ` {rank_down|↓${Math.abs(diff)}}`
@@ -820,6 +820,7 @@ const affiliationChartOption = computed(() => {
             </template>
             · <span v-html="sourceLinks(conference.affiliations.sources ?? [])" />
           </p>
+          <p class="text-xs text-gray-600 mb-4 -mt-2">{{ t('conference.affiliation_top_note') }}</p>
           <v-chart :option="affiliationChartOption" style="height: 480px" autoresize />
         </div>
       </template>

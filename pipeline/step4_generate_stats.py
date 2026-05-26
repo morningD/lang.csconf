@@ -624,15 +624,19 @@ def compute_affiliation_top(affil_data: dict, top_n: int = 20) -> dict:
     # Sort by count descending, take top-N
     sorted_insts = sorted(inst_counts.items(), key=lambda x: -x[1])[:top_n]
 
-    top = [
-        {
+    # Assign ranks with ties (same count = same rank)
+    top = []
+    for i, (name, count) in enumerate(sorted_insts):
+        rank = i + 1
+        if i > 0 and count == sorted_insts[i - 1][1]:
+            rank = top[-1]["rank"]
+        top.append({
             "name": name,
             "count": count,
             "pct": round(100 * count / max(total, 1), 2),
             "country": inst_countries.get(name, ""),
-        }
-        for name, count in sorted_insts
-    ]
+            "rank": rank,
+        })
 
     return {
         "total_covered": covered,
@@ -928,7 +932,7 @@ def run(force: bool = False):
                     by_year = {}
                     sources = set()
                     for y in years_with_data:
-                        year_top = compute_affiliation_top(conf_affils[y], top_n=50)
+                        year_top = compute_affiliation_top(conf_affils[y], top_n=100)
                         if year_top["total_covered"] > 0:
                             by_year[str(y)] = year_top
                         src = conf_affils[y].get("source", "")
