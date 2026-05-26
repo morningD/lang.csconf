@@ -174,11 +174,18 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 - **UI**: Conference detail page shows "Top Affiliations" section with:
   - Horizontal bar chart (ECharts SVG renderer): top 20 institutions, lavender-to-violet gradient bars, rounded corners
   - **SVG renderer** (`SVGRenderer` in main.ts, NOT `CanvasRenderer`): Required so chart text labels are selectable/copyable. Canvas-rendered text is not selectable. CSS `user-select: text` on `.echarts svg text` overrides ECharts' default `user-select: none`.
+  - **Year filter**: "Latest year only" checkbox (default on), toggles between single-year and all-time view. Only shown when `by_year` has >1 year with data. Coverage text dynamically shows year context.
+  - **Rank change indicators** (only in "Latest year only" mode): ECharts rich text badges between institution name and country flag:
+    - `↑N` (green `#34d399`): rank improved by N positions vs previous year
+    - `↓N` (red `#f87171`): rank dropped by N positions vs previous year
+    - `—` (gray `#6b7280`): rank unchanged
+    - New entries: treated as coming from rank N+1 (previous year's top list size + 1), always show `↑N`
+    - Computed entirely client-side from `by_year[latestYear].top` vs `by_year[prevYear].top` — no backend changes needed, auto-updates on `--step 4` + rsync
   - **Country flags**: Emoji flags rendered via ECharts rich text (`{flag|emoji}`), fontSize 18 (1.5x the 12px text) for prominence
   - **Institution abbreviations**: `INST_ABBREV` dict (85+ entries) maps canonical names to short forms (e.g., "Carnegie Mellon University" → "CMU", "University of Illinois at Urbana-Champaign" → "UIUC")
   - **Country flag overrides**: `COUNTRY_OVERRIDES` maps TW → CN (political sensitivity)
   - **Data source display**: Dynamic links to data sources (OpenReview, OpenAlex, Marten Lienen et al., PaperCopilot) via `SOURCE_NAMES` mapping with `{label, url}` — rendered as blue hyperlinks with " + " separator
-  - **Coverage note**: Shows "Affiliation data covers N (P%) of M papers · Source1 + Source2"
+  - **Coverage note**: Shows "Affiliation data covers N (P%) of M papers · Source1 + Source2" (all-time) or "YYYY affiliation data covers N (P%) of M papers · Source1" (single year)
   - **Tooltip**: Full institution name + paper count + percentage on hover
 - **Stats JSON format** (`affiliations` key in per-conference JSON):
   ```json
