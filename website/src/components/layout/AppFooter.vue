@@ -31,8 +31,7 @@ const { t } = useI18n()
         </a>
         <span class="text-gray-600">|</span>
         <span class="text-gray-500 text-xs">
-          👀 <span id="busuanzi_value_site_pv">-</span> views
-          · <span id="busuanzi_value_site_uv">-</span> visitors
+          👀 <span id="busuanzi_value_page_pv">-</span> views
         </span>
       </div>
     </div>
