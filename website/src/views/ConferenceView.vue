@@ -565,11 +565,35 @@ const affiliationChartOption = computed(() => {
   const top = affil.top.slice(0, 20)
   if (!top.length) return {}
 
+  // Build prev-year rank map for comparison when showing single year
+  let prevRankMap: Map<string, number> | null = null
+  if (affil.year && conference.value?.affiliations?.by_year) {
+    const byYear = conference.value.affiliations.by_year
+    const years = Object.keys(byYear).filter(y => byYear[y]?.top?.length).sort()
+    const idx = years.indexOf(affil.year)
+    if (idx > 0) {
+      const prevYear = years[idx - 1]!
+      const prevData = byYear[prevYear]!
+      prevRankMap = new Map(prevData.top.map((e: any, i: number) => [e.name, i + 1]))
+    }
+  }
+
   const items = top.slice().reverse()
-  const labels = items.map(e => {
+  const prevTopN = prevRankMap ? Math.max(...prevRankMap.values(), 20) : 20
+  const currentRankStart = top.length
+  const labels = items.map((e, i) => {
     const flag = e.country ? countryFlag(e.country) : ''
     const short = abbreviateInst(e.name)
-    return flag ? `${short} {flag|${flag}}` : short
+    const curRank = currentRankStart - i
+    let badge = ''
+    if (prevRankMap) {
+      const prevRank = prevRankMap.get(e.name) ?? (prevTopN + 1)
+      const diff = prevRank - curRank
+      if (diff > 0) badge = ` {rank_up|↑${diff}}`
+      else if (diff < 0) badge = ` {rank_down|↓${Math.abs(diff)}}`
+      else badge = ` {rank_same|—}`
+    }
+    return flag ? `${short}${badge} {flag|${flag}}` : `${short}${badge}`
   })
   const counts = items.map(e => e.count)
   const pcts = items.map(e => e.pct)
@@ -594,7 +618,7 @@ const affiliationChartOption = computed(() => {
         return `${cleanNames[p.dataIndex]}<br/>${p.value} papers (${pcts[p.dataIndex]?.toFixed(1)}%)`
       },
     },
-    grid: { left: 190, right: 60, top: 10, bottom: 20 },
+    grid: { left: 220, right: 60, top: 10, bottom: 20 },
     xAxis: {
       type: 'value' as const,
       axisLabel: { color: '#9ca3af' },
@@ -608,6 +632,9 @@ const affiliationChartOption = computed(() => {
         fontSize: 12,
         rich: {
           flag: { fontSize: 18, align: 'center' },
+          rank_up: { fontSize: 11, color: '#34d399', padding: [0, 0, 0, 4] },
+          rank_down: { fontSize: 11, color: '#f87171', padding: [0, 0, 0, 4] },
+          rank_same: { fontSize: 11, color: '#6b7280', padding: [0, 0, 0, 4] },
         },
       },
     },
