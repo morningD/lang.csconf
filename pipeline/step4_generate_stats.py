@@ -928,7 +928,7 @@ def run(force: bool = False):
                     by_year = {}
                     sources = set()
                     for y in years_with_data:
-                        year_top = compute_affiliation_top(conf_affils[y])
+                        year_top = compute_affiliation_top(conf_affils[y], top_n=50)
                         if year_top["total_covered"] > 0:
                             by_year[str(y)] = year_top
                         src = conf_affils[y].get("source", "")
