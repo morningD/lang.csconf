@@ -200,7 +200,11 @@ _INST_MAP: dict[str, tuple[str, str]] = {
     "Amazon": ("Amazon", "US"),
     "NVIDIA": ("NVIDIA", "US"),
     "Microsoft Research": ("Microsoft Research", "US"),
-    "IBM Research": ("IBM Research", "US"),
+    "IBM": ("IBM", "US"),
+    "IBM Research": ("IBM", "US"),
+    "IBM Research - Zurich": ("IBM", "US"),
+    "IBM Watson": ("IBM", "US"),
+    "IBM Research-Research": ("IBM", "US"),
     "Adobe Research": ("Adobe", "US"),
     "Adobe": ("Adobe", "US"),
     # --- China Universities ---
@@ -379,8 +383,31 @@ _INST_MAP: dict[str, tuple[str, str]] = {
     "Nanjing University of Science and Technology": ("Nanjing University of Science and Technology", "CN"),
     "Technion": ("Technion", "IL"),
     "Technion - Israel Institute of Technology": ("Technion", "IL"),
+    "Technion – Israel Institute of Technology": ("Technion", "IL"),
     "McGill University": ("McGill University", "CA"),
     "Dalian University of Technology": ("Dalian University of Technology", "CN"),
+    "大连理工大学": ("Dalian University of Technology", "CN"),
+    "天津大学": ("Tianjin University", "CN"),
+    "南京大学人工智能学院LAMDA实验室": ("Nanjing University", "CN"),
+    "Kuaishou": ("Kuaishou Technology", "CN"),
+    "Kuaishou Technology": ("Kuaishou Technology", "CN"),
+    "Kuaishou (China)": ("Kuaishou Technology", "CN"),
+    "Kuaishou Technology, Beijing, China": ("Kuaishou Technology", "CN"),
+    "Y-tech, Kuaishou Technology": ("Kuaishou Technology", "CN"),
+    "Kling Team, Kuaishou Technology": ("Kuaishou Technology", "CN"),
+    "Kuaishou- 快手科技": ("Kuaishou Technology", "CN"),
+    "快手科技": ("Kuaishou Technology", "CN"),
+    # --- Unicode / encoding variants ---
+    "ETH Zürich": ("ETH Zurich", "CH"),
+    "ETH Z&#x00FC;rich": ("ETH Zurich", "CH"),
+    "University of Michigan–Ann Arbor": ("University of Michigan", "US"),
+    "University of Wisconsin–Madison": ("University of Wisconsin-Madison", "US"),
+    "École Polytechnique Fédérale de Lausanne": ("EPFL", "CH"),
+    "Sorbonne Université": ("Sorbonne University", "FR"),
+    "Université de Bordeaux": ("University of Bordeaux", "FR"),
+    "Université de Sherbrooke": ("University of Sherbrooke", "CA"),
+    "Ant Group, Hangzhou": ("Ant Group", "CN"),
+    "NTT Social Informatics Laboratories, Tokyo": ("NTT Social Informatics Laboratories", "JP"),
     "National University of Defense Technology": ("National University of Defense Technology", "CN"),
     "University of California, Santa Barbara": ("University of California, Santa Barbara", "US"),
     "Xi'an Jiaotong University": ("Xi'an Jiaotong University", "CN"),
@@ -521,6 +548,10 @@ def _normalize_institution(name: str) -> tuple[str, str]:
     """
     if not name:
         return "", ""
+    # Decode HTML entities (e.g., &#x00FC; → ü)
+    if '&' in name:
+        import html
+        name = html.unescape(name)
 
     name = name.strip()
 
