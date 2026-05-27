@@ -797,8 +797,8 @@ const affiliationChartOption = computed(() => {
 
         <!-- Top Affiliations -->
         <div v-if="conference.affiliations && conference.affiliations.coverage_pct >= 50" class="card p-6 bg-gray-800/50 border-gray-700/50 mb-8">
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-lg font-semibold text-white">{{ t('conference.top_affiliations') }}</h3>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="text-lg font-semibold text-white"><span class="text-violet-400 mr-1">{{ conference.id }}</span>{{ t('conference.top_affiliations') }}</h3>
             <label v-if="conference!.affiliations!.by_year && Object.keys(conference!.affiliations!.by_year).filter(y => conference!.affiliations!.by_year?.[y]?.top?.length).length > 1" class="flex items-center gap-2 text-sm text-gray-400 cursor-pointer select-none">
               <input type="checkbox" v-model="affilLatestOnly" class="accent-violet-500" />
               {{ t('conference.affiliation_latest_only') }}
@@ -819,8 +819,8 @@ const affiliationChartOption = computed(() => {
               }) }}
             </template>
             · <span v-html="sourceLinks(conference.affiliations.sources ?? [])" />
+            <span class="text-gray-600 ml-1">{{ t('conference.affiliation_top_note') }}</span>
           </p>
-          <p class="text-xs text-gray-600 mb-4 -mt-2">{{ t('conference.affiliation_top_note') }}</p>
           <v-chart :option="affiliationChartOption" style="height: 480px" autoresize />
         </div>
       </template>
