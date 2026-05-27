@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
 import type { ConferenceIndex, ConferenceDetail, Meta, AffiliationIndex, CCFCategory } from '@/types'
 
 const { t } = useI18n()
+const route = useRoute()
+const router = useRouter()
 const { fetchConferencesIndex, fetchConference, fetchMeta, fetchAffiliationIndex } = useDataFetch()
 
 const allConferences = ref<ConferenceIndex[]>([])
@@ -24,6 +27,7 @@ onMounted(async () => {
     affilIndex.value = idx
     // Default: pick two CCF-A conferences with contrasting language profiles
     selectedIds.value = ['ACMMM', 'LICS']
+    initInstitutionsFromUrl()
   } catch (e) {
     console.error(e)
   } finally {
@@ -184,7 +188,28 @@ const barOption = computed(() => {
 // ============================================================
 
 const affilIndex = ref<AffiliationIndex | null>(null)
-const selectedInstitutions = ref<string[]>(['Tsinghua University'])
+const selectedInstitutions = ref<string[]>([])
+let syncingUrl = false
+
+// Sync institutions ↔ URL query param
+watch(selectedInstitutions, (val) => {
+  if (syncingUrl) return
+  const q = { ...route.query }
+  if (val.length > 0) q.inst = val.join(',')
+  else delete q.inst
+  router.replace({ query: q })
+}, { deep: true })
+
+function initInstitutionsFromUrl() {
+  syncingUrl = true
+  const raw = route.query.inst as string | undefined
+  if (raw) {
+    selectedInstitutions.value = raw.split(',').filter(Boolean)
+  } else {
+    selectedInstitutions.value = ['Tsinghua University']
+  }
+  syncingUrl = false
+}
 const instSearchQuery = ref('')
 const showInstDropdown = ref(false)
 const instDropdownRef = ref<HTMLElement | null>(null)
