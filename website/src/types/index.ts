@@ -99,3 +99,21 @@ export interface AffiliationTrendSlice {
   coverage_by_year: Record<string, { covered: number; total: number }>
   conferences_by_year?: Record<string, string[]>
 }
+
+export interface AffiliationIndex {
+  conferences: Record<string, { title: string; category: string; rank: string }>
+  institutions: Record<string, AffiliationIndexEntry>
+  name_list: string[]
+  coverage: { conferences: number; categories: number; coverage_pct: number }
+}
+
+export interface AffiliationIndexEntry {
+  country: string
+  by_category: Record<string, number>
+  conferences: Record<string, {
+    rank: number
+    count: number
+    pct: number
+    latest?: { rank: number; count: number; year: number }
+  }>
+}

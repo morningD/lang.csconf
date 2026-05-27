@@ -1030,6 +1030,9 @@ def run(force: bool = False):
     # 7. affiliation_trends.json — institution trends for the Trends page
     generate_affiliation_trends(all_affiliations, conf_meta)
 
+    # 8. affiliation_index.json — lightweight index for Compare page
+    generate_affiliation_index()
+
     print(f"Stats generated: {total_papers} papers across {len(conf_years_seen)} conferences → {STATS_DIR}")
 
 
@@ -1150,6 +1153,97 @@ def generate_affiliation_trends(
     total_insts = len(result.get("global", {}).get("institutions", {}))
     total_years = len(result.get("global", {}).get("years", []))
     print(f"Affiliation trends: {total_insts} institutions across {total_years} years")
+
+
+def generate_affiliation_index():
+    """Generate lightweight institution → conference ranking index for the Compare page.
+
+    Reads from already-generated per-conference stats JSON files.
+    """
+    institutions: dict[str, dict] = {}
+    conferences: dict[str, dict] = {}
+    total_covered = 0
+    total_papers = 0
+
+    conf_dir = STATS_DIR / "by_conference"
+    for f in sorted(conf_dir.glob("*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+
+        aff = d.get("affiliations")
+        if not aff or aff.get("coverage_pct", 0) < 50:
+            continue
+
+        conf_id = d["id"]
+        category = d.get("category", "")
+        rank = d.get("rank", "")
+        title = d.get("title", conf_id)
+
+        conferences[conf_id] = {"title": title, "category": category, "rank": rank}
+        total_covered += aff.get("total_covered", 0)
+        total_papers += aff.get("total_papers", 0)
+
+        # Find latest year with data
+        by_year = aff.get("by_year", {})
+        latest_year = None
+        latest_data = None
+        if by_year:
+            years_with_data = [y for y in by_year if by_year[y].get("top")]
+            if years_with_data:
+                latest_year = max(years_with_data)
+                latest_data = by_year[latest_year]
+
+        # Process all-time top entries
+        for entry in aff.get("top", []):
+            name = entry["name"]
+            if name not in institutions:
+                institutions[name] = {
+                    "country": entry.get("country", ""),
+                    "by_category": defaultdict(int),
+                    "conferences": {},
+                }
+            inst = institutions[name]
+            inst["conferences"][conf_id] = {
+                "rank": entry.get("rank", 0),
+                "count": entry["count"],
+                "pct": round(entry["pct"], 2),
+            }
+            inst["by_category"][category] += entry["count"]
+
+            # Add latest year data if available
+            if latest_year and latest_data:
+                latest_top = {e["name"]: e for e in latest_data.get("top", [])}
+                if name in latest_top:
+                    le = latest_top[name]
+                    inst["conferences"][conf_id]["latest"] = {
+                        "rank": le.get("rank", 0),
+                        "count": le["count"],
+                        "year": int(latest_year),
+                    }
+
+    coverage_pct = round(100 * total_covered / max(total_papers, 1), 1)
+    result = {
+        "conferences": conferences,
+        "institutions": {},
+        "name_list": sorted(institutions.keys()),
+        "coverage": {
+            "conferences": len(conferences),
+            "categories": len(set(c["category"] for c in conferences.values() if c["category"])),
+            "coverage_pct": coverage_pct,
+        },
+    }
+
+    for name, data in institutions.items():
+        result["institutions"][name] = {
+            "country": data["country"],
+            "by_category": dict(data["by_category"]),
+            "conferences": data["conferences"],
+        }
+
+    _write_json(STATS_DIR / "affiliation_index.json", result)
+    print(f"Affiliation index: {len(institutions)} institutions across {len(conferences)} conferences ({coverage_pct}% coverage)")
 
 
 def _sum_dicts(dicts) -> dict:

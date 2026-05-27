@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import type { Meta, GlobalSummary, ConferenceIndex, ConferenceDetail, CategoryStats, RankStats, AffiliationTrends } from '@/types'
+import type { Meta, GlobalSummary, ConferenceIndex, ConferenceDetail, CategoryStats, RankStats, AffiliationTrends, AffiliationIndex } from '@/types'
 
 const BASE_URL = import.meta.env.BASE_URL + 'data/stats/'
 const cache = new Map<string, unknown>()
@@ -48,6 +48,10 @@ export function useDataFetch() {
     return fetchJson<AffiliationTrends>('affiliation_trends.json')
   }
 
+  async function fetchAffiliationIndex(): Promise<AffiliationIndex> {
+    return fetchJson<AffiliationIndex>('affiliation_index.json')
+  }
+
   return {
     loading,
     error,
@@ -58,5 +62,6 @@ export function useDataFetch() {
     fetchCategory,
     fetchRank,
     fetchAffiliationTrends,
+    fetchAffiliationIndex,
   }
 }
