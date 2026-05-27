@@ -1854,11 +1854,16 @@ function onSnakeClick(idx) {
       </svg>
       <!-- Crescent & star ☪ -->
       <svg v-else-if="d.type === 'crescent-star'" width="36" height="36" viewBox="0 0 36 36">
-        <circle cx="16" cy="18" r="12" fill="#ffd700" />
-        <circle cx="21" cy="15" r="10.5" :fill="isDark ? '#1a1a2e' : '#e8ecf4'" />
+        <defs>
+          <mask id="crescent-mask">
+            <rect width="36" height="36" fill="white" />
+            <circle cx="21" cy="15" r="10.5" fill="black" />
+          </mask>
+        </defs>
+        <circle cx="16" cy="18" r="12" fill="#ffd700" mask="url(#crescent-mask)" />
+        <circle cx="16" cy="18" r="14" fill="#ffd700" opacity="0.06" />
         <polygon points="30,8 31.6,13 36,13 32.4,16 33.6,21 30,18 26.4,21 27.6,16 24,13 28.4,13" fill="#ffd700" />
         <circle cx="30" cy="14" r="1" fill="#fff2aa" opacity="0.5" />
-        <circle cx="16" cy="18" r="14" fill="#ffd700" opacity="0.06" />
       </svg>
       <!-- Songpyeon 송편 -->
       <svg v-else-if="d.type === 'songpyeon'" width="26" height="18" viewBox="0 0 26 18">
