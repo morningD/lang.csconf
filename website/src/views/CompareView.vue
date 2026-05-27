@@ -782,6 +782,7 @@ const hasInstData = computed(() => selectedInstitutions.value.length > 0 && inst
             <input
               v-model="instSearchQuery"
               @focus="showInstDropdown = true"
+              @input="showInstDropdown = true"
               :placeholder="t('compare.institution_search')"
               class="bg-gray-800 text-gray-300 text-sm rounded-lg px-3 py-1.5 border border-gray-600 w-64 outline-none focus:border-blue-500"
             >
