@@ -517,6 +517,8 @@ const SOURCE_NAMES: Record<string, { label: string; url: string }> = {
   openalex: { label: 'OpenAlex', url: 'https://openalex.org' },
   martenlienen: { label: 'Marten Lienen et al.', url: 'https://github.com/martenlienen/icml-neurips-iclr-dataset' },
   papercopilot: { label: 'PaperCopilot', url: 'https://github.com/papercopilot/paperlists' },
+  usenix_website: { label: 'USENIX', url: 'https://www.usenix.org' },
+  acl_anthology: { label: 'ACL Anthology', url: 'https://aclanthology.org' },
 }
 const sourceLinks = (sources: string[]) =>
   (sources || [])
