@@ -291,7 +291,7 @@ def main():
             print(f"{conf_id} {year}: no papers found in Anthology XML")
             continue
 
-        source_label = " + ".join(source_parts) if source_parts else "acl_anthology"
+        source_label = " + ".join(dict.fromkeys(source_parts)) if source_parts else "acl_anthology"
         has_affil, total = _save_affiliation_file(
             conf_id, year, all_anth_papers, raw_papers, source_label)
         pct = round(100 * has_affil / max(total, 1), 1)
