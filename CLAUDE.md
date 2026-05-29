@@ -10,7 +10,7 @@ Pipeline: conferences_base.json + CCF PDFs → DBLP SPARQL crawl → name classi
 - **Raw author files**: 5,830
 - **Venue entries**: 416
 - **Year notes entries**: 230 (covering noise, gaps, recoveries, and provenance tracking)
-- **Affiliation data**: 286 conference-years across 80 conferences. ~150,000 papers with affiliations (87.6% coverage). Sources: OpenAlex (149 conf-years), papercopilot (91 conf-years), USENIX website (22 conf-years), OpenReview (13 conf-years), martenlienen (11 conf-years). Institution normalization via `_INST_MAP` (~250 entries) + pattern-based fallback in step4.
+- **Affiliation data**: 384 conference-years across 75 conferences. ~194,000 papers with affiliations (87.1% coverage). Sources: OpenAlex (149 conf-years), papercopilot (91 conf-years), USENIX website (22 conf-years), ACL Anthology (2 conf-years), OpenReview (13 conf-years), martenlienen (11 conf-years). Institution normalization via `_INST_MAP` (~250 entries) + pattern-based fallback in step4.
 
 ## CRITICAL: Safe Re-Crawl Procedure
 **NEVER run `--step 2 --force` without immediately following with `--step 2c --force`.**
@@ -77,6 +77,7 @@ scripts/
 ├── import_affiliations.py          # Import affiliations from pre-compiled datasets (martenlienen, papercopilot)
 ├── openalex_batch_crawl.py         # Batch OpenAlex affiliation crawl for CCF-A conferences (resumable, key rotation, parallel)
 ├── crawl_usenix_affiliations.py   # Crawl USENIX proceedings pages for first-author affiliations (NSDI/OSDI/Security/FAST/ATC)
+├── crawl_acl_anthology_affiliations.py  # Crawl ACL Anthology GitHub XML for affiliations (ACL/EMNLP/NAACL/COLING)
 └── crawl_affiliations.sh           # Resilient OpenReview profile crawler with stall detection + auto-restart
 ```
 
@@ -91,6 +92,7 @@ python -m pipeline.run_all --step 2d              # Crawl OpenReview (supplement
 python -m pipeline.run_all --step 2e              # Fetch affiliations (OpenReview + OpenAlex)
 python scripts/import_affiliations.py              # Import from pre-compiled datasets (martenlienen + papercopilot)
 python scripts/crawl_usenix_affiliations.py         # Crawl USENIX proceedings pages for affiliations
+python scripts/crawl_acl_anthology_affiliations.py  # Crawl ACL Anthology XML for ACL/EMNLP/NAACL/COLING
 python -m pipeline.run_all --step 1b              # Update acceptance rates
 python scripts/extract_ccf_ranks.py               # Re-extract CCF ranks from PDFs
 rsync -av --delete data/stats/ website/public/data/stats/  # Sync to website
@@ -133,6 +135,7 @@ To re-fetch a conference: `rm data/raw/authors/CVPR_*.json data/classified/autho
 | 3 | OpenReview profile API | **Current year only** (2026 conferences) | CC BY 4.0 (submission metadata) | Good for current year; 40% discrepancy vs paper affiliations for historical data |
 | 4 | OpenAlex title matching | Non-OpenReview conferences (IEEE/ACM/Springer), all CCF-A 2023-2025 | CC0 | 85-98% for well-indexed conferences (ACM/IEEE); 8-50% for poorly indexed (ACL, CRYPTO, IEEEVIS); via `scripts/openalex_batch_crawl.py` with 7 parallel workers |
 | 5 | USENIX website scraping | NSDI, OSDI, USENIX Security, FAST, USENIX ATC | Public proceedings pages | 75-100% — parses `<em>` tags from technical-sessions pages; OpenAlex has ~0% for USENIX; via `scripts/crawl_usenix_affiliations.py` |
+| 6 | ACL Anthology GitHub XML | ACL, EMNLP, NAACL, COLING | CC BY 4.0 (ACL Anthology) | 47-54% — parses `<affiliation>` tags from structured XML; supersedes OpenAlex for ACL conferences; via `scripts/crawl_acl_anthology_affiliations.py` |
 
 **Key rule: OpenReview API crawling is ONLY for current-year conferences.** Historical data uses pre-compiled datasets exclusively.
 - Rationale: OR profile institution reflects current employer, which drifts over time. For current-year conferences, this drift is minimal. For historical years, paper PDF affiliations (from martenlienen/papercopilot) are more accurate.
@@ -143,6 +146,7 @@ To re-fetch a conference: `rm data/raw/authors/CVPR_*.json data/classified/autho
 python scripts/import_affiliations.py --source martenlienen   # Import historical data (NeurIPS/ICML/ICLR)
 python scripts/import_affiliations.py --source papercopilot   # Import recent data (ICLR 2025, CoRL)
 python scripts/crawl_usenix_affiliations.py                   # Crawl USENIX conferences (NSDI/OSDI/Security/FAST/ATC)
+python scripts/crawl_acl_anthology_affiliations.py             # Crawl ACL Anthology XML (ACL/EMNLP/NAACL/COLING)
 python -m pipeline.run_all --step 2e                          # OR crawl for current year only (skips existing)
 bash scripts/crawl_affiliations.sh                            # Resilient OR crawl with auto-restart
 ```
@@ -164,7 +168,17 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 - **Matching**: Title normalization + matching against DBLP raw authors; ~98.6% exact match rate
 - **Re-run**: Skips files with ≥50% coverage unless `--force`; merges USENIX affiliations with raw author paper list
 
-**Attribution:** About page credits OpenReview (CC BY 4.0), OpenAlex (CC0), martenlienen, papercopilot, USENIX.
+**ACL Anthology scraping** (`scripts/crawl_acl_anthology_affiliations.py`):
+- **Why needed**: OpenAlex has poor coverage for ACL/EMNLP (17% for ACL 2025, ~75% of papers have empty affiliations). ACL Anthology GitHub has structured XML with `<affiliation>` tags.
+- **Data source**: `https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/{year}.{conf}.xml`
+- **XML structure**: `<paper>` blocks with `<author><first>`, `<last>`, `<affiliation>` tags. Titles use `<fixed-case>` for acronyms.
+- **Findings papers**: Separate `2025.findings.xml` with `<volume id="acl">` / `<volume id="emnlp">` — filter by volume id.
+- **Coverage**: 47-54% (first-author `<affiliation>` present for ~47% of papers in XML). Still better than OpenAlex 17%.
+- **Merge behavior**: Preserves existing data from other sources (papercopilot) when Anthology has no affiliation for a paper.
+- **Matching**: Title normalization (strip `<fixed-case>` tags + standard norm) against DBLP raw authors
+- **Conferences**: ACL, EMNLP, NAACL, COLING configured in `CONF_XML_MAP`
+
+**Attribution:** About page credits OpenReview (CC BY 4.0), OpenAlex (CC0), martenlienen, papercopilot, USENIX, ACL Anthology.
 
 **Institution normalization**: `_normalize_institution()` in step4 handles all institution name normalization → `(canonical_name, country_code)`. Returns a tuple, not just a string.
 - **Normalization pipeline** (in order):
@@ -226,11 +240,13 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 | ICML | 2025 | 84% | OpenReview (current year) |
 | CVPR | 2013-2025 | 84% | papercopilot |
 | AAAI | 2021-2025 | 94% | papercopilot |
-| ACL | 2021-2025 | 95% | papercopilot |
+| ACL | 2021-2024 | 95% | papercopilot |
+| ACL | 2025 | 54% | ACL Anthology XML + papercopilot |
 | ACMSIGGRAPH | 2010-2025 | 61% | papercopilot |
 | ICRA | 2010-2024 | 95% | papercopilot |
 | IROS | 2010-2024 | 98% | papercopilot |
 | EMNLP | 2021-2024 | 86% | papercopilot |
+| EMNLP | 2025 | 47% | ACL Anthology XML + papercopilot |
 | IJCAI | 2020-2024 | 95% | papercopilot |
 | COLT | 2011-2024 | 95% | papercopilot |
 | AISTATS | 2010-2025 | 88% | papercopilot |
