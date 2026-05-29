@@ -2,348 +2,381 @@
   "conference": "OSDI",
   "year": 2025,
   "total_papers": 53,
-  "total_matched": 9,
-  "total_with_affiliation": 1,
-  "coverage_pct": 1.9,
-  "source": "openalex",
+  "total_matched": 53,
+  "total_with_affiliation": 53,
+  "coverage_pct": 100.0,
+  "source": "usenix_website",
   "papers": [
     {
       "title": "Mirage: A Multi-Level Superoptimizer for Tensor Programs.",
       "first_author": "Mengdi Wu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Quake: Adaptive Indexing for Vector Search.",
       "first_author": "Jason Mohoney",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4416072428",
-      "doi": "https://doi.org/10.48550/arxiv.2506.03437",
-      "institution": null
+      "institution": "University of Wisconsin–Madison",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Compass: Encrypted Semantic Search with High Accuracy.",
       "first_author": "Jinhao Zhu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Picsou: Enabling Replicated State Machines to Communicate Efficiently.",
       "first_author": "Reginald Frank",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "BlitzScale: Fast and Live Large Model Autoscaling with O(1) Host Caching.",
       "first_author": "Dingyan Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Tiered Memory Management Beyond Hotness.",
       "first_author": "Jinshu Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Virginia Tech",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fork in the Road: Reflections and Optimizations for Cold Start Latency in Production Serverless Systems.",
       "first_author": "Xiaohu Chai",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University and Ant Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Bayesian Code Diffusion for Efficient Automatic Deep Learning Program Optimization.",
       "first_author": "Isu Jeong",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Ulsan National Institute of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Paralegal: Practical Static Analysis for Privacy Bugs.",
       "first_author": "Justus Adam",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Brown University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Decentralized, Epoch-based F2FS Journaling with Fine-grained Crash Recovery.",
       "first_author": "Yaotian Cui",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The Chinese University of Hong Kong, China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Training with Confidence: Catching Silent Errors in Deep Learning Training with Automated Proactive Checks.",
       "first_author": "Yuxuan Jiang",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4415332908",
-      "doi": "https://doi.org/10.48550/arxiv.2506.14813",
-      "institution": null
+      "institution": "University of Michigan",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Principles and Methodologies for Serial Performance Optimization.",
       "first_author": "Sujin Park",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Georgia Institute of Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "WaferLLM: Large Language Model Inference at Wafer Scale.",
       "first_author": "Congjie He",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4407308982",
-      "doi": "https://doi.org/10.48550/arxiv.2502.04563",
-      "institution": null
+      "institution": "University of Edinburgh",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Quantum Virtual Machines.",
       "first_author": "Runzhou Tao",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4411267052",
-      "doi": "https://doi.org/10.1145/3729290",
-      "institution": "LRZ, Germany",
-      "institution_country": null,
-      "raw_affiliation": "LRZ, Germany"
+      "institution": "University of Maryland, College Park",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Low End-to-End Latency atop a Speculative Shared Log with Fix-Ante Ordering.",
       "first_author": "Shreesha G. Bhat",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Illinois Urbana-Champaign",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Deriving Semantic Checkers from Tests to Detect Silent Failures in Production Distributed Systems.",
       "first_author": "Chang Lou",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Virginia",
+      "imported_from": "usenix_website"
     },
     {
       "title": "KPerfIR: Towards a Open and Compiler-centric Ecosystem for GPU Kernel Performance Tooling on Modern AI Workloads.",
       "first_author": "Yue Guan",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4415037814",
-      "doi": "https://doi.org/10.48550/arxiv.2505.21661",
-      "institution": null
+      "institution": "University of California, San Diego",
+      "imported_from": "usenix_website"
     },
     {
       "title": "To PRI or Not To PRI, That's the question.",
       "first_author": "Yun Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "QOS: Quantum Operating System.",
       "first_author": "Emmanouil Giortamis",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "TU Munich",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Tigon: A Distributed Database for a CXL Pod.",
       "first_author": "Yibo Huang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The University of Texas at Austin",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Skybridge: Bounded Staleness for Distributed Caches.",
       "first_author": "Robert Lyerly",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Meta Platforms Inc.",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Understanding Stragglers in Large Model Training Using What-if Analysis.",
       "first_author": "Jinkun Lin",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4417511753",
-      "doi": "https://doi.org/10.48550/arxiv.2505.05713",
-      "institution": null
+      "institution": "New York University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Weave: Efficient and Expressive Oblivious Analytics at Scale.",
       "first_author": "Mahdi Soleimani",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Yale University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "NanoFlow: Towards Optimal Large Language Model Serving Throughput.",
       "first_author": "Kan Zhu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Tintin: A Unified Hardware Performance Profiling Infrastructure to Uncover and Manage Uncertainty.",
       "first_author": "Ao Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Washington University in St. Louis",
+      "imported_from": "usenix_website"
     },
     {
       "title": "PipeThreader: Software-Defined Pipelining for Efficient DNN Execution.",
       "first_author": "Yu Cheng",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "School of Computer Science, Peking University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Disentangling the Dual Role of NIC Receive Rings.",
       "first_author": "Boris Pismenny",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "EPFL & NVIDIA",
+      "imported_from": "usenix_website"
     },
     {
       "title": "MettEagle: Costs and Benefits of Implementing Containers on Microkernels.",
       "first_author": "Till Miemietz",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Barkhausen Institut",
+      "imported_from": "usenix_website"
     },
     {
       "title": "XSched: Preemptive Scheduling for Diverse XPUs.",
       "first_author": "Weihang Shen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Institute of Parallel and Distributed Systems, Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Building Bridges: Safe Interactions with Foreign Languages through Omniglot.",
       "first_author": "Leon Schuermann",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Deterministic Client: Enforcing Determinism on Untrusted Machine Code.",
       "first_author": "Zachary Yedidia",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Okapi: Decoupling Data Striping and Redundancy Grouping in Cluster File Systems.",
       "first_author": "Sanjith Athlur",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ZEN: Empowering Distributed Training with Sparsity-driven Data Synchronization.",
       "first_author": "Zhuang Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Rice University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "PoWER Never Corrupts: Tool-Agnostic Verification of Crash Consistency and Corruption Detection.",
       "first_author": "Hayley LeBlanc",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Söze: One Network Telemetry Is All You Need for Per-flow Weighted Bandwidth Allocation at Scale.",
       "first_author": "Weitao Wang",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4416130919",
-      "doi": "https://doi.org/10.48550/arxiv.2506.00834",
-      "institution": null
+      "institution": "Rice University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Enabling Efficient GPU Communication over Multiple NICs with FuseLink.",
       "first_author": "Zhenghang Ren",
       "matched": true,
-      "openalex_id": "https://openalex.org/W7113532390",
-      "doi": null,
-      "institution": null
+      "institution": "Hong Kong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "QiMeng-Xpiler: Transcompiling Tensor Programs for Deep Learning Systems with a Neural-Symbolic Approach.",
       "first_author": "Shouyang Dong",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4415030374",
-      "doi": "https://doi.org/10.48550/arxiv.2505.02146",
-      "institution": null
+      "institution": "University of Science and Technology of China, Cambricon Technologies, and Institute of Computing Technology, Chinese Academy of Sciences",
+      "imported_from": "usenix_website"
     },
     {
       "title": "FineMem: Breaking the Allocation Overhead vs. Memory Waste Dilemma in Fine-Grained Disaggregated Memory Management.",
       "first_author": "Xiaoyang Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Science and Technology of China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "EMT: An OS Framework for New Memory Translation Architectures.",
       "first_author": "Siyuan Chai",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Illinois Urbana-Champaign",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Achieving Low-Latency Graph-Based Vector Search via Aligning Best-First Search Algorithm with SSD.",
       "first_author": "Hao Guo",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "OS Rendering Service Made Parallel with Out-of-Order Execution and In-Order Commit.",
       "first_author": "Yuanpei Wu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Institute of Parallel and Distributed Systems, Shanghai Jiao Tong University; Engineering Research Center for Domain-specific Operating Systems, Ministry of Education",
+      "imported_from": "usenix_website"
     },
     {
       "title": "WLB-LLM: Workload-Balanced 4D Parallelism for Large Language Model Training.",
       "first_author": "Zheng Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of California, San Diego, and Meta",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Stripeless Data Placement for Erasure-Coded In-Memory Storage.",
       "first_author": "Jian Gao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "KRR: Efficient and Scalable Kernel Record Replay.",
       "first_author": "Tianren Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "SmartX",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Decouple and Decompose: Scaling Resource Allocation with DeDe.",
       "first_author": "Zhiying Xu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Mako: Speculative Distributed Transactions with Geo-Replication.",
       "first_author": "Weihai Shen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Stony Brook University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fast and Synchronous Crash Consistency with Metadata Write-Once File System.",
       "first_author": "Yanqi Pan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Harbin institute of Technology, Shenzhen",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Scalio: Scaling up DPU-based JBOF Key-value Store with NVMe-oF Target Offload.",
       "first_author": "Xun Sun",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Kamino: Efficient VM Allocation at Scale with Latency-Driven Cache-Aware Scheduling.",
       "first_author": "David Domingo",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Rutgers University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Extending Applications Safely and Efficiently.",
       "first_author": "Yusheng Zheng",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Santa Cruz",
+      "imported_from": "usenix_website"
     },
     {
       "title": "DecDEC: A Systems Approach to Advancing Low-Bit LLM Quantization.",
       "first_author": "Yeonhong Park",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Seoul National University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Neutrino: Fine-grained GPU Kernel Profiling via Programmable Probing.",
       "first_author": "Songlin Huang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The University of Hong Kong",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Basilisk: Using Provenance Invariants to Automate Proofs of Undecidable Protocols.",
       "first_author": "Tony Nuda Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "usenix_website"
     }
   ]
 }

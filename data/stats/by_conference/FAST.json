@@ -403,36 +403,981 @@
     }
   },
   "affiliations": {
-    "total_covered": 1,
-    "total_papers": 131,
-    "coverage_pct": 0.8,
+    "total_covered": 142,
+    "total_papers": 188,
+    "coverage_pct": 75.5,
     "top": [
       {
-        "name": "Google",
-        "count": 1,
-        "pct": 0.76,
-        "country": "US",
+        "name": "Tsinghua University",
+        "count": 13,
+        "pct": 6.91,
+        "country": "CN",
         "rank": 1
+      },
+      {
+        "name": "Huazhong University of Science and Technology",
+        "count": 9,
+        "pct": 4.79,
+        "country": "CN",
+        "rank": 2
+      },
+      {
+        "name": "Chinese University of Hong Kong",
+        "count": 8,
+        "pct": 4.26,
+        "country": "HK",
+        "rank": 3
+      },
+      {
+        "name": "KAIST",
+        "count": 7,
+        "pct": 3.72,
+        "country": "KR",
+        "rank": 4
+      },
+      {
+        "name": "University of Wisconsin-Madison",
+        "count": 5,
+        "pct": 2.66,
+        "country": "US",
+        "rank": 5
+      },
+      {
+        "name": "Seoul National University",
+        "count": 5,
+        "pct": 2.66,
+        "country": "KR",
+        "rank": 5
+      },
+      {
+        "name": "University of Toronto",
+        "count": 4,
+        "pct": 2.13,
+        "country": "CA",
+        "rank": 7
+      },
+      {
+        "name": "Shanghai Jiao Tong University",
+        "count": 4,
+        "pct": 2.13,
+        "country": "CN",
+        "rank": 7
+      },
+      {
+        "name": "Alibaba",
+        "count": 4,
+        "pct": 2.13,
+        "country": "CN",
+        "rank": 7
+      },
+      {
+        "name": "Rutgers University",
+        "count": 3,
+        "pct": 1.6,
+        "country": "US",
+        "rank": 10
+      },
+      {
+        "name": "Technion",
+        "count": 3,
+        "pct": 1.6,
+        "country": "IL",
+        "rank": 10
+      },
+      {
+        "name": "University of Science and Technology of China",
+        "count": 3,
+        "pct": 1.6,
+        "country": "CN",
+        "rank": 10
+      },
+      {
+        "name": "Zhejiang University",
+        "count": 3,
+        "pct": 1.6,
+        "country": "CN",
+        "rank": 10
+      },
+      {
+        "name": "Nanjing University of Science and Technology",
+        "count": 2,
+        "pct": 1.06,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Harbin Institute of Technology, Shenzhen",
+        "count": 2,
+        "pct": 1.06,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Stony Brook University",
+        "count": 2,
+        "pct": 1.06,
+        "country": "US",
+        "rank": 14
+      },
+      {
+        "name": "Sungkyunkwan University",
+        "count": 2,
+        "pct": 1.06,
+        "country": "KR",
+        "rank": 14
+      },
+      {
+        "name": "Shandong University",
+        "count": 2,
+        "pct": 1.06,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Carnegie Mellon University",
+        "count": 2,
+        "pct": 1.06,
+        "country": "US",
+        "rank": 14
+      },
+      {
+        "name": "Virginia Tech",
+        "count": 2,
+        "pct": 1.06,
+        "country": "US",
+        "rank": 14
       }
     ],
     "by_year": {
-      "2023": {
-        "total_covered": 1,
-        "total_papers": 29,
-        "coverage_pct": 3.4,
+      "2021": {
+        "total_covered": 28,
+        "total_papers": 28,
+        "coverage_pct": 100.0,
         "top": [
+          {
+            "name": "Tsinghua University",
+            "count": 5,
+            "pct": 17.86,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "University of Science and Technology of China & Qatar Computing Research Institute, HBKU",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Facebook Inc.",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University of Illinois at Chicago",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Michigan",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Rutgers University",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Nanjing University of Science and Technology",
+            "count": 1,
+            "pct": 3.57,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "University of California, Merced",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "INESC-ID & Instituto Superior Técnico",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Harbin Institute of Technology, Shenzhen",
+            "count": 1,
+            "pct": 3.57,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 1,
+            "pct": 3.57,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "University of Texas at Austin",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Facebook, Inc.",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Huazhong University of Science & Technology",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Colorado Boulder",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Northeastern University",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Florida International University",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Seoul National University and Samsung Electronics",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 3.57,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Sungkyunkwan University",
+            "count": 1,
+            "pct": 3.57,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 3.57,
+            "country": "HK",
+            "rank": 2
+          }
+        ]
+      },
+      "2022": {
+        "total_covered": 28,
+        "total_papers": 29,
+        "coverage_pct": 96.6,
+        "top": [
+          {
+            "name": "University of Toronto",
+            "count": 3,
+            "pct": 10.34,
+            "country": "CA",
+            "rank": 1
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 3,
+            "pct": 10.34,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "KAIST",
+            "count": 3,
+            "pct": 10.34,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Shanghai Jiao Tong University",
+            "count": 2,
+            "pct": 6.9,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "Technion",
+            "count": 2,
+            "pct": 6.9,
+            "country": "IL",
+            "rank": 4
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 2,
+            "pct": 6.9,
+            "country": "HK",
+            "rank": 4
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "KR",
+            "rank": 7
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 3.45,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "VUSec, Vrije Universiteit Amsterdam",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "UNIST, KAIST",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Rensselaer Polytechnic Institute",
+            "count": 1,
+            "pct": 3.45,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Rutgers University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "INESC TEC and University of Minho",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CN",
+            "rank": 7
+          },
+          {
+            "name": "ETH Zurich",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CH",
+            "rank": 7
+          },
+          {
+            "name": "Shandong University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CN",
+            "rank": 7
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CN",
+            "rank": 7
+          },
+          {
+            "name": "Hanyang University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CN",
+            "rank": 7
+          }
+        ]
+      },
+      "2023": {
+        "total_covered": 28,
+        "total_papers": 29,
+        "coverage_pct": 96.6,
+        "top": [
+          {
+            "name": "Alibaba",
+            "count": 3,
+            "pct": 10.34,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 3,
+            "pct": 10.34,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 2,
+            "pct": 6.9,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Virginia Tech",
+            "count": 2,
+            "pct": 6.9,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "National Supercomputing Center in Wuxi",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Iowa State University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Shanghai Jiao Tong University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Samsung Electronics",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Ajou University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Carnegie Mellon University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "City University of Hong Kong",
+            "count": 1,
+            "pct": 3.45,
+            "country": "HK",
+            "rank": 5
+          },
+          {
+            "name": "The Pennsylvania State University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "9LivesData, LLC",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "SK hynix",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "KR",
+            "rank": 5
+          },
+          {
+            "name": "Beihang University",
+            "count": 1,
+            "pct": 3.45,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Samsung R&D Institute China Xi'an, Samsung Electronics",
+            "count": 1,
+            "pct": 3.45,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "KAIST",
+            "count": 1,
+            "pct": 3.45,
+            "country": "KR",
+            "rank": 5
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 3.45,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 3.45,
+            "country": "HK",
+            "rank": 5
+          },
           {
             "name": "Google",
             "count": 1,
             "pct": 3.45,
             "country": "US",
+            "rank": 5
+          }
+        ]
+      },
+      "2024": {
+        "total_covered": 22,
+        "total_papers": 22,
+        "coverage_pct": 100.0,
+        "top": [
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 2,
+            "pct": 9.09,
+            "country": "HK",
             "rank": 1
+          },
+          {
+            "name": "Rutgers University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Samsung Semiconductor",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Alibaba",
+            "count": 1,
+            "pct": 4.55,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 1,
+            "pct": 4.55,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "University of Wisconsin—Madison",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University of California, Berkeley",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 4.55,
+            "country": "CA",
+            "rank": 2
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "NetApp, Inc",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Data Direct Networks",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Sungkyunkwan University and Samsung Electronics Co., Ltd.",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Technion",
+            "count": 1,
+            "pct": 4.55,
+            "country": "IL",
+            "rank": 2
+          },
+          {
+            "name": "Hong Kong Baptist University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "HK",
+            "rank": 2
+          },
+          {
+            "name": "Huawei Technologies Co., Ltd.",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "DGIST",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Syracuse University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Carnegie Mellon University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Maryland, College Park",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 2
+          }
+        ]
+      },
+      "2025": {
+        "total_covered": 36,
+        "total_papers": 80,
+        "coverage_pct": 45.0,
+        "top": [
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 5,
+            "pct": 6.25,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "KAIST",
+            "count": 3,
+            "pct": 3.75,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 2,
+            "pct": 2.5,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 2,
+            "pct": 2.5,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 2,
+            "pct": 2.5,
+            "country": "HK",
+            "rank": 3
+          },
+          {
+            "name": "Imperial College London",
+            "count": 1,
+            "pct": 1.25,
+            "country": "GB",
+            "rank": 6
+          },
+          {
+            "name": "Microsoft Research",
+            "count": 1,
+            "pct": 1.25,
+            "country": "US",
+            "rank": 6
+          },
+          {
+            "name": "Sungkyunkwan University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "KR",
+            "rank": 6
+          },
+          {
+            "name": "Huawei Technologies Co., Ltd.",
+            "count": 1,
+            "pct": 1.25,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "Shandong University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Shanghai Jiao Tong University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Nankai University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Harbin Institute of Technology, Shenzhen",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Jilin University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "UNIST",
+            "count": 1,
+            "pct": 1.25,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "Florida State University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "Moonshot AI and Tsinghua University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "Xiamen University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "East China Normal University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Ant Group",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "University of Electronic Science and Technology of China",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Rutgers University and EPFL",
+            "count": 1,
+            "pct": 1.25,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "University of Waterloo",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CA",
+            "rank": 6
+          },
+          {
+            "name": "Nanjing University of Science and Technology",
+            "count": 1,
+            "pct": 1.25,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 1.25,
+            "country": "KR",
+            "rank": 6
+          },
+          {
+            "name": "Beijing University of Technology",
+            "count": 1,
+            "pct": 1.25,
+            "country": "",
+            "rank": 6
           }
         ]
       }
     },
     "sources": [
-      "openalex"
+      "usenix_website"
     ]
   }
 }

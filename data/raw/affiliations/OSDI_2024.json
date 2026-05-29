@@ -2,358 +2,381 @@
   "conference": "OSDI",
   "year": 2024,
   "total_papers": 53,
-  "total_matched": 13,
-  "total_with_affiliation": 2,
-  "coverage_pct": 3.8,
-  "source": "openalex",
+  "total_matched": 53,
+  "total_with_affiliation": 53,
+  "coverage_pct": 100.0,
+  "source": "usenix_website",
   "papers": [
     {
       "title": "MonoNN: Enabling a New Monolithic Optimization Space for Neural Network Inference Tasks on Modern GPU-Centric Architectures.",
       "first_author": "Donglin Zhuang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The University of Sydney",
+      "imported_from": "usenix_website"
     },
     {
       "title": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving.",
       "first_author": "Yinmin Zhong",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4391045969",
-      "doi": "https://doi.org/10.48550/arxiv.2401.09670",
-      "institution": null
+      "institution": "Peking University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Detecting Logic Bugs in Database Engines via Equivalent Expression Transformation.",
       "first_author": "Zu-Ming Jiang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "ETH Zurich",
+      "imported_from": "usenix_website"
     },
     {
       "title": "When will my ML Job finish? Toward providing Completion Time Estimates through Predictability-Centric Scheduling.",
       "first_author": "Abdullah Bin Faisal",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tufts University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency.",
       "first_author": "Haoran Ma",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Burstable Cloud Block Storage with Data Processing Units.",
       "first_author": "Junyi Shu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "School of Computer Science, Peking University and Alibaba Cloud",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs.",
       "first_author": "Nikita Lazarev",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "MIT, CSAIL",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Enabling Tensor Language Model to Assist in Generating High-Performance Tensor Programs for Deep Learning.",
       "first_author": "Yi Zhai",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Science and Technology of China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Using Dynamically Layered Definite Releases for Verifying the RefFS File System.",
       "first_author": "Mo Zou",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Institute of Parallel and Distributed Systems, SEIEE, Shanghai Jiao Tong University; Engineering Research Center for Domain-specific Operating Systems, Ministry of Education, China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Harvesting Memory-bound CPU Stall Cycles in Software with MSH.",
       "first_author": "Zhihong Luo",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Parrot: Efficient Serving of LLM-based Applications with Semantic Variable.",
       "first_author": "Chaofan Lin",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4399252473",
-      "doi": "https://doi.org/10.48550/arxiv.2405.19888",
-      "institution": null
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Massively Parallel Multi-Versioned Transaction Processing.",
       "first_author": "Shujian Qian",
       "matched": true,
-      "openalex_id": "https://openalex.org/W7133038948",
-      "doi": null,
-      "institution": "Master's College",
-      "institution_country": "US",
-      "institution_ror": "https://ror.org/04fn4g645"
+      "institution": "University of Toronto",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve.",
       "first_author": "Amey Agrawal",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4392489911",
-      "doi": "https://doi.org/10.48550/arxiv.2403.02310",
-      "institution": null
+      "institution": "Georgia Institute of Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fairness in Serving Large Language Models.",
       "first_author": "Ying Sheng",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4404995266",
-      "doi": "https://doi.org/10.48550/arxiv.2411.18424",
-      "institution": null
+      "institution": "UC Berkeley and Stanford University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Ladder: Enabling Efficient Low-Precision Deep Learning Computing through Hardware-aware Tensor Transformation.",
       "first_author": "Lei Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Chinese Academy of Sciences & Microsoft Research",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ServerlessLLM: Low-Latency Serverless Inference for Large Language Models.",
       "first_author": "Yao Fu",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4391272922",
-      "doi": "https://doi.org/10.48550/arxiv.2401.14351",
-      "institution": null
+      "institution": "University of Edinburgh",
+      "imported_from": "usenix_website"
     },
     {
       "title": "IronSpec: Increasing the Reliability of Formal Specifications.",
       "first_author": "Eli Goldweber",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "usenix_website"
     },
     {
       "title": "VeriSMo: A Verified Security Module for Confidential VMs.",
       "first_author": "Ziqiao Zhou",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "usenix_website"
     },
     {
       "title": "MAST: Global Scheduling of ML Training across Geo-Distributed Datacenters at Hyperscale.",
       "first_author": "Arnab Choudhury",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Meta Platforms",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Anvil: Verifying Liveness of Cluster Management Controllers.",
       "first_author": "Xudong Sun",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Illinois Urbana-Champaign",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Performance Interfaces for Hardware Accelerators.",
       "first_author": "Jiacheng Ma",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "usenix_website"
     },
     {
       "title": "FairyWREN: A Sustainable Cache for Emerging Write-Read-Erase Flash Interfaces.",
       "first_author": "Sara McAllister",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Managing Memory Tiers with CXL in Virtualized Environments.",
       "first_author": "Yuhong Zhong",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Columbia University, Microsoft Azure",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ACCL+: an FPGA-Based Collective Engine for Distributed Applications.",
       "first_author": "Zhenhao He",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Systems Group, ETH Zurich",
+      "imported_from": "usenix_website"
     },
     {
       "title": "USHER: Holistic Interference Avoidance for Resource Optimized ML Inference.",
       "first_author": "Sudipta Saha Shubha",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Virginia",
+      "imported_from": "usenix_website"
     },
     {
       "title": "IntOS: Persistent Embedded Operating System and Language Support for Multi-threaded Intermittent Computing.",
       "first_author": "Yilun Wu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Stony Brook University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Llumnix: Dynamic Scheduling for Large Language Model Serving.",
       "first_author": "Biao Sun",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4399453677",
-      "doi": "https://doi.org/10.48550/arxiv.2406.03243",
-      "institution": null
+      "institution": "Alibaba Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Secret Key Recovery in a Global-Scale End-to-End Encryption System.",
       "first_author": "Graeme Connell",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Signal Messenger",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Motor: Enabling Multi-Versioning for Distributed Transactions on Disaggregated Memory.",
       "first_author": "Ming Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Wuhan National Laboratory for Optoelectronics, School of Computer, Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Validating the eBPF Verifier via State Embedding.",
       "first_author": "Hao Sun",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "ETH Zurich",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk.",
       "first_author": "Zhongyu Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Alibaba Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "InfiniGen: Efficient Generative Inference of Large Language Models with Dynamic KV Cache Management.",
       "first_author": "Wonbeom Lee",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4400222625",
-      "doi": "https://doi.org/10.48550/arxiv.2406.19707",
-      "institution": null
+      "institution": "Seoul National University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "A Tale of Two Paths: Toward a Hybrid Data Plane for Efficient Far-Memory Applications.",
       "first_author": "Lei Chen",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4400023198",
-      "doi": "https://doi.org/10.48550/arxiv.2406.16005",
-      "institution": null
+      "institution": "University of Chinese Academy of Sciences",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fast and Scalable In-network Lock Management Using Lock Fission.",
       "first_author": "Hanze Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Institute of Parallel and Distributed Systems, SEIEE, Shanghai Jiao Tong University; Shanghai AI Laboratory; MoE Key Lab of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Automatically Reasoning About How Systems Code Uses the CPU Cache.",
       "first_author": "Rishabh R. Iyer",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "usenix_website"
     },
     {
       "title": "μSlope: High Compression and Fast Search on Semi-Structured Logs.",
       "first_author": "Rui Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "YScope",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ChameleonAPI: Automatic and Efficient Customization of Neural Networks for ML Applications.",
       "first_author": "Yuhan Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Chicago",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ServiceLab: Preventing Tiny Performance Regressions at Hyperscale through Pre-Production Testing.",
       "first_author": "Mike Chow",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Meta Platforms",
+      "imported_from": "usenix_website"
     },
     {
       "title": "nnScaler: Constraint-Guided Parallelization Plan Generation for Deep Learning Training.",
       "first_author": "Zhiqi Lin",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Science and Technology of China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Identifying On-/Off-CPU Bottlenecks Together with Blocked Samples.",
       "first_author": "Minwoo Ahn",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Sungkyunkwan University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "High-throughput and Flexible Host Networking for Accelerated Computing.",
       "first_author": "Athinagoras Skiadopoulos",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Chop Chop: Byzantine Atomic Broadcast to the Network Limit.",
       "first_author": "Martina Camaioni",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Beaver: Practical Partial Snapshots for Distributed Cloud Services.",
       "first_author": "Liangcheng Yu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Pennsylvania",
+      "imported_from": "usenix_website"
     },
     {
       "title": "dLoRA: Dynamically Orchestrating Requests and Adapters for LoRA LLM Serving.",
       "first_author": "Bingyang Wu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "School of Computer Science, Peking University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Flock: A Framework for Deploying On-Demand Distributed Trust.",
       "first_author": "Darya Kaviani",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Microkernel Goes General: Performance and Compatibility in the HongMeng Production Microkernel.",
       "first_author": "Haibo Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huawei Central Software Institute and Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Data-flow Availability: Achieving Timing Assurance in Autonomous Systems.",
       "first_author": "Ao Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Washington University in St. Louis",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Optimizing Resource Allocation in Hyperscale Datacenters: Scalability, Usability, and Experiences.",
       "first_author": "Neeraj Kumar",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Meta Platforms",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Inductive Invariants That Spark Joy: Using Invariant Taxonomies to Streamline Distributed Protocol Proofs.",
       "first_author": "Tony Nuda Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SquirrelFS: using the Rust compiler to check file-system crash consistency.",
       "first_author": "Hayley LeBlanc",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4399758786",
-      "doi": "https://doi.org/10.48550/arxiv.2406.09649",
-      "institution": null
+      "institution": "University of Texas at Austin",
+      "imported_from": "usenix_website"
     },
     {
       "title": "DSig: Breaking the Barrier of Signatures in Data Centers.",
       "first_author": "Marcos K. Aguilera",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4399597880",
-      "doi": "https://doi.org/10.48550/arxiv.2406.07215",
-      "institution": null
+      "institution": "VMware Research Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents.",
       "first_author": "Qizheng Zhang",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4405845698",
-      "doi": "https://doi.org/10.1145/3704742.3704964",
       "institution": "Stanford University",
-      "institution_country": "US",
-      "institution_ror": "https://ror.org/00f54p054"
+      "imported_from": "usenix_website"
     },
     {
       "title": "Nomad: Non-Exclusive Memory Tiering via Transactional Page Migration.",
       "first_author": "Lingfeng Xiang",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4391244544",
-      "doi": "https://doi.org/10.48550/arxiv.2401.13154",
-      "institution": null
+      "institution": "The University of Texas at Arlington",
+      "imported_from": "usenix_website"
     }
   ]
 }

@@ -2,228 +2,262 @@
   "conference": "FAST",
   "year": 2025,
   "total_papers": 80,
-  "total_matched": 4,
-  "total_with_affiliation": 0,
-  "coverage_pct": 0.0,
-  "source": "openalex",
+  "total_matched": 36,
+  "total_with_affiliation": 36,
+  "coverage_pct": 45.0,
+  "source": "usenix_website",
   "papers": [
     {
       "title": "DNA data storage: A generative tool for Motif-based DNA storage.",
       "first_author": "Samira Brunmayr",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Imperial College London",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fast, Transparent Filesystem Microkernel Recovery with Ananke.",
       "first_author": "Jing Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "usenix_website"
     },
     {
       "title": "AWUPF Rediscovered: Atomic Writes to Unleash Pivotal Fault-Tolerance in SSDs.",
       "first_author": "Jiyune Jeon",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Sungkyunkwan University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Revisiting Network Coding for Warm Blob Storage.",
       "first_author": "Chuang Gan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "FlacIO: Flat and Collective I/O for Container Image Service.",
       "first_author": "Yubo Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huawei Technologies Co., Ltd.",
+      "imported_from": "usenix_website"
     },
     {
       "title": "LeapGNN: Accelerating Distributed GNN Training Leveraging Feature-Centric Model Migration.",
       "first_author": "Weijian Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Zhejiang University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "HiDPU: A DPU-Oriented Hybrid Indexing Scheme for Disaggregated Storage Systems.",
       "first_author": "Wenbin Zhu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Shandong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Cloudscape: A Study of Storage Services in Modern Cloud Architectures.",
       "first_author": "Sambhav Satija",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Wisconsin–Madison",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Liquid-State Drive: A Case for DNA Block Device for Enormous Data.",
       "first_author": "Jiahao Zhou",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ShiftLock: Mitigate One-sided RDMA Lock Contention via Handover.",
       "first_author": "Jian Gao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Oasis: An Out-of-core Approximate Graph System via All-Distances Sketches.",
       "first_author": "Tsun-Yu Yang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The Chinese University of Hong Kong (CUHK)",
+      "imported_from": "usenix_website"
     },
     {
       "title": "PIMLex: A High-Performance Learned Index with Processing-in-Memory.",
       "first_author": "Lixiao Cui",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "College of Computer Science, Nankai University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Don't Maintain Twice, It's Alright: Merged Metadata Management in Deduplication File System with GogetaFS.",
       "first_author": "Yanqi Pan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Harbin Institute of Technology, Shenzhen",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Boosting File Systems Elegantly: A Transparent NVM Write-ahead Log for Disk File Systems.",
       "first_author": "Guoyu Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Jilin University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "OPIMQ: Order Preserving IO stack for Multi-Queue Block Device.",
       "first_author": "Jieun Kim",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "imported_from": "usenix_website"
     },
     {
       "title": "On Scalable Integrity Checking for Secure Cloud Disks.",
       "first_author": "Quinn Burke",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Wisconsin–Madison",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Selective On-Device Execution of Data-Dependent Read I/Os.",
       "first_author": "Chanyoung Park",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UNIST (Ulsan National Institute of Science and Technology)",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Silhouette: Leveraging Consistency Mechanisms to Detect Bugs in Persistent Memory-Based File Systems.",
       "first_author": "Bing Jiao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Florida State University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Mooncake: Trading More Storage for Less Computation - A KVCache-centric Architecture for Serving LLM Chatbot.",
       "first_author": "Ruoyu Qin",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Moonshot AI and Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Towards High-throughput and Low-latency Billion-scale Vector Search via CPU/GPU Collaborative Filtering and Re-ranking.",
       "first_author": "Bing Tian",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "GeminiFS: A Companion File System for GPUs.",
       "first_author": "Shi Qiu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "NICE Lab, Xiamen University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "D2FS: Device-Driven Filesystem Garbage Collection.",
       "first_author": "Juwon Kim",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "imported_from": "usenix_website"
     },
     {
       "title": "HaSiS: A Hardware-assisted Single-index Store for Hybrid Transactional and Analytical Processing.",
       "first_author": "Kecheng Huang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The Chinese University of Hong Kong",
+      "imported_from": "usenix_website"
     },
     {
       "title": "IMPRESS: An Importance-Informed Multi-Tier Prefix KV Storage System for Large Language Model Inference.",
       "first_author": "Weijian Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Zhejiang University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices.",
       "first_author": "Changlong Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "East China Normal University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "AtomicDisk: A Secure Virtual Disk for TEEs against Eviction Attacks.",
       "first_author": "Hongliang Tian",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Ant Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs.",
       "first_author": "Yekang Zhan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Maat: Analyzing and Optimizing Overcharge on Blockchain Storage.",
       "first_author": "Zheyuan He",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Electronic Science and Technology of China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "PolyStore: Exploiting Combined Capabilities of Heterogeneous Storage.",
       "first_author": "Yujie Ren",
       "matched": true,
-      "openalex_id": "https://openalex.org/W7113349169",
-      "doi": null,
-      "institution": null
+      "institution": "Rutgers University and EPFL",
+      "imported_from": "usenix_website"
     },
     {
       "title": "GPHash: An Efficient Hash Index for GPU with Byte-Granularity Persistent Memory.",
       "first_author": "Menglei Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Wuhan National Laboratory for Optoelectronics, School of Computer, Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "VectorCDC: Accelerating Data Deduplication with Vector Instructions.",
       "first_author": "Sreeharsha Udayashankar",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Waterloo",
+      "imported_from": "usenix_website"
     },
     {
       "title": "DJFS : Directory-Granularity Filesystem Journaling for CMM-H SSDs.",
       "first_author": "Seung Won Yoo",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "imported_from": "usenix_website"
     },
     {
       "title": "MedFS: Pursuing Low Update Overhead via Metadata-Enabled Delta Compression for Log-structured File System on Mobile Device.",
       "first_author": "Chao Wu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Nanjing University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ScaleLFS: A Log-Structured File System with Scalable Garbage Collection for Commodity SSDs.",
       "first_author": "Jinyong Ha",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Seoul National University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "AegonKV: A High Bandwidth, Low Tail Latency, and Low Storage Cost KV-Separated LSM Store with SmartSSD-based GC Offloading.",
       "first_author": "Zhuohui Duan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "3L-Cache: Low Overhead and Precise Learning-based Eviction Policy for Caches.",
       "first_author": "Wenbin Zhou",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Beijing University of Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Cost-efficient Archive Cloud Storage with Tape: Design and Deployment.",
@@ -336,9 +370,7 @@
     {
       "title": "PolarStore: High-Performance Data Compression for Large-Scale Cloud-Native Databases.",
       "first_author": "Qingda Hu",
-      "matched": true,
-      "openalex_id": "https://openalex.org/W4416766996",
-      "doi": "https://doi.org/10.48550/arxiv.2511.19949",
+      "matched": false,
       "institution": null
     },
     {
@@ -416,9 +448,7 @@
     {
       "title": "Getting the MOST out of your Storage Hierarchy with Mirror-Optimized Storage Tiering.",
       "first_author": "Kaiwei Tu",
-      "matched": true,
-      "openalex_id": "https://openalex.org/W4417026660",
-      "doi": "https://doi.org/10.48550/arxiv.2512.03279",
+      "matched": false,
       "institution": null
     },
     {
@@ -442,9 +472,7 @@
     {
       "title": "Preparation Meets Opportunity: Enhancing Data Preprocessing for ML Training With Seneca.",
       "first_author": "Omkar Desai",
-      "matched": true,
-      "openalex_id": "https://openalex.org/W7106207366",
-      "doi": null,
+      "matched": false,
       "institution": null
     },
     {

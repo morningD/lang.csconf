@@ -1,0 +1,477 @@
+{
+  "conference": "USENIXATC",
+  "year": 2022,
+  "total_papers": 67,
+  "total_matched": 64,
+  "total_with_affiliation": 64,
+  "coverage_pct": 95.5,
+  "source": "usenix_website",
+  "papers": [
+    {
+      "title": "Investigating Managed Language Runtime Performance: Why JavaScript and Python are 8x and 29x slower than C++, yet Java and Go can be Faster?",
+      "first_author": "David Lion",
+      "matched": true,
+      "institution": "University of Toronto and YScope Inc.",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "KRCORE: A Microsecond-scale RDMA Control Plane for Elastic Computing.",
+      "first_author": "Xingda Wei",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University, Shanghai AI Laboratory",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Modulo: Finding Convergence Failure Bugs in Distributed Systems with Divergence Resync Models.",
+      "first_author": "Beom Heyn Kim",
+      "matched": true,
+      "institution": "Samsung Research, University of Toronto",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Firebolt: Finding Bugs in Programmable Data Plane Generators.",
+      "first_author": "Jiamin Cao",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "KSG: Augmenting Kernel Fuzzing with System Call Specification Generation.",
+      "first_author": "Hao Sun",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Vigil-KV: Hardware-Software Co-Design to Integrate Strong Latency Determinism into Log-Structured Merge Key-Value Stores.",
+      "first_author": "Miryeong Kwon",
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Primo: Practical Learning-Augmented Systems with Interpretable Models.",
+      "first_author": "Qinghao Hu",
+      "matched": true,
+      "institution": "Nanyang Technological University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Cachew: Machine Learning Input Data Processing as a Service.",
+      "first_author": "Dan Graur",
+      "matched": true,
+      "institution": "ETH Zurich",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Zero-Change Object Transmission for Distributed Big Data Analytics.",
+      "first_author": "Mingyu Wu",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "BBQ: A Block-based Bounded Queue for Exchanging Data and Profiling.",
+      "first_author": "Jiawei Wang",
+      "matched": true,
+      "institution": "Huawei Dresden Research Center, Huawei OS Kernel Lab, Technische Universität Dresden",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Vinter: Automatic Non-Volatile Memory Crash Consistency Testing for Full Systems.",
+      "first_author": "Samuel Kalbfleisch",
+      "matched": true,
+      "institution": "Karlsruhe Institute of Technology",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Speculative Recovery: Cheap, Highly Available Fault Tolerance with Disaggregated Storage.",
+      "first_author": "Nanqinqin Li",
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "CBMM: Financial Advice for Kernel Memory Managers.",
+      "first_author": "Mark Mansi",
+      "matched": true,
+      "institution": "University of Wisconsin - Madison",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Surprise-Inspired Networking.",
+      "first_author": "David L. Tennenhouse",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PetS: A Unified Framework for Parameter-Efficient Transformers Serving.",
+      "first_author": "Zhe Zhou",
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "DepFast: Orchestrating Code of Quorum Systems.",
+      "first_author": "Xuhao Luo",
+      "matched": true,
+      "institution": "University of Illinois at Urbana-Champaign",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Secure and Lightweight Deduplicated Storage via Shielded Deduplication-Before-Encryption.",
+      "first_author": "Zuoru Yang",
+      "matched": true,
+      "institution": "The Chinese University of Hong Kong",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "RunD: A Lightweight Secure Container Runtime for High-density Deployment and High-concurrency Startup in Serverless Computing.",
+      "first_author": "Zijun Li",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Help Rather Than Recycle: Alleviating Cold Startup in Serverless Computing Through Inter-Function Container Sharing.",
+      "first_author": "Zijun Li",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Memory Harvesting in Multi-GPU Systems with Hierarchical Unified Virtual Memory.",
+      "first_author": "Sangjin Choi",
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Eric Brewer, VP Infrastructure, Google Fellow and Professor Emeritus, UC Berkeley.",
+      "first_author": "Eric A. Brewer",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AlNiCo: SmartNIC-accelerated Contention-aware Request Scheduling for Transaction Processing.",
+      "first_author": "Junru Li",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Sift: Using Refinement-guided Automation to Verify Complex Distributed Systems.",
+      "first_author": "Haojun Ma",
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "SoftTRR: Protect Page Tables against Rowhammer Attacks using Software-only Target Row Refresh.",
+      "first_author": "Zhi Zhang",
+      "matched": true,
+      "institution": "CSIRO’s Data61, Australia",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "CRISP: Critical Path Analysis of Large-Scale Microservice Architectures.",
+      "first_author": "Zhizhou Zhang",
+      "matched": true,
+      "institution": "UC Santa Barbara",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "SOTER: Guarding Black-box Inference for General Neural Networks at the Edge.",
+      "first_author": "Tianxiang Shen",
+      "matched": true,
+      "institution": "The University of Hong Kong",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Amazon DynamoDB: A Scalable, Predictably Performant, and Fully Managed NoSQL Database Service.",
+      "first_author": "Mostafa Elhemali",
+      "matched": true,
+      "institution": "Amazon Web Services",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "PilotFish: Harvesting Free Cycles of Cloud Gaming with Deep Learning Training.",
+      "first_author": "Wei Zhang",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Tetris: Memory-efficient Serverless Inference through Tensor Sharing.",
+      "first_author": "Jie Li",
+      "matched": true,
+      "institution": "Tianjin University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Hashing Design in Modern Networks: Challenges and Mitigation Techniques.",
+      "first_author": "Yunhong Xu",
+      "matched": true,
+      "institution": "Texas A&M University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Hardening Hypervisors with Ombro.",
+      "first_author": "Ethan Johnson",
+      "matched": true,
+      "institution": "University of Rochester",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "uKharon: A Membership Service for Microsecond Applications.",
+      "first_author": "Rachid Guerraoui",
+      "matched": true,
+      "institution": "EPFL",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Direct Access, High-Performance Memory Disaggregation with DirectCXL.",
+      "first_author": "Donghyun Gouk",
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "IPLFS: Log-Structured File System without Garbage Collection.",
+      "first_author": "Juwon Kim",
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "ZNSwap: un-Block your Swap.",
+      "first_author": "Shai Bergman",
+      "matched": true,
+      "institution": "Technion",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing.",
+      "first_author": "Seungbeom Choi",
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Faith: An Efficient Framework for Transformer Verification on GPUs.",
+      "first_author": "Boyuan Feng",
+      "matched": true,
+      "institution": "University of California, Santa Barbara",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "CoVA: Exploiting Compressed-Domain Analysis to Accelerate Video Analytics.",
+      "first_author": "Jinwoo Hwang",
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Margaret Martonosi, National Science Foundation.",
+      "first_author": "Margaret Martonosi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "High Throughput Replication with Integrated Membership Management.",
+      "first_author": "Pedro Fouto",
+      "matched": true,
+      "institution": "NOVA LINCS & NOVA University Lisbon",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Sibylla: To Retry or Not To Retry on Deep Learning Job Failure.",
+      "first_author": "Taeyoon Kim",
+      "matched": true,
+      "institution": "UNIST",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "FpgaNIC: An FPGA-based Versatile 100Gb SmartNIC for GPUs.",
+      "first_author": "Zeke Wang",
+      "matched": true,
+      "institution": "Zhejiang University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "HyperEnclave: An Open and Cross-platform Trusted Execution Environment.",
+      "first_author": "Yuekai Jia",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "AddrMiner: A Comprehensive Global Active IPv6 Address Discovery System.",
+      "first_author": "Guanglei Song",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "JITServer: Disaggregated Caching JIT Compiler for the JVM in the Cloud.",
+      "first_author": "Alexey Khrabrov",
+      "matched": true,
+      "institution": "University of Toronto",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "EPK: Scalable and Efficient Memory Protection Keys.",
+      "first_author": "Jinyu Gu",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Co-opting Linux Processes for High-Performance Network Simulation.",
+      "first_author": "Rob Jansen",
+      "matched": true,
+      "institution": "U.S. Naval Research Laboratory",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Automatic Recovery of Fine-grained Compiler Artifacts at the Binary Level.",
+      "first_author": "Yufei Du",
+      "matched": true,
+      "institution": "University of North Carolina at Chapel Hill",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Pacman: An Efficient Compaction Approach for Log-Structured Key-Value Store on Persistent Memory.",
+      "first_author": "Jing Wang",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "PRIDWEN: Universally Hardening SGX Programs via Load-Time Synthesis.",
+      "first_author": "Fan Sang",
+      "matched": true,
+      "institution": "Georgia Institute of Technology",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training.",
+      "first_author": "Xin He",
+      "matched": true,
+      "institution": "CSEE, Hunan University & Xidian University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "RRC: Responsive Replicated Containers.",
+      "first_author": "Diyu Zhou",
+      "matched": true,
+      "institution": "UCLA and EPFL",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Whale: Efficient Giant Model Training over Heterogeneous GPUs.",
+      "first_author": "Xianyan Jia",
+      "matched": true,
+      "institution": "Alibaba Group",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Meces: Latency-efficient Rescaling via Prioritized State Migration for Stateful Distributed Stream Processing Systems.",
+      "first_author": "Rong Gu",
+      "matched": true,
+      "institution": "State Key Laboratory for Novel Software Technology, Nanjing University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "DLOS: Effective Static Detection of Deadlocks in OS Kernels.",
+      "first_author": "Jia-Ju Bai",
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Faster Software Packet Processing on FPGA NICs with eBPF Program Warping.",
+      "first_author": "Marco Bonola",
+      "matched": true,
+      "institution": "CNIT/Axbryd",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Building a High-performance Fine-grained Deduplication Framework for Backup Storage with High Deduplication Ratio.",
+      "first_author": "Xiangyu Zou",
+      "matched": true,
+      "institution": "Harbin Institute of Technology, Shenzhen",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Towards Latency Awareness for Content Delivery Network Caching.",
+      "first_author": "Gang Yan",
+      "matched": true,
+      "institution": "SUNY-Binghamton University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow.",
+      "first_author": "Ruiming Lu",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "DVABatch: Diversity-aware Multi-Entry Multi-Exit Batching for Efficient Processing of DNN Services on GPUs.",
+      "first_author": "Weihao Cui",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "CacheSack: Admission Optimization for Google Datacenter Flash Caches.",
+      "first_author": "Tzu-Wei Yang",
+      "matched": true,
+      "institution": "Google",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Riker: Always-Correct and Fast Incremental Builds from Simple Specifications.",
+      "first_author": "Charlie Curtsinger",
+      "matched": true,
+      "institution": "Grinnell College",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Zero Overhead Monitoring for Cloud-native Infrastructure using RDMA.",
+      "first_author": "Zhe Wang",
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Not that Simple: Email Delivery in the 21st Century.",
+      "first_author": "Florian Holzbauer",
+      "matched": true,
+      "institution": "SBA Research",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "FlatFS: Flatten Hierarchical File System Namespace on Non-volatile Memories.",
+      "first_author": "Miao Cai",
+      "matched": true,
+      "institution": "Key Laboratory of Water Big Data Technology of Ministry of Water Resources, Hohai University; School of Computer and Information, Hohai University; State Key Laboratory for Novel Software Technology, Nanjing University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "Privbox: Faster System Calls Through Sandboxed Privileged Execution.",
+      "first_author": "Dmitry Kuznetsov",
+      "matched": true,
+      "institution": "Tel Aviv University",
+      "imported_from": "usenix_website"
+    },
+    {
+      "title": "StRAID: Stripe-threaded Architecture for Parity-based RAIDs with Ultra-fast SSDs.",
+      "first_author": "Shucheng Wang",
+      "matched": true,
+      "institution": "Wuhan National Laboratory for Optoelectronics, HUST",
+      "imported_from": "usenix_website"
+    }
+  ]
+}

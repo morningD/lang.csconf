@@ -2,592 +2,682 @@
   "conference": "NSDI",
   "year": 2023,
   "total_papers": 96,
-  "total_matched": 2,
-  "total_with_affiliation": 1,
-  "coverage_pct": 1.0,
-  "source": "openalex",
+  "total_matched": 96,
+  "total_with_affiliation": 96,
+  "coverage_pct": 100.0,
+  "source": "usenix_website",
   "papers": [
     {
       "title": "DChannel: Accelerating Mobile Applications With Parallel High-bandwidth and Low-latency Channels.",
       "first_author": "William Sentosa",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Illinois Urbana-Champaign",
+      "imported_from": "usenix_website"
     },
     {
       "title": "FLASH: Towards a High-performance Hardware Acceleration Architecture for Cross-silo Federated Learning.",
       "first_author": "Junxue Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "iSINGLab at Hong Kong University of Science and Technology and Clustar",
+      "imported_from": "usenix_website"
     },
     {
       "title": "BGL: GPU-Efficient GNN Training by Optimizing Graph Data I/O and Preprocessing.",
       "first_author": "Tianfeng Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University, Zhongguancun Laboratory, ByteDance",
+      "imported_from": "usenix_website"
     },
     {
       "title": "On Modular Learning of Distributed Systems for Predicting End-to-End Latency.",
       "first_author": "Chieh-Jan Mike Liang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "usenix_website"
     },
     {
       "title": "TopoOpt: Co-optimizing Network Topology and Parallelization Strategy for Distributed Training Jobs.",
       "first_author": "Weiyang Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Massachusetts Institute of Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Practical Intent-driven Routing Configuration Synthesis.",
       "first_author": "Sivaramakrishnan Ramanathan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Meta",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SPEEDEX: A Scalable, Parallelizable, and Economically Efficient Decentralized EXchange.",
       "first_author": "Geoffrey Ramseyer",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Augmenting Augmented Reality with Non-Line-of-Sight Perception.",
       "first_author": "Tara Boroushaki",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Massachusetts Institute of Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Synthesizing Runtime Programmable Switch Updates.",
       "first_author": "Yiming Qiu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Rice University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "HALP: Heuristic Aided Learned Preference Eviction Policy for YouTube Content Delivery Network.",
       "first_author": "Zhenyu Song",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Tambur: Efficient loss recovery for videoconferencing via streaming codes.",
       "first_author": "Michael Rudow",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Dashlet: Taming Swipe Uncertainty for Robust Short Video Streaming.",
       "first_author": "Zhuqi Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Enabling High Quality Real-Time Communications with Adaptive Frame-Rate.",
       "first_author": "Zili Meng",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University and Tencent Inc.",
+      "imported_from": "usenix_website"
     },
     {
       "title": "RF-Bouncer: A Programmable Dual-band Metasurface for Sub-6 Wireless Networks.",
       "first_author": "Xinyi Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Northwest University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory.",
       "first_author": "Chenxi Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ARK: GPU-driven Code Execution for Distributed Deep Learning.",
       "first_author": "Changho Hwang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "KAIST, Microsoft Research",
+      "imported_from": "usenix_website"
     },
     {
       "title": "NetPanel: Traffic Measurement of Exchange Online Service.",
       "first_author": "Yu Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft 365, China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Boomerang: Metadata-Private Messaging under Hardware Trust.",
       "first_author": "Peipei Jiang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Wuhan University and City University of Hong Kong",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fast, Approximate Vector Queries on Very Large Unstructured Datasets.",
       "first_author": "Zili Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning.",
       "first_author": "Pengfei Zheng",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Wisconsin-Madison",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Scalable Distributed Massive MIMO Baseband Processing.",
       "first_author": "Junzhi Gong",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "OpenLoRa: Validating LoRa Implementations through an Extensible and Open-sourced Framework.",
       "first_author": "Manan Mishra",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Wisconsin-Madison",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SRNIC: A Scalable Architecture for RDMA NICs.",
       "first_author": "Zilong Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Hong Kong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Bamboo: Making Preemptible Instances Resilient for Affordable Training of Large DNNs.",
       "first_author": "John Thorpe",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "usenix_website"
     },
     {
       "title": "POLYCORN: Data-driven Cross-layer Multipath Networking for High-speed Railway through Composable Schedulerlets.",
       "first_author": "Yunzhe Ni",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "LemonNFV: Consolidating Heterogeneous Network Functions at Line Speed.",
       "first_author": "Hao Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Xi'an Jiaotong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ExoPlane: An Operating System for On-Rack Switch Resource Augmentation.",
       "first_author": "Daehyeok Kim",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft and University of Texas at Austin",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Unlocking unallocated cloud capacity for long, uninterruptible workloads.",
       "first_author": "Anup Agarwal",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Exploring Practical Vulnerabilities of Machine Learning-based Wireless Systems.",
       "first_author": "Zikun Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Illinois Urbana-Champaign",
+      "imported_from": "usenix_website"
     },
     {
       "title": "RHINE: Robust and High-performance Internet Naming with E2E Authenticity.",
       "first_author": "Huayi Duan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "ETH Zürich",
+      "imported_from": "usenix_website"
     },
     {
       "title": "A High-Speed Stateful Packet Processing Approach for Tbps Programmable Switches.",
       "first_author": "Mariano Scazzariello",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "KTH Royal Institute of Technology and Roma Tre University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Hydra: Serialization-Free Network Ordering for Strongly Consistent Distributed Applications.",
       "first_author": "Inho Choi",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "National University of Singapore",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Poseidon: Efficient, Robust, and Practical Datacenter CC via Deployable INT.",
       "first_author": "Weitao Wang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Google LLC and Rice University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Nu: Achieving Microsecond-Scale Resource Fungibility with Logical Processes.",
       "first_author": "Zhenyuan Ruan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "MIT CSAIL",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Enabling Users to Control their Internet.",
       "first_author": "Ammar Tahir",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Illinois at Urbana-Champaign",
+      "imported_from": "usenix_website"
     },
     {
       "title": "RF-Chord: Towards Deployable RFID Localization System for Logistic Networks.",
       "first_author": "Bo Liang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Peking University and Alibaba Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "LeakyScatter: A Frequency-Agile Directional Backscatter Network Above 100 GHz.",
       "first_author": "Atsutse Kludze",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Norma: Towards Practical Network Load Testing.",
       "first_author": "Yanqing Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "State Key Laboratory for Novel Software Technology, Nanjing University and Alibaba Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "CellDAM: User-Space, Rootless Detection and Mitigation for 5G Data Plane.",
       "first_author": "Zhaowei Tan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of California, Los Angeles",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Bolt: Sub-RTT Congestion Control for Ultra-Low Latency.",
       "first_author": "Serhat Arslan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Stanford University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Hamilton: A High-Performance Transaction Processor for Central Bank Digital Currencies.",
       "first_author": "James Lovejoy",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Federal Reserve Bank of Boston",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ModelKeeper: Accelerating DNN Training via Automated Training Warmup.",
       "first_author": "Fan Lai",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training.",
       "first_author": "Jie You",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Michigan",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Electrode: Accelerating Distributed Protocols with eBPF.",
       "first_author": "Yang Zhou",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Harvard University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Invisinets: Removing Networking from Cloud Networks.",
       "first_author": "Sarah McClure",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Protego: Overload Control for Applications with Unpredictable Lock Contention.",
       "first_author": "Inho Cho",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "MIT CSAIL",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Sketchovsky: Enabling Ensembles of Sketches on Programmable Switches.",
       "first_author": "Hun Namkung",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SelfTune: Tuning Cluster Managers.",
       "first_author": "Ajaykrishna Karthikeyan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft Research",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SLNet: A Spectrogram Learning Neural Network for Deep Wireless Sensing.",
       "first_author": "Zheng Yang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Understanding RDMA Microarchitecture Resources for Performance Isolation.",
       "first_author": "Xinhao Kong",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Duke University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Flattened Clos: Designing High-performance Deadlock-free Expander Data Center Networks Using Graph Contraction.",
       "first_author": "Shizhen Zhao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Scalable Tail Latency Estimation for Data Center Networks.",
       "first_author": "Kevin Zhao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "usenix_website"
     },
     {
       "title": "TACCL: Guiding Collective Algorithm Synthesis using Communication Sketches.",
       "first_author": "Aashaka Shah",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Texas at Austin",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Gemel: Model Merging for Memory-Efficient, Real-Time Video Analytics at the Edge.",
       "first_author": "Arthi Padmanabhan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Test Coverage for Network Configurations.",
       "first_author": "Xieyang Xu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Washington",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Better Together: Jointly Optimizing ML Collective Scheduling and Execution Planning using SYNDICATE.",
       "first_author": "Kshiteej Mahajan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Wisconsin - Madison",
+      "imported_from": "usenix_website"
     },
     {
       "title": "mmWall: A Steerable, Transflective Metamaterial Surface for NextG mmWave Networks.",
       "first_author": "Kun Woo Cho",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "NetRPC: Enabling In-Network Computation in Remote Procedure Calls.",
       "first_author": "Bohan Zhao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "OneWAN is better than two: Unifying a split WAN architecture.",
       "first_author": "Umesh Krishnaswamy",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Disaggregating Stateful Network Functions.",
       "first_author": "Deepak Bansal",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Empowering Azure Storage with RDMA.",
       "first_author": "Wei Bai",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Microsoft",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Remote Procedure Call as a Managed System Service.",
       "first_author": "Jingrong Chen",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4366341215",
-      "doi": "https://doi.org/10.48550/arxiv.2304.07349",
-      "institution": null
+      "institution": "Duke University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "RECL: Responsive Resource-Efficient Continuous Learning for Video Analytics.",
       "first_author": "Mehrdad Khani Shirkoohi",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "MIT CSAIL and Microsoft",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Building Flexible, Low-Cost Wireless Access Networks With Magma.",
       "first_author": "Shaddi Hasan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Virginia Tech",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Transparent GPU Sharing in Container Clouds for Deep Learning Workloads.",
       "first_author": "Bingyang Wu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Peking University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Following the Data, Not the Function: Rethinking Function Orchestration in Serverless Computing.",
       "first_author": "Minchen Yu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Hong Kong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Enhancing Global Network Monitoring with Magnifier.",
       "first_author": "Tobias Bühler",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "ETH Zürich",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Push-Button Reliability Testing for Cloud-Backed Applications with Rainmaker.",
       "first_author": "Yinfang Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Illinois at Urbana-Champaign",
+      "imported_from": "usenix_website"
     },
     {
       "title": "LOCA: A Location-Oblivious Cellular Architecture.",
       "first_author": "Zhihong Luo",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SHEPHERD: Serving DNNs in the Wild.",
       "first_author": "Hong Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Waterloo",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SkyPilot: An Intercloud Broker for Sky Computing.",
       "first_author": "Zongheng Yang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UC Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Understanding the impact of host networking elements on traffic bursts.",
       "first_author": "Erfan Sharafzadeh",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4393626500",
-      "doi": "https://doi.org/10.5281/zenodo.8212701",
       "institution": "Johns Hopkins University",
-      "institution_country": "US",
-      "institution_ror": "https://ror.org/00za53h95"
+      "imported_from": "usenix_website"
     },
     {
       "title": "μMote: Enabling Passive Chirp De-spreading and μW-level Long-Range Downlink for Backscatter Devices.",
       "first_author": "Yihang Song",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Electronic Science and Technology of China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "The Benefit of Hindsight: Tracing Edge-Cases in Distributed Systems.",
       "first_author": "Lei Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Emory University and Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SlimWiFi: Ultra-Low-Power IoT Radio Architecture Enabled by Asymmetric Communication.",
       "first_author": "Renjie Zhao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of California San Diego",
+      "imported_from": "usenix_website"
     },
     {
       "title": "RingLeader: Efficiently Offloading Intra-Server Orchestration to NICs.",
       "first_author": "Jiaxin Lin",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UT Austin",
+      "imported_from": "usenix_website"
     },
     {
       "title": "DiSh: Dynamic Shell-Script Distribution.",
       "first_author": "Tammam Mustafa",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Skyplane: Optimizing Transfer Cost and Throughput Using Cloud-Aware Overlays.",
       "first_author": "Paras Jain",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of California, Berkeley",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Channel-Aware 5G RAN Slicing with Customizable Schedulers.",
       "first_author": "Yongzhou Chen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UIUC",
+      "imported_from": "usenix_website"
     },
     {
       "title": "VeCare: Statistical Acoustic Sensing for Automotive In-Cabin Monitoring.",
       "first_author": "Yi Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The University of Hong Kong and Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Formal Methods for Network Performance Analysis.",
       "first_author": "Mina Tahmasbi Arashloo",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Waterloo",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Doing More with Less: Orchestrating Serverless Applications without an Orchestrator.",
       "first_author": "David H. Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "CausalSim: A Causal Framework for Unbiased Trace-Driven Simulation.",
       "first_author": "Abdullah Alomar",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "MIT",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Arya: Arbitrary Graph Pattern Mining with Decomposition-based Sampling.",
       "first_author": "Zeying Zhu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Boston University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "DOTE: Rethinking (Predictive) WAN Traffic Engineering.",
       "first_author": "Yarin Perry",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Hebrew University of Jerusalem",
+      "imported_from": "usenix_website"
     },
     {
       "title": "xBGP: Faster Innovation in Routing Protocols.",
       "first_author": "Thomas Wirtgen",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "ICTEAM, UCLouvain",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Rearchitecting the TCP Stack for I/O-Offloaded Content Delivery.",
       "first_author": "Taehyun Kim",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
     },
     {
       "title": "StarryNet: Empowering Researchers to Evaluate Futuristic Integrated Space and Terrestrial Networks.",
       "first_author": "Zeqi Lai",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University and Zhongguancun Laboratory",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Addax: A fast, private, and accountable ad exchange infrastructure.",
       "first_author": "Ke Zhong",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Pennsylvania",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Waverunner: An Elegant Approach to Hardware Acceleration of State Machine Replication.",
       "first_author": "Mohammadreza Alimadadi",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Stony Brook University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SECRECY: Secure collaborative analytics in untrusted clouds.",
       "first_author": "John Liagouris",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Boston University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Acoustic Sensing and Communication Using Metasurface.",
       "first_author": "Yongzhao Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony.",
       "first_author": "Yifan Qiao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "UCLA",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Hostping: Diagnosing Intra-host Network Bottlenecks in RDMA Servers.",
       "first_author": "Kefei Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "BUPT",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Boggart: Towards General-Purpose Acceleration of Retrospective Video Analytics.",
       "first_author": "Neil Agarwal",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Princeton University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "LinkLab 2.0: A Multi-tenant Programmable IoT Testbed for Experimentation with Edge-Cloud Integration.",
       "first_author": "Wei Dong",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Zhejiang University",
+      "imported_from": "usenix_website"
     }
   ]
 }

@@ -2,40 +2,45 @@
   "conference": "FAST",
   "year": 2023,
   "total_papers": 29,
-  "total_matched": 2,
-  "total_with_affiliation": 1,
-  "coverage_pct": 3.4,
-  "source": "openalex",
+  "total_matched": 28,
+  "total_with_affiliation": 28,
+  "coverage_pct": 96.6,
+  "source": "usenix_website",
   "papers": [
     {
       "title": "Revitalizing the Forgotten On-Chip DMA to Expedite Data Movement in NVM-based Storage Systems.",
       "first_author": "Jingbo Su",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Science and Technology of China",
+      "imported_from": "usenix_website"
     },
     {
       "title": "More Than Capacity: Performance-oriented Evolution of Pangu in Alibaba.",
       "first_author": "Qiang Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Alibaba Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "λ-IO: A Unified IO Stack for Computational Storage.",
       "first_author": "Zhe Yang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "HadaFS: A File System Bridging the Local and Shared Burst Buffer for Exascale Supercomputers.",
       "first_author": "Xiaobin He",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "National Supercomputing Center in Wuxi",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ConfD: Analyzing Configuration Dependencies of File Systems for Fun and Profit.",
       "first_author": "Tabassum Mahmud",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Iowa State University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Building and Operating a Pretty Big Storage System (My Adventures in Amazon S3).",
@@ -46,146 +51,163 @@
     {
       "title": "Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems.",
       "first_author": "Ruiming Lu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Shanghai Jiao Tong University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ParaRC: Embracing Sub-Packetization for Repair Parallelization in MSR-Coded Storage.",
       "first_author": "Xiaolu Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "On Stacking a Persistent Memory File System on Legacy File Systems.",
       "first_author": "Hobin Woo",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Samsung Electronics",
+      "imported_from": "usenix_website"
     },
     {
       "title": "NVMeVirt: A Versatile Software-defined Virtual NVMe Device.",
       "first_author": "Sang-Hoon Kim",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Ajou University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "GL-Cache: Group-level learning for efficient and high-performance caching.",
       "first_author": "Juncheng Yang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Carnegie Mellon University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ADOC: Automatically Harmonizing Dataflow Between Components in Log-Structured Key-Value Stores for Improved Performance.",
       "first_author": "Jinghuan Yu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "City University of Hong Kong",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities.",
       "first_author": "Aditya Basu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "The Pennsylvania State University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "InftyDedup: Scalable and Cost-Effective Cloud Tiering with Deduplication.",
       "first_author": "Iwona Kotlarska",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "9LivesData, LLC",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fast Application Launch on Personal Computing/Communication Devices.",
       "first_author": "Junhee Ryu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "SK hynix",
+      "imported_from": "usenix_website"
     },
     {
       "title": "ROLEX: A Scalable RDMA-oriented Learned Key-Value Store for Disaggregated Memory Systems.",
       "first_author": "Pengfei Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Huazhong University of Science and Technology",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Integrated Host-SSD Mapping Table Management for Improving User Experience of Smartphones.",
       "first_author": "Yoona Kim",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Seoul National University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Intelligent Resource Scheduling for Co-located Latency-critical Services: A Multi-Model Collaborative Learning Approach.",
       "first_author": "Lei Liu",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Beihang University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Multi-view Feature-based SSD Failure Prediction: What, When, and Why.",
       "first_author": "Yuqi Zhang",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Samsung R&D Institute China Xi'an, Samsung Electronics",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Fisc: A Large-scale Cloud-native-oriented File System.",
       "first_author": "Qiang Li",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Alibaba Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "CJFS: Concurrent Journaling for Better Scalability.",
       "first_author": "Joontaek Oh",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "KAIST",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Citron: Distributed Range Lock Management with One-sided RDMA.",
       "first_author": "Jian Gao",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Patronus: High-Performance and Protective Remote Memory.",
       "first_author": "Bin Yan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Tsinghua University",
+      "imported_from": "usenix_website"
     },
     {
       "title": "TENET: Memory Safe and Fault Tolerant Persistent Transactional Memory.",
       "first_author": "Madhava Krishnan Ramanathan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Virginia Tech",
+      "imported_from": "usenix_website"
     },
     {
       "title": "MadFS: Per-File Virtualization for Userspace Persistent Memory Filesystems.",
       "first_author": "Shawn Zhong",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "University of Wisconsin–Madison",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives.",
       "first_author": "Su Zhou",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Alibaba Group",
+      "imported_from": "usenix_website"
     },
     {
       "title": "SHADE: Enable Fundamental Cacheability for Distributed Deep Learning Training.",
       "first_author": "Redwan Ibne Seraj Khan",
-      "matched": false,
-      "institution": null
+      "matched": true,
+      "institution": "Virginia Tech",
+      "imported_from": "usenix_website"
     },
     {
       "title": "FUSEE: A Fully Memory-Disaggregated Key-Value Store.",
       "first_author": "Jiacheng Shen",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4318143245",
-      "doi": "https://doi.org/10.48550/arxiv.2301.09839",
-      "institution": null
+      "institution": "The Chinese University of Hong Kong",
+      "imported_from": "usenix_website"
     },
     {
       "title": "Practical Design Considerations for Wide Locally Recoverable Codes (LRCs).",
       "first_author": "Saurabh Kadekodi",
       "matched": true,
-      "openalex_id": "https://openalex.org/W4387377969",
-      "doi": "https://doi.org/10.1145/3626198",
-      "institution": "Google (United States)",
-      "institution_country": "US",
-      "institution_ror": "https://ror.org/00njsd438"
+      "institution": "Google",
+      "imported_from": "usenix_website"
     }
   ]
 }

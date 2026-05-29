@@ -4,13 +4,13 @@
 Visualizing linguistic diversity of first authors across CCF-rated CS conferences (2010–2026).
 Pipeline: conferences_base.json + CCF PDFs → DBLP SPARQL crawl → name classification → JSON stats → Vue 3 website.
 
-## Current Numbers (as of 2026-05-26)
+## Current Numbers (as of 2026-05-29)
 - **Conferences**: 416 in conferences_base.json, 413 in stats
 - **Papers**: 908,971
 - **Raw author files**: 5,830
 - **Venue entries**: 416
 - **Year notes entries**: 230 (covering noise, gaps, recoveries, and provenance tracking)
-- **Affiliation data**: 264 conference-years across 75 conferences. ~147,000 papers with affiliations (86.8% coverage). Sources: OpenAlex (149 conf-years), papercopilot (91 conf-years), OpenReview (13 conf-years), martenlienen (11 conf-years). Institution normalization via `_INST_MAP` (~250 entries) + pattern-based fallback in step4.
+- **Affiliation data**: 286 conference-years across 80 conferences. ~150,000 papers with affiliations (87.6% coverage). Sources: OpenAlex (149 conf-years), papercopilot (91 conf-years), USENIX website (22 conf-years), OpenReview (13 conf-years), martenlienen (11 conf-years). Institution normalization via `_INST_MAP` (~250 entries) + pattern-based fallback in step4.
 
 ## CRITICAL: Safe Re-Crawl Procedure
 **NEVER run `--step 2 --force` without immediately following with `--step 2c --force`.**
@@ -76,6 +76,7 @@ scripts/
 ├── crawl_iclr2026.py               # One-time: ICLR 2026 from OpenReview (now automated via step2d)
 ├── import_affiliations.py          # Import affiliations from pre-compiled datasets (martenlienen, papercopilot)
 ├── openalex_batch_crawl.py         # Batch OpenAlex affiliation crawl for CCF-A conferences (resumable, key rotation, parallel)
+├── crawl_usenix_affiliations.py   # Crawl USENIX proceedings pages for first-author affiliations (NSDI/OSDI/Security/FAST/ATC)
 └── crawl_affiliations.sh           # Resilient OpenReview profile crawler with stall detection + auto-restart
 ```
 
@@ -89,6 +90,7 @@ python -m pipeline.run_all --step 2c              # Fill SPARQL gaps
 python -m pipeline.run_all --step 2d              # Crawl OpenReview (supplementary)
 python -m pipeline.run_all --step 2e              # Fetch affiliations (OpenReview + OpenAlex)
 python scripts/import_affiliations.py              # Import from pre-compiled datasets (martenlienen + papercopilot)
+python scripts/crawl_usenix_affiliations.py         # Crawl USENIX proceedings pages for affiliations
 python -m pipeline.run_all --step 1b              # Update acceptance rates
 python scripts/extract_ccf_ranks.py               # Re-extract CCF ranks from PDFs
 rsync -av --delete data/stats/ website/public/data/stats/  # Sync to website
@@ -130,6 +132,7 @@ To re-fetch a conference: `rm data/raw/authors/CVPR_*.json data/classified/autho
 | 2 | `papercopilot/paperlists` | ICLR 2025, CoRL 2021-2024 (where martenlienen has no data) | No explicit license (fact data from OpenReview) | High for 2023+; near-zero for older years |
 | 3 | OpenReview profile API | **Current year only** (2026 conferences) | CC BY 4.0 (submission metadata) | Good for current year; 40% discrepancy vs paper affiliations for historical data |
 | 4 | OpenAlex title matching | Non-OpenReview conferences (IEEE/ACM/Springer), all CCF-A 2023-2025 | CC0 | 85-98% for well-indexed conferences (ACM/IEEE); 8-50% for poorly indexed (ACL, CRYPTO, IEEEVIS); via `scripts/openalex_batch_crawl.py` with 7 parallel workers |
+| 5 | USENIX website scraping | NSDI, OSDI, USENIX Security, FAST, USENIX ATC | Public proceedings pages | 75-100% — parses `<em>` tags from technical-sessions pages; OpenAlex has ~0% for USENIX; via `scripts/crawl_usenix_affiliations.py` |
 
 **Key rule: OpenReview API crawling is ONLY for current-year conferences.** Historical data uses pre-compiled datasets exclusively.
 - Rationale: OR profile institution reflects current employer, which drifts over time. For current-year conferences, this drift is minimal. For historical years, paper PDF affiliations (from martenlienen/papercopilot) are more accurate.
@@ -139,6 +142,7 @@ To re-fetch a conference: `rm data/raw/authors/CVPR_*.json data/classified/autho
 ```bash
 python scripts/import_affiliations.py --source martenlienen   # Import historical data (NeurIPS/ICML/ICLR)
 python scripts/import_affiliations.py --source papercopilot   # Import recent data (ICLR 2025, CoRL)
+python scripts/crawl_usenix_affiliations.py                   # Crawl USENIX conferences (NSDI/OSDI/Security/FAST/ATC)
 python -m pipeline.run_all --step 2e                          # OR crawl for current year only (skips existing)
 bash scripts/crawl_affiliations.sh                            # Resilient OR crawl with auto-restart
 ```
@@ -150,7 +154,17 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 - martenlienen stops at 2024 (author stopped updating in 2025 due to website format change)
 - Title normalization achieves ~97% match rate between pre-compiled sources and our DBLP titles
 
-**Attribution:** About page credits OpenReview (CC BY 4.0), OpenAlex (CC0), martenlienen, papercopilot.
+**USENIX website scraping** (`scripts/crawl_usenix_affiliations.py`):
+- **Why needed**: OpenAlex has ~0% coverage for USENIX proceedings (no DOIs, not indexed)
+- **Data source**: `usenix.org/conference/{key}{YY}/technical-sessions` pages
+- **HTML structure**: `<article class="node-paper">` blocks with `field-paper-people-text` divs; affiliations in `<em>` tags
+- **Format**: `Name1 and Name2, <em>Affiliation1;</em> Name3, <em>Affiliation2</em>` — first `<em>` = first author's affiliation
+- **Coverage**: 95% overall (NSDI 99.5%, OSDI 100%, ATC 99.2%, Security 94.6%, FAST 75.5%)
+- **URL patterns**: OSDI is biennial (even years: 2018, 2020, 2022, 2024); odd years return 404
+- **Matching**: Title normalization + matching against DBLP raw authors; ~98.6% exact match rate
+- **Re-run**: Skips files with ≥50% coverage unless `--force`; merges USENIX affiliations with raw author paper list
+
+**Attribution:** About page credits OpenReview (CC BY 4.0), OpenAlex (CC0), martenlienen, papercopilot, USENIX.
 
 **Institution normalization**: `_normalize_institution()` in step4 handles all institution name normalization → `(canonical_name, country_code)`. Returns a tuple, not just a string.
 - **Normalization pipeline** (in order):
@@ -169,7 +183,7 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
   - **Only top-10 need normalization**: The mapping focuses on institutions appearing in any conference's top-10 (~110 unique names). New institutions entering top-10 in the future will need new map entries.
   - **`_INST_MAP` vs `INST_ABBREV`**: `_INST_MAP` (in step4) maps raw → canonical names for aggregation. `INST_ABBREV` (in ConferenceView.vue) maps canonical → display abbreviations. Both dicts must stay in sync when adding new institutions.
 - **OpenAlex polite pool**: `mailto=morningd.github@gmail.com`, $1/day free budget, resets at midnight UTC
-- **Output**: `data/raw/affiliations/{CONF}_{YEAR}.json` with `{papers: [{title, first_author, institution, institution_country, ...}], source: "openreview"|"openalex"}`
+- **Output**: `data/raw/affiliations/{CONF}_{YEAR}.json` with `{papers: [{title, first_author, institution, institution_country, ...}], source: "openreview"|"openalex"|"usenix_website"}`
 - **Stats**: step4 aggregates into top-20 institutions per conference with country codes + `sources` list
 - **UI**: Conference detail page shows "Top Affiliations" section with:
   - Horizontal bar chart (ECharts SVG renderer): top 20 institutions, lavender-to-violet gradient bars, rounded corners
@@ -227,10 +241,15 @@ bash scripts/crawl_affiliations.sh                            # Resilient OR cra
 | ASPLOS, CAV, CCS, CSCW, DAC, EUROSYS, FM, FOCS, FSE, HPCA, HPDC, ICDE, ICSE, ISCA, ISSTA, LICS | 2023-2025 | 85-98% | OpenAlex |
 | CHI, IEEEVR, INFOCOM, EUROYCRPT, EUROSYS, IEEEVIS | 2023-2025 | 50-97% | OpenAlex |
 | ACL, CRYPTO, INFOCOM 2025 | 2023-2025 | 8-44% | OpenAlex (low: poor indexing) |
-| MICRO, MOBICOM, NDSS, NSDI, OOPSLA, OSDI, PLDI, POPL, PPOPP, RTSS, S&P, SC, SIGCOMM, SIGIR, SIGKDD, SIGMOD, SODA, SOSP, STOC, UBICOMP, UIST, USENIXATC, USENIXSECURITY, VLDB, WWW | 2023-2025 | 85-98% (ACM/IEEE), 1-5% (USENIX) | OpenAlex |
-| FAST | 2023-2025 | 67-80% | OpenAlex |
+| NSDI | 2022-2025 | 99-100% | USENIX website |
+| OSDI | 2022-2025 | 100% | USENIX website |
+| USENIXSECURITY | 2022-2025 | 90-95% | USENIX website |
+| FAST | 2021-2025 | 75-100% | USENIX website |
+| USENIXATC | 2021-2025 | 96-100% | USENIX website |
+| MICRO, MOBICOM, OOPSLA, PLDI, POPL, PPOPP, RTSS, S&P, SC, SIGCOMM, SIGIR, SIGKDD, SIGMOD, SODA, SOSP, STOC, UBICOMP, UIST, VLDB, WWW | 2023-2025 | 85-98% (ACM/IEEE) | OpenAlex |
+| NDSS | 2023-2025 | 22% | OpenAlex (low: poor indexing) |
 
-Total: 264 conference-years across 75 conferences, ~147,000 papers with affiliations (86.8%).
+Total: 286 conference-years across 80 conferences, ~150,000 papers with affiliations (87.6%).
 
 ### Affiliation Trends (Trends Page)
 
