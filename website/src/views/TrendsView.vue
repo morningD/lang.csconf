@@ -275,6 +275,13 @@ const INST_ABBREV: Record<string, string> = {
   'Max Planck Institute for Intelligent Systems': 'MPI-IS',
   'Shanghai AI Lab': 'Shanghai AI Lab',
   'Istituto Italiano di Tecnologia': 'IIT',
+  'Chongqing University': 'CQU',
+  'Alibaba': 'Alibaba',
+  'HKUST': 'HKUST',
+  'Helmholtz Center for Information Security': 'CISPA',
+  'Northeastern University': 'NEU',
+  'Purdue University West Lafayette': 'Purdue',
+  'Ruhr University Bochum': 'RUB',
 }
 
 const SKIP_WORDS = new Set(['of', 'at', 'the', 'and', 'for', 'in', 'de', 'la', 'le', 'du', 'di', 'da', 'del'])
