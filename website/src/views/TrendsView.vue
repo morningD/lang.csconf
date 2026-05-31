@@ -427,6 +427,21 @@ const affilChartOption = computed(() => {
     tooltip: {
       trigger: 'axis',
       valueFormatter: showPct ? (v: number) => `${Math.round(v * 100) / 100}%` : undefined,
+      formatter: (params: any) => {
+        if (!Array.isArray(params)) return ''
+        const year = params[0]?.axisValue ?? ''
+        const lines = params
+          .filter((p: any) => p.value != null)
+          .sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0))
+          .map((p: any) => {
+            const name = p.seriesName as string
+            const flag = institutions[name]?.country ? countryFlag(institutions[name].country) : ''
+            const val = showPct ? `${Math.round(p.value * 100) / 100}%` : p.value
+            const flagHtml = flag ? `<span style="font-size:1.5em;vertical-align:middle;margin-left:4px">${flag}</span>` : ''
+            return `${p.marker} ${abbreviateInst(name)}${flagHtml}  <b>${val}</b>`
+          })
+        return `<div style="font-weight:600;margin-bottom:4px">${year}</div>${lines.join('<br>')}`
+      },
     },
     grid: { left: '3%', right: 140, bottom: '3%', top: 10, containLabel: false },
     xAxis: {
