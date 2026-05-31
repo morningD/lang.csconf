@@ -438,7 +438,7 @@ const affilChartOption = computed(() => {
             const flag = institutions[name]?.country ? countryFlag(institutions[name].country) : ''
             const val = showPct ? `${Math.round(p.value * 100) / 100}%` : p.value
             const flagHtml = flag ? `<span style="font-size:1.5em;vertical-align:middle;margin-left:4px">${flag}</span>` : ''
-            return `${p.marker} ${abbreviateInst(name)}${flagHtml}  <b>${val}</b>`
+            return `${p.marker} ${name}${flagHtml}  <b>${val}</b>`
           })
         return `<div style="font-weight:600;margin-bottom:4px">${year}</div>${lines.join('<br>')}`
       },
