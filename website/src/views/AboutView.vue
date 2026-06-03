@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { useSeo } from '@/composables/useSeo'
 
 const { t } = useI18n()
+
+useSeo({
+  title: 'About',
+  description: 'Methodology, data sources, and credits for lang.csconf — a visualization of linguistic diversity across 416 CCF-rated CS conferences using DBLP, OpenReview, and OpenAlex data.',
+  path: '/about',
+})
 </script>
 
 <template>

@@ -2,7 +2,14 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
+import { useSeo } from '@/composables/useSeo'
 import type { Meta, GlobalSummary, CategoryStats, RankStats, CCFCategory, CCFRank, AffiliationTrends, AffiliationTrendSlice } from '@/types'
+
+useSeo({
+  title: 'Language & Institution Trends',
+  description: 'Track how Chinese, English, Korean, and other language groups have evolved across CS conferences from 2010 to 2026. Time series charts by category and CCF rank.',
+  path: '/trends',
+})
 
 const { t } = useI18n()
 const { fetchMeta, fetchGlobalSummary, fetchCategory, fetchRank, fetchAffiliationTrends } = useDataFetch()

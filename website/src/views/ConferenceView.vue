@@ -3,10 +3,18 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
+import { useSeo } from '@/composables/useSeo'
 import type { ConferenceDetail, Meta } from '@/types'
 
 const route = useRoute()
 const { t } = useI18n()
+
+// Dynamic SEO — updated after conference data loads (see onMounted below)
+useSeo({
+  title: `${route.params.id} Conference`,
+  description: `Language diversity analysis for ${route.params.id} — first authors across all years of this CCF-rated computer science conference.`,
+  path: `/conference/${route.params.id}`,
+})
 const { fetchConference, fetchMeta } = useDataFetch()
 
 const baseUrl = import.meta.env.BASE_URL

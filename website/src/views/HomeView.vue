@@ -3,7 +3,10 @@ import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
+import { useSeo } from '@/composables/useSeo'
 import type { Meta, GlobalSummary, ConferenceIndex, CCFRank, RankStats } from '@/types'
+
+useSeo()
 
 const { t } = useI18n()
 const router = useRouter()

@@ -3,7 +3,14 @@ import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
+import { useSeo } from '@/composables/useSeo'
 import type { ConferenceIndex, ConferenceDetail, Meta, AffiliationIndex, CCFCategory } from '@/types'
+
+useSeo({
+  title: 'Conference Language Analyst',
+  description: 'Compare linguistic diversity across multiple CCF-rated CS conferences side by side. Interactive radar charts, bar charts, and trend analysis.',
+  path: '/compare',
+})
 
 const { t } = useI18n()
 const route = useRoute()

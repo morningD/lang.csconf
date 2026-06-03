@@ -3,6 +3,7 @@ import 'uno:preflights.css'
 import 'uno:default.css'
 
 import { createApp } from 'vue'
+import { createHead } from '@unhead/vue/client'
 import ECharts from 'vue-echarts'
 import { use } from 'echarts/core'
 import { SVGRenderer } from 'echarts/renderers'
@@ -35,8 +36,10 @@ import router from './router'
 import i18n from './i18n'
 
 const app = createApp(App)
+const head = createHead()
 
 app.component('v-chart', ECharts)
+app.use(head)
 app.use(router)
 app.use(i18n)
 
