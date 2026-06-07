@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
+import { useCountUp } from '@/composables/useCountUp'
 
 const { t, locale } = useI18n()
 const route = useRoute()
@@ -25,32 +26,81 @@ const navItems = [
   { path: '/trends', key: 'nav.trends' },
   { path: '/about', key: 'nav.about' },
 ]
+
+// Fetch site stats for header display
+const rawPapers = ref(0)
+const rawConfs = ref(0)
+const rawInst = ref(0)
+const updatedAt = ref('')
+
+onMounted(async () => {
+  try {
+    const baseUrl = import.meta.env.BASE_URL
+    const [metaRes, affRes] = await Promise.all([
+      fetch(baseUrl + 'data/stats/meta.json'),
+      fetch(baseUrl + 'data/stats/affiliation_index.json'),
+    ])
+    const meta = await metaRes.json()
+    const aff = await affRes.json()
+    rawPapers.value = meta.total_papers
+    rawConfs.value = meta.total_conferences
+    rawInst.value = Object.keys(aff.institutions || {}).length
+    updatedAt.value = new Date(meta.last_updated).toLocaleDateString(
+      locale.value === 'zh' ? 'zh-CN' : 'en-US',
+      { month: 'short', day: 'numeric', year: 'numeric' },
+    )
+  } catch { /* stats unavailable */ }
+})
+
+// Animated counters
+const animPapers = useCountUp(() => rawPapers.value)
+const animConfs = useCountUp(() => rawConfs.value)
+const animInst = useCountUp(() => rawInst.value)
+
+const hasStats = computed(() => rawPapers.value > 0)
 </script>
 
 <template>
   <header class="app-header fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-700/50">
-    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-      <!-- Logo -->
-      <router-link to="/" class="flex items-center gap-2 text-white font-bold text-lg no-underline hover:opacity-80 transition-opacity">
-        <span class="text-xl">🗣️</span>
-        <span class="hidden sm:inline">lang.csconf</span>
-      </router-link>
+    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center">
+      <!-- Logo + Site Title -->
+      <div class="flex-1 flex items-center">
+        <router-link to="/" class="flex items-center gap-2 text-white no-underline hover:opacity-80 transition-opacity">
+          <span class="text-xl">🗣️</span>
+          <span class="hidden sm:inline font-bold text-base">CCF CS Conference Insights</span>
+          <span class="hidden sm:inline text-gray-600 text-base mx-0.5">·</span>
+          <span class="font-bold text-base">lang.csconf</span>
+        </router-link>
+      </div>
 
-      <!-- Desktop Nav -->
+      <!-- Desktop Nav (centered) -->
       <nav class="hidden md:flex items-center gap-1">
         <router-link
           v-for="item in navItems"
           :key="item.path"
           :to="item.path"
-          class="px-3 py-1.5 rounded-lg text-sm text-gray-300 no-underline hover:text-white hover:bg-gray-700/50 transition-all"
-          :class="{ 'text-white bg-gray-700/50': route.path === item.path }"
+          class="px-4 py-1.5 rounded-lg text-sm font-medium no-underline transition-all"
+          :class="route.path === item.path
+            ? 'text-white bg-white/10 shadow-sm shadow-white/5'
+            : 'text-gray-400 hover:text-white hover:bg-white/5'"
         >
           {{ t(item.key) }}
         </router-link>
       </nav>
 
-      <!-- Language Switcher + GitHub + Mobile Menu -->
-      <div class="flex items-center gap-2">
+      <!-- Stats + Language + GitHub + Mobile Menu -->
+      <div class="flex-1 flex items-center justify-end gap-2">
+        <!-- Animated stats -->
+        <div v-if="hasStats" class="hidden lg:flex items-center gap-1 text-xs text-gray-500 mr-1 tabular-nums">
+          <span class="text-gray-300 font-semibold">{{ animPapers.toLocaleString() }}</span> Papers
+          <span class="text-gray-700">·</span>
+          <span class="text-gray-300 font-semibold">{{ animConfs }}</span> Confs
+          <span class="text-gray-700">·</span>
+          <span class="text-gray-300 font-semibold">{{ animInst }}</span> Inst
+          <span class="text-gray-700">·</span>
+          <span class="text-gray-600">Updated {{ updatedAt }}</span>
+        </div>
+
         <a
           href="https://github.com/morningD/lang.csconf"
           target="_blank"

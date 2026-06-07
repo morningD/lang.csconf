@@ -122,11 +122,11 @@ function main() {
     mkdirSync(dir, { recursive: true })
 
     const catName = CATEGORY_NAMES[conf.category] || conf.category
-    const title = `${conf.title} (${conf.id}) Language Diversity — lang.csconf`
+    const title = `${conf.title} · CCF-${conf.rank} ${conf.category} — lang.csconf`
     const description =
-      `${conf.title} (${catName}, CCF-${conf.rank}): ${conf.total_papers.toLocaleString()} papers analyzed. ` +
-      `Dominant first-author language: ${conf.dominant_language} (${conf.dominant_pct}%). ` +
-      `Data from 2010 to ${conf.latest_year}.`
+      `${conf.title} (${catName}, CCF-${conf.rank}): ${conf.total_papers.toLocaleString()} first-author papers analyzed (2010–${conf.latest_year}). ` +
+      `Dominant language: ${conf.dominant_language} (${conf.dominant_pct}%). ` +
+      `Explore language diversity, top institutions, and trends.`
 
     const jsonLd = {
       '@context': 'https://schema.org',
@@ -159,7 +159,7 @@ function main() {
   // Generate 404.html (SPA fallback for GitHub Pages)
   const html404 = buildPageHtml(baseHtml, {
     title: 'Page Not Found — lang.csconf',
-    description: 'Visualizing the linguistic diversity of first authors across 416 CCF-rated computer science conferences.',
+    description: 'Analyzing 908K+ first authors across 416 CCF-rated CS conferences (2010–2026).',
     path: '',
     jsonLd: null,
   })

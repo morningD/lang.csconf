@@ -1,19 +1,21 @@
 import { useHead } from '@unhead/vue'
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const SITE_URL = 'https://morningd.github.io/lang.csconf'
 const SITE_NAME = 'lang.csconf'
-const DEFAULT_TITLE = 'What Language Does Your Conference Speak?'
 const DEFAULT_DESCRIPTION =
-  'Visualizing the linguistic diversity of first authors across 416 CCF-rated computer science conferences (2010–2026). Explore language trends across AI, systems, security, and more.'
+  'Analyzing 908K+ first authors across 416 CCF-rated CS conferences (2010–2026). Explore author language diversity, top institution trends, and acceptance rates.'
 
 export function useSeo(options?: {
   title?: string
   description?: string
   path?: string
 }) {
+  const { t } = useI18n()
+
   const fullTitle = computed(() => {
-    const pageTitle = options?.title || DEFAULT_TITLE
+    const pageTitle = options?.title || t('site.title')
     return `${pageTitle} — ${SITE_NAME}`
   })
 

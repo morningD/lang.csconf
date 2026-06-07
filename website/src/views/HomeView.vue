@@ -318,7 +318,7 @@ function onSearchClickOutside(e: MouseEvent) {
 
     <template v-else>
       <!-- Browse Conferences -->
-      <section class="pt-8 pb-12 px-4">
+      <section class="pt-4 pb-12 px-4">
         <div class="max-w-7xl mx-auto">
           <h2 class="section-title text-center mb-8">{{ t('home.browse_conferences') }}</h2>
 
