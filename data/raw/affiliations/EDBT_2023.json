@@ -1,0 +1,567 @@
+{
+  "conference": "EDBT",
+  "year": 2023,
+  "total_papers": 82,
+  "total_matched": 20,
+  "total_with_affiliation": 12,
+  "coverage_pct": 14.6,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Detecting Stale Data in Wikipedia Infoboxes.",
+      "first_author": "Malte Barth",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Tuning the Utility-Privacy Trade-Off in Trajectory Data.",
+      "first_author": "Maja Schneider",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Integration of Skyline Queries into Spark SQL.",
+      "first_author": "Lukas Grasmann",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Subset Approach to Efficient Skyline Computation.",
+      "first_author": "Dominique H. Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4321178038",
+      "doi": "https://doi.org/10.48786/edbt.2023.31",
+      "institution": "Université de Tours",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02wwzvj46"
+    },
+    {
+      "title": "EGG-SynC: Exact GPU-parallelized Grid-based Clustering by Synchronization.",
+      "first_author": "Jakob Rødsgaard Jørgensen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412317600",
+      "doi": "https://doi.org/10.48786/edbt.2023.16",
+      "institution": "Aarhus University",
+      "institution_country": "DK",
+      "institution_ror": "https://ror.org/01aj84f44"
+    },
+    {
+      "title": "Learned Selection Strategy for Lightweight Integer Compression Algorithms.",
+      "first_author": "Lucas Woltmann",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Desis: Efficient Window Aggregation in Decentralized Networks.",
+      "first_author": "Wang Yue",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "REIN: A Comprehensive Benchmark Framework for Data Cleaning Methods in ML Pipelines.",
+      "first_author": "Mohamed Abdelaal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4320342846",
+      "doi": "https://doi.org/10.48550/arxiv.2302.04702",
+      "institution": null
+    },
+    {
+      "title": "Smart Derivative Contracts in DatalogMTL.",
+      "first_author": "Andrea Colombo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "User Customizable and Robust Geo-Indistinguishability for Location Privacy.",
+      "first_author": "Primal Pappachan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient Maintenance of Agree-Sets Against Dynamic Datasets.",
+      "first_author": "Khalid Belhajjame",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4403564075",
+      "doi": "https://doi.org/10.48786/edbt.2023.02",
+      "institution": "Lamsade",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/03pnp1a74"
+    },
+    {
+      "title": "Frequency Estimation of Evolving Data Under Local Differential Privacy.",
+      "first_author": "Héber Hwang Arcolezi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4312102382",
+      "doi": "https://doi.org/10.48786/edbt.2023.44",
+      "institution": "Concurrency, Mobility and Transactions",
+      "institution_country": null,
+      "raw_affiliation": "Concurrency, Mobility and Transactions"
+    },
+    {
+      "title": "Efficiently Archiving Photos under Storage Constraints.",
+      "first_author": "Susan B. Davidson",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Formal Design Framework for Practical Property Graph Schema Languages.",
+      "first_author": "Nimo Beeren",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "VOYAGER: Automatic Computation of Visual Complexity and Aesthetics of Graph Query Interfaces.",
+      "first_author": "Duy Pham",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GAM Forest Explanation.",
+      "first_author": "Claudio Lucchese",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "New Trends in Time Series Anomaly Detection.",
+      "first_author": "Paul Boniol",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Density-Based Geometry Compression for LiDAR Point Clouds.",
+      "first_author": "Xibo Sun",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Spatial Structure-Aware Road Network Embedding via Graph Contrastive Learning.",
+      "first_author": "Yanchuan Chang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Implementing and Evaluating E2LSH on Storage.",
+      "first_author": "Yu Nakanishi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4393213258",
+      "doi": "https://doi.org/10.48786/edbt.2023.35",
+      "institution": null
+    },
+    {
+      "title": "A simplified Architecture for Fast, Adaptive Compilation and Execution of SQL Queries.",
+      "first_author": "Immanuel Haffner",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Stitcher: Learned Workload Synthesis from Historical Performance Footprints.",
+      "first_author": "Chengcheng Wan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Data Narration for the People: Challenges and Opportunities.",
+      "first_author": "Sihem Amer-Yahia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4389754620",
+      "doi": "https://doi.org/10.48786/edbt.2023.82",
+      "institution": "Laboratoire d'Informatique de Grenoble",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/01c8rcg82"
+    },
+    {
+      "title": "TempoGRAPHer: A Tool for Aggregating and Exploring Evolving Graphs.",
+      "first_author": "Evangelia Tsoukanara",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "COVIDKG.ORG - a Web-scale COVID-19 Interactive, Trustworthy Knowledge Graph, Constructed and Interrogated for Bias using Deep-Learning.",
+      "first_author": "Bhimesh Kandibedala",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Multi-Dimensional Data Publishing With Local Differential Privacy.",
+      "first_author": "Gaoyuan Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "UniCache: Efficient Log Replication through Learning Workload Patterns.",
+      "first_author": "Harald Ng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Blue Elephants Inspecting Pandas: Inspection and Execution of Machine Learning Pipelines in SQL.",
+      "first_author": "Maximilian E. Schüle",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Understanding crowd energy consumption behaviors.",
+      "first_author": "Xiufeng Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412286119",
+      "doi": "https://doi.org/10.48786/edbt.2023.68",
+      "institution": "Technical University of Denmark",
+      "institution_country": "DK",
+      "institution_ror": "https://ror.org/04qtj9h94"
+    },
+    {
+      "title": "Maliva: Using Machine Learning to Rewrite Visualization Queries Under Time Constraints.",
+      "first_author": "Qiushi Bai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Unsupervised Space Partitioning for Nearest Neighbor Search.",
+      "first_author": "Abrar Fahim",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Recommending Unanimously Preferred Items to Groups.",
+      "first_author": "Karim Benouaret",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4392281569",
+      "doi": "https://doi.org/10.48786/edbt.2023.29",
+      "institution": "Practical Action",
+      "institution_country": "KE",
+      "institution_ror": "https://ror.org/002wdx176"
+    },
+    {
+      "title": "KWIQ: Answering k-core Window Queries in Temporal Networks.",
+      "first_author": "Mahdihusain Momin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mining Structures from Massive Texts by Exploring the Power of Pre-trained Language Models.",
+      "first_author": "Yu Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FELIP: A local Differentially Private approach to frequency estimation on multidimensional datasets.",
+      "first_author": "José Serafim da Costa Filho",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "E2-NVM: A Memory-Aware Write Scheme to Improve Energy Efficiency and Write Endurance of NVMs using Variational Autoencoders.",
+      "first_author": "Saeed Kargar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Consent Management in Data Workflows: A Graph Problem.",
+      "first_author": "Dorota Filipczuk",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Wrapper Methods for Multi-Objective Feature Selection.",
+      "first_author": "Uchechukwu Njoku",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4385701164",
+      "doi": "https://doi.org/10.1007/s11042-023-16411-9",
+      "institution": "University of Sciences and Technology Houari Boumediene",
+      "institution_country": "DZ",
+      "institution_ror": "https://ror.org/02kb89c09"
+    },
+    {
+      "title": "Progressive Entity Resolution over Incremental Data.",
+      "first_author": "Leonardo Gazzarri",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "WedgeBlock: An Off-Chain Secure Logging Platform for Blockchain Applications.",
+      "first_author": "Abhishek A. Singh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Describing and Assessing Cubes Through Intentional Analytics.",
+      "first_author": "Matteo Francia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Tagger: A Tool for the Discovery of Tagged Unions in JSON Schema Extraction.",
+      "first_author": "Stefan Klessinger",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Exploration of Approaches for In-Database ML.",
+      "first_author": "Steffen Kläbe",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Incremental Stream Query Merging.",
+      "first_author": "Ankit Chaudhary",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fast and Efficient Update Handling for Graph H2TAP.",
+      "first_author": "Muhammad Attahir Jibril",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Adaptive Real-time Virtualization of Legacy ETL Pipelines in Cloud Data Warehouses.",
+      "first_author": "Ehab Abdelhamid",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ExtremeEarth: Managing Water Availability for Crops Using Earth Observation and Machine Learning.",
+      "first_author": "Florian Appel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4362690784",
+      "doi": "https://doi.org/10.5281/zenodo.7808413",
+      "institution": "Remote Sensing Solutions (Germany)",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/023cs4y60"
+    },
+    {
+      "title": "Efficient Multi-Model Management.",
+      "first_author": "Nils Strassenburg",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Example-Driven Exploratory Analytics over Knowledge Graphs.",
+      "first_author": "Matteo Lissandrini",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412342804",
+      "doi": "https://doi.org/10.48786/edbt.2023.09",
+      "institution": "Aalborg University",
+      "institution_country": "DK",
+      "institution_ror": "https://ror.org/04m5j1k67"
+    },
+    {
+      "title": "Offset-value coding in database query processing.",
+      "first_author": "Goetz Graefe",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Comprehensive Evaluation of Algorithms for Unrestricted Graph Alignment",
+      "first_author": "Konstantinos Skitsas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412302268",
+      "doi": "https://doi.org/10.48786/edbt.2023.21",
+      "institution": "Aarhus University",
+      "institution_country": "DK",
+      "institution_ror": "https://ror.org/01aj84f44"
+    },
+    {
+      "title": "An Experimental Analysis of Quantile Sketches over Data Streams.",
+      "first_author": "Lasantha Fernando",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SonicJoin: Fast, Robust and Worst-case Optimal.",
+      "first_author": "Ahmad Khazaie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MM-quecat: A Tool for Unified Querying of Multi-Model Data.",
+      "first_author": "Pavel Koupil",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "RDF-Analytics: Interactive Analytics over RDF Knowledge Graphs.",
+      "first_author": "Maria-Evangelia Papadaki",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "bloomRF: On Performing Range-Queries in Bloom-Filters with Piecewise-Monotone Hash Functions and Prefix Hashing.",
+      "first_author": "Bernhard Mößner",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On Handling Catastrophic Forgetting for Incremental Learning of Human Physical Activity on the Edge.",
+      "first_author": "Jingwei Zuo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4321472221",
+      "doi": "https://doi.org/10.48550/arxiv.2302.09310",
+      "institution": null
+    },
+    {
+      "title": "Detecting Robustness against MVRC for Transaction Programs with Predicate Reads.",
+      "first_author": "Brecht Vandevoort",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4321392672",
+      "doi": "https://doi.org/10.48550/arxiv.2302.08789",
+      "institution": null
+    },
+    {
+      "title": "An Efficient Approach for Indoor Facility Location Selection.",
+      "first_author": "Yeasir Rayhan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4412231780",
+      "doi": "https://doi.org/10.48786/edbt.2023.53",
+      "institution": null
+    },
+    {
+      "title": "Evaluating Hybrid Graph Pattern Queries Using Runtime Index Graphs.",
+      "first_author": "Xiaoying Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Patched Multi-Key Partitioning for Robust Query Performance.",
+      "first_author": "Steffen Kläbe",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Data Provenance for SHACL.",
+      "first_author": "Thomas Delva",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Reasoning over Financial Scenarios with the Vadalog System.",
+      "first_author": "Teodoro Baldazzi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "REQUIRED: A Tool to Relax Queries through Relaxed Functional Dependencies.",
+      "first_author": "Loredana Caruccio",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learned Accelerator Framework for Angular-Distance-Based High-Dimensional DBSCAN.",
+      "first_author": "Yifan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4319653481",
+      "doi": "https://doi.org/10.48550/arxiv.2302.03136",
+      "institution": null
+    },
+    {
+      "title": "Enhanced Featurization of Queries with Mixed Combinations of Predicates for ML-based Cardinality Estimation.",
+      "first_author": "Magnus Müller",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Supporting Complex Query Time Enrichment For Analytics.",
+      "first_author": "Dhrubajyoti Ghosh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Demonstrating Interactive SPARQL Formulation through Positive and Negative Examples and Feedback.",
+      "first_author": "Akritas Akritidis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Streaming Weighted Sampling over Join Queries.",
+      "first_author": "Michael Shekelyan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Workload-Aware Query Recommendation Using Deep Learning.",
+      "first_author": "Eugenie Yujing Lai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Predictive Price-Performance Optimization for Serverless Query Processing.",
+      "first_author": "Rathijit Sen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Auditing for Spatial Fairness.",
+      "first_author": "Dimitris Sacharidis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4322616182",
+      "doi": "https://doi.org/10.48550/arxiv.2302.12333",
+      "institution": null
+    },
+    {
+      "title": "An Intrinsically Interpretable Entity Matching System.",
+      "first_author": "Andrea Baraldi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Joint Source and Schema Evolution: Insights from a Study of 195 FOSS Projects.",
+      "first_author": "Panos Vassiliadis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Pushing Edge Computing one Step Further: Resilient and Privacy-Preserving Processing on Personal Devices.",
+      "first_author": "Ludovic Javet",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4377086338",
+      "doi": "https://doi.org/10.48786/edbt.2023.77",
+      "institution": "Personal Trusted cloud",
+      "institution_country": null,
+      "raw_affiliation": "Personal Trusted cloud"
+    },
+    {
+      "title": "Interactive Set Discovery.",
+      "first_author": "Arif Hasnat",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Topio Marketplace: Search and Discovery of Geospatial Data.",
+      "first_author": "Andra Ionescu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Relational Memory: Native In-Memory Accesses on Rows and Columns.",
+      "first_author": "Shahin Roozkhosh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TransEdge: Supporting Efficient Read Queries Across Untrusted Edge Nodes.",
+      "first_author": "Abhishek A. Singh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4321276708",
+      "doi": "https://doi.org/10.48550/arxiv.2302.08019",
+      "institution": null
+    },
+    {
+      "title": "GraphTempo: An aggregation framework for evolving graphs.",
+      "first_author": "Evangelia Tsoukanara",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FLIRT: A Fast Learned Index for Rolling Time frames.",
+      "first_author": "Guang Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Multi-Task Processing in Vertex-Centric Graph Systems: Evaluations and Insights.",
+      "first_author": "Siqiang Luo",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

@@ -1,18 +1,24 @@
-"""Batch OpenAlex affiliation crawl — parallel edition.
+"""Batch OpenAlex affiliation crawl — hybrid batch+search edition.
 
 Uses k API keys concurrently (one thread per key) for k× speedup.
 Resumable, auto key rotation, waits for UTC midnight reset when all exhausted.
 
+Optimizations:
+  - Batch download via source ID (1 credit/page, 50 papers) when source is available
+  - Falls back to title.search (10 credits/paper) for unmatched papers
+  - _test_key uses list filter (1 credit) instead of search (10 credits)
+
 Usage:
-    python scripts/openalex_batch_crawl.py                          # All CCF-A, 2023-2025
+    python scripts/openalex_batch_crawl.py                          # All CCF-B, 2023-2025
+    python scripts/openalex_batch_crawl.py --rank A                  # All CCF-A
     python scripts/openalex_batch_crawl.py --conferences CHI SIGKDD  # Specific conferences
     python scripts/openalex_batch_crawl.py --force                   # Re-crawl existing
-    python scripts/openalex_batch_crawl.py --years 2024 2025         # Custom years
+    python scripts/openalex_batch_crawl.py --years 2010 2025         # Custom years
 """
 
 import argparse
 import json
-import random
+import re
 import sys
 import threading
 import time
@@ -67,7 +73,116 @@ def make_session(api_key: str):
     return s
 
 
+# ---------------------------------------------------------------------------
+# Source discovery: find OpenAlex conference source for batch download
+# ---------------------------------------------------------------------------
 
+# Cache: (conf_id, year) -> source_id or None
+_source_cache: dict[tuple[str, int], str | None] = {}
+
+
+def _discover_source(conf_id: str, conf_title: str, year: int, session) -> str | None:
+    """Try to find an OpenAlex conference source for this conference-year.
+
+    Returns source OpenAlex ID (e.g. 'S4363608773') or None.
+    Uses year-specific sources (e.g. '2022 IEEE ICME') which have ~50-400 papers each.
+    """
+    cache_key = (conf_id, year)
+    if cache_key in _source_cache:
+        return _source_cache[cache_key]
+
+    import requests
+
+    # Search sources for the conference name + year
+    search_queries = [
+        f"{conf_title} {year}",
+        conf_title,
+    ]
+    for query in search_queries:
+        try:
+            r = session.get("https://api.openalex.org/sources", params={
+                "search": query,
+                "filter": "type:conference",
+                "select": "id,display_name,works_count",
+                "per_page": 10,
+                "sort": "relevance_score:desc",
+            }, timeout=15)
+        except requests.RequestException:
+            continue
+
+        if r.status_code != 200:
+            continue
+
+        results = r.json().get("results", [])
+        for src in results:
+            name = src.get("display_name", "")
+            src_id = src.get("id", "")
+            works = src.get("works_count", 0)
+            # Check if this source matches our conference and year
+            if works < 10 or not src_id:
+                continue
+            # Verify year is in the source name (year-specific sources)
+            if str(year) in name and _name_matches_conf(name, conf_id, conf_title):
+                _source_cache[cache_key] = src_id
+                return src_id
+
+    # Also try: search a sample paper and check its locations[].source
+    _source_cache[cache_key] = None
+    return None
+
+
+def _name_matches_conf(source_name: str, conf_id: str, conf_title: str) -> bool:
+    """Check if a source name likely refers to our conference."""
+    sn = source_name.lower()
+    # Check conference ID (common abbreviations)
+    if conf_id.lower() in sn:
+        return True
+    # Check key words from conference title
+    title_words = [w for w in conf_title.lower().split()
+                   if len(w) > 3 and w not in ("international", "conference", "proceedings",
+                                                 "annual", "acm", "ieee", "symposium")]
+    if title_words and sum(1 for w in title_words if w in sn) >= min(2, len(title_words)):
+        return True
+    return False
+
+
+def _batch_download(source_id: str, year: int, session) -> list[dict]:
+    """Download all works from a source for a given year. Returns list of work dicts.
+
+    Uses cursor pagination (1 credit per page of 50 papers).
+    """
+    import requests
+
+    works = []
+    cursor = "*"
+    while cursor:
+        try:
+            r = session.get("https://api.openalex.org/works", params={
+                "filter": f"locations.source.id:{source_id},publication_year:{year}",
+                "select": "id,doi,title,authorships",
+                "per_page": 50,
+                "cursor": cursor,
+            }, timeout=30)
+        except requests.RequestException:
+            break
+
+        if r.status_code != 200:
+            break
+
+        data = r.json()
+        results = data.get("results", [])
+        works.extend(results)
+
+        cursor = data.get("meta", {}).get("next_cursor")
+        if not results:
+            break
+
+    return works
+
+
+# ---------------------------------------------------------------------------
+# Individual paper search (10 credits each)
+# ---------------------------------------------------------------------------
 
 def _fetch_one(title: str, year: int, session) -> dict | None:
     """Fetch a single work from OpenAlex. Returns work dict, None (no match), or status dict."""
@@ -100,11 +215,11 @@ def _fetch_one(title: str, year: int, session) -> dict | None:
 
 
 def _test_key(api_key: str) -> bool:
-    """Quick test if a key still has budget."""
+    """Quick test if a key still has budget. Uses list filter (1 credit, not 10)."""
     import requests
     try:
         r = requests.get("https://api.openalex.org/works", params={
-            "filter": "title.search:test,publication_year:2024",
+            "filter": "publication_year:2025",
             "api_key": api_key, "per_page": 1,
         }, timeout=10)
         return r.status_code == 200
@@ -125,20 +240,55 @@ def _wait_for_key_reset(keys: list[str], timeout: int = 86400) -> list[str]:
         live = [k for k in new_keys if _test_key(k)]
         if live:
             log(f"  {len(live)} key(s) available, resuming!")
-            with _exhausted_lock:
-                _exhausted_keys.clear()
             return live
     return []
 
 
-def crawl_conference_year_parallel(conf_id: str, year: int, keys: list[str],
-                                    delay: float = 0.11) -> dict:
-    """Crawl one conference-year using k parallel threads (one per key).
+# ---------------------------------------------------------------------------
+# Title normalization for matching
+# ---------------------------------------------------------------------------
 
-    If keys run out mid-batch, saves what we have and returns partial results.
-    The caller can retry later or wait for key reset.
+def _normalize_title(title: str) -> str:
+    """Normalize title for matching: lowercase, strip punctuation, collapse whitespace."""
+    t = title.lower()
+    t = re.sub(r'[^a-z0-9\s]', ' ', t)
+    t = re.sub(r'\s+', ' ', t).strip()
+    return t
+
+
+# ---------------------------------------------------------------------------
+# Main crawl logic
+# ---------------------------------------------------------------------------
+
+def _process_work(title: str, first_author: str, work: dict) -> dict:
+    """Convert an OpenAlex work into a result entry."""
+    inst = extract_first_author_institution(work)
+    entry = {
+        "title": title,
+        "first_author": first_author,
+        "matched": True,
+        "openalex_id": work.get("id"),
+        "doi": work.get("doi"),
+    }
+    if inst:
+        entry["institution"] = inst["name"]
+        entry["institution_country"] = inst.get("country")
+        if inst.get("ror"):
+            entry["institution_ror"] = inst["ror"]
+        if inst.get("raw"):
+            entry["raw_affiliation"] = inst["raw"]
+    else:
+        entry["institution"] = None
+    return entry
+
+
+def crawl_conference_year_hybrid(conf_id: str, conf_title: str, year: int,
+                                  keys: list[str], delay: float = 0.11) -> dict:
+    """Crawl one conference-year using hybrid batch+search strategy.
+
+    1. Try batch download via source ID (1 credit/page)
+    2. For unmatched papers, fall back to title.search (10 credits/paper)
     """
-
     raw_file = AUTHORS_DIR / f"{conf_id}_{year}.json"
     if not raw_file.exists():
         return {"status": "no_data", "total": 0, "matched": 0, "affil": 0}
@@ -164,124 +314,163 @@ def crawl_conference_year_parallel(conf_id: str, year: int, keys: list[str],
         if not live_keys:
             return {"status": "no_keys", "total": len(papers), "matched": 0, "affil": 0}
 
-    # Per-key exhausted tracking (local to this batch)
-    local_exhausted: set[int] = set()
-    local_lock = threading.Lock()
-
     n_workers = len(live_keys)
     sessions = [make_session(k) for k in live_keys]
     if n_workers < len(keys):
         log(f"  Using {n_workers}/{len(keys)} keys (others exhausted)")
 
-    results: list[dict | None] = [None] * len(papers)
     matched = 0
     has_affil = 0
     errors = 0
-    lock = threading.Lock()
-    progress = [0]
+    results: list[dict] = []
+    # Track unmatched paper indices for search fallback
+    unmatched: list[tuple[int, dict]] = []
 
-    def process_paper(paper_idx: int, paper: dict, key_idx: int):
-        nonlocal matched, has_affil, errors
-        title = paper["title"]
-        first_author = paper["first_author"]
+    # Phase 1: Try batch download via source ID
+    source_id = _discover_source(conf_id, conf_title, year, sessions[0])
+    if source_id:
+        log(f"  Batch download: source={source_id}")
+        batch_works = _batch_download(source_id, year, sessions[0])
+        if batch_works:
+            log(f"  Downloaded {len(batch_works)} works from source")
+            # Build title→work index for fast matching
+            batch_idx = {}
+            for w in batch_works:
+                wt = _normalize_title(w.get("title", ""))
+                if wt:
+                    batch_idx[wt] = w
 
-        # Try assigned key first, then find any live key
-        s_idx = key_idx
-        with local_lock:
-            if s_idx in local_exhausted:
-                for alt in range(n_workers):
-                    if alt not in local_exhausted:
-                        s_idx = alt
-                        break
+            # Match our papers against batch works
+            for i, paper in enumerate(papers):
+                nt = _normalize_title(paper["title"])
+                work = batch_idx.get(nt)
+                if work:
+                    entry = _process_work(paper["title"], paper["first_author"], work)
+                    results.append(entry)
+                    matched += 1
+                    if entry.get("institution"):
+                        has_affil += 1
                 else:
-                    # All local keys dead — mark as failed, caller will retry
-                    results[paper_idx] = {"title": title, "first_author": first_author,
-                                          "matched": False, "institution": None}
-                    with lock:
-                        progress[0] += 1
-                    return
+                    unmatched.append((i, paper))
+        else:
+            unmatched = list(enumerate(papers))
+    else:
+        unmatched = list(enumerate(papers))
 
-        work = _fetch_one(title, year, sessions[s_idx])
-        status = work.get("_status", "no_match") if work else "no_match"
+    if not unmatched:
+        # All papers matched from batch — done!
+        pass
+    else:
+        # Phase 2: Search fallback for unmatched papers
+        log(f"  Search fallback: {len(unmatched)} papers")
 
-        if status == "429":
+        # Per-key exhausted tracking
+        local_exhausted: set[int] = set()
+        local_lock = threading.Lock()
+        lock = threading.Lock()
+        progress = [0]
+        search_results: list[tuple[int, dict]] = [None] * len(unmatched)
+
+        def process_paper(idx_in_unmatched: int, orig_idx: int, paper: dict, key_idx: int):
+            nonlocal matched, has_affil, errors
+            title = paper["title"]
+            first_author = paper["first_author"]
+
+            # Find a live key
+            s_idx = key_idx
             with local_lock:
-                local_exhausted.add(s_idx)
-                all_dead = len(local_exhausted) >= n_workers
-            if all_dead:
-                log(f"  {conf_id} {year}: all keys exhausted at {progress[0]}/{len(papers)}")
-            results[paper_idx] = {"title": title, "first_author": first_author,
-                                  "matched": False, "institution": None}
+                if s_idx in local_exhausted:
+                    for alt in range(n_workers):
+                        if alt not in local_exhausted:
+                            s_idx = alt
+                            break
+                    else:
+                        search_results[idx_in_unmatched] = (orig_idx, {
+                            "title": title, "first_author": first_author,
+                            "matched": False, "institution": None,
+                        })
+                        with lock:
+                            progress[0] += 1
+                        return
+
+            work = _fetch_one(title, year, sessions[s_idx])
+            status = work.get("_status", "no_match") if work else "no_match"
+
+            if status == "429":
+                with local_lock:
+                    local_exhausted.add(s_idx)
+                    all_dead = len(local_exhausted) >= n_workers
+                if all_dead:
+                    log(f"  {conf_id} {year}: all keys exhausted at "
+                        f"{progress[0]}/{len(unmatched)} search")
+                search_results[idx_in_unmatched] = (orig_idx, {
+                    "title": title, "first_author": first_author,
+                    "matched": False, "institution": None,
+                })
+                with lock:
+                    progress[0] += 1
+                    errors += 1
+                return
+
+            if status == "ok":
+                entry = _process_work(title, first_author, work)
+                search_results[idx_in_unmatched] = (orig_idx, entry)
+                with lock:
+                    matched += 1
+                    if entry.get("institution"):
+                        has_affil += 1
+            else:
+                if status == "network_error":
+                    with lock:
+                        errors += 1
+                search_results[idx_in_unmatched] = (orig_idx, {
+                    "title": title, "first_author": first_author,
+                    "matched": False, "institution": None,
+                })
+
             with lock:
                 progress[0] += 1
-            return
+                done = progress[0]
+                if done % 100 == 0 or done == len(unmatched):
+                    pct = 100 * has_affil / (len(results) + done) if (len(results) + done) > 0 else 0
+                    log(f"  {conf_id} {year}: search {done}/{len(unmatched)} "
+                        f"(total affil={has_affil}, {pct:.0f}%)")
 
-        if status == "ok":
-            del work["_status"]
-            inst = extract_first_author_institution(work)
-            entry = {
-                "title": title,
-                "first_author": first_author,
-                "matched": True,
-                "openalex_id": work.get("id"),
-                "doi": work.get("doi"),
-            }
-            if inst:
-                with lock:
-                    has_affil += 1
-                entry["institution"] = inst["name"]
-                entry["institution_country"] = inst.get("country")
-                if inst.get("ror"):
-                    entry["institution_ror"] = inst["ror"]
-                if inst.get("raw"):
-                    entry["raw_affiliation"] = inst["raw"]
-            else:
-                entry["institution"] = None
-            with lock:
-                matched += 1
-            results[paper_idx] = entry
-        else:
-            if status == "network_error":
-                with lock:
-                    errors += 1
-            results[paper_idx] = {"title": title, "first_author": first_author,
-                                  "matched": False, "institution": None}
+        with ThreadPoolExecutor(max_workers=n_workers) as executor:
+            futures = []
+            for ui, (orig_idx, paper) in enumerate(unmatched):
+                key_idx = ui % n_workers
+                futures.append(executor.submit(process_paper, ui, orig_idx, paper, key_idx))
 
-        with lock:
-            progress[0] += 1
-            done = progress[0]
-            if done % 100 == 0 or done == len(papers):
-                pct = 100 * has_affil / done if done > 0 else 0
-                log(f"  {conf_id} {year}: {done}/{len(papers)} "
-                    f"(affil={has_affil}, {pct:.0f}%, err={errors})")
+            for f in as_completed(futures):
+                try:
+                    f.result()
+                except Exception as e:
+                    log(f"  Thread error: {e}")
+                    with lock:
+                        errors += 1
 
-    with ThreadPoolExecutor(max_workers=n_workers) as executor:
-        futures = []
-        for paper_idx, paper in enumerate(papers):
-            key_idx = paper_idx % n_workers
-            futures.append(executor.submit(process_paper, paper_idx, paper, key_idx))
+        # Merge search results into final results list
+        for item in search_results:
+            if item is not None:
+                results.append(item[1])
 
-        for f in as_completed(futures):
-            try:
-                f.result()
-            except Exception as e:
-                log(f"  Thread error: {e}")
-                with lock:
-                    errors += 1
+        # Check if all keys exhausted
+        key_exhausted = len(local_exhausted) >= n_workers
+        if key_exhausted:
+            # Fill remaining unmatched
+            pass  # Already filled in process_paper
 
-    # Check if partial: use actual key exhaustion, not match rate
-    # (low match rate is normal for some conferences like CRYPTO/ACL)
-    none_count = sum(1 for r in results if r is None)
-    key_exhausted = len(local_exhausted) >= n_workers  # all keys died
-    partial = key_exhausted or none_count > len(papers) * 0.1  # >10% unprocessed = key issue
+    # Sort results by original paper order
+    title_to_idx = {p["title"]: i for i, p in enumerate(papers)}
+    results.sort(key=lambda r: title_to_idx.get(r.get("title", ""), 0))
 
-    # Fill None results with unmatched entries
-    for i, r in enumerate(results):
-        if r is None:
-            results[i] = {"title": papers[i]["title"], "first_author": papers[i]["first_author"],
-                          "matched": False, "institution": None}
+    # Check for partial failure
+    none_count = sum(1 for r in results if r.get("matched") is None)
+    key_exhausted_final = matched < len(papers) * 0.5 and errors > len(papers) * 0.1
+    partial = key_exhausted_final
 
-    # Only save if not a partial failure due to key exhaustion
+    # Only save if not a partial failure
     if not partial:
         output = {
             "conference": conf_id,
@@ -308,8 +497,9 @@ def crawl_conference_year_parallel(conf_id: str, year: int, keys: list[str],
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Parallel OpenAlex affiliation crawl")
+    parser = argparse.ArgumentParser(description="Hybrid OpenAlex affiliation crawl")
     parser.add_argument("--conferences", nargs="+", help="Specific conference IDs")
+    parser.add_argument("--rank", default="B", help="CCF rank filter (default: B)")
     parser.add_argument("--years", nargs="+", type=int, default=[2023, 2024, 2025],
                         help="Year range (default: 2023 2024 2025)")
     parser.add_argument("--force", action="store_true",
@@ -321,13 +511,17 @@ def main():
     with open(CONFERENCES_FILE, encoding="utf-8") as f:
         all_confs = json.load(f)
 
+    # Build conf_id → title map
+    conf_titles = {c["id"]: c.get("title", c["id"]) for c in all_confs}
+
     if args.conferences:
         target_ids = set(args.conferences)
     else:
-        target_ids = {c["id"] for c in all_confs if c.get("rank") == "A"}
+        target_ids = {c["id"] for c in all_confs if c.get("rank") == args.rank}
 
     keys = load_keys()
     log(f"Loaded {len(keys)} API key(s) → {len(keys)} parallel workers")
+    log(f"Target: CCF-{args.rank}, years={args.years}, {len(target_ids)} conferences")
 
     # Build work queue
     queue = []
@@ -351,8 +545,12 @@ def main():
 
     total_papers = sum(n for _, _, n in queue)
     log(f"Work queue: {len(queue)} batches, {total_papers} papers")
-    log(f"Estimated: ~${total_papers * 0.001:.0f}, "
-        f"~{total_papers * args.delay / 3600 / len(keys):.0f}h with {len(keys)} workers")
+    # Cost estimate: assume ~10% batchable (1 credit/50), rest search (10 credits/paper)
+    search_papers = total_papers * 0.9
+    batch_pages = (total_papers * 0.1) / 50
+    est_credits = int(search_papers * 10 + batch_pages)
+    log(f"Estimated: ~{est_credits:,} credits (~${est_credits * 0.0001:.1f}), "
+        f"~{est_credits / (len(keys) * 10000):.1f} days with {len(keys)} workers")
 
     done = 0
     done_papers = 0
@@ -374,9 +572,10 @@ def main():
             done += 1
             continue
 
+        conf_title = conf_titles.get(conf_id, conf_id)
         log(f"START {conf_id} {year} ({expected} papers, {len(keys)} workers)")
         t1 = time.time()
-        result = crawl_conference_year_parallel(conf_id, year, keys, delay=args.delay)
+        result = crawl_conference_year_hybrid(conf_id, conf_title, year, keys, delay=args.delay)
         elapsed = time.time() - t1
 
         if result["status"] == "ok":
@@ -389,7 +588,6 @@ def main():
             log(f"DONE  {conf_id} {year}: {result['affil']}/{result['total']} "
                 f"({pct}%) in {elapsed:.0f}s, err={result['errors']}")
         elif result["status"] == "partial":
-            # Keys ran out — wait for reset then retry this batch
             done_papers += result["matched"]
             grand_total += result["total"]
             grand_affil += result["affil"]
@@ -397,19 +595,21 @@ def main():
             pct = round(100 * result["affil"] / max(result["total"], 1), 1)
             log(f"PARTIAL {conf_id} {year}: {result['affil']}/{result['total']} "
                 f"({pct}%) in {elapsed:.0f}s — waiting for key reset...")
-            # Wait for key reset, then retry from this batch
+            # Wait for key reset, then retry this batch
             live = _wait_for_key_reset(keys)
             if live:
                 keys = load_keys()
                 log(f"RETRY {conf_id} {year} with {len(keys)} keys")
                 t1 = time.time()
-                result2 = crawl_conference_year_parallel(conf_id, year, keys, delay=args.delay)
+                result2 = crawl_conference_year_hybrid(
+                    conf_id, conf_title, year, keys, delay=args.delay)
                 elapsed += time.time() - t1
                 if result2["status"] == "ok":
                     done += 1
-                    done_papers += result2["total"] - result["total"]
-                    grand_total += result2["total"] - result["total"]
-                    grand_affil += result2["affil"] - result["affil"]
+                    done_papers += result2["total"]
+                    grand_total += result2["total"]
+                    grand_affil += result2["affil"]
+                    grand_errors += result2["errors"]
                     pct = round(100 * result2["affil"] / max(result2["total"], 1), 1)
                     log(f"DONE  {conf_id} {year} (retry): {result2['affil']}/{result2['total']} "
                         f"({pct}%) in {elapsed:.0f}s total")
@@ -423,8 +623,8 @@ def main():
 
         if done > 0 and done % 5 == 0 and grand_total > 0:
             remaining = total_papers - done_papers
-            elapsed = time.time() - t0
-            rate = done_papers / elapsed if elapsed > 0 else 0
+            elapsed_total = time.time() - t0
+            rate = done_papers / elapsed_total if elapsed_total > 0 else 0
             eta_h = remaining / rate / 3600 if rate > 0 else 0
             log(f"--- Progress: {done}/{len(queue)} batches, "
                 f"{done_papers}/{total_papers} papers, "

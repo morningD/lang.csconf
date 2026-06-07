@@ -1,0 +1,453 @@
+{
+  "conference": "FPGA",
+  "year": 2025,
+  "total_papers": 45,
+  "total_matched": 43,
+  "total_with_affiliation": 43,
+  "coverage_pct": 95.6,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "An Efficient Traversal Method for FPGA Interconnect Testing Based on Regular Routing.",
+      "first_author": "Wenwei Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953457",
+      "doi": "https://doi.org/10.1145/3706628.3708865",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Lessons from 40 Years of Reconfigurable Computing.",
+      "first_author": "John Wawrzynek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953373",
+      "doi": "https://doi.org/10.1145/3706628.3710807",
+      "institution": "University of California, Berkeley",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an7q238"
+    },
+    {
+      "title": "FPGA-Only Implementation of MIPI C-PHY Receiver Using Blind Oversampling CDR for CMOS Image Sensors.",
+      "first_author": "Jun Yeon Won",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953968",
+      "doi": "https://doi.org/10.1145/3706628.3708876",
+      "institution": "Samsung (South Korea)",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04w3jy968"
+    },
+    {
+      "title": "Stream-HLS: Towards Automatic Dataflow Acceleration.",
+      "first_author": "Suhail Basalama",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4406531246",
+      "doi": "https://doi.org/10.1145/3706628.3708878",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "TreeLUT: An Efficient Alternative to Deep Neural Networks for Inference Acceleration Using Gradient Boosted Decision Trees.",
+      "first_author": "Alireza Khataei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4406092772",
+      "doi": "https://doi.org/10.1145/3706628.3708877",
+      "institution": "University of Minnesota",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/017zqws13"
+    },
+    {
+      "title": "ARIES: An Agile MLIR-Based Compilation Flow for Reconfigurable Devices with AI Engines.",
+      "first_author": "Jinming Zhuang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953492",
+      "doi": "https://doi.org/10.1145/3706628.3708870",
+      "institution": "Brown University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gq02987"
+    },
+    {
+      "title": "Dynamic Loop Fusion in High-Level Synthesis.",
+      "first_author": "Robert Szafarczyk",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4406841330",
+      "doi": "https://doi.org/10.1145/3706628.3708871",
+      "institution": "University of Glasgow",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/00vtgdb53"
+    },
+    {
+      "title": "Seamless Acceleration of Fortran Intrinsics via AMD AI Engines.",
+      "first_author": "Nick Brown",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953978",
+      "doi": "https://doi.org/10.1145/3706628.3708854",
+      "institution": "University of Edinburgh",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01nrxwf90"
+    },
+    {
+      "title": "Towards Accelerator Customization in Real-time Safety-critical Systems.",
+      "first_author": "Shixin Ji",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953530",
+      "doi": "https://doi.org/10.1145/3706628.3708841",
+      "institution": "Brown University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gq02987"
+    },
+    {
+      "title": "FMC-LLM: Enabling FPGAs for Efficient Batched Decoding of 70B+ LLMs with a Memory-Centric Streaming Architecture.",
+      "first_author": "Wenheng Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953495",
+      "doi": "https://doi.org/10.1145/3706628.3708863",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "FRIDA: Reconfigurable Arrays for Dynamically Scheduled High-Level Synthesis.",
+      "first_author": "Louis Coulon",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953462",
+      "doi": "https://doi.org/10.1145/3706628.3708880",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "Greater than the Sum of its LUTs: Scaling Up LUT-based Neural Networks with AmigoLUT.",
+      "first_author": "Olivia Weng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953506",
+      "doi": "https://doi.org/10.1145/3706628.3708874",
+      "institution": "University of California San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "Performance Analysis of GEMM Workloads on the AMD Versal Platform.",
+      "first_author": "Kaustubh Manohar Mhatre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953951",
+      "doi": "https://doi.org/10.1145/3706628.3708833",
+      "institution": "Arizona State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03efmqc40"
+    },
+    {
+      "title": "FPGA Implementation of a 1D-CNN Modulation Classifier for Radar Signals.",
+      "first_author": "Edgard Cansio",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953484",
+      "doi": "https://doi.org/10.1145/3706628.3708845",
+      "institution": "Brazilian Naval School",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/00gq58w69"
+    },
+    {
+      "title": "CIVIC-FPGA: A Trusted FPGA Design Validation by Multi-Tenant Cloud Providers.",
+      "first_author": "Yu Feng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953498",
+      "doi": "https://doi.org/10.1145/3706628.3708826",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "TAPCA: An Interface-Aware Cache Management Framework for Task Partitioning on CPU-FPGA SoC Platforms.",
+      "first_author": "Enlai Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953393",
+      "doi": "https://doi.org/10.1145/3706628.3708824",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Hercules: Efficient Verification of High-Level Synthesis Designs with FPGA Acceleration.",
+      "first_author": "Shuoxiang Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953513",
+      "doi": "https://doi.org/10.1145/3706628.3708866",
+      "institution": "ShanghaiTech University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/030bhh786"
+    },
+    {
+      "title": "SAT-Accel: A Modern SAT Solver on a FPGA.",
+      "first_author": "Michael Lo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953507",
+      "doi": "https://doi.org/10.1145/3706628.3708869",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "Latency Insensitivity Testing for Dataflow HLS Designs.",
+      "first_author": "Jianyi Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953467",
+      "doi": "https://doi.org/10.1145/3706628.3708872",
+      "institution": "University of Edinburgh",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01nrxwf90"
+    },
+    {
+      "title": "A Unified Framework for Automated Code Transformation and Pragma Insertion.",
+      "first_author": "Stéphane Pouget",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953508",
+      "doi": "https://doi.org/10.1145/3706628.3708873",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "FlightVGM: Efficient Video Generation Model Inference with Online Sparsification and Hybrid Precision on FPGAs.",
+      "first_author": "Jun Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953477",
+      "doi": "https://doi.org/10.1145/3706628.3708864",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Measuring the Minimum Power Requirement of FPGA Architectural Specifications.",
+      "first_author": "Andy Gean Ye",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953460",
+      "doi": "https://doi.org/10.1145/3706628.3708838",
+      "institution": "Toronto Metropolitan University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05g13zd79"
+    },
+    {
+      "title": "High Throughput Low Latency Network Intrusion Detection on FPGAs: A Raw Packet Approach.",
+      "first_author": "Muhammad Ali Farooq",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953531",
+      "doi": "https://doi.org/10.1145/3706628.3708844",
+      "institution": "Arizona State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03efmqc40"
+    },
+    {
+      "title": "DPUV4E: High-Throughput DPU Architecture Design for CNN on Versal ACAP.",
+      "first_author": "Guoyu Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953375",
+      "doi": "https://doi.org/10.1145/3706628.3708831",
+      "institution": "Advanced Micro Devices, Inc., Beijing, China",
+      "institution_country": null,
+      "raw_affiliation": "Advanced Micro Devices, Inc., Beijing, China"
+    },
+    {
+      "title": "PipeLink: A Pipelined Resource Sharing System for Dataflow High-Level Synthesis.",
+      "first_author": "Rui Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953389",
+      "doi": "https://doi.org/10.1145/3706628.3708842",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "Enhancing FPGAs with Analog In-Memory Computing Macros.",
+      "first_author": "Archit Gajjar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953945",
+      "doi": "https://doi.org/10.1145/3706628.3708832",
+      "institution": "Hewlett-Packard (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/059rn9488"
+    },
+    {
+      "title": "OLA: An FPGA-based Overlay Accelerator for Privacy Preserving Machine Learning with Homomorphic Encryption.",
+      "first_author": "Yang Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HEDWIG: Homomorphic Encryption Accelerator Design Using BFV-HPS With HiGh-Speed Fixed-Point Approximation.",
+      "first_author": "Antian Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953500",
+      "doi": "https://doi.org/10.1145/3706628.3708853",
+      "institution": "Purdue University Fort Wayne",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04c4hz115"
+    },
+    {
+      "title": "wa-hls4ml and lui-gnn: A Benchmark and GNN based Surrogate Model for hls4ml Resource and Latency Estimation.",
+      "first_author": "Benjamin Hawks",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4409288883",
+      "doi": "https://doi.org/10.2172/2549315",
+      "institution": "Fermi National Accelerator Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/020hgte69"
+    },
+    {
+      "title": "HiGTR: High-Performance FPGA Implementation of Complete GNN-based Trajectory Reconstruction for HEP.",
+      "first_author": "Yun-Chen Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953630",
+      "doi": "https://doi.org/10.1145/3706628.3708835",
+      "institution": "National Yang Ming Chiao Tung University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00se2k293"
+    },
+    {
+      "title": "HUMA: Heterogeneous, Ultra Low-Latency Model Accelerator for The Virtual Brain on a Versal Adaptive SoC.",
+      "first_author": "Amirreza Movahedin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Empirical Comparision of LLM-based Hardware Design and High-level Synthesis.",
+      "first_author": "Fan Cui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953481",
+      "doi": "https://doi.org/10.1145/3706628.3708861",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "No Time to Lose: Enabling Real-Time Fluorescence Lifetime Imaging on Resource-constrained FPGAs Through Efficient Scheduling.",
+      "first_author": "Ismail Erbas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953494",
+      "doi": "https://doi.org/10.1145/3706628.3708858",
+      "institution": "Rensselaer Polytechnic Institute",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01rtyzb94"
+    },
+    {
+      "title": "FAST: FPGA Acceleration of Fully Homomorphic Encryption with Efficient Bootstrapping.",
+      "first_author": "Zhihan Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953952",
+      "doi": "https://doi.org/10.1145/3706628.3708879",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "ReducedLUT: Table Decomposition with \"Don't Care\" Conditions.",
+      "first_author": "Oliver Cassidy",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4405792756",
+      "doi": "https://doi.org/10.1145/3706628.3708823",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "BAQET: BRAM-aware Quantization for Efficient Transformer Inference via Stream-based Architecture on an FPGA.",
+      "first_author": "LingChi Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953524",
+      "doi": "https://doi.org/10.1145/3706628.3708849",
+      "institution": "National Yang Ming Chiao Tung University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00se2k293"
+    },
+    {
+      "title": "FPGA-Oriented Design Space Exploration of a Real-Time Road Scene Semantic Segmentation Deep Neural Network.",
+      "first_author": "Hugo Le Blevec",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953382",
+      "doi": "https://doi.org/10.1145/3706628.3708862",
+      "institution": "Université de Bretagne Occidentale",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/01b8h3982"
+    },
+    {
+      "title": "RRNS Arith Lib - An Open-Source Redundant Residue Number System Arithmetic VHDL Library.",
+      "first_author": "Tim Oberschulte",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953501",
+      "doi": "https://doi.org/10.1145/3706628.3708847",
+      "institution": "Leibniz University Hannover",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/0304hq317"
+    },
+    {
+      "title": "Two-Phase Transistor Sizing for FPGAs via Bayesian Optimization.",
+      "first_author": "Xianfeng Cao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953480",
+      "doi": "https://doi.org/10.1145/3706628.3708825",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Systolic Sparse Tensor Slices: FPGA Building Blocks for Sparse and Dense AI Acceleration.",
+      "first_author": "Endri Taka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953517",
+      "doi": "https://doi.org/10.1145/3706628.3708867",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "InTRRA: Inter-Task Resource-Repurposing Accelerator for Efficient Transformer Inference on FPGAs.",
+      "first_author": "Zifan He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953528",
+      "doi": "https://doi.org/10.1145/3706628.3708828",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "Architectures for AI.",
+      "first_author": "Steven K. Reinhardt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4414571785",
+      "doi": "https://doi.org/10.1016/j.xcrm.2025.102374",
+      "institution": "Chinese Academy of Medical Sciences & Peking Union Medical College",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02drdmm93"
+    },
+    {
+      "title": "Tile-Level Pipeline for Linear Scalable Stencil Computation on AMD AI Engines.",
+      "first_author": "Zhenyu Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953488",
+      "doi": "https://doi.org/10.1145/3706628.3708822",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "Neural Network Inference in High-Performance Computing: Closing the Gap for FINN based Reconfigurable Accelerators.",
+      "first_author": "Linus Jungemann",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953632",
+      "doi": "https://doi.org/10.1145/3706628.3708857",
+      "institution": "Paderborn University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/058kzsd48"
+    },
+    {
+      "title": "Resource Scheduling for Real-Time Machine Learning.",
+      "first_author": "Suyash Vardhan Singh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407953496",
+      "doi": "https://doi.org/10.1145/3706628.3708848",
+      "institution": "University of South Carolina",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02b6qw903"
+    }
+  ]
+}
