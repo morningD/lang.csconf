@@ -1,0 +1,975 @@
+{
+  "conference": "SDM",
+  "year": 2023,
+  "total_papers": 111,
+  "total_matched": 107,
+  "total_with_affiliation": 42,
+  "coverage_pct": 37.8,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Adaptive Label Smoothing To Regularize Large-Scale Graph Training.",
+      "first_author": "Kaixiong Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3196741022",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch7",
+      "institution": "Rice University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008zs3103"
+    },
+    {
+      "title": "Robust Learning via Golden Symmetric Loss of (un)Trusted Labels.",
+      "first_author": "Amirmasoud Ghiassi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3130306060",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch64",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "Traceable Automatic Feature Transformation via Cascading Actor-Critic Agents.",
+      "first_author": "Meng Xiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398148",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch87",
+      "institution": "Computer Network Information Center",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01s0wyf50"
+    },
+    {
+      "title": "Mini-Batch Learning Strategies for modeling long term temporal dependencies: A study in environmental applications.",
+      "first_author": "Shaoming Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398062",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch73",
+      "institution": null
+    },
+    {
+      "title": "Meta-Learning with Motif-based Task Augmentation for Few-Shot Molecular Property Prediction.",
+      "first_author": "Ziqiao Meng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397996",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch91",
+      "institution": null
+    },
+    {
+      "title": "Uncertainty in Selective Bagging: A Dynamic Bi-objective Optimization Model.",
+      "first_author": "Mansoureh Maadi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394976",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch27",
+      "institution": null
+    },
+    {
+      "title": "UFNRec: Utilizing False Negative Samples for Sequential Recommendation.",
+      "first_author": "Xiaoyang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397885",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch6",
+      "institution": null
+    },
+    {
+      "title": "Data Mining Challenges and Opportunities to Achieve Net Zero Carbon Emissions: Focus on Electrified Vehicles.",
+      "first_author": "Mingzhou Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394989",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch108",
+      "institution": "University of Minnesota",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/017zqws13"
+    },
+    {
+      "title": "Probabilistic Decomposition Transformer for Time Series Forecasting.",
+      "first_author": "Junlong Tong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397734",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch54",
+      "institution": null
+    },
+    {
+      "title": "Heterogeneous Graph Contrastive Multi-view Learning.",
+      "first_author": "Zehong Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398449",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch16",
+      "institution": null
+    },
+    {
+      "title": "Influence without Authority: Maximizing Information Coverage in Hypergraphs.",
+      "first_author": "Peiyan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393518",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch2",
+      "institution": null
+    },
+    {
+      "title": "A Two-View EEG Representation for Brain Cognition by Composite Temporal-Spatial Contrastive Learning.",
+      "first_author": "Zheng Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395064",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch38",
+      "institution": null
+    },
+    {
+      "title": "BDA: Bandit-based Transferable AutoAugment.",
+      "first_author": "Shan Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398201",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch62",
+      "institution": null
+    },
+    {
+      "title": "Penalized Non-Linear Canonical Correlation Analysis for Ordinal Data with Application to the International Classification of Functioning, Disability and Health.",
+      "first_author": "Jan Gertheiss",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "It's PageRank All The Way Down: Simplifying Deep Graph Networks.",
+      "first_author": "Dominic Jack",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395059",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch20",
+      "institution": null
+    },
+    {
+      "title": "An Interpretable Measure of Dataset Complexity for Imbalanced Classification Problems.",
+      "first_author": "Jonatan Møller Nuutinen Gøttcke",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395051",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch29",
+      "institution": "Department of Physics, Mathematics and Informatics",
+      "institution_country": "BY",
+      "institution_ror": "https://ror.org/023sm4k53"
+    },
+    {
+      "title": "Eco-PiNN: A Physics-informed Neural Network for Eco-toll Estimation.",
+      "first_author": "Yan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398009",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch94",
+      "institution": null
+    },
+    {
+      "title": "XDC: Adaptive Cross Domain Short Text Clustering.",
+      "first_author": "Saed Rezayi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395072",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch104",
+      "institution": null
+    },
+    {
+      "title": "Multi-state Survival Analysis using Pseudo value-based Deep Neural Networks.",
+      "first_author": "Md Mahmudur Rahman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397926",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch85",
+      "institution": null
+    },
+    {
+      "title": "Fairness-aware Multi-view Clustering.",
+      "first_author": "Lecheng Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397822",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch96",
+      "institution": null
+    },
+    {
+      "title": "A Lagrangian-based approach to learn distance metrics for clustering with minimal data transformation.",
+      "first_author": "Rodrigo Randel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398193",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch15",
+      "institution": null
+    },
+    {
+      "title": "Debiased Imitation Learning for Modulated Temporal Point Processes.",
+      "first_author": "Zhuoqun Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397910",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch52",
+      "institution": null
+    },
+    {
+      "title": "Abnormal Event Detection via Hypergraph Contrastive Learning.",
+      "first_author": "Bo Yan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393358",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch80",
+      "institution": null
+    },
+    {
+      "title": "An Efficient Algorithm for Assessing the Number of st-Paths in Large Graphs.",
+      "first_author": "Giulia Punzi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395063",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch33",
+      "institution": null
+    },
+    {
+      "title": "Towards Trustworthy Representation Learning.",
+      "first_author": "Sheng Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394964",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch109",
+      "institution": "University of Virginia",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0153tk833"
+    },
+    {
+      "title": "Multimodal Graph Learning for Cross-Modal Retrieval.",
+      "first_author": "Jingyou Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393285",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch17",
+      "institution": null
+    },
+    {
+      "title": "Node ranking in labeled networks.",
+      "first_author": "Chamalee Wickrama Arachchi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398151",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch47",
+      "institution": "University of Helsinki",
+      "institution_country": "FI",
+      "institution_ror": "https://ror.org/040af2s02"
+    },
+    {
+      "title": "Learning to Learn Task Transformations for Improved Few-Shot Classification.",
+      "first_author": "Guangtao Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393376",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch88",
+      "institution": null
+    },
+    {
+      "title": "Balancing Task Coverage and Expert Workload in Team Formation.",
+      "first_author": "Karan Vombatkere",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398173",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch72",
+      "institution": null
+    },
+    {
+      "title": "PMP: Privacy-Aware Matrix Profile against Sensitive Pattern Inference for Time Series.",
+      "first_author": "Li Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394979",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch100",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "Towards Learning in Grey Spatiotemporal Systems: A Prophet to Non-consecutive Spatiotemporal Dynamics.",
+      "first_author": "Zhengyang Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393408",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch22",
+      "institution": null
+    },
+    {
+      "title": "Coarse-to-Fine Open Information Extraction via Relation Oriented Reading Comprehension.",
+      "first_author": "Tingxin Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395075",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch103",
+      "institution": null
+    },
+    {
+      "title": "A Linkage-based Doubly Imbalanced Graph Learning Framework for Face Clustering.",
+      "first_author": "Huafeng Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398052",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch74",
+      "institution": "Alibaba Group (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00k642b80"
+    },
+    {
+      "title": "An Index For Temporal Closeness Computation in Evolving Graphs.",
+      "first_author": "Lutz Oettershagen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394969",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch32",
+      "institution": "University of Bonn",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/041nas322"
+    },
+    {
+      "title": "Causal Discovery by Graph Attention Reinforcement Learning.",
+      "first_author": "Dezhi Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397963",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch4",
+      "institution": null
+    },
+    {
+      "title": "AlignGraph: A Group of Generative Models for Graphs.",
+      "first_author": "Kimia Shayestehfard",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393466",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch31",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "MC-SQ: A Highly Accurate Ensemble for Multi-class Quantification.",
+      "first_author": "Zahra Donyavi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398006",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch70",
+      "institution": null
+    },
+    {
+      "title": "A Hidden Markov Forest Model for Terrain-Aware Flood Inundation Mapping from Earth Imagery.",
+      "first_author": "Zhe Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395055",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch36",
+      "institution": null
+    },
+    {
+      "title": "Group AdaBoost with Fairness Constraint.",
+      "first_author": "Zhiyu Xue",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398338",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch97",
+      "institution": "Michigan State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05hs6h993"
+    },
+    {
+      "title": "Feature Enhanced Zero-Shot Stance Detection via Contrastive Learning.",
+      "first_author": "Xuechen Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395070",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch101",
+      "institution": null
+    },
+    {
+      "title": "Time-delayed Multivariate Time Series Predictions.",
+      "first_author": "Hao Niu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395061",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch37",
+      "institution": null
+    },
+    {
+      "title": "Embedding Transfer with Enhanced Correlation Modeling for Cross-Domain Recommendation.",
+      "first_author": "Shilei Cao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393348",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch9",
+      "institution": null
+    },
+    {
+      "title": "CADENCE: Community-Aware Detection of Dynamic Network States.",
+      "first_author": "Maxwell McNeil",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397903",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch1",
+      "institution": null
+    },
+    {
+      "title": "A General-Purpose Transferable Predictor for Neural Architecture Search.",
+      "first_author": "Fred X. Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397863",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch81",
+      "institution": "Huawei Technologies (Canada)",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/026venb53"
+    },
+    {
+      "title": "GIST: Graph Inference for Structured Time Series.",
+      "first_author": "Boya Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398016",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch49",
+      "institution": "University at Albany, State University of New York",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/012zs8222"
+    },
+    {
+      "title": "A Multi-scale Interaction Motion Network for Action Recognition Based on Capsule Network.",
+      "first_author": "Xiangping Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398056",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch57",
+      "institution": null
+    },
+    {
+      "title": "A novel reject option applied to sleep stage scoring.",
+      "first_author": "Dries Van der Plas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393460",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch92",
+      "institution": "University of Antwerp",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/008x57b05"
+    },
+    {
+      "title": "Hierarchical Reinforced Urban Planning: Jointly Steering Region and Block Configurations.",
+      "first_author": "Pengfei Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395071",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch39",
+      "institution": null
+    },
+    {
+      "title": "Max-Min Diversification with Fairness Constraints: Exact and Approximation Algorithms.",
+      "first_author": "Yanhao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398082",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch11",
+      "institution": "East China Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02n96ep67"
+    },
+    {
+      "title": "Attention-Based Multi-modal Missing Value Imputation for Time Series Data with High Missing Rate.",
+      "first_author": "Khandakar Tanvir Ahmed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397727",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch53",
+      "institution": null
+    },
+    {
+      "title": "Ranking with submodular functions on the fly.",
+      "first_author": "Guangyi Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398026",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch68",
+      "institution": "KTH Royal Institute of Technology",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/026vcq606"
+    },
+    {
+      "title": "Saliency-Augmented Memory Completion for Continual Learning.",
+      "first_author": "Guangji Bai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393322",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch28",
+      "institution": "Emory Healthcare",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00yksxf10"
+    },
+    {
+      "title": "Deep Contrastive One-Class Time Series Anomaly Detection.",
+      "first_author": "Rui Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398010",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch78",
+      "institution": "School of Computer Science and Engineering, Beihang Uni-versity, Beijing, China",
+      "institution_country": null,
+      "raw_affiliation": "School of Computer Science and Engineering, Beihang Uni-versity, Beijing, China"
+    },
+    {
+      "title": "DyFormer : A Scalable Dynamic Graph Transformer with Provable Benefits on Generalization Ability.",
+      "first_author": "Weilin Cong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Heavy Nodes in a Small Neighborhood: Algorithms and Applications.",
+      "first_author": "Huiping Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394986",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch35",
+      "institution": null
+    },
+    {
+      "title": "A Temporal Graphlet Kernel For Classifying Dissemination in Evolving Networks.",
+      "first_author": "Lutz Oettershagen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397990",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch3",
+      "institution": null
+    },
+    {
+      "title": "TEM: High Utility Metric Differential Privacy on Text.",
+      "first_author": "Ricardo Silva Carvalho",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3185974173",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch99",
+      "institution": null
+    },
+    {
+      "title": "Data-centric AI: Perspectives and Challenges.",
+      "first_author": "Daochen Zha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395065",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch106",
+      "institution": null
+    },
+    {
+      "title": "Statistically-sound Knowledge Discovery from Data.",
+      "first_author": "Matteo Riondato",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395058",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch107",
+      "institution": "Amherst College",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/028vqfs63"
+    },
+    {
+      "title": "Harvester: Principled Factorization-based Temporal Tensor Granularity Estimation.",
+      "first_author": "Ravdeep S. Pasricha",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Matrix Profile XXVIII: Discovering Multi-Dimensional Time Series Anomalies with K of N Anomaly Detection†.",
+      "first_author": "Sadaf Tafazoli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398138",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch77",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "MoVAE: A Variational AutoEncoder for Molecular Graph Generation.",
+      "first_author": "Zerun Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397927",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch58",
+      "institution": null
+    },
+    {
+      "title": "CESED: Exploiting Hyperspherical Predefined Evenly-Distributed Class Centroids for OOD Detection.",
+      "first_author": "Shuai Feng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395056",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch30",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Making a Computational Attorney.",
+      "first_author": "Dell Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393326",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch111",
+      "institution": null
+    },
+    {
+      "title": "Physics-guided Graph Diffusion Network for Combining Heterogeneous Simulated Data: An Application in Predicting Stream Water Temperature.",
+      "first_author": "Xiaowei Jia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397887",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch41",
+      "institution": null
+    },
+    {
+      "title": "ProGReST: Prototypical Graph Regression Soft Trees for Molecular Property Prediction.",
+      "first_author": "Dawid Rymarczyk",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398198",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch43",
+      "institution": "Jagiellonian University",
+      "institution_country": "PL",
+      "institution_ror": "https://ror.org/03bqmcz70"
+    },
+    {
+      "title": "Extrinsic-Intrinsic Representation Learning Framework for Drug Discovery.",
+      "first_author": "Tian Xia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397976",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch59",
+      "institution": "Auburn University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02v80fc35"
+    },
+    {
+      "title": "Reinforcement Learning Guided Multi-Objective Exam Paper Generation.",
+      "first_author": "Yuhu Shang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398259",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch93",
+      "institution": "Tianjin University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/018rbtf37"
+    },
+    {
+      "title": "Why Are We Waiting? Discovering Interpretable Models for Predicting Sojourn and Waiting Times.",
+      "first_author": "Boris Wiegand",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Adversarial Hard Negative Generation for Complementary Graph Contrastive Learning.",
+      "first_author": "Senzhang Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398184",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch19",
+      "institution": null
+    },
+    {
+      "title": "Reinforced EM Algorithm for Clustering with Gaussian Mixture Models.",
+      "first_author": "Joshua Tobin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397877",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch14",
+      "institution": "Trinity College Dublin",
+      "institution_country": "IE",
+      "institution_ror": "https://ror.org/02tyrky19"
+    },
+    {
+      "title": "Optimal Smooth Approximation for Quantile Matrix Factorization.",
+      "first_author": "Peng Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398071",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch67",
+      "institution": null
+    },
+    {
+      "title": "Exact and Heuristic Approaches to Speeding Up the MSM Time Series Distance Computation.",
+      "first_author": "Jana Holznigenkemper",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397794",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch51",
+      "institution": "Philipps University of Marburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01rdrb571"
+    },
+    {
+      "title": "Extension of the Dip-test Repertoire - Efficient and Differentiable p-value Calculation for Clustering.",
+      "first_author": "Lena G. M. Bauer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393491",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch13",
+      "institution": "University of Vienna",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/03prydq77"
+    },
+    {
+      "title": "Fisher Scoring Method for Neural Networks Optimization.",
+      "first_author": "Jackson de Faria",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398210",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch84",
+      "institution": "Universidade Federal de Minas Gerais",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/0176yjw32"
+    },
+    {
+      "title": "Sign-Regularized Multi-Task Learning.",
+      "first_author": "Guangji Bai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3132072091",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch89",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "Hierarchical Neural Topic Model with Embedding Cluster and Neural Variational Inference.",
+      "first_author": "Ningjing Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394984",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch105",
+      "institution": null
+    },
+    {
+      "title": "Representation Learning on Dynamic Network of Networks.",
+      "first_author": "Si Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4313639953",
+      "doi": "https://doi.org/10.1016/j.compbiomed.2022.106521",
+      "institution": "Northeastern University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03awzbc87"
+    },
+    {
+      "title": "Gotta: Generative Few-shot Question Answering by Prompt-based Cloze Data Augmentation.",
+      "first_author": "Xiusi Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4379933485",
+      "doi": "https://doi.org/10.48550/arxiv.2306.04101",
+      "institution": null
+    },
+    {
+      "title": "StAGN: Spatial-Temporal Adaptive Graph Network via Contrastive Learning for Sleep Stage Classification.",
+      "first_author": "Junyang Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395069",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch23",
+      "institution": null
+    },
+    {
+      "title": "Optimal Intervention on Weighted Networks via Edge Centrality.",
+      "first_author": "Dongyue Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398021",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch48",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "STM-GAIL: Spatial-Temporal Meta-GAIL for Learning Diverse Human Driving Strategies.",
+      "first_author": "Yingxue Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394967",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch24",
+      "institution": null
+    },
+    {
+      "title": "Taxonomy-Guided Fine-Grained Entity Set Expansion.",
+      "first_author": "Jinfeng Xiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397912",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch71",
+      "institution": null
+    },
+    {
+      "title": "Context-aware Domain Adaptation for Time Series Anomaly Detection.",
+      "first_author": "Kwei-Herng Lai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393071",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch76",
+      "institution": null
+    },
+    {
+      "title": "Subgraph Centralization: A Necessary Step for Graph Anomaly Detection.",
+      "first_author": "Zhong Zhuang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398195",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch79",
+      "institution": null
+    },
+    {
+      "title": "Scalable Batch Acquisition for Deep Bayesian Active Learning.",
+      "first_author": "Aleksandr Rubashevskii",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398199",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch83",
+      "institution": "Skolkovo Institute of Science and Technology",
+      "institution_country": "RU",
+      "institution_ror": "https://ror.org/03f9nc143"
+    },
+    {
+      "title": "Missed Opportunities in Fair AI.",
+      "first_author": "Nripsuta Ani Saxena",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395073",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch110",
+      "institution": null
+    },
+    {
+      "title": "Pluggable Deep Thompson Sampling with Applications to Recommendation.",
+      "first_author": "Lu Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398203",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch8",
+      "institution": null
+    },
+    {
+      "title": "Adaptive Precision Training (AdaPT): A dynamic quantized training approach for DNNs.",
+      "first_author": "Lorenz Kummer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398249",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch63",
+      "institution": "University of Vienna",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/03prydq77"
+    },
+    {
+      "title": "RELIANT: Fair Knowledge Distillation for Graph Neural Networks.",
+      "first_author": "Yushun Dong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393360",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch18",
+      "institution": "University of Virginia",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0153tk833"
+    },
+    {
+      "title": "Spatiotemporal Classification with limited labels using Constrained Clustering for large datasets.",
+      "first_author": "Praveen Ravirathinam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393494",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch55",
+      "institution": "University of Minnesota",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/017zqws13"
+    },
+    {
+      "title": "CISum: Learning Cross-modality Interaction to Enhance Multimodal Semantic Coverage for Multimodal Summarization.",
+      "first_author": "Litian Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393364",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch42",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "Domain Disentangled Meta-Learning.",
+      "first_author": "Xin Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397860",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch61",
+      "institution": null
+    },
+    {
+      "title": "Estimating Propensity Scores with Deep Adaptive Variable Selection.",
+      "first_author": "Zhixuan Chu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398162",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch82",
+      "institution": null
+    },
+    {
+      "title": "ML4C: Seeing Causality Through Latent Vicinity.",
+      "first_author": "Haoyue Dai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365395068",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch26",
+      "institution": null
+    },
+    {
+      "title": "NEEDED: Introducing Hierarchical Transformer to Eye Diseases Diagnosis.",
+      "first_author": "Xu Ye",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393605",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch75",
+      "institution": null
+    },
+    {
+      "title": "Concept Discovery for Fast Adaptation.",
+      "first_author": "Shengyu Feng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397968",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch65",
+      "institution": null
+    },
+    {
+      "title": "Multi-Task Learning with Prior Information.",
+      "first_author": "Mengyuan Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398246",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch66",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "STABLE: Identifying and Mitigating Instability in Embeddings of the Degenerate Core.",
+      "first_author": "David Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398172",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch46",
+      "institution": null
+    },
+    {
+      "title": "Probabilistic Inverse Modeling: An Application in Hydrology.",
+      "first_author": "Somya Sharma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393485",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch95",
+      "institution": null
+    },
+    {
+      "title": "Knowledge-Enhanced Semi-Supervised Federated Learning for Aggregating Heterogeneous Lightweight Clients in IoT.",
+      "first_author": "Jiaqi Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397981",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch56",
+      "institution": null
+    },
+    {
+      "title": "A Physics-guided NN-based Approach for Tropical Cyclone Intensity Estimation.",
+      "first_author": "Ziheng Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365393337",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch44",
+      "institution": null
+    },
+    {
+      "title": "Learning Causal Structure on Mixed Data with Tree-Structured Functional Models.",
+      "first_author": "Tian Qin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398380",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch69",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Beyond The Evidence Lower Bound: Dual Variational Graph Auto-Encoders For Node Clustering.",
+      "first_author": "Nairouz Mrabah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365397975",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch12",
+      "institution": null
+    },
+    {
+      "title": "Physics-Guided Meta-Learning Method in Baseflow Prediction over Large Regions.",
+      "first_author": "Shengyu Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394972",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch25",
+      "institution": null
+    },
+    {
+      "title": "Understanding Influence Maximization via Higher-Order Decomposition.",
+      "first_author": "Zonghan Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398242",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch86",
+      "institution": "Mississippi State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0432jq872"
+    },
+    {
+      "title": "On Improving Fairness of AI Models with Synthetic Minority Oversampling Techniques.",
+      "first_author": "Yan Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398142",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch98",
+      "institution": null
+    },
+    {
+      "title": "Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples.",
+      "first_author": "Jianxiang Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398066",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch5",
+      "institution": "East China Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02n96ep67"
+    },
+    {
+      "title": "Anomaly Detection Networks and Fuzzy Control Modules for Energy Grid Management with Q-Learning-Based Decision Making.",
+      "first_author": "Jia-Hao Syu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398207",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch45",
+      "institution": null
+    },
+    {
+      "title": "Estimating Latent Population Flows from Aggregated Data via Inversing Multi-Marginal Optimal Transport.",
+      "first_author": "Sikun Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365394975",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch21",
+      "institution": null
+    },
+    {
+      "title": "Toward Theoretical Guidance for Two Common Questions in Practical Cross-Validation based Hyperparameter Selection.",
+      "first_author": "Parikshit Ram",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4365398273",
+      "doi": "https://doi.org/10.1137/1.9781611977653.ch90",
+      "institution": "IBM Research - Thomas J. Watson Research Center",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0265w5591"
+    }
+  ]
+}
