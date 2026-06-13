@@ -1,0 +1,883 @@
+{
+  "conference": "CLUSTER",
+  "year": 2013,
+  "total_papers": 91,
+  "total_matched": 82,
+  "total_with_affiliation": 81,
+  "coverage_pct": 89.0,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "BioExtract Server, a Web-based workflow enabling system, leveraging iPlant collaborative resources.",
+      "first_author": "Carol Lushbough",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Parallelization of software pipelines using the mpififo Tool.",
+      "first_author": "Nathan T. Weeks",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2005343123",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702641",
+      "institution": "Iowa State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04rswrd78"
+    },
+    {
+      "title": "ConHA: An SOA-based API gateway for consolidating heterogeneous HA clusters.",
+      "first_author": "Mingyu Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2029226834",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702645",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Design of network topology aware scheduling services for large InfiniBand clusters.",
+      "first_author": "Hari Subramoni",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2025789744",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702677",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "EDR: An energy-aware runtime load distribution system for data-intensive applications in the cloud.",
+      "first_author": "Bo Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2036004482",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702674",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "A cost-aware region-level data placement scheme for hybrid parallel I/O systems.",
+      "first_author": "Shuibing He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2084717310",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702615",
+      "institution": "Illinois Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037t3ry66"
+    },
+    {
+      "title": "LVFS: A scalable big data scientific storage system.",
+      "first_author": "Navid Golpayegani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2051199407",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702687",
+      "institution": "Sigma Space (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0187tsx41"
+    },
+    {
+      "title": "A scalable and portable approach to accelerate hybrid HPL on heterogeneous CPU-GPU clusters.",
+      "first_author": "Rong Shi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2073306876",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702619",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "STREAMER: A distributed framework for incremental closeness centrality computation.",
+      "first_author": "Ahmet Erdem Sariyüce",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2077135450",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702680",
+      "institution": "DiscoveryBioMed (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01cj6ar20"
+    },
+    {
+      "title": "Distance-aware virtual cluster performance optimization: A hadoop case study.",
+      "first_author": "Xinkui Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1994683229",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702618",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "Optimizations on the Parallel Virtual File System implementation integrated with Object-Based Storage Devices.",
+      "first_author": "Cengiz Karakoyunlu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2066075680",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702660",
+      "institution": "University of Connecticut",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02der9h97"
+    },
+    {
+      "title": "On service migration in the cloud to facilitate mobile accesses.",
+      "first_author": "Yang Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2044181062",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702646",
+      "institution": "University of New Brunswick",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05nkf0n29"
+    },
+    {
+      "title": "Mercury: Enabling remote procedure call for high-performance computing.",
+      "first_author": "Jérome Soumagne",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1966142043",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702617",
+      "institution": "The HDF Group",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/024jrkp82"
+    },
+    {
+      "title": "Unified and efficient HEC storage system with a working-set based reorganization scheme.",
+      "first_author": "Junjie Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2021990085",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702620",
+      "institution": "Texas Tech University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0405mnx93"
+    },
+    {
+      "title": "Lit: A high performance massive data computing framework based on CPU/GPU cluster.",
+      "first_author": "Yanlong Zhai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1975764872",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702614",
+      "institution": "Beijing Institute of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01skt4w74"
+    },
+    {
+      "title": "MPI collective I/O based on advanced reservations to obtain performance guarantees from shared storage systems.",
+      "first_author": "Yusuke Tanimura",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2044309799",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702686",
+      "institution": "National Institute of Advanced Industrial Science and Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/01703db54"
+    },
+    {
+      "title": "ECG identification of arrhythmias by using an associative Petri net.",
+      "first_author": "Dong-Her Shih",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2056522583",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702643",
+      "institution": "National Yunlin University of Science and Technology",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/04qkq2m54"
+    },
+    {
+      "title": "Understanding the performance of stencil computations on Intel's Xeon Phi.",
+      "first_author": "Joshua Peraza",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1998641004",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702651",
+      "institution": "University of California San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "Using clusters in undergraduate research: Distributed animation rendering, photo processing, and image transcoding.",
+      "first_author": "Peter Bui",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PEXTA: A Parallel Chunked Extendible Dense Array I/O for global array (GA).",
+      "first_author": "Gideon Nimako",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2014726140",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702688",
+      "institution": "University of the Witwatersrand",
+      "institution_country": "ZA",
+      "institution_ror": "https://ror.org/03rp50x72"
+    },
+    {
+      "title": "GGAS: Global GPU address spaces for efficient communication in heterogeneous clusters.",
+      "first_author": "Lena Oden",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1988756252",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702638",
+      "institution": "Heidelberg University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/038t36y30"
+    },
+    {
+      "title": "Co-processing SPMD computation on CPUs and GPUs cluster.",
+      "first_author": "Hui Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2019364330",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702632",
+      "institution": "Indiana University Bloomington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02k40bc56"
+    },
+    {
+      "title": "Twitter bootstrap and AngularJS: Frontend frameworks to expedite science gateway development.",
+      "first_author": "Viknes Balasubramanee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2009108038",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702640",
+      "institution": "Indiana University Bloomington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02k40bc56"
+    },
+    {
+      "title": "Model-driven multisite workflow scheduling.",
+      "first_author": "Ketan Maheshwari",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1988746895",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702647",
+      "institution": "Argonne National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gvnxz63"
+    },
+    {
+      "title": "Authoring a Science Gateway Cookbook.",
+      "first_author": "Suresh Marru",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2042362797",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702702",
+      "institution": "Indiana University Bloomington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02k40bc56"
+    },
+    {
+      "title": "Towards high-performance and cost-effective distributed storage systems with information dispersal algorithms.",
+      "first_author": "Dongfang Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2078455494",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702655",
+      "institution": "Illinois Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037t3ry66"
+    },
+    {
+      "title": "CyberGIS Gateway for enabling data-rich geospatial research and education.",
+      "first_author": "Yan Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2015501319",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702694",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Write bandwidth optimization of online Erasure Code based cluster file system.",
+      "first_author": "Lin Yan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2019527371",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702661",
+      "institution": "Beijing Institute of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01skt4w74"
+    },
+    {
+      "title": "Thermal aware automated load balancing for HPC applications.",
+      "first_author": "Harshitha Menon",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2162437039",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702627",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Distributed data provenance for large-scale data-intensive computing.",
+      "first_author": "Dongfang Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1976306141",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702685",
+      "institution": "Illinois Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037t3ry66"
+    },
+    {
+      "title": "Application power profiling on IBM Blue Gene/Q.",
+      "first_author": "Sean Wallace",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1983472241",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702682",
+      "institution": "Argonne National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gvnxz63"
+    },
+    {
+      "title": "A multi-level approach for understanding I/O activity in HPC applications.",
+      "first_author": "Huong Luu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2073567808",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702690",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Rockhopper, a true HPC system built with cloud concepts.",
+      "first_author": "Richard Knepper",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Expediting scientific data analysis with reorganization of data.",
+      "first_author": "Bin Dong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1993172344",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702675",
+      "institution": "Lawrence Berkeley National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jbv0t02"
+    },
+    {
+      "title": "HPC runtime support for fast and power efficient locking and synchronization.",
+      "first_author": "Hakan Akkan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2039322909",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702659",
+      "institution": "New Mexico Consortium",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01qnpp968"
+    },
+    {
+      "title": "A synthetic bursty workload generation method for web 2.0 benchmark.",
+      "first_author": "Jianwei Yin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2000600828",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702652",
+      "institution": "Zhejiang University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05mx0wr29"
+    },
+    {
+      "title": "A-Cache: Resolving cache interference for distributed storage with mixed workloads.",
+      "first_author": "Bharath Ravi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1968600494",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702625",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "MOLAR: A cost-efficient, high-performance hybrid storage cache.",
+      "first_author": "Yi Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fast data analysis with integrated statistical metadata in scientific datasets.",
+      "first_author": "Jialin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1986056848",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702623",
+      "institution": "Texas Tech University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0405mnx93"
+    },
+    {
+      "title": "Developing communication-aware service placement frameworks in the Cloud economy.",
+      "first_author": "Chao Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2012799345",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702668",
+      "institution": "University of Warwick",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01a77tt86"
+    },
+    {
+      "title": "Parallelizing windowed stream joins in a shared-nothing cluster.",
+      "first_author": "Abhirup Chakraborty",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2001785422",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702636",
+      "institution": "Indiana University Bloomington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02k40bc56"
+    },
+    {
+      "title": "A case of system-wide power management for scientific applications.",
+      "first_author": "Zhuo Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2071796873",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702681",
+      "institution": "Auburn University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02v80fc35"
+    },
+    {
+      "title": "Dynamic slot allocation technique for MapReduce clusters.",
+      "first_author": "Shanjiang Tang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2158876212",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702631",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "Insight and reduction of MapReduce stragglers in heterogeneous environment.",
+      "first_author": "Xia Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2026792149",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702673",
+      "institution": "Beijing Technology and Business University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013e0zm98"
+    },
+    {
+      "title": "Communication and topology-aware load balancing in Charm++ with TreeMatch.",
+      "first_author": "Emmanuel Jeannot",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1965599876",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702666",
+      "institution": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02kvxyf05"
+    },
+    {
+      "title": "On transactional memory concurrency control in distributed real-time programs.",
+      "first_author": "Sachin Hirve",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2066901376",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702669",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "Influence of InfiniBand FDR on the performance of remote GPU virtualization.",
+      "first_author": "Carlos Reaño",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2118791181",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702662",
+      "institution": "Universitat Jaume I",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/02ws1xc11"
+    },
+    {
+      "title": "Distributed resource exchange: Virtualized resource management for SR-IOV InfiniBand clusters.",
+      "first_author": "Adit Ranadive",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2064078007",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702653",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Counting sort for the live migration of virtual machines.",
+      "first_author": "Qingxin Zou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2049655169",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702664",
+      "institution": "Beijing Institute of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01skt4w74"
+    },
+    {
+      "title": "Force-directed geographical load balancing and scheduling for batch jobs in distributed datacenters.",
+      "first_author": "Hadi Goudarzi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1985076973",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702637",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Teaching undergraduates using local virtual clusters.",
+      "first_author": "Richard A. Brown",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2065876989",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702622",
+      "institution": "St. Olaf College",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01q7w1f47"
+    },
+    {
+      "title": "Building an open Genome Wide Association Study (GWAS) platform.",
+      "first_author": "Liya Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2044955672",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702696",
+      "institution": "Cold Spring Harbor Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02qz8b764"
+    },
+    {
+      "title": "Enabling multi-task computation on Galaxy-based gateways using swift.",
+      "first_author": "Ketan Maheshwari",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1997795555",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702701",
+      "institution": "Argonne National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gvnxz63"
+    },
+    {
+      "title": "User-friendly metaworkflows in quantum chemistry.",
+      "first_author": "Sonja Herres-Pawlis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1973926816",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702700",
+      "institution": "Ludwig-Maximilians-Universität München",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05591te55"
+    },
+    {
+      "title": "Using a shared, remote cluster for teaching HPC.",
+      "first_author": "Clay Carley",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A new design of RDMA-based small message channels for InfiniBand clusters.",
+      "first_author": "Matthew Small",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2042879966",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702671",
+      "institution": "Florida State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05g3dte14"
+    },
+    {
+      "title": "Improving performance and energy efficiency of matrix multiplication via pipeline broadcast.",
+      "first_author": "Li Tan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2093796545",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702672",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "Capturing inter-application interference on clusters.",
+      "first_author": "Aamer Shah",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Checkpoint-restart for a network of virtual machines.",
+      "first_author": "Rohan Garg",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2034881140",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702626",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Structured Participation Toolkit: An enabler for knowledge production in Science Gateway.",
+      "first_author": "Mary J. Roderick",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2081058323",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702699",
+      "institution": "University of Washington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00cvxb145"
+    },
+    {
+      "title": "Accelerating subsurface transport simulation on heterogeneous clusters.",
+      "first_author": "Oreste Villa",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1985691044",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702656",
+      "institution": "Nvidia (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/02kr42612"
+    },
+    {
+      "title": "V2-Code: A new non-MDS array code with optimal reconstruction performance for RAID-6.",
+      "first_author": "Ping Xie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An object interface storage node for clustered file systems.",
+      "first_author": "Orko Momin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2157620365",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702624",
+      "institution": "University of Connecticut",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02der9h97"
+    },
+    {
+      "title": "Science gateway security recommendations.",
+      "first_author": "Jim Basney",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2013378195",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702697",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Zput: A speedy data uploading approach for the Hadoop Distributed File System.",
+      "first_author": "Youwei Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Toward a unified object storage foundation for scalable storage systems.",
+      "first_author": "Cengiz Karakoyunlu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2020518411",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702691",
+      "institution": "University of Connecticut",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02der9h97"
+    },
+    {
+      "title": "Active-learning-based surrogate models for empirical performance tuning.",
+      "first_author": "Prasanna Balaprakash",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2009488259",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702683",
+      "institution": "Argonne National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gvnxz63"
+    },
+    {
+      "title": "Optimizing blocking and nonblocking reduction operations for multicore systems: Hierarchical design and implementation.",
+      "first_author": "Manjunath Gorentla Venkata",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2013390839",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702676",
+      "institution": "Oak Ridge National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01qz5mb56"
+    },
+    {
+      "title": "Integrating deadline-modification SCAN algorithm to Xen-based cloud platform.",
+      "first_author": "Tseng-Yi Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1963850107",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702639",
+      "institution": "National Tsing Hua University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00zdnkx70"
+    },
+    {
+      "title": "Making work queue cluster-friendly for data intensive scientific applications.",
+      "first_author": "Michael Albrecht",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2165678090",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702628",
+      "institution": "University of Notre Dame",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00mkhxb43"
+    },
+    {
+      "title": "FlexQuery: An online query system for interactive remote visual data exploration at large scale.",
+      "first_author": "Hongbo Zou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2096165224",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702635",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Globus Nexus: An identity, profile, and group management platform for science gateways and other collaborative science applications.",
+      "first_author": "Rachana Ananthakrishnan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The WeFold gateway: Enabling large-scale science coopetition.",
+      "first_author": "Silvia Crivelli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2131737978",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702698",
+      "institution": "University of California, Davis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05rrcem69"
+    },
+    {
+      "title": "JUMMP: Job Uninterrupted Maneuverable MapReduce Platform.",
+      "first_author": "William Clay Moody",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1984399651",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702650",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "Optimizing power allocation to CPU and memory subsystems in overprovisioned HPC systems.",
+      "first_author": "Osman Sarood",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2159175944",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702684",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "GPU-accelerated scalable solver for banded linear systems.",
+      "first_author": "Hang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2158140794",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702612",
+      "institution": "George Washington University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00y4zzh67"
+    },
+    {
+      "title": "Automotive big data.",
+      "first_author": "Tim Barrett",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1992846799",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702644",
+      "institution": null
+    },
+    {
+      "title": "Nekkloud: A software environment for high-order finite element analysis on clusters and clouds.",
+      "first_author": "Jeremy Cohen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2087483558",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702616",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "AptStore: Dynamic storage management for hadoop.",
+      "first_author": "Krish K. R.",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2144544000",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702657",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "K MapReduce: A scalable tool for data-processing and search/ensemble applications on large-scale supercomputers.",
+      "first_author": "Motohiko Matsuda",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2065431209",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702663",
+      "institution": "RIKEN Center for Computational Science",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/03r519674"
+    },
+    {
+      "title": "Dynamic file striping and data layout transformation on parallel system with fluctuating I/O workload.",
+      "first_author": "Seung Woo Son",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2002039039",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702689",
+      "institution": "Northwestern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/000e0be47"
+    },
+    {
+      "title": "Oncilla: A GAS runtime for efficient resource allocation and data movement in accelerated clusters.",
+      "first_author": "Jeffrey S. Young",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2095888050",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702679",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "The scaling of many-task computing approaches in python on cluster supercomputers.",
+      "first_author": "Monte Lunacek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2103307203",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702678",
+      "institution": "University of Colorado Boulder",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02ttsq026"
+    },
+    {
+      "title": "LittleFe: The high performance computing education appliance.",
+      "first_author": "Mobeen Ludin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2027603211",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702649",
+      "institution": "Shodor",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00af1rw21"
+    },
+    {
+      "title": "I/O scheduling for solid state devices in virtual machines.",
+      "first_author": "Kai Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1974738853",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702654",
+      "institution": "Wuhan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/033vjfk17"
+    },
+    {
+      "title": "Cyberinfrastructure: The key to building successful science gateways.",
+      "first_author": "Gregory J. Davis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2148596961",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702695",
+      "institution": "University of Notre Dame",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00mkhxb43"
+    },
+    {
+      "title": "A parallel optimization method for stencil computation on the domain that is bigger than memory capacity of GPUs.",
+      "first_author": "Guanghao Jin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2057317268",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702633",
+      "institution": "Tokyo Institute of Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/0112mx960"
+    },
+    {
+      "title": "Runtime system design of decoupled execution paradigm for data-intensive high-end computing.",
+      "first_author": "Kun Feng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1978101437",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702642",
+      "institution": "Illinois Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037t3ry66"
+    },
+    {
+      "title": "The Oklahoma PetaStore: Big data on a small budget.",
+      "first_author": "S. Patrick Calhoun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2074306622",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702629",
+      "institution": "University of Oklahoma",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02aqsxs83"
+    },
+    {
+      "title": "Highly optimized full GPU-acceleration of non-hydrostatic weather model SCALE-LES.",
+      "first_author": "Mohamed Wahib",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1988958079",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702667",
+      "institution": "RIKEN Center for Computational Science",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/03r519674"
+    },
+    {
+      "title": "BASE: Benchmark analysis software for energy-efficient solutions in large-scale storage systems.",
+      "first_author": "Tseng-Yi Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2070472873",
+      "doi": "https://doi.org/10.1109/cluster.2013.6702670",
+      "institution": "National Tsing Hua University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00zdnkx70"
+    }
+  ]
+}

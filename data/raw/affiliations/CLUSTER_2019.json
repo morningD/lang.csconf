@@ -1,0 +1,583 @@
+{
+  "conference": "CLUSTER",
+  "year": 2019,
+  "total_papers": 58,
+  "total_matched": 56,
+  "total_with_affiliation": 56,
+  "coverage_pct": 96.6,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Give MPI Threading a Fair Chance: A Study of Multithreaded MPI Designs.",
+      "first_author": "Thananon Patinyasakdikul",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983608561",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891015",
+      "institution": "University of Tennessee at Knoxville",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/020f3ap87"
+    },
+    {
+      "title": "Efficient User-Level Storage Disaggregation for Deep Learning.",
+      "first_author": "Yue Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985313082",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891023",
+      "institution": "Florida State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05g3dte14"
+    },
+    {
+      "title": "Diagnostic Analysis: Directional Relation Graph.",
+      "first_author": "Sandy Kaur",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985352383",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891032",
+      "institution": "IBM Research - Thomas J. Watson Research Center",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0265w5591"
+    },
+    {
+      "title": "Parallelizing Training of Deep Generative Models on Massive Scientific Datasets.",
+      "first_author": "Sam Ade Jacobs",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2978447617",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891012",
+      "institution": "Lawrence Livermore National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/041nk4h53"
+    },
+    {
+      "title": "NORNS: Extending Slurm to Support Data-Driven Workflows through Asynchronous Data Staging.",
+      "first_author": "Alberto Miranda",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2965386444",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891014",
+      "institution": "Barcelona Supercomputing Center",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/05sd8tv96"
+    },
+    {
+      "title": "Cost-efficiency of Large-scale Electronic Structure Simulations with Intel Xeon Phi Processors.",
+      "first_author": "Hoon Ryu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2989065226",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891046",
+      "institution": "Korea Institute of Science & Technology Information",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01k4yrm29"
+    },
+    {
+      "title": "μDBSCAN: An Exact Scalable DBSCAN Algorithm for Big Data Exploiting Spatial Locality.",
+      "first_author": "Aditya Sarma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987282837",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891020",
+      "institution": "Birla Institute of Technology and Science, Pilani",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/001p3jz28"
+    },
+    {
+      "title": "RE-Store: Reliable and Efficient KV-Store with Erasure Coding and Replication.",
+      "first_author": "Yuzhe Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983911629",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891013",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Algorithm-Based Fault Tolerance for Parallel Stencil Computations.",
+      "first_author": "Aurélien Cavelan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2972285245",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891034",
+      "institution": "University of Basel",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s6k3f65"
+    },
+    {
+      "title": "Accelerating Hyperdimensional Classifier on Multiple GPUs.",
+      "first_author": "Zheming Jin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2982814100",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891039",
+      "institution": "Argonne National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gvnxz63"
+    },
+    {
+      "title": "SMQoS: Improving Utilization and Energy Efficiency with QoS Awareness on GPUs.",
+      "first_author": "Qingxiao Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983118730",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891047",
+      "institution": "Institute of Software",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/033dfsn42"
+    },
+    {
+      "title": "Training Google Neural Machine Translation on an Intel CPU Cluster.",
+      "first_author": "Dhiraj D. Kalamkar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987548521",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891019",
+      "institution": "Intel (India)",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/04f2n1245"
+    },
+    {
+      "title": "X-RDMA: Effective RDMA Middleware in Large-scale Production Environments.",
+      "first_author": "Teng Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983438380",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891004",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Mitigating Inter-Job Interference via Process-Level Quality-of-Service.",
+      "first_author": "Lee Savoie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984739707",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891007",
+      "institution": "University of Arizona",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03m2x1q45"
+    },
+    {
+      "title": "FluentPS: A Parameter Server Design with Low-frequency Synchronization for Distributed Deep Learning.",
+      "first_author": "Xin Yao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987743457",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891038",
+      "institution": "University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/02zhqgq86"
+    },
+    {
+      "title": "A Quantitative Study of Deep Learning Training on Heterogeneous Supercomputers.",
+      "first_author": "Jingoo Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984696222",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890993",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "Leveraging Machine Learning for Anticipatory Data Delivery in Extreme Scale In-situ Workflows.",
+      "first_author": "Pradeep Subedi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985545853",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891003",
+      "institution": "Rutgers, The State University of New Jersey",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05vt9qd57"
+    },
+    {
+      "title": "Building Reliable High-Performance Storage Systems: An Empirical and Analytical Study.",
+      "first_author": "Zhi Qiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988811202",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891006",
+      "institution": "University of North Texas",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00v97ad02"
+    },
+    {
+      "title": "Fast and Scalable Implementations of Influence Maximization Algorithms.",
+      "first_author": "Marco Minutoli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988312984",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890991",
+      "institution": "Pacific Northwest National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05h992307"
+    },
+    {
+      "title": "Large-Scale Analysis of the Docker Hub Dataset.",
+      "first_author": "Nannan Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988346468",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891000",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "Asynchronous Task-Based Execution of the Reverse Time Migration for the Oil and Gas Industry.",
+      "first_author": "Amani AlOnazi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984001421",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891054",
+      "institution": "King Abdullah University of Science and Technology",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/01q3tbs38"
+    },
+    {
+      "title": "Design Exploration of Multi-FPGAs for Accelerating Deep Learning.",
+      "first_author": "Teng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984625009",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891044",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "Scheduling independent stochastic tasks on heterogeneous cloud platforms.",
+      "first_author": "Yiqin Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2963494506",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891048",
+      "institution": "Université Claude Bernard Lyon 1",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/029brtt94"
+    },
+    {
+      "title": "MBECN: Enabling ECN with Micro-burst Traffic in Multi-queue Data Center.",
+      "first_author": "Kexi Kang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2982874128",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890999",
+      "institution": "Southeast University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04ct4d772"
+    },
+    {
+      "title": "FSMonitor: Scalable File System Monitoring for Arbitrary Storage Systems.",
+      "first_author": "Arnab Kumar Paul",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987372983",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891045",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "Workflows for Performance Predictable and Reproducible HPC Applications.",
+      "first_author": "Keira Haskins",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987396401",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891043",
+      "institution": "University of New Mexico",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05fs6jp91"
+    },
+    {
+      "title": "Analyzing the Impact of Lossy Compressor Variability on Checkpointing Scientific Simulations.",
+      "first_author": "Pavlo Triantafyllides",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988595926",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891052",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "Performance Characterization of DNN Training using TensorFlow and PyTorch on Modern Clusters.",
+      "first_author": "Arpan Jain",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986124642",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891042",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "Fast and Faithful Performance Prediction of MPI Applications: the HPL Case Study.",
+      "first_author": "Tom Cornebize",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2952461039",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891011",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "Improving Performance of Data Dumping with Lossy Compression for Scientific Simulation.",
+      "first_author": "Xin Liang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983517508",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891037",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "Propagation and Decay of Injected One-Off Delays on Clusters: A Case Study.",
+      "first_author": "Ayesha Afzal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986407468",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890995",
+      "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00f7hpc57"
+    },
+    {
+      "title": "DP_Greedy: A Two-Phase Caching Algorithm for Mobile Cloud Services.",
+      "first_author": "Dong Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984995921",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891031",
+      "institution": "Shenzhen Institutes of Advanced Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04gh4er46"
+    },
+    {
+      "title": "LogGOPSC: A Parallel Computation Model Extending Network Contention into LogGOPS.",
+      "first_author": "Baicheng Yan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986053010",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891035",
+      "institution": "Beihang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00wk2mp56"
+    },
+    {
+      "title": "Engineering a Distributed Histogram Sort.",
+      "first_author": "Roger Kowalewski",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987281526",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891005",
+      "institution": "Ludwig-Maximilians-Universität München",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05591te55"
+    },
+    {
+      "title": "HarpGBDT: Optimizing Gradient Boosting Decision Tree for Parallel Efficiency.",
+      "first_author": "Bo Peng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988666181",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890990",
+      "institution": "Indiana University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01kg8sb98"
+    },
+    {
+      "title": "Improving Access to HDFS using NVMeoF.",
+      "first_author": "Daegyu Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983571628",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890996",
+      "institution": "Sungkyunkwan University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04q78tk20"
+    },
+    {
+      "title": "Scalable, High-Order Continuity Across Block Boundaries of Functional Approximations Computed in Parallel.",
+      "first_author": "Iulian R. Grindeanu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On the Benefits of Anticipating Load Imbalance for Performance Optimization of Parallel Applications.",
+      "first_author": "Anthony Boulmier",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2972880839",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890998",
+      "institution": "University of Geneva",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/01swzsf04"
+    },
+    {
+      "title": "ClusterCockpit - A web application for job-specific performance monitoring.",
+      "first_author": "Jan Eitzinger",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986694021",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891017",
+      "institution": "Erlangen Regional Computing Center, FAU Erlangen-Nuremberg, Erlangen, Germany",
+      "institution_country": null,
+      "raw_affiliation": "Erlangen Regional Computing Center, FAU Erlangen-Nuremberg, Erlangen, Germany"
+    },
+    {
+      "title": "DiffTrace: Efficient Whole-Program Trace Analysis and Diffing for Debugging.",
+      "first_author": "Saeed Taheri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984585458",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891027",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "Standardized Environment for Monitoring Heterogeneous Architectures.",
+      "first_author": "Connor Brown",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984830015",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890997",
+      "institution": "Sandia National Laboratories",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01apwpt12"
+    },
+    {
+      "title": "Evaluating Burst Buffer Placement in HPC Systems.",
+      "first_author": "Harsh Khetawat",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983819714",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891051",
+      "institution": "North Carolina State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04tj63d06"
+    },
+    {
+      "title": "Learning from Five-year Resource-Utilization Data of Titan System.",
+      "first_author": "Feiyi Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984584683",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891001",
+      "institution": "Oak Ridge National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01qz5mb56"
+    },
+    {
+      "title": "Compact Filters for Fast Online Data Partitioning.",
+      "first_author": "Qing Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988724757",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890992",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "Multi-physics simulations of particle tracking in arterial geometries with a scalable moving window algorithm.",
+      "first_author": "Gregory Herschlag",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985236909",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891041",
+      "institution": "Duke University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00py81415"
+    },
+    {
+      "title": "Harmony: An Approach for Geo-distributed Processing of Big-Data Applications.",
+      "first_author": "Han Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986763146",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891053",
+      "institution": "National University of Singapore",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/01tgyzw49"
+    },
+    {
+      "title": "Improving Resource Utilization in Data Centers using an LSTM-based Prediction Model.",
+      "first_author": "Kundjanasith Thonglek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987126276",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891022",
+      "institution": "Nara Institute of Science and Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/05bhada84"
+    },
+    {
+      "title": "Efficient Distributed Graph Analytics using Triply Compressed Sparse Format.",
+      "first_author": "Mohammad Hasanzadeh-Mofrad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987484405",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891008",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "mSMS: PGAS Runtime with Efficient Thread-based Communication for Global-view Programming.",
+      "first_author": "Hiroko Midorikawa",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984244623",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891009",
+      "institution": "Seikei University",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/03ptaj492"
+    },
+    {
+      "title": "Automatic Power Saving Method by Energy Aware Job Scheduler.",
+      "first_author": "Hiroaki Imade",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986926018",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891010",
+      "institution": "Fujitsu (Japan)",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/038e2g226"
+    },
+    {
+      "title": "Rapidly Measuring Loop Footprints.",
+      "first_author": "Ozgur O. Kilic",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983047784",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891025",
+      "institution": "Pacific Northwest National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05h992307"
+    },
+    {
+      "title": "STASH : Fast Hierarchical Aggregation Queries for Effective Visual Spatiotemporal Explorations.",
+      "first_author": "Saptashwa Mitra",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2983634614",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891029",
+      "institution": "Colorado State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03k1gpj17"
+    },
+    {
+      "title": "Quantifying the Impact of Memory Errors in Deep Learning.",
+      "first_author": "Zhao Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985374077",
+      "doi": "https://doi.org/10.1109/cluster.2019.8890989",
+      "institution": "Texas Advanced Computing Center",
+      "institution_country": null,
+      "institution_ror": "https://ror.org/00xg4bh43"
+    },
+    {
+      "title": "An Empirical Study of Cryptographic Libraries for MPI Communications.",
+      "first_author": "Abu Naser",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984888392",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891033",
+      "institution": "Florida State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05g3dte14"
+    },
+    {
+      "title": "MPI Sessions: Evaluation of an Implementation in Open MPI.",
+      "first_author": "Nathan T. Hjelm",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985519666",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891002",
+      "institution": "Google (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00njsd438"
+    },
+    {
+      "title": "Kube-Knots: Resource Harvesting through Dynamic Container Orchestration in GPU-based Datacenters.",
+      "first_author": "Prashanth Thinakaran",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2982899198",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891040",
+      "institution": "Pennsylvania State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04p491231"
+    },
+    {
+      "title": "Proxy or Imposter? A Method and Case Study to Determine the Answer.",
+      "first_author": "Omar Aaziz",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Leveraging Task-Based Polar Decomposition Using PARSEC on Massively Parallel Systems.",
+      "first_author": "Dalal Sukkari",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2970103914",
+      "doi": "https://doi.org/10.1109/cluster.2019.8891024",
+      "institution": "King Abdullah University of Science and Technology",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/01q3tbs38"
+    }
+  ]
+}
