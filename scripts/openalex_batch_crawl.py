@@ -64,11 +64,9 @@ def load_keys() -> list[str]:
 
 def make_session(api_key: str):
     import requests
-    from requests.adapters import HTTPAdapter
-    from urllib3.util.retry import Retry
     s = requests.Session()
-    retry = Retry(total=1, backoff_factor=0.3, status_forcelist=[500, 502, 503, 504])
-    s.mount("https://", HTTPAdapter(max_retries=retry))
+    # NOTE: Do NOT use urllib3 Retry adapter — it hangs on 429 responses
+    # in urllib3 2.3.0. We handle retries at the application level instead.
     s.params = {"api_key": api_key}
     return s
 
