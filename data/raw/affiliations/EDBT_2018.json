@@ -1,0 +1,831 @@
+{
+  "conference": "EDBT",
+  "year": 2018,
+  "total_papers": 88,
+  "total_matched": 79,
+  "total_with_affiliation": 67,
+  "coverage_pct": 76.1,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "FastOFD: Contextual Data Cleaning with Ontology Functional Dependencies.",
+      "first_author": "Zheng Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789592939",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.87",
+      "institution": "McMaster University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/02fa3aq29"
+    },
+    {
+      "title": "EasyCommit: A Non-blocking Two-phase Commit Protocol.",
+      "first_author": "Suyash Gupta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792057082",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.15",
+      "institution": "University of California, Davis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05rrcem69"
+    },
+    {
+      "title": "SAMUEL: A Sharing-based Approach to processing Multiple SPARQL Queries with MapReduce.",
+      "first_author": "InA Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790822404",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.80",
+      "institution": "Chungnam National University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/0227as991"
+    },
+    {
+      "title": "EmbedS: Scalable, Ontology-aware Graph Embeddings.",
+      "first_author": "Gonzalo I. Diaz",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Analysis and Visualization of Urban Emission Measurements in Smart Cities.",
+      "first_author": "Dirk Ahlers",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792476931",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.88",
+      "institution": "Norwegian University of Science and Technology",
+      "institution_country": "NO",
+      "institution_ror": "https://ror.org/05xg72x27"
+    },
+    {
+      "title": "FAIMUSS: Flexible Data Transformation to RDF from Multiple Streaming Sources.",
+      "first_author": "Georgios M. Santipantakis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791004298",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.79",
+      "institution": "University of Piraeus",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/02qs84g94"
+    },
+    {
+      "title": "Kernel-Based Cardinality Estimation on Metric Data.",
+      "first_author": "Michael Mattig",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2794308966",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.31",
+      "institution": "Philipps University of Marburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01rdrb571"
+    },
+    {
+      "title": "Data Structures for Efficient Computation of Influence Maximization and Influence Estimation.",
+      "first_author": "Diana Popova",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Modeling and Exploiting Goal and Action Associations for Recommendations.",
+      "first_author": "Dimitra Papadimitriou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790126286",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.36",
+      "institution": "University of Trento",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/05trd4x28"
+    },
+    {
+      "title": "MTBase: Optimizing Cross-Tenant Database Queries.",
+      "first_author": "Lucas Braun",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Hypothetical Reasoning Using Distributed Provenance.",
+      "first_author": "Daniel Deutch",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792117462",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.47",
+      "institution": "Tel Aviv University",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/04mhzgx49"
+    },
+    {
+      "title": "RQL: Retrospective Computations over Snapshot Sets.",
+      "first_author": "Nikos Tsikoudis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792746251",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.70",
+      "institution": "Brandeis University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05abbep66"
+    },
+    {
+      "title": "Global-Scale Placement of Transactional Data Stores.",
+      "first_author": "Victor Zakhary",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790875947",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.34",
+      "institution": null
+    },
+    {
+      "title": "SlickDeque: High Throughput and Low Latency Incremental Sliding-Window Aggregation.",
+      "first_author": "Anatoli U. Shein",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790658561",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.35",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "Pharos: Privacy Hazards of Replicating ORAM Stores.",
+      "first_author": "Victor Zakhary",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789926515",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.89",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "Sequenced Route Query with Semantic Hierarchy.",
+      "first_author": "Yuya Sasaki",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2794040011",
+      "doi": "https://doi.org/10.48550/arxiv.2009.03776",
+      "institution": "The University of Osaka",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/035t8zc32"
+    },
+    {
+      "title": "A Parallel and Scalable Processor for JSON Data.",
+      "first_author": "Christina Pavlopoulou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790011209",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.68",
+      "institution": null
+    },
+    {
+      "title": "An Automated System for Internet Pharmacy Verification.",
+      "first_author": "Alberto Cordioli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789871874",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.69",
+      "institution": null
+    },
+    {
+      "title": "Very-Low Random Projection Maps.",
+      "first_author": "Anastasios Zouzias",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789794736",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.37",
+      "institution": "IBM (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05hh8d621"
+    },
+    {
+      "title": "Research Directions in Blockchain Data Management and Analytics.",
+      "first_author": "Hoang Tam Vo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2795055914",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.43",
+      "institution": "IBM (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05hh8d621"
+    },
+    {
+      "title": "Continuous Monitoring of Pareto Frontiers on Partially Ordered Attributes for Many Users.",
+      "first_author": "Afroza Sultana",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2963461614",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.09",
+      "institution": "The University of Texas at Arlington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/019kgqr73"
+    },
+    {
+      "title": "Dynamic Resource Routing using Real-Time Information.",
+      "first_author": "Sebastian Schmoll",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790736292",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.57",
+      "institution": "Ludwig-Maximilians-Universität München",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05591te55"
+    },
+    {
+      "title": "TPStream: Low-Latency Temporal Pattern Matching on Event Streams.",
+      "first_author": "Michael Körber",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793743984",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.28",
+      "institution": "Philipps University of Marburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01rdrb571"
+    },
+    {
+      "title": "Finding Contrast Patterns for Mixed Streaming Data (Application track).",
+      "first_author": "Rohan Khade",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792400371",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.73",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "openCypher: New Directions in Property Graph Querying.",
+      "first_author": "Alastair Green",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2795067919",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.62",
+      "institution": null
+    },
+    {
+      "title": "NoFTL-KV: TacklingWrite-Amplification on KV-Stores with Native Storage Management.",
+      "first_author": "Tobias Vinçon",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790169003",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.46",
+      "institution": "Reutlingen University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00q644y50"
+    },
+    {
+      "title": "Summarization Algorithms for Record Linkage.",
+      "first_author": "Dimitrios Karapiperis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790957175",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.08",
+      "institution": "Hellenic Open University",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/02kq26x23"
+    },
+    {
+      "title": "Extracting Statistical Graph Features for Accurate and Efficient Time Series Classification.",
+      "first_author": "Daoyuan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791588856",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.19",
+      "institution": "University of Luxembourg",
+      "institution_country": "LU",
+      "institution_ror": "https://ror.org/036x5ad56"
+    },
+    {
+      "title": "Recent Advances in Recommender Systems: Matrices, Bandits, and Blenders.",
+      "first_author": "Georgia Koutrika",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Privacy Preserving Group Nearest Neighbor Search.",
+      "first_author": "Yuncheng Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790664939",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.25",
+      "institution": "Renmin University of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/041pakw92"
+    },
+    {
+      "title": "Recalibration of Analytics Workflows.",
+      "first_author": "Maxim Filatov",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789321469",
+      "doi": null,
+      "institution": "University of Geneva",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/01swzsf04"
+    },
+    {
+      "title": "Pattern Search in Temporal Social Networks.",
+      "first_author": "Andreas Züfle",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793669312",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.26",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "Interactive Exploration of Composite Items.",
+      "first_author": "Sihem Amer-Yahia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2794471616",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.60",
+      "institution": "ScaLable Information Discovery and Exploitation [Grenoble]",
+      "institution_country": null,
+      "raw_affiliation": "ScaLable Information Discovery and Exploitation [Grenoble]"
+    },
+    {
+      "title": "QUASII: QUery-Aware Spatial Incremental Index.",
+      "first_author": "Mirjana Pavlovic",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789329144",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.29",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "Detecting Database File Tampering through Page Carving.",
+      "first_author": "James Wagner",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790795032",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.12",
+      "institution": "DePaul University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04xtx5t16"
+    },
+    {
+      "title": "Scalable Detection of Concept Drifts on Data Streams with Parallel Adaptive Windowing.",
+      "first_author": "Philipp M. Grulich",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2794253076",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.51",
+      "institution": "Technische Universität Berlin",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/03v4gjf40"
+    },
+    {
+      "title": "Effective Quality Assurance for Data Labels through Crowdsourcing and Domain Expert Collaboration.",
+      "first_author": "Wei Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792814840",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.75",
+      "institution": "National Cheng Kung University",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/01b8kcc49"
+    },
+    {
+      "title": "Point-of-Interest Recommendation Using Heterogeneous Link Prediction.",
+      "first_author": "Alireza Pourali",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791941169",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.52",
+      "institution": "Toronto Metropolitan University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05g13zd79"
+    },
+    {
+      "title": "Provenance-Based Visual Data Exploration with EVLIN.",
+      "first_author": "Houssem Ben Lahmar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793153333",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.85",
+      "institution": "University of Stuttgart",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04vnq7t77"
+    },
+    {
+      "title": "Interactive Visualization of Large Similarity Graphs and Entity Resolution Clusters.",
+      "first_author": "M. Ali Rostami",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792822722",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.86",
+      "institution": "Leipzig University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/03s7gtk40"
+    },
+    {
+      "title": "Interval Count Semi-Joins.",
+      "first_author": "Panagiotis Bouros",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792422037",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.38",
+      "institution": "Aarhus University",
+      "institution_country": "DK",
+      "institution_ror": "https://ror.org/01aj84f44"
+    },
+    {
+      "title": "Efficient SIMD Vectorization for Hashing in OpenCL.",
+      "first_author": "Tobias Behrens",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2786921039",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.54",
+      "institution": null
+    },
+    {
+      "title": "Loom: Query-aware Partitioning of Online Graphs.",
+      "first_author": "Hugo Firth",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GEDetector: Early Detection of Gathering Events Based on Cluster Containment Join in Trajectory Streams.",
+      "first_author": "Bin Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791612035",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.81",
+      "institution": "Nanjing Normal University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/036trcv74"
+    },
+    {
+      "title": "A Hybrid Approach for Alarm Verification using Stream Processing, Machine Learning and Text Analytics.",
+      "first_author": "Ana Claudia Sima",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Supporting Similarity Queries in Apache AsterixDB.",
+      "first_author": "Taewoo Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791181585",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.64",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "All that Incremental is not Efficient: Towards Recomputation Based Complex Event Processing for Expensive Queries.",
+      "first_author": "Abderrahmen Kammoun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791413241",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.41",
+      "institution": "Laboratoire Hubert Curien",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/0028p8r67"
+    },
+    {
+      "title": "User-guided Repairing of Inconsistent Knowledge Bases.",
+      "first_author": "Abdallah Arioua",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793230989",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.13",
+      "institution": "Graphs for Inferences on Knowledge",
+      "institution_country": null,
+      "raw_affiliation": "Graphs for Inferences on Knowledge"
+    },
+    {
+      "title": "Global Range Encoding for Efficient Partition Elimination.",
+      "first_author": "Jeremy Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790185691",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.45",
+      "institution": null
+    },
+    {
+      "title": "DeepEye: Visualizing Your Data by Keyword Search.",
+      "first_author": "Xuedi Qin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2794735654",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.42",
+      "institution": null
+    },
+    {
+      "title": "MDM: Governing Evolution in Big Data Ecosystems.",
+      "first_author": "Sergi Nadal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790305014",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.84",
+      "institution": "Universitat Politècnica de Catalunya",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/03mb6wj31"
+    },
+    {
+      "title": "An Homophily-based Approach for Fast Post Recommendation on Twitter.",
+      "first_author": "Quentin Grossetti",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791643959",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.21",
+      "institution": "Centre d'Etudes et De Recherche en Informatique et Communications",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/044j5mm75"
+    },
+    {
+      "title": "L-Store: A Real-time OLTP and OLAP System.",
+      "first_author": "Mohammad Sadoghi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Don't write all data pages in one stream.",
+      "first_author": "Soyee Choi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Notable Characteristics Search through Knowledge Graphs.",
+      "first_author": "Davide Mottin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2786386376",
+      "doi": "https://doi.org/10.48550/arxiv.1802.04060",
+      "institution": null
+    },
+    {
+      "title": "GeoAlign: Interpolating Aggregates over Unaligned Partitions.",
+      "first_author": "Jie Song",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789813688",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.32",
+      "institution": "University of Michigan",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00jmfr291"
+    },
+    {
+      "title": "Scalable and Dynamic Regeneration of Big Data Volumes.",
+      "first_author": "Anupam Sanghi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793541612",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.27",
+      "institution": "Indian Institute of Science Bangalore",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/04dese585"
+    },
+    {
+      "title": "Optimizing Selection Processing for Encrypted Database using Past Result Knowledge Base.",
+      "first_author": "Wai Kit Wong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789844561",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.10",
+      "institution": "University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/02zhqgq86"
+    },
+    {
+      "title": "Distributed query-aware quantization for high-dimensional similarity searches.",
+      "first_author": "Gheorghi Guzun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792900401",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.33",
+      "institution": "San Jose State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04qyvz380"
+    },
+    {
+      "title": "Extending In-Memory Relational Database Engines with Native Graph Support.",
+      "first_author": "Mohamed S. Hassan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792498171",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.04",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "Synchronous Multi-GPU Training for Deep Learning with Low-Precision Communications: An Empirical Study.",
+      "first_author": "Demjan Grubic",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789486807",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.14",
+      "institution": null
+    },
+    {
+      "title": "ID Repair for Trajectories with Transition Graphs.",
+      "first_author": "Xingcan Cui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789518869",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.02",
+      "institution": null
+    },
+    {
+      "title": "Reconciling Privacy and Data Sharing in a Smart and Connected Surrounding.",
+      "first_author": "Paul Tran-Van",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2782164632",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.82",
+      "institution": "Personal Trusted cloud",
+      "institution_country": null,
+      "raw_affiliation": "Personal Trusted cloud"
+    },
+    {
+      "title": "Scalable Active Temporal Constrained Clustering.",
+      "first_author": "Son T. Mai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789996966",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.44",
+      "institution": "UGA [2016-2019] - Université Grenoble Alpes [2016-2019] (38058 Grenoble cedex - France)",
+      "institution_country": null,
+      "raw_affiliation": "UGA [2016-2019] - Université Grenoble Alpes [2016-2019] (38058 Grenoble cedex - France)"
+    },
+    {
+      "title": "Online Set Selection with Fairness and Diversity Constraints.",
+      "first_author": "Julia Stoyanovich",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793509414",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.22",
+      "institution": "Drexel University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04bdffz58"
+    },
+    {
+      "title": "Spatio-Temporal-Keyword Pattern Queries over Semantic Trajectories with Hermes@Neo4j.",
+      "first_author": "Fragkiskos Gryllakis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789924963",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.83",
+      "institution": "University of Piraeus",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/02qs84g94"
+    },
+    {
+      "title": "On Answering Why-Not Queries Against Scientific Workflow Provenance.",
+      "first_author": "Khalid Belhajjame",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790844796",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.48",
+      "institution": "Université Paris Dauphine-PSL",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/052bz7812"
+    },
+    {
+      "title": "Histogram Domain Ordering for Path Selectivity Estimation.",
+      "first_author": "Nikolay Yakovets",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793760363",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.55",
+      "institution": "Information Systems WSK&I",
+      "institution_country": null,
+      "raw_affiliation": "Information Systems WSK&I"
+    },
+    {
+      "title": "Interactive Rule Refinement for Fraud Detection.",
+      "first_author": "Tova Milo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789419008",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.24",
+      "institution": "Tel Aviv University",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/04mhzgx49"
+    },
+    {
+      "title": "Beyond Frequencies: Graph Pattern Mining in Multi-weighted Graphs.",
+      "first_author": "Giulia Preti",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793460666",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.16",
+      "institution": "University of Trento",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/05trd4x28"
+    },
+    {
+      "title": "Real-Time Data Management for Big Data.",
+      "first_author": "Wolfram Wingerath",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2794809048",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.63",
+      "institution": "Universität Hamburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00g30e956"
+    },
+    {
+      "title": "Counting Edges with Target Labels in Online Social Networks via Random Walk.",
+      "first_author": "Yang Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2788229535",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.20",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "eLinda: Explorer for Linked Data.",
+      "first_author": "Tal Yahav",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient Secure k-Nearest Neighbours over Encrypted Data.",
+      "first_author": "Manish Kesarwani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789569462",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.67",
+      "institution": "IBM (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05hh8d621"
+    },
+    {
+      "title": "MatchCatcher: A Debugger for Blocking in Entity Matching.",
+      "first_author": "Han Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792196230",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.18",
+      "institution": null
+    },
+    {
+      "title": "Exploring Large Scholarly Networks with Hermes.",
+      "first_author": "Gabriel Campero Durand",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790355180",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.76",
+      "institution": "Otto-von-Guericke-Universität Magdeburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00ggpsq73"
+    },
+    {
+      "title": "Scalable Evaluation of k-NN Queries on Large Uncertain Graphs.",
+      "first_author": "Xiaodong Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790636319",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.17",
+      "institution": "University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/02zhqgq86"
+    },
+    {
+      "title": "On Complexity and Efficiency of Mutual Information Estimation on Static and Dynamic Data.",
+      "first_author": "Michael Vollmer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791465297",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.06",
+      "institution": "Karlsruhe Institute of Technology",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04t3en479"
+    },
+    {
+      "title": "Deep Integration of Machine Learning Into Column Stores.",
+      "first_author": "Mark Raasveldt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791476883",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.50",
+      "institution": "Centrum Wiskunde & Informatica",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/00x7ekv49"
+    },
+    {
+      "title": "Big Data Analytics for Time Critical Mobility Forecasting: Recent Progress and Research Challenges.",
+      "first_author": "George A. Vouros",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792227230",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.71",
+      "institution": "University of Piraeus",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/02qs84g94"
+    },
+    {
+      "title": "Temporally-Biased Sampling for Online Model Management.",
+      "first_author": "Brian Hentschel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2963095693",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.11",
+      "institution": "Harvard University Press",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/006v7bf86"
+    },
+    {
+      "title": "Scouter: A Stream Processing Web Analyzer to Contextualize Singularities.",
+      "first_author": "Badre Belabbess",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789389121",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.72",
+      "institution": "Laboratoire d'Informatique Gaspard-Monge",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/04t50yk91"
+    },
+    {
+      "title": "Apollo: Learning Query Correlations for Predictive Caching in Geo-Distributed Systems.",
+      "first_author": "Brad Glasbergen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789822522",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.23",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "MetisIDX - From Adaptive to Predictive Data Indexing.",
+      "first_author": "Elvis Marques Teixeira",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792518357",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.53",
+      "institution": "Universidade Federal do Ceará",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/03srtnf24"
+    },
+    {
+      "title": "PRoST: Distributed Execution of SPARQL Queries Using Mixed Partitioning Strategies.",
+      "first_author": "Matteo Cossu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2963760742",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.49",
+      "institution": "University of Freiburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/0245cg223"
+    },
+    {
+      "title": "Finding All Maximal Connected s-Cliques in Social Networks.",
+      "first_author": "Rachel Behar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790030031",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.07",
+      "institution": "Hebrew University of Jerusalem",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qxff017"
+    },
+    {
+      "title": "Nomadic Datacenters at the Network Edge: Data Management Challenges for the Cloud with Mobile Infrastructure.",
+      "first_author": "Faisal Nawab",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789968461",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.56",
+      "institution": null
+    },
+    {
+      "title": "A Roadmap towards Declarative Similarity Queries.",
+      "first_author": "Nikolaus Augsten",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793237766",
+      "doi": "https://doi.org/10.5441/002/edbt.2018.59",
+      "institution": "Computer Sciences",
+      "institution_country": null,
+      "raw_affiliation": "Computer Sciences"
+    }
+  ]
+}
