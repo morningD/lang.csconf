@@ -1,0 +1,699 @@
+{
+  "conference": "FSE-CRYPTO",
+  "year": 2020,
+  "total_papers": 78,
+  "total_matched": 55,
+  "total_with_affiliation": 55,
+  "coverage_pct": 70.5,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Dumbo, Jumbo, and Delirium: Parallel Authenticated Encryption for the Lightweight Circus",
+      "first_author": "Tim Beyne",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Isap v2.0",
+      "first_author": "Christoph Dobraunig",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4254214383",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.390-416",
+      "institution": "Radboud University Nijmegen",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/016xsfp80"
+    },
+    {
+      "title": "Xoodyak, a lightweight cryptographic scheme",
+      "first_author": "Joan Daemen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lightweight AEAD and Hashing using the Sparkle Permutation Family",
+      "first_author": "Christof Beierle",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4235801565",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.208-261",
+      "institution": "University of Luxembourg",
+      "institution_country": "LU",
+      "institution_ror": "https://ror.org/036x5ad56"
+    },
+    {
+      "title": "The Subterranean 2.0 Cipher Suite",
+      "first_author": "Joan Daemen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4213335922",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.262-294",
+      "institution": "Radboud University Nijmegen",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/016xsfp80"
+    },
+    {
+      "title": "Cube-Based Cryptanalysis of Subterranean-SAE",
+      "first_author": "Fukang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4375954194",
+      "doi": "https://doi.org/10.13154/tosc.v2019.i4.192-222",
+      "institution": "University of Hyogo",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/0151bmh98"
+    },
+    {
+      "title": "Exhaustive Search for Various Types of MDS Matrices",
+      "first_author": "Abhishek Kesarwani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lightweight Iterative MDS Matrices: How Small Can We Go?",
+      "first_author": "Shun Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Swap and Rotate: Lightweight Linear Layers for SPN-based Blockciphers",
+      "first_author": "Subhadeep Banik",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2982690885",
+      "doi": "https://doi.org/10.13154/tosc.v2020.i1.185-232",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "Optimizing Implementations of Linear Layers",
+      "first_author": "Zejun Xiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3046498207",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i2.120-145",
+      "institution": "Hubei University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03a60m280"
+    },
+    {
+      "title": "Efficient Search for Optimal Diffusion Layers of Generalized Feistel Networks",
+      "first_author": "Patrick Derbez",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Dasta – Alternative Linear Layer for Rasta",
+      "first_author": "Phil Hebborn",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3096308802",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.46-86",
+      "institution": "Ruhr University Bochum",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04tsk2644"
+    },
+    {
+      "title": "DoveMAC: A TBC-based PRF with Smaller State, Full Security, and High Rate",
+      "first_author": "Tony Grochow",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Exact Security of PMAC with Two Powering-Up Masks",
+      "first_author": "Yusuke Naito",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On Beyond-Birthday-Bound Security: Revisiting the Development of ISO/IEC 9797-1 MACs<br><span class='star'>★</span> (Best Paper Selected from ToSC 2019 #2-4 and ToSC 2020 #1)",
+      "first_author": "Yaobin Shen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Security of the Suffix Keyed Sponge",
+      "first_author": "Christoph Dobraunig",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4297791049",
+      "doi": "https://doi.org/10.13154/tosc.v2019.i4.223-248",
+      "institution": "Radboud University Nijmegen",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/016xsfp80"
+    },
+    {
+      "title": "Efficient Side-Channel Secure Message Authentication with Better Bounds",
+      "first_author": "Chun Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3003468063",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.23-53",
+      "institution": "Shandong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0207yh398"
+    },
+    {
+      "title": "Substitution Attacks against Message Authentication",
+      "first_author": "Marcel Armour",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4287711632",
+      "doi": "https://doi.org/10.5281/zenodo.3951967",
+      "institution": "Universidad de Londres",
+      "institution_country": "MX",
+      "institution_ror": "https://ror.org/054v4yq51"
+    },
+    {
+      "title": "New Conditional Cube Attack on Keccak Keyed Modes",
+      "first_author": "Zheng Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ZOCB and ZOTR: Tweakable Blockcipher Modes for Authenticated Encryption with Full Absorption",
+      "first_author": "Zhenzhen Bao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Low-Energy Leakage-Resistant Authenticated Encryption from the Duplex Sponge Construction",
+      "first_author": "Chun Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3037333471",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.6-42",
+      "institution": "Shandong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0207yh398"
+    },
+    {
+      "title": "Combiners for AEAD",
+      "first_author": "Bertram Poettering",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013688771",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.121-143",
+      "institution": "IBM Research - Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02js37d36"
+    },
+    {
+      "title": "Fast Decryption: a New Feature of Misuse-Resistant AE",
+      "first_author": "Kazuhiko Minematsu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3095710716",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.87-118",
+      "institution": "NEC (Japan)",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/04jndar25"
+    },
+    {
+      "title": "Release of Unverified Plaintext: Tight Unified Model and Application to ANYDAE",
+      "first_author": "Donghoon Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2998936314",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.119-146",
+      "institution": "Indraprastha Institute of Information Technology Delhi",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/03vfp4g33"
+    },
+    {
+      "title": "On the Security of Sponge-type Authenticated Encryption Modes",
+      "first_author": "Bishwajit Chakraborty",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3003753743",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i2.93-119",
+      "institution": "Indian Statistical Institute",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/00q2w1j53"
+    },
+    {
+      "title": "Cryptanalysis of OCB2: the attacks and the story behind",
+      "first_author": "Kazuhiko Minematsu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A new SNOW stream cipher called SNOW-V",
+      "first_author": "Patrik Ekdahl",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Vectorized linear approximations for attacks on SNOW 3G",
+      "first_author": "Jing Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211124411",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.249-271",
+      "institution": "Lund University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/012a77v79"
+    },
+    {
+      "title": "Spectral analysis of ZUC-256",
+      "first_author": "Jing Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4250825316",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.266-288",
+      "institution": "Lund University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/012a77v79"
+    },
+    {
+      "title": "Revisit Division Property Based Cube Attacks: Key-Recovery or Distinguishing Attacks?",
+      "first_author": "Chen-Dong Ye",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Links between Division Property and Other Cube Attack Variants",
+      "first_author": "Yonglin Hao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4255517226",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.363-395",
+      "institution": "State Key Laboratory of Cryptology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02pn5rj08"
+    },
+    {
+      "title": "Cryptanalysis of Plantlet",
+      "first_author": "Subhadeep Banik",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Analyzing the Linear Keystream Biases in AEGIS",
+      "first_author": "Maria Eichlseder",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4210850766",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.348-368",
+      "institution": "Graz University of Technology",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/00d7xrm67"
+    },
+    {
+      "title": "Classification of Balanced Quadratic Functions",
+      "first_author": "Lauren De Meyer",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Low AND Depth and Efficient Inverses: a Guide on S-boxes for Low-latency Masking",
+      "first_author": "Begül Bilgin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3037774646",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.144-184",
+      "institution": "Rambus, Cryptography Research, Rotterdam, Netherlands",
+      "institution_country": null,
+      "raw_affiliation": "Rambus, Cryptography Research, Rotterdam, Netherlands"
+    },
+    {
+      "title": "Reconstructing an S-box from its Difference Distribution Table",
+      "first_author": "Orr Dunkelman",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Deck-Based Wide Block Cipher Modes and an Exposition of the Blinded Keyed Hashing Model",
+      "first_author": "Aldo Gunsing",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013604129",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.1-22",
+      "institution": "Radboud University Nijmegen",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/016xsfp80"
+    },
+    {
+      "title": "On the Composition of Single-Keyed Tweakable Even-Mansour for Achieving BBB Security",
+      "first_author": "Avik Chakraborti",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3082885989",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i2.1-39",
+      "institution": "NTT (Japan)",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/00berct97"
+    },
+    {
+      "title": "Design of Symmetric-Key Primitives for Advanced Cryptographic Protocols",
+      "first_author": "Abdelrahaman Aly",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4253496694",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.1-45",
+      "institution": "IMEC",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/02kcbn207"
+    },
+    {
+      "title": "WAGE: An Authenticated Encryption with a Twist",
+      "first_author": "Riham AlTawy",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3022241651",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.132-159",
+      "institution": "University of Victoria",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/04s5mat29"
+    },
+    {
+      "title": "ESTATE: A Lightweight and Low Energy Authenticated Encryption Mode",
+      "first_author": "Avik Chakraborti",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3082530243",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.350-389",
+      "institution": "NTT (Japan)",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/00berct97"
+    },
+    {
+      "title": "Spook: Sponge-Based Leakage-Resistant Authenticated Encryption with a Masked Tweakable Block Cipher",
+      "first_author": "Davide Bellizia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3081832642",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.295-349",
+      "institution": "UCLouvain",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/02495e989"
+    },
+    {
+      "title": "From Combined to Hybrid: Making Feedback-based AE even Smaller",
+      "first_author": "Avik Chakraborti",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3082231500",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.417-445",
+      "institution": "Indian Statistical Institute",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/00q2w1j53"
+    },
+    {
+      "title": "Weak Keys in the Rekeying Paradigm: Application to COMET and mixFeed",
+      "first_author": "Mustafa Khairallah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013943754",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.272-289",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "On the Security Margin of TinyJAMBU with Refined Differential and Linear Cryptanalysis",
+      "first_author": "Dhiman Saha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3089729761",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.152-174",
+      "institution": "Indian Institute of Technology Bhilai",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/02sscsx71"
+    },
+    {
+      "title": "Improving the MILP-based Security Evaluation Algorithm against Differential/Linear Cryptanalysis Using A Divide-and-Conquer Approach",
+      "first_author": "Chunning Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013007656",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.438-469",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Efficient MILP Modelings for Sboxes and Linear Layers of SPN ciphers",
+      "first_author": "Christina Boura",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3097184403",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.327-361",
+      "institution": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02kvxyf05"
+    },
+    {
+      "title": "On the Usage of Deterministic (Related-Key) Truncated Differentials and Multidimensional Linear Approximations for SPN Ciphers",
+      "first_author": "Ling Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3097858784",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.262-287",
+      "institution": "Shandong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0207yh398"
+    },
+    {
+      "title": "Finding Bit-Based Division Property for Ciphers with Complex Linear Layers",
+      "first_author": "Kai Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3029233471",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.396-424",
+      "institution": "Shandong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0207yh398"
+    },
+    {
+      "title": "Multiple Linear Cryptanalysis Using Linear Statistics",
+      "first_author": "Jung-Keun Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013990669",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.369-406",
+      "institution": "Electronics and Telecommunications Research Institute",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03ysstz10"
+    },
+    {
+      "title": "Exploring Secret Keys in Searching Integral Distinguishers Based on Division Property",
+      "first_author": "Senpeng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3097402223",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.288-304",
+      "institution": "PLA Information Engineering University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00mm1qk40"
+    },
+    {
+      "title": "Tweakable Block Cipher-Based Cryptography",
+      "first_author": "Thomas Peyrin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Duel of the Titans: The Romulus and Remus Families of Lightweight AEAD Algorithms",
+      "first_author": "Tetsu Iwata",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4253338219",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.43-120",
+      "institution": "Nagoya University",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/04chrp450"
+    },
+    {
+      "title": "SKINNY-AEAD and SKINNY-Hash",
+      "first_author": "Christof Beierle",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3082699734",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.88-131",
+      "institution": "Ruhr University Bochum",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04tsk2644"
+    },
+    {
+      "title": "Saturnin: a suite of lightweight symmetric algorithms for post-quantum security",
+      "first_author": "Anne Canteaut",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3081737099",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.160-207",
+      "institution": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02kvxyf05"
+    },
+    {
+      "title": "INT-RUP Secure Lightweight Parallel AE Modes",
+      "first_author": "Avik Chakraborti",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013688511",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.81-118",
+      "institution": "NTT (Japan)",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/00berct97"
+    },
+    {
+      "title": "Pyjamask: Block Cipher and Authenticated Encryption with Highly Efficient Masked Implementation",
+      "first_author": "Dahmun Goudarzi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3082110959",
+      "doi": "https://doi.org/10.46586/tosc.v2020.is1.31-59",
+      "institution": "PQShield, Oxford, United Kingdom",
+      "institution_country": null,
+      "raw_affiliation": "PQShield, Oxford, United Kingdom"
+    },
+    {
+      "title": "Algebraic and Higher-Order Differential Cryptanalysis of Pyjamask-96",
+      "first_author": "Christoph Dobraunig",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3037776991",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.289-312",
+      "institution": "Radboud University Nijmegen",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/016xsfp80"
+    },
+    {
+      "title": "Cryptanalysis of Forkciphers",
+      "first_author": "Augustin Bariant",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3037868904",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.233-265",
+      "institution": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02kvxyf05"
+    },
+    {
+      "title": "Cryptanalysis of Curl-P and Other Attacks on the IOTA Cryptocurrency",
+      "first_author": "Ethan Heilman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2947263000",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.367-391",
+      "institution": "Boston University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05qwgg493"
+    },
+    {
+      "title": "New Semi-Free-Start Collision Attack Framework for Reduced RIPEMD-160",
+      "first_author": "Fukang Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Improved Meet-in-the-Middle Preimage Attacks against AES Hashing Modes",
+      "first_author": "Zhenzhen Bao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2953747958",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.318-347",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "New Techniques for Searching Differential Trails in Keccak",
+      "first_author": "Guozhen Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013034652",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.407-437",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "Cryptanalysis of the Legendre PRF and Generalizations",
+      "first_author": "Ward Beullens",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3003772367",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.313-330",
+      "institution": "IMEC",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/02kcbn207"
+    },
+    {
+      "title": "Practical seed-recovery for the PCG Pseudo-Random Number Generator",
+      "first_author": "Charles Bouillaguet",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3097010303",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.175-196",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "Iterative Block Ciphers from Tweakable Block Ciphers with Long Tweaks",
+      "first_author": "Ryota Nakamichi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013220250",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.54-80",
+      "institution": "Nagoya University",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/04chrp450"
+    },
+    {
+      "title": "Security of Symmetric Primitives against Key-Correlated Attacks",
+      "first_author": "Aisling Connolly",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Improved Security Bounds for Generalized Feistel Networks",
+      "first_author": "Yaobin Shen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013131610",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i1.425-457",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Key Assignment Schemes with Authenticated Encryption, revisited",
+      "first_author": "Jeroen Pijnenburg",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Beyond-Birthday-Bound Secure Cryptographic Permutations from Ideal Ciphers with Long Keys",
+      "first_author": "Ryota Nakamichi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3082225343",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i2.68-92",
+      "institution": "Nagoya University",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/04chrp450"
+    },
+    {
+      "title": "Beyond-Birthday-Bound Security for 4-round Linear Substitution-Permutation Networks",
+      "first_author": "Yuan Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3097831041",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.305-326",
+      "institution": "Shandong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0207yh398"
+    },
+    {
+      "title": "Quantum Security Analysis of AES",
+      "first_author": "Xavier Bonnetain",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Extended Truncated-differential Distinguishers on Round-reduced AES",
+      "first_author": "Zhenzhen Bao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3096548238",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.197-261",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "Differential Attacks on CRAFT Exploiting the Involutory S-boxes and Tweak Additions",
+      "first_author": "Hao Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3096993201",
+      "doi": "https://doi.org/10.46586/tosc.v2020.i3.119-151",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Comprehensive security analysis of CRAFT",
+      "first_author": "Hosein Hadipour",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2965398584",
+      "doi": "https://doi.org/10.13154/tosc.v2019.i4.290-317",
+      "institution": "University of Tehran",
+      "institution_country": "IR",
+      "institution_ror": "https://ror.org/05vf56z40"
+    },
+    {
+      "title": "Improved Security Evaluation of SPN Block Ciphers and its Applications in the Single-key Attack on SKINNY",
+      "first_author": "Wenying Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3013177791",
+      "doi": "https://doi.org/10.46586/tosc.v2019.i4.171-191",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "New Related-Tweakey Boomerang and Rectangle Attacks on Deoxys-BC Including BDT Effect",
+      "first_author": "Boxin Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On the Feistel Counterpart of the Boomerang Connectivity Table: Introduction and Analysis of the FBCT",
+      "first_author": "Hamid Boukerrou",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

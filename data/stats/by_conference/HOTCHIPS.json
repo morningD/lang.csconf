@@ -258,152 +258,894 @@
     "2026": "B"
   },
   "affiliations": {
-    "total_covered": 66,
-    "total_papers": 108,
-    "coverage_pct": 61.1,
+    "total_covered": 403,
+    "total_papers": 537,
+    "coverage_pct": 75.0,
     "top": [
       {
         "name": "Intel",
-        "count": 9,
-        "pct": 8.33,
+        "count": 26,
+        "pct": 4.84,
         "country": "US",
         "rank": 1
       },
       {
-        "name": "NVIDIA",
-        "count": 5,
-        "pct": 4.63,
-        "country": "US",
+        "name": "KAIST",
+        "count": 15,
+        "pct": 2.79,
+        "country": "KR",
         "rank": 2
       },
       {
-        "name": "KAIST",
-        "count": 4,
-        "pct": 3.7,
-        "country": "KR",
+        "name": "IBM",
+        "count": 12,
+        "pct": 2.23,
+        "country": "US",
         "rank": 3
       },
       {
-        "name": "Tsinghua University",
-        "count": 3,
-        "pct": 2.78,
-        "country": "CN",
+        "name": "NVIDIA",
+        "count": 9,
+        "pct": 1.68,
+        "country": "US",
         "rank": 4
       },
       {
-        "name": "SK Group",
-        "count": 2,
-        "pct": 1.85,
-        "country": "JP",
+        "name": "Samsung",
+        "count": 7,
+        "pct": 1.3,
+        "country": "KR",
         "rank": 5
+      },
+      {
+        "name": "Stanford University",
+        "count": 7,
+        "pct": 1.3,
+        "country": "US",
+        "rank": 5
+      },
+      {
+        "name": "University of Wisconsin-Madison",
+        "count": 6,
+        "pct": 1.12,
+        "country": "US",
+        "rank": 7
+      },
+      {
+        "name": "Google",
+        "count": 6,
+        "pct": 1.12,
+        "country": "US",
+        "rank": 7
+      },
+      {
+        "name": "American Rock Mechanics Association",
+        "count": 6,
+        "pct": 1.12,
+        "country": "US",
+        "rank": 7
       },
       {
         "name": "University of California, Berkeley",
-        "count": 2,
-        "pct": 1.85,
+        "count": 6,
+        "pct": 1.12,
         "country": "US",
-        "rank": 5
+        "rank": 7
+      },
+      {
+        "name": "Oracle",
+        "count": 5,
+        "pct": 0.93,
+        "country": "US",
+        "rank": 11
+      },
+      {
+        "name": "Tsinghua University",
+        "count": 5,
+        "pct": 0.93,
+        "country": "CN",
+        "rank": 11
       },
       {
         "name": "Qualcomm",
-        "count": 2,
-        "pct": 1.85,
+        "count": 5,
+        "pct": 0.93,
         "country": "GB",
-        "rank": 5
+        "rank": 11
       },
       {
-        "name": "Ayar Labs",
-        "count": 2,
-        "pct": 1.85,
-        "country": "US",
-        "rank": 5
+        "name": "SK Group",
+        "count": 4,
+        "pct": 0.74,
+        "country": "KR",
+        "rank": 14
       },
       {
         "name": "University of Electro-Communications",
-        "count": 2,
-        "pct": 1.85,
+        "count": 4,
+        "pct": 0.74,
         "country": "JP",
-        "rank": 5
+        "rank": 14
+      },
+      {
+        "name": "AMD",
+        "count": 4,
+        "pct": 0.74,
+        "country": "",
+        "rank": 14
+      },
+      {
+        "name": "ARM",
+        "count": 3,
+        "pct": 0.56,
+        "country": "GB",
+        "rank": 17
+      },
+      {
+        "name": "Baidu",
+        "count": 3,
+        "pct": 0.56,
+        "country": "CN",
+        "rank": 17
+      },
+      {
+        "name": "Princeton University",
+        "count": 3,
+        "pct": 0.56,
+        "country": "US",
+        "rank": 17
       },
       {
         "name": "Chinese Academy of Sciences",
-        "count": 2,
-        "pct": 1.85,
+        "count": 3,
+        "pct": 0.56,
         "country": "CN",
-        "rank": 5
-      },
-      {
-        "name": "IBM",
-        "count": 1,
-        "pct": 0.93,
-        "country": "US",
-        "rank": 11
-      },
-      {
-        "name": "Team Co-founder and Chief Architect Moffett AI",
-        "count": 1,
-        "pct": 0.93,
-        "country": "",
-        "rank": 11
-      },
-      {
-        "name": "VP Networking",
-        "count": 1,
-        "pct": 0.93,
-        "country": "",
-        "rank": 11
-      },
-      {
-        "name": "Partner Lead SOC Architect",
-        "count": 1,
-        "pct": 0.93,
-        "country": "",
-        "rank": 11
-      },
-      {
-        "name": "National University of Singapore",
-        "count": 1,
-        "pct": 0.93,
-        "country": "SG",
-        "rank": 11
-      },
-      {
-        "name": "National Chung Cheng University",
-        "count": 1,
-        "pct": 0.93,
-        "country": "TW",
-        "rank": 11
-      },
-      {
-        "name": "Purdue University West Lafayette",
-        "count": 1,
-        "pct": 0.93,
-        "country": "US",
-        "rank": 11
-      },
-      {
-        "name": "Enfabrica",
-        "count": 1,
-        "pct": 0.93,
-        "country": "",
-        "rank": 11
-      },
-      {
-        "name": "UCLA Health",
-        "count": 1,
-        "pct": 0.93,
-        "country": "US",
-        "rank": 11
-      },
-      {
-        "name": "Advanced Optical Systems",
-        "count": 1,
-        "pct": 0.93,
-        "country": "US",
-        "rank": 11
+        "rank": 17
       }
     ],
     "by_year": {
+      "2016": {
+        "total_covered": 42,
+        "total_papers": 48,
+        "coverage_pct": 87.5,
+        "top": [
+          {
+            "name": "NVIDIA",
+            "count": 2,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "ARM",
+            "count": 2,
+            "pct": 4.17,
+            "country": "GB",
+            "rank": 1
+          },
+          {
+            "name": "Samsung",
+            "count": 2,
+            "pct": 4.17,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Google",
+            "count": 2,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "IBM",
+            "count": 2,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Movidius Ltd., 1st Floor, O'Connell Bridge House, D'Olier St, Dublin D02 RR99, Ireland",
+            "count": 2,
+            "pct": 4.17,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Aoptix Technologies",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Micron",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "North Carolina State University",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "University of California, Davis",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "SK Group",
+            "count": 1,
+            "pct": 2.08,
+            "country": "KR",
+            "rank": 7
+          },
+          {
+            "name": "DeePhi Technology, United States of America",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Keio University",
+            "count": 1,
+            "pct": 2.08,
+            "country": "JP",
+            "rank": 7
+          },
+          {
+            "name": "NXP",
+            "count": 1,
+            "pct": 2.08,
+            "country": "NL",
+            "rank": 7
+          },
+          {
+            "name": "Movidius, United States of America",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "AMD, United States of America",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Sage Technologies",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "MediaTek",
+            "count": 1,
+            "pct": 2.08,
+            "country": "CN",
+            "rank": 7
+          },
+          {
+            "name": "Baidu",
+            "count": 1,
+            "pct": 2.08,
+            "country": "CN",
+            "rank": 7
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "KAIST",
+            "count": 1,
+            "pct": 2.08,
+            "country": "KR",
+            "rank": 7
+          },
+          {
+            "name": "Pacific Northwest National Laboratory",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Vassar College",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Oracle",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Pmdtechnologies USA, inc., United States of America",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Intel",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "University of Salerno",
+            "count": 1,
+            "pct": 2.08,
+            "country": "IT",
+            "rank": 7
+          },
+          {
+            "name": "DotProduct, United States of America",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Stanford University",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "LG Electronics Technology Center Europe",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Princeton University",
+            "count": 1,
+            "pct": 2.08,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Inuitive, United States of America",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Taiwan Semiconductor Manufacturing Company",
+            "count": 1,
+            "pct": 2.08,
+            "country": "TW",
+            "rank": 7
+          },
+          {
+            "name": "CEVA",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          },
+          {
+            "name": "Movidius Ltd., 1st Floor, O'Connell Bridge House, D'Olier St, Dublin D02, Ireland",
+            "count": 1,
+            "pct": 2.08,
+            "country": "",
+            "rank": 7
+          }
+        ]
+      },
+      "2019": {
+        "total_covered": 19,
+        "total_papers": 25,
+        "coverage_pct": 76.0,
+        "top": [
+          {
+            "name": "Work by many people in MLPerf community",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Defence Research and Development Organisation",
+            "count": 1,
+            "pct": 4.0,
+            "country": "IN",
+            "rank": 1
+          },
+          {
+            "name": "Taras Shevchenko National University of Kyiv",
+            "count": 1,
+            "pct": 4.0,
+            "country": "UA",
+            "rank": 1
+          },
+          {
+            "name": "RTG Chief GPU Architect",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Partner, Silicon and System Architecture",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Xilinx",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Astrophysical Observatory of Turin, INAF, Turin",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Hot Chips",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Alibaba",
+            "count": 1,
+            "pct": 4.0,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "VP Systems Eng IoT Compute & Wireless (ICW) Business Unit",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Ministry of Education of the People's Republic of China",
+            "count": 1,
+            "pct": 4.0,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Senior Principal Engineer Infrastructure Line of Business",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Hot Chips 31, August 19, 2019",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "CTO & co-founder",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "NVIDIA",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Institute of Microelectronics",
+            "count": 1,
+            "pct": 4.0,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Bill McGee & Team",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "HUAWEI",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Silicon Designs",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
+      "2020": {
+        "total_covered": 10,
+        "total_papers": 24,
+        "coverage_pct": 41.7,
+        "top": [
+          {
+            "name": "Intel",
+            "count": 3,
+            "pct": 12.5,
+            "country": "GB",
+            "rank": 1
+          },
+          {
+            "name": "Azure Silicon Architecture Team",
+            "count": 1,
+            "pct": 4.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "ETH Zurich",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CH",
+            "rank": 2
+          },
+          {
+            "name": "Alibaba",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Baidu",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Harvard University Press",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "VP Engineering",
+            "count": 1,
+            "pct": 4.17,
+            "country": "",
+            "rank": 2
+          }
+        ]
+      },
+      "2021": {
+        "total_covered": 29,
+        "total_papers": 47,
+        "coverage_pct": 61.7,
+        "top": [
+          {
+            "name": "Samsung",
+            "count": 3,
+            "pct": 6.38,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "KAIST",
+            "count": 3,
+            "pct": 6.38,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "University of Electro-Communications",
+            "count": 2,
+            "pct": 4.26,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Hot Chips 33, 24 August 2021",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Tokyo Institute of Technology",
+            "count": 1,
+            "pct": 2.13,
+            "country": "JP",
+            "rank": 4
+          },
+          {
+            "name": "Google",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "University of Texas",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Poster",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Kagawa University",
+            "count": 1,
+            "pct": 2.13,
+            "country": "JP",
+            "rank": 4
+          },
+          {
+            "name": "University of Pennsylvania",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Princeton University",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Infineon Technologies",
+            "count": 1,
+            "pct": 2.13,
+            "country": "GB",
+            "rank": 4
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "RADEON PRODUCT ARCHITECT",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "AIE Engineering Team HotChips-33 Conference, August 2021",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Hot Chips 33",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Intel",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Cornell University",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Edge Technologies",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "CTO",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "LightOn,Paris",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 2.13,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "DPU Principal Architect",
+            "count": 1,
+            "pct": 2.13,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Graphcore",
+            "count": 1,
+            "pct": 2.13,
+            "country": "GB",
+            "rank": 4
+          }
+        ]
+      },
+      "2022": {
+        "total_covered": 19,
+        "total_papers": 41,
+        "coverage_pct": 46.3,
+        "top": [
+          {
+            "name": "KAIST",
+            "count": 6,
+            "pct": 14.63,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "HotChips",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Stanford University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 2.44,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "VP of Product/Hardware Engineering",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Yale University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "American Rock Mechanics Association",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "NTT Device Technology Labs",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Computer Architecture and Memory Systems Laboratory",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "NVIDIA",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CA",
+            "rank": 2
+          },
+          {
+            "name": "R2M Solution",
+            "count": 1,
+            "pct": 2.44,
+            "country": "IT",
+            "rank": 2
+          },
+          {
+            "name": "University of Tokyo",
+            "count": 1,
+            "pct": 2.44,
+            "country": "JP",
+            "rank": 2
+          }
+        ]
+      },
       "2023": {
         "total_covered": 14,
         "total_papers": 30,
@@ -798,6 +1540,1462 @@
             "name": "Integrated Systems Solutions",
             "count": 1,
             "pct": 2.63,
+            "country": "US",
+            "rank": 3
+          }
+        ]
+      },
+      "2010": {
+        "total_covered": 32,
+        "total_papers": 36,
+        "coverage_pct": 88.9,
+        "top": [
+          {
+            "name": "IBM",
+            "count": 2,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Oracle",
+            "count": 2,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Intel",
+            "count": 2,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Bulldozer Core",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "System z Processor Development",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Hewlett-Packard",
+            "count": 1,
+            "pct": 2.78,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Citius Consulting Group LLC",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Luxtera",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Institut des Matériaux, de Microélectronique et des Nanosciences de Provence",
+            "count": 1,
+            "pct": 2.78,
+            "country": "FR",
+            "rank": 4
+          },
+          {
+            "name": "Nonvolatile Memory Seminar",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Stanford University",
+            "count": 1,
+            "pct": 2.78,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Microsoft",
+            "count": 1,
+            "pct": 2.78,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Bobcat Core",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Pit Radwar",
+            "count": 1,
+            "pct": 2.78,
+            "country": "PL",
+            "rank": 4
+          },
+          {
+            "name": "POWER7 EnergyScale Architect",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 1,
+            "pct": 2.78,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "count": 1,
+            "pct": 2.78,
+            "country": "FR",
+            "rank": 4
+          },
+          {
+            "name": "Westmere-EX Architecture",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "University of California, Berkeley",
+            "count": 1,
+            "pct": 2.78,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "North China Electric Power University",
+            "count": 1,
+            "pct": 2.78,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "University of Lisbon",
+            "count": 1,
+            "pct": 2.78,
+            "country": "PT",
+            "rank": 4
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 2.78,
+            "country": "KR",
+            "rank": 4
+          },
+          {
+            "name": "Schlumberger",
+            "count": 1,
+            "pct": 2.78,
+            "country": "VG",
+            "rank": 4
+          },
+          {
+            "name": "University of California, San Diego",
+            "count": 1,
+            "pct": 2.78,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Division of Biomedical Engineering",
+            "count": 1,
+            "pct": 2.78,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "University of Electronic Science and Technology of China",
+            "count": 1,
+            "pct": 2.78,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "Columbia University",
+            "count": 1,
+            "pct": 2.78,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "EPFL",
+            "count": 1,
+            "pct": 2.78,
+            "country": "CH",
+            "rank": 4
+          },
+          {
+            "name": "American Rock Mechanics Association",
+            "count": 1,
+            "pct": 2.78,
+            "country": "US",
+            "rank": 4
+          }
+        ]
+      },
+      "2011": {
+        "total_covered": 35,
+        "total_papers": 39,
+        "coverage_pct": 89.7,
+        "top": [
+          {
+            "name": "Stanford University",
+            "count": 3,
+            "pct": 7.69,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Intel",
+            "count": 3,
+            "pct": 7.69,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Cavium",
+            "count": 2,
+            "pct": 5.13,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "IBM",
+            "count": 2,
+            "pct": 5.13,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "AMD",
+            "count": 2,
+            "pct": 5.13,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "IC Development Fulcrum Microsystem",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "T-Mobile",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 6
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Universiti Teknologi MARA",
+            "count": 1,
+            "pct": 2.56,
+            "country": "MY",
+            "rank": 6
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "University of California, Berkeley",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 6
+          },
+          {
+            "name": "XMOS",
+            "count": 1,
+            "pct": 2.56,
+            "country": "GB",
+            "rank": 6
+          },
+          {
+            "name": "Electronics and Telecommunications, Padre Conceicao College of Engineering, Verna, Goa",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "System Engineering",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "University of British Columbia",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CA",
+            "rank": 6
+          },
+          {
+            "name": "Tokyo Institute of Technology",
+            "count": 1,
+            "pct": 2.56,
+            "country": "JP",
+            "rank": 6
+          },
+          {
+            "name": "Oracle",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 6
+          },
+          {
+            "name": "Nosov Magnitogorsk State Technical University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "RU",
+            "rank": 6
+          },
+          {
+            "name": "California State University, Long Beach",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 6
+          },
+          {
+            "name": "China University of Petroleum, East China",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Lawrence Berkeley National Laboratory",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 6
+          },
+          {
+            "name": "Micron",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 6
+          },
+          {
+            "name": "Softeam Cadextan",
+            "count": 1,
+            "pct": 2.56,
+            "country": "FR",
+            "rank": 6
+          },
+          {
+            "name": "UC, Parallel Computing Laboratory, Berkeley",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "VP Technology Innovation & Systems Applications, MoSys",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "General Motors",
+            "count": 1,
+            "pct": 2.56,
+            "country": "IN",
+            "rank": 6
+          },
+          {
+            "name": "Tensilica Inc",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 6
+          },
+          {
+            "name": "Université du Québec à Trois-Rivières",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CA",
+            "rank": 6
+          }
+        ]
+      },
+      "2012": {
+        "total_covered": 36,
+        "total_papers": 41,
+        "coverage_pct": 87.8,
+        "top": [
+          {
+            "name": "Intel",
+            "count": 2,
+            "pct": 4.88,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Program Committee Co-Chairs",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Huawei Technologies",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Advanced Micro Devices",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Nanjing University of Information Science and Technology",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Cavium",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "AMD Fellow, Trinity SOC Architect",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Sensor Electronics",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "National Taiwan Normal University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "TW",
+            "rank": 2
+          },
+          {
+            "name": "Australian National University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "AU",
+            "rank": 2
+          },
+          {
+            "name": "EPFL",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CH",
+            "rank": 2
+          },
+          {
+            "name": "AMD",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Immobiliser Central Europe",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CZ",
+            "rank": 2
+          },
+          {
+            "name": "Toshiba",
+            "count": 1,
+            "pct": 2.44,
+            "country": "JP",
+            "rank": 2
+          },
+          {
+            "name": "Qualcomm",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "George Washington University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Industrial Technology Research Institute",
+            "count": 1,
+            "pct": 2.44,
+            "country": "TW",
+            "rank": 2
+          },
+          {
+            "name": "Senior Vice President Product Development & Engineering",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University of Michigan",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "MIPS Technologies",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "CTS Corporation",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CZ",
+            "rank": 2
+          },
+          {
+            "name": "Altera",
+            "count": 1,
+            "pct": 2.44,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "Amkor Technology",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Fujitsu",
+            "count": 1,
+            "pct": 2.44,
+            "country": "JP",
+            "rank": 2
+          },
+          {
+            "name": "Microelectronics",
+            "count": 1,
+            "pct": 2.44,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Deutsches Zentrum für Luft- und Raumfahrt e. V.",
+            "count": 1,
+            "pct": 2.44,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "ARM",
+            "count": 1,
+            "pct": 2.44,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "King Saud University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "SA",
+            "rank": 2
+          },
+          {
+            "name": "Harbin Institute of Technology",
+            "count": 1,
+            "pct": 2.44,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Vinnytsia National Technical University",
+            "count": 1,
+            "pct": 2.44,
+            "country": "UA",
+            "rank": 2
+          },
+          {
+            "name": "University of Melbourne",
+            "count": 1,
+            "pct": 2.44,
+            "country": "AU",
+            "rank": 2
+          },
+          {
+            "name": "Jaguar Land Rover",
+            "count": 1,
+            "pct": 2.44,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "Advanced Imaging Research",
+            "count": 1,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 2
+          }
+        ]
+      },
+      "2013": {
+        "total_covered": 40,
+        "total_papers": 46,
+        "coverage_pct": 87.0,
+        "top": [
+          {
+            "name": "Intel",
+            "count": 2,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "EIE, Adhiyamaan College of Engineering, Hosur",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Beijing Institute of Technology",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "HSA foundation president AMD corporate fellow",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Keio University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "JP",
+            "rank": 2
+          },
+          {
+            "name": "University of California, Berkeley",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Politecnico di Milano",
+            "count": 1,
+            "pct": 2.17,
+            "country": "IT",
+            "rank": 2
+          },
+          {
+            "name": "American Rock Mechanics Association",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Senior Principal Hardware Engineers, Microelectronics",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Hot Chips 2013",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Indian Institute of Technology Hyderabad",
+            "count": 1,
+            "pct": 2.17,
+            "country": "IN",
+            "rank": 2
+          },
+          {
+            "name": "Xilinx",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "BEN BATES, WALTER FRY, SREEKANTH GODEY HOT CHIPS",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Google",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Castilla-La Mancha",
+            "count": 1,
+            "pct": 2.17,
+            "country": "ES",
+            "rank": 2
+          },
+          {
+            "name": "Technology Applications",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Information Technology University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "PK",
+            "rank": 2
+          },
+          {
+            "name": "Qualcomm",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "National Institute of Technology Rourkela",
+            "count": 1,
+            "pct": 2.17,
+            "country": "IN",
+            "rank": 2
+          },
+          {
+            "name": "Fujitsu",
+            "count": 1,
+            "pct": 2.17,
+            "country": "JP",
+            "rank": 2
+          },
+          {
+            "name": "Toshiba",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "South China University of Technology",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Silicon Valley University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "V. N. Karazin Kharkiv National University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "UA",
+            "rank": 2
+          },
+          {
+            "name": "CME Group",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Intellectual Property Group, Winston & Strawn, LLP",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Defense Advanced Research Projects Agency",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Hertfordshire",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "Hebrew University of Jerusalem",
+            "count": 1,
+            "pct": 2.17,
+            "country": "IL",
+            "rank": 2
+          },
+          {
+            "name": "Sertifitseerimiskeskus",
+            "count": 1,
+            "pct": 2.17,
+            "country": "EE",
+            "rank": 2
+          },
+          {
+            "name": "University of Texas at Austin",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of the West of England",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "King Saud University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "SA",
+            "rank": 2
+          },
+          {
+            "name": "National Time Service Center",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "HOT CHIPS",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Science and Technology on Electronic Test & Measurement Laboratory, Qingdao",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Istanbul Medipol University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "TR",
+            "rank": 2
+          }
+        ]
+      },
+      "2014": {
+        "total_covered": 39,
+        "total_papers": 43,
+        "coverage_pct": 90.7,
+        "top": [
+          {
+            "name": "American Rock Mechanics Association",
+            "count": 2,
+            "pct": 4.65,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Universidad de Las Palmas de Gran Canaria",
+            "count": 2,
+            "pct": 4.65,
+            "country": "ES",
+            "rank": 1
+          },
+          {
+            "name": "SK Group",
+            "count": 1,
+            "pct": 2.33,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Institut national de recherche en informatique et en automatique",
+            "count": 1,
+            "pct": 2.33,
+            "country": "FR",
+            "rank": 3
+          },
+          {
+            "name": "Institute of Oceanographic Instrumentation",
+            "count": 1,
+            "pct": 2.33,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "IBM Power Systems",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Tegra Architecture",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Pacific Northwest National Laboratory",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Sejong University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "KR",
+            "rank": 3
+          },
+          {
+            "name": "Software",
+            "count": 1,
+            "pct": 2.33,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "HotChips",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Oracle",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Purdue University West Lafayette",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "AUGUST",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Corporate Fellow, USA",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Yeungnam University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "KR",
+            "rank": 3
+          },
+          {
+            "name": "Oregon State University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "National Chung Cheng University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "TW",
+            "rank": 3
+          },
+          {
+            "name": "SIB Swiss Institute of Bioinformatics",
+            "count": 1,
+            "pct": 2.33,
+            "country": "CH",
+            "rank": 3
+          },
+          {
+            "name": "National University of Singapore",
+            "count": 1,
+            "pct": 2.33,
+            "country": "SG",
+            "rank": 3
+          },
+          {
+            "name": "Clemson University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "East Harlem Tutorial Program",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Fukuoka Institute of Technology",
+            "count": 1,
+            "pct": 2.33,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Center for Information Technology",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Green, Platform Res. Labs",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "CTO",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Baidu",
+            "count": 1,
+            "pct": 2.33,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "California State University System",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Princeton University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "CPU Architecture",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Fujitsu",
+            "count": 1,
+            "pct": 2.33,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Photonics Electronics Technology Research Association",
+            "count": 1,
+            "pct": 2.33,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Insilixa",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "NEC",
+            "count": 1,
+            "pct": 2.33,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Intel",
+            "count": 1,
+            "pct": 2.33,
+            "country": "DE",
+            "rank": 3
+          }
+        ]
+      },
+      "2015": {
+        "total_covered": 36,
+        "total_papers": 39,
+        "coverage_pct": 92.3,
+        "top": [
+          {
+            "name": "NTT",
+            "count": 2,
+            "pct": 5.13,
+            "country": "JP",
+            "rank": 1
+          },
+          {
+            "name": "Intel",
+            "count": 2,
+            "pct": 5.13,
+            "country": "IN",
+            "rank": 1
+          },
+          {
+            "name": "HotChips 2015",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Johannes Kepler University of Linz",
+            "count": 1,
+            "pct": 2.56,
+            "country": "AT",
+            "rank": 3
+          },
+          {
+            "name": "Algo-Logic Systems, Inc.",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Harbin Engineering University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Server Architecture",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Phytium Technology Co., Ltd",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "University Hospital of Bern",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CH",
+            "rank": 3
+          },
+          {
+            "name": "DEI-UNIBO",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Amirkabir University of Technology",
+            "count": 1,
+            "pct": 2.56,
+            "country": "IR",
+            "rank": 3
+          },
+          {
+            "name": "Hokkaido University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Altera IC Design",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "AMD Products",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "TU Wien",
+            "count": 1,
+            "pct": 2.56,
+            "country": "AT",
+            "rank": 3
+          },
+          {
+            "name": "IoT Segment Marketing Manager",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "University of California, Berkeley",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Anitoa Systems, LLC",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Ohio State University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "North Carolina State University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Institute e-Austria Timisoara",
+            "count": 1,
+            "pct": 2.56,
+            "country": "RO",
+            "rank": 3
+          },
+          {
+            "name": "co-CTOs",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "SparkFun Electronics",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "American Rock Mechanics Association",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Qualcomm",
+            "count": 1,
+            "pct": 2.56,
+            "country": "GB",
+            "rank": 3
+          },
+          {
+            "name": "Ritsumeikan University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "JP",
+            "rank": 3
+          },
+          {
+            "name": "Google",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "KAIST",
+            "count": 1,
+            "pct": 2.56,
+            "country": "KR",
+            "rank": 3
+          },
+          {
+            "name": "Advanced Micro Devices",
+            "count": 1,
+            "pct": 2.56,
+            "country": "CA",
+            "rank": 3
+          },
+          {
+            "name": "University of California, Davis",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 2.56,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "IBM Power Systems",
+            "count": 1,
+            "pct": 2.56,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Shri Mata Vaishno Devi University",
+            "count": 1,
+            "pct": 2.56,
+            "country": "IN",
+            "rank": 3
+          },
+          {
+            "name": "Utah State University",
+            "count": 1,
+            "pct": 2.56,
             "country": "US",
             "rank": 3
           }

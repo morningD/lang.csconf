@@ -1,0 +1,347 @@
+{
+  "conference": "FPGA",
+  "year": 2022,
+  "total_papers": 38,
+  "total_matched": 27,
+  "total_with_affiliation": 27,
+  "coverage_pct": 71.1,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "RapidStream: Parallel Physical Implementation of FPGA HLS Designs.",
+      "first_author": "Licheng Guo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Agile DNN Accelerator Design Using Incremental Synthesis on FPGAs.",
+      "first_author": "Qingcheng Xiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211209812",
+      "doi": "https://doi.org/10.1145/3490422.3502351",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "N3H-Core: Neuron-designed Neural Network Accelerator via FPGA-based Heterogeneous Computing Cores.",
+      "first_author": "Yu Gong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating Constraint-Based Causal Discovery by Shifting Speed Bottleneck.",
+      "first_author": "Ce Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4210986423",
+      "doi": "https://doi.org/10.1145/3490422.3502363",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "The Virtuous Cycles of Determinism: Programming Groq's Tensor Streaming Processor.",
+      "first_author": "Satnam Singh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211149354",
+      "doi": "https://doi.org/10.1145/3490422.3510453",
+      "institution": "Groq Inc., Mountain View, CA, USA",
+      "institution_country": null,
+      "raw_affiliation": "Groq Inc., Mountain View, CA, USA"
+    },
+    {
+      "title": "Logic Shrinkage: Learned FPGA Netlist Sparsity for Efficient Neural Network Inference.",
+      "first_author": "Erwei Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MAQO: A Scalable Many-Core Annealer for Quadratic Optimization on a Stratix 10 FPGA.",
+      "first_author": "Mohammad Bagherbeik",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211002993",
+      "doi": "https://doi.org/10.1145/3490422.3502328",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "DecGNN: A Framework for Mapping Decoupled GNN Models onto CPU-FPGA Heterogeneous Platform.",
+      "first_author": "Bingyi Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211029478",
+      "doi": "https://doi.org/10.1145/3490422.3502326",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "FILM-QNN: Efficient FPGA Acceleration of Deep Neural Networks with Intra-Layer, Mixed-Precision Quantization.",
+      "first_author": "Mengshu Sun",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Revisiting PathFinder Routing Algorithm.",
+      "first_author": "Yue Zha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211082391",
+      "doi": "https://doi.org/10.1145/3490422.3502356",
+      "institution": "University of Pennsylvania",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00b30xv10"
+    },
+    {
+      "title": "Efficient FPGA-based ECDSA Verification Engine For Permissioned Blockchains.",
+      "first_author": "Rashmi Agrawal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4312684437",
+      "doi": "https://doi.org/10.1109/asap54787.2022.00032",
+      "institution": "Boston University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05qwgg493"
+    },
+    {
+      "title": "A High Throughput Multi-bit-width 3D Systolic Accelerator for NAS Optimized Deep Neural Networks on FPGA.",
+      "first_author": "Mingqiang Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211194433",
+      "doi": "https://doi.org/10.1145/3490422.3502343",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "HP-GNN: Generating High Throughput GNN Training Implementation on CPU-FPGA Heterogeneous Platform.",
+      "first_author": "Yi-Chien Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211165432",
+      "doi": "https://doi.org/10.1145/3490422.3502359",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "An FPGA-based RNN-T Inference Accelerator with PIM-HBM.",
+      "first_author": "Shinhaeng Kang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211105506",
+      "doi": "https://doi.org/10.1145/3490422.3502355",
+      "institution": "Samsung (South Korea)",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04w3jy968"
+    },
+    {
+      "title": "Sextans: A Streaming Accelerator for General-Purpose Sparse-Matrix Dense-Matrix Multiplication.",
+      "first_author": "Linghao Song",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3198975860",
+      "doi": "https://doi.org/10.1145/3490422.3502357",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "Synthesized Garbage Collection for FPGA Accelerators.",
+      "first_author": "Martha Barker",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211095014",
+      "doi": "https://doi.org/10.1145/3490422.3502341",
+      "institution": "Columbia University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj8s172"
+    },
+    {
+      "title": "Accelerating SSSP for Power-Law Graphs.",
+      "first_author": "Yuze Chi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211113317",
+      "doi": "https://doi.org/10.1145/3490422.3502358",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "High-Performance Sparse Linear Algebra on HBM-Equipped FPGAs Using HLS: A Case Study on SpMV.",
+      "first_author": "Yixiao Du",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HeteroFlow: An Accelerator Programming Model with Decoupled Data Placement for Software-Defined FPGAs.",
+      "first_author": "Shaojie Xiang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Hardware Acceleration of Nonparametric Belief Propagation for Efficient Robot Manipulation.",
+      "first_author": "Yanqi Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211246544",
+      "doi": "https://doi.org/10.1145/3490422.3502329",
+      "institution": "Brown University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gq02987"
+    },
+    {
+      "title": "FPGA-based Trainable Autoencoder for Communication Systems.",
+      "first_author": "Jonas Ney",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211101621",
+      "doi": "https://doi.org/10.1145/3490422.3502337",
+      "institution": "University of Kaiserslautern",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04zrf7b53"
+    },
+    {
+      "title": "HiPR: Fast, Incremental Custom Partial Reconfiguration for HLS Developers.",
+      "first_author": "Yuanlong Xiao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Finding and Finessing Static Islands in Dynamically Scheduled Circuits.",
+      "first_author": "Jianyi Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211023745",
+      "doi": "https://doi.org/10.1145/3490422.3502362",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "Multi-input Serial Adders for FPGA-like Computational Fabric.",
+      "first_author": "Herman Schmit",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211243732",
+      "doi": "https://doi.org/10.1145/3490422.3502352",
+      "institution": "Google (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00njsd438"
+    },
+    {
+      "title": "An Integrity Checking Framework for AXI Protocol in Multi-tenant FPGA.",
+      "first_author": "Yukui Luo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211172455",
+      "doi": "https://doi.org/10.1145/3490422.3502338",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Highly Scalable Runtime Countermeasure Against Microprobing Attacks on Die-to-Die Interconnections in System-in-Package.",
+      "first_author": "Zhenyu Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211090425",
+      "doi": "https://doi.org/10.1145/3490422.3502334",
+      "institution": "University of Rhode Island",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/013ckk937"
+    },
+    {
+      "title": "Yosys+Odin-II: The Odin-II Partial Mapper with Yosys Coarse-grained Netlists in VTR.",
+      "first_author": "Seyed Alireza Damghani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211035621",
+      "doi": "https://doi.org/10.1145/3490422.3502344",
+      "institution": "University of New Brunswick",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05nkf0n29"
+    },
+    {
+      "title": "Ultra Low-Complexity Implementation of Binary Ring-LWE based Post-Quantum Cryptography on FPGA Platform.",
+      "first_author": "Jiafeng Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211075005",
+      "doi": "https://doi.org/10.1145/3490422.3502342",
+      "institution": "Villanova University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02g7kd627"
+    },
+    {
+      "title": "MathRAMs: Configurable Fused Compute-Memory Blocks for FPGAs.",
+      "first_author": "Aman Arora",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SPA-GCN: Efficient and Flexible GCN Accelerator with Application for Graph Similarity Computation.",
+      "first_author": "Atefeh Sohrabizadeh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211038054",
+      "doi": "https://doi.org/10.1145/3490422.3502332",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "Logic Scaling Options for the Next 10 Years: From FinFet to CFET, from Dual Damascene to Semi Damascene.",
+      "first_author": "Zsolt Tokei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HMT: A Hardware-Centric Hybrid Bonsai Merkle Tree Algorithm for High-Performance Authentication.",
+      "first_author": "Rakin Muhammad Shadab",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211223921",
+      "doi": "https://doi.org/10.1145/3490422.3502345",
+      "institution": "University of Central Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/036nfer12"
+    },
+    {
+      "title": "FPGA Accelerators for Robust Visual SLAM on Humanoid Robots.",
+      "first_author": "Maria Rafaela Gkeka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211021390",
+      "doi": "https://doi.org/10.1145/3490422.3502331",
+      "institution": "University of Thessaly",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/04v4g9h31"
+    },
+    {
+      "title": "End-to-End Acceleration of Homomorphic Encrypted CNN Inference on FPGAs.",
+      "first_author": "Tian Ye",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4210995368",
+      "doi": "https://doi.org/10.1145/3490422.3502346",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Automated Accelerator Optimization Aided by Graph Neural Networks.",
+      "first_author": "Atefeh Sohrabizadeh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4293026115",
+      "doi": "https://doi.org/10.1145/3489517.3530409",
+      "institution": "University of California System",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00pjdza24"
+    },
+    {
+      "title": "Co-Design for Energy Efficient and Fast Genomic Search: Interleaved Bloom Filter on FPGA.",
+      "first_author": "Marius Knaust",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How to Shrink My FPGAs - Optimizing Tile Interfaces and the Configuration Logic in FABulous FPGA Fabrics.",
+      "first_author": "King Lok Chung",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4211122771",
+      "doi": "https://doi.org/10.1145/3490422.3502371",
+      "institution": "University of Manchester",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/027m9bs27"
+    },
+    {
+      "title": "REMOT: A Hardware-Software Architecture for Attention-Guided Multi-Object Tracking with Dynamic Vision Sensors on FPGAs.",
+      "first_author": "Yizhao Gao",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

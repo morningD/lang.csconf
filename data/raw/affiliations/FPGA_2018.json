@@ -1,0 +1,463 @@
+{
+  "conference": "FPGA",
+  "year": 2018,
+  "total_papers": 61,
+  "total_matched": 24,
+  "total_with_affiliation": 19,
+  "coverage_pct": 31.1,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Domino: An Asynchronous and Energy-efficient Accelerator for Graph Processing: (Abstract Only).",
+      "first_author": "Chongchong Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Optimizations of Sequence Alignment on FPGA: A Case Study of Extended Sequence Alignment (Abstact Only).",
+      "first_author": "Zheming Jin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FastTrack: Exploiting Fast FPGA Wiring for Implementing NoC Shortcuts (Abstract Only).",
+      "first_author": "Nachiket Kapre",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "K-Flow: A Programming and Scheduling Framework to Optimize Dataflow Execution on CPU-FPGA Platforms: (Abstract Only).",
+      "first_author": "Jason Cong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FPGAs in the Datacenters: the Case of Parallel Hybrid Super Scalar String Sample Sort (pHS5)(Abstract Only).",
+      "first_author": "Mikhail Asiatici",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FPGA Fastfood - A High Speed Systolic Implementation of a Large Scale Online Kernel Method.",
+      "first_author": "Sean Fox",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2788014245",
+      "doi": "https://doi.org/10.1145/3174243.3174271",
+      "institution": "The University of Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/0384j8v12"
+    },
+    {
+      "title": "CausaLearn: Automated Framework for Scalable Streaming-based Causal Bayesian Learning using FPGAs.",
+      "first_author": "Bita Darvish Rouhani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mapping Large-Scale DNNs on Asymmetric FPGAs: (Abstract Only).",
+      "first_author": "Wentai Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Architecture Exploration for HLS-Oriented FPGA Debug Overlays.",
+      "first_author": "Al-Shahna Jamal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2788424169",
+      "doi": "https://doi.org/10.1145/3174243.3174254",
+      "institution": "University of British Columbia",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03rmrcq20"
+    },
+    {
+      "title": "DATuner: An Extensible Distributed Autotuning Framework for FPGA Design and Design Automation: (Abstract Only).",
+      "first_author": "Gai Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Performance Comparison of Multiple Approaches of Status Register for Medium Density Memory Suitable for Implementation of a Lossless Compression Dictionary: (Abstract Only).",
+      "first_author": "Matej Bartík",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Scalable Window Generation for the Intel Broadwell+Arria 10 and High-Bandwidth FPGA Systems.",
+      "first_author": "Greg Stitt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2793009992",
+      "doi": "https://doi.org/10.1145/3174243.3174262",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "A Customizable Matrix Multiplication Framework for the Intel HARPv2 Xeon+FPGA Platform: A Deep Learning Case Study.",
+      "first_author": "Duncan J. M. Moss",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3207378573",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "FGC: A Tool-flow for Generating and Configuring Custom FPGAs(Abstract Only).",
+      "first_author": "Oluseyi A. Ayorinde",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards a Uniform Template-based Architecture for Accelerating 2D and 3D CNNs on FPGA.",
+      "first_author": "Junzhong Shen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789246071",
+      "doi": "https://doi.org/10.1145/3174243.3174257",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "High-Performance QR Decomposition for FPGAs.",
+      "first_author": "Martin Langhammer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789139117",
+      "doi": "https://doi.org/10.1145/3174243.3174273",
+      "institution": "Coeliac UK",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/042404z19"
+    },
+    {
+      "title": "A Framework for Generating High Throughput CNN Implementations on FPGAs.",
+      "first_author": "Hanqing Zeng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792503273",
+      "doi": "https://doi.org/10.1145/3174243.3174265",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "A Low-Power Deconvolutional Accelerator for Convolutional Neural Network Based Segmentation on FPGA: Abstract Only.",
+      "first_author": "Shuanglong Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Continuous Skyline Computation Accelerator with Parallelizing Dominance Relation Calculations: (Abstract Only).",
+      "first_author": "Kenichi Koizumi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Combined Spatial and Temporal Blocking for High-Performance Stencil Computation on FPGAs Using OpenCL.",
+      "first_author": "Hamid Reza Zohouri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2785874054",
+      "doi": "https://doi.org/10.1145/3174243.3174248",
+      "institution": "Tokyo Institute of Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/0112mx960"
+    },
+    {
+      "title": "FPGA-based LSTM Acceleration for Real-Time EEG Signal Processing: (Abstract Only).",
+      "first_author": "Zhe Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Rosetta: A Realistic High-Level Synthesis Benchmark Suite for Software Programmable FPGAs.",
+      "first_author": "Yuan Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Solving Satisfiability Problem on Quantum Annealer: A Lesson from FPGA CAD Tools: (Abstract Only).",
+      "first_author": "Juexiao Su",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ADAM: Automated Design Analysis and Merging for Speeding up FPGA Development.",
+      "first_author": "Ho-Cheung Ng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Design of an MTJ-Based Nonvolatile LUT Circuit with a Data-Update Minimized Shift Operation for an Ultra-Low-Power FPGA: (Abstract Only).",
+      "first_author": "Daisuke Suzuki",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "In-Package Domain-Specific ASICs for Intel® Stratix® 10 FPGAs: A Case Study of Accelerating Deep Learning Using TensorTile ASIC(Abstract Only).",
+      "first_author": "Eriko Nurvitadhi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Serial-Equivalent Parallel Routing for FPGAs: (Abstract Only).",
+      "first_author": "Minghua Shen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Software-Defined FPGA-Based Accelerator for Deep Convolutional Neural Networks: (Abstract Only).",
+      "first_author": "Yankang Du",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Lightweight YOLOv2: A Binarized CNN with A Parallel Support Vector Regression for an FPGA.",
+      "first_author": "Hiroki Nakahara",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7145926574",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Routing Magic: Performing Computations Using Routing Networks and Voting Logic on Unary Encoded Data.",
+      "first_author": "Soheil Mohajer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3160070430",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Graph-Theoretically Optimal Memory Banking for Stencil-Based Computing Kernels.",
+      "first_author": "Juan Escobedo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792647449",
+      "doi": "https://doi.org/10.1145/3174243.3174251",
+      "institution": "University of Central Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/036nfer12"
+    },
+    {
+      "title": "ParaDRo: A Parallel Deterministic Router Based on Spatial Partitioning and Scheduling.",
+      "first_author": "Chin Hau Hoo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "BoxPlacer: Force Directed-Based Timing-Driven Placement for Large-Scale FPGAs: (Abstract Only).",
+      "first_author": "Minghua Shen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Dynamically Scheduled High-level Synthesis.",
+      "first_author": "Lana Josipovic",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2790678706",
+      "doi": "https://doi.org/10.1145/3174243.3174264",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "Architecture and Circuit Design of an All-Spintronic FPGA.",
+      "first_author": "Stephen M. Williams",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789491226",
+      "doi": "https://doi.org/10.1145/3174243.3174256",
+      "institution": "University of Central Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/036nfer12"
+    },
+    {
+      "title": "High-Throughput Lossless Compression on Tightly Coupled CPU-FPGA Platforms: (Abstract Only).",
+      "first_author": "Weikang Qiao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Optimal Microarchitecture for Stencil Computation with Data Reuse and Fine-Grained Parallelism: (Abstract Only).",
+      "first_author": "Yuze Chi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Software/Hardware Co-design for Multichannel Scheduling in IEEE 802.11p MLME: (Abstract Only).",
+      "first_author": "Nan Ding",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Exploration of Low Numeric Precision Deep Learning Inference Using Intel® FPGAs: (Abstract Only).",
+      "first_author": "Philip Colangelo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A FPGA Friendly Approximate Computing Framework with Hybrid Neural Networks: (Abstract Only).",
+      "first_author": "Haiyue Song",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Memory-Efficient Fast Fourier Transform on Streaming Data by Fusing Permutations.",
+      "first_author": "François Serre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2791171721",
+      "doi": "https://doi.org/10.1145/3174243.3174263",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "HexCell: a Hexagonal Cell for Evolvable Systolic Arrays on FPGAs: (Abstract Only).",
+      "first_author": "Fady Hussein",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Performance Comparison of Multiples and Target Detection with Imager-driven Processing Mode for Ultrafast-Imager: (Abstract Only).",
+      "first_author": "Xiaoyu Yu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Self-adaptation Method of Fitting Convolutional Neural Network into FPGA: Abstract Only).",
+      "first_author": "Ning Mao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LEOSoC: An Open-Source Cross-Platform Embedded Linux Library for Managing Hardware Accelerators in Heterogeneous System-on-Chips(Abstract Only).",
+      "first_author": "Andrea Guerrieri",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FASTCF: FPGA-based Accelerator for STochastic-Gradient-Descent-based Collaborative Filtering.",
+      "first_author": "Shijie Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "C-LSTM: Enabling Efficient LSTM using Structured Compression Techniques on FPGAs.",
+      "first_author": "Shuo Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2787895998",
+      "doi": "https://doi.org/10.48550/arxiv.1803.06305",
+      "institution": null
+    },
+    {
+      "title": "SIFT Keypoint Descriptor Matching Algorithm: A Fully Pipelined Accelerator on FPGA(Abstract Only).",
+      "first_author": "Luka Daoud",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A HOG-based Real-time and Multi-scale Pedestrian Detector Demonstration System on FPGA.",
+      "first_author": "Jan Dürre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792296420",
+      "doi": "https://doi.org/10.1145/3174243.3174249",
+      "institution": "Leibniz University Hannover",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/0304hq317"
+    },
+    {
+      "title": "A Scalable Approach to Exact Resource-Constrained Scheduling Based on a Joint SDC and SAT Formulation.",
+      "first_author": "Steve Dai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2788447492",
+      "doi": "https://doi.org/10.1145/3174243.3174268",
+      "institution": "Cornell University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05bnh6r87"
+    },
+    {
+      "title": "Degree-aware Hybrid Graph Traversal on FPGA-HMC Platform.",
+      "first_author": "Jialiang Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2788601541",
+      "doi": "https://doi.org/10.1145/3174243.3174245",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Understanding Performance Differences of FPGAs and GPUs: (Abtract Only).",
+      "first_author": "Jason Cong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Liquid Silicon: A Data-Centric Reconfigurable Architecture Enabled by RRAM Technology.",
+      "first_author": "Yue Zha",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Full-System VM-HDL Co-Simulation Framework for Servers with PCIe-Connected FPGAs.",
+      "first_author": "Shenghsun Cho",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2778306243",
+      "doi": "https://doi.org/10.1145/3174243.3174269",
+      "institution": "Stony Brook University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05qghxh33"
+    },
+    {
+      "title": "Accelerating Graph Analytics by Co-Optimizing Storage and Access on an FPGA-HMC Platform.",
+      "first_author": "Soroosh Khoram",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789007918",
+      "doi": "https://doi.org/10.1145/3174243.3174260",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Evaluation of OpenCL Performance-oriented Optimizations for Streaming Kernels on the FPGA: (Abstract Only).",
+      "first_author": "Zheming Jin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Automatic Optimising CNN with Depthwise Separable Convolution on FPGA: (Abstact Only).",
+      "first_author": "Ruizhe Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "P4-Compatible High-Level Synthesis of Low Latency 100 Gb/s Streaming Packet Parsers in FPGAs.",
+      "first_author": "Jeferson Santiago da Silva",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2768439981",
+      "doi": "https://doi.org/10.1145/3174243.3174270",
+      "institution": "Polytechnique Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05f8d4e86"
+    },
+    {
+      "title": "Configurable FPGA Packet Parser for Terabit Networks with Guaranteed Wire-Speed Throughput.",
+      "first_author": "Jakub Cabal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2792814254",
+      "doi": "https://doi.org/10.1145/3174243.3174250",
+      "institution": "CESNET, zájmové sdružení právnických osob",
+      "institution_country": "CZ",
+      "institution_ror": "https://ror.org/050dkka69"
+    },
+    {
+      "title": "DeltaRNN: A Power-efficient Recurrent Neural Network Accelerator.",
+      "first_author": "Chang Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W6966714973",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Improving FPGA Performance with a S44 LUT Structure.",
+      "first_author": "Wenyi Feng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2789564496",
+      "doi": "https://doi.org/10.1145/3174243.3174272",
+      "institution": "Microsemi (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01mvkzj41"
+    }
+  ]
+}
