@@ -1,0 +1,761 @@
+{
+  "conference": "ICCD",
+  "year": 2021,
+  "total_papers": 87,
+  "total_matched": 57,
+  "total_with_affiliation": 57,
+  "coverage_pct": 65.5,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Flipping Bits to Share Crossbars in ReRAM-Based DNN Accelerator.",
+      "first_author": "Lei Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Stochastic Iterative Approximation: Software/hardware techniques for adjusting aggressiveness of approximation.",
+      "first_author": "Tomoki Nakamura",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Empirical Guide to Use of Persistent Memory for Large-Scale In-Memory Graph Analysis.",
+      "first_author": "Hanyeoreum Bae",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Chopin: Composing Cost-Effective Custom Chips with Algorithmic Chiplets.",
+      "first_author": "Pete Ehrett",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Comprehensive Failure Analysis against Soft Errors from Hardware and Software Perspectives.",
+      "first_author": "Yohan Ko",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200584348",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00041",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "AdaptBit-HD: Adaptive Model Bitwidth for Hyperdimensional Computing.",
+      "first_author": "Justin Morris",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200449874",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00026",
+      "institution": "San Diego State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0264fdx42"
+    },
+    {
+      "title": "Stochastic-HD: Leveraging Stochastic Computing on Hyper-Dimensional Computing.",
+      "first_author": "Yilun Hao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200623496",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00058",
+      "institution": "University of California San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "The Accuracy and Efficiency of Posit Arithmetic.",
+      "first_author": "Stefan Dan Ciocirlan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Understanding and Optimizing Hybrid SSD with High-Density and Low-Cost Flash Memory.",
+      "first_author": "Liang Shi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Special Session: How much quality is enough quality? A case for acceptability in approximate designs.",
+      "first_author": "Isaías B. Felzmann",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Rectification of Integer Arithmetic Circuits using Computer Algebra Techniques.",
+      "first_author": "Vikas Rao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200479627",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00039",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "Novel Ultra-Low-Voltage Flip-Flops: Near-Vth Modeling and VLSI Integration.",
+      "first_author": "Anuradha Chathuranga Ranasinghe",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "RDP3: Rapid Domain Platform Performance Prediction for Design Space Exploration.",
+      "first_author": "Jinghan Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Reconfigurable Array for Analog Applications.",
+      "first_author": "Ziyi Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200594125",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00064",
+      "institution": "Drexel University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04bdffz58"
+    },
+    {
+      "title": "CoRe-ECO: Concurrent Refinement of Detailed Place-and-Route for an Efficient ECO Automation.",
+      "first_author": "Chung-Kuan Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200005453",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00065",
+      "institution": "University of California San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "AGQFL: Communication-efficient Federated Learning via Automatic Gradient Quantization in Edge Heterogeneous Systems.",
+      "first_author": "Zirui Lian",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200132709",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00089",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "Improved GPU Implementations of the Pair-HMM Forward Algorithm for DNA Sequence Alignment.",
+      "first_author": "Enliang Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3205405279",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00055",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "HammerFilter: Robust Protection and Low Hardware Overhead Method for RowHammer.",
+      "first_author": "Kwangrae Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200200012",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00043",
+      "institution": "Hanyang University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/046865y68"
+    },
+    {
+      "title": "WiNN: Wireless Interconnect based Neural Network Accelerator.",
+      "first_author": "Siqin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200346880",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00052",
+      "institution": "Ohio University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01jr3y717"
+    },
+    {
+      "title": "APT: Efficient Side-Channel Analysis Framework against Inner Product Masking Scheme.",
+      "first_author": "Jingdian Ming",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200195061",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00093",
+      "institution": "Institute of Information Engineering",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04r53se39"
+    },
+    {
+      "title": "HASDH: A Hotspot-Aware and Scalable Dynamic Hashing for Hybrid DRAM-NVM Memory.",
+      "first_author": "Zhengtao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200063497",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00034",
+      "institution": "Wuhan National Laboratory for Optoelectronics",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03c9ncn37"
+    },
+    {
+      "title": "Improving the Heavy Re-encryption Overhead of Split Counter Mode Encryption for NVM.",
+      "first_author": "Qi Pei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200526507",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00073",
+      "institution": "Binghamton University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008rmbt77"
+    },
+    {
+      "title": "Seer-SSD: Bridging Semantic Gap between Log-Structured File Systems and SSDs to Reduce SSD Write Amplification.",
+      "first_author": "You Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200533698",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00020",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Run-time Configurable Approximate Multiplier using Significance-Driven Logic Compression.",
+      "first_author": "Ibrahim Haddadi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3206803859",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00029",
+      "institution": "Taibah University",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/01xv1nn60"
+    },
+    {
+      "title": "An Efficient Non-Profiled Side-Channel Attack on the CRYSTALS-Dilithium Post-Quantum Signature.",
+      "first_author": "Zhaohui Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200446781",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00094",
+      "institution": "University of Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05qbk4x57"
+    },
+    {
+      "title": "Resonance-Based Power-Efficient Pulse Generator Design with Corresponding Distribution Network.",
+      "first_author": "Ke Jia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fast and Low-Cost Mitigation of ReRAM Variability for Deep Learning Applications.",
+      "first_author": "Sugil Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200213209",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00051",
+      "institution": "Ulsan National Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/017cjz748"
+    },
+    {
+      "title": "Special Session: When Dataflows Converge: Reconfigurable and Approximate Computing for Emerging Neural Networks.",
+      "first_author": "Di Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200410165",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00014",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Erasure-Coded Multi-Block Updates Based on Hybrid Writes and Common XORs First.",
+      "first_author": "Yujun Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CROP: FPGA Implementation of High-Performance Polynomial Multiplication in Saber KEM based on Novel Cyclic-Row Oriented Processing Strategy.",
+      "first_author": "Jiafeng Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200387775",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00031",
+      "institution": "Villanova University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02g7kd627"
+    },
+    {
+      "title": "Legion: Tailoring Grouped Neural Execution Considering Heterogeneity on Multiple Edge Devices.",
+      "first_author": "Kyunghwan Choi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200532484",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00067",
+      "institution": "Hanyang University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/046865y68"
+    },
+    {
+      "title": "SimiEncode: A Similarity-based Encoding Scheme to Improve Performance and Lifetime of Non-Volatile Main Memory.",
+      "first_author": "Suzhen Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200448509",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00044",
+      "institution": "Xiamen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00mcjh785"
+    },
+    {
+      "title": "Write-Optimized and Consistent RDMA-based Non-Volatile Main Memory Systems.",
+      "first_author": "Xinxin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200248125",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00048",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "UH-JLS: A Parallel Ultra-High Throughput JPEG-LS Encoding Architecture for Lossless Image Compression.",
+      "first_author": "Xuan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200228426",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00060",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "WAS-Deletion: Workload-Aware Secure Deletion Scheme for Solid-State Drives.",
+      "first_author": "Bingzhe Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200420665",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00047",
+      "institution": "Oklahoma State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01g9vbr38"
+    },
+    {
+      "title": "CHARM: Collaborative Host and Accelerator Resource Management for GPU Datacenters.",
+      "first_author": "Wei Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200542591",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00056",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "MetaTableLite: An Efficient Metadata Management Scheme for Tagged-Pointer-Based Spatial Safety.",
+      "first_author": "Dongwei Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200542740",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00042",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "NIST-Lite: Randomness Testing of RNGs on an Energy-Constrained Platform.",
+      "first_author": "Cheng-Yen Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200380698",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00019",
+      "institution": "Texas A&M University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01f5ytq51"
+    },
+    {
+      "title": "Special Session: Approximate TinyML Systems: Full System Approximations for Extreme Energy-Efficiency in Intelligent Edge Devices.",
+      "first_author": "Arnab Raha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200346503",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00015",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "CIDAN: Computing in DRAM with Artificial Neurons.",
+      "first_author": "Gian Singh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3217804621",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00062",
+      "institution": "Arizona State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03efmqc40"
+    },
+    {
+      "title": "HosNa: A DPC++ Benchmark Suite for Heterogeneous Architectures.",
+      "first_author": "Najmeh Nazari Bavarsad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200005713",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00084",
+      "institution": "University of California, Davis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05rrcem69"
+    },
+    {
+      "title": "Accelerating Sub-Block Erase in 3D NAND Flash Memory.",
+      "first_author": "Hongbin Gong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200227732",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00045",
+      "institution": "Xiamen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00mcjh785"
+    },
+    {
+      "title": "A Comprehensive Exploration of the Parallel Prefix Adder Tree Space.",
+      "first_author": "Teodor-Dumitru Ene",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200328139",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00030",
+      "institution": "Oklahoma State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01g9vbr38"
+    },
+    {
+      "title": "Universal Neural Network Acceleration via Real-Time Loop Blocking.",
+      "first_author": "Jiaqi Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200420069",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00053",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "Differential Testing of x86 Instruction Decoders with Instruction Operand Inferring Algorithm.",
+      "first_author": "Guang Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200091648",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00040",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "ReSpar: Reordering Algorithm for ReRAM-based Sparse Matrix-Vector Multiplication Accelerator.",
+      "first_author": "Yi-Jou Hsiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200417279",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00050",
+      "institution": "Research Center for Information Technology Innovation, Academia Sinica",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/000zgvm20"
+    },
+    {
+      "title": "Low-Cost Sequential Logic Circuit Design Considering Single Event Double-Node Upsets and Single Event Transients.",
+      "first_author": "Ramin Rajaei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200010297",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00038",
+      "institution": "University of Notre Dame",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00mkhxb43"
+    },
+    {
+      "title": "An Efficient Hybrid Parallel Compression Approximate Multiplier.",
+      "first_author": "Shangshang Yao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200367747",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00028",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "NRHI: A Concurrent Non-Rehashing Hash Index for Persistent Memory.",
+      "first_author": "Xinyu Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200233220",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00033",
+      "institution": "Beijing University of Civil Engineering and Architecture",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02yj0p855"
+    },
+    {
+      "title": "Dynamic File Cache Optimization for Hybrid SSDs with High-Density and Low-Cost Flash Memory.",
+      "first_author": "Ben Gu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Exploiting Intra-SM Parallelism in GPUs via Persistent and Elastic Blocks.",
+      "first_author": "Han Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200091031",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00054",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "PRL: Standardizing Performance Monitoring Library for High-Integrity Real-Time Systems.",
+      "first_author": "Jeremy Giesen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "QD-Compressor: a Quantization-based Delta Compression Framework for Deep Neural Networks.",
+      "first_author": "Shuyu Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PSACS: Highly-Parallel Shuffle Accelerator on Computational Storage.",
+      "first_author": "Chen Zou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ModelShield: A Generic and Portable Framework Extension for Defending Bit-Flip based Adversarial Weight Attacks.",
+      "first_author": "Yanan Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200095626",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00090",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "QFlow: Quantitative Information Flow for Security-Aware Hardware Design in Verilog.",
+      "first_author": "Lennart M. Reimann",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3197144363",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00097",
+      "institution": "RWTH Aachen University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04xfq0f34"
+    },
+    {
+      "title": "GVSoC: A Highly Configurable, Fast and Accurate Full-Platform Simulator for RISC-V based IoT Processors.",
+      "first_author": "Nazareno Bruschi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Discreet-PARA: Rowhammer Defense with Low Cost and High Efficiency.",
+      "first_author": "Yicheng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200023795",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00074",
+      "institution": "University of Illinois Chicago",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02mpq6x41"
+    },
+    {
+      "title": "Special Session: ADAPT: ANN-ControlleD System-Level Runtime Adaptable APproximate CompuTing.",
+      "first_author": "Prattay Chowdhury",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200077701",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00012",
+      "institution": "The University of Texas at Dallas",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/049emcs32"
+    },
+    {
+      "title": "Smart-DNN: Efficiently Reducing the Memory Requirements of Running Deep Neural Networks on Resource-constrained Platforms.",
+      "first_author": "Zhenbo Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200194496",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00087",
+      "institution": "Harbin Institute of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01yqg2h08"
+    },
+    {
+      "title": "HyperData: A Data Transfer Accelerator for Software Data Planes Based on Targeted Prefetching.",
+      "first_author": "Hossein Golestani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200127456",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00059",
+      "institution": "University of Michigan",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00jmfr291"
+    },
+    {
+      "title": "POMI: Polling-Based Memory Interface for Hybrid Memory System.",
+      "first_author": "Trung Le",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200394007",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00076",
+      "institution": "University of Illinois Chicago",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02mpq6x41"
+    },
+    {
+      "title": "Efficient Table-Based Polynomial on FPGA.",
+      "first_author": "Marco Barbone",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200188094",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00066",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "A High-performance Post-deduplication Delta Compression Scheme for Packed Datasets.",
+      "first_author": "Yucheng Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200474558",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00078",
+      "institution": "Nanchang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/042v6xz23"
+    },
+    {
+      "title": "Premier: A Concurrency-Aware Pseudo-Partitioning Framework for Shared Last-Level Cache.",
+      "first_author": "Xiaoyang Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200139702",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00068",
+      "institution": "Illinois Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037t3ry66"
+    },
+    {
+      "title": "An Ultra-efficient Look-up Table based Programmable Processing in Memory Architecture for Data Encryption.",
+      "first_author": "Purab Ranjan Sutradhar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200067193",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00049",
+      "institution": "Rochester Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00v4yb702"
+    },
+    {
+      "title": "MasterMind: Many-Accelerator SoC Architecture for Real-Time Brain-Computer Interfaces.",
+      "first_author": "Guy Eichler",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200243368",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00027",
+      "institution": "Columbia University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj8s172"
+    },
+    {
+      "title": "Conciliating Speed and Efficiency on Cache Compressors.",
+      "first_author": "Daniel Rodrigues Carvalho",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3207810765",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00075",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "Functional Locking through Omission: From HLS to Obfuscated Design.",
+      "first_author": "Zi Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200247333",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00095",
+      "institution": "The University of Texas at Dallas",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/049emcs32"
+    },
+    {
+      "title": "SME: ReRAM-based Sparse-Multiplication-Engine to Squeeze-Out Bit Sparsity of Neural Network.",
+      "first_author": "Fangxin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3133862166",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00072",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Compiling and Optimizing Real-world Programs for STRAIGHT ISA.",
+      "first_author": "Toru Koizumi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200078296",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00070",
+      "institution": "The University of Tokyo",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/057zh3y96"
+    },
+    {
+      "title": "Security Analysis of State-of-the-art Scan Obfuscation Technique.",
+      "first_author": "Yogendra Sao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200327387",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00096",
+      "institution": "Indian Institute of Technology Bhilai",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/02sscsx71"
+    },
+    {
+      "title": "Optimal Transistor Placement Combined with Global In-cell Routing in Standard Cell Layout Synthesis.",
+      "first_author": "Kyeongrok Jo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200577934",
+      "doi": "https://doi.org/10.1109/iccd53106.2021.00085",
+      "institution": "Seoul National University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04h9pn542"
+    },
+    {
+      "title": "Flexible Instruction Set Architecture for Programmable Look-up Table based Processing-in-Memory.",
+      "first_author": "Mark Connolly",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "EFM: Elastic Flash Management to Enhance Performance of Hybrid Flash Memory.",
+      "first_author": "Bingzhe Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Energy-Efficient MAC Units for Fused Posit Arithmetic.",
+      "first_author": "Raul Murillo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DynPaC: Coarse-Grained, Dynamic, and Partially Reconfigurable Array for Streaming Applications.",
+      "first_author": "Cheng Tan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "T-TSP: Transient-Temperature Based Safe Power Budgeting in Multi-/Many-Core Processors.",
+      "first_author": "Sobhan Niknam",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accurate and Fast Performance Modeling of Processors with Decoupled Front-end.",
+      "first_author": "Yuya Degawa",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Model Synthesis for Communication Traces of System Designs.",
+      "first_author": "Hao Zheng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Exploiting Online Locality and Reduction Parallelism for Sampled Dense Matrix Multiplication on GPUs.",
+      "first_author": "Zhongming Yu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fault-Aware Prediction-Guided Page Offlining for Uncorrectable Memory Error Prevention.",
+      "first_author": "Xiaoming Du",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Intelligent Prediction of Flash Lifetime via Online Domain Adaptation.",
+      "first_author": "Ruixiang Ma",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient Methods for SoC Trust Validation Using Information Flow Verification.",
+      "first_author": "Khitam M. Alatoun",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Consistent RDMA-Friendly Hashing on Remote Persistent Memory.",
+      "first_author": "Xinxin Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Block-LSM: An Ether-aware Block-ordered LSM-tree based Key-Value Storage Engine.",
+      "first_author": "Zehao Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "WidePipe: High-Throughput Deep Learning Inference System on a Cluster of Neural Processing Units.",
+      "first_author": "Lixian Ma",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}
