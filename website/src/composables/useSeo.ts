@@ -5,7 +5,7 @@ import { useI18n } from 'vue-i18n'
 const SITE_URL = 'https://morningd.github.io/lang.csconf'
 const SITE_NAME = 'lang.csconf'
 const DEFAULT_DESCRIPTION =
-  'Analyzing 908K+ first authors across 416 CCF-rated CS conferences (2010–2026). Explore author language diversity, top institution trends, and acceptance rates.'
+  'Analyzing 909K+ first authors across 416 CCF-rated CS conferences (2010–2026). Explore author language diversity, top institution trends, and acceptance rates.'
 
 export function useSeo(options?: {
   title?: string

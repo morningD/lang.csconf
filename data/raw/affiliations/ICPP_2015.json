@@ -1,0 +1,981 @@
+{
+  "conference": "ICPP",
+  "year": 2015,
+  "total_papers": 99,
+  "total_matched": 94,
+  "total_with_affiliation": 94,
+  "coverage_pct": 94.9,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Enhancing Garbage Collection Synchronization Using Explicit Bit Barriers.",
+      "first_author": "Jochen Hollmann",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2219343637",
+      "doi": "https://doi.org/10.1109/icpp.2015.86",
+      "institution": "Chalmers University of Technology",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/040wg7k59"
+    },
+    {
+      "title": "LBM-IB: A Parallel Library to Solve 3D Fluid-Structure Interaction Problems on Manycore Systems.",
+      "first_author": "Prateek Nagar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294224064",
+      "doi": "https://doi.org/10.1109/icpp.2015.14",
+      "institution": "Indiana University – Purdue University Indianapolis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gxnyn08"
+    },
+    {
+      "title": "LCIndex: A Local and Clustering Index on Distributed Ordered Tables for Flexible Multi-dimensional Range Queries.",
+      "first_author": "Chen Feng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296424313",
+      "doi": "https://doi.org/10.1109/icpp.2015.81",
+      "institution": "University of Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05qbk4x57"
+    },
+    {
+      "title": "SCAN: A Smart Application Platform for Empowering Parallelizations of Big Genomic Data Analysis in Clouds.",
+      "first_author": "Wei Xing",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295282924",
+      "doi": "https://doi.org/10.1109/icpp.2015.38",
+      "institution": "University of Manchester",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/027m9bs27"
+    },
+    {
+      "title": "PDTL: Parallel and Distributed Triangle Listing for Massive Graphs.",
+      "first_author": "Ilias Giechaskiel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295981143",
+      "doi": "https://doi.org/10.1109/icpp.2015.46",
+      "institution": "University of Cambridge",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/013meh722"
+    },
+    {
+      "title": "Automatic OpenCL Code Generation for Multi-device Heterogeneous Architectures.",
+      "first_author": "Pei Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2253428983",
+      "doi": "https://doi.org/10.1109/icpp.2015.105",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "Spatial Locality-Aware Cache Partitioning for Effective Cache Sharing.",
+      "first_author": "Saurabh Gupta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293319898",
+      "doi": "https://doi.org/10.1109/icpp.2015.24",
+      "institution": "Oak Ridge National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01qz5mb56"
+    },
+    {
+      "title": "Exploring Hardware Profile-Guided Green Datacenter Scheduling.",
+      "first_author": "Weichao Tang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294109574",
+      "doi": "https://doi.org/10.1109/icpp.2015.10",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "What Is Wrong with the Transmission? A Comprehensive Study on Message Passing Related Bugs.",
+      "first_author": "Mingxing Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PIC: Enable Large-Scale Privacy Preserving Content-Based Image Search on Cloud.",
+      "first_author": "Lan Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295797066",
+      "doi": "https://doi.org/10.1109/icpp.2015.104",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Optimizing MapReduce Based on Locality of K-V Pairs and Overlap between Shuffle and Local Reduce.",
+      "first_author": "Jianjiang Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293690431",
+      "doi": "https://doi.org/10.1109/icpp.2015.103",
+      "institution": "University of Science and Technology Beijing",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02egmk993"
+    },
+    {
+      "title": "Software-Based Lightweight Multithreading to Overlap Memory-Access Latencies of Commodity Processors.",
+      "first_author": "Cihang Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295372068",
+      "doi": "https://doi.org/10.1109/icpp.2015.71",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Do Twin Clouds Make Smoothness for Transoceanic Video Telephony?",
+      "first_author": "Jian Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Slowing Little Quickens More: Improving DCTCP for Massive Concurrent Flows.",
+      "first_author": "Mao Miao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294508932",
+      "doi": "https://doi.org/10.1109/icpp.2015.78",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "A Heterogeneity-Aware Region-Level Data Layout for Hybrid Parallel File Systems.",
+      "first_author": "Shuibing He",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293547092",
+      "doi": "https://doi.org/10.1109/icpp.2015.43",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "PPM: A Partitioned and Parallel Matrix Algorithm to Accelerate Encoding/Decoding Process of Asymmetric Parity Erasure Codes.",
+      "first_author": "Shiyi Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296549189",
+      "doi": "https://doi.org/10.1109/icpp.2015.55",
+      "institution": "Wuhan National Laboratory for Optoelectronics",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03c9ncn37"
+    },
+    {
+      "title": "RepFD - Using Reputation Systems to Detect Failures in Large Dynamic Networks.",
+      "first_author": "Maxime Pierre Andre Veron",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2225890285",
+      "doi": "https://doi.org/10.1109/icpp.2015.18",
+      "institution": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02kvxyf05"
+    },
+    {
+      "title": "Scan without a Glance: Towards Content-Free Crowd-Sourced Mobile Video Retrieval System.",
+      "first_author": "Cihang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295815091",
+      "doi": "https://doi.org/10.1109/icpp.2015.34",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Accelerating I/O Performance of Big Data Analytics on HPC Clusters through RDMA-Based Key-Value Store.",
+      "first_author": "Nusrat Sharmin Islam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294312748",
+      "doi": "https://doi.org/10.1109/icpp.2015.79",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "CoRec: A Cooperative Reconstruction Pattern for Multiple Failures in Erasure-Coded Storage Clusters.",
+      "first_author": "Jianzhong Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296398982",
+      "doi": "https://doi.org/10.1109/icpp.2015.56",
+      "institution": "Wuhan National Laboratory for Optoelectronics",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03c9ncn37"
+    },
+    {
+      "title": "Energy-Aware Cost-Effective Cooperative Mobile Streaming on Smartphones over Hybrid Wireless Networks.",
+      "first_author": "Zhihao Qu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293034278",
+      "doi": "https://doi.org/10.1109/icpp.2015.33",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "A Penalty Aware Memory Allocation Scheme for Key-Value Cache.",
+      "first_author": "Jianqiang Ou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295866703",
+      "doi": "https://doi.org/10.1109/icpp.2015.62",
+      "institution": "Wayne State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01070mq45"
+    },
+    {
+      "title": "TAPS: Software Defined Task-Level Deadline-Aware Preemptive Flow Scheduling in Data Centers.",
+      "first_author": "Lili Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293128954",
+      "doi": "https://doi.org/10.1109/icpp.2015.75",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "SZTS: A Novel Big Data Transportation System Benchmark Suite.",
+      "first_author": "Wen Xiong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293353661",
+      "doi": "https://doi.org/10.1109/icpp.2015.91",
+      "institution": "Shenzhen Institutes of Advanced Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04gh4er46"
+    },
+    {
+      "title": "Energy-Efficient and Delay-Constrained Broadcast in Time-Varying Energy-Demand Graphs.",
+      "first_author": "Chenxi Qiu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293439097",
+      "doi": "https://doi.org/10.1109/icpp.2015.28",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "Fine-Grained Loss Tomography in Dynamic Sensor Networks.",
+      "first_author": "Chenhong Cao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293681284",
+      "doi": "https://doi.org/10.1109/icpp.2015.87",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "Green-CM: Energy Efficient Contention Management for Transactional Memory.",
+      "first_author": "Shady Issa",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2292917085",
+      "doi": "https://doi.org/10.1109/icpp.2015.64",
+      "institution": "Instituto de Engenharia de Sistemas e Computadores Investigação e Desenvolvimento",
+      "institution_country": "PT",
+      "institution_ror": "https://ror.org/04mqy3p58"
+    },
+    {
+      "title": "GEM: A Framework for Developing Shared-Memory Parallel Genomic Applications on Memory Constrained Architectures.",
+      "first_author": "Mücahid Kutlu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296681824",
+      "doi": "https://doi.org/10.1109/icpp.2015.92",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "Optimization of Resource Allocation and Energy Efficiency in Heterogeneous Cloud Data Centers.",
+      "first_author": "Amer Qouneh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296635943",
+      "doi": "https://doi.org/10.1109/icpp.2015.9",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "Connecting the Dots: Reconstructing Network Behavior with Individual and Lossy Logs.",
+      "first_author": "Jiliang Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295941892",
+      "doi": "https://doi.org/10.1109/icpp.2015.26",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Nested Parallelism on GPU: Exploring Parallelization Templates for Irregular Loops and Recursive Computations.",
+      "first_author": "Da Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2260499435",
+      "doi": "https://doi.org/10.1109/icpp.2015.107",
+      "institution": "University of Missouri",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02ymw8z06"
+    },
+    {
+      "title": "Joint Media Streaming Optimization of Energy and Rebuffering Time in Cellular Networks.",
+      "first_author": "Zeqi Lai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296682510",
+      "doi": "https://doi.org/10.1109/icpp.2015.49",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Designing a Hybrid Scale-Up/Out Hadoop Architecture Based on Performance Measurements for High Application Performance.",
+      "first_author": "Zhuozhao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293423600",
+      "doi": "https://doi.org/10.1109/icpp.2015.11",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "GPGPU Benchmark Suites: How Well Do They Sample the Performance Spectrum?",
+      "first_author": "Jee Ho Ryoo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Leveraging Error Compensation to Minimize Time Deviation in Parallel Multi-core Simulations.",
+      "first_author": "Xiaodong Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294360450",
+      "doi": "https://doi.org/10.1109/icpp.2015.21",
+      "institution": "Suzhou University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04en8wb91"
+    },
+    {
+      "title": "Good Work Deserves Good Pay: A Quality-Based Surplus Sharing Method for Participatory Sensing.",
+      "first_author": "Shuo Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295450398",
+      "doi": "https://doi.org/10.1109/icpp.2015.47",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Towards Constant-Time Cardinality Estimation for Large-Scale RFID Systems.",
+      "first_author": "Binbin Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293471679",
+      "doi": "https://doi.org/10.1109/icpp.2015.90",
+      "institution": "Yanshan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02txfnf15"
+    },
+    {
+      "title": "Is Your Graph Algorithm Eligible for Nondeterministic Execution?",
+      "first_author": "Zhiyuan Shao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Design and Implementation of a Highly Efficient DGEMM for 64-Bit ARMv8 Multi-core Processors.",
+      "first_author": "Feng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293241800",
+      "doi": "https://doi.org/10.1109/icpp.2015.29",
+      "institution": "National University of Defense Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05d2yfz11"
+    },
+    {
+      "title": "GPSA: A Graph Processing System with Actors.",
+      "first_author": "Jianhua Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295985292",
+      "doi": "https://doi.org/10.1109/icpp.2015.80",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "Fast FCoE: An Efficient and Scale-Up Multi-core Framework for FCoE-Based SAN Storage Systems.",
+      "first_author": "Yunxiang Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295047408",
+      "doi": "https://doi.org/10.1109/icpp.2015.42",
+      "institution": "Wuhan National Laboratory for Optoelectronics",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03c9ncn37"
+    },
+    {
+      "title": "A Testing Engine for High-Performance and Cost-Effective Workflow Execution in the Cloud.",
+      "first_author": "Vivek K. Pallipuram",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294816667",
+      "doi": "https://doi.org/10.1109/icpp.2015.94",
+      "institution": "University of Delaware",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01sbq1a82"
+    },
+    {
+      "title": "Cache Coherence Protocol and Memory Performance of the Intel Haswell-EP Architecture.",
+      "first_author": "Daniel Molka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295593662",
+      "doi": "https://doi.org/10.1109/icpp.2015.83",
+      "institution": "Technische Universität Dresden",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/042aqky30"
+    },
+    {
+      "title": "Shorter On-Line Warmup for Sampled Simulation of Multi-threaded Applications.",
+      "first_author": "Chuntao Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295823650",
+      "doi": "https://doi.org/10.1109/icpp.2015.44",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "LPM: Concurrency-Driven Layered Performance Matching.",
+      "first_author": "Yuhang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294793262",
+      "doi": "https://doi.org/10.1109/icpp.2015.97",
+      "institution": "Illinois Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037t3ry66"
+    },
+    {
+      "title": "Pattern-Driven Hybrid Multi- and Many-Core Acceleration in the MPAS Shallow-Water Model.",
+      "first_author": "Peng Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293187853",
+      "doi": "https://doi.org/10.1109/icpp.2015.16",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "On Maximizing Reliability of Lifetime Constrained Data Aggregation Tree in Wireless Sensor Networks.",
+      "first_author": "Mengfan Shan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296691395",
+      "doi": "https://doi.org/10.1109/icpp.2015.17",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Network Coding for Effective NDN Content Delivery: Models, Experiments, and Applications.",
+      "first_author": "Kai Lei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Study on Partitioning Real-World Directed Graphs of Skewed Degree Distribution.",
+      "first_author": "Jie Yan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294739095",
+      "doi": "https://doi.org/10.1109/icpp.2015.37",
+      "institution": "Numerical Method (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02ns8zp42"
+    },
+    {
+      "title": "Assessing the Impact of Partial Verifications against Silent Data Corruptions.",
+      "first_author": "Aurélien Cavelan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293137161",
+      "doi": "https://doi.org/10.1109/icpp.2015.53",
+      "institution": "École Normale Supérieure de Lyon",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/04zmssz18"
+    },
+    {
+      "title": "DISCS: A DIStributed Collaboration System for Inter-AS Spoofing Defense.",
+      "first_author": "Bingyang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296429787",
+      "doi": "https://doi.org/10.1109/icpp.2015.25",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "MAMS: A Highly Reliable Policy for Metadata Service.",
+      "first_author": "Jiang Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296704295",
+      "doi": "https://doi.org/10.1109/icpp.2015.82",
+      "institution": "Texas Tech University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0405mnx93"
+    },
+    {
+      "title": "Optimal Node Selection for Data Regeneration in Heterogeneous Distributed Storage Systems.",
+      "first_author": "Qingyuan Gong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293613617",
+      "doi": "https://doi.org/10.1109/icpp.2015.48",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "GLAF: A Visual Programming and Auto-tuning Framework for Parallel Computing.",
+      "first_author": "Konstantinos Krommydas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295486779",
+      "doi": "https://doi.org/10.1109/icpp.2015.95",
+      "institution": "Virginia Tech",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02smfhw86"
+    },
+    {
+      "title": "Optimizing Image Sharpening Algorithm on GPU.",
+      "first_author": "Mengran Fan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295214947",
+      "doi": "https://doi.org/10.1109/icpp.2015.32",
+      "institution": "Institute of Computing Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0090r4d87"
+    },
+    {
+      "title": "Resident Block-Structured Adaptive Mesh Refinement on Thousands of Graphics Processing Units.",
+      "first_author": "David Beckingsale",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296195027",
+      "doi": "https://doi.org/10.1109/icpp.2015.15",
+      "institution": "University of Warwick",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01a77tt86"
+    },
+    {
+      "title": "Using Per-Loop CPU Clock Modulation for Energy Efficiency in OpenMP Applications.",
+      "first_author": "Wei Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293760502",
+      "doi": "https://doi.org/10.1109/icpp.2015.72",
+      "institution": "University of Delaware",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01sbq1a82"
+    },
+    {
+      "title": "Code 5-6: An Efficient MDS Array Coding Scheme to Accelerate Online RAID Level Migration.",
+      "first_author": "Chentao Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294877061",
+      "doi": "https://doi.org/10.1109/icpp.2015.54",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "In-Place Data Sliding Algorithms for Many-Core Architectures.",
+      "first_author": "Juan Gómez-Luna",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294241027",
+      "doi": "https://doi.org/10.1109/icpp.2015.30",
+      "institution": "University of Córdoba",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/05yc77b46"
+    },
+    {
+      "title": "Parallel (Probable) Lock-Free Hash Sieve: A Practical Sieving Algorithm for the SVP.",
+      "first_author": "Artur Mariano",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2224158271",
+      "doi": "https://doi.org/10.1109/icpp.2015.68",
+      "institution": "Technische Universität Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    },
+    {
+      "title": "Open ACC Programs Examined: A Performance Analysis Approach.",
+      "first_author": "Robert Dietrich",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295708898",
+      "doi": "https://doi.org/10.1109/icpp.2015.40",
+      "institution": "Technische Universität Dresden",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/042aqky30"
+    },
+    {
+      "title": "Sheriff: A Regional Pre-alert Management Scheme in Data Center Networks.",
+      "first_author": "Xiaofeng Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293891120",
+      "doi": "https://doi.org/10.1109/icpp.2015.76",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "PCS: Predictive Component-Level Scheduling for Reducing Tail Latency in Cloud Online Services.",
+      "first_author": "Rui Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2248779947",
+      "doi": "https://doi.org/10.1109/icpp.2015.58",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Accelerating Spectral Calculation through Hybrid GPU-Based Computing.",
+      "first_author": "Jian Xiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296239844",
+      "doi": "https://doi.org/10.1109/icpp.2015.13",
+      "institution": "Tianjin University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/012tb2g32"
+    },
+    {
+      "title": "Evaluating Latency-Sensitive Applications: Performance Degradation in Datacenters with Restricted Power Budget.",
+      "first_author": "Song Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296545222",
+      "doi": "https://doi.org/10.1109/icpp.2015.73",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Elastic and Efficient Virtual Network Provisioning for Cloud-Based Multi-tier Applications.",
+      "first_author": "Meng Shen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294482985",
+      "doi": "https://doi.org/10.1109/icpp.2015.102",
+      "institution": "Beijing Institute of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01skt4w74"
+    },
+    {
+      "title": "Dual-centric Data Center Network Architectures.",
+      "first_author": "Dawei Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296389196",
+      "doi": "https://doi.org/10.1109/icpp.2015.77",
+      "institution": "Temple University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00kx1jb78"
+    },
+    {
+      "title": "Generating Efficient Tensor Contractions for GPUs.",
+      "first_author": "Thomas Nelson",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293244628",
+      "doi": "https://doi.org/10.1109/icpp.2015.106",
+      "institution": "University of Colorado Boulder",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02ttsq026"
+    },
+    {
+      "title": "PLP: Protecting Location Privacy Against Correlation-Analysis Attack in Crowdsensing.",
+      "first_author": "Shanfeng Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293406166",
+      "doi": "https://doi.org/10.1109/icpp.2015.20",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Region-Based May-Happen-in-Parallel Analysis for C Programs.",
+      "first_author": "Peng Di",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294085393",
+      "doi": "https://doi.org/10.1109/icpp.2015.98",
+      "institution": "UNSW Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/03r8z3t63"
+    },
+    {
+      "title": "Crowdsourcing Sensing Workloads of Heterogeneous Tasks: A Distributed Fairness-Aware Approach.",
+      "first_author": "Wei Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296324767",
+      "doi": "https://doi.org/10.1109/icpp.2015.67",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Zebra: An East-West Control Framework for SDN Controllers.",
+      "first_author": "Haisheng Yu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295138850",
+      "doi": "https://doi.org/10.1109/icpp.2015.70",
+      "institution": "Dalian University of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/023hj5876"
+    },
+    {
+      "title": "Modelling and Developing Co-scheduling Strategies on Multicore Processors.",
+      "first_author": "Huanzhou Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296428740",
+      "doi": "https://doi.org/10.1109/icpp.2015.31",
+      "institution": "University of Warwick",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01a77tt86"
+    },
+    {
+      "title": "A Responsive Knapsack-Based Algorithm for Resource Provisioning and Scheduling of Scientific Workflows in Clouds.",
+      "first_author": "Maria Alejandra Rodriguez",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294297756",
+      "doi": "https://doi.org/10.1109/icpp.2015.93",
+      "institution": "The University of Melbourne",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/01ej9dk98"
+    },
+    {
+      "title": "LMDD: Light-Weight Magnetic-Based Door Detection with Your Smartphone.",
+      "first_author": "Yiyang Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294636308",
+      "doi": "https://doi.org/10.1109/icpp.2015.101",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Automatic Performance Tuning of Stencil Computations on GPUs.",
+      "first_author": "Joseph D. Garvey",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293015622",
+      "doi": "https://doi.org/10.1109/icpp.2015.39",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "DiMP: Architectural Support for Direct Message Passing on Shared Memory Multi-cores.",
+      "first_author": "J. Rubén Titos Gil",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295121105",
+      "doi": "https://doi.org/10.1109/icpp.2015.22",
+      "institution": "Barcelona Supercomputing Center",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/05sd8tv96"
+    },
+    {
+      "title": "MIFO: Multi-path Interdomain Forwarding.",
+      "first_author": "Ming Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294429176",
+      "doi": "https://doi.org/10.1109/icpp.2015.27",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Privacy Preserving Market Schemes for Mobile Sensing.",
+      "first_author": "Yuan Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295742125",
+      "doi": "https://doi.org/10.1109/icpp.2015.100",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Bit Flipping Errors in High Performance Linpack at Exascale and Beyond.",
+      "first_author": "Erlin Yao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296664845",
+      "doi": "https://doi.org/10.1109/icpp.2015.51",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Executing Large Scale Scientific Workflow Ensembles in Public Clouds.",
+      "first_author": "Qingye Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296687957",
+      "doi": "https://doi.org/10.1109/icpp.2015.61",
+      "institution": "The University of Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/0384j8v12"
+    },
+    {
+      "title": "DPX10: An Efficient X10 Framework for Dynamic Programming Applications.",
+      "first_author": "Chen Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295364085",
+      "doi": "https://doi.org/10.1109/icpp.2015.96",
+      "institution": "School of Computer Science and Technology, Tianjin University, Tianjin, China",
+      "institution_country": null,
+      "raw_affiliation": "School of Computer Science and Technology, Tianjin University, Tianjin, China"
+    },
+    {
+      "title": "SLA-Based Resource Scheduling for Big Data Analytics as a Service in Cloud Computing Environments.",
+      "first_author": "Yali Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295702196",
+      "doi": "https://doi.org/10.1109/icpp.2015.60",
+      "institution": "The University of Melbourne",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/01ej9dk98"
+    },
+    {
+      "title": "REED: A Reliable Energy-Efficient RAID.",
+      "first_author": "Shu Yin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293526068",
+      "doi": "https://doi.org/10.1109/icpp.2015.74",
+      "institution": "School of Information Science & Engineering, National Supercomputing Center in Changsha, Changsha, China",
+      "institution_country": null,
+      "raw_affiliation": "School of Information Science & Engineering, National Supercomputing Center in Changsha, Changsha, China"
+    },
+    {
+      "title": "Cloud Fog: Towards High Quality of Experience in Cloud Gaming.",
+      "first_author": "Yuhua Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294641597",
+      "doi": "https://doi.org/10.1109/icpp.2015.59",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    },
+    {
+      "title": "Matchmaking Applications and Partitioning Strategies for Efficient Execution on Heterogeneous Platforms.",
+      "first_author": "Jie Shen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295496430",
+      "doi": "https://doi.org/10.1109/icpp.2015.65",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "EC-FRM: An Erasure Coding Framework to Speed Up Reads for Erasure Coded Cloud Storage Systems.",
+      "first_author": "Yingxun Fu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295454423",
+      "doi": "https://doi.org/10.1109/icpp.2015.57",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Reducing Synchronization Cost in Distributed Multi-resource Allocation Problem.",
+      "first_author": "Jonathan Lejeune",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1530239979",
+      "doi": "https://doi.org/10.1109/icpp.2015.63",
+      "institution": "Laboratoire d'informatique de Nantes Atlantique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/05487pd16"
+    },
+    {
+      "title": "Characterizing Multi-media Retrieval Applications.",
+      "first_author": "Yunping Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295958965",
+      "doi": "https://doi.org/10.1109/icpp.2015.36",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "A Buffer Management Strategy on Spray and Wait Routing Protocol in DTNs.",
+      "first_author": "En Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295411331",
+      "doi": "https://doi.org/10.1109/icpp.2015.89",
+      "institution": "Jilin University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00js3aw79"
+    },
+    {
+      "title": "Reflex-Tree: A Biologically Inspired Parallel Architecture for Future Smart Cities.",
+      "first_author": "Jason Kane",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293411295",
+      "doi": "https://doi.org/10.1109/icpp.2015.45",
+      "institution": "University of Rhode Island",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/013ckk937"
+    },
+    {
+      "title": "Towards Redundancy-Aware Data Utility Maximization in Crowdsourced Sensing with Smartphones.",
+      "first_author": "Juan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1506169409",
+      "doi": "https://doi.org/10.1109/icdcs.2015.79",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Social VoD: A Social Feature-Based P2P System.",
+      "first_author": "Wei Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294107196",
+      "doi": "https://doi.org/10.1109/icpp.2015.66",
+      "institution": "Temple University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00kx1jb78"
+    },
+    {
+      "title": "Optimal Cache Partition-Sharing.",
+      "first_author": "Jacob Brock",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2294352052",
+      "doi": "https://doi.org/10.1109/icpp.2015.84",
+      "institution": "University of Rochester",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/022kthw22"
+    },
+    {
+      "title": "Characterizing Loop-Level Communication Patterns in Shared Memory.",
+      "first_author": "Arya Mazaheri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293417476",
+      "doi": "https://doi.org/10.1109/icpp.2015.85",
+      "institution": "Isfahan University of Technology",
+      "institution_country": "IR",
+      "institution_ror": "https://ror.org/00af3sa43"
+    },
+    {
+      "title": "Joint Wireless Charging and Sensor Activity Management in Wireless Rechargeable Sensor Networks.",
+      "first_author": "Yuan Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293548830",
+      "doi": "https://doi.org/10.1109/icpp.2015.88",
+      "institution": "Stony Brook University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05qghxh33"
+    },
+    {
+      "title": "Efficient Use of Hardware Transactional Memory for Parallel Mesh Generation.",
+      "first_author": "Tetsu Kobayashi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2293935842",
+      "doi": "https://doi.org/10.1109/icpp.2015.69",
+      "institution": "University of Electro-Communications",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/02x73b849"
+    },
+    {
+      "title": "An Energy-Efficient Branch Prediction with Grouped Global History.",
+      "first_author": "Mingkai Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2295513052",
+      "doi": "https://doi.org/10.1109/icpp.2015.23",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Profiling and Understanding Virtualization Overhead in Cloud.",
+      "first_author": "Liuhua Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2296192489",
+      "doi": "https://doi.org/10.1109/icpp.2015.12",
+      "institution": "Clemson University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/037s24f05"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "conference": "ICS",
+  "year": 2019,
+  "total_papers": 45,
+  "total_matched": 24,
+  "total_with_affiliation": 24,
+  "coverage_pct": 53.3,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "AMPT-GA: automatic mixed precision floating point tuning for GPU applications.",
+      "first_author": "Pradeep V. Kotipalli",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Diligent TLBs: a mechanism for exploiting heterogeneity in TLB miss behavior.",
+      "first_author": "Hussein Elnawawy",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TSM2: optimizing tall-and-skinny matrix-matrix multiplication on GPUs.",
+      "first_author": "Jieyang Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DeepHiR: improving high-radix router throughput with deep hybrid memory buffer microarchitecture.",
+      "first_author": "Cunlu Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HYPHA: a framework based on separation of parallelisms to accelerate persistent homology matrix reduction.",
+      "first_author": "Simon Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A communication-avoiding 3D sparse triangular solver.",
+      "first_author": "Piyush Sao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2952013349",
+      "doi": "https://doi.org/10.1145/3330345.3330357",
+      "institution": "Oak Ridge National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01qz5mb56"
+    },
+    {
+      "title": "Hybrid CPU/GPU clustering in shared memory on the billion point scale.",
+      "first_author": "Michael Gowanlock",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2952260709",
+      "doi": "https://doi.org/10.1145/3330345.3330349",
+      "institution": "Northern Arizona University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0272j5188"
+    },
+    {
+      "title": "Efficient thread/page/parallelism autotuning for NUMA systems.",
+      "first_author": "Mihail Popov",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951799940",
+      "doi": "https://doi.org/10.1145/3330345.3330376",
+      "institution": "Uppsala University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/048a87296"
+    },
+    {
+      "title": "Automatic construct selection and variable classification in OpenMP.",
+      "first_author": "Mohammad Norouzi Arab",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951039780",
+      "doi": "https://doi.org/10.1145/3330345.3330375",
+      "institution": "Technische Universität Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    },
+    {
+      "title": "QoSMT: supporting precise performance control for simultaneous multithreading architecture.",
+      "first_author": "Xin Jin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Parallelizing cryo-EM 3D reconstruction on GPU cluster with a partitioned and streamed model.",
+      "first_author": "Kunpeng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2950909795",
+      "doi": "https://doi.org/10.1145/3330345.3330347",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Power efficient job scheduling by predicting the impact of processor manufacturing variability.",
+      "first_author": "Dimitrios Chasapis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951693483",
+      "doi": "https://doi.org/10.1145/3330345.3330372",
+      "institution": "Universitat Politècnica de Catalunya",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/03mb6wj31"
+    },
+    {
+      "title": "Deep reuse: streamline CNN inference on the fly via coarse-grained computation reuse.",
+      "first_author": "Lin Ning",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating reduction and scan using tensor core units.",
+      "first_author": "Abdul Dakkak",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2901549770",
+      "doi": "https://doi.org/10.1145/3330345.3331057",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Henosis: workload-driven small array consolidation and placement for HDF5 applications on heterogeneous data stores.",
+      "first_author": "Donghe Kang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An online quality management framework for approximate communication in network-on-chips.",
+      "first_author": "Yuechen Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951032316",
+      "doi": "https://doi.org/10.1145/3330345.3330365",
+      "institution": "George Washington University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00y4zzh67"
+    },
+    {
+      "title": "Full-stack optimization for accelerating CNNs using powers-of-two weights with FPGA validation.",
+      "first_author": "Bradley McDanel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2953292182",
+      "doi": "https://doi.org/10.1145/3330345.3330385",
+      "institution": "Harvard University Press",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/006v7bf86"
+    },
+    {
+      "title": "GPU road network graph contraction and SSSP query.",
+      "first_author": "Roozbeh Karimi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2952530739",
+      "doi": "https://doi.org/10.1145/3330345.3330368",
+      "institution": "Louisiana State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05ect4e57"
+    },
+    {
+      "title": "Least squares solvers for distributed-memory machines with GPU accelerators.",
+      "first_author": "Jakub Kurzak",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951378879",
+      "doi": "https://doi.org/10.1145/3330345.3330356",
+      "institution": "University of Tennessee at Knoxville",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/020f3ap87"
+    },
+    {
+      "title": "Laius: Towards latency awareness and improved utilization of spatial multitasking accelerators in datacenters.",
+      "first_author": "Wei Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Performance optimization of reactive molecular dynamics simulations with dynamic charge distribution models on distributed memory platforms.",
+      "first_author": "Kurt A. O'Hearn",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2949418217",
+      "doi": "https://doi.org/10.1145/3330345.3330359",
+      "institution": "Michigan State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05hs6h993"
+    },
+    {
+      "title": "BonVoision: leveraging spatial data smoothness for recovery from memory soft errors.",
+      "first_author": "Bo Fang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On optimizing distributed non-negative Tucker decomposition.",
+      "first_author": "Venkatesan T. Chakaravarthy",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951072071",
+      "doi": "https://doi.org/10.1145/3330345.3330367",
+      "institution": "IBM Research - India",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/014wt7r80"
+    },
+    {
+      "title": "GPUGuard: mitigating contention based side and covert channel attacks on GPUs.",
+      "first_author": "Qiumin Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SDC: a software defined cache for efficient data indexing.",
+      "first_author": "Fan Ni",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient hierarchical online-autotuning: a case study on polyhedral accelerator mapping.",
+      "first_author": "Philip Pfaffe",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Software combining to mitigate multithreaded MPI contention.",
+      "first_author": "Abdelhalim Amer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2950038170",
+      "doi": "https://doi.org/10.1145/3330345.3330378",
+      "institution": "Argonne National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gvnxz63"
+    },
+    {
+      "title": "Efficient and effective sparse tensor reordering.",
+      "first_author": "Jiajia Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951178714",
+      "doi": "https://doi.org/10.1145/3330345.3330366",
+      "institution": "Pacific Northwest National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05h992307"
+    },
+    {
+      "title": "Efficient GPU tree walks for effective distributed n-body simulations.",
+      "first_author": "Jianqiao Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951388054",
+      "doi": "https://doi.org/10.1145/3330345.3330348",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "WCCV: improving the vectorization of IF-statements with warp-coherent conditions.",
+      "first_author": "Huihui Sun",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "RFAcc: a 3D ReRAM associative array based random forest accelerator.",
+      "first_author": "Lei Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Multi-criteria partitioning of multi-block structured grids.",
+      "first_author": "Hengjie Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2952431314",
+      "doi": "https://doi.org/10.1145/3330345.3330369",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "IA-SpGEMM: an input-aware auto-tuning framework for parallel sparse matrix-matrix multiplication.",
+      "first_author": "Zhen Xie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Avalon: towards QoS awareness and improved utilization through multi-resource management in datacenters.",
+      "first_author": "Quan Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Optimizing the linear fascicle evaluation algorithm for many-core systems.",
+      "first_author": "Karan Aggarwal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2949870253",
+      "doi": "https://doi.org/10.1145/3330345.3332469",
+      "institution": "Indian Institute of Science Bangalore",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/04dese585"
+    },
+    {
+      "title": "Dynamically linked MSHRs for adaptive miss handling in GPUs.",
+      "first_author": "Yongbin Gu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2949537427",
+      "doi": "https://doi.org/10.1145/3330345.3330390",
+      "institution": "Oregon State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00ysfqy60"
+    },
+    {
+      "title": "Can we trust profiling results?: understanding and fixing the inaccuracy in modern profilers.",
+      "first_author": "Hao Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GreenMM: energy efficient GPU matrix multiplication through undervolting.",
+      "first_author": "Hadi Zamani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The anatomy of efficient FFT and winograd convolutions on modern CPUs.",
+      "first_author": "Aleksandar Zlateski",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2950649068",
+      "doi": "https://doi.org/10.1145/3330345.3330382",
+      "institution": "Massachusetts Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/042nb2s44"
+    },
+    {
+      "title": "O3BNN: an out-of-order architecture for high-performance binarized neural network inference with fine-grained pruning.",
+      "first_author": "Tong Geng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Optimizing computation-communication overlap in asynchronous task-based programs.",
+      "first_author": "Emilio Castillo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2950331044",
+      "doi": "https://doi.org/10.1145/3330345.3330379",
+      "institution": "Universitat Politècnica de Catalunya",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/03mb6wj31"
+    },
+    {
+      "title": "Using performance models to understand scalable Krylov solver performance at scale for structured grid problems.",
+      "first_author": "Paul R. Eller",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2952622072",
+      "doi": "https://doi.org/10.1145/3330345.3330358",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Address-stride assisted approximate load value prediction in GPUs.",
+      "first_author": "Haonan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2950142771",
+      "doi": "https://doi.org/10.1145/3330345.3330362",
+      "institution": "William & Mary",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03hsf0573"
+    },
+    {
+      "title": "A scalable framework for adaptive computational general relativity on heterogeneous clusters.",
+      "first_author": "Milinda Fernando",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2951623632",
+      "doi": "https://doi.org/10.1145/3330345.3330346",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "GPU snapshot: checkpoint offloading for GPU-dense systems.",
+      "first_author": "Kyushick Lee",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

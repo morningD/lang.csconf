@@ -15,14 +15,14 @@ Visualizing the linguistic diversity of first authors across CCF-rated CS confer
 | Metric | Value |
 |--------|-------|
 | **Conferences** | 416 (CCF A/B/C + non-ranked) |
-| **Papers** | 908,971 |
+| **Papers** | 909,106 |
 | **Year range** | 2010–2026 |
 | **Categories** | 10 (AI, DB, NW, SE, CG, CT, HI, SC, DS, MX) |
 | **Languages tracked** | 17 |
 
 ## Open Data
 
-The raw crawled dataset (900k+ first-author records from DBLP + OpenReview, 2010–2026) is available for download on the [Releases](https://github.com/morningD/lang.csconf/releases) page. The data has been extensively cleaned — see the [About page](https://morningD.github.io/lang.csconf/#/about) for details.
+The raw crawled dataset (909k+ first-author records from DBLP + OpenReview, 2010–2026) is available for download on the [Releases](https://github.com/morningD/lang.csconf/releases) page. The data has been extensively cleaned — see the [About page](https://morningD.github.io/lang.csconf/#/about) for details.
 
 ## Features
 
@@ -138,7 +138,7 @@ python -m pipeline.run_all --force
 | 指标 | 数值 |
 |------|------|
 | **会议数** | 416（CCF A/B/C + 未评级） |
-| **论文数** | 908,971 |
+| **论文数** | 909,106 |
 | **年份范围** | 2010–2026 |
 | **学科分类** | 10（AI、DB、NW、SE、CG、CT、HI、SC、DS、MX） |
 | **追踪语言数** | 17 |

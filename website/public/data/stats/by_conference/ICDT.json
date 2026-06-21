@@ -328,152 +328,852 @@
     "2026": "B"
   },
   "affiliations": {
-    "total_covered": 30,
-    "total_papers": 88,
-    "coverage_pct": 34.1,
+    "total_covered": 398,
+    "total_papers": 578,
+    "coverage_pct": 68.9,
     "top": [
       {
-        "name": "University of Washington",
-        "count": 3,
-        "pct": 3.41,
-        "country": "US",
+        "name": "Hasselt University",
+        "count": 13,
+        "pct": 2.25,
+        "country": "BE",
         "rank": 1
+      },
+      {
+        "name": "IBM",
+        "count": 10,
+        "pct": 1.73,
+        "country": "US",
+        "rank": 2
       },
       {
         "name": "University of Wisconsin-Madison",
-        "count": 3,
-        "pct": 3.41,
+        "count": 10,
+        "pct": 1.73,
         "country": "US",
-        "rank": 1
+        "rank": 2
       },
       {
-        "name": "Télécom Paris",
-        "count": 2,
-        "pct": 2.27,
-        "country": "FR",
-        "rank": 3
+        "name": "University of Edinburgh",
+        "count": 10,
+        "pct": 1.73,
+        "country": "GB",
+        "rank": 2
       },
       {
-        "name": "Centre National de la Recherche Scientifique",
-        "count": 2,
-        "pct": 2.27,
+        "name": "École Normale Supérieure Paris-Saclay",
+        "count": 9,
+        "pct": 1.56,
         "country": "FR",
-        "rank": 3
+        "rank": 5
+      },
+      {
+        "name": "University of Washington",
+        "count": 9,
+        "pct": 1.56,
+        "country": "US",
+        "rank": 5
+      },
+      {
+        "name": "University of Oxford",
+        "count": 9,
+        "pct": 1.56,
+        "country": "GB",
+        "rank": 5
       },
       {
         "name": "Technion",
-        "count": 2,
-        "pct": 2.27,
+        "count": 9,
+        "pct": 1.56,
         "country": "IL",
-        "rank": 3
+        "rank": 5
+      },
+      {
+        "name": "Pontificia Universidad Católica de Chile",
+        "count": 9,
+        "pct": 1.56,
+        "country": "CL",
+        "rank": 5
+      },
+      {
+        "name": "University of California, Santa Cruz",
+        "count": 8,
+        "pct": 1.38,
+        "country": "US",
+        "rank": 10
       },
       {
         "name": "Chinese University of Hong Kong",
-        "count": 1,
-        "pct": 1.14,
+        "count": 7,
+        "pct": 1.21,
         "country": "HK",
-        "rank": 6
-      },
-      {
-        "name": "University of Antwerp",
-        "count": 1,
-        "pct": 1.14,
-        "country": "BE",
-        "rank": 6
-      },
-      {
-        "name": "Georgia Institute of Technology",
-        "count": 1,
-        "pct": 1.14,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "Google",
-        "count": 1,
-        "pct": 1.14,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "Hasselt University",
-        "count": 1,
-        "pct": 1.14,
-        "country": "BE",
-        "rank": 6
-      },
-      {
-        "name": "OTH Regensburg",
-        "count": 1,
-        "pct": 1.14,
-        "country": "DE",
-        "rank": 6
-      },
-      {
-        "name": "Free University of Bozen-Bolzano",
-        "count": 1,
-        "pct": 1.14,
-        "country": "IT",
-        "rank": 6
-      },
-      {
-        "name": "Loughborough University",
-        "count": 1,
-        "pct": 1.14,
-        "country": "",
-        "rank": 6
-      },
-      {
-        "name": "Hasso Plattner Institute",
-        "count": 1,
-        "pct": 1.14,
-        "country": "DE",
-        "rank": 6
-      },
-      {
-        "name": "University of Waterloo",
-        "count": 1,
-        "pct": 1.14,
-        "country": "CA",
-        "rank": 6
+        "rank": 11
       },
       {
         "name": "TU Dortmund University",
-        "count": 1,
-        "pct": 1.14,
+        "count": 7,
+        "pct": 1.21,
         "country": "DE",
-        "rank": 6
+        "rank": 11
       },
       {
-        "name": "Edinburgh College",
-        "count": 1,
-        "pct": 1.14,
-        "country": "GB",
-        "rank": 6
+        "name": "TU Wien",
+        "count": 6,
+        "pct": 1.04,
+        "country": "AT",
+        "rank": 13
       },
       {
-        "name": "University of Toronto",
-        "count": 1,
-        "pct": 1.14,
-        "country": "CA",
-        "rank": 6
+        "name": "Goethe University Frankfurt",
+        "count": 5,
+        "pct": 0.87,
+        "country": "DE",
+        "rank": 14
       },
       {
-        "name": "Laboratoire d'Informatique de Grenoble",
-        "count": 1,
-        "pct": 1.14,
+        "name": "Humboldt-Universität zu Berlin",
+        "count": 5,
+        "pct": 0.87,
+        "country": "DE",
+        "rank": 14
+      },
+      {
+        "name": "Télécom Paris",
+        "count": 5,
+        "pct": 0.87,
         "country": "FR",
-        "rank": 6
+        "rank": 14
       },
       {
-        "name": "Technische Universität Dresden",
-        "count": 1,
-        "pct": 1.14,
-        "country": "DE",
-        "rank": 6
+        "name": "Centre National de la Recherche Scientifique",
+        "count": 5,
+        "pct": 0.87,
+        "country": "FR",
+        "rank": 14
+      },
+      {
+        "name": "Hebrew University of Jerusalem",
+        "count": 5,
+        "pct": 0.87,
+        "country": "IL",
+        "rank": 14
+      },
+      {
+        "name": "Université Paris-Sud",
+        "count": 5,
+        "pct": 0.87,
+        "country": "FR",
+        "rank": 14
+      },
+      {
+        "name": "University of Chile",
+        "count": 4,
+        "pct": 0.69,
+        "country": "CL",
+        "rank": 20
       }
     ],
     "by_year": {
+      "2016": {
+        "total_covered": 17,
+        "total_papers": 24,
+        "coverage_pct": 70.8,
+        "top": [
+          {
+            "name": "University of Warsaw",
+            "count": 2,
+            "pct": 8.33,
+            "country": "PL",
+            "rank": 1
+          },
+          {
+            "name": "École Normale Supérieure Paris-Saclay",
+            "count": 1,
+            "pct": 4.17,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "Computer Science",
+            "count": 1,
+            "pct": 4.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "National and Kapodistrian University of Athens",
+            "count": 1,
+            "pct": 4.17,
+            "country": "GR",
+            "rank": 2
+          },
+          {
+            "name": "Reykjavík University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "IS",
+            "rank": 2
+          },
+          {
+            "name": "University of Salzburg",
+            "count": 1,
+            "pct": 4.17,
+            "country": "AT",
+            "rank": 2
+          },
+          {
+            "name": "Goethe University Frankfurt",
+            "count": 1,
+            "pct": 4.17,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Antwerp",
+            "count": 1,
+            "pct": 4.17,
+            "country": "BE",
+            "rank": 2
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "TU Wien",
+            "count": 1,
+            "pct": 4.17,
+            "country": "AT",
+            "rank": 2
+          },
+          {
+            "name": "Microsoft",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "VNU University of Science",
+            "count": 1,
+            "pct": 4.17,
+            "country": "VN",
+            "rank": 2
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 4.17,
+            "country": "HK",
+            "rank": 2
+          },
+          {
+            "name": "University of Oxford",
+            "count": 1,
+            "pct": 4.17,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          }
+        ]
+      },
+      "2017": {
+        "total_covered": 17,
+        "total_papers": 23,
+        "coverage_pct": 73.9,
+        "top": [
+          {
+            "name": "Laboratoire Traitement et Communication de l’Information",
+            "count": 2,
+            "pct": 8.7,
+            "country": "FR",
+            "rank": 1
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 2,
+            "pct": 8.7,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Humboldt-Universität zu Berlin",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Chile",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CL",
+            "rank": 3
+          },
+          {
+            "name": "Value from Data",
+            "count": 1,
+            "pct": 4.35,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Folkwang University of the Arts",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "Technion",
+            "count": 1,
+            "pct": 4.35,
+            "country": "IL",
+            "rank": 3
+          },
+          {
+            "name": "Massachusetts Institute of Technology",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Northwest University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Tel Aviv University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "IL",
+            "rank": 3
+          },
+          {
+            "name": "TU Dortmund University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "University of Edinburgh",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GB",
+            "rank": 3
+          },
+          {
+            "name": "Goethe University Frankfurt",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "Technical University of Crete",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GR",
+            "rank": 3
+          }
+        ]
+      },
+      "2018": {
+        "total_covered": 12,
+        "total_papers": 21,
+        "coverage_pct": 57.1,
+        "top": [
+          {
+            "name": "University of Bayreuth",
+            "count": 2,
+            "pct": 9.52,
+            "country": "DE",
+            "rank": 1
+          },
+          {
+            "name": "TU Wien",
+            "count": 1,
+            "pct": 4.76,
+            "country": "AT",
+            "rank": 2
+          },
+          {
+            "name": "Technische Universität Dresden",
+            "count": 1,
+            "pct": 4.76,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 4.76,
+            "country": "HK",
+            "rank": 2
+          },
+          {
+            "name": "RWTH Aachen University",
+            "count": 1,
+            "pct": 4.76,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "TU Dortmund University",
+            "count": 1,
+            "pct": 4.76,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "Hasselt University",
+            "count": 1,
+            "pct": 4.76,
+            "country": "BE",
+            "rank": 2
+          },
+          {
+            "name": "Télécom Paris",
+            "count": 1,
+            "pct": 4.76,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "Massachusetts Institute of Technology",
+            "count": 1,
+            "pct": 4.76,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Chile",
+            "count": 1,
+            "pct": 4.76,
+            "country": "CL",
+            "rank": 2
+          },
+          {
+            "name": "University of Bremen",
+            "count": 1,
+            "pct": 4.76,
+            "country": "DE",
+            "rank": 2
+          }
+        ]
+      },
+      "2019": {
+        "total_covered": 17,
+        "total_papers": 25,
+        "coverage_pct": 68.0,
+        "top": [
+          {
+            "name": "University of Edinburgh",
+            "count": 2,
+            "pct": 8.0,
+            "country": "GB",
+            "rank": 1
+          },
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "count": 1,
+            "pct": 4.0,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "Technion",
+            "count": 1,
+            "pct": 4.0,
+            "country": "IL",
+            "rank": 2
+          },
+          {
+            "name": "Pontificia Universidad Católica de Chile",
+            "count": 1,
+            "pct": 4.0,
+            "country": "CL",
+            "rank": 2
+          },
+          {
+            "name": "TU Wien",
+            "count": 1,
+            "pct": 4.0,
+            "country": "AT",
+            "rank": 2
+          },
+          {
+            "name": "University of Wisconsin–Whitewater",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "École Normale Supérieure - PSL",
+            "count": 1,
+            "pct": 4.0,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "Département Informatique et Réseaux",
+            "count": 1,
+            "pct": 4.0,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University at Buffalo, State University of New York",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Technische Universität Dresden",
+            "count": 1,
+            "pct": 4.0,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "University of Oxford",
+            "count": 1,
+            "pct": 4.0,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "Université Grenoble Alpes",
+            "count": 1,
+            "pct": 4.0,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "Transnational University Limburg",
+            "count": 1,
+            "pct": 4.0,
+            "country": "NL",
+            "rank": 2
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Cornell University",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Memphis",
+            "count": 1,
+            "pct": 4.0,
+            "country": "US",
+            "rank": 2
+          }
+        ]
+      },
+      "2020": {
+        "total_covered": 17,
+        "total_papers": 26,
+        "coverage_pct": 65.4,
+        "top": [
+          {
+            "name": "Pontificia Universidad Católica de Chile",
+            "count": 5,
+            "pct": 19.23,
+            "country": "CL",
+            "rank": 1
+          },
+          {
+            "name": "Technion",
+            "count": 2,
+            "pct": 7.69,
+            "country": "IL",
+            "rank": 2
+          },
+          {
+            "name": "Télécom Paris",
+            "count": 1,
+            "pct": 3.85,
+            "country": "FR",
+            "rank": 3
+          },
+          {
+            "name": "TU Dortmund University",
+            "count": 1,
+            "pct": 3.85,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "HKUST",
+            "count": 1,
+            "pct": 3.85,
+            "country": "HK",
+            "rank": 3
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 3.85,
+            "country": "HK",
+            "rank": 3
+          },
+          {
+            "name": "University of Bordeaux",
+            "count": 1,
+            "pct": 3.85,
+            "country": "FR",
+            "rank": 3
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 3.85,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Oslo, Norway",
+            "count": 1,
+            "pct": 3.85,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Vrije Universiteit Brussel",
+            "count": 1,
+            "pct": 3.85,
+            "country": "BE",
+            "rank": 3
+          },
+          {
+            "name": "San Diego State University",
+            "count": 1,
+            "pct": 3.85,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of California, Davis",
+            "count": 1,
+            "pct": 3.85,
+            "country": "US",
+            "rank": 3
+          }
+        ]
+      },
+      "2021": {
+        "total_covered": 18,
+        "total_papers": 23,
+        "coverage_pct": 78.3,
+        "top": [
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 3,
+            "pct": 13.04,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Technion",
+            "count": 2,
+            "pct": 8.7,
+            "country": "IL",
+            "rank": 2
+          },
+          {
+            "name": "Williams College",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Hasselt University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "BE",
+            "rank": 3
+          },
+          {
+            "name": "Data, Intelligence and Graphs",
+            "count": 1,
+            "pct": 4.35,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "University of Copenhagen",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DK",
+            "rank": 3
+          },
+          {
+            "name": "University of Bayreuth",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "Hasso Plattner Institute",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "New York University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 4.35,
+            "country": "HK",
+            "rank": 3
+          },
+          {
+            "name": "Humboldt-Universität zu Berlin",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "Google",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Pontificia Universidad Católica de Chile",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CL",
+            "rank": 3
+          },
+          {
+            "name": "University of Massachusetts Amherst",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Bremen",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 3
+          }
+        ]
+      },
+      "2022": {
+        "total_covered": 8,
+        "total_papers": 20,
+        "coverage_pct": 40.0,
+        "top": [
+          {
+            "name": "ETH Zurich",
+            "count": 1,
+            "pct": 5.0,
+            "country": "CH",
+            "rank": 1
+          },
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "count": 1,
+            "pct": 5.0,
+            "country": "FR",
+            "rank": 1
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "TU Dortmund University",
+            "count": 1,
+            "pct": 5.0,
+            "country": "DE",
+            "rank": 1
+          },
+          {
+            "name": "Tel Aviv University",
+            "count": 1,
+            "pct": 5.0,
+            "country": "IL",
+            "rank": 1
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 5.0,
+            "country": "HK",
+            "rank": 1
+          },
+          {
+            "name": "Vrije Universiteit Brussel",
+            "count": 1,
+            "pct": 5.0,
+            "country": "BE",
+            "rank": 1
+          },
+          {
+            "name": "Amherst College",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
       "2023": {
         "total_covered": 5,
         "total_papers": 25,
@@ -660,6 +1360,1595 @@
             "pct": 2.7,
             "country": "NL",
             "rank": 4
+          }
+        ]
+      },
+      "2010": {
+        "total_covered": 21,
+        "total_papers": 23,
+        "coverage_pct": 91.3,
+        "top": [
+          {
+            "name": "Hebrew University of Jerusalem",
+            "count": 2,
+            "pct": 8.7,
+            "country": "IL",
+            "rank": 1
+          },
+          {
+            "name": "Beihang University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "École Normale Supérieure Paris-Saclay",
+            "count": 1,
+            "pct": 4.35,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "University of Freiburg",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "Pontificia Universidad Católica de Valparaíso",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CL",
+            "rank": 2
+          },
+          {
+            "name": "Humboldt-Universität zu Berlin",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "Institut national de recherche en sciences et technologies du numérique",
+            "count": 1,
+            "pct": 4.35,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "University of Patras",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GR",
+            "rank": 2
+          },
+          {
+            "name": "Concordia University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CA",
+            "rank": 2
+          },
+          {
+            "name": "Tokyo Metropolitan University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "JP",
+            "rank": 2
+          },
+          {
+            "name": "University of Edinburgh",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "Goethe University Frankfurt",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "IBM Research - Almaden",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Yahoo",
+            "count": 1,
+            "pct": 4.35,
+            "country": "ES",
+            "rank": 2
+          },
+          {
+            "name": "University of Oxford",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "University of Maryland, College Park",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "count": 1,
+            "pct": 4.35,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "National Institute of Agricultural Botany",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "University of Oslo",
+            "count": 1,
+            "pct": 4.35,
+            "country": "NO",
+            "rank": 2
+          },
+          {
+            "name": "California University of Pennsylvania",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 2
+          }
+        ]
+      },
+      "2011": {
+        "total_covered": 33,
+        "total_papers": 43,
+        "coverage_pct": 76.7,
+        "top": [
+          {
+            "name": "TU Wien",
+            "count": 2,
+            "pct": 4.65,
+            "country": "AT",
+            "rank": 1
+          },
+          {
+            "name": "École Normale Supérieure Paris-Saclay",
+            "count": 2,
+            "pct": 4.65,
+            "country": "FR",
+            "rank": 1
+          },
+          {
+            "name": "University of Oxford",
+            "count": 2,
+            "pct": 4.65,
+            "country": "GB",
+            "rank": 1
+          },
+          {
+            "name": "Universitat Rovira i Virgili",
+            "count": 2,
+            "pct": 4.65,
+            "country": "ES",
+            "rank": 1
+          },
+          {
+            "name": "University of Warsaw",
+            "count": 1,
+            "pct": 2.33,
+            "country": "PL",
+            "rank": 5
+          },
+          {
+            "name": "University of California, San Diego",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "TU Dortmund University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "DE",
+            "rank": 5
+          },
+          {
+            "name": "Tel Aviv University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "IL",
+            "rank": 5
+          },
+          {
+            "name": "Eindhoven University of Technology",
+            "count": 1,
+            "pct": 2.33,
+            "country": "NL",
+            "rank": 5
+          },
+          {
+            "name": "Université de Lille",
+            "count": 1,
+            "pct": 2.33,
+            "country": "FR",
+            "rank": 5
+          },
+          {
+            "name": "Free University of Bozen-Bolzano",
+            "count": 1,
+            "pct": 2.33,
+            "country": "IT",
+            "rank": 5
+          },
+          {
+            "name": "Dalhousie University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "CA",
+            "rank": 5
+          },
+          {
+            "name": "Technion",
+            "count": 1,
+            "pct": 2.33,
+            "country": "IL",
+            "rank": 5
+          },
+          {
+            "name": "University of Pennsylvania",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "University of Edinburgh",
+            "count": 1,
+            "pct": 2.33,
+            "country": "GB",
+            "rank": 5
+          },
+          {
+            "name": "California University of Pennsylvania",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Carleton University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "CA",
+            "rank": 5
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Paris-Est Sup",
+            "count": 1,
+            "pct": 2.33,
+            "country": "FR",
+            "rank": 5
+          },
+          {
+            "name": "University of Technology, Berlin, Berlin",
+            "count": 1,
+            "pct": 2.33,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Ben-Gurion University of the Negev",
+            "count": 1,
+            "pct": 2.33,
+            "country": "IL",
+            "rank": 5
+          },
+          {
+            "name": "Dong-A University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "KR",
+            "rank": 5
+          },
+          {
+            "name": "Karolinska Institutet",
+            "count": 1,
+            "pct": 2.33,
+            "country": "SE",
+            "rank": 5
+          },
+          {
+            "name": "University of Matanzas",
+            "count": 1,
+            "pct": 2.33,
+            "country": "CU",
+            "rank": 5
+          },
+          {
+            "name": "Wayne State University",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "University of Calgary",
+            "count": 1,
+            "pct": 2.33,
+            "country": "CA",
+            "rank": 5
+          },
+          {
+            "name": "Universitat Jaume I",
+            "count": 1,
+            "pct": 2.33,
+            "country": "ES",
+            "rank": 5
+          },
+          {
+            "name": "Hospital General Universitario de Ciudad Real",
+            "count": 1,
+            "pct": 2.33,
+            "country": "ES",
+            "rank": 5
+          },
+          {
+            "name": "Google",
+            "count": 1,
+            "pct": 2.33,
+            "country": "US",
+            "rank": 5
+          }
+        ]
+      },
+      "2012": {
+        "total_covered": 22,
+        "total_papers": 23,
+        "coverage_pct": 95.7,
+        "top": [
+          {
+            "name": "University of Edinburgh",
+            "count": 3,
+            "pct": 13.04,
+            "country": "GB",
+            "rank": 1
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 2,
+            "pct": 8.7,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "École Normale Supérieure Paris-Saclay",
+            "count": 2,
+            "pct": 8.7,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "Université Paris-Sud",
+            "count": 1,
+            "pct": 4.35,
+            "country": "FR",
+            "rank": 4
+          },
+          {
+            "name": "Harbin Institute of Technology",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "North Carolina State University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "LogicBlox, Inc.",
+            "count": 1,
+            "pct": 4.35,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Concordia University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "CA",
+            "rank": 4
+          },
+          {
+            "name": "University of Oxford",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GB",
+            "rank": 4
+          },
+          {
+            "name": "Université de Lille",
+            "count": 1,
+            "pct": 4.35,
+            "country": "FR",
+            "rank": 4
+          },
+          {
+            "name": "University of Warwick",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GB",
+            "rank": 4
+          },
+          {
+            "name": "RWTH Aachen University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 4
+          },
+          {
+            "name": "Transnational University Limburg",
+            "count": 1,
+            "pct": 4.35,
+            "country": "BE",
+            "rank": 4
+          },
+          {
+            "name": "National Technical University of Athens",
+            "count": 1,
+            "pct": 4.35,
+            "country": "GR",
+            "rank": 4
+          },
+          {
+            "name": "AT&T",
+            "count": 1,
+            "pct": 4.35,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Humboldt-Universität zu Berlin",
+            "count": 1,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 4
+          },
+          {
+            "name": "Hasselt University",
+            "count": 1,
+            "pct": 4.35,
+            "country": "BE",
+            "rank": 4
+          }
+        ]
+      },
+      "2013": {
+        "total_covered": 74,
+        "total_papers": 106,
+        "coverage_pct": 69.8,
+        "top": [
+          {
+            "name": "Hasselt University",
+            "count": 3,
+            "pct": 2.83,
+            "country": "BE",
+            "rank": 1
+          },
+          {
+            "name": "Université Paris-Sud",
+            "count": 3,
+            "pct": 2.83,
+            "country": "FR",
+            "rank": 1
+          },
+          {
+            "name": "Purdue University West Lafayette",
+            "count": 3,
+            "pct": 2.83,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "California University of Pennsylvania",
+            "count": 2,
+            "pct": 1.89,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "University of Massachusetts Amherst",
+            "count": 2,
+            "pct": 1.89,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Hebrew University of Jerusalem",
+            "count": 2,
+            "pct": 1.89,
+            "country": "IL",
+            "rank": 4
+          },
+          {
+            "name": "University of Hawaiʻi at Mānoa",
+            "count": 2,
+            "pct": 1.89,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "University of California, Riverside",
+            "count": 2,
+            "pct": 1.89,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "University of British Columbia",
+            "count": 2,
+            "pct": 1.89,
+            "country": "CA",
+            "rank": 4
+          },
+          {
+            "name": "UNSW Sydney",
+            "count": 2,
+            "pct": 1.89,
+            "country": "AU",
+            "rank": 4
+          },
+          {
+            "name": "Worcester Polytechnic Institute",
+            "count": 2,
+            "pct": 1.89,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 2,
+            "pct": 1.89,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Umeå University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "SE",
+            "rank": 13
+          },
+          {
+            "name": "Institut national de recherche en informatique et en automatique",
+            "count": 1,
+            "pct": 0.94,
+            "country": "FR",
+            "rank": 13
+          },
+          {
+            "name": "Technicolor",
+            "count": 1,
+            "pct": 0.94,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "IBM Research - Almaden",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Technische Universität Darmstadt",
+            "count": 1,
+            "pct": 0.94,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "Université Gustave Eiffel",
+            "count": 1,
+            "pct": 0.94,
+            "country": "FR",
+            "rank": 13
+          },
+          {
+            "name": "Centro de Biología Molecular Severo Ochoa",
+            "count": 1,
+            "pct": 0.94,
+            "country": "ES",
+            "rank": 13
+          },
+          {
+            "name": "University of Antwerp",
+            "count": 1,
+            "pct": 0.94,
+            "country": "BE",
+            "rank": 13
+          },
+          {
+            "name": "Goethe University Frankfurt",
+            "count": 1,
+            "pct": 0.94,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "École Normale Supérieure Paris-Saclay",
+            "count": 1,
+            "pct": 0.94,
+            "country": "FR",
+            "rank": 13
+          },
+          {
+            "name": "University of Edinburgh",
+            "count": 1,
+            "pct": 0.94,
+            "country": "GB",
+            "rank": 13
+          },
+          {
+            "name": "Leipzig University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "University of Chile",
+            "count": 1,
+            "pct": 0.94,
+            "country": "CL",
+            "rank": 13
+          },
+          {
+            "name": "Délégation Paris 7",
+            "count": 1,
+            "pct": 0.94,
+            "country": "FR",
+            "rank": 13
+          },
+          {
+            "name": "Auburn University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Tokyo",
+            "count": 1,
+            "pct": 0.94,
+            "country": "JP",
+            "rank": 13
+          },
+          {
+            "name": "Sapienza University of Rome",
+            "count": 1,
+            "pct": 0.94,
+            "country": "IT",
+            "rank": 13
+          },
+          {
+            "name": "AIFB, KIT Karlsruhe",
+            "count": 1,
+            "pct": 0.94,
+            "country": "",
+            "rank": 13
+          },
+          {
+            "name": "Laboratoire d'Informatique Fondamentale de Lille",
+            "count": 1,
+            "pct": 0.94,
+            "country": "FR",
+            "rank": 13
+          },
+          {
+            "name": "Stockholm University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "SE",
+            "rank": 13
+          },
+          {
+            "name": "Max Planck Institute for Informatics",
+            "count": 1,
+            "pct": 0.94,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "IBM Research - India",
+            "count": 1,
+            "pct": 0.94,
+            "country": "IN",
+            "rank": 13
+          },
+          {
+            "name": "Practical Action",
+            "count": 1,
+            "pct": 0.94,
+            "country": "KE",
+            "rank": 13
+          },
+          {
+            "name": "National and Kapodistrian University of Athens",
+            "count": 1,
+            "pct": 0.94,
+            "country": "GR",
+            "rank": 13
+          },
+          {
+            "name": "DePaul University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "National Institute of Informatics",
+            "count": 1,
+            "pct": 0.94,
+            "country": "JP",
+            "rank": 13
+          },
+          {
+            "name": "The University of Texas at Dallas",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "IBM DB2 Analytics Accelerator Development, IBM Deutschland Research & Development GmbH, Boeblingen",
+            "count": 1,
+            "pct": 0.94,
+            "country": "",
+            "rank": 13
+          },
+          {
+            "name": "Ben-Gurion University of the Negev",
+            "count": 1,
+            "pct": 0.94,
+            "country": "IL",
+            "rank": 13
+          },
+          {
+            "name": "Arizona State University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "EPFL",
+            "count": 1,
+            "pct": 0.94,
+            "country": "CH",
+            "rank": 13
+          },
+          {
+            "name": "University of Potsdam",
+            "count": 1,
+            "pct": 0.94,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "Teradata",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "National University of Singapore",
+            "count": 1,
+            "pct": 0.94,
+            "country": "SG",
+            "rank": 13
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Duke University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Benha University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "EG",
+            "rank": 13
+          },
+          {
+            "name": "Eindhoven University of Technology",
+            "count": 1,
+            "pct": 0.94,
+            "country": "NL",
+            "rank": 13
+          },
+          {
+            "name": "Chongqing University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "CN",
+            "rank": 13
+          },
+          {
+            "name": "University of Sheffield",
+            "count": 1,
+            "pct": 0.94,
+            "country": "GB",
+            "rank": 13
+          },
+          {
+            "name": "Northeastern University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Renmin University of China",
+            "count": 1,
+            "pct": 0.94,
+            "country": "CN",
+            "rank": 13
+          },
+          {
+            "name": "University of Maryland, College Park",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Newcastle University",
+            "count": 1,
+            "pct": 0.94,
+            "country": "GB",
+            "rank": 13
+          },
+          {
+            "name": "SMIS - Secured and Mobile Information Systems",
+            "count": 1,
+            "pct": 0.94,
+            "country": "",
+            "rank": 13
+          },
+          {
+            "name": "Hewlett-Packard",
+            "count": 1,
+            "pct": 0.94,
+            "country": "US",
+            "rank": 13
+          }
+        ]
+      },
+      "2014": {
+        "total_covered": 89,
+        "total_papers": 107,
+        "coverage_pct": 83.2,
+        "top": [
+          {
+            "name": "IBM",
+            "count": 6,
+            "pct": 5.61,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Hasselt University",
+            "count": 3,
+            "pct": 2.8,
+            "country": "BE",
+            "rank": 2
+          },
+          {
+            "name": "University of Washington",
+            "count": 2,
+            "pct": 1.87,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Oxford",
+            "count": 2,
+            "pct": 1.87,
+            "country": "GB",
+            "rank": 3
+          },
+          {
+            "name": "Aristotle University of Thessaloniki",
+            "count": 2,
+            "pct": 1.87,
+            "country": "GR",
+            "rank": 3
+          },
+          {
+            "name": "University of California, Riverside",
+            "count": 2,
+            "pct": 1.87,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "UNSW Sydney",
+            "count": 2,
+            "pct": 1.87,
+            "country": "AU",
+            "rank": 3
+          },
+          {
+            "name": "Secured and Mobile Information Systems",
+            "count": 2,
+            "pct": 1.87,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "University of Piraeus",
+            "count": 2,
+            "pct": 1.87,
+            "country": "GR",
+            "rank": 3
+          },
+          {
+            "name": "University of Peloponnese",
+            "count": 2,
+            "pct": 1.87,
+            "country": "GR",
+            "rank": 3
+          },
+          {
+            "name": "Laboratoire Spécification et Vérification",
+            "count": 1,
+            "pct": 0.93,
+            "country": "FR",
+            "rank": 11
+          },
+          {
+            "name": "Tel Aviv University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "IL",
+            "rank": 11
+          },
+          {
+            "name": "Miami University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Laboratory for the Foundations of Computer Science [Edinburgh]",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "Stanford University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Université Libre de Bruxelles",
+            "count": 1,
+            "pct": 0.93,
+            "country": "BE",
+            "rank": 11
+          },
+          {
+            "name": "Laboratoire d'Informatique Gaspard-Monge",
+            "count": 1,
+            "pct": 0.93,
+            "country": "FR",
+            "rank": 11
+          },
+          {
+            "name": "University of Mons",
+            "count": 1,
+            "pct": 0.93,
+            "country": "BE",
+            "rank": 11
+          },
+          {
+            "name": "TU Wien",
+            "count": 1,
+            "pct": 0.93,
+            "country": "AT",
+            "rank": 11
+          },
+          {
+            "name": "École Normale Supérieure Paris-Saclay",
+            "count": 1,
+            "pct": 0.93,
+            "country": "FR",
+            "rank": 11
+          },
+          {
+            "name": "TU Dortmund University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Télécom Paris",
+            "count": 1,
+            "pct": 0.93,
+            "country": "FR",
+            "rank": 11
+          },
+          {
+            "name": "University of Mannheim",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Otto-von-Guericke-Universität Magdeburg",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Emory University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Université Paris-Sud",
+            "count": 1,
+            "pct": 0.93,
+            "country": "FR",
+            "rank": 11
+          },
+          {
+            "name": "National University of Singapore",
+            "count": 1,
+            "pct": 0.93,
+            "country": "SG",
+            "rank": 11
+          },
+          {
+            "name": "Institut for Datalogi",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "John Brown University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "University of Bologna",
+            "count": 1,
+            "pct": 0.93,
+            "country": "IT",
+            "rank": 11
+          },
+          {
+            "name": "Rutgers Sexual and Reproductive Health and Rights",
+            "count": 1,
+            "pct": 0.93,
+            "country": "NL",
+            "rank": 11
+          },
+          {
+            "name": "University of Illinois at Urbana-Champaign",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Computer and Information Science [Trondheim]",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "University of Calabar",
+            "count": 1,
+            "pct": 0.93,
+            "country": "NG",
+            "rank": 11
+          },
+          {
+            "name": "Fudan University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "CN",
+            "rank": 11
+          },
+          {
+            "name": "National Technical University of Athens",
+            "count": 1,
+            "pct": 0.93,
+            "country": "GR",
+            "rank": 11
+          },
+          {
+            "name": "Athens University of Economics and Business",
+            "count": 1,
+            "pct": 0.93,
+            "country": "GR",
+            "rank": 11
+          },
+          {
+            "name": "Technische Universität Darmstadt",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "University of Alberta",
+            "count": 1,
+            "pct": 0.93,
+            "country": "CA",
+            "rank": 11
+          },
+          {
+            "name": "Massachusetts Institute of Technology",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Technical University of Munich",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Universidade Federal de Minas Gerais",
+            "count": 1,
+            "pct": 0.93,
+            "country": "BR",
+            "rank": 11
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "LMU Munich",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Laboratoire d'Informatique Fondamentale de Lille",
+            "count": 1,
+            "pct": 0.93,
+            "country": "FR",
+            "rank": 11
+          },
+          {
+            "name": "Auburn University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Physics, Mathematics and Informatics",
+            "count": 1,
+            "pct": 0.93,
+            "country": "BY",
+            "rank": 11
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "CN",
+            "rank": 11
+          },
+          {
+            "name": "Microsoft",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Technische Universität Ilmenau",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Technische Universität Berlin",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "University of Waterloo",
+            "count": 1,
+            "pct": 0.93,
+            "country": "CA",
+            "rank": 11
+          },
+          {
+            "name": "NEC Laboratories America, Inc",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "Open University of Israel",
+            "count": 1,
+            "pct": 0.93,
+            "country": "IL",
+            "rank": 11
+          },
+          {
+            "name": "RWTH Aachen University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Universitat Pompeu Fabra",
+            "count": 1,
+            "pct": 0.93,
+            "country": "ES",
+            "rank": 11
+          },
+          {
+            "name": "University of Milan",
+            "count": 1,
+            "pct": 0.93,
+            "country": "IT",
+            "rank": 11
+          },
+          {
+            "name": "Symbolic and Human-centric view of dAta MANagement",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "Purdue University West Lafayette",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Swinburne University of Technology",
+            "count": 1,
+            "pct": 0.93,
+            "country": "AU",
+            "rank": 11
+          },
+          {
+            "name": "Boston Univ",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "Karlsruhe Institute of Technology",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "Humboldt-Universität zu Berlin",
+            "count": 1,
+            "pct": 0.93,
+            "country": "DE",
+            "rank": 11
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 0.93,
+            "country": "CA",
+            "rank": 11
+          },
+          {
+            "name": "Electronics, Electrical Engineering and Computer Science",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "University of California, Davis",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "University of Hong Kong",
+            "count": 1,
+            "pct": 0.93,
+            "country": "HK",
+            "rank": 11
+          },
+          {
+            "name": "KAUST",
+            "count": 1,
+            "pct": 0.93,
+            "country": "SA",
+            "rank": 11
+          },
+          {
+            "name": "Bases de Données",
+            "count": 1,
+            "pct": 0.93,
+            "country": "",
+            "rank": 11
+          },
+          {
+            "name": "EPFL",
+            "count": 1,
+            "pct": 0.93,
+            "country": "CH",
+            "rank": 11
+          },
+          {
+            "name": "Lamsade",
+            "count": 1,
+            "pct": 0.93,
+            "country": "FR",
+            "rank": 11
+          },
+          {
+            "name": "Worcester Polytechnic Institute",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          },
+          {
+            "name": "Arizona State University",
+            "count": 1,
+            "pct": 0.93,
+            "country": "US",
+            "rank": 11
+          }
+        ]
+      },
+      "2015": {
+        "total_covered": 23,
+        "total_papers": 26,
+        "coverage_pct": 88.5,
+        "top": [
+          {
+            "name": "Hasselt University",
+            "count": 3,
+            "pct": 11.54,
+            "country": "BE",
+            "rank": 1
+          },
+          {
+            "name": "Louisiana State University",
+            "count": 1,
+            "pct": 3.85,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Verification in databases",
+            "count": 1,
+            "pct": 3.85,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Carleton University",
+            "count": 1,
+            "pct": 3.85,
+            "country": "CA",
+            "rank": 2
+          },
+          {
+            "name": "Dynamic Imaging",
+            "count": 1,
+            "pct": 3.85,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "University of Warwick",
+            "count": 1,
+            "pct": 3.85,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "École Normale Supérieure Paris-Saclay",
+            "count": 1,
+            "pct": 3.85,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "University of Bayreuth",
+            "count": 1,
+            "pct": 3.85,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "University of Bremen",
+            "count": 1,
+            "pct": 3.85,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 1,
+            "pct": 3.85,
+            "country": "HK",
+            "rank": 2
+          },
+          {
+            "name": "Hebrew University of Jerusalem",
+            "count": 1,
+            "pct": 3.85,
+            "country": "IL",
+            "rank": 2
+          },
+          {
+            "name": "Goethe University Frankfurt",
+            "count": 1,
+            "pct": 3.85,
+            "country": "DE",
+            "rank": 2
+          },
+          {
+            "name": "University of Chile",
+            "count": 1,
+            "pct": 3.85,
+            "country": "CL",
+            "rank": 2
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 3.85,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Pontificia Universidad Católica de Chile",
+            "count": 1,
+            "pct": 3.85,
+            "country": "CL",
+            "rank": 2
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 3.85,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Oxford",
+            "count": 1,
+            "pct": 3.85,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "Université de Lille",
+            "count": 1,
+            "pct": 3.85,
+            "country": "FR",
+            "rank": 2
+          },
+          {
+            "name": "University of Edinburgh",
+            "count": 1,
+            "pct": 3.85,
+            "country": "GB",
+            "rank": 2
+          },
+          {
+            "name": "IT University of Copenhagen",
+            "count": 1,
+            "pct": 3.85,
+            "country": "DK",
+            "rank": 2
+          },
+          {
+            "name": "University of the Basque Country",
+            "count": 1,
+            "pct": 3.85,
+            "country": "ES",
+            "rank": 2
           }
         ]
       }

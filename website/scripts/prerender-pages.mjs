@@ -159,7 +159,7 @@ function main() {
   // Generate 404.html (SPA fallback for GitHub Pages)
   const html404 = buildPageHtml(baseHtml, {
     title: 'Page Not Found — lang.csconf',
-    description: 'Analyzing 908K+ first authors across 416 CCF-rated CS conferences (2010–2026).',
+    description: 'Analyzing 909K+ first authors across 416 CCF-rated CS conferences (2010–2026).',
     path: '',
     jsonLd: null,
   })

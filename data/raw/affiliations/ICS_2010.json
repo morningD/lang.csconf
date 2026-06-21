@@ -1,0 +1,317 @@
+{
+  "conference": "ICS",
+  "year": 2010,
+  "total_papers": 35,
+  "total_matched": 24,
+  "total_with_affiliation": 24,
+  "coverage_pct": 68.6,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Exascale science: the next frontier in high performance computing.",
+      "first_author": "Stephen S. Pawlowski",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SAMS multi-layout memory: providing multiple views of data to boost SIMD performance.",
+      "first_author": "Chunyang Gou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Large-scale FFT on GPU clusters.",
+      "first_author": "Yifeng Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1967802285",
+      "doi": "https://doi.org/10.1145/1810085.1810128",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Speeding up Nek5000 with autotuning and specialization.",
+      "first_author": "Jaewook Shin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2030859425",
+      "doi": "https://doi.org/10.1145/1810085.1810120",
+      "institution": "Argonne National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gvnxz63"
+    },
+    {
+      "title": "Small-ruleset regular expression matching on GPGPUs: quantitative performance analysis and optimization.",
+      "first_author": "Jamin Naghmouchi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Quantifying performance benefits of overlap using MPI-2 in a seismic modeling application.",
+      "first_author": "Sreeram Potluri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2071336726",
+      "doi": "https://doi.org/10.1145/1810085.1810092",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "Throughput computing.",
+      "first_author": "William J. Dally",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2074284888",
+      "doi": "https://doi.org/10.1016/j.jpdc.2010.05.005",
+      "institution": "Universidad Complutense de Madrid",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/02p0gd045"
+    },
+    {
+      "title": "An approach to resource-aware co-scheduling for CMPs.",
+      "first_author": "Major Bhadauria",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2054604581",
+      "doi": "https://doi.org/10.1145/1810085.1810113",
+      "institution": "Cornell University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05bnh6r87"
+    },
+    {
+      "title": "Optimal bucket algorithms for large MPI collectives on torus interconnects.",
+      "first_author": "Nikhil Jain",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1997674404",
+      "doi": "https://doi.org/10.1145/1810085.1810093",
+      "institution": "IBM Research - India",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/014wt7r80"
+    },
+    {
+      "title": "Handling task dependencies under strided and aliased references.",
+      "first_author": "Josep M. Pérez",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1981297342",
+      "doi": "https://doi.org/10.1145/1810085.1810122",
+      "institution": "Universitat Politècnica de Catalunya",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/03mb6wj31"
+    },
+    {
+      "title": "Clustering performance data efficiently at massive scales.",
+      "first_author": "Todd Gamblin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2166625960",
+      "doi": "https://doi.org/10.1145/1810085.1810119",
+      "institution": "Lawrence Livermore National Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/041nk4h53"
+    },
+    {
+      "title": "A compiler-automated array compression scheme for optimizing memory intensive programs.",
+      "first_author": "Lixia Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2066066545",
+      "doi": "https://doi.org/10.1145/1810085.1810124",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "Fast and accurate NCBI BLASTP: acceleration with multiphase FPGA-based prefiltering.",
+      "first_author": "Atabak Mahram",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Enigma: architectural and operating system support for reducing the impact of address translation.",
+      "first_author": "Lixin Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Timing local streams: improving timeliness in data prefetching.",
+      "first_author": "Huaiyu Zhu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Compiler and runtime support for enabling generalized reduction computations on heterogeneous parallel configurations.",
+      "first_author": "Vignesh T. Ravi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2065392434",
+      "doi": "https://doi.org/10.1145/1810085.1810106",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "An empirically tuned 2D and 3D FFT library on CUDA GPU.",
+      "first_author": "Liang Gu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2009516879",
+      "doi": "https://doi.org/10.1145/1810085.1810127",
+      "institution": "University of Delaware",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01sbq1a82"
+    },
+    {
+      "title": "ParaLearn: a massively parallel, scalable system for learning interaction networks on FPGAs.",
+      "first_author": "Narges Bani Asadi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "InterferenceRemoval: removing interference of disk access for MPI programs through data replication.",
+      "first_author": "Xuechen Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The auction: optimizing banks usage in Non-Uniform Cache Architectures.",
+      "first_author": "Javier Lira",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Making nested parallel transactions practical using lightweight hardware support.",
+      "first_author": "Woongki Baek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2112392741",
+      "doi": "https://doi.org/10.1145/1810085.1810097",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Indemics: an interactive data intensive framework for high performance epidemic simulation.",
+      "first_author": "Keith R. Bisset",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Overlapping communication and computation by using a hybrid MPI/SMPSs approach.",
+      "first_author": "Vladimir Marjanovic",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2163950090",
+      "doi": "https://doi.org/10.1145/1810085.1810091",
+      "institution": "Barcelona Supercomputing Center",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/05sd8tv96"
+    },
+    {
+      "title": "Adaptive multi-level cache allocation in distributed storage architectures.",
+      "first_author": "Ramya Prabhakar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2070748692",
+      "doi": "https://doi.org/10.1145/1810085.1810115",
+      "institution": "Pennsylvania State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04p491231"
+    },
+    {
+      "title": "FPGA accelerating double/quad-double high precision floating-point applications for ExaScale computing.",
+      "first_author": "Yong Dou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2018421763",
+      "doi": "https://doi.org/10.1145/1810085.1810129",
+      "institution": "NUDT, Changsha, P.R. China",
+      "institution_country": null,
+      "raw_affiliation": "NUDT, Changsha, P.R. China"
+    },
+    {
+      "title": "A query language for understanding component interactions in production systems.",
+      "first_author": "Adam J. Oliner",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2162310633",
+      "doi": "https://doi.org/10.1145/1810085.1810114",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "An experimental approach to performance measurement of heterogeneous parallel applications using CUDA.",
+      "first_author": "Allen D. Malony",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1969399184",
+      "doi": "https://doi.org/10.1145/1810085.1810105",
+      "institution": "University of Oregon",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0293rh119"
+    },
+    {
+      "title": "Cache oblivious parallelograms in iterative stencil computations.",
+      "first_author": "Robert Strzodka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1973271197",
+      "doi": "https://doi.org/10.1145/1810085.1810096",
+      "institution": "Max Planck Institute for Informatics",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01w19ak89"
+    },
+    {
+      "title": "Streamlining GPU applications on the fly: thread divergence elimination through runtime thread-data remapping.",
+      "first_author": "Eddy Z. Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "High-throughput Bayesian network learning using heterogeneous multicore computers.",
+      "first_author": "Michael D. Linderman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2079756411",
+      "doi": "https://doi.org/10.1145/1810085.1810101",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Decomposable and responsive power models for multicore processors using performance counters.",
+      "first_author": "Ramon Bertran",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2082545328",
+      "doi": "https://doi.org/10.1145/1810085.1810108",
+      "institution": "Barcelona Supercomputing Center",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/05sd8tv96"
+    },
+    {
+      "title": "How to unleash array optimizations on code using recursive data structures.",
+      "first_author": "Harmen L. A. van der Spek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2027653709",
+      "doi": "https://doi.org/10.1145/1810085.1810123",
+      "institution": "Leiden University",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/027bh9e22"
+    },
+    {
+      "title": "Static reuse distances for locality-based optimizations in MATLAB.",
+      "first_author": "Arun Chauhan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2070122234",
+      "doi": "https://doi.org/10.1145/1810085.1810125",
+      "institution": "Indiana University Bloomington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02k40bc56"
+    },
+    {
+      "title": "Evaluation of parallel H.264 decoding strategies for the Cell Broadband Engine.",
+      "first_author": "Chi Ching Chi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2129442830",
+      "doi": "https://doi.org/10.1145/1810085.1810102",
+      "institution": "Technische Universität Berlin",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/03v4gjf40"
+    },
+    {
+      "title": "The next-generation supercomputer project and a plan for the advanced institute for computational science.",
+      "first_author": "Kimihiko Hirao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2021702679",
+      "doi": "https://doi.org/10.1145/1810085.1810089",
+      "institution": "Riken",
+      "institution_country": null,
+      "raw_affiliation": "Riken"
+    }
+  ]
+}
