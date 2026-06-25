@@ -1,0 +1,623 @@
+{
+  "conference": "PODC",
+  "year": 2022,
+  "total_papers": 64,
+  "total_matched": 57,
+  "total_with_affiliation": 57,
+  "coverage_pct": 89.1,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Balanced Allocations with the Choice of Noise.",
+      "first_author": "Dimitrios Los",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4283023103",
+      "doi": "https://doi.org/10.1145/3519270.3538428",
+      "institution": "University of Cambridge",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/013meh722"
+    },
+    {
+      "title": "Brief Announcement: Distributed MST Computation in the Sleeping Model: Awake-Optimal Algorithms and Lower Bounds.",
+      "first_author": "John Augustine",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501311",
+      "doi": "https://doi.org/10.1145/3519270.3538459",
+      "institution": "Indian Institute of Technology Madras",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/03v0r5n49"
+    },
+    {
+      "title": "Fast and Fair Randomized Wait-Free Locks.",
+      "first_author": "Naama Ben-David",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286504256",
+      "doi": "https://doi.org/10.1145/3519270.3538448",
+      "institution": "VMware Research, Palo Alto, CA, USA",
+      "institution_country": null,
+      "raw_affiliation": "VMware Research, Palo Alto, CA, USA"
+    },
+    {
+      "title": "Brief Announcement: Asynchronous Verifiable Information Dispersal with Near-Optimal Communication.",
+      "first_author": "Nicolas Alhaddad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210375",
+      "doi": "https://doi.org/10.1145/3519270.3538476",
+      "institution": "Boston University, Boston, MA, USA",
+      "institution_country": null,
+      "raw_affiliation": "Boston University, Boston, MA, USA"
+    },
+    {
+      "title": "How Should We Think about Persistent Data Structures?",
+      "first_author": "Michael L. Scott",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Brief Announcement: Towards a Theory of Wear Leveling in Persistent Data Structures.",
+      "first_author": "Xialin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286503795",
+      "doi": "https://doi.org/10.1145/3519270.3538457",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "Near-Optimal Leader Election in Population Protocols on Graphs.",
+      "first_author": "Dan Alistarh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4281990278",
+      "doi": "https://doi.org/10.1145/3519270.3538435",
+      "institution": "Institute of Science and Technology Austria",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/03gnh5541"
+    },
+    {
+      "title": "Brief Announcement: Deterministic Massively Parallel Algorithms for Ruling Sets.",
+      "first_author": "Shreyas Pai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210571",
+      "doi": "https://doi.org/10.1145/3519270.3538472",
+      "institution": "Aalto University",
+      "institution_country": "FI",
+      "institution_ror": "https://ror.org/020hwjq30"
+    },
+    {
+      "title": "A Speedup Theorem for Asynchronous Computation with Applications to Consensus and Approximate Agreement.",
+      "first_author": "Pierre Fraigniaud",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210490",
+      "doi": "https://doi.org/10.1145/3519270.3538422",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "Distributed Computations in Fully-Defective Networks.",
+      "first_author": "Keren Censor-Hillel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4281493597",
+      "doi": "https://doi.org/10.1145/3519270.3538432",
+      "institution": "Technion – Israel Institute of Technology",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qryx823"
+    },
+    {
+      "title": "A Recursive Early-Stopping Phase King Protocol.",
+      "first_author": "Christoph Lenzen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286504506",
+      "doi": "https://doi.org/10.1145/3519270.3538425",
+      "institution": "Helmholtz Center for Information Security",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02njgxr09"
+    },
+    {
+      "title": "Population Protocols for Exact Plurality Consensus: How a small chance of failure helps to eliminate insignificant opinions.",
+      "first_author": "Gregor Bankhamer",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Internet Computer Consensus.",
+      "first_author": "Jan Camenisch",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3177492523",
+      "doi": "https://doi.org/10.1145/3519270.3538430",
+      "institution": "DFINITY Foundation, Zurich, Switzerland",
+      "institution_country": null,
+      "raw_affiliation": "DFINITY Foundation, Zurich, Switzerland"
+    },
+    {
+      "title": "When is Recoverable Consensus Harder Than Consensus?",
+      "first_author": "Carole Delporte-Gallet",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Brief Announcement: How to Tame Multiple Spending in Decentralized Cryptocurrencies.",
+      "first_author": "João Paulo Bezerra",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501650",
+      "doi": "https://doi.org/10.1145/3519270.3538465",
+      "institution": "Télécom Paris",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/01naq7912"
+    },
+    {
+      "title": "What Can Be Certified Compactly? Compact local certification of MSO properties in tree-like graphs.",
+      "first_author": "Laurent Feuilloley",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Brief Announcement: The Weakest Failure Detector for Genuine Atomic Multicast.",
+      "first_author": "Pierre Sutra",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286502348",
+      "doi": "https://doi.org/10.1145/3519270.3538467",
+      "institution": "Institut Polytechnique de Paris",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/042tfbd02"
+    },
+    {
+      "title": "Adaptively Secure Single Secret Leader Election from DDH.",
+      "first_author": "Dario Catalano",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501128",
+      "doi": "https://doi.org/10.1145/3519270.3538424",
+      "institution": "University of Catania",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/03a64bh57"
+    },
+    {
+      "title": "Near-Optimal Distributed Dominating Set in Bounded Arboricity Graphs.",
+      "first_author": "Michal Dory",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286503989",
+      "doi": "https://doi.org/10.1145/3519270.3538437",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "The Landscape of Distributed Complexities on Trees and Beyond.",
+      "first_author": "Christoph Grunau",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286502904",
+      "doi": "https://doi.org/10.1145/3519270.3538452",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Brief Announcement: (1+ε)-Approximate Shortest Paths in Dynamic Streams.",
+      "first_author": "Michael Elkin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286502885",
+      "doi": "https://doi.org/10.1145/3519270.3538469",
+      "institution": "Ben-Gurion University of the Negev",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/05tkyf982"
+    },
+    {
+      "title": "Blunting an Adversary Against Randomized Concurrent Programs with Linearizable Implementations.",
+      "first_author": "Hagit Attiya",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210063",
+      "doi": "https://doi.org/10.1145/3519270.3538446",
+      "institution": "Technion – Israel Institute of Technology",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qryx823"
+    },
+    {
+      "title": "Perfectly-Secure Synchronous MPC with Asynchronous Fallback Guarantees.",
+      "first_author": "Ananya Appan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501318",
+      "doi": "https://doi.org/10.1145/3519270.3538417",
+      "institution": "International Institute of Information Technology Bangalore",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/05h9eqy10"
+    },
+    {
+      "title": "Early Adapting to Trends: Self-Stabilizing Information Spread using Passive Communication.",
+      "first_author": "Amos Korman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286502875",
+      "doi": "https://doi.org/10.1145/3519270.3538415",
+      "institution": "Institut de Recherche en Informatique Fondamentale",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02krdtz55"
+    },
+    {
+      "title": "Quantum Complexity of Weighted Diameter and Radius in CONGEST Networks.",
+      "first_author": "Xudong Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4281630875",
+      "doi": "https://doi.org/10.1109/tit.2026.3704289",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "Brief Announcement: Deterministic Consensus and Checkpointing with Crashes: Time and Communication Efficiency.",
+      "first_author": "Bogdan S. Chlebus",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210088",
+      "doi": "https://doi.org/10.1145/3519270.3538471",
+      "institution": "Augusta University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/012mef835"
+    },
+    {
+      "title": "Narrowing the LOCAL-CONGEST Gaps in Sparse Networks via Expander Decompositions.",
+      "first_author": "Yi-Jun Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501294",
+      "doi": "https://doi.org/10.1145/3519270.3538423",
+      "institution": "National University of Singapore",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/01tgyzw49"
+    },
+    {
+      "title": "Brief Announcement: On Polynomial-Time Local Decision.",
+      "first_author": "Eden Aldema Tshuva",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501281",
+      "doi": "https://doi.org/10.1145/3519270.3538463",
+      "institution": "Tel Aviv University",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/04mhzgx49"
+    },
+    {
+      "title": "State Complexity of Protocols with Leaders.",
+      "first_author": "Jérôme Leroux",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210572",
+      "doi": "https://doi.org/10.1145/3519270.3538421",
+      "institution": "Laboratoire Bordelais de Recherche en Informatique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/03adqg323"
+    },
+    {
+      "title": "Brief Announcement: Broadcasting Time in Dynamic Rooted Trees is Linear.",
+      "first_author": "Antoine El-Hayek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286505183",
+      "doi": "https://doi.org/10.1145/3519270.3538460",
+      "institution": "University of Vienna",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/03prydq77"
+    },
+    {
+      "title": "Can't See the Forest for the Trees: Navigating Metric Spaces by Bounded Hop-Diameter Spanners.",
+      "first_author": "Omri Kahalon",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Balanced Byzantine Reliable Broadcast with Near-Optimal Communication and Improved Computation.",
+      "first_author": "Nicolas Alhaddad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286503265",
+      "doi": "https://doi.org/10.1145/3519270.3538475",
+      "institution": "Boston University, Boston, MA, USA",
+      "institution_country": null,
+      "raw_affiliation": "Boston University, Boston, MA, USA"
+    },
+    {
+      "title": "The Laplacian Paradigm in the Broadcast Congested Clique.",
+      "first_author": "Sebastian Forster",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286209950",
+      "doi": "https://doi.org/10.1145/3519270.3538436",
+      "institution": "University of Salzburg",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/05gs8cd61"
+    },
+    {
+      "title": "Optimal Clock Synchronization with Signatures.",
+      "first_author": "Christoph Lenzen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501744",
+      "doi": "https://doi.org/10.1145/3519270.3538444",
+      "institution": "Helmholtz Center for Information Security",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02njgxr09"
+    },
+    {
+      "title": "A Graph Theoretic Approach for Resilient Distributed Algorithms.",
+      "first_author": "Merav Parter",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286503970",
+      "doi": "https://doi.org/10.1145/3519270.3538453",
+      "institution": "Weizmann Institute of Science",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/0316ej306"
+    },
+    {
+      "title": "Brief Announcement: Probabilistic Dynamic Input/Output Automata.",
+      "first_author": "Pierre Civit",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501080",
+      "doi": "https://doi.org/10.1145/3519270.3538466",
+      "institution": "Sorbonne Université",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02en5vm52"
+    },
+    {
+      "title": "Brief Announcement: Near Optimal Bounds for Replacement Paths and Related Problems in the CONGEST Model.",
+      "first_author": "Vignesh Manoharan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286502895",
+      "doi": "https://doi.org/10.1145/3519270.3538473",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "From Switch Scheduling to Datacenter Scheduling: Matching-Coordinated Greed is Good.",
+      "first_author": "Rachit Agarwal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Distributed Edge Coloring in Time Polylogarithmic in Δ.",
+      "first_author": "Alkida Balliu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286502340",
+      "doi": "https://doi.org/10.1145/3519270.3538440",
+      "institution": "Gran Sasso Science Institute",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/043qcb444"
+    },
+    {
+      "title": "Revisiting the Power of Non-Equivocation in Distributed Protocols.",
+      "first_author": "Naama Ben-David",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286503255",
+      "doi": "https://doi.org/10.1145/3519270.3538427",
+      "institution": "VMware Research, Palo Alto, CA, USA",
+      "institution_country": null,
+      "raw_affiliation": "VMware Research, Palo Alto, CA, USA"
+    },
+    {
+      "title": "Universally-Optimal Distributed Exact Min-Cut.",
+      "first_author": "Mohsen Ghaffari",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4281778715",
+      "doi": "https://doi.org/10.1145/3519270.3538429",
+      "institution": "IIT@MIT",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01wp8zh54"
+    },
+    {
+      "title": "Optimal Synchronous Approximate Agreement with Asynchronous Fallback.",
+      "first_author": "Diana Ghinea",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210688",
+      "doi": "https://doi.org/10.1145/3519270.3538442",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Overcoming Congestion in Distributed Coloring.",
+      "first_author": "Magnús M. Halldórsson",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210344",
+      "doi": "https://doi.org/10.1145/3519270.3538438",
+      "institution": "Reykjavík University",
+      "institution_country": "IS",
+      "institution_ror": "https://ror.org/05d2kyx68"
+    },
+    {
+      "title": "Brief Announcement: Computability and Anonymous Storage-Efficient Consensus with an Abstract MAC Layer.",
+      "first_author": "Lewis Tseng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501684",
+      "doi": "https://doi.org/10.1145/3519270.3538462",
+      "institution": "Boston College",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02n2fzt79"
+    },
+    {
+      "title": "Constant-Round Near-Optimal Spanners in Congested Clique.",
+      "first_author": "Shiri Chechik",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286504510",
+      "doi": "https://doi.org/10.1145/3519270.3538439",
+      "institution": "Tel Aviv University",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/04mhzgx49"
+    },
+    {
+      "title": "A Framework for Distributed Quantum Queries in the CONGEST Model.",
+      "first_author": "Joran van Apeldoorn",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4221139165",
+      "doi": "https://doi.org/10.1145/3519270.3538413",
+      "institution": "Amsterdam University of the Arts",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/04dde1554"
+    },
+    {
+      "title": "2022 Principles of Distributed Computing Doctoral Dissertation Award.",
+      "first_author": "Yehuda Afek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286504572",
+      "doi": "https://doi.org/10.1145/3519270.3538412",
+      "institution": "Tel Aviv University",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/04mhzgx49"
+    },
+    {
+      "title": "Deterministic Near-Optimal Distributed Listing of Cliques.",
+      "first_author": "Keren Censor-Hillel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4281259321",
+      "doi": "https://doi.org/10.1007/s00446-024-00470-8",
+      "institution": "Technion – Israel Institute of Technology",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qryx823"
+    },
+    {
+      "title": "Encrypted Distributed Systems.",
+      "first_author": "Seny Kamara",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4310054767",
+      "doi": "https://doi.org/10.1109/tpds.2022.3216320",
+      "institution": "City University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/03q8dnn23"
+    },
+    {
+      "title": "Efficient and Adaptively Secure Asynchronous Binary Agreement via Binding Crusader Agreement.",
+      "first_author": "Ittai Abraham",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286500915",
+      "doi": "https://doi.org/10.1145/3519270.3538426",
+      "institution": "Herzliya Medical Center",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/00m6hsp80"
+    },
+    {
+      "title": "The Space Complexity of Consensus from Swap.",
+      "first_author": "Sean Ovens",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286504588",
+      "doi": "https://doi.org/10.1145/3519270.3538420",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "Brief Announcement: Fault Tolerant Coloring of the Asynchronous Cycle.",
+      "first_author": "Pierre Fraigniaud",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286500829",
+      "doi": "https://doi.org/10.1145/3519270.3538456",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "A Distributed Combinatorial Topology Approach to Arrow's Impossibility Theorem.",
+      "first_author": "Sergio Rajsbaum",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210719",
+      "doi": "https://doi.org/10.1145/3519270.3538433",
+      "institution": "Universidad Nacional Autónoma de México",
+      "institution_country": "MX",
+      "institution_ror": "https://ror.org/01tmp8f25"
+    },
+    {
+      "title": "Gradecast in Synchrony and Reliable Broadcast in Asynchrony with Optimal Resilience, Efficiency, and Unconditional Security.",
+      "first_author": "Ittai Abraham",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Massively Parallel Computation in a Heterogeneous Regime.",
+      "first_author": "Orr Fischer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286503967",
+      "doi": "https://doi.org/10.1145/3519270.3538450",
+      "institution": "Tel Aviv University",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/04mhzgx49"
+    },
+    {
+      "title": "A Massively Parallel Modularity-Maximizing Algorithm with Provable Guarantees.",
+      "first_author": "Vincent Cohen-Addad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210465",
+      "doi": "https://doi.org/10.1145/3519270.3538449",
+      "institution": "Google (Switzerland)",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/014f9c269"
+    },
+    {
+      "title": "Brief Announcement: Asynchronous Randomness and Consensus without Trusted Setup.",
+      "first_author": "Luciano Freitas de Souza",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286501107",
+      "doi": "https://doi.org/10.1145/3519270.3538461",
+      "institution": "Télécom Paris",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/01naq7912"
+    },
+    {
+      "title": "Brief Announcement: Holistic Verification of Blockchain Consensus.",
+      "first_author": "Nathalie Bertrand",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210090",
+      "doi": "https://doi.org/10.1145/3519270.3538468",
+      "institution": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02kvxyf05"
+    },
+    {
+      "title": "Brief Announcement: Gathering Despite a Linear Number of Weakly Byzantine Agents.",
+      "first_author": "Jion Hirose",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210573",
+      "doi": "https://doi.org/10.1145/3519270.3538470",
+      "institution": "Nara Institute of Science and Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/05bhada84"
+    },
+    {
+      "title": "Parameterized Verification under Release Acquire is PSPACE-complete.",
+      "first_author": "Shankaranarayanan Krishna",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210018",
+      "doi": "https://doi.org/10.1145/3519270.3538445",
+      "institution": "Indian Institute of Technology Bombay",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/02qyf5152"
+    },
+    {
+      "title": "Brief Announcement: Make Every Word Count: Adaptive Byzantine Agreement with Fewer Words.",
+      "first_author": "Shir Cohen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286210646",
+      "doi": "https://doi.org/10.1145/3519270.3538458",
+      "institution": "Technion – Israel Institute of Technology",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qryx823"
+    },
+    {
+      "title": "Brief Announcement: Almost Universally Optimal Distributed Laplacian Solver.",
+      "first_author": "Ioannis Anagnostides",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286500894",
+      "doi": "https://doi.org/10.1145/3519270.3538464",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "2022 Edsger W. Dijkstra Prize in Distributed Computing.",
+      "first_author": "Marcos Aguiliera",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286500881",
+      "doi": "https://doi.org/10.1145/3519270.3538411",
+      "institution": "VMware Research, Germany",
+      "institution_country": null,
+      "raw_affiliation": "VMware Research, Germany"
+    },
+    {
+      "title": "Node and Edge Averaged Complexities of Local Graph Problems.",
+      "first_author": "Alkida Balliu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4286500742",
+      "doi": "https://doi.org/10.1145/3519270.3538419",
+      "institution": "Gran Sasso Science Institute",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/043qcb444"
+    }
+  ]
+}

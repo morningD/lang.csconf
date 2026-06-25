@@ -1,0 +1,287 @@
+{
+  "conference": "SOCC",
+  "year": 2022,
+  "total_papers": 38,
+  "total_matched": 13,
+  "total_with_affiliation": 11,
+  "coverage_pct": 28.9,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "DeepScaling: microservices autoscaling for stable CPU utilization in large scale cloud systems.",
+      "first_author": "Ziliang Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Titan: a scheduler for foundation model fine-tuning workloads.",
+      "first_author": "Wei Gao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Pisces: efficient federated learning via guided asynchronous training.",
+      "first_author": "Zhifeng Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4283324605",
+      "doi": "https://doi.org/10.48550/arxiv.2206.09264",
+      "institution": null
+    },
+    {
+      "title": "ESCHER: expressive scheduling with ephemeral resources.",
+      "first_author": "Romil Bhardwaj",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "KOLE: breaking the scalability barrier for managing far edge nodes in cloud.",
+      "first_author": "Jie Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Serving unseen deep learning models with near-optimal configurations: a fast adaptive search approach.",
+      "first_author": "Yuewen Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Network resource management as a database problem.",
+      "first_author": "Hafiz Mohsin Bashir",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308426871",
+      "doi": "https://doi.org/10.1145/3542929.3563508",
+      "institution": "Tufts University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05wvpxv85"
+    },
+    {
+      "title": "The power of prediction: microservice auto scaling via workload learning.",
+      "first_author": "Shutian Luo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Achieving low latency in public edges by hiding workloads mutual interference.",
+      "first_author": "Weiwei Jia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308426858",
+      "doi": "https://doi.org/10.1145/3542929.3563459",
+      "institution": "University of Rhode Island",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/013ckk937"
+    },
+    {
+      "title": "Characterizing and orchestrating VM reservation in geo-distributed clouds to improve the resource efficiency.",
+      "first_author": "Jiuchen Shi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308426165",
+      "doi": "https://doi.org/10.1145/3542929.3563490",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "QFaaS: accelerating and securing serverless cloud networks with QUIC.",
+      "first_author": "Kaiyu Hou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Writes hurt: lessons in cache design for optane NVRAM.",
+      "first_author": "Alexandra Fedorova",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4320458597",
+      "doi": "https://doi.org/10.48550/arxiv.2205.14122",
+      "institution": null
+    },
+    {
+      "title": "Elastic cloud services: scaling snowflake's control plane.",
+      "first_author": "Themis Melissaris",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Arax: a runtime framework for decoupling applications from heterogeneous accelerators.",
+      "first_author": "Manos Pavlidakis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Method overloading the circuit.",
+      "first_author": "Christopher Meiklejohn",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308426218",
+      "doi": "https://doi.org/10.1145/3542929.3563466",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "Proactive look-ahead control of transaction flows for high-throughput payment channel network.",
+      "first_author": "Wuhui Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308398702",
+      "doi": "https://doi.org/10.1145/3542929.3563491",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "GHive: accelerating analytical query processing in apache hive via CPU-GPU heterogeneous computing.",
+      "first_author": "Haotian Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How to fight production incidents?: an empirical study on a large-scale cloud service.",
+      "first_author": "Supriyo Ghosh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Want more unikernels?: inflate them!",
+      "first_author": "Gaulthier Gain",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CoSpot: a cooperative VM allocation framework for increased revenue from spot instances.",
+      "first_author": "Syed M. Iqbal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Demeter: QoS-aware CPU scheduling to reduce power consumption of multiple black-box workloads.",
+      "first_author": "Wenda Tang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SIMPPO: a scalable and incremental online learning framework for serverless resource management.",
+      "first_author": "Haoran Qiu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating range queries of primary and secondary indices for key-value separation.",
+      "first_author": "Chenlei Tang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308426866",
+      "doi": "https://doi.org/10.1145/3542929.3563479",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "See it to believe it?: the role of visualisation in systems research.",
+      "first_author": "Thomas James Davidson",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GreenDRL: managing green datacenters using deep reinforcement learning.",
+      "first_author": "Kuo Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Hermod: principled and practical scheduling for serverless functions.",
+      "first_author": "Kostis Kaffes",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PGPregel: an end-to-end system for privacy-preserving graph processing in geo-distributed data centers.",
+      "first_author": "Amelie Chi Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Cloud-native workflow scheduling using a hybrid priority rule and dynamic task parallelism.",
+      "first_author": "Jungeun Shin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308361877",
+      "doi": "https://doi.org/10.1145/3542929.3563495",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Mining microservice design patterns.",
+      "first_author": "Kamala Ramasubramanian",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308361916",
+      "doi": "https://doi.org/10.1145/3542929.3563472",
+      "institution": "Google (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00njsd438"
+    },
+    {
+      "title": "A case for using cache line deltas for high frequency VM snapshotting.",
+      "first_author": "Daniel G. Waddington",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308426515",
+      "doi": "https://doi.org/10.1145/3542929.3563481",
+      "institution": "IBM Research",
+      "institution_country": null,
+      "raw_affiliation": "IBM Research"
+    },
+    {
+      "title": "Cypress: input size-sensitive container provisioning and request scheduling for serverless platforms.",
+      "first_author": "Vivek M. Bhasi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Minimizing packet retransmission for real-time video analytics.",
+      "first_author": "Haodong Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308427459",
+      "doi": "https://doi.org/10.1145/3542929.3563502",
+      "institution": "University of Chicago",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/024mw5h28"
+    },
+    {
+      "title": "MISO: exploiting multi-instance GPU capability on multi-tenant GPU clusters.",
+      "first_author": "Baolin Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SimLess: simulate serverless workflows and their twins and siblings in federated FaaS.",
+      "first_author": "Sashko Ristov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Workload consolidation in alibaba clusters: the good, the bad, and the ugly.",
+      "first_author": "Yongkang Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Quadrant: a cloud-deployable NF virtualization platform.",
+      "first_author": "Jianfeng Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating large-scale distributed neural network training with SPMD parallelism.",
+      "first_author": "Shiwei Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4308426193",
+      "doi": "https://doi.org/10.1145/3542929.3563487",
+      "institution": "University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/02zhqgq86"
+    },
+    {
+      "title": "Owl: performance-aware scheduling for resource-efficient function-as-a-service cloud.",
+      "first_author": "Huangshi Tian",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}
