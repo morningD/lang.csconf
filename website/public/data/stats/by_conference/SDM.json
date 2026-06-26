@@ -457,152 +457,341 @@
     }
   ],
   "affiliations": {
-    "total_covered": 205,
-    "total_papers": 283,
-    "coverage_pct": 72.4,
+    "total_covered": 304,
+    "total_papers": 447,
+    "coverage_pct": 68.0,
     "top": [
       {
         "name": "University of Minnesota",
-        "count": 5,
-        "pct": 1.77,
+        "count": 9,
+        "pct": 2.01,
         "country": "US",
-        "rank": 1
-      },
-      {
-        "name": "University of California, Riverside",
-        "count": 5,
-        "pct": 1.77,
-        "country": "US",
-        "rank": 1
-      },
-      {
-        "name": "Beihang University",
-        "count": 5,
-        "pct": 1.77,
-        "country": "CN",
         "rank": 1
       },
       {
         "name": "Chinese Academy of Sciences",
-        "count": 5,
-        "pct": 1.77,
+        "count": 7,
+        "pct": 1.57,
         "country": "CN",
-        "rank": 1
+        "rank": 2
+      },
+      {
+        "name": "IBM",
+        "count": 7,
+        "pct": 1.57,
+        "country": "US",
+        "rank": 2
+      },
+      {
+        "name": "University of California, Riverside",
+        "count": 6,
+        "pct": 1.34,
+        "country": "US",
+        "rank": 4
+      },
+      {
+        "name": "Carnegie Mellon University",
+        "count": 6,
+        "pct": 1.34,
+        "country": "US",
+        "rank": 4
+      },
+      {
+        "name": "Northeastern University",
+        "count": 5,
+        "pct": 1.12,
+        "country": "US",
+        "rank": 6
+      },
+      {
+        "name": "Beihang University",
+        "count": 5,
+        "pct": 1.12,
+        "country": "CN",
+        "rank": 6
       },
       {
         "name": "City University of Hong Kong",
         "count": 5,
-        "pct": 1.77,
+        "pct": 1.12,
         "country": "HK",
-        "rank": 1
-      },
-      {
-        "name": "University of Virginia",
-        "count": 4,
-        "pct": 1.41,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "Northeastern University",
-        "count": 4,
-        "pct": 1.41,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "East China Normal University",
-        "count": 4,
-        "pct": 1.41,
-        "country": "CN",
-        "rank": 6
-      },
-      {
-        "name": "Emory University",
-        "count": 4,
-        "pct": 1.41,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "University of Minnesota System",
-        "count": 4,
-        "pct": 1.41,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "Pennsylvania State University",
-        "count": 4,
-        "pct": 1.41,
-        "country": "US",
         "rank": 6
       },
       {
         "name": "Arizona State University",
-        "count": 4,
-        "pct": 1.41,
+        "count": 5,
+        "pct": 1.12,
         "country": "US",
         "rank": 6
       },
       {
-        "name": "George Mason University",
-        "count": 3,
-        "pct": 1.06,
-        "country": "US",
-        "rank": 13
-      },
-      {
-        "name": "Jagiellonian University",
-        "count": 3,
-        "pct": 1.06,
-        "country": "PL",
-        "rank": 13
-      },
-      {
-        "name": "IBM Research - Thomas J. Watson Research Center",
-        "count": 3,
-        "pct": 1.06,
-        "country": "US",
-        "rank": 13
-      },
-      {
         "name": "University of Pittsburgh",
-        "count": 3,
-        "pct": 1.06,
+        "count": 4,
+        "pct": 0.89,
         "country": "US",
-        "rank": 13
+        "rank": 10
       },
       {
-        "name": "University of Helsinki",
-        "count": 2,
-        "pct": 0.71,
-        "country": "FI",
-        "rank": 17
-      },
-      {
-        "name": "Alibaba",
-        "count": 2,
-        "pct": 0.71,
-        "country": "CN",
-        "rank": 17
-      },
-      {
-        "name": "University of Bonn",
-        "count": 2,
-        "pct": 0.71,
-        "country": "DE",
-        "rank": 17
+        "name": "University of Virginia",
+        "count": 4,
+        "pct": 0.89,
+        "country": "US",
+        "rank": 10
       },
       {
         "name": "Michigan State University",
-        "count": 2,
-        "pct": 0.71,
+        "count": 4,
+        "pct": 0.89,
         "country": "US",
-        "rank": 17
+        "rank": 10
+      },
+      {
+        "name": "East China Normal University",
+        "count": 4,
+        "pct": 0.89,
+        "country": "CN",
+        "rank": 10
+      },
+      {
+        "name": "Emory University",
+        "count": 4,
+        "pct": 0.89,
+        "country": "US",
+        "rank": 10
+      },
+      {
+        "name": "University of Minnesota System",
+        "count": 4,
+        "pct": 0.89,
+        "country": "US",
+        "rank": 10
+      },
+      {
+        "name": "KU Leuven",
+        "count": 4,
+        "pct": 0.89,
+        "country": "BE",
+        "rank": 10
+      },
+      {
+        "name": "Pennsylvania State University",
+        "count": 4,
+        "pct": 0.89,
+        "country": "US",
+        "rank": 10
+      },
+      {
+        "name": "Texas A&M University",
+        "count": 3,
+        "pct": 0.67,
+        "country": "US",
+        "rank": 18
+      },
+      {
+        "name": "University of Maryland, College Park",
+        "count": 3,
+        "pct": 0.67,
+        "country": "US",
+        "rank": 18
+      },
+      {
+        "name": "George Mason University",
+        "count": 3,
+        "pct": 0.67,
+        "country": "US",
+        "rank": 18
       }
     ],
     "by_year": {
+      "2022": {
+        "total_covered": 26,
+        "total_papers": 82,
+        "coverage_pct": 31.7,
+        "top": [
+          {
+            "name": "Boston University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of California, Santa",
+            "count": 1,
+            "pct": 1.22,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "The University of Osaka",
+            "count": 1,
+            "pct": 1.22,
+            "country": "JP",
+            "rank": 1
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "University of Electronic Science and Technology of China",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Zhejiang",
+            "count": 1,
+            "pct": 1.22,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Beijing Jiaotong University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Ohio State University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Minnesota",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Texas A&M University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Case Western Reserve University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "IBM Research, T. J. Watson Research Center, New York, USA,",
+            "count": 1,
+            "pct": 1.22,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CA",
+            "rank": 1
+          },
+          {
+            "name": "LMU Klinikum",
+            "count": 1,
+            "pct": 1.22,
+            "country": "DE",
+            "rank": 1
+          },
+          {
+            "name": "Indiana University – Purdue University Indianapolis",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Pittsburgh",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "count": 1,
+            "pct": 1.22,
+            "country": "FR",
+            "rank": 1
+          },
+          {
+            "name": "Cornell University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "KAUST",
+            "count": 1,
+            "pct": 1.22,
+            "country": "SA",
+            "rank": 1
+          },
+          {
+            "name": "University of Copenhagen",
+            "count": 1,
+            "pct": 1.22,
+            "country": "DK",
+            "rank": 1
+          },
+          {
+            "name": "Iowa State University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "HKU-Pasteur Research Pole",
+            "count": 1,
+            "pct": 1.22,
+            "country": "HK",
+            "rank": 1
+          },
+          {
+            "name": "Nanjing University of Science and Technology",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "University of Maryland, College Park",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Idiap Research Institute",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CH",
+            "rank": 1
+          }
+        ]
+      },
       "2023": {
         "total_covered": 42,
         "total_papers": 111,
@@ -1783,6 +1972,384 @@
             "pct": 1.43,
             "country": "US",
             "rank": 8
+          }
+        ]
+      },
+      "2010": {
+        "total_covered": 73,
+        "total_papers": 82,
+        "coverage_pct": 89.0,
+        "top": [
+          {
+            "name": "IBM",
+            "count": 6,
+            "pct": 7.32,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Carnegie Mellon University",
+            "count": 5,
+            "pct": 6.1,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Minnesota",
+            "count": 3,
+            "pct": 3.66,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Maryland, College Park",
+            "count": 2,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "University of Illinois Chicago",
+            "count": 2,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "KU Leuven",
+            "count": 2,
+            "pct": 2.44,
+            "country": "BE",
+            "rank": 4
+          },
+          {
+            "name": "Helsinki Institute for Information Technology",
+            "count": 2,
+            "pct": 2.44,
+            "country": "FI",
+            "rank": 4
+          },
+          {
+            "name": "Georgia Institute of Technology",
+            "count": 2,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Lawrence Livermore National Laboratory",
+            "count": 2,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Michigan State University",
+            "count": 2,
+            "pct": 2.44,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 2,
+            "pct": 2.44,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "IBM T. J. Watson Research Center",
+            "count": 2,
+            "pct": 2.44,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Sun Yat-sen University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CN",
+            "rank": 13
+          },
+          {
+            "name": "Agency for Science, Technology and Research",
+            "count": 1,
+            "pct": 1.22,
+            "country": "SG",
+            "rank": 13
+          },
+          {
+            "name": "Gesellschaft Fur Mathematik Und Datenverarbeitung",
+            "count": 1,
+            "pct": 1.22,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "Siemens",
+            "count": 1,
+            "pct": 1.22,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CN",
+            "rank": 13
+          },
+          {
+            "name": "Albany State University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of California, Los Angeles",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Massachusetts Institute of Technology",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Florida International University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Bristol",
+            "count": 1,
+            "pct": 1.22,
+            "country": "GB",
+            "rank": 13
+          },
+          {
+            "name": "University of California, Riverside",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Novi Sad",
+            "count": 1,
+            "pct": 1.22,
+            "country": "RS",
+            "rank": 13
+          },
+          {
+            "name": "Northwest A&F University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CN",
+            "rank": 13
+          },
+          {
+            "name": "Northeastern University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Eastern Michigan University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Japan Science and Technology Agency",
+            "count": 1,
+            "pct": 1.22,
+            "country": "JP",
+            "rank": 13
+          },
+          {
+            "name": "Nanyang Technological University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "SG",
+            "rank": 13
+          },
+          {
+            "name": "The University of Osaka",
+            "count": 1,
+            "pct": 1.22,
+            "country": "JP",
+            "rank": 13
+          },
+          {
+            "name": "University of California, Santa Barbara",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Istituto di Scienza e Tecnologie dell'Informazione \"Alessandro Faedo\"",
+            "count": 1,
+            "pct": 1.22,
+            "country": "IT",
+            "rank": 13
+          },
+          {
+            "name": "University of Sydney",
+            "count": 1,
+            "pct": 1.22,
+            "country": "AU",
+            "rank": 13
+          },
+          {
+            "name": "Rensselaer Polytechnic Institute",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Sandia National Laboratories California",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "RWTH Aachen University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "The University of Melbourne",
+            "count": 1,
+            "pct": 1.22,
+            "country": "AU",
+            "rank": 13
+          },
+          {
+            "name": "Rutgers, The State University of New Jersey",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Bologna",
+            "count": 1,
+            "pct": 1.22,
+            "country": "IT",
+            "rank": 13
+          },
+          {
+            "name": "Université Grenoble Alpes",
+            "count": 1,
+            "pct": 1.22,
+            "country": "FR",
+            "rank": 13
+          },
+          {
+            "name": "Baylor University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Arizona State University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Minho",
+            "count": 1,
+            "pct": 1.22,
+            "country": "PT",
+            "rank": 13
+          },
+          {
+            "name": "Hokkaido University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "JP",
+            "rank": 13
+          },
+          {
+            "name": "Renmin University of China",
+            "count": 1,
+            "pct": 1.22,
+            "country": "CN",
+            "rank": 13
+          },
+          {
+            "name": "University of North Carolina at Charlotte",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Aalto University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "FI",
+            "rank": 13
+          },
+          {
+            "name": "University of Tokyo",
+            "count": 1,
+            "pct": 1.22,
+            "country": "JP",
+            "rank": 13
+          },
+          {
+            "name": "University of Vermont",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Cincinnati",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of Michigan",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "University of California, Davis",
+            "count": 1,
+            "pct": 1.22,
+            "country": "US",
+            "rank": 13
           }
         ]
       }
