@@ -1,0 +1,461 @@
+{
+  "conference": "MIDDLEWARE",
+  "year": 2021,
+  "total_papers": 55,
+  "total_matched": 30,
+  "total_with_affiliation": 30,
+  "coverage_pct": 54.5,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Scanflow: an end-to-end agent-based autonomic ML workflow manager for clusters.",
+      "first_author": "Peini Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Bricks: a configurable coordination service with multiple consistency models.",
+      "first_author": "Shuichi Maruyama",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Sizeless: predicting the optimal size of serverless functions.",
+      "first_author": "Simon Eismann",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Implicit model specialization through dag-based decentralized federated learning.",
+      "first_author": "Jossekin Beilharz",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3209658710",
+      "doi": "https://doi.org/10.1145/3464298.3493403",
+      "institution": "University of Potsdam",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/03bnmw459"
+    },
+    {
+      "title": "Config 2.0: towards reinforcement learning based configuration of stream processing systems.",
+      "first_author": "Jawad Tahir",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DyMonD: dynamic application monitoring and service detection framework.",
+      "first_author": "Mona Elsaadawy",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "RamCast: RDMA-based atomic multicast.",
+      "first_author": "Long Hoang Le",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Polygon: a QUIC-based CDN server selection system supporting multiple resource demands.",
+      "first_author": "Mengying Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Connected and autonomous vehicles as a grand challenge for middleware in cyber-physical systems.",
+      "first_author": "Raj Rajkumar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200325049",
+      "doi": "https://doi.org/10.1145/3501255.3501406",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "SeBS: a serverless benchmark suite for function-as-a-service computing.",
+      "first_author": "Marcin Copik",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3114647881",
+      "doi": "https://doi.org/10.5281/zenodo.5209001",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Let's wait awhile: how temporal workload shifting can reduce carbon emissions in the cloud.",
+      "first_author": "Philipp Wiesner",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216385322",
+      "doi": "https://doi.org/10.48550/arxiv.2110.13234",
+      "institution": "Technische Universität Berlin",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/03v4gjf40"
+    },
+    {
+      "title": "CAT: content-aware tracing and analysis for distributed systems.",
+      "first_author": "Tânia Esteves",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A zero-knowledge proof system for OpenLibra.",
+      "first_author": "Patrick Biel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216694898",
+      "doi": "https://doi.org/10.1145/3491086.3492469",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "Prosecutor: an efficient BFT consensus algorithm with behavior-aware penalization against Byzantine attacks.",
+      "first_author": "Gengrui Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Snarl: entangled merkle trees for improved file availability and storage utilization.",
+      "first_author": "Racin Nygaard",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Experience Paper: Danaus: isolation and efficiency of container I/O at the client side of network storage.",
+      "first_author": "Giorgos Kappes",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FW-KV: improving read guarantees in PSI.",
+      "first_author": "Masoomeh Javidi Kishi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "YASMIN: a real-time middleware for COTS heterogeneous platforms.",
+      "first_author": "Benjamin Rouxel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3187460886",
+      "doi": "https://doi.org/10.48550/arxiv.2108.00730",
+      "institution": "University of Amsterdam",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/04dkp9463"
+    },
+    {
+      "title": "Using blockchain technology for software identity maintenance.",
+      "first_author": "Andreea-Elena Dragnoiu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216364150",
+      "doi": "https://doi.org/10.1145/3491087.3493682",
+      "institution": "University of Bucharest",
+      "institution_country": "RO",
+      "institution_ror": "https://ror.org/02x2v6p15"
+    },
+    {
+      "title": "FaaSTCC: efficient transactional causal consistency for serverless computing.",
+      "first_author": "Taras Lykhenko",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The serverless shell.",
+      "first_author": "Aurèle Mahéo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3215827568",
+      "doi": "https://doi.org/10.1145/3491084.3491426",
+      "institution": "Institut Polytechnique de Paris",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/042tfbd02"
+    },
+    {
+      "title": "Memory at your service: fast memory allocation for latency-critical services.",
+      "first_author": "Aidi Pi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3198288092",
+      "doi": "https://doi.org/10.48550/arxiv.2109.02922",
+      "institution": "University of Colorado Colorado Springs",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/054spjc55"
+    },
+    {
+      "title": "Towards transparent and trustworthy cloud carbon accounting.",
+      "first_author": "Tamar Eilam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4200224910",
+      "doi": "https://doi.org/10.1145/3501255.3501408",
+      "institution": "IBM T.J.Watson Research Center, NY",
+      "institution_country": null,
+      "raw_affiliation": "IBM T.J.Watson Research Center, NY"
+    },
+    {
+      "title": "SwitchFlow: preemptive multitasking for deep learning.",
+      "first_author": "Xiaofeng Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Token-based incentive schemes in decentralized P2P storage networks.",
+      "first_author": "Vahid Heidaripour Lakhani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216678210",
+      "doi": "https://doi.org/10.1145/3491087.3493681",
+      "institution": "University of Stavanger",
+      "institution_country": "NO",
+      "institution_ror": "https://ror.org/02qte9q33"
+    },
+    {
+      "title": "Xar-trek: run-time execution migration among FPGAs and heterogeneous-ISA CPUs.",
+      "first_author": "Edson Horta",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "sgx-dl: dynamic loading and hot-patching for secure applications: experience paper.",
+      "first_author": "Nico Weichbrodt",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Authenticated key-value stores with hardware enclaves.",
+      "first_author": "Kai Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3215406573",
+      "doi": "https://doi.org/10.1145/3491084.3491425",
+      "institution": "Syracuse University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/025r5qe02"
+    },
+    {
+      "title": "Lognroll: discovering accurate log templates by iterative filtering.",
+      "first_author": "Byungchul Tak",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "OneOS: a distributed operating system for the internet of things.",
+      "first_author": "Kumseok Jung",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SHARC: improving adaptive replacement cache with shadow recency cache management.",
+      "first_author": "Xiaoming Du",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Benchmarking-as-a-service for cloud-hosted DBMS.",
+      "first_author": "Daniel Seybold",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3215432466",
+      "doi": "https://doi.org/10.1145/3491086.3492473",
+      "institution": "Universität Ulm",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/032000t02"
+    },
+    {
+      "title": "FlexOS: easy specialization of OS safety properties.",
+      "first_author": "Hugo Lefeuvre",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Montsalvat: Intel SGX shielding for GraalVM native images.",
+      "first_author": "Peterson Yuhala",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Benchmarking Apache Kafka under network faults.",
+      "first_author": "Murtaza Raza",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3214995238",
+      "doi": "https://doi.org/10.1145/3491086.3492470",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "Gossip consensus.",
+      "first_author": "Daniel Cason",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216064821",
+      "doi": "https://doi.org/10.1145/3464298.3493395",
+      "institution": "Università della Svizzera italiana",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/03c4atk17"
+    },
+    {
+      "title": "Highly-available and consistent group collaboration at the edge with colony.",
+      "first_author": "Ilyas Toumlilt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3202087829",
+      "doi": "https://doi.org/10.1145/3464298.3493405",
+      "institution": "Sorbonne Université",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02en5vm52"
+    },
+    {
+      "title": "Magic-Pipe: self-optimizing video analytics pipelines.",
+      "first_author": "Giuseppe Coviello",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3215772790",
+      "doi": "https://doi.org/10.1145/3464298.3484504",
+      "institution": "NEC Laboratories America Inc",
+      "institution_country": null,
+      "raw_affiliation": "NEC Laboratories America Inc"
+    },
+    {
+      "title": "Privacy preserving event based transaction system in a decentralized environment.",
+      "first_author": "Rabimba Karanjai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3215024240",
+      "doi": "https://doi.org/10.1145/3464298.3493401",
+      "institution": "University of Houston",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/048sx0r50"
+    },
+    {
+      "title": "A fresh look at the architecture and performance of contemporary isolation platforms.",
+      "first_author": "Vincent van Rijn",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3205013438",
+      "doi": "https://doi.org/10.1145/3464298.3493404",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "Procedure-driven deployment support for the microservice era.",
+      "first_author": "Amit Sheoran",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3217445041",
+      "doi": "https://doi.org/10.1145/3491084.3491429",
+      "institution": "Hewlett-Packard (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/059rn9488"
+    },
+    {
+      "title": "Towards optimal placement and scheduling of DNN operations with Pesto.",
+      "first_author": "Ubaid Ullah Hafeez",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3202656791",
+      "doi": "https://doi.org/10.1145/3464298.3476132",
+      "institution": "Stony Brook University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05qghxh33"
+    },
+    {
+      "title": "PProx: efficient privacy for recommendation-as-a-service.",
+      "first_author": "Guillaume Rosinosky",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4393609185",
+      "doi": "https://doi.org/10.5281/zenodo.5201724",
+      "institution": "ICTEAM, UCLouvain",
+      "institution_country": null,
+      "raw_affiliation": "ICTEAM, UCLouvain"
+    },
+    {
+      "title": "Multi-objective evolutionary based feature selection supported by distributed multi-label classification and deep learning on image/video data.",
+      "first_author": "Gizem Nur Karagoz",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216495706",
+      "doi": "https://doi.org/10.1145/3491087.3493675",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "The cloud to things continuum: infrastructure and management.",
+      "first_author": "Raouf Boutaba",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Non-relational multi-level caching for mitigation of staleness & stragglers in distributed deep learning.",
+      "first_author": "Aswathy Ravikumar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216883016",
+      "doi": "https://doi.org/10.1145/3491087.3493678",
+      "institution": "Vellore Institute of Technology University",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/00qzypv28"
+    },
+    {
+      "title": "Efficient parallel execution of block transactions in blockchain.",
+      "first_author": "Parwat Singh Anjana",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3215631604",
+      "doi": "https://doi.org/10.1145/3491087.3493676",
+      "institution": "Indian Institute of Technology Hyderabad",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/01j4v3x97"
+    },
+    {
+      "title": "GNOSIS- query-driven multimodal event processing for unstructured data streams.",
+      "first_author": "Piyush Yadav",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3217677328",
+      "doi": "https://doi.org/10.1145/3491086.3492475",
+      "institution": "Ollscoil na Gaillimhe – University of Galway",
+      "institution_country": "IE",
+      "institution_ror": "https://ror.org/03bea9k73"
+    },
+    {
+      "title": "Precursor: a fast, client-centric and trusted key-value store using RDMA and Intel SGX.",
+      "first_author": "Ines Messadi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lachesis: a middleware for customizing OS scheduling of stream processing queries.",
+      "first_author": "Dimitris Palyvos-Giannas",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Using blockchain to provide trusted interoperability to system-of-systems in smart cities context.",
+      "first_author": "Stefano Momo Loss",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3215831142",
+      "doi": "https://doi.org/10.1145/3491087.3493679",
+      "institution": "Universidade Federal do Rio Grande do Norte",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/04wn09761"
+    },
+    {
+      "title": "A milestone for FaaS pipelines; object storage-vs VM-driven data exchange.",
+      "first_author": "Germán T. Eizaguirre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3217039278",
+      "doi": "https://doi.org/10.1145/3491086.3492472",
+      "institution": "Universitat Rovira i Virgili",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/00g5sqv46"
+    },
+    {
+      "title": "AutoML: towards automation of machine learning systems maintainability.",
+      "first_author": "Lorena Poenaru-Olaru",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Experience Paper: Towards enhancing cost efficiency in serverless machine learning training.",
+      "first_author": "Marc Sánchez Artigas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3217333711",
+      "doi": "https://doi.org/10.1145/3464298.3494884",
+      "institution": "Universitat Rovira i Virgili",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/00g5sqv46"
+    },
+    {
+      "title": "Autonomous resource management in distributed stream processing systems.",
+      "first_author": "Pratyush Agnihotri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3216780954",
+      "doi": "https://doi.org/10.1145/3491087.3493680",
+      "institution": "Technical University of Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    }
+  ]
+}
