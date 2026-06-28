@@ -1,0 +1,587 @@
+{
+  "conference": "RTAS",
+  "year": 2021,
+  "total_papers": 60,
+  "total_matched": 54,
+  "total_with_affiliation": 54,
+  "coverage_pct": 90.0,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Brief Industry Paper: A Model-based Framework and Tool Support for Capturing System Verification Strategy.",
+      "first_author": "Mole Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178374173",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00047",
+      "institution": "Rolls-Royce (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/04h08p482"
+    },
+    {
+      "title": "Brief Industry Paper: Towards Real-Time 3D Object Detection for Autonomous Vehicles with Pruning Search.",
+      "first_author": "Pu Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178531146",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00043",
+      "institution": "Northeastern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04t5xt781"
+    },
+    {
+      "title": "Demo Abstract: RT-WPCN: A Multi-hop Real-time Wireless Powered Communication Network.",
+      "first_author": "Zelin Yun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178035913",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00068",
+      "institution": "University of Connecticut",
+      "institution_country": null,
+      "raw_affiliation": "University of Connecticut"
+    },
+    {
+      "title": "Practical Principle of Least Privilege for Secure Embedded Systems.",
+      "first_author": "Samuel Jero",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180644890",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00009",
+      "institution": "MIT Lincoln Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/022z6jk58"
+    },
+    {
+      "title": "OpenUVR: an Open-Source System Framework for Untethered Virtual Reality Applications.",
+      "first_author": "Alec Rohloff",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3124215200",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00026",
+      "institution": "North Carolina State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04tj63d06"
+    },
+    {
+      "title": "Constrained Data-Age with Job-Level Dependencies: How to Reconcile Tight Bounds and Overheads.",
+      "first_author": "Tobias Klaus",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182104949",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00014",
+      "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00f7hpc57"
+    },
+    {
+      "title": "DNA: Dynamic Resource Allocation for Soft Real-Time Multicore Systems.",
+      "first_author": "Robert Gifford",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180414257",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00024",
+      "institution": "California University of Pennsylvania",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01spssf70"
+    },
+    {
+      "title": "No Crash, No Exploit: Automated Verification of Embedded Kernels.",
+      "first_author": "Olivier Nicole",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Automatic Latency Management for ROS 2: Benefits, Challenges, and Open Problems.",
+      "first_author": "Tobias Blaß",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Budget RNNs: Multi-Capacity Neural Networks to Improve In-Sensor Inference Under Energy Budgets.",
+      "first_author": "Tejas Kannan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3181120673",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00020",
+      "institution": "University of Chicago",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/024mw5h28"
+    },
+    {
+      "title": "Work in Progress: Power-aware Scheduling Strategy for Multiple DAGs in the Heterogeneous Cloud.",
+      "first_author": "Hui Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178065510",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00064",
+      "institution": "Xidian University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05s92vm98"
+    },
+    {
+      "title": "PiCAS: New Design of Priority-Driven Chain-Aware Scheduling for ROS2.",
+      "first_author": "Hyunjong Choi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182259309",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00028",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "Work in Progress: Network Attack Detection Towards Smart Factory.",
+      "first_author": "Dan Tang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179559159",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00058",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "Work in Progress: Topology-based Multilevel Algorithm for Large-scale Task Scheduling in Clouds.",
+      "first_author": "Minjia Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180688233",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00062",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "Brief Industry Paper: Modeling and Verification of Descent Guidance Control of Mars Lander.",
+      "first_author": "Bohua Zhan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179176387",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00051",
+      "institution": "Institute of Software",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/033dfsn42"
+    },
+    {
+      "title": "Brief Industry Paper: optimizing Memory Efficiency of Graph Neural Networks on Edge Computing Platforms.",
+      "first_author": "Ao Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180004386",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00048",
+      "institution": "Beijing University of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/037b1pp87"
+    },
+    {
+      "title": "ARA: Static Initialization of Dynamically-Created System Objects.",
+      "first_author": "Björn Fiedler",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3143077210",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00039",
+      "institution": "Leibniz University Hannover",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/0304hq317"
+    },
+    {
+      "title": "Brief Industry Paper: HDAD: Hyperdimensional Computing-based Anomaly Detection for Automotive Sensor Attacks.",
+      "first_author": "Ruixuan Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180026872",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00052",
+      "institution": "Villanova University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02g7kd627"
+    },
+    {
+      "title": "A Systematic Approach to Achieving Tight Worst-Case Latency and High-Performance Under Predictable Cache Coherence.",
+      "first_author": "Anirudh Mohan Kaushik",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179405255",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00017",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "Brief Industry Paper: AXI-InterconnectRT: Towards a Real-Time AXI-Interconnect for System-on-Chips.",
+      "first_author": "Zhe Jiang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Brief Industry Paper: SylixOS: A Secure and Compatible RTOS with Constant Scheduling on SMP.",
+      "first_author": "Yuanhai Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178758689",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00049",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "Deficit Round-Robin: A Second Network Calculus Analysis.",
+      "first_author": "Seyed Mohammadhossein Tabatabaee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180067238",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00022",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "Low-Latency In-Band Integration of Multiple Low-Power Wide-Area Networks.",
+      "first_author": "Venkata P. Modekurthy",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182207866",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00034",
+      "institution": "University of Nevada, Las Vegas",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0406gha72"
+    },
+    {
+      "title": "Brief Industry Paper: Dissecting the QNX Adaptive Partitioning Scheduler.",
+      "first_author": "Dakshina Dasari",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180690591",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00056",
+      "institution": "Robert Bosch (Taiwan)",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/046as2g47"
+    },
+    {
+      "title": "Effectively Scheduling Hard and Soft Real-Time Tasks on Multiprocessors.",
+      "first_author": "Flávia Maristela Santos Nascimento",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178438551",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00025",
+      "institution": "Instituto Federal da Bahia",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/01tzdej37"
+    },
+    {
+      "title": "IGOR: Accelerating Byzantine Fault Tolerance for Real-Time Systems with Eager Execution.",
+      "first_author": "Andrew D. Loveless",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182855507",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00036",
+      "institution": "University of Michigan",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00jmfr291"
+    },
+    {
+      "title": "Brief Industry Paper: LiteOS: Managing Sleep for Low-energy IoT.",
+      "first_author": "Chuancai Gu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3181437723",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00054",
+      "institution": "Huawei Technologies (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00cmhce21"
+    },
+    {
+      "title": "Work in Progress: Mobile or FPGA? A Comprehensive Evaluation on Energy Efficiency and a Unified Optimization Framework.",
+      "first_author": "Geng Yuan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Brief Industry Paper: An Edge-Based High-Definition Map Crowdsourcing Task Distribution Framework for Autonomous Driving.",
+      "first_author": "Donghua Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179037286",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00050",
+      "institution": "South China University of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0530pts50"
+    },
+    {
+      "title": "Brief Industry Paper: The Matter of Time - A General and Efficient System for Precise Sensor Synchronization in Robotic Computing.",
+      "first_author": "Shaoshan Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182508700",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00040",
+      "institution": "Perceptive Engineering (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/05qep9y26"
+    },
+    {
+      "title": "Fault-Tolerant Mapping of Real-Time Parallel Applications under multiple DVFS schemes.",
+      "first_author": "Minyu Cui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3177629859",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00038",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "Brief Industry Paper: Digital Twin for Dependable Multi-Core Real-Time Systems - Requirements and Open Challenges.",
+      "first_author": "Xiaotian Dai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3172057381",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00057",
+      "institution": "University of York",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/04m01e293"
+    },
+    {
+      "title": "Brief Industry Paper: Catching IoT Malware in the Wild Using HoneyIoT.",
+      "first_author": "Yiwen Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179023078",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00045",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Simultaneous Multithreading in Mixed-Criticality Real-Time Systems.",
+      "first_author": "Joshua Bakita",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178957186",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00030",
+      "institution": "University of North Carolina at Chapel Hill",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0130frc33"
+    },
+    {
+      "title": "Safety-Aware Integration of Hardware-Assisted Program Tracing in Mixed-Criticality Systems for Security Monitoring.",
+      "first_author": "Marine Kadar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3177896746",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00031",
+      "institution": "SYSGO GmbH, Germany",
+      "institution_country": null,
+      "raw_affiliation": "SYSGO GmbH, Germany"
+    },
+    {
+      "title": "Work in Progress: Role-based Deep Reinforcement Learning with Information Sharing for Intelligent Unmanned Systems.",
+      "first_author": "Qingshuang Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178153662",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00059",
+      "institution": "Northwestern Polytechnical University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01y0j0j86"
+    },
+    {
+      "title": "Insert & Save: Energy Optimization in IP Core Integration for FPGA-based Real-time Systems.",
+      "first_author": "Martin Geier",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178834919",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00015",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "SchedGuard: Protecting against Schedule Leaks Using Linux Containers.",
+      "first_author": "Jiyang Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3181787099",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00010",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Tightening Network Calculus Delay Bounds by Predicting Flow Prolongations in the FIFO Analysis.",
+      "first_author": "Fabien Geyer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3164900708",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00021",
+      "institution": "Airbus (Germany)",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04a3akw68"
+    },
+    {
+      "title": "Brief Industry Paper: Tenma: A Real-time LibOS Developed for Industry Embedded Systems.",
+      "first_author": "Zhihui Gao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182212358",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00053",
+      "institution": "Huawei Technologies (China)",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00cmhce21"
+    },
+    {
+      "title": "Event-Driven Delay-Induced Tasks: Model, Analysis, and Applications.",
+      "first_author": "Federico Aromolo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards a Real-Time Wireless Powered Communication Network: Design, Implementation and Evaluation.",
+      "first_author": "Zelin Yun",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Real-Time Adaptive Sensor Attack Detection in Autonomous Cyber-Physical Systems.",
+      "first_author": "Francis Akowuah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3181836960",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00027",
+      "institution": "Syracuse University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/025r5qe02"
+    },
+    {
+      "title": "Developing Real-Time Scheduling Policy by Deep Reinforcement Learning.",
+      "first_author": "Zitong Bo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182045899",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00019",
+      "institution": "Chinese Academy of Sciences",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/034t30j35"
+    },
+    {
+      "title": "Latency Analysis of I/O Virtualization Techniques in Hypervisor-Based Real-Time Systems.",
+      "first_author": "Daniel Casini",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178703546",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00032",
+      "institution": "Scuola Superiore Sant'Anna",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/025602r80"
+    },
+    {
+      "title": "Work-In-Progress: Fault Tolerance in a Two-State Regularity-Based Checkpointing System.",
+      "first_author": "Elena Torre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178996643",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00063",
+      "institution": "University of Houston",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/048sx0r50"
+    },
+    {
+      "title": "Work in Progress: Heart Disease Detection Methodology using E-Stethoscope.",
+      "first_author": "Sayeda Farzana Aktar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178141655",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00065",
+      "institution": "Lamar University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008ms5s18"
+    },
+    {
+      "title": "Brief Industry Paper: Workload-Aware GPU Performance Estimation in the Airborne Embedded System.",
+      "first_author": "Yuan Yao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179300276",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00041",
+      "institution": "Northwestern Polytechnical University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01y0j0j86"
+    },
+    {
+      "title": "Do Not Overpay for Fault Tolerance!",
+      "first_author": "Edo Roth",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179906412",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00037",
+      "institution": "California University of Pennsylvania",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01spssf70"
+    },
+    {
+      "title": "APaS: An Adaptive Partition-Based Scheduling Framework for 6TiSCH Networks.",
+      "first_author": "Jiachen Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3181012071",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00033",
+      "institution": "University of Connecticut",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02der9h97"
+    },
+    {
+      "title": "Timing Analysis of Asynchronized Distributed Cause-Effect Chains.",
+      "first_author": "Mario Günzel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3178106036",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00012",
+      "institution": "TU Dortmund University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01k97gp34"
+    },
+    {
+      "title": "Work in Progress: Path-based Graph Partition for Parallel Hardware-accelerated Functional Verification.",
+      "first_author": "Peiying Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182769310",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00061",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "Brief Industry Paper: An Energy-Reduction On-Chip Memory Management for Intermittent Systems.",
+      "first_author": "Yu-Pei Liang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180630537",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00044",
+      "institution": "Institute of Information Science, Academia Sinica",
+      "institution_country": "TW",
+      "institution_ror": "https://ror.org/00z83z196"
+    },
+    {
+      "title": "Brief Industry Paper: An Infrastructure-Aided High Definition Map Data Provisioning Service for Autonomous Driving.",
+      "first_author": "Jinliang Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179590393",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00042",
+      "institution": "South China University of Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0530pts50"
+    },
+    {
+      "title": "Work in Progress: Identifying Unexpected Inter-core Interference Induced by Shared Cache.",
+      "first_author": "Denis Hoornaert",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179085762",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00066",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "ML for RT: Priority Assignment Using Machine Learning.",
+      "first_author": "Seunghoon Lee",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3182466851",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00018",
+      "institution": "Sungkyunkwan University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04q78tk20"
+    },
+    {
+      "title": "ASIL-Decomposition Based Routing and Scheduling in Safety-Critical Time-Sensitive Networking.",
+      "first_author": "Yuanbin Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3181788565",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00023",
+      "institution": "Linköping University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/05ynxx418"
+    },
+    {
+      "title": "A Hardware Platform for Exploring Predictable Cache Coherence Protocols for Real-time Multicores.",
+      "first_author": "Zhuanhao Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180326417",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00016",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "Brief Industry Paper: AutoToolCSU: CAN Signal Unpacking Tool for Automotive Software.",
+      "first_author": "Guoqi Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3180552691",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00055",
+      "institution": "Hunan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05htk5m33"
+    },
+    {
+      "title": "Demo Abstract: A Full-Blown 6TiSCH Network with Partition-based Resource Management for Large-Scale Real-Time Wireless Applications.",
+      "first_author": "Jiachen Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3179422063",
+      "doi": "https://doi.org/10.1109/rtas52030.2021.00067",
+      "institution": "University of Connecticut",
+      "institution_country": null,
+      "raw_affiliation": "University of Connecticut"
+    }
+  ]
+}

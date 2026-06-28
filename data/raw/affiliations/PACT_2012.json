@@ -1,0 +1,501 @@
+{
+  "conference": "PACT",
+  "year": 2012,
+  "total_papers": 79,
+  "total_matched": 4,
+  "total_with_affiliation": 4,
+  "coverage_pct": 5.1,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Base-delta-immediate compression: practical data compression for on-chip caches.",
+      "first_author": "Gennady Pekhimenko",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The evicted-address filter: a unified mechanism to address both cache pollution and thrashing.",
+      "first_author": "Vivek Seshadri",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Top500 versus sustained performance: the top problems with the top500 list - and what to do about them.",
+      "first_author": "William T. C. Kramer",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The changing role of supercomputing.",
+      "first_author": "Peter J. Ungaro",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Acceleration of bulk memory operations in a heterogeneous multicore architecture.",
+      "first_author": "Jong-Hyuk Lee",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LumiNOC: a power-efficient, high-performance, photonic network-on-chip for future parallel architectures.",
+      "first_author": "Cheng Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SkipCache: miss-rate aware cache management.",
+      "first_author": "Kanakagiri Raghavendra",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Practically private: enabling high performance CMPs through compiler-assisted data classification.",
+      "first_author": "Yong Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Power-efficient computing for compute-intensive GPGPU applications.",
+      "first_author": "Syed Zohaib Gilani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Design of a storage processing unit.",
+      "first_author": "Peng Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Database analytics acceleration using FPGAs.",
+      "first_author": "Bharat Sukhwani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Optimal bypass monitor for high performance last-level caches.",
+      "first_author": "Lingda Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Application-aware prefetch prioritization in on-chip networks.",
+      "first_author": "Nachiappan Chidambaram Nachiappan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Coalition threading: combining traditional andnon-traditional parallelism to maximize scalability.",
+      "first_author": "Md. Kamruzzaman",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Branch and data herding: reducing control and memory divergence for error-tolerant GPU applications.",
+      "first_author": "John Sartori",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Supporting stateful tasks in a dataflow graph.",
+      "first_author": "Vladimir Gajinov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TMNOC: a case of HTM and NoC co-design for increased energy efficiency and concurrency.",
+      "first_author": "Lihang Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Energy-efficient cache partitioning for future CMPs.",
+      "first_author": "Karthik T. Sundararajan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2066258396",
+      "doi": "https://doi.org/10.1145/2370816.2370898",
+      "institution": "University of Edinburgh",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01nrxwf90"
+    },
+    {
+      "title": "Auto-parallelizing stateful distributed streaming applications.",
+      "first_author": "Scott Schneider",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fine-grained parallel traversals of irregular data structures.",
+      "first_author": "Bin Ren",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Speculative parallelization needs rigor: probabilistic analysis for optimal speculation of finite-state machine applications.",
+      "first_author": "Zhijia Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Boost.SIMD: generic programming for portable SIMDization.",
+      "first_author": "Pierre Estérie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Compiling to avoid communication.",
+      "first_author": "Kathy Yelick",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Sandboxing transactional memory.",
+      "first_author": "Luke Dalessandro",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Bandwidth bandit: quantitative characterization of memory contention.",
+      "first_author": "David Eklov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Evaluation of blue Gene/Q hardware support for transactional memories.",
+      "first_author": "Amy Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Transactional event profiling in a best-effort hardware transactional memory system.",
+      "first_author": "Matthew Gaudet",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Speculative dynamic vectorization for HW/SW co-designed processors.",
+      "first_author": "Rakesh Kumar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "High-performance analysis of filtered semantic graphs.",
+      "first_author": "Aydin Buluç",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Visualizing transactional memory.",
+      "first_author": "Justin Emile Gottschlich",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fast and efficient automatic memory management for GPUs using compiler-assisted runtime coherence scheme.",
+      "first_author": "Sreepathi Pai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Strategies based on green policies to the grid resource allocation.",
+      "first_author": "Fábio Coutinho",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Many-thread aware instruction-level parallelism: architecting shader cores for GPU computing.",
+      "first_author": "Ping Xiang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Enhancing performance optimization of multicore chips and multichip nodes with data structure metrics.",
+      "first_author": "Ashay Rane",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MaSiF: machine learning guided auto-tuning of parallel skeletons.",
+      "first_author": "Alexander Collins",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ReCaP: a region-based cure for the common cold cache.",
+      "first_author": "Jason Zebchuk",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Linearly compressed pages: a main memory compression framework with low complexity and low latency.",
+      "first_author": "Gennady Pekhimenko",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Making data prefetch smarter: adaptive prefetching on POWER7.",
+      "first_author": "Víctor Jiménez",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A low-overhead dynamic optimization framework for multicores.",
+      "first_author": "Christopher W. Fletcher",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HaLock: hardware-assisted lock contention detection in multithreaded applications.",
+      "first_author": "Yongbing Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Chrysalis analysis: incorporating synchronization arcs in dataflow-analysis-based parallel monitoring.",
+      "first_author": "Michelle L. Goodstein",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Complexity-effective multicore coherence.",
+      "first_author": "Alberto Ros",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Riposte: a trace-driven compiler and parallel VM for vector code in R.",
+      "first_author": "Justin Talbot",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Application-to-core mapping policies to reduce memory interference in multi-core systems.",
+      "first_author": "Reetuparna Das",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Power-efficient time-sensitive mapping in heterogeneous systems.",
+      "first_author": "Cong Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "XPoint cache: scaling existing bus-based coherence protocols for 2D and 3D many-core systems.",
+      "first_author": "Ronald G. Dreslinski",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Inference and declaration of independence: impact on deterministic task parallelism.",
+      "first_author": "Foivos S. Zakkak",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Shared memory multiplexing: a novel way to improve GPGPU throughput.",
+      "first_author": "Yi Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lossless and lossy memory I/O link compression for improving performance of GPGPU workloads.",
+      "first_author": "Vijay Sathish",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Workload and power budget partitioning for single-chip heterogeneous processors.",
+      "first_author": "Hao Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2031858079",
+      "doi": "https://doi.org/10.1145/2370816.2370873",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Mileage-based contention management in transactional memory.",
+      "first_author": "Woojin Choi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Transactional prefetching: narrowing the window of contention in hardware transactional memory.",
+      "first_author": "Anurag Negi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PEPON: performance-aware hierarchical power budgeting for NoC based multicores.",
+      "first_author": "Akbar Sharifi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Making it practical and effective: fast and precise may-happen-in-parallel analysis.",
+      "first_author": "Congming Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Scalability-based manycore partitioning.",
+      "first_author": "Hiroshi Sasaki",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A software memory partition approach for eliminating bank-level interference in multicore systems.",
+      "first_author": "Lei Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "APCR: an adaptive physical channel regulator for on-chip interconnects.",
+      "first_author": "Lei Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Multi2Sim: a simulation framework for CPU-GPU computing.",
+      "first_author": "Rafael Ubal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Runtime detection and optimization of collective communication patterns.",
+      "first_author": "Torsten Hoefler",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PGCapping: exploiting power gating for power capping and core lifetime balancing in CMPs.",
+      "first_author": "Kai Ma",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Optimizing datacenter power with memory system levers for guaranteed quality-of-service.",
+      "first_author": "Kshitij Sudan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Using combined profiling to decide when thread level speculation is profitable.",
+      "first_author": "Arnamoy Bhattacharyya",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Integrating nanophotonics in GPU microarchitecture.",
+      "first_author": "Nilanjan Goswami",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Transparent runtime deadlock elimination.",
+      "first_author": "Hari K. Pyla",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Off-chip access localization for NoC-based multicores.",
+      "first_author": "Wei Ding",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W1991065430",
+      "doi": "https://doi.org/10.1145/2370816.2370889",
+      "institution": "Pennsylvania State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04p491231"
+    },
+    {
+      "title": "Pointy: a hybrid pointer prefetcher for managed runtime systems.",
+      "first_author": "Ioana Burcea",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Introducing hierarchy-awareness in replacement and bypass algorithms for last-level caches.",
+      "first_author": "Mainak Chaudhuri",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient techniques for predicting cache sharing and throughput.",
+      "first_author": "Andreas Sandberg",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "RISE: improving the streaming processors reliability against soft errors in gpgpus.",
+      "first_author": "Jingweijia Tan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Energy-efficient workload mapping in heterogeneous systems with multiple types of resources.",
+      "first_author": "Cong Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Phase-based scheduling and thread migration for heterogeneous multicore processors.",
+      "first_author": "Lina Sawalha",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "System-level power-performance efficiency modeling for emergent GPU architectures.",
+      "first_author": "Shuaiwen Song",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Probabilistic diagnosis of performance faults in large-scale parallel applications.",
+      "first_author": "Ignacio Laguna",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A yoke of oxen and a thousand chickens for heavy lifting graph processing.",
+      "first_author": "Abdullah Gharaibeh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Power-aware multi-core simulation for early design stage hardware/software co-optimization.",
+      "first_author": "Wim Heirman",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Layout-oblivious optimization for matrix computations.",
+      "first_author": "Huimin Cui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2018380822",
+      "doi": "https://doi.org/10.1145/2370816.2370880",
+      "institution": "Institute of Computing Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0090r4d87"
+    },
+    {
+      "title": "Hardware acceleration in the IBM PowerEN processor: architecture and performance.",
+      "first_author": "Anil Krishna",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Hardware prefetchers for emerging parallel applications.",
+      "first_author": "Biswabandan Panda",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PS-Dir: a scalable two-level directory cache.",
+      "first_author": "Joan J. Valls",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}
