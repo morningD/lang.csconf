@@ -755,23 +755,8 @@
       "category": "DS",
       "rank": "A"
     },
-    "SCA": {
-      "title": "SCA",
-      "category": "CG",
-      "rank": "B"
-    },
-    "SDM": {
-      "title": "SDM",
-      "category": "DB",
-      "rank": "B"
-    },
     "SECON": {
       "title": "SECON",
-      "category": "NW",
-      "rank": "B"
-    },
-    "SENSYS": {
-      "title": "SenSys",
       "category": "NW",
       "rank": "B"
     },
@@ -805,9 +790,9 @@
       "category": "DB",
       "rank": "A"
     },
-    "SOCC": {
-      "title": "SoCC",
-      "category": "DS",
+    "SOCG": {
+      "title": "SoCG",
+      "category": "CT",
       "rank": "B"
     },
     "SODA": {
@@ -915,14 +900,14 @@
     "ETH Zurich": {
       "country": "CH",
       "by_category": {
-        "CG": 82,
-        "SC": 168,
+        "CG": 83,
+        "SC": 187,
         "AI": 395,
-        "CT": 87,
+        "CT": 98,
         "NW": 68,
-        "MX": 35,
-        "DS": 189,
-        "SE": 57,
+        "MX": 33,
+        "DS": 202,
+        "SE": 63,
         "HI": 13
       },
       "conferences": {
@@ -1361,20 +1346,10 @@
             "year": 2025
           }
         },
-        "SCA": {
-          "rank": 1,
-          "count": 4,
-          "pct": 4.26,
-          "latest": {
-            "rank": 2,
-            "count": 2,
-            "year": 2024
-          }
-        },
         "SGP": {
-          "rank": 1,
-          "count": 3,
-          "pct": 4.0,
+          "rank": 3,
+          "count": 8,
+          "pct": 2.4,
           "latest": {
             "rank": 1,
             "count": 1,
@@ -1390,6 +1365,11 @@
             "count": 4,
             "year": 2025
           }
+        },
+        "SOCG": {
+          "rank": 11,
+          "count": 11,
+          "pct": 0.98
         },
         "SODA": {
           "rank": 2,
@@ -1412,14 +1392,14 @@
           }
         },
         "SPAA": {
-          "rank": 5,
-          "count": 6,
-          "pct": 2.37
+          "rank": 2,
+          "count": 19,
+          "pct": 2.42
         },
         "SRDS": {
-          "rank": 6,
-          "count": 3,
-          "pct": 1.73,
+          "rank": 10,
+          "count": 8,
+          "pct": 1.34,
           "latest": {
             "rank": 5,
             "count": 1,
@@ -1437,9 +1417,9 @@
           }
         },
         "TCC": {
-          "rank": 11,
-          "count": 5,
-          "pct": 1.66
+          "rank": 4,
+          "count": 19,
+          "pct": 2.18
         },
         "UIST": {
           "rank": 15,
@@ -1471,6 +1451,11 @@
             "year": 2025
           }
         },
+        "VMCAI": {
+          "rank": 6,
+          "count": 6,
+          "pct": 1.46
+        },
         "WACV": {
           "rank": 17,
           "count": 16,
@@ -1480,11 +1465,6 @@
             "count": 8,
             "year": 2025
           }
-        },
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
         }
       }
     },
@@ -1498,8 +1478,9 @@
         "SC": 38,
         "HI": 96,
         "DB": 197,
-        "NW": 60,
-        "MX": 81
+        "NW": 53,
+        "MX": 81,
+        "CT": 8
       },
       "conferences": {
         "3DV": {
@@ -1842,16 +1823,6 @@
             "year": 2025
           }
         },
-        "SENSYS": {
-          "rank": 9,
-          "count": 7,
-          "pct": 1.29,
-          "latest": {
-            "rank": 9,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "SIGCOMM": {
           "rank": 12,
           "count": 12,
@@ -1876,6 +1847,11 @@
             "count": 4,
             "year": 2025
           }
+        },
+        "SOCG": {
+          "rank": 18,
+          "count": 8,
+          "pct": 0.71
         },
         "UIST": {
           "rank": 6,
@@ -1933,11 +1909,11 @@
       "country": "GB",
       "by_category": {
         "CG": 3,
-        "AI": 910,
+        "AI": 920,
         "CT": 103,
         "DB": 70,
         "SE": 19,
-        "MX": 74
+        "MX": 84
       },
       "conferences": {
         "3DV": {
@@ -2151,14 +2127,19 @@
           }
         },
         "UAI": {
-          "rank": 1,
-          "count": 20,
-          "pct": 1.37,
+          "rank": 2,
+          "count": 30,
+          "pct": 1.36,
           "latest": {
             "rank": 26,
             "count": 1,
             "year": 2025
           }
+        },
+        "WINE": {
+          "rank": 5,
+          "count": 10,
+          "pct": 1.71
         }
       }
     },
@@ -2166,8 +2147,7 @@
       "country": "DE",
       "by_category": {
         "CG": 3,
-        "SE": 7,
-        "AI": 8
+        "SE": 7
       },
       "conferences": {
         "3DV": {
@@ -2189,32 +2169,22 @@
             "count": 4,
             "year": 2025
           }
-        },
-        "UAI": {
-          "rank": 14,
-          "count": 8,
-          "pct": 0.55,
-          "latest": {
-            "rank": 26,
-            "count": 1,
-            "year": 2025
-          }
         }
       }
     },
     "Carnegie Mellon University": {
       "country": "US",
       "by_category": {
-        "CG": 221,
-        "AI": 3267,
-        "DS": 114,
+        "CG": 219,
+        "AI": 3289,
+        "DS": 165,
         "CT": 80,
         "HI": 253,
         "NW": 75,
-        "MX": 94,
+        "MX": 100,
         "SE": 109,
-        "SC": 71,
-        "DB": 68
+        "SC": 67,
+        "DB": 80
       },
       "conferences": {
         "3DV": {
@@ -2872,21 +2842,6 @@
             "year": 2025
           }
         },
-        "SCA": {
-          "rank": 7,
-          "count": 2,
-          "pct": 2.13
-        },
-        "SDM": {
-          "rank": 4,
-          "count": 6,
-          "pct": 1.34,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SIGCOMM": {
           "rank": 4,
           "count": 18,
@@ -2894,8 +2849,8 @@
         },
         "SIGMETRICS": {
           "rank": 1,
-          "count": 10,
-          "pct": 3.58,
+          "count": 25,
+          "pct": 2.7,
           "latest": {
             "rank": 1,
             "count": 3,
@@ -2924,23 +2879,18 @@
         },
         "SPAA": {
           "rank": 1,
-          "count": 11,
-          "pct": 4.35,
+          "count": 45,
+          "pct": 5.73,
           "latest": {
             "rank": 1,
             "count": 5,
             "year": 2025
           }
         },
-        "TCC": {
-          "rank": 15,
-          "count": 4,
-          "pct": 1.33
-        },
         "UAI": {
-          "rank": 2,
-          "count": 18,
-          "pct": 1.23,
+          "rank": 1,
+          "count": 40,
+          "pct": 1.81,
           "latest": {
             "rank": 4,
             "count": 3,
@@ -2967,6 +2917,11 @@
             "year": 2025
           }
         },
+        "VEE": {
+          "rank": 14,
+          "count": 2,
+          "pct": 0.96
+        },
         "WACV": {
           "rank": 1,
           "count": 36,
@@ -2976,19 +2931,29 @@
             "count": 9,
             "year": 2025
           }
+        },
+        "WINE": {
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
+        },
+        "WSDM": {
+          "rank": 9,
+          "count": 18,
+          "pct": 1.22
         }
       }
     },
     "Stanford University": {
       "country": "US",
       "by_category": {
-        "CG": 34,
-        "AI": 2168,
+        "CG": 39,
+        "AI": 2180,
         "SC": 25,
-        "DS": 25,
+        "DS": 30,
         "CT": 86,
-        "DB": 12,
-        "MX": 62,
+        "DB": 27,
+        "MX": 83,
         "HI": 54,
         "SE": 20,
         "NW": 19
@@ -3334,20 +3299,10 @@
             "year": 2025
           }
         },
-        "SCA": {
-          "rank": 5,
-          "count": 3,
-          "pct": 3.19,
-          "latest": {
-            "rank": 1,
-            "count": 3,
-            "year": 2024
-          }
-        },
         "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
+          "rank": 1,
+          "count": 10,
+          "pct": 2.99
         },
         "SIGCOMM": {
           "rank": 10,
@@ -3358,6 +3313,11 @@
             "count": 1,
             "year": 2025
           }
+        },
+        "SIGMETRICS": {
+          "rank": 17,
+          "count": 8,
+          "pct": 0.86
         },
         "SODA": {
           "rank": 5,
@@ -3374,11 +3334,6 @@
           "count": 2,
           "pct": 1.32
         },
-        "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19
-        },
         "STOC": {
           "rank": 3,
           "count": 17,
@@ -3390,9 +3345,9 @@
           }
         },
         "UAI": {
-          "rank": 8,
-          "count": 11,
-          "pct": 0.75
+          "rank": 4,
+          "count": 23,
+          "pct": 1.04
         },
         "UIST": {
           "rank": 7,
@@ -3415,9 +3370,14 @@
           }
         },
         "WINE": {
-          "rank": 3,
-          "count": 3,
-          "pct": 1.86
+          "rank": 1,
+          "count": 24,
+          "pct": 4.11
+        },
+        "WSDM": {
+          "rank": 13,
+          "count": 15,
+          "pct": 1.02
         }
       }
     },
@@ -3425,15 +3385,15 @@
       "country": "US",
       "by_category": {
         "CG": 3,
-        "AI": 849,
-        "SC": 95,
-        "DS": 233,
+        "AI": 853,
+        "SC": 105,
+        "DS": 243,
         "HI": 113,
-        "DB": 198,
+        "DB": 205,
         "MX": 69,
         "SE": 64,
-        "CT": 36,
-        "NW": 56
+        "CT": 69,
+        "NW": 64
       },
       "conferences": {
         "3DV": {
@@ -3898,8 +3858,8 @@
         },
         "SECON": {
           "rank": 4,
-          "count": 5,
-          "pct": 1.88
+          "count": 13,
+          "pct": 1.29
         },
         "SIGCOMM": {
           "rank": 5,
@@ -3927,14 +3887,19 @@
           "pct": 1.39
         },
         "SIGMETRICS": {
-          "rank": 14,
-          "count": 3,
-          "pct": 1.08
+          "rank": 10,
+          "count": 11,
+          "pct": 1.19
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28
+        "SOCG": {
+          "rank": 1,
+          "count": 33,
+          "pct": 2.95,
+          "latest": {
+            "rank": 1,
+            "count": 3,
+            "year": 2025
+          }
         },
         "SODA": {
           "rank": 7,
@@ -3952,19 +3917,24 @@
           }
         },
         "SPAA": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.98,
+          "rank": 13,
+          "count": 8,
+          "pct": 1.02,
           "latest": {
             "rank": 7,
             "count": 1,
             "year": 2025
           }
         },
+        "TCC": {
+          "rank": 17,
+          "count": 10,
+          "pct": 1.15
+        },
         "UAI": {
-          "rank": 6,
-          "count": 13,
-          "pct": 0.89,
+          "rank": 11,
+          "count": 17,
+          "pct": 0.77,
           "latest": {
             "rank": 12,
             "count": 2,
@@ -3986,6 +3956,11 @@
           "count": 15,
           "pct": 0.93
         },
+        "VEE": {
+          "rank": 14,
+          "count": 2,
+          "pct": 0.96
+        },
         "WACV": {
           "rank": 17,
           "count": 16,
@@ -3997,9 +3972,9 @@
           }
         },
         "WSDM": {
-          "rank": 12,
-          "count": 11,
-          "pct": 1.04
+          "rank": 9,
+          "count": 18,
+          "pct": 1.22
         },
         "WWW": {
           "rank": 11,
@@ -4017,15 +3992,15 @@
       "country": "SG",
       "by_category": {
         "CG": 64,
-        "AI": 1218,
-        "SE": 40,
+        "AI": 1224,
+        "SE": 44,
         "CT": 3,
         "SC": 34,
         "HI": 75,
-        "MX": 29,
-        "DB": 159,
-        "DS": 36,
-        "NW": 34
+        "MX": 27,
+        "DB": 150,
+        "DS": 33,
+        "NW": 35
       },
       "conferences": {
         "3DV": {
@@ -4328,10 +4303,15 @@
             "year": 2024
           }
         },
-        "SENSYS": {
-          "rank": 19,
-          "count": 5,
-          "pct": 0.92
+        "SECON": {
+          "rank": 15,
+          "count": 6,
+          "pct": 0.6,
+          "latest": {
+            "rank": 2,
+            "count": 2,
+            "year": 2024
+          }
         },
         "SIGCOMM": {
           "rank": 12,
@@ -4368,15 +4348,10 @@
             "year": 2025
           }
         },
-        "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19
-        },
         "UAI": {
-          "rank": 17,
-          "count": 7,
-          "pct": 0.48,
+          "rank": 15,
+          "count": 13,
+          "pct": 0.59,
           "latest": {
             "rank": 4,
             "count": 3,
@@ -4403,15 +4378,10 @@
             "year": 2024
           }
         },
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
-        },
-        "WSDM": {
-          "rank": 15,
-          "count": 9,
-          "pct": 0.85
+        "VMCAI": {
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97
         },
         "WWW": {
           "rank": 17,
@@ -4428,12 +4398,14 @@
     "Princeton University": {
       "country": "US",
       "by_category": {
-        "CG": 4,
+        "CG": 2,
         "AI": 493,
         "CT": 58,
         "NW": 52,
-        "MX": 24,
-        "DS": 13
+        "MX": 22,
+        "DS": 13,
+        "SC": 9,
+        "SE": 6
       },
       "conferences": {
         "3DV": {
@@ -4601,11 +4573,6 @@
             "year": 2024
           }
         },
-        "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
-        },
         "SIGCOMM": {
           "rank": 9,
           "count": 15,
@@ -4636,10 +4603,20 @@
             "year": 2025
           }
         },
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
+        "TCC": {
+          "rank": 18,
+          "count": 9,
+          "pct": 1.03,
+          "latest": {
+            "rank": 12,
+            "count": 1,
+            "year": 2025
+          }
+        },
+        "VMCAI": {
+          "rank": 6,
+          "count": 6,
+          "pct": 1.46
         }
       }
     },
@@ -4683,7 +4660,7 @@
       "country": "AT",
       "by_category": {
         "CG": 75,
-        "SE": 43,
+        "SE": 48,
         "CT": 23,
         "DS": 11,
         "AI": 79,
@@ -4849,6 +4826,11 @@
             "count": 2,
             "year": 2025
           }
+        },
+        "VMCAI": {
+          "rank": 11,
+          "count": 5,
+          "pct": 1.22
         }
       }
     },
@@ -4859,8 +4841,8 @@
         "CT": 13,
         "HI": 137,
         "SE": 42,
-        "DS": 82,
-        "AI": 40,
+        "DS": 86,
+        "AI": 45,
         "NW": 11,
         "MX": 8
       },
@@ -5056,14 +5038,14 @@
           "pct": 0.99
         },
         "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19
+          "rank": 19,
+          "count": 7,
+          "pct": 0.89
         },
         "UAI": {
-          "rank": 17,
-          "count": 7,
-          "pct": 0.48
+          "rank": 19,
+          "count": 12,
+          "pct": 0.54
         },
         "UIST": {
           "rank": 9,
@@ -5081,9 +5063,9 @@
       "country": "GB",
       "by_category": {
         "CG": 2,
-        "AI": 339,
+        "AI": 349,
         "SE": 24,
-        "DS": 10,
+        "DS": 12,
         "CT": 5,
         "HI": 8
       },
@@ -5214,9 +5196,14 @@
           }
         },
         "UAI": {
-          "rank": 10,
-          "count": 9,
-          "pct": 0.62
+          "rank": 6,
+          "count": 19,
+          "pct": 0.86
+        },
+        "VEE": {
+          "rank": 14,
+          "count": 2,
+          "pct": 0.96
         }
       }
     },
@@ -5280,16 +5267,16 @@
     "Technical University of Munich": {
       "country": "DE",
       "by_category": {
-        "CG": 62,
+        "CG": 66,
         "SC": 7,
         "CT": 33,
         "DB": 54,
-        "DS": 152,
+        "DS": 145,
         "NW": 12,
-        "SE": 35,
+        "SE": 40,
         "AI": 224,
         "HI": 5,
-        "MX": 131
+        "MX": 138
       },
       "conferences": {
         "3DV": {
@@ -5492,15 +5479,10 @@
           "count": 8,
           "pct": 2.4
         },
-        "SIGMETRICS": {
-          "rank": 10,
+        "SGP": {
+          "rank": 12,
           "count": 4,
-          "pct": 1.43,
-          "latest": {
-            "rank": 9,
-            "count": 1,
-            "year": 2025
-          }
+          "pct": 1.2
         },
         "SIGMOD": {
           "rank": 10,
@@ -5509,16 +5491,6 @@
           "latest": {
             "rank": 4,
             "count": 5,
-            "year": 2025
-          }
-        },
-        "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19,
-          "latest": {
-            "rank": 7,
-            "count": 1,
             "year": 2025
           }
         },
@@ -5533,14 +5505,19 @@
           }
         },
         "VMCAI": {
-          "rank": 1,
-          "count": 4,
-          "pct": 3.36,
+          "rank": 2,
+          "count": 9,
+          "pct": 2.19,
           "latest": {
             "rank": 1,
             "count": 2,
             "year": 2025
           }
+        },
+        "WINE": {
+          "rank": 10,
+          "count": 7,
+          "pct": 1.2
         }
       }
     },
@@ -5605,8 +5582,8 @@
         "AI": 775,
         "SE": 116,
         "MX": 103,
-        "DB": 246,
-        "DS": 288,
+        "DB": 243,
+        "DS": 289,
         "NW": 16,
         "SC": 31
       },
@@ -5952,9 +5929,9 @@
           }
         },
         "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
+          "rank": 14,
+          "count": 2,
+          "pct": 0.96
         },
         "VLDB": {
           "rank": 8,
@@ -5966,20 +5943,10 @@
             "year": 2024
           }
         },
-        "WISE": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.48,
-          "latest": {
-            "rank": 9,
-            "count": 2,
-            "year": 2024
-          }
-        },
         "WSDM": {
-          "rank": 6,
-          "count": 16,
-          "pct": 1.52,
+          "rank": 9,
+          "count": 18,
+          "pct": 1.22,
           "latest": {
             "rank": 8,
             "count": 2,
@@ -6193,8 +6160,7 @@
         "CG": 19,
         "CT": 49,
         "NW": 13,
-        "MX": 3,
-        "DB": 9
+        "MX": 6
       },
       "conferences": {
         "3DV": {
@@ -6268,14 +6234,9 @@
           }
         },
         "WINE": {
-          "rank": 3,
-          "count": 3,
-          "pct": 1.86
-        },
-        "WSDM": {
-          "rank": 15,
-          "count": 9,
-          "pct": 0.85
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
         }
       }
     },
@@ -6283,14 +6244,14 @@
       "country": "CN",
       "by_category": {
         "AI": 1932,
-        "CG": 884,
-        "SC": 215,
-        "SE": 191,
-        "DS": 545,
+        "CG": 881,
+        "SC": 217,
+        "SE": 192,
+        "DS": 542,
         "MX": 236,
         "CT": 25,
-        "DB": 485,
-        "NW": 51
+        "DB": 509,
+        "NW": 57
       },
       "conferences": {
         "AAAI": {
@@ -7013,25 +6974,10 @@
             "year": 2025
           }
         },
-        "SCA": {
-          "rank": 5,
-          "count": 3,
-          "pct": 3.19,
-          "latest": {
-            "rank": 4,
-            "count": 1,
-            "year": 2024
-          }
-        },
-        "SDM": {
-          "rank": 2,
-          "count": 7,
-          "pct": 1.57,
-          "latest": {
-            "rank": 1,
-            "count": 2,
-            "year": 2025
-          }
+        "SECON": {
+          "rank": 15,
+          "count": 6,
+          "pct": 0.6
         },
         "SIGIR": {
           "rank": 2,
@@ -7048,11 +6994,6 @@
           "count": 34,
           "pct": 1.47
         },
-        "SOCC": {
-          "rank": 2,
-          "count": 4,
-          "pct": 1.71
-        },
         "SOSP": {
           "rank": 16,
           "count": 2,
@@ -7064,9 +7005,9 @@
           }
         },
         "SRDS": {
-          "rank": 2,
-          "count": 5,
-          "pct": 2.89,
+          "rank": 14,
+          "count": 7,
+          "pct": 1.17,
           "latest": {
             "rank": 1,
             "count": 2,
@@ -7094,9 +7035,9 @@
           }
         },
         "VEE": {
-          "rank": 1,
-          "count": 2,
-          "pct": 8.0,
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44,
           "latest": {
             "rank": 1,
             "count": 2,
@@ -7104,9 +7045,9 @@
           }
         },
         "VMCAI": {
-          "rank": 4,
-          "count": 3,
-          "pct": 2.52,
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97,
           "latest": {
             "rank": 3,
             "count": 1,
@@ -7123,10 +7064,20 @@
             "year": 2025
           }
         },
+        "WISE": {
+          "rank": 3,
+          "count": 28,
+          "pct": 2.4,
+          "latest": {
+            "rank": 9,
+            "count": 2,
+            "year": 2024
+          }
+        },
         "WSDM": {
-          "rank": 1,
-          "count": 22,
-          "pct": 2.09,
+          "rank": 3,
+          "count": 25,
+          "pct": 1.7,
           "latest": {
             "rank": 8,
             "count": 2,
@@ -7149,12 +7100,12 @@
       "country": "CN",
       "by_category": {
         "AI": 1857,
-        "CG": 202,
+        "CG": 209,
         "SE": 94,
         "SC": 105,
         "DB": 235,
         "DS": 40,
-        "NW": 61,
+        "NW": 51,
         "MX": 62,
         "HI": 9
       },
@@ -7544,20 +7495,10 @@
             "year": 2025
           }
         },
-        "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13,
-          "latest": {
-            "rank": 9,
-            "count": 1,
-            "year": 2024
-          }
-        },
-        "SENSYS": {
-          "rank": 9,
-          "count": 7,
-          "pct": 1.29
+        "SGP": {
+          "rank": 5,
+          "count": 5,
+          "pct": 1.5
         },
         "SIGIR": {
           "rank": 11,
@@ -7585,13 +7526,13 @@
           }
         },
         "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
+          "rank": 4,
+          "count": 3,
+          "pct": 3.19,
           "latest": {
-            "rank": 5,
+            "rank": 4,
             "count": 1,
-            "year": 2010
+            "year": 2017
           }
         },
         "UIST": {
@@ -7635,9 +7576,9 @@
           }
         },
         "WSDM": {
-          "rank": 11,
+          "rank": 18,
           "count": 12,
-          "pct": 1.14,
+          "pct": 0.82,
           "latest": {
             "rank": 3,
             "count": 4,
@@ -7659,15 +7600,15 @@
     "Tsinghua University": {
       "country": "CN",
       "by_category": {
-        "AI": 3046,
-        "CG": 552,
+        "AI": 3050,
+        "CG": 551,
         "SC": 148,
         "SE": 79,
-        "DS": 560,
+        "DS": 568,
         "CT": 47,
         "HI": 135,
-        "DB": 507,
-        "NW": 371,
+        "DB": 524,
+        "NW": 380,
         "MX": 77
       },
       "conferences": {
@@ -8402,14 +8343,9 @@
           }
         },
         "SECON": {
-          "rank": 4,
-          "count": 5,
-          "pct": 1.88
-        },
-        "SGP": {
-          "rank": 16,
-          "count": 1,
-          "pct": 1.33
+          "rank": 3,
+          "count": 14,
+          "pct": 1.39
         },
         "SIGCOMM": {
           "rank": 1,
@@ -8437,9 +8373,9 @@
           "pct": 2.82
         },
         "SIGMETRICS": {
-          "rank": 5,
-          "count": 7,
-          "pct": 2.51,
+          "rank": 8,
+          "count": 15,
+          "pct": 1.62,
           "latest": {
             "rank": 9,
             "count": 1,
@@ -8477,9 +8413,9 @@
           }
         },
         "UAI": {
-          "rank": 10,
-          "count": 9,
-          "pct": 0.62,
+          "rank": 15,
+          "count": 13,
+          "pct": 0.59,
           "latest": {
             "rank": 12,
             "count": 2,
@@ -8531,10 +8467,20 @@
             "year": 2024
           }
         },
+        "WISE": {
+          "rank": 15,
+          "count": 12,
+          "pct": 1.03,
+          "latest": {
+            "rank": 33,
+            "count": 1,
+            "year": 2024
+          }
+        },
         "WSDM": {
-          "rank": 8,
-          "count": 15,
-          "pct": 1.42
+          "rank": 6,
+          "count": 20,
+          "pct": 1.36
         },
         "WWW": {
           "rank": 4,
@@ -8554,9 +8500,9 @@
         "AI": 2232,
         "CG": 602,
         "SE": 161,
-        "DS": 364,
-        "MX": 92,
-        "DB": 293,
+        "DS": 367,
+        "MX": 90,
+        "DB": 308,
         "NW": 38
       },
       "conferences": {
@@ -9060,20 +9006,20 @@
             "year": 2025
           }
         },
+        "VEE": {
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44
+        },
         "VLDB": {
           "rank": 18,
           "count": 7,
           "pct": 0.97
         },
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
-        },
         "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
+          "rank": 10,
+          "count": 17,
+          "pct": 1.46,
           "latest": {
             "rank": 5,
             "count": 3,
@@ -9081,9 +9027,9 @@
           }
         },
         "WSDM": {
-          "rank": 9,
-          "count": 13,
-          "pct": 1.23,
+          "rank": 13,
+          "count": 15,
+          "pct": 1.02,
           "latest": {
             "rank": 22,
             "count": 1,
@@ -9107,9 +9053,9 @@
       "by_category": {
         "AI": 1068,
         "CG": 554,
-        "DB": 353,
-        "DS": 178,
-        "NW": 108,
+        "DB": 361,
+        "DS": 175,
+        "NW": 113,
         "SE": 6,
         "HI": 9,
         "MX": 61
@@ -9451,19 +9397,14 @@
           }
         },
         "SECON": {
-          "rank": 4,
-          "count": 5,
-          "pct": 1.88,
+          "rank": 6,
+          "count": 10,
+          "pct": 0.99,
           "latest": {
             "rank": 2,
             "count": 2,
             "year": 2024
           }
-        },
-        "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
         },
         "SIGIR": {
           "rank": 3,
@@ -9480,30 +9421,20 @@
           "count": 56,
           "pct": 2.43
         },
-        "SIGMETRICS": {
-          "rank": 14,
-          "count": 3,
-          "pct": 1.08
-        },
         "SOSP": {
           "rank": 16,
           "count": 2,
           "pct": 1.32
         },
         "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
+          "rank": 4,
+          "count": 3,
+          "pct": 3.19
         },
         "WISE": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.48,
+          "rank": 18,
+          "count": 11,
+          "pct": 0.94,
           "latest": {
             "rank": 9,
             "count": 2,
@@ -9511,9 +9442,9 @@
           }
         },
         "WSDM": {
-          "rank": 2,
-          "count": 21,
-          "pct": 1.99,
+          "rank": 4,
+          "count": 23,
+          "pct": 1.56,
           "latest": {
             "rank": 1,
             "count": 8,
@@ -9537,12 +9468,12 @@
       "by_category": {
         "AI": 1738,
         "CG": 634,
-        "SC": 76,
-        "DS": 614,
-        "MX": 221,
-        "DB": 279,
+        "SC": 80,
+        "DS": 611,
+        "MX": 224,
+        "DB": 298,
         "SE": 84,
-        "NW": 105,
+        "NW": 110,
         "HI": 8
       },
       "conferences": {
@@ -10117,23 +10048,13 @@
           }
         },
         "SECON": {
-          "rank": 3,
-          "count": 6,
-          "pct": 2.26,
+          "rank": 2,
+          "count": 17,
+          "pct": 1.69,
           "latest": {
             "rank": 9,
             "count": 1,
             "year": 2024
-          }
-        },
-        "SENSYS": {
-          "rank": 13,
-          "count": 6,
-          "pct": 1.1,
-          "latest": {
-            "rank": 24,
-            "count": 1,
-            "year": 2025
           }
         },
         "SIGIR": {
@@ -10151,16 +10072,6 @@
           "count": 55,
           "pct": 2.39
         },
-        "SOCC": {
-          "rank": 1,
-          "count": 7,
-          "pct": 2.99,
-          "latest": {
-            "rank": 2,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "SOSP": {
           "rank": 4,
           "count": 7,
@@ -10172,9 +10083,9 @@
           }
         },
         "SRDS": {
-          "rank": 4,
-          "count": 4,
-          "pct": 2.31,
+          "rank": 10,
+          "count": 8,
+          "pct": 1.34,
           "latest": {
             "rank": 5,
             "count": 1,
@@ -10213,8 +10124,8 @@
         },
         "VEE": {
           "rank": 1,
-          "count": 2,
-          "pct": 8.0,
+          "count": 6,
+          "pct": 2.88,
           "latest": {
             "rank": 1,
             "count": 2,
@@ -10222,14 +10133,19 @@
           }
         },
         "WINE": {
-          "rank": 3,
-          "count": 3,
-          "pct": 1.86
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
+        },
+        "WISE": {
+          "rank": 7,
+          "count": 19,
+          "pct": 1.63
         },
         "WSDM": {
-          "rank": 4,
+          "rank": 6,
           "count": 20,
-          "pct": 1.9
+          "pct": 1.36
         },
         "WWW": {
           "rank": 8,
@@ -10249,7 +10165,7 @@
         "AI": 477,
         "CG": 153,
         "SE": 49,
-        "DB": 123,
+        "DB": 118,
         "DS": 34,
         "MX": 25
       },
@@ -10454,16 +10370,6 @@
             "year": 2025
           }
         },
-        "SDM": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.12,
-          "latest": {
-            "rank": 1,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "SIGKDD": {
           "rank": 8,
           "count": 34,
@@ -10495,12 +10401,11 @@
       "country": "CN",
       "by_category": {
         "AI": 320,
-        "SE": 142,
+        "SE": 141,
         "DS": 112,
         "DB": 52,
         "CG": 76,
-        "NW": 64,
-        "SC": 2
+        "NW": 73
       },
       "conferences": {
         "AAAI": {
@@ -10720,22 +10625,12 @@
         },
         "SECON": {
           "rank": 1,
-          "count": 9,
-          "pct": 3.38,
+          "count": 18,
+          "pct": 1.79,
           "latest": {
             "rank": 2,
             "count": 2,
             "year": 2024
-          }
-        },
-        "SRDS": {
-          "rank": 13,
-          "count": 2,
-          "pct": 1.16,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2025
           }
         },
         "USENIXATC": {
@@ -10747,11 +10642,6 @@
             "count": 3,
             "year": 2025
           }
-        },
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
         }
       }
     },
@@ -10764,9 +10654,7 @@
         "CT": 7,
         "DB": 80,
         "DS": 4,
-        "SE": 56,
-        "NW": 11,
-        "SC": 3
+        "SE": 56
       },
       "conferences": {
         "AAAI": {
@@ -10909,26 +10797,6 @@
             "year": 2025
           }
         },
-        "SENSYS": {
-          "rank": 2,
-          "count": 11,
-          "pct": 2.03,
-          "latest": {
-            "rank": 7,
-            "count": 3,
-            "year": 2025
-          }
-        },
-        "SRDS": {
-          "rank": 6,
-          "count": 3,
-          "pct": 1.73,
-          "latest": {
-            "rank": 1,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "VLDB": {
           "rank": 14,
           "count": 8,
@@ -10950,7 +10818,7 @@
         "DS": 161,
         "DB": 74,
         "MX": 34,
-        "NW": 22
+        "NW": 26
       },
       "conferences": {
         "AAAI": {
@@ -11105,8 +10973,8 @@
         },
         "SECON": {
           "rank": 11,
-          "count": 3,
-          "pct": 1.13,
+          "count": 7,
+          "pct": 0.69,
           "latest": {
             "rank": 2,
             "count": 2,
@@ -11142,10 +11010,10 @@
         "CG": 196,
         "SE": 68,
         "DB": 46,
-        "DS": 38,
+        "DS": 36,
         "NW": 25,
         "MX": 4,
-        "SC": 2
+        "SC": 6
       },
       "conferences": {
         "AAAI": {
@@ -11343,20 +11211,10 @@
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 15,
-          "count": 2,
-          "pct": 0.85,
-          "latest": {
-            "rank": 7,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SRDS": {
-          "rank": 13,
-          "count": 2,
-          "pct": 1.16,
+          "rank": 16,
+          "count": 6,
+          "pct": 1.01,
           "latest": {
             "rank": 5,
             "count": 1,
@@ -11416,7 +11274,7 @@
         "AI": 189,
         "CG": 148,
         "MX": 64,
-        "DB": 39,
+        "DB": 53,
         "SE": 40,
         "DS": 8
       },
@@ -11532,9 +11390,9 @@
           }
         },
         "WISE": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.48,
+          "rank": 7,
+          "count": 19,
+          "pct": 1.63,
           "latest": {
             "rank": 9,
             "count": 2,
@@ -11550,10 +11408,9 @@
         "SE": 51,
         "SC": 26,
         "DS": 440,
-        "CG": 263,
-        "DB": 92,
-        "NW": 31,
-        "MX": 3
+        "CG": 262,
+        "DB": 95,
+        "NW": 21
       },
       "conferences": {
         "AAAI": {
@@ -11811,16 +11668,6 @@
             "year": 2025
           }
         },
-        "SENSYS": {
-          "rank": 3,
-          "count": 10,
-          "pct": 1.84,
-          "latest": {
-            "rank": 2,
-            "count": 4,
-            "year": 2025
-          }
-        },
         "SIGMOD": {
           "rank": 4,
           "count": 37,
@@ -11829,16 +11676,6 @@
             "rank": 2,
             "count": 9,
             "year": 2025
-          }
-        },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
           }
         },
         "WACV": {
@@ -11851,15 +11688,10 @@
             "year": 2025
           }
         },
-        "WINE": {
-          "rank": 3,
-          "count": 3,
-          "pct": 1.86
-        },
         "WSDM": {
-          "rank": 15,
-          "count": 9,
-          "pct": 0.85,
+          "rank": 18,
+          "count": 12,
+          "pct": 0.82,
           "latest": {
             "rank": 6,
             "count": 3,
@@ -11874,8 +11706,8 @@
         "AI": 323,
         "CG": 65,
         "SE": 42,
-        "DS": 189,
-        "SC": 19,
+        "DS": 185,
+        "SC": 16,
         "DB": 15,
         "NW": 24,
         "MX": 28
@@ -12106,26 +11938,6 @@
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28,
-          "latest": {
-            "rank": 7,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SRDS": {
-          "rank": 6,
-          "count": 3,
-          "pct": 1.73,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "USENIXATC": {
           "rank": 3,
           "count": 10,
@@ -12134,16 +11946,6 @@
             "rank": 3,
             "count": 5,
             "year": 2025
-          }
-        },
-        "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0,
-          "latest": {
-            "rank": 3,
-            "count": 1,
-            "year": 2022
           }
         },
         "WWW": {
@@ -12164,7 +11966,7 @@
         "AI": 243,
         "CG": 369,
         "DB": 58,
-        "NW": 60,
+        "NW": 63,
         "SE": 46,
         "DS": 5,
         "MX": 27
@@ -12321,9 +12123,9 @@
           }
         },
         "SECON": {
-          "rank": 8,
-          "count": 4,
-          "pct": 1.5
+          "rank": 11,
+          "count": 7,
+          "pct": 0.69
         },
         "USENIXATC": {
           "rank": 11,
@@ -12440,7 +12242,7 @@
         "AI": 602,
         "DS": 75,
         "NW": 25,
-        "MX": 10,
+        "MX": 16,
         "CG": 158,
         "HI": 24,
         "DB": 20
@@ -12645,6 +12447,11 @@
             "count": 3,
             "year": 2025
           }
+        },
+        "WINE": {
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
         }
       }
     },
@@ -12675,13 +12482,13 @@
     "University of Texas at Austin": {
       "country": "US",
       "by_category": {
-        "AI": 701,
-        "DS": 88,
+        "AI": 693,
+        "DS": 102,
         "CT": 27,
         "SE": 36,
         "NW": 24,
         "MX": 11,
-        "SC": 25,
+        "SC": 33,
         "HI": 15,
         "CG": 4
       },
@@ -12952,34 +12759,19 @@
           }
         },
         "SIGMETRICS": {
-          "rank": 10,
-          "count": 4,
-          "pct": 1.43,
+          "rank": 2,
+          "count": 21,
+          "pct": 2.27,
           "latest": {
             "rank": 9,
             "count": 1,
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28,
-          "latest": {
-            "rank": 1,
-            "count": 3,
-            "year": 2025
-          }
-        },
         "SPM": {
-          "rank": 1,
+          "rank": 2,
           "count": 4,
-          "pct": 15.38,
-          "latest": {
-            "rank": 1,
-            "count": 4,
-            "year": 2010
-          }
+          "pct": 4.26
         },
         "STOC": {
           "rank": 9,
@@ -12992,22 +12784,12 @@
           }
         },
         "TCC": {
-          "rank": 1,
-          "count": 10,
-          "pct": 3.32,
+          "rank": 6,
+          "count": 18,
+          "pct": 2.07,
           "latest": {
             "rank": 4,
             "count": 2,
-            "year": 2025
-          }
-        },
-        "UAI": {
-          "rank": 14,
-          "count": 8,
-          "pct": 0.55,
-          "latest": {
-            "rank": 26,
-            "count": 1,
             "year": 2025
           }
         }
@@ -13019,8 +12801,7 @@
         "AI": 73,
         "CG": 19,
         "CT": 13,
-        "SC": 12,
-        "SE": 1
+        "SC": 28
       },
       "conferences": {
         "AAMAS": {
@@ -13068,10 +12849,15 @@
             "year": 2025
           }
         },
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
+        "TCC": {
+          "rank": 8,
+          "count": 16,
+          "pct": 1.84,
+          "latest": {
+            "rank": 12,
+            "count": 1,
+            "year": 2025
+          }
         }
       }
     },
@@ -13079,12 +12865,12 @@
       "country": "FR",
       "by_category": {
         "AI": 263,
-        "SC": 157,
-        "SE": 189,
-        "CT": 107,
-        "DS": 103,
-        "DB": 76,
-        "CG": 315,
+        "SC": 160,
+        "SE": 203,
+        "CT": 117,
+        "DS": 107,
+        "DB": 86,
+        "CG": 319,
         "MX": 76,
         "HI": 5
       },
@@ -13514,35 +13300,50 @@
           "count": 12,
           "pct": 3.6
         },
-        "SCA": {
-          "rank": 1,
+        "SGP": {
+          "rank": 12,
+          "count": 4,
+          "pct": 1.2
+        },
+        "SOCG": {
+          "rank": 13,
+          "count": 10,
+          "pct": 0.89
+        },
+        "SPAA": {
+          "rank": 13,
+          "count": 8,
+          "pct": 1.02
+        },
+        "SPM": {
+          "rank": 2,
           "count": 4,
           "pct": 4.26,
           "latest": {
-            "rank": 4,
-            "count": 1,
-            "year": 2024
-          }
-        },
-        "SPAA": {
-          "rank": 7,
-          "count": 4,
-          "pct": 1.58
-        },
-        "TCC": {
-          "rank": 9,
-          "count": 7,
-          "pct": 2.33,
-          "latest": {
             "rank": 1,
             "count": 4,
-            "year": 2025
+            "year": 2017
           }
+        },
+        "SRDS": {
+          "rank": 5,
+          "count": 10,
+          "pct": 1.68
         },
         "VMCAI": {
           "rank": 1,
-          "count": 4,
-          "pct": 3.36
+          "count": 18,
+          "pct": 4.38
+        },
+        "WISE": {
+          "rank": 20,
+          "count": 10,
+          "pct": 0.86,
+          "latest": {
+            "rank": 33,
+            "count": 1,
+            "year": 2024
+          }
         }
       }
     },
@@ -13551,13 +13352,13 @@
       "by_category": {
         "AI": 75,
         "HI": 56,
-        "DS": 73,
+        "DS": 68,
         "SE": 45,
         "CG": 15,
         "CT": 12,
         "NW": 6,
         "DB": 18,
-        "SC": 16
+        "SC": 13
       },
       "conferences": {
         "AAMAS": {
@@ -13685,21 +13486,6 @@
           "count": 14,
           "pct": 1.06
         },
-        "SIGMETRICS": {
-          "rank": 9,
-          "count": 5,
-          "pct": 1.79,
-          "latest": {
-            "rank": 9,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SRDS": {
-          "rank": 6,
-          "count": 3,
-          "pct": 1.73
-        },
         "USENIXSECURITY": {
           "rank": 17,
           "count": 13,
@@ -13715,14 +13501,15 @@
     "University of Michigan": {
       "country": "US",
       "by_category": {
-        "AI": 403,
-        "DS": 71,
+        "AI": 406,
+        "DS": 79,
         "HI": 209,
         "DB": 16,
-        "NW": 57,
+        "NW": 49,
         "CT": 36,
         "SE": 18,
-        "SC": 27
+        "SC": 27,
+        "MX": 6
       },
       "conferences": {
         "AAMAS": {
@@ -13980,15 +13767,10 @@
             "year": 2025
           }
         },
-        "SENSYS": {
-          "rank": 5,
+        "SIGMETRICS": {
+          "rank": 17,
           "count": 8,
-          "pct": 1.47,
-          "latest": {
-            "rank": 2,
-            "count": 4,
-            "year": 2025
-          }
+          "pct": 0.86
         },
         "SODA": {
           "rank": 1,
@@ -14021,9 +13803,9 @@
           }
         },
         "UAI": {
-          "rank": 9,
-          "count": 10,
-          "pct": 0.69
+          "rank": 15,
+          "count": 13,
+          "pct": 0.59
         },
         "UIST": {
           "rank": 5,
@@ -14054,6 +13836,11 @@
             "count": 3,
             "year": 2024
           }
+        },
+        "WINE": {
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
         }
       }
     },
@@ -14061,7 +13848,7 @@
       "country": "IL",
       "by_category": {
         "AI": 99,
-        "SC": 14,
+        "SC": 18,
         "CT": 3,
         "DS": 17,
         "DB": 14
@@ -14128,9 +13915,9 @@
           "pct": 0.64
         },
         "TCC": {
-          "rank": 3,
-          "count": 8,
-          "pct": 2.66,
+          "rank": 13,
+          "count": 12,
+          "pct": 1.38,
           "latest": {
             "rank": 4,
             "count": 2,
@@ -14224,7 +14011,8 @@
       "by_category": {
         "AI": 45,
         "SE": 9,
-        "HI": 3
+        "HI": 3,
+        "DB": 13
       },
       "conferences": {
         "AAMAS": {
@@ -14246,6 +14034,16 @@
           "rank": 13,
           "count": 3,
           "pct": 0.6
+        },
+        "WISE": {
+          "rank": 14,
+          "count": 13,
+          "pct": 1.11,
+          "latest": {
+            "rank": 9,
+            "count": 2,
+            "year": 2024
+          }
         }
       }
     },
@@ -14281,9 +14079,8 @@
       "country": "US",
       "by_category": {
         "AI": 43,
-        "DB": 80,
-        "DS": 16,
-        "NW": 8
+        "DB": 94,
+        "DS": 21
       },
       "conferences": {
         "AAMAS": {
@@ -14306,16 +14103,6 @@
             "year": 2021
           }
         },
-        "SENSYS": {
-          "rank": 5,
-          "count": 8,
-          "pct": 1.47,
-          "latest": {
-            "rank": 2,
-            "count": 4,
-            "year": 2025
-          }
-        },
         "SIGIR": {
           "rank": 10,
           "count": 31,
@@ -14327,24 +14114,19 @@
           }
         },
         "SIGMETRICS": {
-          "rank": 2,
-          "count": 8,
-          "pct": 2.87,
+          "rank": 5,
+          "count": 16,
+          "pct": 1.73,
           "latest": {
             "rank": 1,
             "count": 3,
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28,
-          "latest": {
-            "rank": 7,
-            "count": 1,
-            "year": 2025
-          }
+        "WSDM": {
+          "rank": 15,
+          "count": 14,
+          "pct": 0.95
         }
       }
     },
@@ -14352,7 +14134,8 @@
       "country": "GB",
       "by_category": {
         "AI": 52,
-        "CT": 19
+        "CT": 19,
+        "MX": 9
       },
       "conferences": {
         "AAMAS": {
@@ -14374,6 +14157,11 @@
             "count": 1,
             "year": 2025
           }
+        },
+        "WINE": {
+          "rank": 8,
+          "count": 9,
+          "pct": 1.54
         }
       }
     },
@@ -14431,7 +14219,8 @@
       "country": "IN",
       "by_category": {
         "AI": 42,
-        "CT": 8
+        "CT": 8,
+        "MX": 6
       },
       "conferences": {
         "AAMAS": {
@@ -14448,6 +14237,11 @@
             "count": 1,
             "year": 2025
           }
+        },
+        "WINE": {
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
         }
       }
     },
@@ -14557,9 +14351,9 @@
           }
         },
         "WSDM": {
-          "rank": 6,
+          "rank": 12,
           "count": 16,
-          "pct": 1.52,
+          "pct": 1.09,
           "latest": {
             "rank": 8,
             "count": 2,
@@ -14582,9 +14376,9 @@
       "country": "US",
       "by_category": {
         "AI": 849,
-        "CG": 15,
+        "CG": 16,
         "SC": 99,
-        "DS": 275,
+        "DS": 284,
         "SE": 8,
         "HI": 184,
         "NW": 31,
@@ -14994,19 +14788,19 @@
           }
         },
         "SIGMETRICS": {
-          "rank": 5,
-          "count": 7,
-          "pct": 2.51
+          "rank": 3,
+          "count": 20,
+          "pct": 2.16
         },
         "SIGMOD": {
           "rank": 16,
           "count": 15,
           "pct": 1.01
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         },
         "UBICOMP": {
           "rank": 3,
@@ -15028,11 +14822,6 @@
             "year": 2025
           }
         },
-        "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
-        },
         "VLDB": {
           "rank": 18,
           "count": 7,
@@ -15050,7 +14839,7 @@
       "by_category": {
         "AI": 60,
         "DS": 19,
-        "DB": 220,
+        "DB": 221,
         "SE": 7,
         "NW": 17
       },
@@ -15146,9 +14935,9 @@
           }
         },
         "WSDM": {
-          "rank": 5,
-          "count": 18,
-          "pct": 1.71,
+          "rank": 8,
+          "count": 19,
+          "pct": 1.29,
           "latest": {
             "rank": 8,
             "count": 2,
@@ -15160,13 +14949,13 @@
     "Chinese University of Hong Kong": {
       "country": "HK",
       "by_category": {
-        "AI": 669,
+        "AI": 681,
         "SE": 68,
         "DB": 159,
-        "DS": 141,
-        "SC": 23,
-        "CG": 176,
-        "NW": 47,
+        "DS": 150,
+        "SC": 29,
+        "CG": 175,
+        "NW": 37,
         "MX": 100
       },
       "conferences": {
@@ -15400,25 +15189,15 @@
             "year": 2026
           }
         },
-        "SENSYS": {
-          "rank": 3,
-          "count": 10,
-          "pct": 1.84,
-          "latest": {
-            "rank": 9,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "SIGKDD": {
           "rank": 17,
           "count": 21,
           "pct": 0.91
         },
         "SIGMETRICS": {
-          "rank": 10,
-          "count": 4,
-          "pct": 1.43,
+          "rank": 9,
+          "count": 13,
+          "pct": 1.4,
           "latest": {
             "rank": 3,
             "count": 2,
@@ -15445,20 +15224,20 @@
             "year": 2025
           }
         },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
-        },
         "SRDS": {
-          "rank": 6,
-          "count": 3,
-          "pct": 1.73
+          "rank": 7,
+          "count": 9,
+          "pct": 1.51
+        },
+        "UAI": {
+          "rank": 19,
+          "count": 12,
+          "pct": 0.54,
+          "latest": {
+            "rank": 26,
+            "count": 1,
+            "year": 2025
+          }
         },
         "USENIXATC": {
           "rank": 14,
@@ -15486,8 +15265,7 @@
       "country": "US",
       "by_category": {
         "AI": 207,
-        "DB": 78,
-        "DS": 3
+        "DB": 69
       },
       "conferences": {
         "ACL": {
@@ -15555,11 +15333,6 @@
           "count": 30,
           "pct": 1.3
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28
-        },
         "WACV": {
           "rank": 11,
           "count": 18,
@@ -15567,16 +15340,6 @@
           "latest": {
             "rank": 30,
             "count": 3,
-            "year": 2025
-          }
-        },
-        "WSDM": {
-          "rank": 15,
-          "count": 9,
-          "pct": 0.85,
-          "latest": {
-            "rank": 22,
-            "count": 1,
             "year": 2025
           }
         }
@@ -15665,8 +15428,7 @@
         "HI": 118,
         "SE": 6,
         "CG": 56,
-        "SC": 9,
-        "NW": 8
+        "SC": 9
       },
       "conferences": {
         "ACML": {
@@ -15779,11 +15541,6 @@
             "year": 2025
           }
         },
-        "SENSYS": {
-          "rank": 5,
-          "count": 8,
-          "pct": 1.47
-        },
         "UBICOMP": {
           "rank": 5,
           "count": 11,
@@ -15821,11 +15578,11 @@
       "by_category": {
         "AI": 8,
         "CG": 50,
-        "DB": 70,
+        "DB": 82,
         "DS": 169,
         "SE": 65,
         "NW": 35,
-        "SC": 7,
+        "SC": 9,
         "MX": 20
       },
       "conferences": {
@@ -16035,9 +15792,9 @@
           }
         },
         "SRDS": {
-          "rank": 4,
-          "count": 4,
-          "pct": 2.31,
+          "rank": 16,
+          "count": 6,
+          "pct": 1.01,
           "latest": {
             "rank": 1,
             "count": 2,
@@ -16045,9 +15802,9 @@
           }
         },
         "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
+          "rank": 12,
+          "count": 16,
+          "pct": 1.37,
           "latest": {
             "rank": 5,
             "count": 3,
@@ -16090,7 +15847,7 @@
       "by_category": {
         "AI": 72,
         "DS": 17,
-        "NW": 23,
+        "NW": 20,
         "SE": 16
       },
       "conferences": {
@@ -16148,11 +15905,6 @@
           "rank": 11,
           "count": 9,
           "pct": 0.88
-        },
-        "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13
         }
       }
     },
@@ -16162,7 +15914,7 @@
         "AI": 7,
         "HI": 103,
         "MX": 9,
-        "DB": 111,
+        "DB": 102,
         "CT": 14,
         "DS": 22,
         "SE": 22,
@@ -16330,16 +16082,6 @@
             "year": 2025
           }
         },
-        "SDM": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.12,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SIGMOD": {
           "rank": 16,
           "count": 15,
@@ -16367,16 +16109,6 @@
           "latest": {
             "rank": 15,
             "count": 4,
-            "year": 2024
-          }
-        },
-        "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
-          "latest": {
-            "rank": 9,
-            "count": 2,
             "year": 2024
           }
         }
@@ -16531,8 +16263,8 @@
       "by_category": {
         "AI": 6,
         "SE": 46,
-        "CT": 26,
-        "DS": 65,
+        "CT": 39,
+        "DS": 72,
         "DB": 16,
         "CG": 19,
         "HI": 7,
@@ -16611,8 +16343,13 @@
         },
         "SIGMETRICS": {
           "rank": 10,
-          "count": 4,
-          "pct": 1.43
+          "count": 11,
+          "pct": 1.19
+        },
+        "SOCG": {
+          "rank": 7,
+          "count": 13,
+          "pct": 1.16
         }
       }
     },
@@ -16643,8 +16380,7 @@
       "country": "CN",
       "by_category": {
         "CG": 104,
-        "MX": 132,
-        "NW": 3
+        "MX": 132
       },
       "conferences": {
         "ACMMM": {
@@ -16681,23 +16417,13 @@
           "rank": 9,
           "count": 3,
           "pct": 1.97
-        },
-        "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13,
-          "latest": {
-            "rank": 9,
-            "count": 1,
-            "year": 2024
-          }
         }
       }
     },
     "Xi'an Jiaotong University": {
       "country": "CN",
       "by_category": {
-        "CG": 100,
+        "CG": 101,
         "NW": 10
       },
       "conferences": {
@@ -16725,20 +16451,25 @@
           "rank": 15,
           "count": 10,
           "pct": 0.9
+        },
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         }
       }
     },
     "Tel Aviv University": {
       "country": "IL",
       "by_category": {
-        "CG": 33,
+        "CG": 32,
         "AI": 21,
-        "CT": 101,
-        "SC": 14,
+        "CT": 120,
+        "SC": 45,
         "DB": 25,
-        "MX": 35,
-        "DS": 21,
-        "SE": 5
+        "MX": 41,
+        "DS": 36,
+        "SE": 9
       },
       "conferences": {
         "ACMSIGGRAPH": {
@@ -16856,6 +16587,11 @@
           "count": 16,
           "pct": 1.07
         },
+        "SOCG": {
+          "rank": 4,
+          "count": 19,
+          "pct": 1.7
+        },
         "SODA": {
           "rank": 7,
           "count": 10,
@@ -16867,23 +16603,13 @@
           }
         },
         "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19,
+          "rank": 4,
+          "count": 18,
+          "pct": 2.29,
           "latest": {
             "rank": 7,
             "count": 1,
             "year": 2025
-          }
-        },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
           }
         },
         "STOC": {
@@ -16897,9 +16623,19 @@
           }
         },
         "TCC": {
-          "rank": 3,
-          "count": 8,
-          "pct": 2.66
+          "rank": 1,
+          "count": 39,
+          "pct": 4.48
+        },
+        "VMCAI": {
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97
+        },
+        "WINE": {
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
         }
       }
     },
@@ -16908,7 +16644,7 @@
       "by_category": {
         "CG": 18,
         "AI": 62,
-        "DS": 19,
+        "DS": 17,
         "SE": 20
       },
       "conferences": {
@@ -16976,11 +16712,6 @@
           "rank": 17,
           "count": 6,
           "pct": 1.27
-        },
-        "SOCC": {
-          "rank": 15,
-          "count": 2,
-          "pct": 0.85
         }
       }
     },
@@ -17006,7 +16737,7 @@
         "DB": 4,
         "AI": 15,
         "MX": 47,
-        "NW": 44,
+        "NW": 26,
         "SC": 10,
         "SE": 9,
         "HI": 9
@@ -17157,16 +16888,6 @@
             "year": 2025
           }
         },
-        "SENSYS": {
-          "rank": 1,
-          "count": 18,
-          "pct": 3.31,
-          "latest": {
-            "rank": 1,
-            "count": 7,
-            "year": 2025
-          }
-        },
         "SOSP": {
           "rank": 9,
           "count": 4,
@@ -17202,14 +16923,14 @@
     "Massachusetts Institute of Technology": {
       "country": "US",
       "by_category": {
-        "CG": 25,
-        "AI": 1989,
-        "CT": 102,
+        "CG": 29,
+        "AI": 2000,
+        "CT": 112,
         "HI": 92,
         "DB": 48,
         "MX": 21,
         "SE": 36,
-        "DS": 40,
+        "DS": 62,
         "NW": 44
       },
       "conferences": {
@@ -17498,10 +17219,10 @@
             "year": 2024
           }
         },
-        "SCA": {
-          "rank": 14,
-          "count": 1,
-          "pct": 1.06
+        "SGP": {
+          "rank": 5,
+          "count": 5,
+          "pct": 1.5
         },
         "SIGCOMM": {
           "rank": 2,
@@ -17509,9 +17230,9 @@
           "pct": 1.47
         },
         "SIGMETRICS": {
-          "rank": 8,
-          "count": 6,
-          "pct": 2.15,
+          "rank": 5,
+          "count": 16,
+          "pct": 1.73,
           "latest": {
             "rank": 9,
             "count": 1,
@@ -17528,6 +17249,21 @@
             "year": 2025
           }
         },
+        "SOCG": {
+          "rank": 13,
+          "count": 10,
+          "pct": 0.89,
+          "latest": {
+            "rank": 4,
+            "count": 1,
+            "year": 2025
+          }
+        },
+        "SPAA": {
+          "rank": 7,
+          "count": 12,
+          "pct": 1.53
+        },
         "STOC": {
           "rank": 1,
           "count": 37,
@@ -17539,9 +17275,9 @@
           }
         },
         "UAI": {
-          "rank": 17,
-          "count": 7,
-          "pct": 0.48
+          "rank": 10,
+          "count": 18,
+          "pct": 0.81
         },
         "UIST": {
           "rank": 10,
@@ -17558,7 +17294,7 @@
     "NVIDIA": {
       "country": "US",
       "by_category": {
-        "CG": 29,
+        "CG": 27,
         "AI": 7,
         "MX": 11,
         "DS": 9
@@ -17618,11 +17354,6 @@
           "rank": 1,
           "count": 10,
           "pct": 2.87
-        },
-        "SCA": {
-          "rank": 7,
-          "count": 2,
-          "pct": 2.13
         }
       }
     },
@@ -17631,13 +17362,13 @@
       "by_category": {
         "CG": 173,
         "AI": 1329,
-        "DS": 43,
+        "DS": 51,
         "HI": 71,
-        "DB": 89,
+        "DB": 100,
         "SC": 8,
         "CT": 21,
-        "SE": 7,
-        "MX": 25
+        "SE": 10,
+        "MX": 35
       },
       "conferences": {
         "ACMSIGGRAPH": {
@@ -17870,11 +17601,6 @@
           "count": 21,
           "pct": 0.91
         },
-        "SOCC": {
-          "rank": 15,
-          "count": 2,
-          "pct": 0.85
-        },
         "SODA": {
           "rank": 2,
           "count": 14,
@@ -17886,9 +17612,9 @@
           }
         },
         "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19,
+          "rank": 10,
+          "count": 10,
+          "pct": 1.27,
           "latest": {
             "rank": 3,
             "count": 2,
@@ -17907,13 +17633,23 @@
         },
         "VEE": {
           "rank": 4,
-          "count": 1,
-          "pct": 4.0
+          "count": 4,
+          "pct": 1.92
+        },
+        "VMCAI": {
+          "rank": 20,
+          "count": 3,
+          "pct": 0.73
+        },
+        "WINE": {
+          "rank": 5,
+          "count": 10,
+          "pct": 1.71
         },
         "WSDM": {
           "rank": 2,
-          "count": 21,
-          "pct": 1.99,
+          "count": 32,
+          "pct": 2.18,
           "latest": {
             "rank": 22,
             "count": 1,
@@ -17936,11 +17672,12 @@
       "country": "KR",
       "by_category": {
         "CG": 13,
-        "DS": 118,
+        "DS": 121,
         "SC": 9,
         "AI": 474,
         "MX": 8,
-        "SE": 24
+        "SE": 24,
+        "NW": 8
       },
       "conferences": {
         "ACMSIGGRAPH": {
@@ -18158,6 +17895,11 @@
             "year": 2026
           }
         },
+        "SECON": {
+          "rank": 8,
+          "count": 8,
+          "pct": 0.79
+        },
         "USENIXATC": {
           "rank": 9,
           "count": 7,
@@ -18167,6 +17909,11 @@
             "count": 2,
             "year": 2025
           }
+        },
+        "VEE": {
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44
         },
         "WACV": {
           "rank": 4,
@@ -18184,10 +17931,10 @@
       "country": "CH",
       "by_category": {
         "CG": 162,
-        "SC": 40,
+        "SC": 35,
         "DB": 26,
-        "DS": 214,
-        "SE": 41,
+        "DS": 220,
+        "SE": 46,
         "AI": 127,
         "HI": 21,
         "CT": 5
@@ -18344,9 +18091,9 @@
           }
         },
         "SPAA": {
-          "rank": 7,
-          "count": 4,
-          "pct": 1.58
+          "rank": 10,
+          "count": 10,
+          "pct": 1.27
         },
         "STOC": {
           "rank": 20,
@@ -18358,20 +18105,10 @@
             "year": 2025
           }
         },
-        "TCC": {
-          "rank": 11,
-          "count": 5,
-          "pct": 1.66,
-          "latest": {
-            "rank": 4,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "VMCAI": {
-          "rank": 1,
-          "count": 4,
-          "pct": 3.36,
+          "rank": 2,
+          "count": 9,
+          "pct": 2.19,
           "latest": {
             "rank": 3,
             "count": 1,
@@ -18384,7 +18121,7 @@
       "country": "GB",
       "by_category": {
         "CG": 29,
-        "AI": 56,
+        "AI": 60,
         "SE": 8,
         "HI": 5,
         "CT": 2,
@@ -18467,9 +18204,9 @@
           "pct": 1.02
         },
         "UAI": {
-          "rank": 7,
-          "count": 12,
-          "pct": 0.82,
+          "rank": 12,
+          "count": 16,
+          "pct": 0.72,
           "latest": {
             "rank": 12,
             "count": 2,
@@ -18483,11 +18220,11 @@
       "by_category": {
         "SC": 36,
         "HI": 68,
-        "DB": 60,
+        "DB": 57,
         "AI": 6,
-        "DS": 92,
+        "DS": 98,
         "MX": 20,
-        "NW": 10
+        "NW": 17
       },
       "conferences": {
         "ACSAC": {
@@ -18610,25 +18347,20 @@
             "year": 2025
           }
         },
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89
+        "SECON": {
+          "rank": 11,
+          "count": 7,
+          "pct": 0.69
         },
         "SIGMETRICS": {
-          "rank": 2,
-          "count": 8,
-          "pct": 2.87
-        },
-        "SOCC": {
           "rank": 4,
-          "count": 3,
-          "pct": 1.28
+          "count": 17,
+          "pct": 1.83
         },
         "WSDM": {
-          "rank": 9,
-          "count": 13,
-          "pct": 1.23,
+          "rank": 15,
+          "count": 14,
+          "pct": 0.95,
           "latest": {
             "rank": 8,
             "count": 2,
@@ -18744,9 +18476,9 @@
       "country": "US",
       "by_category": {
         "SC": 8,
-        "DS": 30,
+        "DS": 45,
         "CT": 11,
-        "NW": 34,
+        "NW": 31,
         "HI": 6,
         "SE": 3,
         "DB": 6
@@ -18823,31 +18555,31 @@
           "pct": 1.04
         },
         "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13
-        },
-        "SENSYS": {
-          "rank": 13,
+          "rank": 15,
           "count": 6,
-          "pct": 1.1
+          "pct": 0.6
         },
         "SPAA": {
-          "rank": 7,
-          "count": 4,
-          "pct": 1.58,
+          "rank": 5,
+          "count": 16,
+          "pct": 2.04,
           "latest": {
             "rank": 3,
             "count": 2,
             "year": 2025
           }
+        },
+        "VEE": {
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44
         }
       }
     },
     "Helmholtz Center for Information Security": {
       "country": "DE",
       "by_category": {
-        "SC": 114,
+        "SC": 109,
         "CT": 7,
         "SE": 2
       },
@@ -18946,28 +18678,18 @@
             "count": 7,
             "year": 2025
           }
-        },
-        "TCC": {
-          "rank": 11,
-          "count": 5,
-          "pct": 1.66,
-          "latest": {
-            "rank": 12,
-            "count": 1,
-            "year": 2025
-          }
         }
       }
     },
     "Virginia Tech": {
       "country": "US",
       "by_category": {
-        "SC": 18,
-        "DS": 46,
+        "SC": 16,
+        "DS": 45,
         "DB": 20,
         "CG": 31,
         "SE": 8,
-        "NW": 9
+        "NW": 15
       },
       "conferences": {
         "ACSAC": {
@@ -19065,20 +18787,20 @@
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28,
+        "SECON": {
+          "rank": 15,
+          "count": 6,
+          "pct": 0.6,
           "latest": {
-            "rank": 2,
-            "count": 2,
-            "year": 2025
+            "rank": 9,
+            "count": 1,
+            "year": 2024
           }
         },
-        "SRDS": {
-          "rank": 13,
+        "VEE": {
+          "rank": 14,
           "count": 2,
-          "pct": 1.16
+          "pct": 0.96
         }
       }
     },
@@ -19279,8 +19001,7 @@
       "by_category": {
         "SC": 11,
         "SE": 17,
-        "DS": 50,
-        "NW": 3
+        "DS": 50
       },
       "conferences": {
         "ACSAC": {
@@ -19347,11 +19068,6 @@
             "count": 1,
             "year": 2025
           }
-        },
-        "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13
         }
       }
     },
@@ -19434,8 +19150,8 @@
         "CT": 37,
         "NW": 10,
         "SE": 8,
-        "DS": 8,
-        "MX": 4
+        "DS": 16,
+        "MX": 12
       },
       "conferences": {
         "ACSAC": {
@@ -19509,9 +19225,9 @@
           "pct": 1.9
         },
         "SIGMETRICS": {
-          "rank": 2,
-          "count": 8,
-          "pct": 2.87,
+          "rank": 5,
+          "count": 16,
+          "pct": 1.73,
           "latest": {
             "rank": 9,
             "count": 1,
@@ -19539,9 +19255,9 @@
           }
         },
         "WINE": {
-          "rank": 2,
-          "count": 4,
-          "pct": 2.48,
+          "rank": 4,
+          "count": 12,
+          "pct": 2.05,
           "latest": {
             "rank": 1,
             "count": 1,
@@ -19598,12 +19314,12 @@
       "country": "US",
       "by_category": {
         "AI": 44,
-        "MX": 23,
+        "MX": 35,
         "DS": 52,
         "NW": 27,
         "SC": 16,
         "DB": 10,
-        "CT": 9
+        "CT": 29
       },
       "conferences": {
         "AISTATS": {
@@ -19696,6 +19412,16 @@
           "count": 15,
           "pct": 2.55
         },
+        "SOCG": {
+          "rank": 3,
+          "count": 20,
+          "pct": 1.79,
+          "latest": {
+            "rank": 4,
+            "count": 1,
+            "year": 2025
+          }
+        },
         "SODA": {
           "rank": 12,
           "count": 9,
@@ -19713,8 +19439,8 @@
         },
         "WINE": {
           "rank": 3,
-          "count": 3,
-          "pct": 1.86
+          "count": 15,
+          "pct": 2.57
         }
       }
     },
@@ -19746,9 +19472,9 @@
           }
         },
         "UAI": {
-          "rank": 3,
+          "rank": 12,
           "count": 16,
-          "pct": 1.1,
+          "pct": 0.72,
           "latest": {
             "rank": 1,
             "count": 4,
@@ -19779,10 +19505,11 @@
         "DS": 19,
         "CT": 65,
         "DB": 23,
-        "MX": 49,
+        "MX": 46,
         "CG": 6,
-        "SE": 15,
-        "NW": 26
+        "SE": 14,
+        "NW": 26,
+        "SC": 12
       },
       "conferences": {
         "AISTATS": {
@@ -19996,14 +19723,9 @@
           "pct": 0.94
         },
         "SPM": {
-          "rank": 2,
+          "rank": 6,
           "count": 2,
-          "pct": 7.69,
-          "latest": {
-            "rank": 2,
-            "count": 2,
-            "year": 2010
-          }
+          "pct": 2.13
         },
         "STOC": {
           "rank": 2,
@@ -20015,28 +19737,23 @@
             "year": 2025
           }
         },
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
-        },
-        "WINE": {
-          "rank": 3,
-          "count": 3,
-          "pct": 1.86
+        "TCC": {
+          "rank": 13,
+          "count": 12,
+          "pct": 1.38
         }
       }
     },
     "Cornell University": {
       "country": "US",
       "by_category": {
-        "AI": 416,
-        "DS": 34,
+        "AI": 421,
+        "DS": 38,
         "CT": 5,
-        "SC": 31,
+        "SC": 45,
         "HI": 168,
         "DB": 5,
-        "MX": 8,
+        "MX": 16,
         "SE": 29,
         "CG": 5
       },
@@ -20222,9 +19939,9 @@
           }
         },
         "SIGMETRICS": {
-          "rank": 5,
-          "count": 7,
-          "pct": 2.51,
+          "rank": 10,
+          "count": 11,
+          "pct": 1.19,
           "latest": {
             "rank": 3,
             "count": 2,
@@ -20243,13 +19960,13 @@
         },
         "TCC": {
           "rank": 3,
-          "count": 8,
-          "pct": 2.66
+          "count": 22,
+          "pct": 2.53
         },
         "UAI": {
-          "rank": 5,
-          "count": 14,
-          "pct": 0.96,
+          "rank": 6,
+          "count": 19,
+          "pct": 0.86,
           "latest": {
             "rank": 4,
             "count": 3,
@@ -20267,24 +19984,23 @@
           }
         },
         "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
+          "rank": 5,
+          "count": 10,
+          "pct": 1.71
         }
       }
     },
     "University of Washington": {
       "country": "US",
       "by_category": {
-        "AI": 333,
+        "AI": 357,
         "HI": 260,
         "DB": 45,
         "MX": 20,
         "SC": 10,
         "SE": 13,
         "CG": 18,
-        "NW": 24,
-        "DS": 2
+        "NW": 24
       },
       "conferences": {
         "AISTATS": {
@@ -20512,10 +20228,10 @@
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 15,
-          "count": 2,
-          "pct": 0.85
+        "UAI": {
+          "rank": 3,
+          "count": 24,
+          "pct": 1.08
         },
         "UIST": {
           "rank": 1,
@@ -20532,9 +20248,9 @@
     "Harvard University": {
       "country": "US",
       "by_category": {
-        "AI": 53,
+        "AI": 59,
         "CG": 9,
-        "MX": 63,
+        "MX": 60,
         "NW": 5
       },
       "conferences": {
@@ -20579,19 +20295,14 @@
           "pct": 1.36
         },
         "UAI": {
-          "rank": 10,
-          "count": 9,
-          "pct": 0.62,
+          "rank": 14,
+          "count": 15,
+          "pct": 0.68,
           "latest": {
             "rank": 1,
             "count": 4,
             "year": 2025
           }
-        },
-        "WINE": {
-          "rank": 3,
-          "count": 3,
-          "pct": 1.86
         }
       }
     },
@@ -20811,8 +20522,7 @@
     "Stevens Institute of Technology": {
       "country": "US",
       "by_category": {
-        "AI": 1,
-        "DS": 2
+        "AI": 1
       },
       "conferences": {
         "ALT": {
@@ -20821,16 +20531,6 @@
           "pct": 1.92,
           "latest": {
             "rank": 10,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SOCC": {
-          "rank": 15,
-          "count": 2,
-          "pct": 0.85,
-          "latest": {
-            "rank": 7,
             "count": 1,
             "year": 2025
           }
@@ -20860,8 +20560,8 @@
       "by_category": {
         "AI": 1,
         "CT": 18,
-        "SC": 23,
-        "CG": 11,
+        "SC": 32,
+        "CG": 14,
         "SE": 9
       },
       "conferences": {
@@ -20936,9 +20636,9 @@
           "pct": 1.2
         },
         "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67,
+          "rank": 5,
+          "count": 5,
+          "pct": 1.5,
           "latest": {
             "rank": 1,
             "count": 1,
@@ -20956,9 +20656,9 @@
           }
         },
         "TCC": {
-          "rank": 2,
-          "count": 9,
-          "pct": 2.99,
+          "rank": 6,
+          "count": 18,
+          "pct": 2.07,
           "latest": {
             "rank": 12,
             "count": 1,
@@ -21167,13 +20867,12 @@
     "University of Waterloo": {
       "country": "CA",
       "by_category": {
-        "SE": 37,
-        "CT": 69,
-        "SC": 13,
+        "SE": 34,
+        "CT": 90,
+        "SC": 20,
         "HI": 88,
         "MX": 10,
-        "DS": 39,
-        "CG": 1,
+        "DS": 45,
         "DB": 65
       },
       "conferences": {
@@ -21322,11 +21021,6 @@
             "year": 2025
           }
         },
-        "SCA": {
-          "rank": 14,
-          "count": 1,
-          "pct": 1.06
-        },
         "SIGIR": {
           "rank": 7,
           "count": 39,
@@ -21347,6 +21041,16 @@
             "year": 2025
           }
         },
+        "SOCG": {
+          "rank": 2,
+          "count": 21,
+          "pct": 1.88,
+          "latest": {
+            "rank": 4,
+            "count": 1,
+            "year": 2025
+          }
+        },
         "SODA": {
           "rank": 12,
           "count": 9,
@@ -21359,13 +21063,18 @@
         },
         "SPAA": {
           "rank": 12,
-          "count": 3,
-          "pct": 1.19,
+          "count": 9,
+          "pct": 1.15,
           "latest": {
             "rank": 7,
             "count": 1,
             "year": 2025
           }
+        },
+        "SRDS": {
+          "rank": 14,
+          "count": 7,
+          "pct": 1.17
         },
         "STOC": {
           "rank": 8,
@@ -21386,23 +21095,14 @@
             "count": 3,
             "year": 2024
           }
-        },
-        "VMCAI": {
-          "rank": 4,
-          "count": 3,
-          "pct": 2.52,
-          "latest": {
-            "rank": 1,
-            "count": 2,
-            "year": 2025
-          }
         }
       }
     },
     "Nankai University": {
       "country": "CN",
       "by_category": {
-        "SE": 19
+        "SE": 19,
+        "SC": 6
       },
       "conferences": {
         "ASE": {
@@ -21424,6 +21124,11 @@
             "count": 4,
             "year": 2025
           }
+        },
+        "SRDS": {
+          "rank": 16,
+          "count": 6,
+          "pct": 1.01
         }
       }
     },
@@ -21469,7 +21174,7 @@
     "NTT": {
       "country": "JP",
       "by_category": {
-        "SC": 37,
+        "SC": 48,
         "CG": 160
       },
       "conferences": {
@@ -21497,6 +21202,11 @@
           "rank": 19,
           "count": 4,
           "pct": 0.76
+        },
+        "TCC": {
+          "rank": 15,
+          "count": 11,
+          "pct": 1.26
         }
       }
     },
@@ -21504,7 +21214,7 @@
       "country": "BE",
       "by_category": {
         "SC": 56,
-        "DB": 27,
+        "DB": 23,
         "CG": 4,
         "SE": 11,
         "HI": 7,
@@ -21590,26 +21300,16 @@
           "rank": 13,
           "count": 3,
           "pct": 0.67
-        },
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
         }
       }
     },
     "Aarhus University": {
       "country": "DK",
       "by_category": {
-        "SC": 68,
+        "SC": 79,
         "SE": 37,
         "DB": 10,
-        "CT": 35,
+        "CT": 45,
         "HI": 15
       },
       "conferences": {
@@ -21723,10 +21423,15 @@
           "count": 7,
           "pct": 2.07
         },
+        "SOCG": {
+          "rank": 13,
+          "count": 10,
+          "pct": 0.89
+        },
         "TCC": {
-          "rank": 3,
-          "count": 8,
-          "pct": 2.66,
+          "rank": 4,
+          "count": 19,
+          "pct": 2.18,
           "latest": {
             "rank": 4,
             "count": 2,
@@ -21750,13 +21455,13 @@
       "by_category": {
         "SC": 15,
         "CT": 29,
-        "DB": 124,
-        "AI": 8,
-        "SE": 33,
+        "DB": 147,
+        "AI": 21,
+        "SE": 37,
         "HI": 7,
         "NW": 20,
-        "DS": 13,
-        "MX": 2
+        "DS": 12,
+        "MX": 18
       },
       "conferences": {
         "ASIACRYPT": {
@@ -21879,25 +21584,40 @@
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28
+        "UAI": {
+          "rank": 15,
+          "count": 13,
+          "pct": 0.59,
+          "latest": {
+            "rank": 26,
+            "count": 1,
+            "year": 2025
+          }
         },
         "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44
         },
         "VMCAI": {
-          "rank": 4,
-          "count": 3,
-          "pct": 2.52
+          "rank": 5,
+          "count": 7,
+          "pct": 1.7
         },
         "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
+          "rank": 2,
+          "count": 18,
+          "pct": 3.08
+        },
+        "WSDM": {
+          "rank": 4,
+          "count": 23,
+          "pct": 1.56,
+          "latest": {
+            "rank": 22,
+            "count": 1,
+            "year": 2025
+          }
         }
       }
     },
@@ -21932,9 +21652,9 @@
     "Karlsruhe Institute of Technology": {
       "country": "DE",
       "by_category": {
-        "SC": 27,
+        "SC": 38,
         "SE": 9,
-        "DS": 219,
+        "DS": 227,
         "CG": 30,
         "CT": 31,
         "DB": 36
@@ -22074,6 +21794,16 @@
           "rank": 5,
           "count": 14,
           "pct": 2.11
+        },
+        "SPAA": {
+          "rank": 13,
+          "count": 8,
+          "pct": 1.02
+        },
+        "TCC": {
+          "rank": 15,
+          "count": 11,
+          "pct": 1.26
         }
       }
     },
@@ -22109,10 +21839,10 @@
       "country": "US",
       "by_category": {
         "SC": 56,
-        "DB": 65,
+        "DB": 58,
         "AI": 40,
         "CT": 11,
-        "DS": 19,
+        "DS": 18,
         "SE": 66
       },
       "conferences": {
@@ -22221,25 +21951,10 @@
             "year": 2025
           }
         },
-        "SDM": {
-          "rank": 2,
-          "count": 7,
-          "pct": 1.57
-        },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28,
-          "latest": {
-            "rank": 7,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44
         }
       }
     },
@@ -22288,7 +22003,7 @@
     "University of Chicago": {
       "country": "US",
       "by_category": {
-        "DS": 16,
+        "DS": 12,
         "HI": 18
       },
       "conferences": {
@@ -22312,16 +22027,6 @@
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 2,
-          "count": 4,
-          "pct": 1.71,
-          "latest": {
-            "rank": 2,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "UIST": {
           "rank": 4,
           "count": 18,
@@ -22340,7 +22045,8 @@
         "MX": 129,
         "CT": 12,
         "DS": 22,
-        "NW": 12
+        "NW": 12,
+        "CG": 1
       },
       "conferences": {
         "BIBM": {
@@ -22392,6 +22098,11 @@
             "count": 3,
             "year": 2025
           }
+        },
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         }
       }
     },
@@ -22435,8 +22146,7 @@
       "country": "CN",
       "by_category": {
         "MX": 132,
-        "CG": 159,
-        "NW": 6
+        "CG": 159
       },
       "conferences": {
         "BIBM": {
@@ -22468,11 +22178,6 @@
             "count": 3,
             "year": 2025
           }
-        },
-        "SENSYS": {
-          "rank": 13,
-          "count": 6,
-          "pct": 1.1
         }
       }
     },
@@ -22627,7 +22332,8 @@
     "Queensland University of Technology": {
       "country": "AU",
       "by_category": {
-        "SE": 32
+        "SE": 32,
+        "DB": 22
       },
       "conferences": {
         "CAISE": {
@@ -22639,6 +22345,11 @@
             "count": 1,
             "year": 2025
           }
+        },
+        "WISE": {
+          "rank": 5,
+          "count": 22,
+          "pct": 1.88
         }
       }
     },
@@ -22724,8 +22435,7 @@
       "by_category": {
         "SE": 28,
         "DB": 6,
-        "DS": 6,
-        "CG": 1
+        "DS": 6
       },
       "conferences": {
         "CAISE": {
@@ -22757,11 +22467,6 @@
             "count": 1,
             "year": 2025
           }
-        },
-        "SCA": {
-          "rank": 14,
-          "count": 1,
-          "pct": 1.06
         }
       }
     },
@@ -22960,11 +22665,11 @@
     "RWTH Aachen University": {
       "country": "DE",
       "by_category": {
-        "SE": 23,
+        "SE": 24,
         "DS": 8,
-        "CG": 24,
+        "CG": 29,
         "CT": 28,
-        "NW": 9,
+        "NW": 6,
         "AI": 9
       },
       "conferences": {
@@ -23043,30 +22748,15 @@
           "count": 4,
           "pct": 1.2
         },
-        "SCA": {
-          "rank": 7,
-          "count": 2,
-          "pct": 2.13,
-          "latest": {
-            "rank": 2,
-            "count": 2,
-            "year": 2024
-          }
-        },
-        "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13
-        },
         "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
+          "rank": 2,
+          "count": 9,
+          "pct": 2.69
         },
         "VMCAI": {
-          "rank": 4,
-          "count": 3,
-          "pct": 2.52
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97
         }
       }
     },
@@ -23076,7 +22766,8 @@
         "SE": 14,
         "AI": 29,
         "DS": 17,
-        "DB": 20
+        "DB": 20,
+        "CG": 3
       },
       "conferences": {
         "CAISE": {
@@ -23123,6 +22814,11 @@
             "count": 1,
             "year": 2025
           }
+        },
+        "SGP": {
+          "rank": 16,
+          "count": 3,
+          "pct": 0.9
         }
       }
     },
@@ -23219,9 +22915,9 @@
       "country": "AU",
       "by_category": {
         "SE": 33,
-        "DB": 57,
+        "DB": 78,
         "DS": 10,
-        "NW": 26
+        "NW": 19
       },
       "conferences": {
         "CAISE": {
@@ -23284,20 +22980,10 @@
           "count": 4,
           "pct": 1.55
         },
-        "SENSYS": {
-          "rank": 9,
-          "count": 7,
-          "pct": 1.29,
-          "latest": {
-            "rank": 2,
-            "count": 4,
-            "year": 2025
-          }
-        },
         "WISE": {
-          "rank": 1,
-          "count": 9,
-          "pct": 2.66,
+          "rank": 2,
+          "count": 30,
+          "pct": 2.57,
           "latest": {
             "rank": 5,
             "count": 3,
@@ -23456,8 +23142,7 @@
       "by_category": {
         "CT": 12,
         "SE": 5,
-        "DS": 6,
-        "CG": 1
+        "DS": 7
       },
       "conferences": {
         "CAV": {
@@ -23500,15 +23185,10 @@
             "year": 2021
           }
         },
-        "SCA": {
-          "rank": 14,
-          "count": 1,
-          "pct": 1.06
-        },
         "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0,
+          "rank": 14,
+          "count": 2,
+          "pct": 0.96,
           "latest": {
             "rank": 3,
             "count": 1,
@@ -23682,7 +23362,7 @@
       "country": "US",
       "by_category": {
         "CT": 19,
-        "NW": 12
+        "NW": 15
       },
       "conferences": {
         "CAV": {
@@ -23706,9 +23386,9 @@
           "pct": 0.77
         },
         "SECON": {
-          "rank": 4,
-          "count": 5,
-          "pct": 1.88,
+          "rank": 8,
+          "count": 8,
+          "pct": 0.79,
           "latest": {
             "rank": 9,
             "count": 1,
@@ -23755,10 +23435,10 @@
       "country": "GB",
       "by_category": {
         "SE": 50,
-        "SC": 12,
+        "SC": 4,
         "AI": 175,
         "DB": 38,
-        "DS": 21
+        "DS": 25
       },
       "conferences": {
         "CC": {
@@ -23876,15 +23556,10 @@
             "year": 2025
           }
         },
-        "TCC": {
-          "rank": 3,
-          "count": 8,
-          "pct": 2.66,
-          "latest": {
-            "rank": 1,
-            "count": 4,
-            "year": 2025
-          }
+        "VEE": {
+          "rank": 4,
+          "count": 4,
+          "pct": 1.92
         }
       }
     },
@@ -23893,9 +23568,10 @@
       "by_category": {
         "SE": 11,
         "DB": 4,
-        "DS": 128,
-        "CG": 18,
-        "NW": 19
+        "DS": 137,
+        "CG": 20,
+        "NW": 19,
+        "CT": 14
       },
       "conferences": {
         "CC": {
@@ -24004,9 +23680,19 @@
           "pct": 1.06
         },
         "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
+          "rank": 12,
+          "count": 4,
+          "pct": 1.2
+        },
+        "SIGMETRICS": {
+          "rank": 16,
+          "count": 9,
+          "pct": 0.97
+        },
+        "SOCG": {
+          "rank": 6,
+          "count": 14,
+          "pct": 1.25
         }
       }
     },
@@ -24014,10 +23700,11 @@
       "country": "FR",
       "by_category": {
         "SE": 52,
-        "SC": 20,
-        "CG": 52,
+        "SC": 28,
+        "CG": 54,
         "MX": 67,
-        "DS": 32
+        "DS": 42,
+        "CT": 12
       },
       "conferences": {
         "CC": {
@@ -24126,21 +23813,41 @@
           "pct": 1.2
         },
         "SGP": {
-          "rank": 1,
-          "count": 3,
-          "pct": 4.0,
+          "rank": 5,
+          "count": 5,
+          "pct": 1.5,
           "latest": {
             "rank": 1,
             "count": 1,
             "year": 2024
           }
+        },
+        "SIGMETRICS": {
+          "rank": 13,
+          "count": 10,
+          "pct": 1.08
+        },
+        "SOCG": {
+          "rank": 10,
+          "count": 12,
+          "pct": 1.07,
+          "latest": {
+            "rank": 4,
+            "count": 1,
+            "year": 2025
+          }
+        },
+        "SRDS": {
+          "rank": 10,
+          "count": 8,
+          "pct": 1.34
         }
       }
     },
     "Saarland University": {
       "country": "DE",
       "by_category": {
-        "SE": 8,
+        "SE": 12,
         "DB": 5,
         "CT": 7,
         "AI": 30,
@@ -24188,9 +23895,9 @@
           }
         },
         "VMCAI": {
-          "rank": 8,
-          "count": 2,
-          "pct": 1.68
+          "rank": 6,
+          "count": 6,
+          "pct": 1.46
         }
       }
     },
@@ -24261,7 +23968,8 @@
     "McGill University": {
       "country": "CA",
       "by_category": {
-        "SE": 12
+        "SE": 12,
+        "MX": 6
       },
       "conferences": {
         "CC": {
@@ -24273,6 +23981,11 @@
           "rank": 8,
           "count": 7,
           "pct": 0.92
+        },
+        "WINE": {
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
         }
       }
     },
@@ -24281,11 +23994,10 @@
       "by_category": {
         "SE": 3,
         "NW": 20,
-        "DB": 39,
-        "DS": 26,
+        "DB": 33,
+        "DS": 31,
         "SC": 11,
-        "MX": 6,
-        "CG": 4
+        "MX": 6
       },
       "conferences": {
         "CC": {
@@ -24363,30 +24075,10 @@
             "year": 2025
           }
         },
-        "SCA": {
-          "rank": 1,
-          "count": 4,
-          "pct": 4.26,
-          "latest": {
-            "rank": 4,
-            "count": 1,
-            "year": 2024
-          }
-        },
-        "SDM": {
-          "rank": 4,
-          "count": 6,
-          "pct": 1.34,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SIGMETRICS": {
-          "rank": 14,
-          "count": 3,
-          "pct": 1.08,
+          "rank": 20,
+          "count": 7,
+          "pct": 0.76,
           "latest": {
             "rank": 9,
             "count": 1,
@@ -24394,9 +24086,9 @@
           }
         },
         "SPAA": {
-          "rank": 3,
-          "count": 7,
-          "pct": 2.77,
+          "rank": 13,
+          "count": 8,
+          "pct": 1.02,
           "latest": {
             "rank": 7,
             "count": 1,
@@ -24428,7 +24120,7 @@
       "country": "CH",
       "by_category": {
         "SE": 28,
-        "SC": 12
+        "SC": 21
       },
       "conferences": {
         "CC": {
@@ -24460,6 +24152,16 @@
           "rank": 3,
           "count": 22,
           "pct": 1.58
+        },
+        "SRDS": {
+          "rank": 7,
+          "count": 9,
+          "pct": 1.51,
+          "latest": {
+            "rank": 5,
+            "count": 1,
+            "year": 2025
+          }
         }
       }
     },
@@ -24481,7 +24183,7 @@
       "by_category": {
         "CT": 50,
         "DS": 9,
-        "SC": 8
+        "SC": 31
       },
       "conferences": {
         "CCC": {
@@ -24530,9 +24232,9 @@
           }
         },
         "TCC": {
-          "rank": 3,
-          "count": 8,
-          "pct": 2.66,
+          "rank": 2,
+          "count": 31,
+          "pct": 3.56,
           "latest": {
             "rank": 4,
             "count": 2,
@@ -24545,12 +24247,12 @@
       "country": "IL",
       "by_category": {
         "CT": 56,
-        "SC": 18,
+        "SC": 27,
         "DB": 36,
-        "DS": 68,
+        "DS": 77,
         "SE": 18,
         "AI": 15,
-        "CG": 4
+        "CG": 13
       },
       "conferences": {
         "CCC": {
@@ -24684,14 +24386,14 @@
           }
         },
         "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
+          "rank": 3,
+          "count": 8,
+          "pct": 2.4
         },
         "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19,
+          "rank": 7,
+          "count": 12,
+          "pct": 1.53,
           "latest": {
             "rank": 7,
             "count": 1,
@@ -24699,19 +24401,19 @@
           }
         },
         "SPM": {
-          "rank": 2,
-          "count": 2,
-          "pct": 7.69,
+          "rank": 1,
+          "count": 5,
+          "pct": 5.32,
           "latest": {
             "rank": 2,
             "count": 2,
-            "year": 2010
+            "year": 2017
           }
         },
         "TCC": {
-          "rank": 9,
-          "count": 7,
-          "pct": 2.33,
+          "rank": 8,
+          "count": 16,
+          "pct": 1.84,
           "latest": {
             "rank": 12,
             "count": 1,
@@ -24746,7 +24448,8 @@
     "Courant Institute of Mathematical Sciences": {
       "country": "US",
       "by_category": {
-        "CT": 5
+        "CT": 5,
+        "CG": 3
       },
       "conferences": {
         "CCC": {
@@ -24758,18 +24461,23 @@
             "count": 1,
             "year": 2025
           }
+        },
+        "SGP": {
+          "rank": 16,
+          "count": 3,
+          "pct": 0.9
         }
       }
     },
     "Purdue University West Lafayette": {
       "country": "US",
       "by_category": {
-        "SC": 89,
+        "SC": 101,
         "SE": 61,
         "DB": 9,
-        "CG": 35,
-        "DS": 63,
-        "NW": 30,
+        "CG": 33,
+        "DS": 71,
+        "NW": 22,
         "CT": 8
       },
       "conferences": {
@@ -24963,31 +24671,6 @@
             "year": 2025
           }
         },
-        "SCA": {
-          "rank": 7,
-          "count": 2,
-          "pct": 2.13,
-          "latest": {
-            "rank": 4,
-            "count": 1,
-            "year": 2024
-          }
-        },
-        "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13
-        },
-        "SENSYS": {
-          "rank": 19,
-          "count": 5,
-          "pct": 0.92,
-          "latest": {
-            "rank": 24,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SIGCOMM": {
           "rank": 14,
           "count": 11,
@@ -24998,10 +24681,10 @@
             "year": 2025
           }
         },
-        "SOCC": {
-          "rank": 15,
-          "count": 2,
-          "pct": 0.85
+        "SIGMETRICS": {
+          "rank": 13,
+          "count": 10,
+          "pct": 1.08
         },
         "SODA": {
           "rank": 16,
@@ -25015,13 +24698,13 @@
         },
         "SRDS": {
           "rank": 1,
-          "count": 6,
-          "pct": 3.47
+          "count": 13,
+          "pct": 2.18
         },
         "TCC": {
-          "rank": 15,
-          "count": 4,
-          "pct": 1.33
+          "rank": 18,
+          "count": 9,
+          "pct": 1.03
         }
       }
     },
@@ -25164,7 +24847,7 @@
         "SE": 10,
         "DS": 18,
         "DB": 15,
-        "NW": 43,
+        "NW": 46,
         "MX": 18
       },
       "conferences": {
@@ -25243,15 +24926,10 @@
             "year": 2025
           }
         },
-        "SENSYS": {
-          "rank": 13,
-          "count": 6,
-          "pct": 1.1,
-          "latest": {
-            "rank": 24,
-            "count": 1,
-            "year": 2025
-          }
+        "SECON": {
+          "rank": 7,
+          "count": 9,
+          "pct": 0.89
         },
         "WWW": {
           "rank": 19,
@@ -25327,7 +25005,8 @@
         "SC": 41,
         "CG": 49,
         "CT": 8,
-        "NW": 8
+        "NW": 8,
+        "SE": 6
       },
       "conferences": {
         "CHES": {
@@ -25407,6 +25086,16 @@
           "latest": {
             "rank": 18,
             "count": 4,
+            "year": 2025
+          }
+        },
+        "VMCAI": {
+          "rank": 6,
+          "count": 6,
+          "pct": 1.46,
+          "latest": {
+            "rank": 3,
+            "count": 1,
             "year": 2025
           }
         }
@@ -25517,8 +25206,7 @@
       "by_category": {
         "SC": 7,
         "DB": 27,
-        "NW": 5,
-        "DS": 3
+        "NW": 5
       },
       "conferences": {
         "CHES": {
@@ -25537,16 +25225,6 @@
           "pct": 0.58,
           "latest": {
             "rank": 17,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SIGMETRICS": {
-          "rank": 14,
-          "count": 3,
-          "pct": 1.08,
-          "latest": {
-            "rank": 9,
             "count": 1,
             "year": 2025
           }
@@ -25585,7 +25263,7 @@
         "CT": 15,
         "SE": 9,
         "NW": 13,
-        "MX": 2
+        "CG": 4
       },
       "conferences": {
         "CHES": {
@@ -25628,6 +25306,11 @@
           "count": 13,
           "pct": 1.51
         },
+        "SGP": {
+          "rank": 12,
+          "count": 4,
+          "pct": 1.2
+        },
         "SIGMOD": {
           "rank": 18,
           "count": 14,
@@ -25647,11 +25330,6 @@
             "count": 4,
             "year": 2024
           }
-        },
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
         }
       }
     },
@@ -26232,8 +25910,7 @@
       "country": "US",
       "by_category": {
         "DB": 18,
-        "NW": 15,
-        "DS": 3
+        "NW": 15
       },
       "conferences": {
         "CIDR": {
@@ -26265,40 +25942,35 @@
             "count": 3,
             "year": 2025
           }
-        },
-        "SOCC": {
-          "rank": 4,
-          "count": 3,
-          "pct": 1.28,
-          "latest": {
-            "rank": 7,
-            "count": 1,
-            "year": 2025
-          }
         }
       }
     },
     "Yahoo": {
       "country": "US",
       "by_category": {
-        "DB": 47
+        "DB": 84
       },
       "conferences": {
         "CIKM": {
           "rank": 17,
           "count": 47,
           "pct": 0.62
+        },
+        "WSDM": {
+          "rank": 1,
+          "count": 37,
+          "pct": 2.52
         }
       }
     },
     "Arizona State University": {
       "country": "US",
       "by_category": {
-        "DB": 78,
+        "DB": 73,
         "DS": 54,
         "MX": 10,
         "HI": 13,
-        "AI": 38,
+        "AI": 31,
         "SE": 4,
         "NW": 7
       },
@@ -26382,26 +26054,6 @@
           "rank": 7,
           "count": 7,
           "pct": 0.93
-        },
-        "SDM": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.12,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "UAI": {
-          "rank": 17,
-          "count": 7,
-          "pct": 0.48,
-          "latest": {
-            "rank": 12,
-            "count": 2,
-            "year": 2025
-          }
         },
         "WACV": {
           "rank": 8,
@@ -26723,19 +26375,13 @@
     "Sandia National Laboratories California": {
       "country": "US",
       "by_category": {
-        "DS": 11,
-        "CG": 1
+        "DS": 11
       },
       "conferences": {
         "CLUSTER": {
           "rank": 17,
           "count": 11,
           "pct": 0.95
-        },
-        "SGP": {
-          "rank": 16,
-          "count": 1,
-          "pct": 1.33
         }
       }
     },
@@ -26769,7 +26415,7 @@
       "country": "IN",
       "by_category": {
         "CT": 14,
-        "SC": 8,
+        "SC": 4,
         "AI": 16
       },
       "conferences": {
@@ -26787,16 +26433,6 @@
           "rank": 8,
           "count": 16,
           "pct": 3.29
-        },
-        "TCC": {
-          "rank": 15,
-          "count": 4,
-          "pct": 1.33,
-          "latest": {
-            "rank": 4,
-            "count": 2,
-            "year": 2025
-          }
         }
       }
     },
@@ -26860,7 +26496,7 @@
         "CT": 10,
         "SE": 52,
         "AI": 6,
-        "DB": 4
+        "DB": 12
       },
       "conferences": {
         "COCOON": {
@@ -26889,9 +26525,9 @@
           "pct": 0.53
         },
         "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18
+          "rank": 15,
+          "count": 12,
+          "pct": 1.03
         }
       }
     },
@@ -26899,7 +26535,7 @@
       "country": "CN",
       "by_category": {
         "CT": 9,
-        "NW": 10
+        "NW": 6
       },
       "conferences": {
         "COCOON": {
@@ -26916,16 +26552,6 @@
           "rank": 19,
           "count": 6,
           "pct": 0.59
-        },
-        "SECON": {
-          "rank": 8,
-          "count": 4,
-          "pct": 1.5,
-          "latest": {
-            "rank": 1,
-            "count": 4,
-            "year": 2024
-          }
         }
       }
     },
@@ -27046,7 +26672,8 @@
       "by_category": {
         "DS": 73,
         "HI": 23,
-        "SE": 28
+        "SE": 27,
+        "AI": 19
       },
       "conferences": {
         "CODES+ISSS": {
@@ -27109,10 +26736,10 @@
           "count": 4,
           "pct": 0.8
         },
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
+        "UAI": {
+          "rank": 6,
+          "count": 19,
+          "pct": 0.86
         }
       }
     },
@@ -27120,7 +26747,7 @@
       "country": "IT",
       "by_category": {
         "DS": 8,
-        "SE": 10
+        "SE": 8
       },
       "conferences": {
         "CODES+ISSS": {
@@ -27132,16 +26759,6 @@
           "rank": 2,
           "count": 8,
           "pct": 2.4
-        },
-        "VMCAI": {
-          "rank": 8,
-          "count": 2,
-          "pct": 1.68,
-          "latest": {
-            "rank": 3,
-            "count": 1,
-            "year": 2025
-          }
         }
       }
     },
@@ -27300,7 +26917,7 @@
       "by_category": {
         "DS": 5,
         "AI": 23,
-        "DB": 172,
+        "DB": 186,
         "SE": 5,
         "CG": 60,
         "MX": 21
@@ -27366,11 +26983,6 @@
           "count": 3,
           "pct": 1.97
         },
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89
-        },
         "SIGKDD": {
           "rank": 15,
           "count": 23,
@@ -27387,9 +26999,9 @@
           }
         },
         "WISE": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.48,
+          "rank": 4,
+          "count": 23,
+          "pct": 1.97,
           "latest": {
             "rank": 33,
             "count": 1,
@@ -27412,7 +27024,7 @@
       "country": "CN",
       "by_category": {
         "AI": 111,
-        "DB": 71
+        "DB": 104
       },
       "conferences": {
         "COLING": {
@@ -27441,9 +27053,9 @@
           }
         },
         "WISE": {
-          "rank": 4,
-          "count": 6,
-          "pct": 1.78,
+          "rank": 1,
+          "count": 39,
+          "pct": 3.34,
           "latest": {
             "rank": 33,
             "count": 1,
@@ -27507,10 +27119,9 @@
         "CT": 13,
         "SE": 14,
         "CG": 24,
-        "DS": 10,
-        "SC": 22,
-        "MX": 6,
-        "DB": 3
+        "DS": 15,
+        "SC": 38,
+        "MX": 6
       },
       "conferences": {
         "COLM": {
@@ -27668,20 +27279,20 @@
             "year": 2025
           }
         },
-        "SDM": {
-          "rank": 18,
-          "count": 3,
-          "pct": 0.67
-        },
         "SPAA": {
-          "rank": 2,
-          "count": 8,
-          "pct": 3.16,
+          "rank": 6,
+          "count": 13,
+          "pct": 1.66,
           "latest": {
             "rank": 2,
             "count": 3,
             "year": 2025
           }
+        },
+        "TCC": {
+          "rank": 8,
+          "count": 16,
+          "pct": 1.84
         },
         "WACV": {
           "rank": 11,
@@ -27822,7 +27433,7 @@
         "DB": 31,
         "NW": 14,
         "MX": 5,
-        "CG": 1,
+        "CG": 2,
         "CT": 6,
         "SC": 13
       },
@@ -27948,14 +27559,9 @@
           "pct": 2.4
         },
         "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
+          "rank": 6,
+          "count": 2,
+          "pct": 2.13
         },
         "STOC": {
           "rank": 17,
@@ -27987,11 +27593,11 @@
     "Institute of Science and Technology Austria": {
       "country": "AT",
       "by_category": {
-        "CT": 47,
+        "CT": 62,
         "MX": 5,
         "DS": 12,
-        "SE": 3,
-        "SC": 4
+        "SE": 9,
+        "SC": 9
       },
       "conferences": {
         "CONCUR": {
@@ -28039,6 +27645,16 @@
           "count": 3,
           "pct": 0.9
         },
+        "SOCG": {
+          "rank": 5,
+          "count": 15,
+          "pct": 1.34,
+          "latest": {
+            "rank": 4,
+            "count": 1,
+            "year": 2025
+          }
+        },
         "SODA": {
           "rank": 18,
           "count": 7,
@@ -28050,9 +27666,14 @@
           }
         },
         "TCC": {
-          "rank": 15,
-          "count": 4,
-          "pct": 1.33
+          "rank": 18,
+          "count": 9,
+          "pct": 1.03
+        },
+        "VMCAI": {
+          "rank": 6,
+          "count": 6,
+          "pct": 1.46
         }
       }
     },
@@ -28231,7 +27852,8 @@
         "SE": 15,
         "HI": 10,
         "AI": 28,
-        "DS": 2
+        "DS": 2,
+        "SC": 8
       },
       "conferences": {
         "CONCUR": {
@@ -28278,6 +27900,11 @@
             "count": 2,
             "year": 2025
           }
+        },
+        "SRDS": {
+          "rank": 10,
+          "count": 8,
+          "pct": 1.34
         }
       }
     },
@@ -28307,7 +27934,7 @@
     "Max Planck Society": {
       "country": "DE",
       "by_category": {
-        "CT": 33
+        "CT": 42
       },
       "conferences": {
         "CONCUR": {
@@ -28324,6 +27951,11 @@
           "rank": 19,
           "count": 15,
           "pct": 0.66
+        },
+        "SOCG": {
+          "rank": 17,
+          "count": 9,
+          "pct": 0.8
         }
       }
     },
@@ -28331,7 +27963,7 @@
       "country": "FR",
       "by_category": {
         "CT": 6,
-        "DB": 28,
+        "DB": 22,
         "DS": 8,
         "CG": 24,
         "SC": 7
@@ -28376,16 +28008,6 @@
           "rank": 15,
           "count": 7,
           "pct": 1.05
-        },
-        "WISE": {
-          "rank": 4,
-          "count": 6,
-          "pct": 1.78,
-          "latest": {
-            "rank": 1,
-            "count": 5,
-            "year": 2024
-          }
         }
       }
     },
@@ -28448,7 +28070,7 @@
     "Yonsei University": {
       "country": "KR",
       "by_category": {
-        "NW": 10,
+        "NW": 4,
         "DS": 41,
         "HI": 4,
         "AI": 17
@@ -28518,11 +28140,6 @@
           "rank": 8,
           "count": 4,
           "pct": 0.8
-        },
-        "SENSYS": {
-          "rank": 13,
-          "count": 6,
-          "pct": 1.1
         },
         "WACV": {
           "rank": 14,
@@ -28603,13 +28220,30 @@
     "Freie Universität Berlin": {
       "country": "DE",
       "by_category": {
-        "NW": 4
+        "NW": 4,
+        "CT": 11,
+        "CG": 1
       },
       "conferences": {
         "CONEXT": {
           "rank": 14,
           "count": 4,
           "pct": 0.58
+        },
+        "SOCG": {
+          "rank": 11,
+          "count": 11,
+          "pct": 0.98,
+          "latest": {
+            "rank": 4,
+            "count": 1,
+            "year": 2025
+          }
+        },
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         }
       }
     },
@@ -28618,7 +28252,7 @@
       "by_category": {
         "NW": 4,
         "CG": 49,
-        "DS": 23,
+        "DS": 25,
         "SE": 6
       },
       "conferences": {
@@ -28681,6 +28315,11 @@
           "rank": 17,
           "count": 2,
           "pct": 1.06
+        },
+        "VEE": {
+          "rank": 14,
+          "count": 2,
+          "pct": 0.96
         }
       }
     },
@@ -28818,8 +28457,7 @@
       "country": "GB",
       "by_category": {
         "SE": 7,
-        "DB": 59,
-        "DS": 1
+        "DB": 59
       },
       "conferences": {
         "CP": {
@@ -28845,16 +28483,6 @@
             "rank": 8,
             "count": 8,
             "year": 2025
-          }
-        },
-        "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0,
-          "latest": {
-            "rank": 3,
-            "count": 1,
-            "year": 2022
           }
         }
       }
@@ -28897,9 +28525,9 @@
     "IIT@MIT": {
       "country": "US",
       "by_category": {
-        "SC": 7,
+        "SC": 19,
         "CT": 10,
-        "DS": 13,
+        "DS": 21,
         "SE": 3
       },
       "conferences": {
@@ -28928,10 +28556,20 @@
           "count": 3,
           "pct": 1.97
         },
+        "SPAA": {
+          "rank": 13,
+          "count": 8,
+          "pct": 1.02,
+          "latest": {
+            "rank": 7,
+            "count": 1,
+            "year": 2025
+          }
+        },
         "TCC": {
-          "rank": 20,
-          "count": 3,
-          "pct": 1.0,
+          "rank": 11,
+          "count": 15,
+          "pct": 1.72,
           "latest": {
             "rank": 12,
             "count": 1,
@@ -28964,8 +28602,7 @@
       "by_category": {
         "HI": 29,
         "CT": 17,
-        "SE": 4,
-        "MX": 2
+        "SE": 8
       },
       "conferences": {
         "CSCW": {
@@ -28998,15 +28635,10 @@
           "count": 4,
           "pct": 1.2
         },
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24,
-          "latest": {
-            "rank": 1,
-            "count": 1,
-            "year": 2024
-          }
+        "VMCAI": {
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97
         }
       }
     },
@@ -29014,7 +28646,7 @@
       "country": "US",
       "by_category": {
         "HI": 30,
-        "DS": 13,
+        "DS": 6,
         "CG": 10,
         "NW": 23,
         "AI": 7
@@ -29084,21 +28716,6 @@
             "count": 1,
             "year": 2025
           }
-        },
-        "SIGMETRICS": {
-          "rank": 14,
-          "count": 3,
-          "pct": 1.08,
-          "latest": {
-            "rank": 9,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SPAA": {
-          "rank": 7,
-          "count": 4,
-          "pct": 1.58
         }
       }
     },
@@ -29106,7 +28723,7 @@
       "country": "US",
       "by_category": {
         "HI": 22,
-        "DB": 57,
+        "DB": 48,
         "NW": 10,
         "DS": 9
       },
@@ -29147,16 +28764,6 @@
           "pct": 1.01,
           "latest": {
             "rank": 42,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SDM": {
-          "rank": 1,
-          "count": 9,
-          "pct": 2.01,
-          "latest": {
-            "rank": 8,
             "count": 1,
             "year": 2025
           }
@@ -29511,7 +29118,7 @@
         "CG": 24,
         "NW": 38,
         "SE": 4,
-        "DB": 24
+        "DB": 19
       },
       "conferences": {
         "DCC": {
@@ -29564,16 +29171,6 @@
             "year": 2022
           }
         },
-        "SDM": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.12,
-          "latest": {
-            "rank": 1,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "SIGKDD": {
           "rank": 20,
           "count": 19,
@@ -29587,7 +29184,7 @@
         "CG": 13,
         "SE": 5,
         "MX": 10,
-        "AI": 17
+        "AI": 29
       },
       "conferences": {
         "DCC": {
@@ -29621,9 +29218,9 @@
           }
         },
         "UAI": {
-          "rank": 14,
-          "count": 8,
-          "pct": 0.55,
+          "rank": 5,
+          "count": 20,
+          "pct": 0.9,
           "latest": {
             "rank": 12,
             "count": 2,
@@ -29666,8 +29263,7 @@
         "DS": 22,
         "SE": 21,
         "HI": 5,
-        "MX": 75,
-        "CG": 2
+        "MX": 75
       },
       "conferences": {
         "DSN": {
@@ -29735,16 +29331,6 @@
           "count": 75,
           "pct": 1.0
         },
-        "SCA": {
-          "rank": 7,
-          "count": 2,
-          "pct": 2.13,
-          "latest": {
-            "rank": 4,
-            "count": 1,
-            "year": 2024
-          }
-        },
         "USENIXATC": {
           "rank": 14,
           "count": 4,
@@ -29755,7 +29341,7 @@
     "University of Lisbon": {
       "country": "PT",
       "by_category": {
-        "SC": 23
+        "SC": 32
       },
       "conferences": {
         "DSN": {
@@ -29769,9 +29355,9 @@
           }
         },
         "SRDS": {
-          "rank": 6,
-          "count": 3,
-          "pct": 1.73,
+          "rank": 2,
+          "count": 12,
+          "pct": 2.01,
           "latest": {
             "rank": 5,
             "count": 1,
@@ -29845,8 +29431,7 @@
         "SC": 12,
         "SE": 7,
         "NW": 13,
-        "DB": 35,
-        "DS": 1
+        "DB": 21
       },
       "conferences": {
         "DSN": {
@@ -29869,16 +29454,6 @@
           "count": 13,
           "pct": 1.43
         },
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SIGKDD": {
           "rank": 17,
           "count": 21,
@@ -29890,21 +29465,6 @@
           "pct": 1.32,
           "latest": {
             "rank": 13,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
-        },
-        "WSDM": {
-          "rank": 13,
-          "count": 10,
-          "pct": 0.95,
-          "latest": {
-            "rank": 22,
             "count": 1,
             "year": 2025
           }
@@ -29986,8 +29546,7 @@
         "CT": 11,
         "AI": 10,
         "DS": 9,
-        "CG": 1,
-        "SC": 2
+        "SE": 4
       },
       "conferences": {
         "ECML-PKDD": {
@@ -30040,15 +29599,10 @@
             "year": 2025
           }
         },
-        "SGP": {
-          "rank": 16,
-          "count": 1,
-          "pct": 1.33
-        },
-        "SRDS": {
-          "rank": 13,
-          "count": 2,
-          "pct": 1.16
+        "VMCAI": {
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97
         }
       }
     },
@@ -30068,7 +29622,7 @@
     "University of Technology Sydney": {
       "country": "AU",
       "by_category": {
-        "DB": 45
+        "DB": 57
       },
       "conferences": {
         "ECML-PKDD": {
@@ -30080,6 +29634,16 @@
           "rank": 7,
           "count": 30,
           "pct": 1.12
+        },
+        "WISE": {
+          "rank": 15,
+          "count": 12,
+          "pct": 1.03,
+          "latest": {
+            "rank": 33,
+            "count": 1,
+            "year": 2024
+          }
         }
       }
     },
@@ -30087,8 +29651,7 @@
       "country": "IE",
       "by_category": {
         "DB": 29,
-        "AI": 40,
-        "NW": 3
+        "AI": 40
       },
       "conferences": {
         "ECML-PKDD": {
@@ -30115,11 +29678,6 @@
           "rank": 11,
           "count": 15,
           "pct": 0.69
-        },
-        "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13
         }
       }
     },
@@ -30128,8 +29686,7 @@
       "by_category": {
         "DB": 14,
         "SE": 6,
-        "HI": 17,
-        "DS": 4
+        "HI": 17
       },
       "conferences": {
         "ECML-PKDD": {
@@ -30148,16 +29705,6 @@
           "pct": 0.73,
           "latest": {
             "rank": 10,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SPAA": {
-          "rank": 7,
-          "count": 4,
-          "pct": 1.58,
-          "latest": {
-            "rank": 7,
             "count": 1,
             "year": 2025
           }
@@ -30202,7 +29749,7 @@
       "country": "DE",
       "by_category": {
         "DB": 34,
-        "CG": 6
+        "CG": 9
       },
       "conferences": {
         "ECML-PKDD": {
@@ -30219,14 +29766,20 @@
           "rank": 12,
           "count": 21,
           "pct": 0.82
+        },
+        "SGP": {
+          "rank": 16,
+          "count": 3,
+          "pct": 0.9
         }
       }
     },
     "George Mason University": {
       "country": "US",
       "by_category": {
-        "DB": 15,
-        "SC": 8
+        "DB": 12,
+        "SC": 8,
+        "CG": 1
       },
       "conferences": {
         "ECML-PKDD": {
@@ -30244,10 +29797,10 @@
           "count": 8,
           "pct": 1.52
         },
-        "SDM": {
-          "rank": 18,
-          "count": 3,
-          "pct": 0.67
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         }
       }
     },
@@ -30295,31 +29848,20 @@
     "University of Genoa": {
       "country": "IT",
       "by_category": {
-        "SE": 5,
-        "CG": 1
+        "SE": 5
       },
       "conferences": {
         "ECOOP": {
           "rank": 13,
           "count": 5,
           "pct": 0.87
-        },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
         }
       }
     },
     "University of Freiburg": {
       "country": "DE",
       "by_category": {
-        "SE": 5,
+        "SE": 13,
         "CT": 5,
         "AI": 114,
         "MX": 9,
@@ -30377,9 +29919,9 @@
           }
         },
         "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
+          "rank": 2,
+          "count": 9,
+          "pct": 2.19
         }
       }
     },
@@ -30413,7 +29955,7 @@
       "country": "GR",
       "by_category": {
         "DB": 9,
-        "DS": 3
+        "MX": 6
       },
       "conferences": {
         "EDBT": {
@@ -30421,10 +29963,10 @@
           "count": 9,
           "pct": 0.67
         },
-        "SIGMETRICS": {
-          "rank": 14,
-          "count": 3,
-          "pct": 1.08
+        "WINE": {
+          "rank": 11,
+          "count": 6,
+          "pct": 1.03
         }
       }
     },
@@ -30582,10 +30124,10 @@
     "Johns Hopkins University": {
       "country": "US",
       "by_category": {
-        "AI": 350,
+        "AI": 341,
         "MX": 114,
         "SE": 5,
-        "SC": 2
+        "CG": 5
       },
       "conferences": {
         "EMNLP": {
@@ -30633,25 +30175,15 @@
           "count": 3,
           "pct": 1.43
         },
+        "SGP": {
+          "rank": 5,
+          "count": 5,
+          "pct": 1.5
+        },
         "SOSP": {
           "rank": 16,
           "count": 2,
           "pct": 1.32
-        },
-        "SRDS": {
-          "rank": 13,
-          "count": 2,
-          "pct": 1.16
-        },
-        "UAI": {
-          "rank": 10,
-          "count": 9,
-          "pct": 0.62,
-          "latest": {
-            "rank": 12,
-            "count": 2,
-            "year": 2025
-          }
         },
         "WACV": {
           "rank": 2,
@@ -30669,8 +30201,7 @@
       "country": "US",
       "by_category": {
         "MX": 14,
-        "DS": 23,
-        "CG": 3
+        "DS": 35
       },
       "conferences": {
         "EMSOFT": {
@@ -30703,29 +30234,14 @@
             "year": 2025
           }
         },
-        "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
-        },
         "SPAA": {
-          "rank": 3,
-          "count": 7,
-          "pct": 2.77,
+          "rank": 2,
+          "count": 19,
+          "pct": 2.42,
           "latest": {
             "rank": 3,
             "count": 2,
             "year": 2025
-          }
-        },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
           }
         }
       }
@@ -30816,8 +30332,7 @@
       "by_category": {
         "MX": 39,
         "DS": 64,
-        "NW": 8,
-        "CG": 2
+        "NW": 8
       },
       "conferences": {
         "EMSOFT": {
@@ -30864,11 +30379,6 @@
             "count": 2,
             "year": 2025
           }
-        },
-        "SCA": {
-          "rank": 7,
-          "count": 2,
-          "pct": 2.13
         }
       }
     },
@@ -31409,7 +30919,7 @@
       "country": "NL",
       "by_category": {
         "SE": 3,
-        "AI": 15
+        "AI": 19
       },
       "conferences": {
         "ETAPS": {
@@ -31418,9 +30928,9 @@
           "pct": 3.03
         },
         "UAI": {
-          "rank": 4,
-          "count": 15,
-          "pct": 1.03,
+          "rank": 6,
+          "count": 19,
+          "pct": 0.86,
           "latest": {
             "rank": 1,
             "count": 4,
@@ -31583,7 +31093,8 @@
       "country": "SA",
       "by_category": {
         "DS": 16,
-        "MX": 9
+        "MX": 9,
+        "CG": 1
       },
       "conferences": {
         "EURO-PAR": {
@@ -31610,6 +31121,11 @@
             "count": 2,
             "year": 2025
           }
+        },
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         }
       }
     },
@@ -31617,7 +31133,8 @@
       "country": "PT",
       "by_category": {
         "DS": 13,
-        "SE": 16
+        "SE": 16,
+        "SC": 11
       },
       "conferences": {
         "EURO-PAR": {
@@ -31654,6 +31171,16 @@
             "count": 4,
             "year": 2025
           }
+        },
+        "SRDS": {
+          "rank": 3,
+          "count": 11,
+          "pct": 1.85,
+          "latest": {
+            "rank": 5,
+            "count": 1,
+            "year": 2025
+          }
         }
       }
     },
@@ -31673,7 +31200,7 @@
     "NTT Social Informatics Laboratories": {
       "country": "JP",
       "by_category": {
-        "SC": 8
+        "SC": 4
       },
       "conferences": {
         "EUROCRYPT": {
@@ -31682,16 +31209,6 @@
           "pct": 1.18,
           "latest": {
             "rank": 23,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "TCC": {
-          "rank": 15,
-          "count": 4,
-          "pct": 1.33,
-          "latest": {
-            "rank": 12,
             "count": 1,
             "year": 2025
           }
@@ -31946,7 +31463,8 @@
     "University of California, Davis": {
       "country": "US",
       "by_category": {
-        "CG": 10
+        "CG": 8,
+        "NW": 11
       },
       "conferences": {
         "EUROVIS": {
@@ -31954,15 +31472,10 @@
           "count": 8,
           "pct": 0.6
         },
-        "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67,
-          "latest": {
-            "rank": 1,
-            "count": 1,
-            "year": 2024
-          }
+        "SECON": {
+          "rank": 5,
+          "count": 11,
+          "pct": 1.09
         }
       }
     },
@@ -31983,8 +31496,7 @@
       "country": "CN",
       "by_category": {
         "DS": 2,
-        "SE": 5,
-        "SC": 2
+        "SE": 5
       },
       "conferences": {
         "FAST": {
@@ -32003,16 +31515,6 @@
           "pct": 1.2,
           "latest": {
             "rank": 17,
-            "count": 1,
-            "year": 2025
-          }
-        },
-        "SRDS": {
-          "rank": 13,
-          "count": 2,
-          "pct": 1.16,
-          "latest": {
-            "rank": 5,
             "count": 1,
             "year": 2025
           }
@@ -32157,7 +31659,7 @@
     "LMU Klinikum": {
       "country": "DE",
       "by_category": {
-        "SE": 3,
+        "SE": 2,
         "HI": 4
       },
       "conferences": {
@@ -32180,11 +31682,6 @@
             "count": 1,
             "year": 2024
           }
-        },
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
         }
       }
     },
@@ -32231,7 +31728,8 @@
       "country": "AT",
       "by_category": {
         "CT": 9,
-        "DB": 15
+        "DB": 15,
+        "CG": 2
       },
       "conferences": {
         "FMCAD": {
@@ -32247,6 +31745,16 @@
             "rank": 3,
             "count": 6,
             "year": 2025
+          }
+        },
+        "SPM": {
+          "rank": 6,
+          "count": 2,
+          "pct": 2.13,
+          "latest": {
+            "rank": 2,
+            "count": 2,
+            "year": 2017
           }
         }
       }
@@ -32413,13 +31921,24 @@
     "Brigham Young University": {
       "country": "US",
       "by_category": {
-        "DS": 8
+        "DS": 8,
+        "SE": 4
       },
       "conferences": {
         "FPGA": {
           "rank": 18,
           "count": 8,
           "pct": 0.8
+        },
+        "VMCAI": {
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97,
+          "latest": {
+            "rank": 3,
+            "count": 1,
+            "year": 2025
+          }
         }
       }
     },
@@ -32680,9 +32199,8 @@
       "by_category": {
         "DS": 7,
         "MX": 8,
-        "DB": 19,
-        "NW": 6,
-        "SC": 5
+        "DB": 15,
+        "SC": 6
       },
       "conferences": {
         "HPCA": {
@@ -32705,30 +32223,10 @@
             "year": 2025
           }
         },
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89,
-          "latest": {
-            "rank": 1,
-            "count": 2,
-            "year": 2025
-          }
-        },
-        "SENSYS": {
-          "rank": 13,
-          "count": 6,
-          "pct": 1.1,
-          "latest": {
-            "rank": 9,
-            "count": 2,
-            "year": 2025
-          }
-        },
         "SRDS": {
-          "rank": 2,
-          "count": 5,
-          "pct": 2.89
+          "rank": 16,
+          "count": 6,
+          "pct": 1.01
         }
       }
     },
@@ -32780,8 +32278,7 @@
         "DS": 3,
         "SE": 12,
         "MX": 2,
-        "AI": 17,
-        "DB": 9
+        "AI": 17
       },
       "conferences": {
         "HPDC": {
@@ -32811,16 +32308,6 @@
           "latest": {
             "rank": 19,
             "count": 4,
-            "year": 2025
-          }
-        },
-        "WSDM": {
-          "rank": 15,
-          "count": 9,
-          "pct": 0.85,
-          "latest": {
-            "rank": 2,
-            "count": 5,
             "year": 2025
           }
         }
@@ -32902,7 +32389,7 @@
     "University of California, Merced": {
       "country": "US",
       "by_category": {
-        "DS": 2,
+        "DS": 8,
         "NW": 13
       },
       "conferences": {
@@ -32920,6 +32407,11 @@
           "rank": 7,
           "count": 13,
           "pct": 1.43
+        },
+        "SPAA": {
+          "rank": 20,
+          "count": 6,
+          "pct": 0.76
         }
       }
     },
@@ -32955,7 +32447,7 @@
       "country": "US",
       "by_category": {
         "CT": 8,
-        "SC": 5,
+        "SC": 18,
         "DS": 9
       },
       "conferences": {
@@ -32978,6 +32470,16 @@
           "rank": 8,
           "count": 9,
           "pct": 1.63
+        },
+        "TCC": {
+          "rank": 12,
+          "count": 13,
+          "pct": 1.49,
+          "latest": {
+            "rank": 4,
+            "count": 2,
+            "year": 2025
+          }
         }
       }
     },
@@ -33003,12 +32505,11 @@
       "country": "US",
       "by_category": {
         "CT": 7,
-        "CG": 4,
+        "CG": 5,
         "DS": 36,
         "HI": 10,
         "NW": 10,
-        "SC": 5,
-        "DB": 3
+        "SC": 5
       },
       "conferences": {
         "HSCC": {
@@ -33076,10 +32577,10 @@
           "count": 5,
           "pct": 0.95
         },
-        "SDM": {
-          "rank": 18,
-          "count": 3,
-          "pct": 0.67
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         }
       }
     },
@@ -33099,7 +32600,7 @@
     "University of North Carolina at Chapel Hill": {
       "country": "US",
       "by_category": {
-        "CG": 11,
+        "CG": 10,
         "MX": 221,
         "DS": 19
       },
@@ -33137,16 +32638,6 @@
             "rank": 4,
             "count": 2,
             "year": 2025
-          }
-        },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
           }
         }
       }
@@ -33448,13 +32939,19 @@
     "Lehigh University": {
       "country": "US",
       "by_category": {
-        "AI": 10
+        "AI": 10,
+        "DS": 8
       },
       "conferences": {
         "ICCBR": {
           "rank": 11,
           "count": 10,
           "pct": 2.06
+        },
+        "SPAA": {
+          "rank": 13,
+          "count": 8,
+          "pct": 1.02
         }
       }
     },
@@ -33523,8 +33020,7 @@
     "Hefei University of Technology": {
       "country": "CN",
       "by_category": {
-        "DB": 25,
-        "CG": 1
+        "DB": 25
       },
       "conferences": {
         "ICDM": {
@@ -33536,26 +33032,16 @@
             "count": 3,
             "year": 2024
           }
-        },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
         }
       }
     },
     "Michigan State University": {
       "country": "US",
       "by_category": {
-        "DB": 36,
-        "NW": 25,
+        "DB": 23,
+        "NW": 29,
         "DS": 2,
-        "SC": 2
+        "SC": 11
       },
       "conferences": {
         "ICDM": {
@@ -33583,30 +33069,15 @@
             "year": 2025
           }
         },
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SECON": {
           "rank": 8,
-          "count": 4,
-          "pct": 1.5
+          "count": 8,
+          "pct": 0.79
         },
         "SRDS": {
-          "rank": 13,
-          "count": 2,
-          "pct": 1.16
-        },
-        "WSDM": {
-          "rank": 15,
-          "count": 9,
-          "pct": 0.85
+          "rank": 3,
+          "count": 11,
+          "pct": 1.85
         }
       }
     },
@@ -33678,8 +33149,8 @@
       "country": "IL",
       "by_category": {
         "DB": 5,
-        "DS": 3,
-        "CG": 2
+        "CG": 2,
+        "MX": 9
       },
       "conferences": {
         "ICDT": {
@@ -33687,25 +33158,15 @@
           "count": 5,
           "pct": 0.87
         },
-        "SPAA": {
-          "rank": 12,
-          "count": 3,
-          "pct": 1.19,
-          "latest": {
-            "rank": 7,
-            "count": 1,
-            "year": 2025
-          }
-        },
         "SPM": {
-          "rank": 2,
+          "rank": 6,
           "count": 2,
-          "pct": 7.69,
-          "latest": {
-            "rank": 2,
-            "count": 2,
-            "year": 2010
-          }
+          "pct": 2.13
+        },
+        "WINE": {
+          "rank": 8,
+          "count": 9,
+          "pct": 1.54
         }
       }
     },
@@ -33868,8 +33329,8 @@
       "country": "US",
       "by_category": {
         "AI": 181,
-        "DS": 5,
-        "CG": 2,
+        "DS": 15,
+        "CG": 5,
         "CT": 6
       },
       "conferences": {
@@ -33899,9 +33360,14 @@
           "pct": 2.15
         },
         "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
+          "rank": 5,
+          "count": 5,
+          "pct": 1.5
+        },
+        "SIGMETRICS": {
+          "rank": 13,
+          "count": 10,
+          "pct": 1.08
         },
         "STOC": {
           "rank": 17,
@@ -34032,7 +33498,7 @@
       "country": "AU",
       "by_category": {
         "SE": 12,
-        "DB": 4
+        "DB": 17
       },
       "conferences": {
         "ICSOC": {
@@ -34041,9 +33507,9 @@
           "pct": 1.35
         },
         "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
+          "rank": 10,
+          "count": 17,
+          "pct": 1.46,
           "latest": {
             "rank": 33,
             "count": 1,
@@ -34056,7 +33522,7 @@
       "country": "AU",
       "by_category": {
         "SE": 35,
-        "DB": 7
+        "DB": 22
       },
       "conferences": {
         "ICSOC": {
@@ -34075,9 +33541,9 @@
           }
         },
         "WISE": {
-          "rank": 3,
-          "count": 7,
-          "pct": 2.07,
+          "rank": 5,
+          "count": 22,
+          "pct": 1.88,
           "latest": {
             "rank": 5,
             "count": 3,
@@ -34642,7 +34108,7 @@
       "country": "GB",
       "by_category": {
         "DB": 27,
-        "DS": 1
+        "DS": 5
       },
       "conferences": {
         "ISWC": {
@@ -34656,9 +34122,9 @@
           }
         },
         "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0,
+          "rank": 2,
+          "count": 5,
+          "pct": 2.4,
           "latest": {
             "rank": 3,
             "count": 1,
@@ -34923,7 +34389,7 @@
       "country": "US",
       "by_category": {
         "SE": 3,
-        "DS": 8
+        "DS": 10
       },
       "conferences": {
         "LCTES": {
@@ -34937,9 +34403,9 @@
           "pct": 1.27
         },
         "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44
         }
       }
     },
@@ -35141,24 +34607,13 @@
     "University of Oslo": {
       "country": "NO",
       "by_category": {
-        "DS": 1,
-        "CG": 1
+        "DS": 1
       },
       "conferences": {
         "LISA": {
           "rank": 16,
           "count": 1,
           "pct": 0.94
-        },
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
         }
       }
     },
@@ -35248,7 +34703,8 @@
     "University of Neuchâtel": {
       "country": "CH",
       "by_category": {
-        "SE": 5
+        "SE": 5,
+        "SC": 10
       },
       "conferences": {
         "MIDDLEWARE": {
@@ -35260,6 +34716,11 @@
             "count": 2,
             "year": 2025
           }
+        },
+        "SRDS": {
+          "rank": 5,
+          "count": 10,
+          "pct": 1.68
         }
       }
     },
@@ -35666,7 +35127,8 @@
     "Utrecht University": {
       "country": "NL",
       "by_category": {
-        "SE": 12
+        "SE": 12,
+        "CT": 13
       },
       "conferences": {
         "RE": {
@@ -35676,6 +35138,16 @@
           "latest": {
             "rank": 3,
             "count": 2,
+            "year": 2025
+          }
+        },
+        "SOCG": {
+          "rank": 7,
+          "count": 13,
+          "pct": 1.16,
+          "latest": {
+            "rank": 4,
+            "count": 1,
             "year": 2025
           }
         }
@@ -35913,7 +35385,7 @@
       "country": "IT",
       "by_category": {
         "SE": 14,
-        "CG": 2
+        "CG": 3
       },
       "conferences": {
         "SANER": {
@@ -35927,36 +35399,29 @@
           }
         },
         "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
+          "rank": 16,
+          "count": 3,
+          "pct": 0.9
         }
       }
     },
     "University of Bern": {
       "country": "CH",
       "by_category": {
-        "SE": 12,
-        "CG": 1
+        "SE": 12
       },
       "conferences": {
         "SANER": {
           "rank": 18,
           "count": 12,
           "pct": 0.91
-        },
-        "SGP": {
-          "rank": 16,
-          "count": 1,
-          "pct": 1.33
         }
       }
     },
     "Commissariat à l'Énergie Atomique et aux Énergies Alternatives": {
       "country": "FR",
       "by_category": {
-        "SE": 4,
-        "SC": 2
+        "SE": 8
       },
       "conferences": {
         "SAS": {
@@ -35969,10 +35434,10 @@
             "year": 2025
           }
         },
-        "SRDS": {
-          "rank": 13,
-          "count": 2,
-          "pct": 1.16
+        "VMCAI": {
+          "rank": 12,
+          "count": 4,
+          "pct": 0.97
         }
       }
     },
@@ -35994,112 +35459,6 @@
         }
       }
     },
-    "Universidad Rey Juan Carlos": {
-      "country": "ES",
-      "by_category": {
-        "CG": 4
-      },
-      "conferences": {
-        "SCA": {
-          "rank": 1,
-          "count": 4,
-          "pct": 4.26
-        }
-      }
-    },
-    "École de Technologie Supérieure": {
-      "country": "CA",
-      "by_category": {
-        "CG": 2
-      },
-      "conferences": {
-        "SCA": {
-          "rank": 7,
-          "count": 2,
-          "pct": 2.13,
-          "latest": {
-            "rank": 4,
-            "count": 1,
-            "year": 2024
-          }
-        }
-      }
-    },
-    "Freund": {
-      "country": "JP",
-      "by_category": {
-        "CG": 1
-      },
-      "conferences": {
-        "SCA": {
-          "rank": 14,
-          "count": 1,
-          "pct": 1.06
-        }
-      }
-    },
-    "Electronic Arts": {
-      "country": "US",
-      "by_category": {
-        "CG": 1
-      },
-      "conferences": {
-        "SCA": {
-          "rank": 14,
-          "count": 1,
-          "pct": 1.06
-        }
-      }
-    },
-    "Sichuan University": {
-      "country": "CN",
-      "by_category": {
-        "CG": 1
-      },
-      "conferences": {
-        "SCA": {
-          "rank": 14,
-          "count": 1,
-          "pct": 1.06
-        }
-      }
-    },
-    "Emory University": {
-      "country": "US",
-      "by_category": {
-        "DB": 4
-      },
-      "conferences": {
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        }
-      }
-    },
-    "University of Minnesota System": {
-      "country": "US",
-      "by_category": {
-        "DB": 4
-      },
-      "conferences": {
-        "SDM": {
-          "rank": 10,
-          "count": 4,
-          "pct": 0.89,
-          "latest": {
-            "rank": 8,
-            "count": 1,
-            "year": 2025
-          }
-        }
-      }
-    },
     "Electronics and Telecommunications Research Institute": {
       "country": "KR",
       "by_category": {
@@ -36107,9 +35466,9 @@
       },
       "conferences": {
         "SECON": {
-          "rank": 2,
+          "rank": 11,
           "count": 7,
-          "pct": 2.63,
+          "pct": 0.69,
           "latest": {
             "rank": 2,
             "count": 2,
@@ -36118,96 +35477,60 @@
         }
       }
     },
-    "University of Nebraska–Lincoln": {
+    "University of Arizona": {
       "country": "US",
       "by_category": {
-        "NW": 3
+        "NW": 6
       },
       "conferences": {
         "SECON": {
-          "rank": 11,
-          "count": 3,
-          "pct": 1.13
-        }
-      }
-    },
-    "Lublin University of Technology": {
-      "country": "PL",
-      "by_category": {
-        "NW": 8
-      },
-      "conferences": {
-        "SENSYS": {
-          "rank": 5,
-          "count": 8,
-          "pct": 1.47,
+          "rank": 15,
+          "count": 6,
+          "pct": 0.6,
           "latest": {
             "rank": 9,
-            "count": 2,
-            "year": 2025
-          }
-        }
-      }
-    },
-    "University of Economics and Innovation": {
-      "country": "PL",
-      "by_category": {
-        "NW": 7
-      },
-      "conferences": {
-        "SENSYS": {
-          "rank": 9,
-          "count": 7,
-          "pct": 1.29,
-          "latest": {
-            "rank": 9,
-            "count": 2,
-            "year": 2025
-          }
-        }
-      }
-    },
-    "Osnabrück University": {
-      "country": "DE",
-      "by_category": {
-        "CG": 3
-      },
-      "conferences": {
-        "SGP": {
-          "rank": 1,
-          "count": 3,
-          "pct": 4.0,
-          "latest": {
-            "rank": 1,
             "count": 1,
             "year": 2024
           }
         }
       }
     },
-    "Mitchell Institute": {
+    "Georgia State University": {
       "country": "US",
       "by_category": {
-        "CG": 2
+        "NW": 6
       },
       "conferences": {
-        "SGP": {
-          "rank": 4,
-          "count": 2,
-          "pct": 2.67
+        "SECON": {
+          "rank": 15,
+          "count": 6,
+          "pct": 0.6
         }
       }
     },
-    "Clarkson University": {
-      "country": "US",
+    "Kootenay Association for Science & Technology": {
+      "country": "CA",
       "by_category": {
-        "CG": 1
+        "CG": 5
+      },
+      "conferences": {
+        "SGP": {
+          "rank": 5,
+          "count": 5,
+          "pct": 1.5
+        }
+      }
+    },
+    "University of West Bohemia in Pilsen": {
+      "country": "CZ",
+      "by_category": {
+        "CG": 3
       },
       "conferences": {
         "SGP": {
           "rank": 16,
-          "count": 1,
-          "pct": 1.33
+          "count": 3,
+          "pct": 0.9
         }
       }
     },
@@ -36247,16 +35570,68 @@
         }
       }
     },
-    "Sharif University of Technology": {
-      "country": "IR",
+    "University of Antwerp": {
+      "country": "BE",
       "by_category": {
-        "DS": 3
+        "DS": 8
       },
       "conferences": {
         "SIGMETRICS": {
-          "rank": 14,
-          "count": 3,
-          "pct": 1.08
+          "rank": 17,
+          "count": 8,
+          "pct": 0.86
+        }
+      }
+    },
+    "University of Copenhagen": {
+      "country": "DK",
+      "by_category": {
+        "CT": 13
+      },
+      "conferences": {
+        "SOCG": {
+          "rank": 7,
+          "count": 13,
+          "pct": 1.16
+        }
+      }
+    },
+    "Computer Algorithms for Medicine": {
+      "country": "AT",
+      "by_category": {
+        "CT": 10
+      },
+      "conferences": {
+        "SOCG": {
+          "rank": 13,
+          "count": 10,
+          "pct": 0.89
+        }
+      }
+    },
+    "Understanding the Shape of Data": {
+      "country": "",
+      "by_category": {
+        "CT": 8
+      },
+      "conferences": {
+        "SOCG": {
+          "rank": 18,
+          "count": 8,
+          "pct": 0.71
+        }
+      }
+    },
+    "Utah State University": {
+      "country": "US",
+      "by_category": {
+        "CT": 8
+      },
+      "conferences": {
+        "SOCG": {
+          "rank": 18,
+          "count": 8,
+          "pct": 0.71
         }
       }
     },
@@ -36291,124 +35666,99 @@
         }
       }
     },
-    "University of Texas at Dallas": {
-      "country": "",
-      "by_category": {
-        "CG": 1
-      },
-      "conferences": {
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
-        }
-      }
-    },
-    "Université de Bourgogne": {
-      "country": "FR",
-      "by_category": {
-        "CG": 1
-      },
-      "conferences": {
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
-        }
-      }
-    },
-    "Eötvös Loránd University": {
-      "country": "HU",
-      "by_category": {
-        "CG": 1
-      },
-      "conferences": {
-        "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
-        }
-      }
-    },
-    "Johannes Gutenberg University Mainz": {
+    "Paderborn University": {
       "country": "DE",
       "by_category": {
-        "CG": 1
+        "DS": 12
+      },
+      "conferences": {
+        "SPAA": {
+          "rank": 7,
+          "count": 12,
+          "pct": 1.53
+        }
+      }
+    },
+    "Vilnius University": {
+      "country": "LT",
+      "by_category": {
+        "CG": 2
       },
       "conferences": {
         "SPM": {
-          "rank": 5,
-          "count": 1,
-          "pct": 3.85,
+          "rank": 6,
+          "count": 2,
+          "pct": 2.13,
           "latest": {
-            "rank": 5,
+            "rank": 4,
             "count": 1,
-            "year": 2010
+            "year": 2017
           }
         }
       }
     },
-    "University of Miami": {
-      "country": "US",
+    "Ewha Womans University": {
+      "country": "KR",
       "by_category": {
         "CG": 1
       },
       "conferences": {
         "SPM": {
-          "rank": 5,
+          "rank": 11,
           "count": 1,
-          "pct": 3.85,
-          "latest": {
-            "rank": 5,
-            "count": 1,
-            "year": 2010
-          }
+          "pct": 1.06
+        }
+      }
+    },
+    "Yokohama National University": {
+      "country": "JP",
+      "by_category": {
+        "CG": 1
+      },
+      "conferences": {
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
+        }
+      }
+    },
+    "Ningbo University of Technology": {
+      "country": "CN",
+      "by_category": {
+        "CG": 1
+      },
+      "conferences": {
+        "SPM": {
+          "rank": 11,
+          "count": 1,
+          "pct": 1.06
         }
       }
     },
     "Missouri University of Science and Technology": {
       "country": "US",
       "by_category": {
-        "SC": 3
+        "SC": 9
       },
       "conferences": {
         "SRDS": {
-          "rank": 6,
-          "count": 3,
-          "pct": 1.73
+          "rank": 7,
+          "count": 9,
+          "pct": 1.51
         }
       }
     },
-    "Bocconi University": {
+    "University of Florence": {
       "country": "IT",
       "by_category": {
-        "SC": 5
+        "SC": 6
       },
       "conferences": {
-        "TCC": {
-          "rank": 11,
-          "count": 5,
-          "pct": 1.66,
-          "latest": {
-            "rank": 1,
-            "count": 4,
-            "year": 2025
-          }
+        "SRDS": {
+          "rank": 16,
+          "count": 6,
+          "pct": 1.01
         }
       }
     },
@@ -36515,195 +35865,55 @@
         }
       }
     },
-    "IBM Research - Tokyo": {
-      "country": "JP",
-      "by_category": {
-        "DS": 2
-      },
-      "conferences": {
-        "VEE": {
-          "rank": 1,
-          "count": 2,
-          "pct": 8.0
-        }
-      }
-    },
-    "IBM Research, USA": {
-      "country": "",
-      "by_category": {
-        "DS": 1
-      },
-      "conferences": {
-        "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0,
-          "latest": {
-            "rank": 3,
-            "count": 1,
-            "year": 2022
-          }
-        }
-      }
-    },
-    "University of Arizona": {
-      "country": "US",
-      "by_category": {
-        "DS": 1
-      },
-      "conferences": {
-        "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
-        }
-      }
-    },
     "VMware": {
       "country": "",
       "by_category": {
-        "DS": 1
+        "DS": 5
       },
       "conferences": {
         "VEE": {
-          "rank": 4,
-          "count": 1,
-          "pct": 4.0
+          "rank": 2,
+          "count": 5,
+          "pct": 2.4
         }
       }
     },
-    "Aalborg University": {
-      "country": "DK",
+    "IBM Research - Tokyo": {
+      "country": "JP",
       "by_category": {
-        "SE": 2
+        "DS": 3
       },
       "conferences": {
-        "VMCAI": {
-          "rank": 8,
-          "count": 2,
-          "pct": 1.68,
-          "latest": {
-            "rank": 3,
-            "count": 1,
-            "year": 2025
-          }
+        "VEE": {
+          "rank": 6,
+          "count": 3,
+          "pct": 1.44
         }
       }
     },
-    "Utah State University": {
-      "country": "US",
-      "by_category": {
-        "SE": 2
-      },
-      "conferences": {
-        "VMCAI": {
-          "rank": 8,
-          "count": 2,
-          "pct": 1.68
-        }
-      }
-    },
-    "Morgan Stanley": {
-      "country": "US",
-      "by_category": {
-        "SE": 1
-      },
-      "conferences": {
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
-        }
-      }
-    },
-    "Kansas State University": {
-      "country": "US",
-      "by_category": {
-        "SE": 1
-      },
-      "conferences": {
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
-        }
-      }
-    },
-    "University of Parma": {
+    "University of Salento": {
       "country": "IT",
-      "by_category": {
-        "SE": 1
-      },
-      "conferences": {
-        "VMCAI": {
-          "rank": 12,
-          "count": 1,
-          "pct": 0.84
-        }
-      }
-    },
-    "Shanghai University of Finance and Economics": {
-      "country": "CN",
       "by_category": {
         "MX": 6
       },
       "conferences": {
         "WINE": {
-          "rank": 1,
+          "rank": 11,
           "count": 6,
-          "pct": 3.73
-        }
-      }
-    },
-    "National and Kapodistrian University of Athens": {
-      "country": "GR",
-      "by_category": {
-        "MX": 2
-      },
-      "conferences": {
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
-        }
-      }
-    },
-    "Ningbo University": {
-      "country": "CN",
-      "by_category": {
-        "MX": 2
-      },
-      "conferences": {
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
-        }
-      }
-    },
-    "Mathematical Sciences Research Institute": {
-      "country": "US",
-      "by_category": {
-        "MX": 2
-      },
-      "conferences": {
-        "WINE": {
-          "rank": 10,
-          "count": 2,
-          "pct": 1.24
+          "pct": 1.03
         }
       }
     },
     "Victoria University": {
       "country": "AU",
       "by_category": {
-        "DB": 8
+        "DB": 19
       },
       "conferences": {
         "WISE": {
-          "rank": 2,
-          "count": 8,
-          "pct": 2.37,
+          "rank": 7,
+          "count": 19,
+          "pct": 1.63,
           "latest": {
             "rank": 3,
             "count": 4,
@@ -36712,124 +35922,60 @@
         }
       }
     },
-    "Charles Sturt University": {
+    "Erasmus University Rotterdam": {
+      "country": "NL",
+      "by_category": {
+        "DB": 16
+      },
+      "conferences": {
+        "WISE": {
+          "rank": 12,
+          "count": 16,
+          "pct": 1.37,
+          "latest": {
+            "rank": 9,
+            "count": 2,
+            "year": 2024
+          }
+        }
+      }
+    },
+    "Deakin University": {
       "country": "AU",
       "by_category": {
-        "DB": 5
+        "DB": 11
       },
       "conferences": {
         "WISE": {
-          "rank": 6,
-          "count": 5,
-          "pct": 1.48,
-          "latest": {
-            "rank": 1,
-            "count": 5,
-            "year": 2024
-          }
+          "rank": 18,
+          "count": 11,
+          "pct": 0.94
         }
       }
     },
-    "École Nationale Supérieure de Mécanique et d'Aérotechnique": {
-      "country": "FR",
-      "by_category": {
-        "DB": 4
-      },
-      "conferences": {
-        "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
-          "latest": {
-            "rank": 33,
-            "count": 1,
-            "year": 2024
-          }
-        }
-      }
-    },
-    "Guangdong University of Technology": {
+    "Microsoft Research Asia": {
       "country": "CN",
       "by_category": {
-        "DB": 4
+        "DB": 13
       },
       "conferences": {
-        "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
-          "latest": {
-            "rank": 9,
-            "count": 2,
-            "year": 2024
-          }
-        }
-      }
-    },
-    "Inner Mongolia University": {
-      "country": "CN",
-      "by_category": {
-        "DB": 4
-      },
-      "conferences": {
-        "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
-          "latest": {
-            "rank": 33,
-            "count": 1,
-            "year": 2024
-          }
-        }
-      }
-    },
-    "Donghua University": {
-      "country": "CN",
-      "by_category": {
-        "DB": 4
-      },
-      "conferences": {
-        "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
-          "latest": {
-            "rank": 9,
-            "count": 2,
-            "year": 2024
-          }
-        }
-      }
-    },
-    "Qatar University": {
-      "country": "QA",
-      "by_category": {
-        "DB": 4
-      },
-      "conferences": {
-        "WISE": {
-          "rank": 11,
-          "count": 4,
-          "pct": 1.18,
-          "latest": {
-            "rank": 3,
-            "count": 4,
-            "year": 2024
-          }
+        "WSDM": {
+          "rank": 17,
+          "count": 13,
+          "pct": 0.88
         }
       }
     },
     "Tencent": {
       "country": "CN",
       "by_category": {
-        "DB": 10
+        "DB": 11
       },
       "conferences": {
         "WSDM": {
-          "rank": 13,
-          "count": 10,
-          "pct": 0.95,
+          "rank": 20,
+          "count": 11,
+          "pct": 0.75,
           "latest": {
             "rank": 22,
             "count": 1,
@@ -36844,7 +35990,6 @@
     "ARIN",
     "ARM",
     "AT&T",
-    "Aalborg University",
     "Aalto University",
     "Aarhus University",
     "Adobe",
@@ -36875,7 +36020,6 @@
     "Ben-Gurion University of the Negev",
     "Berkeley College",
     "Blekinge Institute of Technology",
-    "Bocconi University",
     "Boise State University",
     "Boston University",
     "Bournemouth University",
@@ -36899,19 +36043,18 @@
     "Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional",
     "Centrum Wiskunde & Informatica",
     "Chalmers University of Technology",
-    "Charles Sturt University",
     "Charles University",
     "China University of Petroleum, Beijing",
     "Chinese Academy of Sciences",
     "Chinese University of Hong Kong",
     "City University of Hong Kong",
     "City, University of London",
-    "Clarkson University",
     "Clemson University",
     "Colorado State University",
     "Columbia University",
     "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
     "Commonwealth Scientific and Industrial Research Organisation",
+    "Computer Algorithms for Medicine",
     "Computer Network Information Center",
     "Concordia University",
     "Cornell University",
@@ -36922,11 +36065,11 @@
     "Dartmouth College",
     "Data61",
     "DePaul University",
+    "Deakin University",
     "Defence Science and Technology Group",
     "Delft University of Technology",
     "Denso",
     "Department of Computer Science",
-    "Donghua University",
     "Drexel University",
     "Dublin City University",
     "Duke University",
@@ -36936,10 +36079,9 @@
     "East China Normal University",
     "East China University of Science and Technology",
     "Eindhoven University of Technology",
-    "Electronic Arts",
     "Electronics and Telecommunications Research Institute",
-    "Emory University",
-    "Eötvös Loránd University",
+    "Erasmus University Rotterdam",
+    "Ewha Womans University",
     "FernUniversität in Hagen",
     "Florida International University",
     "Florida State University",
@@ -36950,13 +36092,13 @@
     "Fraunhofer Institute for Telecommunications, Heinrich Hertz Institute",
     "Free University of Bozen-Bolzano",
     "Freie Universität Berlin",
-    "Freund",
     "Friedrich-Alexander-Universität Erlangen-Nürnberg",
     "Fudan University",
     "Geometric",
     "George Mason University",
     "Georgetown University",
     "Georgia Institute of Technology",
+    "Georgia State University",
     "German Research Centre for Artificial Intelligence",
     "Ghent University",
     "Ghent University Hospital",
@@ -36964,7 +36106,6 @@
     "Google",
     "Google DeepMind",
     "Graz University of Technology",
-    "Guangdong University of Technology",
     "Guangzhou University of Chinese Medicine",
     "Gwangju Institute of Science and Technology",
     "HKUST",
@@ -36994,7 +36135,6 @@
     "IBM Research - Almaden",
     "IBM Research - India",
     "IBM Research - Tokyo",
-    "IBM Research, USA",
     "IIT@MIT",
     "IMDEA Networks",
     "INRIA",
@@ -37012,7 +36152,6 @@
     "Indiana University",
     "Indiana University Bloomington",
     "Information Technologies Institute",
-    "Inner Mongolia University",
     "Institut national de recherche en sciences et technologies du numérique",
     "Institut polytechnique de Grenoble",
     "Institute for Advanced Study",
@@ -37024,20 +36163,19 @@
     "Intuit",
     "Iowa State University",
     "Istituto di Scienza e Tecnologie dell'Informazione \"Alessandro Faedo\"",
-    "Johannes Gutenberg University Mainz",
     "Johannes Kepler University of Linz",
     "Johns Hopkins University",
     "KAIST",
     "KAUST",
     "KTH Royal Institute of Technology",
     "KU Leuven",
-    "Kansas State University",
     "Karlsruhe Institute of Technology",
     "Keio University",
     "Kent State University",
     "King's College London",
     "Knexus Research",
     "Knoxville College",
+    "Kootenay Association for Science & Technology",
     "Kyoto University",
     "Kyushu Institute of Technology",
     "LMU Klinikum",
@@ -37055,13 +36193,11 @@
     "Linköping University",
     "Los Alamos National Laboratory",
     "Louisiana State University",
-    "Lublin University of Technology",
     "MPI Informatik",
     "Macquarie University",
     "Madrid Institute for Advanced Studies",
     "Magna Graecia University",
     "Massachusetts Institute of Technology",
-    "Mathematical Sciences Research Institute",
     "Max Planck Institute for Informatics",
     "Max Planck Institute for Intelligent Systems",
     "Max Planck Institute for Security and Privacy",
@@ -37072,10 +36208,9 @@
     "Michigan State University",
     "Microsoft",
     "Microsoft Research",
+    "Microsoft Research Asia",
     "Missouri University of Science and Technology",
-    "Mitchell Institute",
     "Monash University",
-    "Morgan Stanley",
     "Moscow Institute of Physics and Technology",
     "Moscow Institute of Thermal Technology",
     "Mälardalen University",
@@ -37100,12 +36235,11 @@
     "National University of Defense Technology",
     "National University of Singapore",
     "National Yang Ming Chiao Tung University",
-    "National and Kapodistrian University of Athens",
     "NetApp",
     "Netflix",
     "New York University",
     "Newcastle University",
-    "Ningbo University",
+    "Ningbo University of Technology",
     "Nokia",
     "North Carolina State University",
     "North China University of Technology",
@@ -37121,9 +36255,9 @@
     "Oregon State University",
     "Osaka Prefecture University",
     "Osaka University",
-    "Osnabrück University",
     "Otto-von-Guericke-Universität Magdeburg",
     "Pacific Northwest National Laboratory",
+    "Paderborn University",
     "Peking University",
     "Pennsylvania State University",
     "Philipps University of Marburg",
@@ -37137,7 +36271,6 @@
     "Princeton University",
     "Purdue University",
     "Purdue University West Lafayette",
-    "Qatar University",
     "Qualcomm",
     "Queen Mary University of London",
     "Queen's University",
@@ -37170,11 +36303,8 @@
     "Shandong University",
     "Shandong University of Science and Technology",
     "Shanghai Jiao Tong University",
-    "Shanghai University of Finance and Economics",
     "ShanghaiTech University",
-    "Sharif University of Technology",
     "Shenzhen University",
-    "Sichuan University",
     "Siemens",
     "Simon Fraser University",
     "Singapore Management University",
@@ -37238,12 +36368,12 @@
     "UC San Diego Health System",
     "UCLouvain",
     "UNSW Sydney",
+    "Understanding the Shape of Data",
     "United States Naval Academy",
     "Universidad Autónoma de Madrid",
     "Universidad Carlos III de Madrid",
     "Universidad Complutense de Madrid",
     "Universidad Politécnica de Madrid",
-    "Universidad Rey Juan Carlos",
     "Universidad de Málaga",
     "Universidad de Sevilla",
     "Universidad de Zaragoza",
@@ -37268,6 +36398,7 @@
     "University of Adelaide",
     "University of Alberta",
     "University of Amsterdam",
+    "University of Antwerp",
     "University of Arizona",
     "University of Auckland",
     "University of Bari Aldo Moro",
@@ -37301,13 +36432,14 @@
     "University of Coimbra",
     "University of Colorado Boulder",
     "University of Connecticut",
+    "University of Copenhagen",
     "University of Delaware",
     "University of Duisburg-Essen",
-    "University of Economics and Innovation",
     "University of Edinburgh",
     "University of Electro-Communications",
     "University of Electronic Science and Technology of China",
     "University of Exeter",
+    "University of Florence",
     "University of Florida",
     "University of Freiburg",
     "University of Fribourg",
@@ -37336,16 +36468,13 @@
     "University of Mannheim",
     "University of Maryland, College Park",
     "University of Massachusetts Amherst",
-    "University of Miami",
     "University of Michigan",
     "University of Milan",
     "University of Minnesota",
-    "University of Minnesota System",
     "University of Missouri",
     "University of Mons",
     "University of Namur",
     "University of Naples Federico II",
-    "University of Nebraska–Lincoln",
     "University of Neuchâtel",
     "University of North Carolina at Chapel Hill",
     "University of North Carolina at Charlotte",
@@ -37356,12 +36485,12 @@
     "University of Oulu",
     "University of Oxford",
     "University of Padua",
-    "University of Parma",
     "University of Pennsylvania",
     "University of Piraeus",
     "University of Pisa",
     "University of Pittsburgh",
     "University of Rochester",
+    "University of Salento",
     "University of Salerno",
     "University of Sannio",
     "University of Saskatchewan",
@@ -37379,7 +36508,6 @@
     "University of Technology Sydney",
     "University of Tennessee at Knoxville",
     "University of Texas at Austin",
-    "University of Texas at Dallas",
     "University of Tokyo",
     "University of Toronto",
     "University of Trento",
@@ -37397,6 +36525,7 @@
     "University of Warwick",
     "University of Washington",
     "University of Waterloo",
+    "University of West Bohemia in Pilsen",
     "University of Wisconsin-Madison",
     "University of Wollongong",
     "University of Würzburg",
@@ -37413,7 +36542,6 @@
     "Université Libre de Bruxelles",
     "Université Paris-Sud",
     "Université Toulouse III - Paul Sabatier",
-    "Université de Bourgogne",
     "Université de Montréal",
     "Uppsala University",
     "Utah State University",
@@ -37425,6 +36553,7 @@
     "Verimag",
     "Victoria University",
     "Victoria University of Wellington",
+    "Vilnius University",
     "Virginia Tech",
     "Vrije Universiteit Amsterdam",
     "Vrije Universiteit Brussel",
@@ -37449,20 +36578,19 @@
     "Xi’an Jiaotong-Liverpool University",
     "Yahoo",
     "Yale University",
+    "Yokohama National University",
     "Yonsei University",
     "York University",
     "Zhejiang University",
     "Zhejiang University of Science and Technology",
     "Zuse Institute Berlin",
-    "École Nationale Supérieure de Mécanique et d'Aérotechnique",
     "École Normale Supérieure Paris-Saclay",
     "École Normale Supérieure de Lyon",
-    "École Pour l'Informatique et les Techniques Avancées",
-    "École de Technologie Supérieure"
+    "École Pour l'Informatique et les Techniques Avancées"
   ],
   "coverage": {
-    "conferences": 182,
+    "conferences": 179,
     "categories": 10,
-    "coverage_pct": 84.0
+    "coverage_pct": 83.8
   }
 }

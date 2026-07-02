@@ -1,0 +1,413 @@
+{
+  "conference": "SOCC",
+  "year": 2019,
+  "total_papers": 55,
+  "total_matched": 18,
+  "total_with_affiliation": 18,
+  "coverage_pct": 32.7,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "WormSpace: A Modular Foundation for Simple, Verifiable Distributed Systems.",
+      "first_author": "Ji-Yong Shin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SpIitServe: Efficiently Splitting Complex Workloads Across FaaS and IaaS.",
+      "first_author": "Aman Jain",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Peregrine: Workload Optimization for Cloud Query Engines.",
+      "first_author": "Alekh Jindal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "pRedis: Penalty and Locality Aware Memory Allocation in Redis.",
+      "first_author": "Cheng Pan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Software Data Planes: You Can't Always Spin to Win.",
+      "first_author": "Hossein Golestani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Pufferfish: Container-driven Elastic Memory Management for Data-intensive Applications.",
+      "first_author": "Wei Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "BurScale: Using Burstable Instances for Cost-Effective Autoscaling in the Public Cloud.",
+      "first_author": "Ataollah Fatahi Baarzi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Perceptual Compression for Video Storage and Processing Systems.",
+      "first_author": "Amrita Mazumdar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986946732",
+      "doi": "https://doi.org/10.1145/3357223.3362725",
+      "institution": "University of Washington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00cvxb145"
+    },
+    {
+      "title": "HP-Mapper: A High Performance Storage Driver for Docker Containers.",
+      "first_author": "Fan Guo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Characterizing and Synthesizing Task Dependencies of Data-Parallel Jobs in Alibaba Cloud.",
+      "first_author": "Huangshi Tian",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Repeatable Oblivious Shuffling of Large Outsourced Data Blocks.",
+      "first_author": "Zhilin Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Seamless Offloading of Web App Computations From Mobile Device to Edge Clouds via HTML5 Web Worker Migration.",
+      "first_author": "Hyuk-Jin Jeong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986179253",
+      "doi": "https://doi.org/10.1145/3357223.3362735",
+      "institution": "Seoul National University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/04h9pn542"
+    },
+    {
+      "title": "A System-Wide Debugging Assistant Powered by Natural Language Processing.",
+      "first_author": "Pradeep Dogga",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2989378952",
+      "doi": "https://doi.org/10.1145/3357223.3362701",
+      "institution": "UCLA Health",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01d88se56"
+    },
+    {
+      "title": "Narrowing the Gap Between Serverless and its State with Storage Functions.",
+      "first_author": "Tian Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986083395",
+      "doi": "https://doi.org/10.1145/3357223.3362723",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "Vote Them Out: Detecting and Eliminating Byzantine Peers.",
+      "first_author": "Tuan Tran",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Securing Data in Compromised Clouds.",
+      "first_author": "Raluca Ada Popa",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3009339194",
+      "doi": "https://doi.org/10.1109/globecom38437.2019.9013792",
+      "institution": "University of Electronic Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04qr3zq92"
+    },
+    {
+      "title": "WedgeDB: Transaction Processing for Edge Databases.",
+      "first_author": "Abhishek A. Singh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Libra and the Art of Task Sizing in Big-Data Analytic Systems.",
+      "first_author": "Rui Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984451313",
+      "doi": "https://doi.org/10.1145/3357223.3362720",
+      "institution": "Yale University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03v76x132"
+    },
+    {
+      "title": "PerfDebug: Performance Debugging of Computation Skew in Dataflow Systems.",
+      "first_author": "Jason Teoh",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Analysis of and Optimization for Write-dominated Hybrid Storage Nodes in Cloud.",
+      "first_author": "Shuyang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2984903257",
+      "doi": "https://doi.org/10.1145/3357223.3362705",
+      "institution": "Wuhan National Laboratory for Optoelectronics",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03c9ncn37"
+    },
+    {
+      "title": "Sifter: Scalable Sampling for Distributed Traces, without Feature Engineering.",
+      "first_author": "Pedro Henrique B. Las-Casas",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Practical Cloud Workloads for Serverless FaaS.",
+      "first_author": "Jeongchul Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985432842",
+      "doi": "https://doi.org/10.1145/3357223.3365439",
+      "institution": "Kookmin University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/0049erg63"
+    },
+    {
+      "title": "Matrix Profile XIV: Scaling Time Series Motif Discovery with GPUs to Break a Quintillion Pairwise Comparisons a Day and Beyond.",
+      "first_author": "Zachary Zimmerman",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An automated, cross-layer instrumentation framework for diagnosing performance problems in distributed applications.",
+      "first_author": "Emre Ates",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DCUDA: Dynamic GPU Scheduling with Live Migration Support.",
+      "first_author": "Fan Guo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Perphon: a ML-based Agent for Workload Co-location via Performance Prediction and Resource Inference.",
+      "first_author": "Jianyong Zhu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accordia: Adaptive Cloud Configuration Optimization for Recurring Data-Intensive Applications.",
+      "first_author": "Yang Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Reverb: Speculative Debugging for Web Applications.",
+      "first_author": "Ravi Netravali",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Collaborative Edge-Cloud and Edge-Edge Video Analytics.",
+      "first_author": "Samaa Gazzaz",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986914474",
+      "doi": "https://doi.org/10.1145/3357223.3366024",
+      "institution": "University of California, Santa Cruz",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03s65by71"
+    },
+    {
+      "title": "MME-FaaS Cloud-Native Control for Mobile Networks.",
+      "first_author": "Sonika Jindal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985710817",
+      "doi": "https://doi.org/10.1145/3357223.3362722",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "Griffon: Reasoning about Job Anomalies with Unlabeled Data in Cloud-based Platforms.",
+      "first_author": "Liqun Shao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Isopod: An Expressive DSL for Kubernetes Configuration.",
+      "first_author": "Charles Xu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "C-LSM: Cooperative Log Structured Merge Trees.",
+      "first_author": "Natasha Mittal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TagSniff: Simplified Big Data Debugging for Dataflow Jobs.",
+      "first_author": "Bertty Contreras-Rojas",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lessons from Large-Scale Software as a Service at Databricks.",
+      "first_author": "Matei Zaharia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985290192",
+      "doi": "https://doi.org/10.1145/3357223.3365870",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Hy-FiX: Fast In-place upgrade of KVM hypervisors.",
+      "first_author": "Andrea Segalini",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Hotspot Mitigations for the Masses.",
+      "first_author": "Fabien Hermenier",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986574693",
+      "doi": "https://doi.org/10.1145/3357223.3362717",
+      "institution": "Nutanix (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04tz2xx73"
+    },
+    {
+      "title": "Cartel: A System for Collaborative Transfer Learning at the Edge.",
+      "first_author": "Harshit Daga",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "BigDL: A Distributed Deep Learning Framework for Big Data.",
+      "first_author": "Jason Jinquan Dai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "RapidCDC: Leveraging Duplicate Locality to Accelerate Chunking in CDC-based Deduplication Systems.",
+      "first_author": "Fan Ni",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Scavenger: A Black-Box Batch Workload Resource Manager for Improving Utilization in Cloud Environments.",
+      "first_author": "Seyyed Ahmad Javadi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Grasper: A High Performance Distributed System for OLAP on Property Graphs.",
+      "first_author": "Hongzhi Chen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Acorn: Aggressive Result Caching in Distributed Data Processing Frameworks.",
+      "first_author": "Lana Ramjit",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards a Library for Deterministic Failure Testing of Distributed Systems.",
+      "first_author": "Armin Balalaie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987702108",
+      "doi": "https://doi.org/10.1145/3357223.3366026",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "Startups That Stand Out from the Cloud.",
+      "first_author": "Sarah Guo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2985802456",
+      "doi": "https://doi.org/10.1145/3357223.3365868",
+      "institution": "Partners In Care",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00xwb4n23"
+    },
+    {
+      "title": "Composing SDN Controller Enhancements with Mozart.",
+      "first_author": "Zhenyu Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2987953251",
+      "doi": "https://doi.org/10.1145/3357223.3362712",
+      "institution": "Duke University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00py81415"
+    },
+    {
+      "title": "Neptune: Scheduling Suspendable Tasks for Unified Stream/Batch Applications.",
+      "first_author": "Panagiotis Garefalakis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HyperSched: Dynamic Resource Reallocation for Model Development on a Deadline.",
+      "first_author": "Richard Liaw",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Cirrus: a Serverless Framework for End-to-end ML Workflows.",
+      "first_author": "João Carreira",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Centralized Core-granular Scheduling for Serverless Functions.",
+      "first_author": "Kostis Kaffes",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988514844",
+      "doi": "https://doi.org/10.1145/3357223.3362709",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "Pigeon: an Effective Distributed, Hierarchical Datacenter Job Scheduler.",
+      "first_author": "Zhijun Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Big Data Processing at Microsoft: Hyper Scale, Massive Complexity, and Minimal Cost.",
+      "first_author": "Hiren Patel",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Agni: An Efficient Dual-access File System over Object Storage.",
+      "first_author": "Kunal Lillaney",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Coupling Decentralized Key-Value Stores with Erasure Coding.",
+      "first_author": "Liangfeng Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2988655510",
+      "doi": "https://doi.org/10.1145/3357223.3362713",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Linear Quadratic Regulator for Resource-Efficient Cloud Services.",
+      "first_author": "Youngsuk Park",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W2986350530",
+      "doi": "https://doi.org/10.1145/3357223.3366028",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    }
+  ]
+}
