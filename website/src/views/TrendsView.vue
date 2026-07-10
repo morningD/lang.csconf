@@ -3,7 +3,7 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
 import { useSeo } from '@/composables/useSeo'
-import type { Meta, GlobalSummary, CategoryStats, RankStats, CCFCategory, CCFRank, AffiliationTrends, AffiliationTrendSlice } from '@/types'
+import type { Meta, GlobalSummary, CategoryStats, RankStats, CCFCategory, CCFRank, AffiliationTrendManifest, AffiliationTrendSlice } from '@/types'
 
 useSeo({
   title: 'Language & Institution Trends',
@@ -12,7 +12,7 @@ useSeo({
 })
 
 const { t } = useI18n()
-const { fetchMeta, fetchGlobalSummary, fetchCategory, fetchRank, fetchAffiliationTrends } = useDataFetch()
+const { fetchMeta, fetchGlobalSummary, fetchCategory, fetchRank, fetchAffiliationTrendManifest, fetchAffiliationTrendSlice } = useDataFetch()
 
 const meta = ref<Meta | null>(null)
 const loading = ref(true)
@@ -22,7 +22,10 @@ const activeRank = ref<CCFRank | 'ALL'>('ALL')
 const globalData = ref<GlobalSummary | null>(null)
 const categoryData = ref<CategoryStats | null>(null)
 const rankData = ref<RankStats | null>(null)
-const affilTrends = ref<AffiliationTrends | null>(null)
+const affilManifest = ref<AffiliationTrendManifest | null>(null)
+const affilSlice = ref<AffiliationTrendSlice | null>(null)
+const affilSliceLoading = ref(false)
+let affilRequestVersion = 0
 
 const categories: (CCFCategory | 'ALL')[] = ['ALL', 'AI', 'DB', 'NW', 'SE', 'CG', 'CT', 'HI', 'SC', 'DS', 'MX']
 const categoryNames: Record<string, string> = {
@@ -41,10 +44,10 @@ const ranks: (CCFRank | 'ALL')[] = ['ALL', 'A', 'B', 'C', 'N']
 
 onMounted(async () => {
   try {
-    const [m, g, a] = await Promise.all([fetchMeta(), fetchGlobalSummary(), fetchAffiliationTrends()])
+    const [m, g, manifest] = await Promise.all([fetchMeta(), fetchGlobalSummary(), fetchAffiliationTrendManifest()])
     meta.value = m
     globalData.value = g
-    affilTrends.value = a
+    affilManifest.value = manifest
   } catch (e) {
     console.error(e)
   } finally {
@@ -309,17 +312,33 @@ const countryFlag = (code: string) => {
 // Affiliation rank filter: 'ALL' or 'A'
 const affilRank = ref<'ALL' | 'A'>('A')
 
-// Active affiliation slice based on category + rank filters
-const activeAffilSlice = computed<AffiliationTrendSlice | null>(() => {
-  if (!affilTrends.value) return null
-  if (affilRank.value === 'A') {
-    return affilTrends.value.by_rank?.A ?? null
-  }
-  if (activeCategory.value !== 'ALL') {
-    return affilTrends.value.by_category?.[activeCategory.value] ?? null
-  }
-  return affilTrends.value.global ?? null
+const activeAffilSliceId = computed(() => {
+  if (affilRank.value === 'A') return 'rank:A'
+  if (activeCategory.value !== 'ALL') return `category:${activeCategory.value}`
+  return 'global'
 })
+
+watch([affilManifest, activeAffilSliceId], async ([manifest, sliceId]) => {
+  if (!manifest) return
+  const entry = manifest.slices[sliceId]
+  const requestVersion = ++affilRequestVersion
+  if (!entry) {
+    affilSlice.value = null
+    return
+  }
+  affilSliceLoading.value = true
+  try {
+    const chunk = await fetchAffiliationTrendSlice(entry.url)
+    if (requestVersion === affilRequestVersion) affilSlice.value = chunk
+  } catch (e) {
+    console.error(e)
+    if (requestVersion === affilRequestVersion) affilSlice.value = null
+  } finally {
+    if (requestVersion === affilRequestVersion) affilSliceLoading.value = false
+  }
+}, { immediate: true })
+
+const activeAffilSlice = computed<AffiliationTrendSlice | null>(() => affilSlice.value)
 
 const affilMode = ref<'absolute' | 'ratio' | 'cumulative'>('ratio')
 
@@ -509,8 +528,11 @@ const affilCoverage = computed(() => {
 
 // Which categories have affiliation data?
 const affilCategories = computed(() => {
-  if (!affilTrends.value?.by_category) return []
-  return Object.keys(affilTrends.value.by_category)
+  if (!affilManifest.value) return []
+  return Object.keys(affilManifest.value.slices)
+    .filter(key => key.startsWith('category:'))
+    .map(key => key.slice('category:'.length))
+    .sort()
 })
 </script>
 
@@ -594,7 +616,7 @@ const affilCategories = computed(() => {
         </div>
 
         <!-- Affiliation Trends -->
-        <div v-if="affilTrends" class="card p-6 bg-gray-800/50 border-gray-700/50 mt-8">
+        <div v-if="affilManifest" class="card p-6 bg-gray-800/50 border-gray-700/50 mt-8">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4">
             <h3 class="text-lg font-semibold text-white">{{ t('trends.affiliation_title') }}</h3>
             <div class="flex gap-2 items-center flex-wrap">
@@ -655,6 +677,9 @@ const affilCategories = computed(() => {
           </div>
 
           <v-chart v-if="activeAffilSlice" :option="affilChartOption" style="height: 450px" autoresize />
+          <div v-else-if="affilSliceLoading" class="text-center py-12 text-gray-500">
+            {{ t('home.loading') }}
+          </div>
           <div v-else class="text-center py-12 text-gray-500">
             {{ t('trends.affiliation_no_data') }}
           </div>

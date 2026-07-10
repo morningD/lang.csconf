@@ -1,7 +1,9 @@
 """Step 4: Generate aggregated statistics from classified author data."""
 
 import json
+import os
 import re
+import sqlite3
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -20,6 +22,10 @@ VENUES_DIR = RAW_DIR / "venues"
 CCF_RANK_HISTORY_FILE = DATA_DIR / "ccf-versions" / "ccf_rank_history.json"
 ACCEPT_RATES_FILE = RAW_DIR / "accept_rates.json"
 YEAR_NOTES_FILE = Path(__file__).parent / "conference_year_notes.json"
+AFFILIATION_TRENDS_DB = STATS_DIR / "affiliation_trends.sqlite"
+AFFILIATION_TRENDS_DIR = STATS_DIR / "affiliation_trends"
+AFFILIATION_TRENDS_TOP_N = 100
+AFFILIATION_TRENDS_SCHEMA_VERSION = 1
 
 
 def load_conferences() -> list[dict]:
@@ -1071,23 +1077,19 @@ def generate_affiliation_trends(
     all_affiliations: dict[str, dict[int, dict]],
     conf_meta_map: dict[str, dict],
 ) -> None:
-    """Generate affiliation_trends.json for the Trends page.
+    """Generate full SQLite trend data plus lightweight Top-N web chunks.
 
-    Aggregates institution counts by year across all conferences,
-    broken down by category and rank (A only).
+    ``affiliation_trends.json`` remains temporarily for backward-compatible
+    deployments; the website can progressively switch to the chunks below.
     """
-    # Accumulators: {slice_key: {year: {institution: count}}}
     global_inst: dict[int, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     cat_inst: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     rank_inst: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     inst_countries: dict[str, str] = {}
 
-    # Coverage tracking: {slice_key: {year: {covered, total}}}
     global_cov: dict[int, dict[str, int]] = defaultdict(lambda: {"covered": 0, "total": 0})
     cat_cov: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: {"covered": 0, "total": 0}))
     rank_cov: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: {"covered": 0, "total": 0}))
-
-    # Conference-years per year per slice
     global_conf_years: dict[int, set[str]] = defaultdict(set)
     cat_conf_years: dict[str, dict[int, set[str]]] = defaultdict(lambda: defaultdict(set))
     rank_conf_years: dict[str, dict[int, set[str]]] = defaultdict(lambda: defaultdict(set))
@@ -1096,29 +1098,20 @@ def generate_affiliation_trends(
         meta = conf_meta_map.get(conf_id, {})
         category = meta.get("category", "MX")
         rank = meta.get("rank", "N")
-
         for year, affil_data in years_data.items():
-            if year < YEAR_FLOOR or year > year_ceiling():
+            if not YEAR_FLOOR <= year <= year_ceiling():
                 continue
-
             papers = affil_data.get("papers", [])
             total_papers = affil_data.get("total_papers", len(papers))
-            covered = sum(1 for p in papers if p.get("institution"))
-
-            # Update coverage
-            global_cov[year]["covered"] += covered
-            global_cov[year]["total"] += total_papers
-            cat_cov[category][year]["covered"] += covered
-            cat_cov[category][year]["total"] += total_papers
-            rank_cov[rank][year]["covered"] += covered
-            rank_cov[rank][year]["total"] += total_papers
-
+            covered = sum(1 for paper in papers if paper.get("institution"))
+            for cov in (global_cov[year], cat_cov[category][year], rank_cov[rank][year]):
+                cov["covered"] += covered
+                cov["total"] += total_papers
             global_conf_years[year].add(conf_id)
             cat_conf_years[category][year].add(conf_id)
             rank_conf_years[rank][year].add(conf_id)
-
-            for p in papers:
-                raw_inst = p.get("institution")
+            for paper in papers:
+                raw_inst = paper.get("institution")
                 if not raw_inst:
                     continue
                 canon, country = _normalize_institution(raw_inst)
@@ -1130,60 +1123,190 @@ def generate_affiliation_trends(
                 cat_inst[category][year][canon] += 1
                 rank_inst[rank][year][canon] += 1
 
-    def _build_slice(
-        inst_data: dict[int, dict[str, int]],
-        cov_data: dict[int, dict[str, int]],
-        conf_yrs: dict[int, set[str]],
-    ) -> dict:
-        if not inst_data:
+    def build_slice(inst_data, cov_data, conf_years) -> dict | None:
+        years = sorted(cov_data)
+        if not years:
             return None
-        years = sorted(inst_data.keys())
-        # Aggregate total per institution across all years
         totals: dict[str, int] = defaultdict(int)
-        for yr_data in inst_data.values():
-            for inst, cnt in yr_data.items():
-                totals[inst] += cnt
-        institutions = {}
-        for inst in totals:
-            institutions[inst] = {
-                "country": inst_countries.get(inst, ""),
-                "by_year": {str(y): inst_data[y].get(inst, 0) for y in years},
-            }
+        for year_data in inst_data.values():
+            for institution, count in year_data.items():
+                totals[institution] += count
         return {
-            "years": [str(y) for y in years],
-            "institutions": institutions,
-            "total_by_year": {str(y): sum(inst_data[y].values()) for y in years},
-            "coverage_by_year": {
-                str(y): {"covered": cov_data[y]["covered"], "total": cov_data[y]["total"]}
-                for y in years
+            "years": [str(year) for year in years],
+            "institutions": {
+                institution: {
+                    "country": inst_countries.get(institution, ""),
+                    "by_year": {str(year): inst_data[year].get(institution, 0) for year in years},
+                }
+                for institution in totals
             },
-            "conferences_by_year": {str(y): sorted(conf_yrs[y]) for y in years},
+            "total_by_year": {str(year): sum(inst_data[year].values()) for year in years},
+            "coverage_by_year": {
+                str(year): {"covered": cov_data[year]["covered"], "total": cov_data[year]["total"]}
+                for year in years
+            },
+            "conferences_by_year": {str(year): sorted(conf_years[year]) for year in years},
         }
 
-    result = {}
-    g = _build_slice(global_inst, global_cov, global_conf_years)
-    if g:
-        result["global"] = g
-
-    # by_category: only categories with data
-    by_cat = {}
-    for cat in sorted(cat_inst):
-        s = _build_slice(cat_inst[cat], cat_cov[cat], cat_conf_years[cat])
-        if s:
-            by_cat[cat] = s
-    if by_cat:
-        result["by_category"] = by_cat
-
-    # by_rank: only rank A for now
+    slices: dict[str, dict] = {}
+    global_slice = build_slice(global_inst, global_cov, global_conf_years)
+    if global_slice:
+        slices["global"] = global_slice
+    for category in sorted(cat_inst):
+        slice_data = build_slice(cat_inst[category], cat_cov[category], cat_conf_years[category])
+        if slice_data:
+            slices[f"category:{category}"] = slice_data
     if "A" in rank_inst:
-        s = _build_slice(rank_inst["A"], rank_cov["A"], rank_conf_years["A"])
-        if s:
-            result["by_rank"] = {"A": s}
+        slice_data = build_slice(rank_inst["A"], rank_cov["A"], rank_conf_years["A"])
+        if slice_data:
+            slices["rank:A"] = slice_data
 
-    _write_json(STATS_DIR / "affiliation_trends.json", result)
-    total_insts = len(result.get("global", {}).get("institutions", {}))
-    total_years = len(result.get("global", {}).get("years", []))
-    print(f"Affiliation trends: {total_insts} institutions across {total_years} years")
+    _write_affiliation_trends_sqlite(slices)
+    _write_affiliation_trend_chunks(slices)
+
+    # Transitional legacy output. This is removed only after the website has
+    # been deployed with manifest/chunk support for a full cache window.
+    legacy: dict[str, dict] = {}
+    if "global" in slices:
+        legacy["global"] = slices["global"]
+    categories = {key.split(":", 1)[1]: value for key, value in slices.items() if key.startswith("category:")}
+    if categories:
+        legacy["by_category"] = categories
+    ranks = {key.split(":", 1)[1]: value for key, value in slices.items() if key.startswith("rank:")}
+    if ranks:
+        legacy["by_rank"] = ranks
+    _write_json(STATS_DIR / "affiliation_trends.json", legacy)
+    print(f"Affiliation trends: {len(global_slice['institutions']) if global_slice else 0} institutions across "
+          f"{len(global_slice['years']) if global_slice else 0} years; {len(slices)} web chunks")
+
+
+def _write_affiliation_trends_sqlite(slices: dict[str, dict]) -> None:
+    """Write the complete aggregate data atomically without publishing it to the web."""
+    STATS_DIR.mkdir(parents=True, exist_ok=True)
+    temp_db = AFFILIATION_TRENDS_DB.with_suffix(".sqlite.tmp")
+    temp_db.unlink(missing_ok=True)
+    conn = sqlite3.connect(temp_db)
+    try:
+        conn.executescript("""
+            PRAGMA foreign_keys = ON;
+            CREATE TABLE trend_meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
+            CREATE TABLE trend_slices (
+                slice_id TEXT PRIMARY KEY,
+                kind TEXT NOT NULL,
+                filter_value TEXT,
+                generated_at TEXT NOT NULL
+            );
+            CREATE TABLE institutions (name TEXT PRIMARY KEY, country TEXT NOT NULL DEFAULT '');
+            CREATE TABLE institution_year_counts (
+                slice_id TEXT NOT NULL,
+                institution_name TEXT NOT NULL,
+                year INTEGER NOT NULL,
+                paper_count INTEGER NOT NULL CHECK (paper_count >= 0),
+                PRIMARY KEY (slice_id, institution_name, year),
+                FOREIGN KEY (slice_id) REFERENCES trend_slices(slice_id),
+                FOREIGN KEY (institution_name) REFERENCES institutions(name)
+            );
+            CREATE TABLE slice_year_coverage (
+                slice_id TEXT NOT NULL,
+                year INTEGER NOT NULL,
+                covered_papers INTEGER NOT NULL,
+                total_papers INTEGER NOT NULL,
+                PRIMARY KEY (slice_id, year),
+                FOREIGN KEY (slice_id) REFERENCES trend_slices(slice_id)
+            );
+            CREATE TABLE slice_year_conferences (
+                slice_id TEXT NOT NULL,
+                year INTEGER NOT NULL,
+                conference_id TEXT NOT NULL,
+                PRIMARY KEY (slice_id, year, conference_id),
+                FOREIGN KEY (slice_id) REFERENCES trend_slices(slice_id)
+            );
+            CREATE INDEX idx_counts_slice_year ON institution_year_counts(slice_id, year);
+            CREATE INDEX idx_counts_slice_institution ON institution_year_counts(slice_id, institution_name);
+        """)
+        generated_at = datetime.now(timezone.utc).isoformat()
+        conn.executemany("INSERT INTO trend_meta VALUES (?, ?)", [
+            ("schema_version", str(AFFILIATION_TRENDS_SCHEMA_VERSION)),
+            ("generated_at", generated_at),
+            ("year_floor", str(YEAR_FLOOR)),
+            ("year_ceiling", str(year_ceiling())),
+            ("top_n", str(AFFILIATION_TRENDS_TOP_N)),
+            ("normalization_version", "1"),
+            ("source", "step4_generate_stats"),
+        ])
+        institutions: dict[str, str] = {}
+        for slice_data in slices.values():
+            for name, entry in slice_data["institutions"].items():
+                institutions.setdefault(name, entry["country"])
+        conn.executemany("INSERT INTO institutions VALUES (?, ?)", sorted(institutions.items()))
+        for slice_id, slice_data in slices.items():
+            kind, _, filter_value = slice_id.partition(":")
+            conn.execute("INSERT INTO trend_slices VALUES (?, ?, ?, ?)",
+                         (slice_id, kind, filter_value or None, generated_at))
+            for name, entry in slice_data["institutions"].items():
+                for year, count in entry["by_year"].items():
+                    if count:
+                        conn.execute("INSERT INTO institution_year_counts VALUES (?, ?, ?, ?)",
+                                     (slice_id, name, int(year), count))
+            for year, coverage in slice_data["coverage_by_year"].items():
+                conn.execute("INSERT INTO slice_year_coverage VALUES (?, ?, ?, ?)",
+                             (slice_id, int(year), coverage["covered"], coverage["total"]))
+            for year, conference_ids in slice_data["conferences_by_year"].items():
+                conn.executemany("INSERT INTO slice_year_conferences VALUES (?, ?, ?)",
+                                 [(slice_id, int(year), conf_id) for conf_id in conference_ids])
+        integrity = conn.execute("PRAGMA integrity_check").fetchone()[0]
+        if integrity != "ok":
+            raise RuntimeError(f"SQLite integrity check failed: {integrity}")
+        conn.commit()
+    finally:
+        conn.close()
+    os.replace(temp_db, AFFILIATION_TRENDS_DB)
+
+
+def _write_affiliation_trend_chunks(slices: dict[str, dict]) -> None:
+    """Export Top-N candidates per slice for lazy static-site loading."""
+    if AFFILIATION_TRENDS_DIR.exists():
+        for path in AFFILIATION_TRENDS_DIR.glob("*.json"):
+            path.unlink()
+    AFFILIATION_TRENDS_DIR.mkdir(parents=True, exist_ok=True)
+    generated_at = datetime.now(timezone.utc).isoformat()
+    manifest_slices: dict[str, dict] = {}
+    for slice_id, slice_data in slices.items():
+        totals = sorted(
+            ((name, sum(entry["by_year"].values())) for name, entry in slice_data["institutions"].items()),
+            key=lambda item: (-item[1], item[0]),
+        )
+        candidates = {name for name, _ in totals[:AFFILIATION_TRENDS_TOP_N]}
+        if slice_id == "global":
+            filename = "global.json"
+        else:
+            kind, filter_value = slice_id.split(":", 1)
+            filename = f"{kind}-{filter_value}.json"
+        chunk = {
+            "schema_version": AFFILIATION_TRENDS_SCHEMA_VERSION,
+            "slice_id": slice_id,
+            "candidate_limit": AFFILIATION_TRENDS_TOP_N,
+            "candidate_count": len(candidates),
+            "total_institution_count": len(slice_data["institutions"]),
+            "years": slice_data["years"],
+            "institutions": {name: slice_data["institutions"][name] for name in sorted(candidates)},
+            "total_by_year": slice_data["total_by_year"],
+            "coverage_by_year": slice_data["coverage_by_year"],
+            "conferences_by_year": slice_data["conferences_by_year"],
+        }
+        _write_json(AFFILIATION_TRENDS_DIR / filename, chunk)
+        manifest_slices[slice_id] = {
+            "url": f"affiliation_trends/{filename}",
+            "candidate_count": len(candidates),
+            "total_institution_count": len(slice_data["institutions"]),
+            "years": slice_data["years"],
+        }
+    _write_json(AFFILIATION_TRENDS_DIR / "manifest.json", {
+        "schema_version": AFFILIATION_TRENDS_SCHEMA_VERSION,
+        "generated_at": generated_at,
+        "top_n": AFFILIATION_TRENDS_TOP_N,
+        "slices": manifest_slices,
+    })
 
 
 def generate_affiliation_index():

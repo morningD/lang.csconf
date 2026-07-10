@@ -18,12 +18,14 @@ Usage:
 
 import argparse
 import json
+import os
+import queue
 import re
 import sys
 import threading
 import time
 from collections import Counter
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -284,214 +286,157 @@ def crawl_conference_year_hybrid(conf_id: str, conf_title: str, year: int,
                                   keys: list[str], delay: float = 0.11) -> dict:
     """Crawl one conference-year using hybrid batch+search strategy.
 
-    1. Try batch download via source ID (1 credit/page)
-    2. For unmatched papers, fall back to title.search (10 credits/paper)
+    Final affiliation files are written only when every first-author paper has
+    received a definitive response. A 429 or network interruption therefore
+    returns a partial status instead of creating a result that future
+    incremental runs would silently skip.
     """
     raw_file = AUTHORS_DIR / f"{conf_id}_{year}.json"
     if not raw_file.exists():
-        return {"status": "no_data", "total": 0, "matched": 0, "affil": 0}
+        return {"status": "no_data", "total": 0, "matched": 0, "affil": 0, "errors": 0}
 
     with open(raw_file, encoding="utf-8") as f:
         data = json.load(f)
 
-    papers = {}
-    for a in data.get("authors", []):
-        if a.get("ordinal") == 1:
-            title = a["title"]
-            if title not in papers:
-                papers[title] = {"title": title, "first_author": a["name"]}
-    papers = list(papers.values())
-
+    papers_by_title = {}
+    for author in data.get("authors", []):
+        if author.get("ordinal") == 1:
+            papers_by_title.setdefault(author["title"], {
+                "title": author["title"], "first_author": author["name"],
+            })
+    papers = list(papers_by_title.values())
     if not papers:
-        return {"status": "no_papers", "total": 0, "matched": 0, "affil": 0}
+        return {"status": "no_papers", "total": 0, "matched": 0, "affil": 0, "errors": 0}
 
-    # Test keys, only use live ones
-    live_keys = [k for k in keys if _test_key(k)]
+    live_keys = [key for key in keys if _test_key(key)]
     if not live_keys:
         live_keys = _wait_for_key_reset(keys)
         if not live_keys:
-            return {"status": "no_keys", "total": len(papers), "matched": 0, "affil": 0}
+            return {"status": "no_keys", "total": len(papers), "matched": 0, "affil": 0, "errors": 0}
 
-    n_workers = len(live_keys)
-    sessions = [make_session(k) for k in live_keys]
-    if n_workers < len(keys):
-        log(f"  Using {n_workers}/{len(keys)} keys (others exhausted)")
+    if len(live_keys) < len(keys):
+        log(f"  Using {len(live_keys)}/{len(keys)} keys (others exhausted)")
+    sessions = [make_session(key) for key in live_keys]
+    entries_by_idx: dict[int, dict] = {}
+    unmatched = list(enumerate(papers))
+    source_matches = 0
 
-    matched = 0
-    has_affil = 0
-    errors = 0
-    results: list[dict] = []
-    # Track unmatched paper indices for search fallback
-    unmatched: list[tuple[int, dict]] = []
-
-    # Phase 1: Try batch download via source ID
+    # Phase 1: batch download is only an optimization. Any miss still receives
+    # the definitive title-search treatment below.
     source_id = _discover_source(conf_id, conf_title, year, sessions[0])
     if source_id:
         log(f"  Batch download: source={source_id}")
         batch_works = _batch_download(source_id, year, sessions[0])
         if batch_works:
             log(f"  Downloaded {len(batch_works)} works from source")
-            # Build title→work index for fast matching
-            batch_idx = {}
-            for w in batch_works:
-                wt = _normalize_title(w.get("title", ""))
-                if wt:
-                    batch_idx[wt] = w
-
-            # Match our papers against batch works
-            for i, paper in enumerate(papers):
-                nt = _normalize_title(paper["title"])
-                work = batch_idx.get(nt)
+            batch_index = {
+                _normalize_title(work.get("title", "")): work
+                for work in batch_works if _normalize_title(work.get("title", ""))
+            }
+            unmatched = []
+            for original_idx, paper in enumerate(papers):
+                work = batch_index.get(_normalize_title(paper["title"]))
                 if work:
-                    entry = _process_work(paper["title"], paper["first_author"], work)
-                    results.append(entry)
-                    matched += 1
-                    if entry.get("institution"):
-                        has_affil += 1
+                    entries_by_idx[original_idx] = _process_work(
+                        paper["title"], paper["first_author"], work)
+                    source_matches += 1
                 else:
-                    unmatched.append((i, paper))
-        else:
-            unmatched = list(enumerate(papers))
-    else:
-        unmatched = list(enumerate(papers))
+                    unmatched.append((original_idx, paper))
 
-    if not unmatched:
-        # All papers matched from batch — done!
-        pass
-    else:
-        # Phase 2: Search fallback for unmatched papers
+    search_completed = 0
+    exhausted_workers = 0
+    network_errors = 0
+    if unmatched:
         log(f"  Search fallback: {len(unmatched)} papers")
+        work_queue: queue.Queue[tuple[int, int, dict]] = queue.Queue()
+        for unmatched_idx, (original_idx, paper) in enumerate(unmatched):
+            work_queue.put((unmatched_idx, original_idx, paper))
 
-        # Per-key exhausted tracking
-        local_exhausted: set[int] = set()
-        local_lock = threading.Lock()
-        lock = threading.Lock()
-        progress = [0]
-        search_results: list[tuple[int, dict]] = [None] * len(unmatched)
+        result_lock = threading.Lock()
+        progress_lock = threading.Lock()
+        progress = 0
 
-        def process_paper(idx_in_unmatched: int, orig_idx: int, paper: dict, key_idx: int):
-            nonlocal matched, has_affil, errors
-            title = paper["title"]
-            first_author = paper["first_author"]
-
-            # Find a live key
-            s_idx = key_idx
-            with local_lock:
-                if s_idx in local_exhausted:
-                    for alt in range(n_workers):
-                        if alt not in local_exhausted:
-                            s_idx = alt
-                            break
-                    else:
-                        search_results[idx_in_unmatched] = (orig_idx, {
-                            "title": title, "first_author": first_author,
-                            "matched": False, "institution": None,
-                        })
-                        with lock:
-                            progress[0] += 1
-                        return
-
-            work = _fetch_one(title, year, sessions[s_idx])
-            status = work.get("_status", "no_match") if work else "no_match"
-
-            if status == "429":
-                with local_lock:
-                    local_exhausted.add(s_idx)
-                    all_dead = len(local_exhausted) >= n_workers
-                if all_dead:
-                    log(f"  {conf_id} {year}: all keys exhausted at "
-                        f"{progress[0]}/{len(unmatched)} search")
-                search_results[idx_in_unmatched] = (orig_idx, {
-                    "title": title, "first_author": first_author,
-                    "matched": False, "institution": None,
-                })
-                with lock:
-                    progress[0] += 1
-                    errors += 1
-                return
-
-            if status == "ok":
-                entry = _process_work(title, first_author, work)
-                search_results[idx_in_unmatched] = (orig_idx, entry)
-                with lock:
-                    matched += 1
-                    if entry.get("institution"):
-                        has_affil += 1
-            else:
-                if status == "network_error":
-                    with lock:
-                        errors += 1
-                search_results[idx_in_unmatched] = (orig_idx, {
-                    "title": title, "first_author": first_author,
-                    "matched": False, "institution": None,
-                })
-
-            with lock:
-                progress[0] += 1
-                done = progress[0]
-                if done % 100 == 0 or done == len(unmatched):
-                    pct = 100 * has_affil / (len(results) + done) if (len(results) + done) > 0 else 0
-                    log(f"  {conf_id} {year}: search {done}/{len(unmatched)} "
-                        f"(total affil={has_affil}, {pct:.0f}%)")
-
-        with ThreadPoolExecutor(max_workers=n_workers) as executor:
-            futures = []
-            for ui, (orig_idx, paper) in enumerate(unmatched):
-                key_idx = ui % n_workers
-                futures.append(executor.submit(process_paper, ui, orig_idx, paper, key_idx))
-
-            for f in as_completed(futures):
+        def worker(session) -> str:
+            nonlocal search_completed, network_errors, progress
+            while True:
                 try:
-                    f.result()
-                except Exception as e:
-                    log(f"  Thread error: {e}")
-                    with lock:
-                        errors += 1
+                    _, original_idx, paper = work_queue.get_nowait()
+                except queue.Empty:
+                    return "complete"
 
-        # Merge search results into final results list
-        for item in search_results:
-            if item is not None:
-                results.append(item[1])
+                # The delay is per API key, rather than a global throttle.
+                time.sleep(delay)
+                work = _fetch_one(paper["title"], year, session)
+                status = work.get("_status", "no_match") if work else "no_match"
+                if status == "429":
+                    work_queue.put((0, original_idx, paper))
+                    return "exhausted"
 
-        # Check if all keys exhausted
-        key_exhausted = len(local_exhausted) >= n_workers
-        if key_exhausted:
-            # Fill remaining unmatched
-            pass  # Already filled in process_paper
+                entry = (
+                    _process_work(paper["title"], paper["first_author"], work)
+                    if status == "ok"
+                    else {"title": paper["title"], "first_author": paper["first_author"],
+                          "matched": False, "institution": None}
+                )
+                with result_lock:
+                    entries_by_idx[original_idx] = entry
+                    search_completed += 1
+                    if status == "network_error":
+                        network_errors += 1
+                with progress_lock:
+                    progress += 1
+                    if progress % 100 == 0 or progress == len(unmatched):
+                        matched_now = sum(1 for value in entries_by_idx.values() if value.get("matched"))
+                        affil_now = sum(1 for value in entries_by_idx.values() if value.get("institution"))
+                        log(f"  {conf_id} {year}: search {progress}/{len(unmatched)} "
+                            f"(matched={matched_now}, affil={affil_now})")
 
-    # Sort results by original paper order
-    title_to_idx = {p["title"]: i for i, p in enumerate(papers)}
-    results.sort(key=lambda r: title_to_idx.get(r.get("title", ""), 0))
+        with ThreadPoolExecutor(max_workers=len(sessions)) as executor:
+            statuses = list(executor.map(worker, sessions))
+        exhausted_workers = sum(status == "exhausted" for status in statuses)
 
-    # Check for partial failure
-    none_count = sum(1 for r in results if r.get("matched") is None)
-    key_exhausted_final = matched < len(papers) * 0.5 and errors > len(papers) * 0.1
-    partial = key_exhausted_final
+    unprocessed = len(papers) - len(entries_by_idx)
+    matched = sum(1 for entry in entries_by_idx.values() if entry.get("matched"))
+    has_affil = sum(1 for entry in entries_by_idx.values() if entry.get("institution"))
+    errors = network_errors + exhausted_workers
 
-    # Only save if not a partial failure
-    if not partial:
-        output = {
-            "conference": conf_id,
-            "year": year,
-            "total_papers": len(papers),
-            "total_matched": matched,
-            "total_with_affiliation": has_affil,
-            "coverage_pct": round(100 * has_affil / len(papers), 1) if papers else 0,
-            "source": "openalex",
-            "papers": results,
-        }
-        AFFIL_DIR.mkdir(parents=True, exist_ok=True)
-        out_file = AFFIL_DIR / f"{conf_id}_{year}.json"
-        with open(out_file, "w", encoding="utf-8") as f:
-            json.dump(output, f, indent=2, ensure_ascii=False)
+    if unprocessed:
+        status = "partial_key_exhausted" if exhausted_workers else "partial_incomplete"
+        log(f"  {conf_id} {year}: status={status}, source={source_matches}, "
+            f"search={search_completed}/{len(unmatched)}, exhausted={exhausted_workers}, "
+            f"unprocessed={unprocessed}")
+        return {"status": status, "total": len(papers), "matched": matched,
+                "affil": has_affil, "errors": errors, "unprocessed": unprocessed}
+    if network_errors:
+        status = "partial_network_failure"
+        log(f"  {conf_id} {year}: status={status}, source={source_matches}, "
+            f"search={search_completed}/{len(unmatched)}, network_errors={network_errors}")
+        return {"status": status, "total": len(papers), "matched": matched,
+                "affil": has_affil, "errors": errors, "unprocessed": 0}
 
-    return {
-        "status": "partial" if partial else "ok",
-        "total": len(papers),
-        "matched": matched,
-        "affil": has_affil,
-        "errors": errors,
+    results = [entries_by_idx[index] for index in range(len(papers))]
+    output = {
+        "conference": conf_id,
+        "year": year,
+        "total_papers": len(papers),
+        "total_matched": matched,
+        "total_with_affiliation": has_affil,
+        "coverage_pct": round(100 * has_affil / len(papers), 1),
+        "source": "openalex",
+        "papers": results,
     }
+    AFFIL_DIR.mkdir(parents=True, exist_ok=True)
+    out_file = AFFIL_DIR / f"{conf_id}_{year}.json"
+    tmp_file = out_file.with_suffix(out_file.suffix + ".tmp")
+    with open(tmp_file, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp_file, out_file)
+    log(f"  {conf_id} {year}: status=ok, source={source_matches}, "
+        f"search={search_completed}/{len(unmatched)}, exhausted=0, unprocessed=0")
+    return {"status": "ok", "total": len(papers), "matched": matched,
+            "affil": has_affil, "errors": 0, "unprocessed": 0}
 
 
 def main():
@@ -585,15 +530,17 @@ def main():
             pct = round(100 * result["affil"] / max(result["total"], 1), 1)
             log(f"DONE  {conf_id} {year}: {result['affil']}/{result['total']} "
                 f"({pct}%) in {elapsed:.0f}s, err={result['errors']}")
-        elif result["status"] == "partial":
+        elif result["status"].startswith("partial_"):
             done_papers += result["matched"]
             grand_total += result["total"]
             grand_affil += result["affil"]
             grand_errors += result["errors"]
             pct = round(100 * result["affil"] / max(result["total"], 1), 1)
             log(f"PARTIAL {conf_id} {year}: {result['affil']}/{result['total']} "
-                f"({pct}%) in {elapsed:.0f}s — waiting for key reset...")
-            # Wait for key reset, then retry this batch
+                f"({pct}%) in {elapsed:.0f}s, status={result['status']}, "
+                f"unprocessed={result.get('unprocessed', 0)} — waiting for key reset...")
+            # The crawler never persisted this partial result. Retry only after
+            # at least one API key has recovered.
             live = _wait_for_key_reset(keys)
             if live:
                 keys = load_keys()
@@ -614,7 +561,7 @@ def main():
                 else:
                     log(f"RETRY FAILED {conf_id} {year}: {result2['status']}, will try next run")
             else:
-                log(f"NO KEYS after wait, stopping.")
+                log("NO KEYS after wait, stopping.")
                 break
         else:
             log(f"SKIP  {conf_id} {year}: {result['status']}")

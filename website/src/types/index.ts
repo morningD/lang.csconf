@@ -86,6 +86,28 @@ export interface AffiliationYearData {
   top: AffiliationEntry[]
 }
 
+export interface AffiliationTrendManifestEntry {
+  url: string
+  candidate_count: number
+  total_institution_count: number
+  years: string[]
+}
+
+export interface AffiliationTrendManifest {
+  schema_version: number
+  generated_at: string
+  top_n: number
+  slices: Record<string, AffiliationTrendManifestEntry>
+}
+
+export interface AffiliationTrendChunk extends AffiliationTrendSlice {
+  schema_version: number
+  slice_id: string
+  candidate_limit: number
+  candidate_count: number
+  total_institution_count: number
+}
+
 export interface AffiliationTrends {
   global: AffiliationTrendSlice
   by_category: Record<string, AffiliationTrendSlice>

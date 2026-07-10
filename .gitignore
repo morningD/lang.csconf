@@ -49,6 +49,10 @@ Thumbs.db
 
 # Secrets
 scripts/openalex_keys.txt
+scripts/openalex_keys*.txt
+
+# Regenerable local analysis database
+data/stats/affiliation_trends.sqlite
 
 # Temporary crawl logs
 data/raw/affiliations/_crawl_log.txt
