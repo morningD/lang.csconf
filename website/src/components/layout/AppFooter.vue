@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { subscribeToPageCount } from '@/services/pageCounter'
+import { subscribeToSiteViewCount } from '@/services/pageCounter'
 
 const { t } = useI18n()
-const pageCount = ref<number | null>(null)
-const unsubscribe = subscribeToPageCount((count) => { pageCount.value = count })
+const siteViewCount = ref<number | null>(null)
+const unsubscribe = subscribeToSiteViewCount((count) => { siteViewCount.value = count })
 onUnmounted(unsubscribe)
 </script>
 
@@ -36,7 +36,7 @@ onUnmounted(unsubscribe)
         </a>
         <span class="text-gray-600">|</span>
         <span class="text-gray-500 text-xs">
-          👀 {{ pageCount?.toLocaleString() ?? '-' }} views
+          👀 {{ siteViewCount?.toLocaleString() ?? '-' }} views
         </span>
       </div>
     </div>

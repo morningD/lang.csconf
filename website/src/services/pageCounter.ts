@@ -4,11 +4,11 @@ const COUNTER_URL = 'https://page-counter.duanmoming.workers.dev/v1/pageviews'
 const SITE = 'lang-csconf'
 
 let lastTrackedPath: string | null = null
-let currentCount: number | null = null
+let siteViewCount: number | null = null
 const listeners = new Set<(count: number | null) => void>()
 
 function notify() {
-  for (const listener of listeners) listener(currentCount)
+  for (const listener of listeners) listener(siteViewCount)
 }
 
 function deploymentPath(routePath: string) {
@@ -30,7 +30,7 @@ async function track(path: string) {
     if (!response.ok) return
     const data = await response.json() as { count?: unknown }
     if (typeof data.count === 'number') {
-      currentCount = data.count
+      siteViewCount = data.count
       notify()
     }
   } catch {
@@ -45,8 +45,8 @@ export function installPageCounter(router: Router) {
   router.isReady().then(() => void track(deploymentPath(router.currentRoute.value.path)))
 }
 
-export function subscribeToPageCount(listener: (count: number | null) => void) {
+export function subscribeToSiteViewCount(listener: (count: number | null) => void) {
   listeners.add(listener)
-  listener(currentCount)
+  listener(siteViewCount)
   return () => listeners.delete(listener)
 }
