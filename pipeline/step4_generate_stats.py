@@ -1064,7 +1064,7 @@ def run(force: bool = False):
     index.sort(key=lambda c: (-c["total_papers"],))
     _write_json(STATS_DIR / "conferences_index.json", index)
 
-    # 7. affiliation_trends.json — institution trends for the Trends page
+    # 7. affiliation trend SQLite archive and lazy-loaded web chunks
     generate_affiliation_trends(all_affiliations, conf_meta)
 
     # 8. affiliation_index.json — lightweight index for Compare page
@@ -1077,11 +1077,7 @@ def generate_affiliation_trends(
     all_affiliations: dict[str, dict[int, dict]],
     conf_meta_map: dict[str, dict],
 ) -> None:
-    """Generate full SQLite trend data plus lightweight Top-N web chunks.
-
-    ``affiliation_trends.json`` remains temporarily for backward-compatible
-    deployments; the website can progressively switch to the chunks below.
-    """
+    """Generate complete SQLite trend data plus lightweight Top-N web chunks."""
     global_inst: dict[int, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     cat_inst: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     rank_inst: dict[str, dict[int, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
@@ -1164,18 +1160,6 @@ def generate_affiliation_trends(
     _write_affiliation_trends_sqlite(slices)
     _write_affiliation_trend_chunks(slices)
 
-    # Transitional legacy output. This is removed only after the website has
-    # been deployed with manifest/chunk support for a full cache window.
-    legacy: dict[str, dict] = {}
-    if "global" in slices:
-        legacy["global"] = slices["global"]
-    categories = {key.split(":", 1)[1]: value for key, value in slices.items() if key.startswith("category:")}
-    if categories:
-        legacy["by_category"] = categories
-    ranks = {key.split(":", 1)[1]: value for key, value in slices.items() if key.startswith("rank:")}
-    if ranks:
-        legacy["by_rank"] = ranks
-    _write_json(STATS_DIR / "affiliation_trends.json", legacy)
     print(f"Affiliation trends: {len(global_slice['institutions']) if global_slice else 0} institutions across "
           f"{len(global_slice['years']) if global_slice else 0} years; {len(slices)} web chunks")
 

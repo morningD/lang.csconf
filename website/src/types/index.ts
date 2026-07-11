@@ -108,11 +108,6 @@ export interface AffiliationTrendChunk extends AffiliationTrendSlice {
   total_institution_count: number
 }
 
-export interface AffiliationTrends {
-  global: AffiliationTrendSlice
-  by_category: Record<string, AffiliationTrendSlice>
-  by_rank: Record<string, AffiliationTrendSlice>
-}
 
 export interface AffiliationTrendSlice {
   years: string[]
