@@ -114,6 +114,18 @@ python3 scripts/audit_affiliation_coverage.py
 
 The command is read-only with respect to crawled input: it reads CCF-B conference metadata, raw author files, and existing affiliation files, then deterministically writes `data/stats/affiliation_coverage_audit.json`. It makes no network requests, consumes no OpenAlex key, and never overwrites affiliation data. The report separates OpenAlex title-match gaps from matched-but-missing institution metadata, keeps non-OpenAlex sources out of OpenAlex attribution, and lists data-integrity exceptions. DBLP conference-metadata entries that have no corresponding affiliation record are excluded from the audit denominator and counted in `summary.excluded_conference_metadata`.
 
+For an `openalex_match_gap`, first create a guarded, offline retry manifest rather than running a broad re-crawl:
+
+```bash
+python3 scripts/openalex_batch_crawl.py \
+  --audit-report data/stats/affiliation_coverage_audit.json \
+  --targets-file data/stats/affiliation_retry_plans/pilot_targets.json \
+  --dry-run \
+  --plan-output data/stats/affiliation_retry_plans/pilot_plan.json
+```
+
+The dry-run reads no API keys, makes no network request, and only accepts existing `source: "openalex"` files whose raw-paper total and matched count still agree with the audit snapshot. It rejects non-OpenAlex sources and audit drift. `openalex_metadata_gap` is not a title-retry candidate. A reviewed manifest is still **not** permission to overwrite data: each `--force --retry-unmatched-only` batch needs explicit approval, must preserve earlier matches, and is promoted only when matched and institution counts do not decline and at least one count improves.
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -205,6 +217,18 @@ python3 scripts/audit_affiliation_coverage.py
 ```
 
 该命令对已爬取输入保持只读：读取 CCF-B 会议元数据、原始作者文件和现有 affiliation 文件，然后以确定性方式写入 `data/stats/affiliation_coverage_audit.json`。它不发起网络请求、不消耗 OpenAlex key，也不会覆盖 affiliation 数据。报告会区分 OpenAlex 标题未匹配与已匹配但机构元数据缺失；非 OpenAlex 来源不会被归因给 OpenAlex；数据完整性例外会单独列出。若 DBLP 收录了但 affiliation 文件中没有对应记录的会议元数据条目，审计会将其排除在分母外，并计入 `summary.excluded_conference_metadata`。
+
+对于 `openalex_match_gap`，必须先生成受保护的离线重试 manifest，不能直接进行宽范围重爬：
+
+```bash
+python3 scripts/openalex_batch_crawl.py \
+  --audit-report data/stats/affiliation_coverage_audit.json \
+  --targets-file data/stats/affiliation_retry_plans/pilot_targets.json \
+  --dry-run \
+  --plan-output data/stats/affiliation_retry_plans/pilot_plan.json
+```
+
+该 dry-run 不读取 API key、不发起网络请求；仅接受当前仍为 `source: "openalex"`、且 raw 论文数与 matched 数仍和审计快照一致的文件。非 OpenAlex 来源和审计漂移都会被拒绝。`openalex_metadata_gap` 不属于标题重试候选。即使 manifest 已审阅，也不构成覆盖授权：每个 `--force --retry-unmatched-only` 批次必须单独获得明确确认；批次须保留旧匹配项，且仅当 matched 和机构计数都不下降、至少一项提升时才可替换。
 
 ## 免责声明
 

@@ -17,6 +17,7 @@ Usage:
 """
 
 import argparse
+import hashlib
 import json
 import os
 import queue
@@ -184,13 +185,22 @@ def _batch_download(source_id: str, year: int, session) -> list[dict]:
 # Individual paper search (10 credits each)
 # ---------------------------------------------------------------------------
 
+def _title_filter(title: str) -> str:
+    """Build an OpenAlex title filter that safely preserves literal punctuation."""
+    field = "title.search.exact" if "?" in title or "*" in title else "title.search"
+    value = title.replace('"', r'\"')
+    if "," in value or field.endswith(".exact"):
+        value = f'"{value}"'
+    return f"{field}:{value}"
+
+
 def _fetch_one(title: str, year: int, session) -> dict | None:
     """Fetch a single work from OpenAlex. Returns work dict, None (no match), or status dict."""
     import requests
 
     try:
         r = session.get("https://api.openalex.org/works", params={
-            "filter": f"title.search:{title[:200]},publication_year:{year}",
+            "filter": f"{_title_filter(title[:200])},publication_year:{year}",
             "select": "id,doi,title,authorships",
             "per_page": 10,
             "sort": "relevance_score:desc",
@@ -202,9 +212,15 @@ def _fetch_one(title: str, year: int, session) -> dict | None:
         results = r.json().get("results", [])
         if not results:
             return None
-        proceedings = [w for w in results
-                       if w.get("doi") and "arxiv" not in (w.get("doi") or "")]
-        work = (proceedings[0] if proceedings else results[0])
+        proceedings = [
+            work for work in results
+            if work.get("doi") and "arxiv" not in (work.get("doi") or "")
+            and _is_strict_title_match(title, work)
+        ]
+        exact = [work for work in results if _is_strict_title_match(title, work)]
+        work = (proceedings[0] if proceedings else exact[0] if exact else None)
+        if work is None:
+            return None
         work["_status"] = "ok"
         return work
 
@@ -256,6 +272,136 @@ def _normalize_title(title: str) -> str:
     return t
 
 
+def _is_strict_title_match(title: str, work: dict) -> bool:
+    """Accept a searched work only when its normalized title exactly matches."""
+    work_title = work.get("title")
+    return isinstance(work_title, str) and _normalize_title(title) == _normalize_title(work_title)
+
+
+def _first_author_papers(raw_path: Path) -> list[dict]:
+    payload = json.loads(raw_path.read_text(encoding="utf-8"))
+    papers: dict[str, dict] = {}
+    for author in payload.get("authors", []):
+        if author.get("ordinal") == 1:
+            papers.setdefault(author["title"], {
+                "title": author["title"], "first_author": author["name"],
+            })
+    return list(papers.values())
+
+
+def build_audit_retry_plan(
+    audit_path: Path, authors_dir: Path, affiliations_dir: Path
+) -> dict[str, list[dict]]:
+    """Validate audit candidates against current local files without network access."""
+    audit = json.loads(audit_path.read_text(encoding="utf-8"))
+    accepted: list[dict] = []
+    rejected: list[dict] = []
+    for candidate in audit.get("openalex_match_gap_candidates", []):
+        conf_id = candidate.get("conference")
+        year = candidate.get("year")
+        identity = {"conference": conf_id, "year": year}
+        if not isinstance(conf_id, str) or not isinstance(year, int):
+            rejected.append({**identity, "reason": "invalid_candidate"})
+            continue
+        raw_path = authors_dir / f"{conf_id}_{year}.json"
+        affiliation_path = affiliations_dir / f"{conf_id}_{year}.json"
+        if not raw_path.exists():
+            rejected.append({**identity, "reason": "missing_raw_file"})
+            continue
+        if not affiliation_path.exists():
+            rejected.append({**identity, "reason": "missing_affiliation_file"})
+            continue
+        try:
+            existing = json.loads(affiliation_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            rejected.append({**identity, "reason": "invalid_affiliation_json"})
+            continue
+        source = existing.get("source") if isinstance(existing, dict) else None
+        if source != "openalex":
+            rejected.append({**identity, "reason": f"source_guard:{source or 'unknown'}"})
+            continue
+        papers = _first_author_papers(raw_path)
+        existing_papers = existing.get("papers")
+        actual_matched = sum(
+            bool(paper.get("matched")) for paper in existing_papers
+        ) if isinstance(existing_papers, list) else -1
+        if len(papers) != candidate.get("total"):
+            rejected.append({**identity, "reason": "audit_drift:raw_total"})
+            continue
+        if actual_matched != candidate.get("matched"):
+            rejected.append({**identity, "reason": "audit_drift:matched"})
+            continue
+        accepted.append({
+            key: candidate[key]
+            for key in (
+                "conference", "year", "total", "matched", "with_institution",
+                "unmatched", "coverage_pct", "coverage_band", "priority_rank",
+            )
+        })
+    return {"accepted": accepted, "rejected": rejected}
+
+
+def _file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def promote_retry_result(path: Path, expected_hash: str, result: dict) -> bool:
+    """Atomically promote only an improved result against an unchanged OpenAlex file."""
+    if not result.get("improved") or not path.exists() or _file_sha256(path) != expected_hash:
+        return False
+    try:
+        current = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return False
+    if current.get("source") != "openalex":
+        return False
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    with open(temporary, "w", encoding="utf-8") as handle:
+        json.dump(result["payload"], handle, indent=2, ensure_ascii=False)
+        handle.flush()
+        os.fsync(handle.fileno())
+    os.replace(temporary, path)
+    return True
+
+
+def merge_retry_results(
+    existing: dict, raw_papers: list[dict], retried: dict[str, dict]
+) -> dict:
+    """Merge new unmatched-only entries and accept only a strict improvement."""
+    old_by_title = {
+        paper.get("title"): paper
+        for paper in existing.get("papers", [])
+        if isinstance(paper, dict) and isinstance(paper.get("title"), str)
+    }
+    merged = []
+    for paper in raw_papers:
+        old = old_by_title.get(paper["title"])
+        merged.append(old if old and old.get("matched") else retried.get(paper["title"], old or {
+            **paper, "matched": False, "institution": None,
+        }))
+    old_matched = sum(bool(paper.get("matched")) for paper in old_by_title.values())
+    old_affil = sum(bool(paper.get("institution")) for paper in old_by_title.values())
+    new_matched = sum(bool(paper.get("matched")) for paper in merged)
+    new_affil = sum(bool(paper.get("institution")) for paper in merged)
+    improved = (
+        new_matched >= old_matched
+        and new_affil >= old_affil
+        and (new_matched > old_matched or new_affil > old_affil)
+    )
+    payload = {
+        "conference": existing.get("conference"),
+        "year": existing.get("year"),
+        "total_papers": len(raw_papers),
+        "total_matched": new_matched,
+        "total_with_affiliation": new_affil,
+        "coverage_pct": round(100 * new_affil / len(raw_papers), 1) if raw_papers else 0,
+        "source": "openalex",
+        "papers": merged,
+    }
+    return {"payload": payload, "improved": improved}
+
+
+
 # ---------------------------------------------------------------------------
 # Main crawl logic
 # ---------------------------------------------------------------------------
@@ -280,6 +426,74 @@ def _process_work(title: str, first_author: str, work: dict) -> dict:
     else:
         entry["institution"] = None
     return entry
+
+
+def _retry_unmatched_only(
+    conf_id: str, conf_title: str, year: int, keys: list[str], delay: float
+) -> dict:
+    """Retry only unmatched entries and promote an OpenAlex file on improvement."""
+    path = AFFIL_DIR / f"{conf_id}_{year}.json"
+    if not path.exists():
+        return {"status": "rejected", "reason": "missing_affiliation_file"}
+    expected_hash = _file_sha256(path)
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"status": "rejected", "reason": "invalid_affiliation_json"}
+    if existing.get("source") != "openalex":
+        return {"status": "rejected", "reason": "source_guard"}
+
+    raw_path = AUTHORS_DIR / f"{conf_id}_{year}.json"
+    raw_papers = _first_author_papers(raw_path)
+    old_papers = existing.get("papers")
+    if not isinstance(old_papers, list):
+        return {"status": "rejected", "reason": "papers_not_list"}
+    old_matched = sum(bool(item.get("matched")) for item in old_papers if isinstance(item, dict))
+    if len(raw_papers) != existing.get("total_papers") or old_matched != existing.get("total_matched"):
+        return {"status": "rejected", "reason": "current_file_integrity"}
+
+    by_title = {item.get("title"): item for item in old_papers if isinstance(item, dict)}
+    pending = [paper for paper in raw_papers if not by_title.get(paper["title"], {}).get("matched")]
+    live_keys = [key for key in keys if _test_key(key)]
+    if not live_keys:
+        return {"status": "rejected", "reason": "no_live_keys"}
+    session = make_session(live_keys[0])
+    retried: dict[str, dict] = {}
+
+    source_id = _discover_source(conf_id, conf_title, year, session)
+    if source_id:
+        batch_works = _batch_download(source_id, year, session)
+        batch_index = {
+            _normalize_title(work.get("title", "")): work
+            for work in batch_works if _normalize_title(work.get("title", ""))
+        }
+        for paper in pending:
+            work = batch_index.get(_normalize_title(paper["title"]))
+            if work and _is_strict_title_match(paper["title"], work):
+                retried[paper["title"]] = _process_work(paper["title"], paper["first_author"], work)
+
+    for paper in pending:
+        if paper["title"] in retried:
+            continue
+        time.sleep(delay)
+        work = _fetch_one(paper["title"], year, session)
+        status = work.get("_status") if work else "no_match"
+        if status in {"429", "network_error", "error"}:
+            return {"status": "rejected", "reason": f"retry_{status}"}
+        if status == "ok":
+            retried[paper["title"]] = _process_work(paper["title"], paper["first_author"], work)
+
+    result = merge_retry_results(existing, raw_papers, retried)
+    if not result["improved"]:
+        return {"status": "unchanged", "reason": "quality_gate_no_improvement"}
+    if not promote_retry_result(path, expected_hash, result):
+        return {"status": "rejected", "reason": "promotion_guard"}
+    return {
+        "status": "promoted",
+        "matched": result["payload"]["total_matched"],
+        "affil": result["payload"]["total_with_affiliation"],
+        "total": result["payload"]["total_papers"],
+    }
 
 
 def crawl_conference_year_hybrid(conf_id: str, conf_title: str, year: int,
@@ -447,9 +661,87 @@ def main():
                         help="Year range (default: 2023 2024 2025)")
     parser.add_argument("--force", action="store_true",
                         help="Re-crawl even if affiliation file exists")
+    parser.add_argument("--audit-report", type=Path,
+                        help="Offline audit JSON containing safe match-gap candidates")
+    parser.add_argument("--targets-file", type=Path,
+                        help="JSON array of exact {conference, year} targets")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Print the guarded audit retry plan without keys, network, or writes")
+    parser.add_argument("--plan-output", type=Path,
+                        help="Write a dry-run retry manifest JSON; requires --dry-run")
+    parser.add_argument("--limit-batches", type=int,
+                        help="Limit planned audit retry conference-years")
+    parser.add_argument("--limit-papers", type=int,
+                        help="Limit planned audit retry papers")
+    parser.add_argument("--retry-unmatched-only", action="store_true",
+                        help="Retry only unmatched papers in an existing OpenAlex file (requires --force)")
     parser.add_argument("--delay", type=float, default=0.11,
                         help="Seconds between API calls per thread (default: 0.11)")
     args = parser.parse_args()
+
+    if args.retry_unmatched_only and not args.force:
+        parser.error("--retry-unmatched-only requires --force")
+    if args.targets_file and not args.audit_report:
+        parser.error("--targets-file requires --audit-report")
+    if args.plan_output and not args.dry_run:
+        parser.error("--plan-output requires --dry-run")
+    if args.audit_report:
+        plan = build_audit_retry_plan(args.audit_report, AUTHORS_DIR, AFFIL_DIR)
+        accepted = plan["accepted"]
+        if args.targets_file:
+            targets = json.loads(args.targets_file.read_text(encoding="utf-8"))
+            requested = {
+                (item.get("conference"), item.get("year"))
+                for item in targets if isinstance(item, dict)
+            }
+            accepted = [
+                item for item in accepted
+                if (item["conference"], item["year"]) in requested
+            ]
+        if args.limit_batches is not None:
+            accepted = accepted[:args.limit_batches]
+        if args.limit_papers is not None:
+            limited = []
+            papers = 0
+            for item in accepted:
+                if limited and papers + item["unmatched"] > args.limit_papers:
+                    break
+                limited.append(item)
+                papers += item["unmatched"]
+            accepted = limited
+        plan["accepted"] = accepted
+        if args.dry_run:
+            estimated_credits = sum(item["unmatched"] * 10 for item in accepted)
+            manifest = {
+                "accepted": accepted,
+                "rejected": plan["rejected"],
+                "estimated_search_papers": sum(item["unmatched"] for item in accepted),
+                "estimated_credits_upper_bound": estimated_credits,
+            }
+            if args.plan_output:
+                args.plan_output.parent.mkdir(parents=True, exist_ok=True)
+                args.plan_output.write_text(
+                    json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8",
+                )
+            print(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True))
+            return
+        if not (args.force and args.retry_unmatched_only):
+            parser.error(
+                "audit retry plans are read-only; execution requires "
+                "--force --retry-unmatched-only after explicit approval"
+            )
+        with open(CONFERENCES_FILE, encoding="utf-8") as f:
+            all_confs = json.load(f)
+        titles = {item["id"]: item.get("title", item["id"]) for item in all_confs}
+        keys = load_keys()
+        for item in accepted:
+            result = _retry_unmatched_only(
+                item["conference"], titles.get(item["conference"], item["conference"]),
+                item["year"], keys, args.delay,
+            )
+            log(f"RETRY {item['conference']} {item['year']}: {result}")
+        return
 
     with open(CONFERENCES_FILE, encoding="utf-8") as f:
         all_confs = json.load(f)

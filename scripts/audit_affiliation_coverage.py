@@ -177,6 +177,43 @@ def _source_summary(records: list[dict[str, Any]]) -> dict[str, dict[str, int]]:
     return {source: summary[source] for source in sorted(summary)}
 
 
+def _openalex_retry_lists(
+    records: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    candidates = []
+    skips = []
+    for record in records:
+        identity = {"conference": record["conference"], "year": record["year"]}
+        if record["source"] != "openalex":
+            skips.append({**identity, "reason": f"non_openalex_source:{record['source']}"})
+        elif record["integrity_issues"]:
+            skips.append({**identity, "reason": "integrity_issues"})
+        elif record["coverage_band"] not in {"zero", "under_10", "10_to_50"}:
+            skips.append({**identity, "reason": f"coverage_band:{record['coverage_band']}"})
+        elif record["diagnosis"] == "openalex_metadata_gap":
+            skips.append({**identity, "reason": "openalex_metadata_gap"})
+        elif record["diagnosis"] != "openalex_match_gap":
+            skips.append({**identity, "reason": record["diagnosis"]})
+        else:
+            candidates.append({
+                **identity,
+                "total": record["total"],
+                "matched": record["matched"],
+                "with_institution": record["with_institution"],
+                "unmatched": record["total"] - record["matched"],
+                "coverage_pct": record["coverage_pct"],
+                "coverage_band": record["coverage_band"],
+            })
+    band_rank = {"zero": 0, "under_10": 1, "10_to_50": 2, "50_or_more": 3}
+    candidates.sort(key=lambda item: (
+        band_rank[item["coverage_band"]], -item["unmatched"], item["conference"], item["year"]
+    ))
+    for rank, candidate in enumerate(candidates, start=1):
+        candidate["priority_rank"] = rank
+    skips.sort(key=lambda item: (item["conference"], item["year"], item["reason"]))
+    return candidates, skips
+
+
 def audit_affiliation_data(
     conferences: list[dict[str, Any]],
     authors_dir: Path,
@@ -250,6 +287,7 @@ def audit_affiliation_data(
     }
     priority["zero"].extend(missing)
     priority["zero"].sort(key=lambda item: (item["conference"], item["year"]))
+    openalex_candidates, openalex_retry_skips = _openalex_retry_lists(records)
     return {
         "scope": {"rank": "B", "year_floor": year_floor, "year_ceiling": year_ceiling},
         "summary": {
@@ -264,6 +302,8 @@ def audit_affiliation_data(
         "by_source": _source_summary(records),
         "records": records,
         "priority": priority,
+        "openalex_match_gap_candidates": openalex_candidates,
+        "openalex_retry_skips": openalex_retry_skips,
         "integrity_issues": integrity_issues,
     }
 

@@ -580,6 +580,10 @@
     "status": "ok",
     "note": "Spike: 522 vs max 233. Investigated 2026-03-12: real growth. Chinese CV conference (Springer LNCS), sustained trend: 158→201→233→522→579→691."
   },
+  "ECSCW_2023": {
+    "status": "ok",
+    "note": "Affiliation retry pilot 2026-07-11: strict OpenAlex title retry added one first-author institution (3/16 → 4/16, 18.8% → 25.0%). New match: Designing with Awareness* Building an Agenda for Worker- and Patient Well-being. (DOI 10.48340/ecscw2023_ep10). Other five pilot conference-years had no quality-gated improvement and were left unchanged."
+  },
   "UAI_2024": {
     "status": "ok",
     "note": "DBLP includes one conference-metadata record (title begins 'Uncertainty in Artificial Intelligence...') alongside 200 paper records. OpenReview affiliation data correctly contains the 200 papers only; the offline affiliation audit excludes this unmatched metadata entry from its denominator."

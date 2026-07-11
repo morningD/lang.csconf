@@ -567,6 +567,16 @@
       "accepted": 50
     }
   ],
+  "year_notes": {
+    "2024": {
+      "status": "ok",
+      "note": "DBLP includes one conference-metadata record (title begins 'Uncertainty in Artificial Intelligence...') alongside 200 paper records. OpenReview affiliation data correctly contains the 200 papers only; the offline affiliation audit excludes this unmatched metadata entry from its denominator."
+    },
+    "2025": {
+      "status": "ok",
+      "note": "DBLP includes one conference-metadata record (title begins 'Conference on Uncertainty in Artificial Intelligence...') alongside 229 paper records. OpenReview affiliation data correctly contains the 229 papers only; the offline affiliation audit excludes this unmatched metadata entry from its denominator."
+    }
+  },
   "affiliations": {
     "total_covered": 1483,
     "total_papers": 2212,

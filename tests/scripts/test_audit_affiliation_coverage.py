@@ -215,3 +215,61 @@ class AuditAffiliationCoverageTests(unittest.TestCase):
         self.assertEqual(record["excluded_conference_metadata"], 0)
         self.assertEqual(record["integrity_issues"], [])
         self.assertEqual(report["summary"]["excluded_conference_metadata"], 0)
+
+    def test_audit_exposes_only_safe_openalex_match_gap_candidates(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            authors_dir = root / "authors"
+            affiliations_dir = root / "affiliations"
+            conferences = [
+                {"id": "MATCH", "rank": "B"},
+                {"id": "META", "rank": "B"},
+                {"id": "OTHER", "rank": "B"},
+            ]
+            for conf_id in ("MATCH", "META", "OTHER"):
+                write_json(authors_dir / f"{conf_id}_2024.json", {
+                    "authors": [
+                        {"title": "One", "ordinal": 1},
+                        {"title": "Two", "ordinal": 1},
+                        {"title": "Three", "ordinal": 1},
+                    ],
+                })
+            write_json(affiliations_dir / "MATCH_2024.json", {
+                "source": "openalex", "total_papers": 3,
+                "total_matched": 1, "total_with_affiliation": 1,
+                "papers": [
+                    {"title": "One", "matched": True, "institution": "University"},
+                    {"title": "Two", "matched": False, "institution": None},
+                    {"title": "Three", "matched": False, "institution": None},
+                ],
+            })
+            write_json(affiliations_dir / "META_2024.json", {
+                "source": "openalex", "total_papers": 3,
+                "total_matched": 2, "total_with_affiliation": 1,
+                "papers": [
+                    {"title": "One", "matched": True, "institution": "University"},
+                    {"title": "Two", "matched": True, "institution": None},
+                    {"title": "Three", "matched": False, "institution": None},
+                ],
+            })
+            write_json(affiliations_dir / "OTHER_2024.json", {
+                "source": "papercopilot", "total_papers": 2,
+                "papers": [
+                    {"title": "One", "matched": False, "institution": None},
+                    {"title": "Two", "matched": False, "institution": None},
+                ],
+            })
+
+            report = audit.audit_affiliation_data(
+                conferences, authors_dir, affiliations_dir
+            )
+
+        self.assertEqual(report["openalex_match_gap_candidates"], [{
+            "conference": "MATCH", "year": 2024, "total": 3, "matched": 1,
+            "with_institution": 1, "unmatched": 2, "coverage_pct": 33.3,
+            "coverage_band": "10_to_50", "priority_rank": 1,
+        }])
+        self.assertEqual(report["openalex_retry_skips"], [
+            {"conference": "META", "year": 2024, "reason": "openalex_metadata_gap"},
+            {"conference": "OTHER", "year": 2024, "reason": "non_openalex_source:papercopilot"},
+        ])
