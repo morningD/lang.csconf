@@ -34,6 +34,7 @@ use([
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
+import { installPageCounter } from './services/pageCounter'
 
 const app = createApp(App)
 const head = createHead()
@@ -42,5 +43,6 @@ app.component('v-chart', ECharts)
 app.use(head)
 app.use(router)
 app.use(i18n)
+installPageCounter(router)
 
 app.mount('#app')

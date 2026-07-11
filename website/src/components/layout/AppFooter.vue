@@ -1,7 +1,12 @@
 <script setup lang="ts">
+import { onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { subscribeToPageCount } from '@/services/pageCounter'
 
 const { t } = useI18n()
+const pageCount = ref<number | null>(null)
+const unsubscribe = subscribeToPageCount((count) => { pageCount.value = count })
+onUnmounted(unsubscribe)
 </script>
 
 <template>
@@ -31,7 +36,7 @@ const { t } = useI18n()
         </a>
         <span class="text-gray-600">|</span>
         <span class="text-gray-500 text-xs">
-          👀 <span id="busuanzi_value_page_pv">-</span> views
+          👀 {{ pageCount?.toLocaleString() ?? '-' }} views
         </span>
       </div>
     </div>
