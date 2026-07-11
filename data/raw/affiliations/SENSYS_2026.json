@@ -1,0 +1,963 @@
+{
+  "conference": "SENSYS",
+  "year": 2026,
+  "total_papers": 99,
+  "total_matched": 90,
+  "total_with_affiliation": 89,
+  "coverage_pct": 89.9,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "μMan: Towards Device-Agnostic Power Management for Battery-free IoT.",
+      "first_author": "Chong Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Med2ECG: Medical-Guided BCG-To-ECG Reconstruction for Diverse Populations.",
+      "first_author": "Lin Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160631935",
+      "doi": "https://doi.org/10.1145/3774906.3800463",
+      "institution": "HKUST (GZ), Guangzhou, China",
+      "institution_country": null,
+      "raw_affiliation": "HKUST (GZ), Guangzhou, China"
+    },
+    {
+      "title": "Cheetah: A New Paradigm for Battery-free Wearable Devices.",
+      "first_author": "Vivian Dsouza",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160651494",
+      "doi": "https://doi.org/10.1145/3774906.3802775",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "mTrack: Enabling Long-Term Mouse Social Behavior Analysis through RFID-Vision Hybrid Tracking.",
+      "first_author": "Xingyuming Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160641876",
+      "doi": "https://doi.org/10.1145/3774906.3800473",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Millimeter-Scale Absolute Carrier Phase-Based Localization in Multi-Band Systems.",
+      "first_author": "Andrea Bedin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416278300",
+      "doi": "https://doi.org/10.1145/3774906.3800494",
+      "institution": "IMDEA Networks",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/04mm9fg30"
+    },
+    {
+      "title": "R2DShield: Robust Object Detection in Real-Time via Bayesian Input Shielding.",
+      "first_author": "Shuo Huai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Efficient Context Management System for On-Device LLMaaS.",
+      "first_author": "Wangsong Yin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160601778",
+      "doi": "https://doi.org/10.1145/3774906.3800479",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Characterizing Security and Privacy Risks in Smart Home IoT Device Access Sharing.",
+      "first_author": "Yinxin Wan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160659090",
+      "doi": "https://doi.org/10.1145/3774906.3802795",
+      "institution": "University of Massachusetts Boston",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04ydmy275"
+    },
+    {
+      "title": "WildFiT: Autonomous In-Situ Model Adaptation for Resource-Constrained IoT Systems.",
+      "first_author": "Mohammad Mehdi Rastikerdar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160660906",
+      "doi": "https://doi.org/10.1145/3774906.3800481",
+      "institution": "University of Massachusetts Amherst",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0072zz521"
+    },
+    {
+      "title": "EMPalm: Exfiltrating Palm Biometric Data via Electromagnetic Side-Channel.",
+      "first_author": "Haowen Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416395077",
+      "doi": "https://doi.org/10.1145/3774906.3802764",
+      "institution": "Worcester Polytechnic Institute",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05ejpqr48"
+    },
+    {
+      "title": "LuxTag: Ambient Light Sensing and Localization via Passive RFID.",
+      "first_author": "Xingyu Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160643161",
+      "doi": "https://doi.org/10.1145/3774906.3802778",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "NutriEar: Robust Nutrition-Aware Food Classification from In-Ear Acoustic Signals.",
+      "first_author": "Zoey Xiaochen Tan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7148899211",
+      "doi": "https://doi.org/10.17863/cam.128319",
+      "institution": null
+    },
+    {
+      "title": "SingSprite: Non-Tactile Appliance Interaction for the Blind through Power-Supply Acoustic Signatures.",
+      "first_author": "Lanqing Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160664660",
+      "doi": "https://doi.org/10.1145/3774906.3800505",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Short Paper: Towards Real-Time ECG and EMG Modeling on μNPUs.",
+      "first_author": "Josh Millar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160658498",
+      "doi": "https://doi.org/10.1145/3774906.3802787",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "Sense with Polyface Mirror: Enhancing Wi-Fi Sensing Diversity via Programmable Metasurfaces.",
+      "first_author": "Long Fan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160607124",
+      "doi": "https://doi.org/10.1145/3774906.3800469",
+      "institution": "Nanjing University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01rxvg760"
+    },
+    {
+      "title": "UWB-Based Localization of Smartphones inside a Vehicle to Prevent Distracted Driving.",
+      "first_author": "Kailai Cui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160634626",
+      "doi": "https://doi.org/10.1145/3774906.3800472",
+      "institution": "University of Michigan",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00jmfr291"
+    },
+    {
+      "title": "Towards Practical Bi-Static Polarimetric Imaging Using Commodity mmWave Radars for Material Sensing.",
+      "first_author": "Xinghua Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160597327",
+      "doi": "https://doi.org/10.1145/3774906.3800470",
+      "institution": "University of Washington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00cvxb145"
+    },
+    {
+      "title": "LLMSEG: Semantic Segmentation and Few-Shot Recognition of Human Activity Recognition Data Using Large Language Models.",
+      "first_author": "Jiashu Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160633882",
+      "doi": "https://doi.org/10.1145/3774906.3802768",
+      "institution": "University of Helsinki",
+      "institution_country": "FI",
+      "institution_ror": "https://ror.org/040af2s02"
+    },
+    {
+      "title": "SynchroNB: Toward Robust Timing for 5G NB-IoT Networks.",
+      "first_author": "Muhammad Abdullah Soomro",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160605937",
+      "doi": "https://doi.org/10.1145/3774906.3800502",
+      "institution": "Amherst College",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/028vqfs63"
+    },
+    {
+      "title": "Piezo-Ultrasonic Backscatter: Low-Power High Throughput Underwater Networking.",
+      "first_author": "Purui Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160634366",
+      "doi": "https://doi.org/10.1145/3774906.3802754",
+      "institution": "IIT@MIT",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01wp8zh54"
+    },
+    {
+      "title": "Motion Capture with Millimeter-Wave Tags.",
+      "first_author": "Xin Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160597628",
+      "doi": "https://doi.org/10.1145/3774906.3800488",
+      "institution": "University of Pennsylvania",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00b30xv10"
+    },
+    {
+      "title": "OmniPC: A Generalizable Point Cloud Generation Pipeline for mmWave Radar.",
+      "first_author": "Hongliu Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160613095",
+      "doi": "https://doi.org/10.1145/3774906.3802797",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "Short Paper: Simulation-Based Performance Characterization of Common NOR Flash File Systems.",
+      "first_author": "Yannick Loeck",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160597909",
+      "doi": "https://doi.org/10.1145/3774906.3802793",
+      "institution": "Universität Hamburg",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00g30e956"
+    },
+    {
+      "title": "Resolving Energy Storage for Intermittent Inference.",
+      "first_author": "Rei Barjami",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160592980",
+      "doi": "https://doi.org/10.1145/3774906.3800500",
+      "institution": "Politecnico di Milano",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/01nffqt88"
+    },
+    {
+      "title": "Exploring LEO Satellite Networks for Continuous Monitoring and Dynamic Tracking.",
+      "first_author": "Lang Wei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160626572",
+      "doi": "https://doi.org/10.1145/3774906.3802766",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "FusionBridge: Enhancing Multi-View Multi-Modal Sensing and Perception for Edge Intelligence.",
+      "first_author": "Dhanuja Wanniarachchige",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160661360",
+      "doi": "https://doi.org/10.1145/3774906.3802747",
+      "institution": "Singapore Management University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/050qmg959"
+    },
+    {
+      "title": "FruitScope: A Non-Invasive Fruit Ripeness Sensing System via Multi-Resolution FMCW Design and Acoustic Sensing.",
+      "first_author": "Shanmu Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160613724",
+      "doi": "https://doi.org/10.1145/3774906.3802794",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "EdgeTune: Efficient On-Device LLM Personalization at the Edge.",
+      "first_author": "Zhenyu Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160620091",
+      "doi": "https://doi.org/10.1145/3774906.3802769",
+      "institution": "University of North Carolina at Chapel Hill",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0130frc33"
+    },
+    {
+      "title": "Optimizing Feature Extraction for On-device Model Inference with User Behavior Sequences.",
+      "first_author": "Chen Gong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140278727",
+      "doi": "https://doi.org/10.1145/3774906.3800493",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Short Paper: Towards Algorithmically Grounded Embedded AI Models.",
+      "first_author": "Zhenyu Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160618966",
+      "doi": "https://doi.org/10.1145/3774906.3800495",
+      "institution": "University of North Carolina at Chapel Hill",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0130frc33"
+    },
+    {
+      "title": "Short Paper: Counting Parked Bicycles on the Edge - A TinyML Smart City Application.",
+      "first_author": "Jan Stenkamp",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160598997",
+      "doi": "https://doi.org/10.1145/3774906.3802788",
+      "institution": "University of Münster",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/00pd74e08"
+    },
+    {
+      "title": "ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling.",
+      "first_author": "Weihang You",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Been There, Scanned That: Nostalgia-Driven Point Cloud Compression for Self-Driving Cars.",
+      "first_author": "Ali Khalid",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GreenScatter: Through-Canopy Soil Moisture Sensing with UAV-Mounted Radar.",
+      "first_author": "Luke Jacobs",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160667098",
+      "doi": "https://doi.org/10.1145/3774906.3802792",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "GigaFlex: Contactless Monitoring of Muscle Vibrations During Exercise with a Chaos-Inspired Radar.",
+      "first_author": "Jiangyifei Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160610127",
+      "doi": "https://doi.org/10.1145/3774906.3802776",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "EventEye: Towards High-Frequency Perception Enhancement for Autonomous Vehicles Using Infrastructure-Mounted Event Cameras.",
+      "first_author": "Jingfei Xia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160619758",
+      "doi": "https://doi.org/10.1145/3774906.3800471",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "MMEdge: Accelerating On-device Multimodal Inference via Pipelined Sensing and Encoding.",
+      "first_author": "Runxi Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7146946737",
+      "doi": "https://doi.org/10.1145/3774906.3800485",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "MoiréEar: Moiré Can See What You Cannot Hear.",
+      "first_author": "Hongqiang Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160645092",
+      "doi": "https://doi.org/10.1145/3774906.3802760",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "VehicleSense: Adaptive Sensor-Video Learning for Vehicle Type Identification and Overload Detection.",
+      "first_author": "Ashutosh Kumar Sinha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160642963",
+      "doi": "https://doi.org/10.1145/3774906.3802774",
+      "institution": "Indian Institute of Technology Patna",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/01ft5vz71"
+    },
+    {
+      "title": "ApproxBit: Efficient Video Analytics through Latency-Aware Offloading with Learned Binary Codes.",
+      "first_author": "Hyunseung Kim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160596784",
+      "doi": "https://doi.org/10.1145/3774906.3802757",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "A Single-Chain Analog Backscatter Tag for Multi-Sensor Multiplexing.",
+      "first_author": "Yijie Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416338483",
+      "doi": "https://doi.org/10.1145/3774906.3802756",
+      "institution": "National University of Singapore",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/01tgyzw49"
+    },
+    {
+      "title": "MagLens: Bringing Mobile, Fine-Grained Imaging to Ferrous Building Structures.",
+      "first_author": "Jike Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MIRO: Multi-Radar Identity and Ranging for Occupational Safety.",
+      "first_author": "Tirthankar Halder",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160606954",
+      "doi": "https://doi.org/10.1145/3774906.3802761",
+      "institution": "Indian Institute of Technology Kharagpur",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/03w5sq511"
+    },
+    {
+      "title": "From a Point to Hundreds: Embracing LiDAR on Commodity Smartphones for Fine-Grained Pulmonary Function Sensing.",
+      "first_author": "Xuefu Dong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160663842",
+      "doi": "https://doi.org/10.1145/3774906.3802752",
+      "institution": "The University of Tokyo",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/057zh3y96"
+    },
+    {
+      "title": "Bringing All Modulations to Underwater Backscatter via PDM-Synthesis.",
+      "first_author": "Waleed Akbar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160615955",
+      "doi": "https://doi.org/10.1145/3774906.3800496",
+      "institution": "IIT@MIT",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01wp8zh54"
+    },
+    {
+      "title": "PELM: Power Efficient On-Device LLM Inference with Speculative Decoding and Dynamic Voltage Frequency Scaling.",
+      "first_author": "Weisi Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160652902",
+      "doi": "https://doi.org/10.1145/3774906.3802783",
+      "institution": "Northwestern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/000e0be47"
+    },
+    {
+      "title": "LightTells: Lights Reveal What You Are Doing.",
+      "first_author": "Yue Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160639832",
+      "doi": "https://doi.org/10.1145/3774906.3800483",
+      "institution": "Saint Louis University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01p7jjy08"
+    },
+    {
+      "title": "Enabling Active Sensing with Zero-Power Components.",
+      "first_author": "Mingqi Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160647696",
+      "doi": "https://doi.org/10.1145/3774906.3800462",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "3in1: Multi-Tone Joint Powering, Clocking, and Communication for Passive IoT.",
+      "first_author": "Ruirong Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "EarPCG: Recovering Heart Sounds from in-Ear Audio via Physics-Informed Neural Network.",
+      "first_author": "Junyi Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160623659",
+      "doi": "https://doi.org/10.1145/3774906.3800491",
+      "institution": "Huazhong University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00p991c53"
+    },
+    {
+      "title": "Enabling Cross Technology Communication from LR-FHSS to LoRa.",
+      "first_author": "Md Ashikul Haque",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160596706",
+      "doi": "https://doi.org/10.1145/3774906.3802771",
+      "institution": "University of Texas at Dallas, Dallas, USA",
+      "institution_country": null,
+      "raw_affiliation": "University of Texas at Dallas, Dallas, USA"
+    },
+    {
+      "title": "TIRA: Task-Based Intermittent Remote Attestation.",
+      "first_author": "Fatemeh Arkannezhad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160606871",
+      "doi": "https://doi.org/10.1145/3774906.3802751",
+      "institution": "UCLA Health",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01d88se56"
+    },
+    {
+      "title": "MoiréLens: Bringing Schlieren Imaging into Real-World Environments Using Moiré Patterns.",
+      "first_author": "Linzhen Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160621984",
+      "doi": "https://doi.org/10.1145/3774906.3802765",
+      "institution": "University of Michigan",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00jmfr291"
+    },
+    {
+      "title": "WISP: Printable Graphene-Based Wearables for Force-Based Micro-Gesture Recognition.",
+      "first_author": "Zhenyu Lei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160606422",
+      "doi": "https://doi.org/10.1145/3774906.3800486",
+      "institution": "University of Massachusetts Amherst",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0072zz521"
+    },
+    {
+      "title": "Deform to Inform: Persistent Batteryless Sensing via Antenna Deformation and RFID Impedance Adaptation.",
+      "first_author": "Haochen Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160593464",
+      "doi": "https://doi.org/10.1145/3774906.3800482",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "MoViD: View-Invariant 3D Human Pose Estimation via Motion-View Disentanglement.",
+      "first_author": "Yejia Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7151984007",
+      "doi": "https://doi.org/10.1145/3774906.3802786",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "MagTach: Non-Intrusive Long-Range Magnetic Tachometry via Harmonic-Aware Inductive Sensing.",
+      "first_author": "Rahul Sidramappa Hoskeri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160604009",
+      "doi": "https://doi.org/10.1145/3774906.3802772",
+      "institution": "University of California, Merced",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00d9ah105"
+    },
+    {
+      "title": "mmAnomaly: Leveraging Visual Context for Robust Anomaly Detection in the Non-Visual World with mmWave Radar.",
+      "first_author": "Tarik Reza Toha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160609441",
+      "doi": "https://doi.org/10.1145/3774906.3802773",
+      "institution": "University of North Carolina at Chapel Hill",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0130frc33"
+    },
+    {
+      "title": "ENTS: Experiences in Co-Designed Environmental Sensing.",
+      "first_author": "John Madden",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160661645",
+      "doi": "https://doi.org/10.1145/3774906.3802780",
+      "institution": "University of California, Santa Cruz",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03s65by71"
+    },
+    {
+      "title": "Decoupling Timing Estimation and Convergence for Efficient and Accurate Exploration of Configurations in Edge DDL Training.",
+      "first_author": "Joshua Daley",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160632100",
+      "doi": "https://doi.org/10.1145/3774906.3802790",
+      "institution": "Binghamton University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008rmbt77"
+    },
+    {
+      "title": "Towards Generalizable Wireless Sensing Models via Pre-training on Multi-Source Datasets.",
+      "first_author": "Chen Gong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160604997",
+      "doi": "https://doi.org/10.1145/3774906.3802759",
+      "institution": "Peking University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/02v51f717"
+    },
+    {
+      "title": "AMULET: Acoustic Metastructure for Direction-of-Arrival Estimation Underwater Using a Single Hydrophone.",
+      "first_author": "Andrew Bergey",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160596812",
+      "doi": "https://doi.org/10.1145/3774906.3802750",
+      "institution": "University of Washington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00cvxb145"
+    },
+    {
+      "title": "CARTS: Cooperative and Adaptive Resource Triggering and Stitching for 5G ISAC.",
+      "first_author": "Cheng Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416280668",
+      "doi": "https://doi.org/10.1145/3774906.3800460",
+      "institution": "UNSW Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/03r8z3t63"
+    },
+    {
+      "title": "Zero-Effort Cross-Domain Wireless Respiration Monitoring Under Free Movements With Commercial UWB Devices.",
+      "first_author": "Ge Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160612008",
+      "doi": "https://doi.org/10.1145/3774906.3800465",
+      "institution": "Xi'an Jiaotong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/017zhmm22"
+    },
+    {
+      "title": "Short Paper: EarSleeve: Transforming Everyday Earphones into a 12-Lead ECG Sensing Platform.",
+      "first_author": "Junxi Xia",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160619166",
+      "doi": "https://doi.org/10.1145/3774906.3802785",
+      "institution": "Northwestern University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/000e0be47"
+    },
+    {
+      "title": "SoilX: Calibration-Free Comprehensive Soil Sensing through Contrastive Cross-Component Learning.",
+      "first_author": "Kang Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416278310",
+      "doi": "https://doi.org/10.1145/3774906.3800499",
+      "institution": "University of California, Merced",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00d9ah105"
+    },
+    {
+      "title": "Longan: Ultra-Low-Power, Long-Range LoRa Receiver for LPWANs.",
+      "first_author": "Mingzhe Li",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "B³: Bistatic Backscatter Beamforming for mmWave IoTs.",
+      "first_author": "Zhenzhe Lin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160646659",
+      "doi": "https://doi.org/10.1145/3774906.3800461",
+      "institution": "George Mason University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02jqj7156"
+    },
+    {
+      "title": "From Cheap to Chic: Enhancing Music Playback Quality of Budget Earphones via Hardware-Aware Learning.",
+      "first_author": "Changshuo Hu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160629784",
+      "doi": "https://doi.org/10.1145/3774906.3800476",
+      "institution": "Singapore Management University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/050qmg959"
+    },
+    {
+      "title": "Stereo-Fi: Free-Form 3D Reconstruction via Generatively Co-Trained Inverse RF Rendering.",
+      "first_author": "Xueqiang Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160621058",
+      "doi": "https://doi.org/10.1145/3774906.3802762",
+      "institution": "Southern University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/049tv2d57"
+    },
+    {
+      "title": "RippleSense: Scalable and Efficient Wideband Spectrum Sensing.",
+      "first_author": "Andreas Kuster",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160612811",
+      "doi": "https://doi.org/10.1145/3774906.3800487",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "FlourSpec: Cost-Effective Spectral Analysis for Trace-Level Detection of Flour Adulteration.",
+      "first_author": "Shanwen Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160625500",
+      "doi": "https://doi.org/10.1145/3774906.3800490",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "ARC: Accurate, Real-Time, and Scalable Multi-Vehicle Cooperative Perception.",
+      "first_author": "Kaleem Nawaz Khan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Enabling Near-realtime Remote Sensing via Satellite-Ground Collaboration of Large Vision-Language Models.",
+      "first_author": "Zihan Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160615101",
+      "doi": "https://doi.org/10.1145/3774906.3800497",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Jailbreaking Embodied LLMs via Action-Level Manipulation.",
+      "first_author": "Xinyu Huang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160597674",
+      "doi": "https://doi.org/10.1145/3774906.3802758",
+      "institution": "Hong Kong Polytechnic University",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/0030zas98"
+    },
+    {
+      "title": "Count Every Rotation and Every Rotation Counts: Exploring Drone Dynamics via Propeller Sensing.",
+      "first_author": "Xuecheng Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4417188267",
+      "doi": "https://doi.org/10.1145/3774906.3800477",
+      "institution": "University Town of Shenzhen",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/05f5j6225"
+    },
+    {
+      "title": "ConvReflex: Efficient Ultra-Low-Power CNN Inference via Clamping Prediction.",
+      "first_author": "Shiming Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160596689",
+      "doi": "https://doi.org/10.1145/3774906.3802781",
+      "institution": "Uppsala University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/048a87296"
+    },
+    {
+      "title": "Short Paper: The Starlink Robot: A Platform and Dataset for Mobile Satellite Communication.",
+      "first_author": "Boyi Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160647077",
+      "doi": "https://doi.org/10.1145/3774906.3800503",
+      "institution": "The London College",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/0546ajs61"
+    },
+    {
+      "title": "SharpPeak: Unlocking the True Potential of Tunnel Diodes for Low-Power Long-Range Communication.",
+      "first_author": "Madhushanka Padmal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160622185",
+      "doi": "https://doi.org/10.1145/3774906.3800468",
+      "institution": "Uppsala University",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/048a87296"
+    },
+    {
+      "title": "0cal: Zero-Cost Calibration for mmWave Networks.",
+      "first_author": "Xin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160655316",
+      "doi": "https://doi.org/10.1145/3774906.3802748",
+      "institution": "Florida State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05g3dte14"
+    },
+    {
+      "title": "VYRE: Low-Burden and Robust Oscillometric Ring-Based System for Frequent Blood Pressure Monitoring.",
+      "first_author": "Amirmohammad Radmehr",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160617453",
+      "doi": "https://doi.org/10.1145/3774906.3802789",
+      "institution": "University of Massachusetts Amherst",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0072zz521"
+    },
+    {
+      "title": "COACH: Adaptive Robust Human-Robot Collaboration for Efficient Smart Manufacturing.",
+      "first_author": "Hui Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160605477",
+      "doi": "https://doi.org/10.1145/3774906.3800501",
+      "institution": "Harbin Engineering University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03x80pn82"
+    },
+    {
+      "title": "SERENADE: A Digital Twin Emulator for LEO Satellite Networking At-Scale.",
+      "first_author": "Roberto Chamorro Martinez",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160619024",
+      "doi": "https://doi.org/10.1145/3774906.3802777",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "WristSense: Sensing Hidden Wrist Strain in Routine Activities via Inertial Tokenization and LLM-Based Feedback.",
+      "first_author": "Garvit Chugh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160629186",
+      "doi": "https://doi.org/10.1145/3774906.3800489",
+      "institution": "Indian Institute of Technology Jodhpur",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/03yacj906"
+    },
+    {
+      "title": "LaSen: Low-Altitude Drone Sensing with 5G-NR Signals.",
+      "first_author": "Qian Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160619000",
+      "doi": "https://doi.org/10.1145/3774906.3800504",
+      "institution": "Southern University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/049tv2d57"
+    },
+    {
+      "title": "On the Energy Cost of Post-Quantum Key Establishment in Wireless Low-Power Personal Area Networks.",
+      "first_author": "Tao Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160638752",
+      "doi": "https://doi.org/10.1145/3774906.3802784",
+      "institution": "Queensland University of Technology",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/03pnv4752"
+    },
+    {
+      "title": "Surface Material and Roughness Sensing Using mmWave via Surface Scattering and Ambient Vibrations.",
+      "first_author": "Yawen Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160643819",
+      "doi": "https://doi.org/10.1145/3774906.3800459",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "RAN-Aware Delay Compensation for Delay-Sensitive Protocols in Cellular Networks.",
+      "first_author": "Yuxin Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160602878",
+      "doi": "https://doi.org/10.1145/3774906.3802791",
+      "institution": "University at Buffalo, State University of New York",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y64my43"
+    },
+    {
+      "title": "BoTTA: Benchmarking On-device Test Time Adaptation.",
+      "first_author": "Michal Danilowski",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7133594681",
+      "doi": null,
+      "institution": "Computer Science",
+      "institution_country": null,
+      "raw_affiliation": "Computer Science"
+    },
+    {
+      "title": "Defending Autonomous Driving Perception against Adversarial Object-Based Attacks via Motion Planning.",
+      "first_author": "Zihao Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160630827",
+      "doi": "https://doi.org/10.1145/3774906.3800480",
+      "institution": "Iowa State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04rswrd78"
+    },
+    {
+      "title": "NeRC: Neural Ranging Correction through Differentiable Moving Horizon Location Estimation.",
+      "first_author": "Xu Weng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4415238823",
+      "doi": "https://doi.org/10.1145/3774906.3800475",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "NeuroPath: Practically Adopting Motor Imagery Decoding through EEG Signals.",
+      "first_author": "Jiani Cao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7154471865",
+      "doi": "https://doi.org/10.1145/3774906.3802770",
+      "institution": "City University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/03q8dnn23"
+    },
+    {
+      "title": "AutoEmbed: LLM-driven Automated Software Development for Generic Embedded IoT Systems.",
+      "first_author": "Huanqi Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160614686",
+      "doi": "https://doi.org/10.1145/3774906.3800466",
+      "institution": "City University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/03q8dnn23"
+    },
+    {
+      "title": "SPIDER: Lightweight Speaker Identification on Resource-Constrained Embedded Devices.",
+      "first_author": "Markus Gallacher",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7165892738",
+      "doi": "https://doi.org/10.1109/sensys-adjunct71932.2026.00028",
+      "institution": "Graz University of Technology",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/00d7xrm67"
+    },
+    {
+      "title": "MetaPolar: A Low-Cost, Passive, mmWave Radar-Readable Metasurface Road Sign.",
+      "first_author": "Kai Zheng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MRI-Grade Photoplethysmography Using Bundled Fiber Optics for Contactless Heart Rate Monitoring and Real-Time Gating.",
+      "first_author": "Tommaso Polonelli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160615189",
+      "doi": "https://doi.org/10.1145/3774906.3802767",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "On Securing the Software Development Lifecycle in IoT RISC-V Trusted Execution Environments.",
+      "first_author": "Annika Wilde",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7160646809",
+      "doi": "https://doi.org/10.1145/3774906.3802779",
+      "institution": "Ruhr University Bochum",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04tsk2644"
+    },
+    {
+      "title": "WiRainbow: Single-Antenna Direction-Aware Wi-Fi Sensing via Dispersion Effect.",
+      "first_author": "Zhaoxin Chang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4416776706",
+      "doi": "https://doi.org/10.1145/3774906.3800474",
+      "institution": "Institut Polytechnique de Paris",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/042tfbd02"
+    },
+    {
+      "title": "Short Paper: WearBCI Dataset: Understanding and Benchmarking Real-World Wearable Brain-Computer Interfaces Signals.",
+      "first_author": "Haoxian Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7154497161",
+      "doi": "https://doi.org/10.1145/3774906.3802782",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    }
+  ]
+}

@@ -59,7 +59,8 @@ lang.csconf/
 │   ├── raw/           # Crawled author data + venue data
 │   ├── classified/    # Author data with language predictions
 │   ├── ccf-versions/  # CCF PDFs + extracted rank history
-│   └── stats/         # Pre-computed JSON for website
+│   └── stats/         # Pre-computed JSON for website; maintenance-only audit reports remain here unless consumed by the frontend
+│       └── affiliation_coverage_audit.json # Offline CCF-B affiliation-coverage diagnosis
 └── .github/workflows/ # Deploy site + weekly data updates
 ```
 
@@ -104,6 +105,14 @@ python -m pipeline.run_all --force
 | 2d. OpenReview | Crawls OpenReview for AI/ML conferences (NeurIPS, ICLR, ICML, etc.) |
 | 3. Classify names | Predicts language using fastText + rule-based surname ensemble |
 | 4. Generate stats | Aggregates by conference, category, rank, year → JSON |
+
+### Affiliation Coverage Audit
+
+```bash
+python3 scripts/audit_affiliation_coverage.py
+```
+
+The command is read-only with respect to crawled input: it reads CCF-B conference metadata, raw author files, and existing affiliation files, then deterministically writes `data/stats/affiliation_coverage_audit.json`. It makes no network requests, consumes no OpenAlex key, and never overwrites affiliation data. The report separates OpenAlex title-match gaps from matched-but-missing institution metadata, keeps non-OpenAlex sources out of OpenAlex attribution, and lists data-integrity exceptions. DBLP conference-metadata entries that have no corresponding affiliation record are excluded from the audit denominator and counted in `summary.excluded_conference_metadata`.
 
 ## Tech Stack
 
@@ -188,6 +197,14 @@ rm data/raw/authors/CVPR_*.json data/classified/authors/CVPR_*.json
 python -m pipeline.run_all --conferences CVPR
 rsync -av --delete data/stats/ website/public/data/stats/
 ```
+
+### Affiliation 覆盖率审计
+
+```bash
+python3 scripts/audit_affiliation_coverage.py
+```
+
+该命令对已爬取输入保持只读：读取 CCF-B 会议元数据、原始作者文件和现有 affiliation 文件，然后以确定性方式写入 `data/stats/affiliation_coverage_audit.json`。它不发起网络请求、不消耗 OpenAlex key，也不会覆盖 affiliation 数据。报告会区分 OpenAlex 标题未匹配与已匹配但机构元数据缺失；非 OpenAlex 来源不会被归因给 OpenAlex；数据完整性例外会单独列出。若 DBLP 收录了但 affiliation 文件中没有对应记录的会议元数据条目，审计会将其排除在分母外，并计入 `summary.excluded_conference_metadata`。
 
 ## 免责声明
 

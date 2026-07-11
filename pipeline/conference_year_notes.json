@@ -580,6 +580,14 @@
     "status": "ok",
     "note": "Spike: 522 vs max 233. Investigated 2026-03-12: real growth. Chinese CV conference (Springer LNCS), sustained trend: 158→201→233→522→579→691."
   },
+  "UAI_2024": {
+    "status": "ok",
+    "note": "DBLP includes one conference-metadata record (title begins 'Uncertainty in Artificial Intelligence...') alongside 200 paper records. OpenReview affiliation data correctly contains the 200 papers only; the offline affiliation audit excludes this unmatched metadata entry from its denominator."
+  },
+  "UAI_2025": {
+    "status": "ok",
+    "note": "DBLP includes one conference-metadata record (title begins 'Conference on Uncertainty in Artificial Intelligence...') alongside 229 paper records. OpenReview affiliation data correctly contains the 229 papers only; the offline affiliation audit excludes this unmatched metadata entry from its denominator."
+  },
   "UIC_2012": {
     "status": "ok",
     "note": "Co-located UIC/ATC 2012. Filtered 2026-03-12: removed ATC + 9 workshops via DBLP h2 sections. 154 → 55 UIC-only first-author papers."
