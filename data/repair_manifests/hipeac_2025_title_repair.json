@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "conference": "HIPEAC",
+  "year": 2025,
+  "target_file": "data/raw/authors/HIPEAC_2025.json",
+  "expected_sha256": "c44882574284aa768c6f63d1206cd1ed63d4c412703e0f71f55848754bda4c12",
+  "expected_source": "hipeac_api+crossref",
+  "expected_total_papers": 29,
+  "expected_repair_count": 2,
+  "repairs": [
+    {
+      "expected_bad_title": "CoNST: Code Generator for Sparse Tensor Networks, Ponnuswamy Sadayappan",
+      "replacement_title": "CoNST: Code Generator for Sparse Tensor Networks",
+      "expected_first_author": "Saurabh Raje",
+      "expected_author_rows": 5,
+      "expected_ordinals": [1, 2, 3, 4, 5],
+      "crossref_doi": "10.1145/3689342",
+      "crossref_verdict": "raw_title_has_parser_tail",
+      "approved_tail": ", Ponnuswamy Sadayappan"
+    },
+    {
+      "expected_bad_title": "_CesASMe and Staticdeps: Static Detection of Memory-carried Dependencies for Code Analyzers, Hugo Pompougnac, INRIA",
+      "replacement_title": "CesASMe and Staticdeps: static detection of memory-carried dependencies for code analyzers",
+      "expected_first_author": "Théophile Bastian",
+      "expected_author_rows": 4,
+      "expected_ordinals": [1, 2, 3, 4],
+      "crossref_doi": "10.1145/3715125",
+      "crossref_verdict": "raw_title_has_parser_tail",
+      "approved_tail": ", Hugo Pompougnac, INRIA"
+    }
+  ]
+}

@@ -136,7 +136,7 @@
   "HIPEAC_2025": {
     "paper_source": "journal_scrape",
     "paper_source_url": "https://www.hipeac.net/api/v3/events/6814/activities/",
-    "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef."
+    "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef. Title reconciliation 2026-07-12: two API display tails were removed through data/repair_manifests/hipeac_2025_title_repair.json across raw, classified, and affiliation records; paper count (29), OpenAlex matched/institution counts (1/1), and coverage (3.4%) unchanged. No OpenAlex retry was run."
   },
   "FSE-CRYPTO_2017": {
     "paper_source": "journal_scrape",
