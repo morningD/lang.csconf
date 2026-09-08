@@ -46,7 +46,10 @@ jobs:
           restore-keys: classified-authors-
 
       - name: Run data pipeline
-        run: python -m pipeline.run_all
+        # Skip 2e (OpenAlex affiliations): needs API keys (gitignored) and would
+        # exceed the 6h runner timeout on the ~1.4k remaining conference-years.
+        # Run it locally instead: python -m pipeline.run_all --step 2e
+        run: python -m pipeline.run_all --skip 2e
 
       - name: Check pipeline errors
         if: failure()

@@ -14,11 +14,13 @@ from pipeline import step1_parse_conferences, step1b_parse_accept_rates, step2_c
 def main():
     parser = argparse.ArgumentParser(description="lang.csconf data pipeline")
     parser.add_argument("--force", action="store_true", help="Force re-crawl all data")
-    parser.add_argument("--step", type=str, help="Run only a specific step (1, 1b, 2, 2b, 2c, 3, 4)")
+    parser.add_argument("--step", type=str, help="Run only a specific step (1, 1b, 2, 2b, 2c, 2d, 2e, 3, 4)")
+    parser.add_argument("--skip", type=str, help="Comma-separated step IDs to skip in full run (e.g., 2e)")
     parser.add_argument("--conferences", type=str, help="Comma-separated conference IDs to process (e.g., CVPR,AAAI,SIGMOD)")
 
     args = parser.parse_args()
     conferences_filter = args.conferences.split(",") if args.conferences else None
+    skip_steps = {s.strip() for s in args.skip.split(",")} if args.skip else set()
 
     # Clean up macOS Finder duplicate files (" 2.json", " 3.json", etc.)
     # These are created when Finder copies/moves files and cause data corruption.
@@ -69,6 +71,11 @@ def main():
         _run_step(step_id, name, func)
     else:
         for step_id, name, func in steps:
+            if step_id in skip_steps:
+                print(f"\n{'='*60}")
+                print(f"Step {step_id}: {name} — SKIPPED")
+                print(f"{'='*60}\n")
+                continue
             print(f"\n{'='*60}")
             print(f"Step {step_id}: {name}")
             print(f"{'='*60}\n")
