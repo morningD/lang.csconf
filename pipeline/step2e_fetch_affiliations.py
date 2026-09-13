@@ -13,7 +13,9 @@ Use --force to re-crawl all.
 """
 
 import json
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from pipeline.utils.openalex_client import (
@@ -36,6 +38,11 @@ CONFERENCES_FILE = RAW_DIR / "conferences.json"
 PROFILE_CACHE_FILE = AFFIL_DIR / "_profile_cache.json"
 
 _global_profile_cache: dict | None = None
+
+# Concurrent OpenAlex title-search workers (bottleneck is proxy RTT, not
+# OpenAlex limits: 8 keys x 10 RPS allowed; polite pool allows 10 RPS).
+_OA_WORKERS = 8
+_tls = threading.local()
 
 
 def _load_profile_cache() -> dict:
@@ -257,50 +264,57 @@ def _process_openalex(conf_id: str, year: int, session,
     matched = 0
     has_affil = 0
 
-    for i, paper in enumerate(papers):
-        title = paper["title"]
-        first_author = paper["first_author"]
+    # Concurrent title search: bottleneck is proxy RTT (~1-2.5s/request),
+    # not OpenAlex rate limits (8 keys x 10 RPS allowed).
+    def _thread_search(item):
+        i, paper = item
+        if not hasattr(_tls, "session"):
+            _tls.session = _openalex_session()
+        return i, search_work(paper["title"], year, session=_tls.session)
 
-        work = search_work(title, year, session=session)
-        if work is None:
-            results.append({
-                "title": title,
-                "first_author": first_author,
-                "matched": False,
-                "institution": None,
-            })
-            continue
+    with ThreadPoolExecutor(max_workers=_OA_WORKERS) as pool:
+        for i, paper, work in (
+            (i, papers[i], work)
+            for i, work in pool.map(_thread_search, enumerate(papers))
+        ):
+            title = paper["title"]
+            first_author = paper["first_author"]
 
-        matched += 1
-        inst = extract_first_author_institution(work)
+            if work is None:
+                results.append({
+                    "title": title,
+                    "first_author": first_author,
+                    "matched": False,
+                    "institution": None,
+                })
+            else:
+                matched += 1
+                inst = extract_first_author_institution(work)
 
-        entry = {
-            "title": title,
-            "first_author": first_author,
-            "matched": True,
-            "openalex_id": work.get("id"),
-            "doi": work.get("doi"),
-        }
-        if inst:
-            has_affil += 1
-            entry["institution"] = inst["name"]
-            entry["institution_country"] = inst.get("country")
-            if inst.get("ror"):
-                entry["institution_ror"] = inst["ror"]
-            if inst.get("raw"):
-                entry["raw_affiliation"] = inst["raw"]
-        else:
-            entry["institution"] = None
+                entry = {
+                    "title": title,
+                    "first_author": first_author,
+                    "matched": True,
+                    "openalex_id": work.get("id"),
+                    "doi": work.get("doi"),
+                }
+                if inst:
+                    has_affil += 1
+                    entry["institution"] = inst["name"]
+                    entry["institution_country"] = inst.get("country")
+                    if inst.get("ror"):
+                        entry["institution_ror"] = inst["ror"]
+                    if inst.get("raw"):
+                        entry["raw_affiliation"] = inst["raw"]
+                else:
+                    entry["institution"] = None
 
-        results.append(entry)
+                results.append(entry)
 
-        # Rate limiting: ~9 RPS
-        time.sleep(0.11)
-
-        # Progress indicator every 100 papers
-        if (i + 1) % 100 == 0:
-            print(f"    ...{i + 1}/{len(papers)} papers processed "
-                  f"({has_affil} with affiliations)")
+            # Progress indicator every 100 papers
+            if (i + 1) % 100 == 0:
+                print(f"    ...{i + 1}/{len(papers)} papers processed "
+                      f"({has_affil} with affiliations)")
 
     # Save results
     output = {

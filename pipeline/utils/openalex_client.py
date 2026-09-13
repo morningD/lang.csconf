@@ -12,12 +12,19 @@ Multiple keys rotate for higher daily throughput.
 from __future__ import annotations
 
 import itertools
+import os
+import socket
 import time
 from pathlib import Path
 
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+# requests' timeout= does not cover DNS resolution (getaddrinfo); a hung
+# resolver can stall the process indefinitely. Set a global socket-level
+# fallback so every connect/read/DNS op fails fast and hits the retry logic.
+socket.setdefaulttimeout(60)
 
 API_URL = "https://api.openalex.org"
 
@@ -39,7 +46,7 @@ def _load_keys() -> list[str]:
     return keys
 
 
-_API_KEYS = _load_keys()
+_API_KEYS = [] if os.environ.get("OPENALEX_NO_KEY") else _load_keys()
 _key_cycle = itertools.cycle(_API_KEYS) if _API_KEYS else None
 
 # Fields we need from the works endpoint
@@ -48,6 +55,10 @@ _WORK_FIELDS = "id,doi,title,authorships"
 
 def _session(api_key: str | None = None) -> requests.Session:
     s = requests.Session()
+    # Bypass macOS system proxy (127.0.0.1:1082): its HTTP inbound is slow and
+    # stalls under concurrency. Direct connections are intercepted by the
+    # proxy's TUN/fake-IP layer instead, which is fast and stable.
+    s.trust_env = False
     retry = Retry(total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])
     s.mount("https://", HTTPAdapter(max_retries=retry))
     if api_key:
