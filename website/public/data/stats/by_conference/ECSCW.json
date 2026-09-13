@@ -125,27 +125,30 @@
     },
     "2025": {
       "Korean": 1,
-      "English": 6,
-      "German": 1,
-      "Other": 2,
-      "Chinese": 1,
-      "French": 1
+      "Other": 13,
+      "German": 10,
+      "English": 16,
+      "Chinese": 15,
+      "Spanish": 1,
+      "Russian": 2,
+      "Italian": 1,
+      "Portuguese": 1
     }
   },
   "total": {
-    "Other": 77,
-    "English": 134,
-    "German": 44,
-    "Chinese": 14,
-    "French": 22,
-    "Italian": 10,
+    "Other": 88,
+    "English": 144,
+    "German": 53,
+    "Chinese": 28,
+    "French": 21,
+    "Italian": 11,
     "Turkish": 1,
-    "Russian": 7,
+    "Russian": 9,
     "Dutch": 11,
     "Korean": 5,
     "Indian": 2,
-    "Spanish": 7,
-    "Portuguese": 4,
+    "Spanish": 8,
+    "Portuguese": 5,
     "Vietnamese": 1,
     "Japanese": 1
   },
@@ -230,6 +233,10 @@
     "2015": {
       "paper_source": "search_api",
       "note": "SPARQL gap filled by step2c. 34 papers."
+    },
+    "2023": {
+      "status": "ok",
+      "note": "Affiliation retry pilot 2026-07-11: strict OpenAlex title retry added one first-author institution (3/16 → 4/16, 18.8% → 25.0%). New match: Designing with Awareness* Building an Agenda for Worker- and Patient Well-being. (DOI 10.48340/ecscw2023_ep10). Other five pilot conference-years had no quality-gated improvement and were left unchanged."
     }
   },
   "affiliations": {

@@ -15,7 +15,8 @@
     2019,
     2021,
     2023,
-    2024
+    2024,
+    2026
   ],
   "by_year": {
     "2011": {
@@ -143,24 +144,35 @@
       "Spanish": 3,
       "Portuguese": 2,
       "Russian": 1
+    },
+    "2026": {
+      "Chinese": 22,
+      "Spanish": 3,
+      "French": 6,
+      "English": 13,
+      "Other": 15,
+      "Dutch": 1,
+      "German": 6,
+      "Italian": 1,
+      "Portuguese": 1
     }
   },
   "total": {
-    "German": 51,
-    "Chinese": 65,
-    "Other": 53,
-    "French": 31,
-    "English": 166,
-    "Dutch": 11,
+    "German": 57,
+    "Chinese": 87,
+    "Other": 68,
+    "French": 37,
+    "English": 179,
+    "Dutch": 12,
     "Russian": 7,
-    "Italian": 21,
-    "Spanish": 16,
+    "Italian": 22,
+    "Spanish": 19,
     "Persian": 5,
     "Vietnamese": 8,
     "Korean": 5,
     "Indian": 8,
     "Japanese": 4,
-    "Portuguese": 4
+    "Portuguese": 5
   },
   "venues": {
     "2024": {
@@ -352,152 +364,439 @@
     }
   ],
   "affiliations": {
-    "total_covered": 97,
-    "total_papers": 105,
-    "coverage_pct": 92.4,
+    "total_covered": 141,
+    "total_papers": 151,
+    "coverage_pct": 93.4,
     "top": [
       {
         "name": "Chinese Academy of Sciences",
-        "count": 6,
-        "pct": 5.71,
+        "count": 8,
+        "pct": 5.3,
         "country": "CN",
         "rank": 1
       },
       {
-        "name": "National University of Singapore",
-        "count": 3,
-        "pct": 2.86,
-        "country": "SG",
-        "rank": 2
-      },
-      {
-        "name": "Università della Svizzera italiana",
-        "count": 3,
-        "pct": 2.86,
+        "name": "ETH Zurich",
+        "count": 4,
+        "pct": 2.65,
         "country": "CH",
         "rank": 2
       },
       {
         "name": "University of Twente",
-        "count": 3,
-        "pct": 2.86,
+        "count": 4,
+        "pct": 2.65,
         "country": "NL",
         "rank": 2
+      },
+      {
+        "name": "University of Münster",
+        "count": 3,
+        "pct": 1.99,
+        "country": "DE",
+        "rank": 4
+      },
+      {
+        "name": "Defence Science and Technology Group",
+        "count": 3,
+        "pct": 1.99,
+        "country": "AU",
+        "rank": 4
+      },
+      {
+        "name": "National University of Singapore",
+        "count": 3,
+        "pct": 1.99,
+        "country": "SG",
+        "rank": 4
+      },
+      {
+        "name": "Università della Svizzera italiana",
+        "count": 3,
+        "pct": 1.99,
+        "country": "CH",
+        "rank": 4
       },
       {
         "name": "Istituto di Scienza e Tecnologie dell'Informazione \"Alessandro Faedo\"",
         "count": 3,
-        "pct": 2.86,
+        "pct": 1.99,
         "country": "IT",
-        "rank": 2
+        "rank": 4
       },
       {
-        "name": "Defence Science and Technology Group",
+        "name": "Indian Institute of Technology Bombay",
         "count": 2,
-        "pct": 1.9,
-        "country": "AU",
-        "rank": 6
+        "pct": 1.32,
+        "country": "IN",
+        "rank": 9
       },
       {
-        "name": "Leiden University",
+        "name": "TU Wien",
         "count": 2,
-        "pct": 1.9,
-        "country": "NL",
-        "rank": 6
+        "pct": 1.32,
+        "country": "AT",
+        "rank": 9
       },
       {
-        "name": "ETH Zurich",
+        "name": "Brno University of Technology",
         "count": 2,
-        "pct": 1.9,
-        "country": "CH",
-        "rank": 6
-      },
-      {
-        "name": "The University of Melbourne",
-        "count": 2,
-        "pct": 1.9,
-        "country": "AU",
-        "rank": 6
-      },
-      {
-        "name": "Centre National de la Recherche Scientifique",
-        "count": 2,
-        "pct": 1.9,
-        "country": "FR",
-        "rank": 6
-      },
-      {
-        "name": "Carl von Ossietzky Universität Oldenburg",
-        "count": 2,
-        "pct": 1.9,
-        "country": "DE",
-        "rank": 6
-      },
-      {
-        "name": "Radboud University Nijmegen",
-        "count": 2,
-        "pct": 1.9,
-        "country": "NL",
-        "rank": 6
-      },
-      {
-        "name": "RWTH Aachen University",
-        "count": 2,
-        "pct": 1.9,
-        "country": "DE",
-        "rank": 6
-      },
-      {
-        "name": "Karlsruhe Institute of Technology",
-        "count": 2,
-        "pct": 1.9,
-        "country": "DE",
-        "rank": 6
-      },
-      {
-        "name": "LMU Klinikum",
-        "count": 2,
-        "pct": 1.9,
-        "country": "DE",
-        "rank": 6
-      },
-      {
-        "name": "Helmholtz Center for Information Security",
-        "count": 2,
-        "pct": 1.9,
-        "country": "DE",
-        "rank": 6
-      },
-      {
-        "name": "École Pour l'Informatique et les Techniques Avancées",
-        "count": 1,
-        "pct": 0.95,
-        "country": "FR",
-        "rank": 17
-      },
-      {
-        "name": "Czech Technical University in Prague",
-        "count": 1,
-        "pct": 0.95,
+        "pct": 1.32,
         "country": "CZ",
-        "rank": 17
+        "rank": 9
       },
       {
-        "name": "University of Exeter",
-        "count": 1,
-        "pct": 0.95,
+        "name": "Kyushu University",
+        "count": 2,
+        "pct": 1.32,
+        "country": "JP",
+        "rank": 9
+      },
+      {
+        "name": "University of Cambridge",
+        "count": 2,
+        "pct": 1.32,
         "country": "GB",
-        "rank": 17
+        "rank": 9
       },
       {
-        "name": "Denso",
-        "count": 1,
-        "pct": 0.95,
-        "country": "DE",
-        "rank": 17
+        "name": "Carnegie Mellon University",
+        "count": 2,
+        "pct": 1.32,
+        "country": "US",
+        "rank": 9
+      },
+      {
+        "name": "Graz University of Technology",
+        "count": 2,
+        "pct": 1.32,
+        "country": "AT",
+        "rank": 9
+      },
+      {
+        "name": "Imperial College London",
+        "count": 2,
+        "pct": 1.32,
+        "country": "GB",
+        "rank": 9
+      },
+      {
+        "name": "University of Surrey",
+        "count": 2,
+        "pct": 1.32,
+        "country": "GB",
+        "rank": 9
+      },
+      {
+        "name": "Institute of Science and Technology Austria",
+        "count": 2,
+        "pct": 1.32,
+        "country": "AT",
+        "rank": 9
+      },
+      {
+        "name": "Ames Research Center",
+        "count": 2,
+        "pct": 1.32,
+        "country": "US",
+        "rank": 9
+      },
+      {
+        "name": "ConsenSys",
+        "count": 2,
+        "pct": 1.32,
+        "country": "US",
+        "rank": 9
       }
     ],
     "by_year": {
+      "2021": {
+        "total_covered": 44,
+        "total_papers": 46,
+        "coverage_pct": 95.7,
+        "top": [
+          {
+            "name": "ETH Zurich",
+            "count": 2,
+            "pct": 4.35,
+            "country": "CH",
+            "rank": 1
+          },
+          {
+            "name": "University of Münster",
+            "count": 2,
+            "pct": 4.35,
+            "country": "DE",
+            "rank": 1
+          },
+          {
+            "name": "University of Cambridge",
+            "count": 2,
+            "pct": 4.35,
+            "country": "GB",
+            "rank": 1
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 2,
+            "pct": 4.35,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "University of Kent",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 5
+          },
+          {
+            "name": "Indian Institute of Technology Bombay",
+            "count": 1,
+            "pct": 2.17,
+            "country": "IN",
+            "rank": 5
+          },
+          {
+            "name": "TU Wien",
+            "count": 1,
+            "pct": 2.17,
+            "country": "AT",
+            "rank": 5
+          },
+          {
+            "name": "Brno University of Technology",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CZ",
+            "rank": 5
+          },
+          {
+            "name": "Kyushu University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "JP",
+            "rank": 5
+          },
+          {
+            "name": "Ford Motor Company",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "University of Luxembourg",
+            "count": 1,
+            "pct": 2.17,
+            "country": "LU",
+            "rank": 5
+          },
+          {
+            "name": "Carnegie Mellon University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Centro Internacional Franco-Argentino de Ciencias de la Información y de Sistemas",
+            "count": 1,
+            "pct": 2.17,
+            "country": "AR",
+            "rank": 5
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Singapore Management University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "SG",
+            "rank": 5
+          },
+          {
+            "name": "Centrum Wiskunde & Informatica",
+            "count": 1,
+            "pct": 2.17,
+            "country": "NL",
+            "rank": 5
+          },
+          {
+            "name": "University of Twente",
+            "count": 1,
+            "pct": 2.17,
+            "country": "NL",
+            "rank": 5
+          },
+          {
+            "name": "Graz University of Technology",
+            "count": 1,
+            "pct": 2.17,
+            "country": "AT",
+            "rank": 5
+          },
+          {
+            "name": "Tel Aviv University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "IL",
+            "rank": 5
+          },
+          {
+            "name": "Beihang University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Siemens",
+            "count": 1,
+            "pct": 2.17,
+            "country": "BE",
+            "rank": 5
+          },
+          {
+            "name": "Chalmers University of Technology",
+            "count": 1,
+            "pct": 2.17,
+            "country": "SE",
+            "rank": 5
+          },
+          {
+            "name": "Thales",
+            "count": 1,
+            "pct": 2.17,
+            "country": "AU",
+            "rank": 5
+          },
+          {
+            "name": "Nanjing University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Mälardalen University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "SE",
+            "rank": 5
+          },
+          {
+            "name": "Imperial College London",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 5
+          },
+          {
+            "name": "Defence Science and Technology Group",
+            "count": 1,
+            "pct": 2.17,
+            "country": "AU",
+            "rank": 5
+          },
+          {
+            "name": "HRL Laboratories",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "University of California, Berkeley",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Université de Lille",
+            "count": 1,
+            "pct": 2.17,
+            "country": "FR",
+            "rank": 5
+          },
+          {
+            "name": "University of Waterloo",
+            "count": 1,
+            "pct": 2.17,
+            "country": "CA",
+            "rank": 5
+          },
+          {
+            "name": "University of Surrey",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 5
+          },
+          {
+            "name": "University of Dundee",
+            "count": 1,
+            "pct": 2.17,
+            "country": "GB",
+            "rank": 5
+          },
+          {
+            "name": "Institute of Science and Technology Austria",
+            "count": 1,
+            "pct": 2.17,
+            "country": "AT",
+            "rank": 5
+          },
+          {
+            "name": "BTC Embedded Systems AG, Oldenburg",
+            "count": 1,
+            "pct": 2.17,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Michigan State University",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Ames Research Center",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "University of Technology Sydney",
+            "count": 1,
+            "pct": 2.17,
+            "country": "AU",
+            "rank": 5
+          },
+          {
+            "name": "ConsenSys",
+            "count": 1,
+            "pct": 2.17,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "National Institute of Informatics",
+            "count": 1,
+            "pct": 2.17,
+            "country": "JP",
+            "rank": 5
+          }
+        ]
+      },
       "2023": {
         "total_covered": 35,
         "total_papers": 38,

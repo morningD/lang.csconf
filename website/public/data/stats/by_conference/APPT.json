@@ -45,20 +45,20 @@
       "English": 2
     },
     "2025": {
-      "Chinese": 31,
-      "English": 3,
-      "Spanish": 1,
+      "Chinese": 71,
+      "Dutch": 1,
+      "English": 8,
+      "Other": 2,
       "German": 1
     }
   },
   "total": {
-    "English": 13,
+    "English": 18,
     "Indian": 1,
-    "Chinese": 110,
-    "Other": 5,
-    "Dutch": 1,
+    "Chinese": 150,
+    "Other": 7,
+    "Dutch": 2,
     "Italian": 1,
-    "Spanish": 1,
     "German": 1
   },
   "venues": {
@@ -115,5 +115,801 @@
       "paper_source": "search_api",
       "note": "SPARQL gap filled by step2c. 13 papers."
     }
+  },
+  "affiliations": {
+    "total_covered": 131,
+    "total_papers": 180,
+    "coverage_pct": 72.8,
+    "top": [
+      {
+        "name": "Chinese Academy of Sciences",
+        "count": 17,
+        "pct": 9.44,
+        "country": "CN",
+        "rank": 1
+      },
+      {
+        "name": "National University of Defense Technology",
+        "count": 15,
+        "pct": 8.33,
+        "country": "CN",
+        "rank": 2
+      },
+      {
+        "name": "Shanghai Jiao Tong University",
+        "count": 8,
+        "pct": 4.44,
+        "country": "CN",
+        "rank": 3
+      },
+      {
+        "name": "Tsinghua University",
+        "count": 7,
+        "pct": 3.89,
+        "country": "CN",
+        "rank": 4
+      },
+      {
+        "name": "Beihang University",
+        "count": 6,
+        "pct": 3.33,
+        "country": "CN",
+        "rank": 5
+      },
+      {
+        "name": "Nankai University",
+        "count": 5,
+        "pct": 2.78,
+        "country": "CN",
+        "rank": 6
+      },
+      {
+        "name": "Peking University",
+        "count": 4,
+        "pct": 2.22,
+        "country": "CN",
+        "rank": 7
+      },
+      {
+        "name": "Beijing Institute of Technology",
+        "count": 4,
+        "pct": 2.22,
+        "country": "CN",
+        "rank": 7
+      },
+      {
+        "name": "Huazhong University of Science and Technology",
+        "count": 4,
+        "pct": 2.22,
+        "country": "CN",
+        "rank": 7
+      },
+      {
+        "name": "Zhejiang University",
+        "count": 3,
+        "pct": 1.67,
+        "country": "CN",
+        "rank": 10
+      },
+      {
+        "name": "Institute of Applied Physics and Computational Mathematics",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "University of Science and Technology of China",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Sun Yat-sen University",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Nanjing University of Posts and Telecommunications",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Nanchang University",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Xiamen University",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Shandong University",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Fudan University",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Dalian University of Technology",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      },
+      {
+        "name": "Nanjing University of Science and Technology",
+        "count": 2,
+        "pct": 1.11,
+        "country": "CN",
+        "rank": 11
+      }
+    ],
+    "by_year": {
+      "2017": {
+        "total_covered": 11,
+        "total_papers": 11,
+        "coverage_pct": 100.0,
+        "top": [
+          {
+            "name": "Institute of Applied Physics and Computational Mathematics",
+            "count": 2,
+            "pct": 18.18,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 2,
+            "pct": 18.18,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Wuhan National Laboratory for Optoelectronics",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "East China University of Science and Technology",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Tianjin University of Technology",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Center for Energy-Efficient Computing and Applications, PKU, Beijing",
+            "count": 1,
+            "pct": 9.09,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          }
+        ]
+      },
+      "2019": {
+        "total_covered": 11,
+        "total_papers": 11,
+        "coverage_pct": 100.0,
+        "top": [
+          {
+            "name": "Nankai University",
+            "count": 3,
+            "pct": 27.27,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 3,
+            "pct": 27.27,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Peking University",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "University of Shanghai for Science and Technology",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "East China Normal University",
+            "count": 1,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 3
+          }
+        ]
+      },
+      "2023": {
+        "total_covered": 24,
+        "total_papers": 24,
+        "coverage_pct": 100.0,
+        "top": [
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 4,
+            "pct": 16.67,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Beijing Institute of Technology",
+            "count": 3,
+            "pct": 12.5,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Sun Yat-sen University",
+            "count": 2,
+            "pct": 8.33,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Nanchang University",
+            "count": 2,
+            "pct": 8.33,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Beijing University of Technology",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "University of Electronic Science and Technology of China",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Nankai University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Lanzhou University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Nanjing University of Posts and Telecommunications",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Nanjing University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Beijing Jiaotong University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Computer Science, Beijing",
+            "count": 1,
+            "pct": 4.17,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Qingdao University of Science and Technology",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Qinghai University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Beijing University of Posts and Telecommunications",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Beihang University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CN",
+            "rank": 5
+          }
+        ]
+      },
+      "2025": {
+        "total_covered": 35,
+        "total_papers": 83,
+        "coverage_pct": 42.2,
+        "top": [
+          {
+            "name": "Shanghai Jiao Tong University",
+            "count": 8,
+            "pct": 9.64,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 5,
+            "pct": 6.02,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 3,
+            "pct": 3.61,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Beihang University",
+            "count": 3,
+            "pct": 3.61,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 2,
+            "pct": 2.41,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Peking University",
+            "count": 2,
+            "pct": 2.41,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 2,
+            "pct": 2.41,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Xiamen University",
+            "count": 2,
+            "pct": 2.41,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Shenzhen University",
+            "count": 1,
+            "pct": 1.2,
+            "country": "CN",
+            "rank": 9
+          },
+          {
+            "name": "St. Cloud State University",
+            "count": 1,
+            "pct": 1.2,
+            "country": "US",
+            "rank": 9
+          },
+          {
+            "name": "Nankai University",
+            "count": 1,
+            "pct": 1.2,
+            "country": "CN",
+            "rank": 9
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 1,
+            "pct": 1.2,
+            "country": "CN",
+            "rank": 9
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 1,
+            "pct": 1.2,
+            "country": "CN",
+            "rank": 9
+          },
+          {
+            "name": "Ant Group",
+            "count": 1,
+            "pct": 1.2,
+            "country": "CN",
+            "rank": 9
+          },
+          {
+            "name": "Shandong University",
+            "count": 1,
+            "pct": 1.2,
+            "country": "CN",
+            "rank": 9
+          },
+          {
+            "name": "Anhui Polytechnic University",
+            "count": 1,
+            "pct": 1.2,
+            "country": "CN",
+            "rank": 9
+          }
+        ]
+      },
+      "2011": {
+        "total_covered": 13,
+        "total_papers": 13,
+        "coverage_pct": 100.0,
+        "top": [
+          {
+            "name": "Fudan University",
+            "count": 2,
+            "pct": 15.38,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 2,
+            "pct": 15.38,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Indian Institute of Technology Madras",
+            "count": 1,
+            "pct": 7.69,
+            "country": "IN",
+            "rank": 3
+          },
+          {
+            "name": "Indian Institute of Technology Kanpur",
+            "count": 1,
+            "pct": 7.69,
+            "country": "IN",
+            "rank": 3
+          },
+          {
+            "name": "University of New Mexico",
+            "count": 1,
+            "pct": 7.69,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Beijing Institute of Technology",
+            "count": 1,
+            "pct": 7.69,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Heriot-Watt University",
+            "count": 1,
+            "pct": 7.69,
+            "country": "GB",
+            "rank": 3
+          },
+          {
+            "name": "Xi’an Jiaotong-Liverpool University",
+            "count": 1,
+            "pct": 7.69,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Poznań University of Technology",
+            "count": 1,
+            "pct": 7.69,
+            "country": "PL",
+            "rank": 3
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 1,
+            "pct": 7.69,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 1,
+            "pct": 7.69,
+            "country": "CN",
+            "rank": 3
+          }
+        ]
+      },
+      "2013": {
+        "total_covered": 29,
+        "total_papers": 30,
+        "coverage_pct": 96.7,
+        "top": [
+          {
+            "name": "National University of Defense Technology",
+            "count": 7,
+            "pct": 23.33,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Beihang University",
+            "count": 2,
+            "pct": 6.67,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Dalian University of Technology",
+            "count": 2,
+            "pct": 6.67,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Nanjing University of Science and Technology",
+            "count": 2,
+            "pct": 6.67,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Halmstad University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "SE",
+            "rank": 5
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Harbin Engineering University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Eindhoven University of Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "NL",
+            "rank": 5
+          },
+          {
+            "name": "Peking University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Linköping University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "SE",
+            "rank": 5
+          },
+          {
+            "name": "Shandong University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Queen's University Belfast",
+            "count": 1,
+            "pct": 3.33,
+            "country": "GB",
+            "rank": 5
+          },
+          {
+            "name": "Northeastern University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Foundation for Research and Technology Hellas",
+            "count": 1,
+            "pct": 3.33,
+            "country": "GR",
+            "rank": 5
+          },
+          {
+            "name": "Zhejiang University of Science and Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Northwestern Polytechnical University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Harbin Institute of Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Nanjing University of Posts and Telecommunications",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          }
+        ]
+      },
+      "2015": {
+        "total_covered": 8,
+        "total_papers": 8,
+        "coverage_pct": 100.0,
+        "top": [
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 3,
+            "pct": 37.5,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 2,
+            "pct": 25.0,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "ES Technology",
+            "count": 1,
+            "pct": 12.5,
+            "country": "GB",
+            "rank": 3
+          },
+          {
+            "name": "Northwestern Polytechnical University",
+            "count": 1,
+            "pct": 12.5,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Inspur",
+            "count": 1,
+            "pct": 12.5,
+            "country": "CN",
+            "rank": 3
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }

@@ -14,6 +14,7 @@
     2015,
     2016,
     2017,
+    2018,
     2020,
     2021,
     2022,
@@ -106,6 +107,17 @@
       "Vietnamese": 1,
       "Spanish": 1
     },
+    "2018": {
+      "German": 4,
+      "French": 2,
+      "Korean": 4,
+      "Italian": 1,
+      "English": 8,
+      "Chinese": 7,
+      "Other": 8,
+      "Spanish": 1,
+      "Japanese": 1
+    },
     "2020": {
       "Other": 5,
       "Chinese": 5,
@@ -170,20 +182,21 @@
     }
   },
   "total": {
-    "Korean": 10,
-    "English": 166,
-    "French": 22,
-    "Chinese": 70,
-    "Italian": 17,
-    "German": 23,
-    "Other": 45,
+    "Korean": 14,
+    "English": 174,
+    "French": 24,
+    "Chinese": 77,
+    "Italian": 18,
+    "German": 27,
+    "Other": 53,
     "Dutch": 10,
-    "Spanish": 22,
+    "Spanish": 23,
     "Indian": 10,
     "Russian": 3,
     "Turkish": 4,
     "Portuguese": 3,
     "Vietnamese": 4,
+    "Japanese": 1,
     "Persian": 3
   },
   "venues": {
@@ -330,7 +343,7 @@
     "2025": {
       "paper_source": "journal_scrape",
       "paper_source_url": "https://www.hipeac.net/api/v3/events/6814/activities/",
-      "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef."
+      "note": "Papers published in ACM TACO journal. 29 papers recovered via HiPEAC API + CrossRef. Title reconciliation 2026-07-12: two API display tails were removed through data/repair_manifests/hipeac_2025_title_repair.json across raw, classified, and affiliation records; paper count (29), OpenAlex matched/institution counts (1/1), and coverage (3.4%) unchanged. No OpenAlex retry was run."
     },
     "2014": {
       "paper_source": "search_api",
@@ -338,149 +351,149 @@
     }
   },
   "affiliations": {
-    "total_covered": 149,
-    "total_papers": 412,
-    "coverage_pct": 36.2,
+    "total_covered": 167,
+    "total_papers": 448,
+    "coverage_pct": 37.3,
     "top": [
       {
         "name": "Institut national de recherche en sciences et technologies du numérique",
         "count": 6,
-        "pct": 1.46,
+        "pct": 1.34,
         "country": "FR",
         "rank": 1
       },
       {
+        "name": "Chalmers University of Technology",
+        "count": 5,
+        "pct": 1.12,
+        "country": "SE",
+        "rank": 2
+      },
+      {
         "name": "Barcelona Supercomputing Center",
         "count": 5,
-        "pct": 1.21,
+        "pct": 1.12,
         "country": "ES",
         "rank": 2
       },
       {
         "name": "Technion",
         "count": 4,
-        "pct": 0.97,
+        "pct": 0.89,
         "country": "IL",
-        "rank": 3
+        "rank": 4
       },
       {
         "name": "University of Pittsburgh",
         "count": 4,
-        "pct": 0.97,
+        "pct": 0.89,
         "country": "US",
-        "rank": 3
+        "rank": 4
+      },
+      {
+        "name": "Seoul National University",
+        "count": 4,
+        "pct": 0.89,
+        "country": "KR",
+        "rank": 4
+      },
+      {
+        "name": "Trinity College Dublin",
+        "count": 4,
+        "pct": 0.89,
+        "country": "IE",
+        "rank": 4
       },
       {
         "name": "Intel",
         "count": 4,
-        "pct": 0.97,
+        "pct": 0.89,
         "country": "US",
-        "rank": 3
+        "rank": 4
       },
       {
         "name": "Graz University of Technology",
         "count": 4,
-        "pct": 0.97,
+        "pct": 0.89,
         "country": "AT",
-        "rank": 3
+        "rank": 4
       },
       {
-        "name": "Chalmers University of Technology",
+        "name": "Huazhong University of Science and Technology",
         "count": 3,
-        "pct": 0.73,
-        "country": "SE",
-        "rank": 7
-      },
-      {
-        "name": "Seoul National University",
-        "count": 3,
-        "pct": 0.73,
-        "country": "KR",
-        "rank": 7
+        "pct": 0.67,
+        "country": "CN",
+        "rank": 10
       },
       {
         "name": "Ghent University Hospital",
         "count": 3,
-        "pct": 0.73,
+        "pct": 0.67,
         "country": "BE",
-        "rank": 7
+        "rank": 10
       },
       {
         "name": "STMicroelectronics",
         "count": 3,
-        "pct": 0.73,
+        "pct": 0.67,
         "country": "FR",
-        "rank": 7
+        "rank": 10
       },
       {
         "name": "Ohio State University",
         "count": 3,
-        "pct": 0.73,
+        "pct": 0.67,
         "country": "US",
-        "rank": 7
-      },
-      {
-        "name": "Trinity College Dublin",
-        "count": 3,
-        "pct": 0.73,
-        "country": "IE",
-        "rank": 7
+        "rank": 10
       },
       {
         "name": "Politecnico di Milano",
         "count": 3,
-        "pct": 0.73,
+        "pct": 0.67,
         "country": "IT",
-        "rank": 7
+        "rank": 10
       },
       {
         "name": "National University of Defense Technology",
         "count": 2,
-        "pct": 0.49,
+        "pct": 0.45,
         "country": "CN",
-        "rank": 14
+        "rank": 15
+      },
+      {
+        "name": "Imperial College London",
+        "count": 2,
+        "pct": 0.45,
+        "country": "GB",
+        "rank": 15
+      },
+      {
+        "name": "Shanghai Jiao Tong University",
+        "count": 2,
+        "pct": 0.45,
+        "country": "CN",
+        "rank": 15
+      },
+      {
+        "name": "University of Passau",
+        "count": 2,
+        "pct": 0.45,
+        "country": "DE",
+        "rank": 15
+      },
+      {
+        "name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+        "count": 2,
+        "pct": 0.45,
+        "country": "FR",
+        "rank": 15
       },
       {
         "name": "Ghent University",
         "count": 2,
-        "pct": 0.49,
+        "pct": 0.45,
         "country": "BE",
-        "rank": 14
-      },
-      {
-        "name": "University of Edinburgh",
-        "count": 2,
-        "pct": 0.49,
-        "country": "GB",
-        "rank": 14
-      },
-      {
-        "name": "Codeplay",
-        "count": 2,
-        "pct": 0.49,
-        "country": "GB",
-        "rank": 14
-      },
-      {
-        "name": "University of California, Riverside",
-        "count": 2,
-        "pct": 0.49,
-        "country": "US",
-        "rank": 14
-      },
-      {
-        "name": "Carnegie Mellon University",
-        "count": 2,
-        "pct": 0.49,
-        "country": "US",
-        "rank": 14
-      },
-      {
-        "name": "Norwegian University of Science and Technology",
-        "count": 2,
-        "pct": 0.49,
-        "country": "NO",
-        "rank": 14
+        "rank": 15
       }
     ],
     "by_year": {
@@ -516,6 +529,118 @@
             "pct": 2.7,
             "country": "KR",
             "rank": 1
+          }
+        ]
+      },
+      "2018": {
+        "total_covered": 18,
+        "total_papers": 36,
+        "coverage_pct": 50.0,
+        "top": [
+          {
+            "name": "Chalmers University of Technology",
+            "count": 2,
+            "pct": 5.56,
+            "country": "SE",
+            "rank": 1
+          },
+          {
+            "name": "University of Passau",
+            "count": 2,
+            "pct": 5.56,
+            "country": "DE",
+            "rank": 1
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 2,
+            "pct": 5.56,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "LMU Munich",
+            "count": 1,
+            "pct": 2.78,
+            "country": "DE",
+            "rank": 4
+          },
+          {
+            "name": "Institute of Information Science, Academia Sinica",
+            "count": 1,
+            "pct": 2.78,
+            "country": "TW",
+            "rank": 4
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 2.78,
+            "country": "KR",
+            "rank": 4
+          },
+          {
+            "name": "Beihang University",
+            "count": 1,
+            "pct": 2.78,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "Imperial College London",
+            "count": 1,
+            "pct": 2.78,
+            "country": "GB",
+            "rank": 4
+          },
+          {
+            "name": "Shanghai Jiao Tong University",
+            "count": 1,
+            "pct": 2.78,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "count": 1,
+            "pct": 2.78,
+            "country": "FR",
+            "rank": 4
+          },
+          {
+            "name": "Toyohashi University of Technology",
+            "count": 1,
+            "pct": 2.78,
+            "country": "JP",
+            "rank": 4
+          },
+          {
+            "name": "Technische Universität Darmstadt",
+            "count": 1,
+            "pct": 2.78,
+            "country": "DE",
+            "rank": 4
+          },
+          {
+            "name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+            "count": 1,
+            "pct": 2.78,
+            "country": "FR",
+            "rank": 4
+          },
+          {
+            "name": "Ferdowsi University of Mashhad",
+            "count": 1,
+            "pct": 2.78,
+            "country": "IR",
+            "rank": 4
+          },
+          {
+            "name": "Trinity College Dublin",
+            "count": 1,
+            "pct": 2.78,
+            "country": "IE",
+            "rank": 4
           }
         ]
       },

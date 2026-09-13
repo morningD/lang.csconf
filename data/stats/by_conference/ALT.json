@@ -326,152 +326,173 @@
     "2026": "C"
   },
   "affiliations": {
-    "total_covered": 42,
-    "total_papers": 52,
-    "coverage_pct": 80.8,
+    "total_covered": 44,
+    "total_papers": 97,
+    "coverage_pct": 45.4,
     "top": [
+      {
+        "name": "Universitat Pompeu Fabra",
+        "count": 3,
+        "pct": 3.09,
+        "country": "ES",
+        "rank": 1
+      },
       {
         "name": "Purdue University",
         "count": 3,
-        "pct": 5.77,
+        "pct": 3.09,
         "country": "US",
         "rank": 1
       },
       {
         "name": "Columbia University",
         "count": 3,
-        "pct": 5.77,
+        "pct": 3.09,
         "country": "US",
         "rank": 1
       },
       {
         "name": "Massachusetts Institute of Technology",
         "count": 3,
-        "pct": 5.77,
+        "pct": 3.09,
         "country": "US",
         "rank": 1
       },
       {
-        "name": "Toyota Technological Institute at Chicago",
+        "name": "Georgia Institute of Technology",
         "count": 2,
-        "pct": 3.85,
+        "pct": 2.06,
         "country": "US",
-        "rank": 4
+        "rank": 5
       },
       {
-        "name": "Universitat Pompeu Fabra",
+        "name": "Toyota Technological Institute at Chicago",
         "count": 2,
-        "pct": 3.85,
-        "country": "ES",
-        "rank": 4
+        "pct": 2.06,
+        "country": "US",
+        "rank": 5
       },
       {
         "name": "Google",
         "count": 2,
-        "pct": 3.85,
+        "pct": 2.06,
         "country": "US",
-        "rank": 4
+        "rank": 5
       },
       {
         "name": "Tel Aviv University",
         "count": 2,
-        "pct": 3.85,
+        "pct": 2.06,
         "country": "IL",
-        "rank": 4
+        "rank": 5
       },
       {
         "name": "University of Michigan",
         "count": 2,
-        "pct": 3.85,
+        "pct": 2.06,
         "country": "US",
-        "rank": 4
+        "rank": 5
       },
       {
         "name": "University of Southern California",
         "count": 2,
-        "pct": 3.85,
+        "pct": 2.06,
         "country": "US",
-        "rank": 4
+        "rank": 5
       },
       {
         "name": "Yale University",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "US",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "Institute for Advanced Study",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "US",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "INRIA",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "FR",
-        "rank": 10
-      },
-      {
-        "name": "Georgia Institute of Technology",
-        "count": 1,
-        "pct": 1.92,
-        "country": "US",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "Sorbonne Université",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "FR",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "Criteo",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "FR",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "York University",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "CA",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "Stevens Institute of Technology",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "US",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "Princeton University",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "US",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "Moscow Institute of Physics and Technology",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "RU",
-        "rank": 10
+        "rank": 11
       },
       {
         "name": "New York University",
         "count": 1,
-        "pct": 1.92,
+        "pct": 1.03,
         "country": "US",
-        "rank": 10
+        "rank": 11
       }
     ],
     "by_year": {
+      "2024": {
+        "total_covered": 2,
+        "total_papers": 45,
+        "coverage_pct": 4.4,
+        "top": [
+          {
+            "name": "Universitat Pompeu Fabra",
+            "count": 1,
+            "pct": 2.22,
+            "country": "ES",
+            "rank": 1
+          },
+          {
+            "name": "Georgia Institute of Technology",
+            "count": 1,
+            "pct": 2.22,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
       "2025": {
         "total_covered": 42,
         "total_papers": 52,
@@ -691,6 +712,7 @@
       }
     },
     "sources": [
+      "openalex",
       "papercopilot"
     ]
   }

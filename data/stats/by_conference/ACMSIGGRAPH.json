@@ -280,39 +280,41 @@
       "Portuguese": 2
     },
     "2025": {
-      "Chinese": 190,
-      "English": 120,
-      "Italian": 12,
-      "Japanese": 8,
-      "Vietnamese": 3,
+      "Chinese": 358,
+      "English": 104,
+      "Japanese": 17,
+      "Other": 121,
+      "Vietnamese": 6,
       "French": 10,
-      "German": 21,
-      "Other": 24,
-      "Korean": 21,
-      "Russian": 2,
-      "Indian": 3,
-      "Spanish": 7,
-      "Portuguese": 1,
-      "Dutch": 3
+      "Italian": 13,
+      "German": 35,
+      "Korean": 41,
+      "Indian": 4,
+      "Spanish": 12,
+      "Portuguese": 7,
+      "Russian": 3,
+      "Dutch": 1,
+      "Persian": 1,
+      "Turkish": 1
     }
   },
   "total": {
-    "Korean": 224,
-    "English": 3101,
-    "Other": 598,
-    "German": 537,
+    "Korean": 244,
+    "English": 3085,
+    "Other": 695,
+    "German": 551,
     "French": 326,
-    "Portuguese": 62,
-    "Japanese": 237,
-    "Vietnamese": 27,
-    "Chinese": 1153,
-    "Russian": 101,
-    "Indian": 48,
-    "Spanish": 190,
-    "Dutch": 63,
-    "Italian": 151,
-    "Turkish": 22,
-    "Persian": 13
+    "Portuguese": 68,
+    "Japanese": 246,
+    "Vietnamese": 30,
+    "Chinese": 1321,
+    "Russian": 102,
+    "Indian": 49,
+    "Spanish": 195,
+    "Dutch": 61,
+    "Italian": 152,
+    "Turkish": 23,
+    "Persian": 14
   },
   "venues": {
     "2025": {
@@ -428,6 +430,11 @@
     "2026": "A"
   },
   "accept_rates": [
+    {
+      "year": 2026,
+      "submitted": 961,
+      "accepted": 195
+    },
     {
       "year": 2025,
       "submitted": 771,
@@ -660,152 +667,1566 @@
     }
   ],
   "affiliations": {
-    "total_covered": 833,
-    "total_papers": 1366,
-    "coverage_pct": 61.0,
+    "total_covered": 1363,
+    "total_papers": 2063,
+    "coverage_pct": 66.1,
     "top": [
       {
         "name": "Zhejiang University",
-        "count": 28,
-        "pct": 2.05,
+        "count": 35,
+        "pct": 1.7,
         "country": "CN",
         "rank": 1
       },
       {
         "name": "ETH Zurich",
-        "count": 28,
-        "pct": 2.05,
+        "count": 33,
+        "pct": 1.6,
         "country": "CH",
-        "rank": 1
-      },
-      {
-        "name": "Tsinghua University",
-        "count": 27,
-        "pct": 1.98,
-        "country": "CN",
-        "rank": 3
+        "rank": 2
       },
       {
         "name": "University of Toronto",
-        "count": 23,
-        "pct": 1.68,
+        "count": 31,
+        "pct": 1.5,
         "country": "CA",
+        "rank": 3
+      },
+      {
+        "name": "Tsinghua University",
+        "count": 29,
+        "pct": 1.41,
+        "country": "CN",
         "rank": 4
       },
       {
         "name": "Tel Aviv University",
-        "count": 19,
-        "pct": 1.39,
+        "count": 24,
+        "pct": 1.16,
         "country": "IL",
         "rank": 5
       },
       {
-        "name": "University of Hong Kong",
-        "count": 18,
-        "pct": 1.32,
-        "country": "HK",
+        "name": "Stanford University",
+        "count": 21,
+        "pct": 1.02,
+        "country": "US",
         "rank": 6
       },
       {
         "name": "Carnegie Mellon University",
-        "count": 16,
-        "pct": 1.17,
+        "count": 21,
+        "pct": 1.02,
         "country": "US",
-        "rank": 7
-      },
-      {
-        "name": "Adobe",
-        "count": 15,
-        "pct": 1.1,
-        "country": "US",
-        "rank": 8
+        "rank": 6
       },
       {
         "name": "University of Science and Technology of China",
-        "count": 15,
-        "pct": 1.1,
+        "count": 20,
+        "pct": 0.97,
         "country": "CN",
         "rank": 8
       },
       {
-        "name": "University of California, San Diego",
-        "count": 14,
-        "pct": 1.02,
+        "name": "NVIDIA",
+        "count": 19,
+        "pct": 0.92,
         "country": "US",
-        "rank": 10
+        "rank": 9
       },
       {
-        "name": "Stanford University",
-        "count": 13,
-        "pct": 0.95,
+        "name": "University of Hong Kong",
+        "count": 19,
+        "pct": 0.92,
+        "country": "HK",
+        "rank": 9
+      },
+      {
+        "name": "Massachusetts Institute of Technology",
+        "count": 17,
+        "pct": 0.82,
         "country": "US",
         "rank": 11
       },
       {
-        "name": "Massachusetts Institute of Technology",
-        "count": 12,
-        "pct": 0.88,
+        "name": "University of California, San Diego",
+        "count": 17,
+        "pct": 0.82,
         "country": "US",
-        "rank": 12
-      },
-      {
-        "name": "NVIDIA",
-        "count": 9,
-        "pct": 0.66,
-        "country": "US",
-        "rank": 13
-      },
-      {
-        "name": "Georgia Institute of Technology",
-        "count": 9,
-        "pct": 0.66,
-        "country": "US",
-        "rank": 13
-      },
-      {
-        "name": "Peking University",
-        "count": 9,
-        "pct": 0.66,
-        "country": "CN",
-        "rank": 13
-      },
-      {
-        "name": "Google",
-        "count": 8,
-        "pct": 0.59,
-        "country": "US",
-        "rank": 16
-      },
-      {
-        "name": "Simon Fraser University",
-        "count": 8,
-        "pct": 0.59,
-        "country": "CA",
-        "rank": 16
-      },
-      {
-        "name": "Seoul National University",
-        "count": 8,
-        "pct": 0.59,
-        "country": "KR",
-        "rank": 16
+        "rank": 11
       },
       {
         "name": "EPFL",
-        "count": 8,
-        "pct": 0.59,
+        "count": 16,
+        "pct": 0.78,
         "country": "CH",
-        "rank": 16
+        "rank": 13
       },
       {
-        "name": "University College London",
-        "count": 8,
-        "pct": 0.59,
-        "country": "GB",
-        "rank": 16
+        "name": "Max Planck Institute for Informatics",
+        "count": 15,
+        "pct": 0.73,
+        "country": "DE",
+        "rank": 14
+      },
+      {
+        "name": "Simon Fraser University",
+        "count": 15,
+        "pct": 0.73,
+        "country": "CA",
+        "rank": 14
+      },
+      {
+        "name": "Adobe",
+        "count": 15,
+        "pct": 0.73,
+        "country": "US",
+        "rank": 14
+      },
+      {
+        "name": "KAIST",
+        "count": 14,
+        "pct": 0.68,
+        "country": "KR",
+        "rank": 17
+      },
+      {
+        "name": "University of Tokyo",
+        "count": 13,
+        "pct": 0.63,
+        "country": "JP",
+        "rank": 18
+      },
+      {
+        "name": "Seoul National University",
+        "count": 13,
+        "pct": 0.63,
+        "country": "KR",
+        "rank": 18
+      },
+      {
+        "name": "Peking University",
+        "count": 13,
+        "pct": 0.63,
+        "country": "CN",
+        "rank": 18
       }
     ],
     "by_year": {
+      "2021": {
+        "total_covered": 286,
+        "total_papers": 372,
+        "coverage_pct": 76.9,
+        "top": [
+          {
+            "name": "NVIDIA",
+            "count": 7,
+            "pct": 1.88,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of California System",
+            "count": 7,
+            "pct": 1.88,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Meta",
+            "count": 6,
+            "pct": 1.61,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Walt Disney",
+            "count": 5,
+            "pct": 1.34,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "DreamWorks Animation, United States of America",
+            "count": 5,
+            "pct": 1.34,
+            "country": "",
+            "rank": 4
+          },
+          {
+            "name": "Stanford University",
+            "count": 5,
+            "pct": 1.34,
+            "country": "US",
+            "rank": 4
+          },
+          {
+            "name": "EPFL",
+            "count": 5,
+            "pct": 1.34,
+            "country": "CH",
+            "rank": 4
+          },
+          {
+            "name": "Texas A&M University",
+            "count": 4,
+            "pct": 1.08,
+            "country": "US",
+            "rank": 8
+          },
+          {
+            "name": "Max Planck Institute for Informatics",
+            "count": 4,
+            "pct": 1.08,
+            "country": "DE",
+            "rank": 8
+          },
+          {
+            "name": "University of Toronto",
+            "count": 4,
+            "pct": 1.08,
+            "country": "CA",
+            "rank": 8
+          },
+          {
+            "name": "Massachusetts Institute of Technology",
+            "count": 4,
+            "pct": 1.08,
+            "country": "US",
+            "rank": 8
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 4,
+            "pct": 1.08,
+            "country": "CN",
+            "rank": 8
+          },
+          {
+            "name": "Hasso Plattner Institute",
+            "count": 3,
+            "pct": 0.81,
+            "country": "DE",
+            "rank": 13
+          },
+          {
+            "name": "Autodesk",
+            "count": 3,
+            "pct": 0.81,
+            "country": "GB",
+            "rank": 13
+          },
+          {
+            "name": "Blue Sky Research",
+            "count": 3,
+            "pct": 0.81,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "CD PROJEKT RED, Poland",
+            "count": 3,
+            "pct": 0.81,
+            "country": "",
+            "rank": 13
+          },
+          {
+            "name": "University of Chicago",
+            "count": 3,
+            "pct": 0.81,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Kyushu University",
+            "count": 3,
+            "pct": 0.81,
+            "country": "JP",
+            "rank": 13
+          },
+          {
+            "name": "New York University",
+            "count": 3,
+            "pct": 0.81,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Blizzard Entertainment, United States of America",
+            "count": 3,
+            "pct": 0.81,
+            "country": "",
+            "rank": 13
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 3,
+            "pct": 0.81,
+            "country": "CN",
+            "rank": 13
+          },
+          {
+            "name": "Tel Aviv University",
+            "count": 3,
+            "pct": 0.81,
+            "country": "IL",
+            "rank": 13
+          },
+          {
+            "name": "Dartmouth College",
+            "count": 3,
+            "pct": 0.81,
+            "country": "US",
+            "rank": 13
+          },
+          {
+            "name": "Lucerne University of Applied Sciences and Arts",
+            "count": 2,
+            "pct": 0.54,
+            "country": "CH",
+            "rank": 24
+          },
+          {
+            "name": "California Polytechnic State University",
+            "count": 2,
+            "pct": 0.54,
+            "country": "US",
+            "rank": 24
+          },
+          {
+            "name": "Skolkovo Institute of Science and Technology",
+            "count": 2,
+            "pct": 0.54,
+            "country": "RU",
+            "rank": 24
+          },
+          {
+            "name": "Pixar Animation Studios, United States of America",
+            "count": 2,
+            "pct": 0.54,
+            "country": "",
+            "rank": 24
+          },
+          {
+            "name": "Waseda University",
+            "count": 2,
+            "pct": 0.54,
+            "country": "JP",
+            "rank": 24
+          },
+          {
+            "name": "Tokyo Institute of Technology",
+            "count": 2,
+            "pct": 0.54,
+            "country": "JP",
+            "rank": 24
+          },
+          {
+            "name": "Independent, Poland",
+            "count": 2,
+            "pct": 0.54,
+            "country": "",
+            "rank": 24
+          },
+          {
+            "name": "Ringling College of Art and Design",
+            "count": 2,
+            "pct": 0.54,
+            "country": "US",
+            "rank": 24
+          },
+          {
+            "name": "University of Tsukuba",
+            "count": 2,
+            "pct": 0.54,
+            "country": "JP",
+            "rank": 24
+          },
+          {
+            "name": "University of Electro-Communications",
+            "count": 2,
+            "pct": 0.54,
+            "country": "JP",
+            "rank": 24
+          },
+          {
+            "name": "University of Tokyo",
+            "count": 2,
+            "pct": 0.54,
+            "country": "JP",
+            "rank": 24
+          },
+          {
+            "name": "Baobab Studios",
+            "count": 2,
+            "pct": 0.54,
+            "country": "",
+            "rank": 24
+          },
+          {
+            "name": "Seoul National University",
+            "count": 2,
+            "pct": 0.54,
+            "country": "KR",
+            "rank": 24
+          },
+          {
+            "name": "Unity Technologies",
+            "count": 2,
+            "pct": 0.54,
+            "country": "",
+            "rank": 24
+          },
+          {
+            "name": "Electronic Arts",
+            "count": 2,
+            "pct": 0.54,
+            "country": "GB",
+            "rank": 24
+          },
+          {
+            "name": "University of Utah",
+            "count": 2,
+            "pct": 0.54,
+            "country": "US",
+            "rank": 24
+          },
+          {
+            "name": "Peking University",
+            "count": 2,
+            "pct": 0.54,
+            "country": "CN",
+            "rank": 24
+          },
+          {
+            "name": "Chinese University of Hong Kong",
+            "count": 2,
+            "pct": 0.54,
+            "country": "HK",
+            "rank": 24
+          },
+          {
+            "name": "Institut Polytechnique de Paris",
+            "count": 2,
+            "pct": 0.54,
+            "country": "FR",
+            "rank": 24
+          },
+          {
+            "name": "Charles University",
+            "count": 2,
+            "pct": 0.54,
+            "country": "CZ",
+            "rank": 24
+          },
+          {
+            "name": "Adobe Systems",
+            "count": 2,
+            "pct": 0.54,
+            "country": "US",
+            "rank": 24
+          },
+          {
+            "name": "Nanjing University",
+            "count": 2,
+            "pct": 0.54,
+            "country": "CN",
+            "rank": 24
+          },
+          {
+            "name": "University of Bordeaux",
+            "count": 2,
+            "pct": 0.54,
+            "country": "FR",
+            "rank": 24
+          },
+          {
+            "name": "KAIST",
+            "count": 2,
+            "pct": 0.54,
+            "country": "KR",
+            "rank": 24
+          },
+          {
+            "name": "Institute of Science and Technology Austria",
+            "count": 2,
+            "pct": 0.54,
+            "country": "AT",
+            "rank": 24
+          },
+          {
+            "name": "KAUST",
+            "count": 2,
+            "pct": 0.54,
+            "country": "SA",
+            "rank": 24
+          },
+          {
+            "name": "Pixar Animation Studios",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "KHU, South Korea",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Istituto di Scienza e Tecnologie dell'Informazione \"Alessandro Faedo\"",
+            "count": 1,
+            "pct": 0.27,
+            "country": "IT",
+            "rank": 50
+          },
+          {
+            "name": "Tourmato, United States of America",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "University of British Columbia",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CA",
+            "rank": 50
+          },
+          {
+            "name": "Nanchang University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CN",
+            "rank": 50
+          },
+          {
+            "name": "INVR.SPACE GmbH",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "University of Illinois at Urbana-Champaign",
+            "count": 1,
+            "pct": 0.27,
+            "country": "US",
+            "rank": 50
+          },
+          {
+            "name": "Vivid Economics",
+            "count": 1,
+            "pct": 0.27,
+            "country": "GB",
+            "rank": 50
+          },
+          {
+            "name": "Group Image",
+            "count": 1,
+            "pct": 0.27,
+            "country": "PL",
+            "rank": 50
+          },
+          {
+            "name": "WisdomVR Project",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Toyota Motor Corporation",
+            "count": 1,
+            "pct": 0.27,
+            "country": "JP",
+            "rank": 50
+          },
+          {
+            "name": "Complexion Software",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Télécom Paris",
+            "count": 1,
+            "pct": 0.27,
+            "country": "FR",
+            "rank": 50
+          },
+          {
+            "name": "Dimension Studio, United Kingdom",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Bigo Technology PTE LTD",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Artikel",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Research Institute for Analytical Instrumentation",
+            "count": 1,
+            "pct": 0.27,
+            "country": "RO",
+            "rank": 50
+          },
+          {
+            "name": "International Monetary Fund",
+            "count": 1,
+            "pct": 0.27,
+            "country": "US",
+            "rank": 50
+          },
+          {
+            "name": "Altair Engineering",
+            "count": 1,
+            "pct": 0.27,
+            "country": "US",
+            "rank": 50
+          },
+          {
+            "name": "NASA, USRA",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Université Gustave Eiffel",
+            "count": 1,
+            "pct": 0.27,
+            "country": "FR",
+            "rank": 50
+          },
+          {
+            "name": "Weta Digital, New Zealand",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Clemson University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "US",
+            "rank": 50
+          },
+          {
+            "name": "University of New Mexico",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Sony Pictures Imageworks",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Soochow University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CN",
+            "rank": 50
+          },
+          {
+            "name": "Tohoku University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "JP",
+            "rank": 50
+          },
+          {
+            "name": "Hoorakhsh Studios, Iran",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Art as Foundation",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CH",
+            "rank": 50
+          },
+          {
+            "name": "Technical University of Crete",
+            "count": 1,
+            "pct": 0.27,
+            "country": "GR",
+            "rank": 50
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 0.27,
+            "country": "US",
+            "rank": 50
+          },
+          {
+            "name": "University of Lisbon",
+            "count": 1,
+            "pct": 0.27,
+            "country": "PT",
+            "rank": 50
+          },
+          {
+            "name": "Virtual and Physical Media Integration Association of Taiwan, Taiwan",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Indian Institute of Technology Bombay",
+            "count": 1,
+            "pct": 0.27,
+            "country": "IN",
+            "rank": 50
+          },
+          {
+            "name": "Pixar, United States of America",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Forschungszentrum Jülich",
+            "count": 1,
+            "pct": 0.27,
+            "country": "DE",
+            "rank": 50
+          },
+          {
+            "name": "EMI",
+            "count": 1,
+            "pct": 0.27,
+            "country": "GB",
+            "rank": 50
+          },
+          {
+            "name": "Human Media",
+            "count": 1,
+            "pct": 0.27,
+            "country": "US",
+            "rank": 50
+          },
+          {
+            "name": "Xi'an Jiaotong University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CN",
+            "rank": 50
+          },
+          {
+            "name": "King's College London",
+            "count": 1,
+            "pct": 0.27,
+            "country": "GB",
+            "rank": 50
+          },
+          {
+            "name": "Northwestern Polytechnical University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CN",
+            "rank": 50
+          },
+          {
+            "name": "Digital Domain",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Akademie für Technikfolgenabschätzung",
+            "count": 1,
+            "pct": 0.27,
+            "country": "DE",
+            "rank": 50
+          },
+          {
+            "name": "Max Planck Society",
+            "count": 1,
+            "pct": 0.27,
+            "country": "DE",
+            "rank": 50
+          },
+          {
+            "name": "idontloveyouanymore, United Kingdom",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Shanghai Ocean University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CN",
+            "rank": 50
+          },
+          {
+            "name": "PLA Academy of Military Science",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CN",
+            "rank": 50
+          },
+          {
+            "name": "Columbia University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "US",
+            "rank": 50
+          },
+          {
+            "name": "ORamaVR, Greece",
+            "count": 1,
+            "pct": 0.27,
+            "country": "",
+            "rank": 50
+          },
+          {
+            "name": "Jiangnan University",
+            "count": 1,
+            "pct": 0.27,
+            "country": "CN",
+            "rank": 50
+          }
+        ]
+      },
+      "2022": {
+        "total_covered": 244,
+        "total_papers": 325,
+        "coverage_pct": 75.1,
+        "top": [
+          {
+            "name": "KAIST",
+            "count": 7,
+            "pct": 2.15,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Simon Fraser University",
+            "count": 6,
+            "pct": 1.85,
+            "country": "CA",
+            "rank": 2
+          },
+          {
+            "name": "Max Planck Institute for Informatics",
+            "count": 5,
+            "pct": 1.54,
+            "country": "DE",
+            "rank": 3
+          },
+          {
+            "name": "META Health",
+            "count": 5,
+            "pct": 1.54,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of British Columbia",
+            "count": 5,
+            "pct": 1.54,
+            "country": "CA",
+            "rank": 3
+          },
+          {
+            "name": "Institut national de recherche en sciences et technologies du numérique",
+            "count": 5,
+            "pct": 1.54,
+            "country": "FR",
+            "rank": 3
+          },
+          {
+            "name": "ETH Zurich",
+            "count": 4,
+            "pct": 1.23,
+            "country": "CH",
+            "rank": 7
+          },
+          {
+            "name": "University of Toronto",
+            "count": 4,
+            "pct": 1.23,
+            "country": "CA",
+            "rank": 7
+          },
+          {
+            "name": "University of Tokyo",
+            "count": 4,
+            "pct": 1.23,
+            "country": "JP",
+            "rank": 7
+          },
+          {
+            "name": "University of California System",
+            "count": 4,
+            "pct": 1.23,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Carnegie Mellon University",
+            "count": 4,
+            "pct": 1.23,
+            "country": "US",
+            "rank": 7
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 3,
+            "pct": 0.92,
+            "country": "CN",
+            "rank": 12
+          },
+          {
+            "name": "Adobe Systems",
+            "count": 3,
+            "pct": 0.92,
+            "country": "US",
+            "rank": 12
+          },
+          {
+            "name": "Seoul National University",
+            "count": 3,
+            "pct": 0.92,
+            "country": "KR",
+            "rank": 12
+          },
+          {
+            "name": "Rochester Institute of Technology",
+            "count": 3,
+            "pct": 0.92,
+            "country": "US",
+            "rank": 12
+          },
+          {
+            "name": "Universidad de Zaragoza",
+            "count": 3,
+            "pct": 0.92,
+            "country": "ES",
+            "rank": 12
+          },
+          {
+            "name": "Tokyo Institute of Technology",
+            "count": 3,
+            "pct": 0.92,
+            "country": "JP",
+            "rank": 12
+          },
+          {
+            "name": "Google",
+            "count": 3,
+            "pct": 0.92,
+            "country": "US",
+            "rank": 12
+          },
+          {
+            "name": "NVIDIA",
+            "count": 3,
+            "pct": 0.92,
+            "country": "US",
+            "rank": 12
+          },
+          {
+            "name": "EPFL",
+            "count": 3,
+            "pct": 0.92,
+            "country": "CH",
+            "rank": 12
+          },
+          {
+            "name": "Stanford University",
+            "count": 3,
+            "pct": 0.92,
+            "country": "US",
+            "rank": 12
+          },
+          {
+            "name": "Dartmouth College",
+            "count": 3,
+            "pct": 0.92,
+            "country": "US",
+            "rank": 12
+          },
+          {
+            "name": "Cornell University",
+            "count": 2,
+            "pct": 0.62,
+            "country": "US",
+            "rank": 23
+          },
+          {
+            "name": "Indian Institute of Technology Bombay",
+            "count": 2,
+            "pct": 0.62,
+            "country": "IN",
+            "rank": 23
+          },
+          {
+            "name": "Kyushu University",
+            "count": 2,
+            "pct": 0.62,
+            "country": "JP",
+            "rank": 23
+          },
+          {
+            "name": "Tokyo Metropolitan University",
+            "count": 2,
+            "pct": 0.62,
+            "country": "JP",
+            "rank": 23
+          },
+          {
+            "name": "Technion",
+            "count": 2,
+            "pct": 0.62,
+            "country": "IL",
+            "rank": 23
+          },
+          {
+            "name": "Tencent",
+            "count": 2,
+            "pct": 0.62,
+            "country": "CN",
+            "rank": 23
+          },
+          {
+            "name": "National Taipei University of Technology",
+            "count": 2,
+            "pct": 0.62,
+            "country": "TW",
+            "rank": 23
+          },
+          {
+            "name": "Université Paris 8",
+            "count": 2,
+            "pct": 0.62,
+            "country": "FR",
+            "rank": 23
+          },
+          {
+            "name": "Pixar Animation Studios",
+            "count": 2,
+            "pct": 0.62,
+            "country": "",
+            "rank": 23
+          },
+          {
+            "name": "Tel Aviv University",
+            "count": 2,
+            "pct": 0.62,
+            "country": "IL",
+            "rank": 23
+          },
+          {
+            "name": "Peking University",
+            "count": 2,
+            "pct": 0.62,
+            "country": "CN",
+            "rank": 23
+          },
+          {
+            "name": "Brown University",
+            "count": 2,
+            "pct": 0.62,
+            "country": "US",
+            "rank": 23
+          },
+          {
+            "name": "University of California, San Diego",
+            "count": 2,
+            "pct": 0.62,
+            "country": "US",
+            "rank": 23
+          },
+          {
+            "name": "University of Illinois at Urbana-Champaign",
+            "count": 2,
+            "pct": 0.62,
+            "country": "US",
+            "rank": 23
+          },
+          {
+            "name": "University of Bonn",
+            "count": 2,
+            "pct": 0.62,
+            "country": "DE",
+            "rank": 23
+          },
+          {
+            "name": "University of Maryland, College Park",
+            "count": 2,
+            "pct": 0.62,
+            "country": "US",
+            "rank": 23
+          },
+          {
+            "name": "Technische Universität Berlin",
+            "count": 2,
+            "pct": 0.62,
+            "country": "DE",
+            "rank": 23
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 2,
+            "pct": 0.62,
+            "country": "CN",
+            "rank": 23
+          },
+          {
+            "name": "Institute of Science and Technology Austria",
+            "count": 2,
+            "pct": 0.62,
+            "country": "AT",
+            "rank": 23
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "count": 2,
+            "pct": 0.62,
+            "country": "CN",
+            "rank": 23
+          },
+          {
+            "name": "Shandong University",
+            "count": 2,
+            "pct": 0.62,
+            "country": "CN",
+            "rank": 23
+          },
+          {
+            "name": "University of Utah",
+            "count": 2,
+            "pct": 0.62,
+            "country": "US",
+            "rank": 23
+          },
+          {
+            "name": "Nagoya Institute of Technology",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Netflix",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Pixar Animation Studios, Emeryville, CA, United States of America",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "Japan Advanced Institute of Science and Technology",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "CN",
+            "rank": 45
+          },
+          {
+            "name": "Adobe Research, Romania",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "Lomonosov Moscow State University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "RU",
+            "rank": 45
+          },
+          {
+            "name": "University of Sydney",
+            "count": 1,
+            "pct": 0.31,
+            "country": "AU",
+            "rank": 45
+          },
+          {
+            "name": "Korea University of Technology and Education",
+            "count": 1,
+            "pct": 0.31,
+            "country": "KR",
+            "rank": 45
+          },
+          {
+            "name": "Kanagawa Institute of Technology",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Virtual Construction Lab, United States of America and Schüco",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "Image Derivative Inc.",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "University of California, San Francisco",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Aichi Institute of Technology",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Durham University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "GB",
+            "rank": 45
+          },
+          {
+            "name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+            "count": 1,
+            "pct": 0.31,
+            "country": "FR",
+            "rank": 45
+          },
+          {
+            "name": "Nanjing University of Science and Technology",
+            "count": 1,
+            "pct": 0.31,
+            "country": "CN",
+            "rank": 45
+          },
+          {
+            "name": "University College London",
+            "count": 1,
+            "pct": 0.31,
+            "country": "GB",
+            "rank": 45
+          },
+          {
+            "name": "Amrita Vishwa Vidyapeetham",
+            "count": 1,
+            "pct": 0.31,
+            "country": "IN",
+            "rank": 45
+          },
+          {
+            "name": "Weta FX",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "University of Chicago",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "University of Toyama",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Advanced Micro Devices, Inc.",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "Sony Computer Science Laboratories",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Sainsbury Laboratory",
+            "count": 1,
+            "pct": 0.31,
+            "country": "GB",
+            "rank": 45
+          },
+          {
+            "name": "Max Planck Institute for Intelligent Systems",
+            "count": 1,
+            "pct": 0.31,
+            "country": "DE",
+            "rank": 45
+          },
+          {
+            "name": "University of Mons",
+            "count": 1,
+            "pct": 0.31,
+            "country": "BE",
+            "rank": 45
+          },
+          {
+            "name": "KAUST",
+            "count": 1,
+            "pct": 0.31,
+            "country": "SA",
+            "rank": 45
+          },
+          {
+            "name": "University of Bath",
+            "count": 1,
+            "pct": 0.31,
+            "country": "GB",
+            "rank": 45
+          },
+          {
+            "name": "Waseda University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Florida State University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Ubisoft",
+            "count": 1,
+            "pct": 0.31,
+            "country": "CA",
+            "rank": 45
+          },
+          {
+            "name": "Indepdendent Visualization Consultant, United States",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "Nagoya University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "JP",
+            "rank": 45
+          },
+          {
+            "name": "Australian National University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "AU",
+            "rank": 45
+          },
+          {
+            "name": "Shanghai Jiao Tong University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "CN",
+            "rank": 45
+          },
+          {
+            "name": "University of South Australia",
+            "count": 1,
+            "pct": 0.31,
+            "country": "AU",
+            "rank": 45
+          },
+          {
+            "name": "New Jersey Institute of Technology",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Gwangju Institute of Science and Technology",
+            "count": 1,
+            "pct": 0.31,
+            "country": "KR",
+            "rank": 45
+          },
+          {
+            "name": "Northeastern University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Middle East Technical University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "TR",
+            "rank": 45
+          },
+          {
+            "name": "University of Regensburg",
+            "count": 1,
+            "pct": 0.31,
+            "country": "DE",
+            "rank": 45
+          },
+          {
+            "name": "Nanjing University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "CN",
+            "rank": 45
+          },
+          {
+            "name": "Snap",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Oregon State University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Universidad Pública de Navarra",
+            "count": 1,
+            "pct": 0.31,
+            "country": "ES",
+            "rank": 45
+          },
+          {
+            "name": "Digital Domain, Thousand OPaks, California, USA",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "Weta FX, Wellington, New Zealand",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "Kennesaw State University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Zhejiang Lab",
+            "count": 1,
+            "pct": 0.31,
+            "country": "CN",
+            "rank": 45
+          },
+          {
+            "name": "University of Crete",
+            "count": 1,
+            "pct": 0.31,
+            "country": "GR",
+            "rank": 45
+          },
+          {
+            "name": "Yale University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Université de Montréal",
+            "count": 1,
+            "pct": 0.31,
+            "country": "CA",
+            "rank": 45
+          },
+          {
+            "name": "Purdue University",
+            "count": 1,
+            "pct": 0.31,
+            "country": "US",
+            "rank": 45
+          },
+          {
+            "name": "Laika, United States of America",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          },
+          {
+            "name": "DNEG, Vancouver, British Columbia",
+            "count": 1,
+            "pct": 0.31,
+            "country": "",
+            "rank": 45
+          }
+        ]
+      },
       "2023": {
         "total_covered": 208,
         "total_papers": 495,
@@ -2929,6 +4350,7 @@
       }
     },
     "sources": [
+      "openalex",
       "papercopilot"
     ]
   }

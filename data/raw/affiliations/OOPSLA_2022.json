@@ -1,0 +1,915 @@
+{
+  "conference": "OOPSLA",
+  "year": 2022,
+  "total_papers": 92,
+  "total_matched": 88,
+  "total_with_affiliation": 88,
+  "coverage_pct": 95.7,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Model checking for a multi-execution memory model.",
+      "first_author": "Evgenii Moiseenko",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731802",
+      "doi": "https://doi.org/10.1145/3563315",
+      "institution": "JetBrains Research, Serbia",
+      "institution_country": null,
+      "raw_affiliation": "JetBrains Research, Serbia"
+    },
+    {
+      "title": "SigVM: enabling event-driven execution for truly decentralized smart contracts.",
+      "first_author": "Zihan Zhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887062",
+      "doi": "https://doi.org/10.1145/3563312",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "Linear types for large-scale systems verification.",
+      "first_author": "Jialin Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225147576",
+      "doi": "https://doi.org/10.1145/3527313",
+      "institution": "University of Washington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00cvxb145"
+    },
+    {
+      "title": "Synthesizing abstract transformers.",
+      "first_author": "Pankaj Kumar Kalita",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3157256658",
+      "doi": "https://doi.org/10.1145/3563334",
+      "institution": "Indian Institute of Technology Kanpur",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/05pjsgx75"
+    },
+    {
+      "title": "Fractional resources in unbounded separation logic.",
+      "first_author": "Thibault Dardinier",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887673",
+      "doi": "https://doi.org/10.1145/3563326",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Compositional embeddings of domain-specific languages.",
+      "first_author": "Yaozhu Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888126",
+      "doi": "https://doi.org/10.1145/3563294",
+      "institution": "University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/02zhqgq86"
+    },
+    {
+      "title": "Synthesizing axiomatizations using logic learning.",
+      "first_author": "Paul Krogmeier",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731837",
+      "doi": "https://doi.org/10.1145/3563348",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Satisfiability modulo fuzzing: a synergistic combination of SMT solving and fuzzing.",
+      "first_author": "Sujit Kumar Muduli",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886659",
+      "doi": "https://doi.org/10.1145/3563332",
+      "institution": "Indian Institute of Technology Kanpur",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/05pjsgx75"
+    },
+    {
+      "title": "Type-directed synthesis of visualizations from natural language queries.",
+      "first_author": "Qiaochu Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887575",
+      "doi": "https://doi.org/10.1145/3563307",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Checking equivalence in a non-strict language.",
+      "first_author": "John C. Kolesar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731886",
+      "doi": "https://doi.org/10.1145/3563340",
+      "institution": "Yale University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03v76x132"
+    },
+    {
+      "title": "Functional collection programming with semi-ring dictionaries.",
+      "first_author": "Amir Shaikhha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3135515481",
+      "doi": "https://doi.org/10.1145/3527333",
+      "institution": "University of Edinburgh",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/01nrxwf90"
+    },
+    {
+      "title": "Elipmoc: advanced decompilation of Ethereum smart contracts.",
+      "first_author": "Neville Grech",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225143755",
+      "doi": "https://doi.org/10.1145/3527321",
+      "institution": "University of Malta",
+      "institution_country": "MT",
+      "institution_ror": "https://ror.org/03a62bv60"
+    },
+    {
+      "title": "Bridging the semantic gap between qualitative and quantitative models of distributed systems.",
+      "first_author": "Si Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886864",
+      "doi": "https://doi.org/10.1145/3563299",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Model-guided synthesis of inductive lemmas for FOL with least fixpoints.",
+      "first_author": "Adithya Murali",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4297415612",
+      "doi": "https://doi.org/10.1145/3563354",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Neural architecture search using property guided synthesis.",
+      "first_author": "Charles Jin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886645",
+      "doi": "https://doi.org/10.1145/3563329",
+      "institution": "Massachusetts Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/042nb2s44"
+    },
+    {
+      "title": "Parsing randomness.",
+      "first_author": "Harrison Goldstein",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886652",
+      "doi": "https://doi.org/10.1145/3563291",
+      "institution": "California University of Pennsylvania",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01spssf70"
+    },
+    {
+      "title": "A conceptual framework for safe object initialization: a principled and mechanized soundness proof of the Celsius model.",
+      "first_author": "Clement Blaudeau",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731883",
+      "doi": "https://doi.org/10.1145/3563314",
+      "institution": "Université Paris Cité",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/05f82e368"
+    },
+    {
+      "title": "Proof transfer for fast certification of multiple approximate neural networks.",
+      "first_author": "Shubham Ugare",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225128042",
+      "doi": "https://doi.org/10.1145/3527319",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Coverage-guided tensor compiler fuzzing with joint IR-pass mutation.",
+      "first_author": "Jiawei Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4221144766",
+      "doi": "https://doi.org/10.1145/3527317",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "Fast shadow execution for debugging numerical errors using error free transformations.",
+      "first_author": "Sangeeta Chowdhary",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888166",
+      "doi": "https://doi.org/10.1145/3563353",
+      "institution": "Rutgers, The State University of New Jersey",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05vt9qd57"
+    },
+    {
+      "title": "End-to-end translation validation for the halide language.",
+      "first_author": "Basile Clément",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225158182",
+      "doi": "https://doi.org/10.1145/3527328",
+      "institution": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02kvxyf05"
+    },
+    {
+      "title": "Tower: data structures in Quantum superposition.",
+      "first_author": "Charles Yuan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4281389731",
+      "doi": "https://doi.org/10.1145/3563297",
+      "institution": "Massachusetts Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/042nb2s44"
+    },
+    {
+      "title": "Scalable verification of GNN-based job schedulers.",
+      "first_author": "Haoze Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4226072946",
+      "doi": "https://doi.org/10.1145/3563325",
+      "institution": "Stanford University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00f54p054"
+    },
+    {
+      "title": "A bunch of sessions: a propositions-as-sessions interpretation of bunched implications in channel-based concurrency.",
+      "first_author": "Dan Frumin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731851",
+      "doi": "https://doi.org/10.1145/3563318",
+      "institution": "University of Groningen",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/012p63287"
+    },
+    {
+      "title": "Monadic and comonadic aspects of dependency analysis.",
+      "first_author": "Pritam Choudhury",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887886",
+      "doi": "https://doi.org/10.1145/3563335",
+      "institution": "California University of Pennsylvania",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01spssf70"
+    },
+    {
+      "title": "Scalable linear invariant generation with Farkas' lemma.",
+      "first_author": "Hongming Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4283462359",
+      "doi": "https://doi.org/10.1145/3563295",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    },
+    {
+      "title": "Can guided decomposition help end-users write larger block-based programs? a mobile robot experiment.",
+      "first_author": "Nico Ritschel",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Automated transpilation of imperative to functional code using neural-guided program synthesis.",
+      "first_author": "Benjamin Mariano",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225113125",
+      "doi": "https://doi.org/10.1145/3527315",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Proving hypersafety compositionally.",
+      "first_author": "Emanuele D'Osualdo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886450",
+      "doi": "https://doi.org/10.1145/3563298",
+      "institution": "Max Planck Institute for Software Systems",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02pe2kf23"
+    },
+    {
+      "title": "SHARP: fast incremental context-sensitive pointer analysis for Java.",
+      "first_author": "Bozhen Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225159042",
+      "doi": "https://doi.org/10.1145/3527332",
+      "institution": "Texas A&M University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01f5ytq51"
+    },
+    {
+      "title": "CAAT: consistency as a theory.",
+      "first_author": "Thomas Haas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888161",
+      "doi": "https://doi.org/10.1145/3563292",
+      "institution": "Technische Universität Braunschweig",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/010nsgg66"
+    },
+    {
+      "title": "Semi-symbolic inference for efficient streaming probabilistic programming.",
+      "first_author": "Eric Atkinson",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887253",
+      "doi": "https://doi.org/10.1145/3563347",
+      "institution": "Massachusetts Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/042nb2s44"
+    },
+    {
+      "title": "Synthesis-powered optimization of smart contracts via data type refactoring.",
+      "first_author": "Yanju Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886768",
+      "doi": "https://doi.org/10.1145/3563308",
+      "institution": "University of California, Santa Barbara",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02t274463"
+    },
+    {
+      "title": "Compositional virtual timelines: verifying dynamic-priority partitions with algorithmic temporal isolation.",
+      "first_author": "Mengqi Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886862",
+      "doi": "https://doi.org/10.1145/3563290",
+      "institution": "Yale University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03v76x132"
+    },
+    {
+      "title": "First-class names for effect handlers.",
+      "first_author": "Ningning Xie",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888371",
+      "doi": "https://doi.org/10.1145/3563289",
+      "institution": "University of Cambridge",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/013meh722"
+    },
+    {
+      "title": "Indexing the extended Dyck-CFL reachability for context-sensitive program analysis.",
+      "first_author": "Qingkai Shi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888163",
+      "doi": "https://doi.org/10.1145/3563339",
+      "institution": "Ant Group, China",
+      "institution_country": null,
+      "raw_affiliation": "Ant Group, China"
+    },
+    {
+      "title": "Highly illogical, Kirk: spotting type mismatches in the large despite broken contracts, unsound types, and too many linters.",
+      "first_author": "Joshua Hoeflich",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Specification-guided component-based synthesis from effectful libraries.",
+      "first_author": "Ashish Mishra",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307884541",
+      "doi": "https://doi.org/10.1145/3563310",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "Consistency-preserving propagation for SMT solving of concurrent program verification.",
+      "first_author": "Zhihang Sun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886755",
+      "doi": "https://doi.org/10.1145/3563321",
+      "institution": "Tsinghua University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/03cve4549"
+    },
+    {
+      "title": "Language-parametric static semantic code completion.",
+      "first_author": "Daniël A. A. Pelsmaeker",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225153514",
+      "doi": "https://doi.org/10.1145/3527329",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "A study of inline assembly in solidity smart contracts.",
+      "first_author": "Stefanos Chaliasos",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887068",
+      "doi": "https://doi.org/10.1145/3563328",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "A concurrent program logic with a future and history.",
+      "first_author": "Roland Meyer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4284888169",
+      "doi": "https://doi.org/10.1145/3563337",
+      "institution": "Technische Universität Braunschweig",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/010nsgg66"
+    },
+    {
+      "title": "The essence of online data processing.",
+      "first_author": "Philip Dexter",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888172",
+      "doi": "https://doi.org/10.1145/3563320",
+      "institution": "Binghamton University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008rmbt77"
+    },
+    {
+      "title": "Le temps des cerises: efficient temporal stack safety on capability machines using directed capabilities.",
+      "first_author": "Aïna Linn Georges",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225163108",
+      "doi": "https://doi.org/10.1145/3527318",
+      "institution": "Aarhus University",
+      "institution_country": "DK",
+      "institution_ror": "https://ror.org/01aj84f44"
+    },
+    {
+      "title": "Symbolic execution for randomized programs.",
+      "first_author": "Zachary Susag",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4296412272",
+      "doi": "https://doi.org/10.1145/3563344",
+      "institution": "Cornell University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05bnh6r87"
+    },
+    {
+      "title": "Concurrent size.",
+      "first_author": "Gal Sela",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4297847161",
+      "doi": "https://doi.org/10.1145/3563300",
+      "institution": "Technion – Israel Institute of Technology",
+      "institution_country": "IL",
+      "institution_ror": "https://ror.org/03qryx823"
+    },
+    {
+      "title": "Compilation of dynamic sparse tensor algebra.",
+      "first_author": "Stephen Chou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887693",
+      "doi": "https://doi.org/10.1145/3563338",
+      "institution": "Massachusetts Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/042nb2s44"
+    },
+    {
+      "title": "Taming transitive redundancy for context-free language reachability.",
+      "first_author": "Yuxiang Lei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731800",
+      "doi": "https://doi.org/10.1145/3563343",
+      "institution": "University of Technology Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/03f0f6041"
+    },
+    {
+      "title": "A general construction for abstract interpretation of higher-order automatic differentiation.",
+      "first_author": "Jacob Laurel",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307884510",
+      "doi": "https://doi.org/10.1145/3563324",
+      "institution": "University of Illinois Urbana-Champaign",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047426m28"
+    },
+    {
+      "title": "C4: verified transactional objects.",
+      "first_author": "Mohsen Lesani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225157728",
+      "doi": "https://doi.org/10.1145/3527324",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "UniRec: a unimodular-like framework for nested recursions and loops.",
+      "first_author": "Kirshanthan Sundararajah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886758",
+      "doi": "https://doi.org/10.1145/3563333",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "Bugs in Quantum computing platforms: an empirical study.",
+      "first_author": "Matteo Paltenghi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3208388786",
+      "doi": "https://doi.org/10.1145/3527330",
+      "institution": "University of Stuttgart",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04vnq7t77"
+    },
+    {
+      "title": "Incremental type-checking for free: using scope graphs to derive incremental type-checkers.",
+      "first_author": "Aron Zwaan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886855",
+      "doi": "https://doi.org/10.1145/3563303",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "Translating canonical SQL to imperative code in Coq.",
+      "first_author": "Véronique Benzaken",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225140824",
+      "doi": "https://doi.org/10.1145/3527327",
+      "institution": "Université Paris-Saclay",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/03xjwb503"
+    },
+    {
+      "title": "Effects, capabilities, and boxes: from scope-based reasoning to type-based reasoning and back.",
+      "first_author": "Jonathan Immanuel Brachthäuser",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "High-level effect handlers in C++.",
+      "first_author": "Dan R. Ghica",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307884506",
+      "doi": "https://doi.org/10.1145/3563445",
+      "institution": "Huawei Technologies (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/056gzgs71"
+    },
+    {
+      "title": "Wildcards need witness protection.",
+      "first_author": "Kevin Bierhoff",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731848",
+      "doi": "https://doi.org/10.1145/3563301",
+      "institution": "Google (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00njsd438"
+    },
+    {
+      "title": "Generic go to go: dictionary-passing, monomorphisation, and hybrid.",
+      "first_author": "Stephen Ellis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Modular verification of op-based CRDTs in separation logic.",
+      "first_author": "Abel Nieto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886470",
+      "doi": "https://doi.org/10.1145/3563351",
+      "institution": "Aarhus University",
+      "institution_country": "DK",
+      "institution_ror": "https://ror.org/01aj84f44"
+    },
+    {
+      "title": "Intrinsically-typed definitional interpreters à la carte.",
+      "first_author": "Cas van der Rest",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886767",
+      "doi": "https://doi.org/10.1145/3563355",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "BFF: foundational and automated verification of bitfield-manipulating programs.",
+      "first_author": "Fengmin Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731865",
+      "doi": "https://doi.org/10.1145/3563345",
+      "institution": "Max Planck Institute for Software Systems",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02pe2kf23"
+    },
+    {
+      "title": "Quantitative strongest post: a calculus for reasoning about the flow of quantitative information.",
+      "first_author": "Linpeng Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225125662",
+      "doi": "https://doi.org/10.1145/3527331",
+      "institution": "University College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/02jx3x895"
+    },
+    {
+      "title": "MLstruct: principal type inference in a Boolean algebra of structural types.",
+      "first_author": "Lionel Parreaux",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731888",
+      "doi": "https://doi.org/10.1145/3563304",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Complexity-guided container replacement synthesis.",
+      "first_author": "Chengpeng Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225149718",
+      "doi": "https://doi.org/10.1145/3527312",
+      "institution": "Hong Kong University of Science and Technology",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00q4vv597"
+    },
+    {
+      "title": "Weighted programming: a programming paradigm for specifying mathematical models.",
+      "first_author": "Kevin Batz",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225120439",
+      "doi": "https://doi.org/10.1145/3527310",
+      "institution": "RWTH Aachen University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04xfq0f34"
+    },
+    {
+      "title": "AnICA: analyzing inconsistencies in microarchitectural code analyzers.",
+      "first_author": "Fabian Ritter",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886774",
+      "doi": "https://doi.org/10.1145/3563288",
+      "institution": "Saarland University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01jdpyv68"
+    },
+    {
+      "title": "Implementing and verifying release-acquire transactional memory in C11.",
+      "first_author": "Sadegh Dalvandi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886197",
+      "doi": "https://doi.org/10.1145/3563352",
+      "institution": "University of Surrey",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/00ks66431"
+    },
+    {
+      "title": "Necessity specifications for robustness.",
+      "first_author": "Julian Mackay",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886453",
+      "doi": "https://doi.org/10.1145/3563317",
+      "institution": "Victoria University of Wellington",
+      "institution_country": "NZ",
+      "institution_ror": "https://ror.org/0040r6f76"
+    },
+    {
+      "title": "C to checked C by 3c.",
+      "first_author": "Aravind Machiry",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225163209",
+      "doi": "https://doi.org/10.1145/3527322",
+      "institution": "Purdue University West Lafayette",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02dqehb95"
+    },
+    {
+      "title": "Finding real bugs in big programs with incorrectness logic.",
+      "first_author": "Quang Loc Le",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225134668",
+      "doi": "https://doi.org/10.1145/3527325",
+      "institution": "University College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/02jx3x895"
+    },
+    {
+      "title": "Katara: synthesizing CRDTs with verified lifting.",
+      "first_author": "Shadaj Laddad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887050",
+      "doi": "https://doi.org/10.1145/3563336",
+      "institution": "University of California, Berkeley",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an7q238"
+    },
+    {
+      "title": "Synthesizing fine-grained synchronization protocols for implicit monitors.",
+      "first_author": "Kostas Ferles",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225159669",
+      "doi": "https://doi.org/10.1145/3527311",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Verified compilation of Quantum oracles.",
+      "first_author": "Liyi Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886648",
+      "doi": "https://doi.org/10.1145/3563309",
+      "institution": "University of Maryland, College Park",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/047s2c258"
+    },
+    {
+      "title": "Reasoning about distributed reconfigurable systems.",
+      "first_author": "Emma Ahrens",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886644",
+      "doi": "https://doi.org/10.1145/3563293",
+      "institution": "RWTH Aachen University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04xfq0f34"
+    },
+    {
+      "title": "Purity of an ST monad: full abstraction by semantically typed back-translation.",
+      "first_author": "Koen Jacobs",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225132403",
+      "doi": "https://doi.org/10.1145/3527326",
+      "institution": "KU Leuven",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/05f950310"
+    },
+    {
+      "title": "Coeffects for sharing and mutation.",
+      "first_author": "Riccardo Bianchini",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731791",
+      "doi": "https://doi.org/10.1145/3563319",
+      "institution": "University of Genoa",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/0107c5v14"
+    },
+    {
+      "title": "Applying cognitive principles to model-finding output: the positive value of negative information.",
+      "first_author": "Tristan Dyer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225114647",
+      "doi": "https://doi.org/10.1145/3527323",
+      "institution": "Brown University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05gq02987"
+    },
+    {
+      "title": "Synthesizing code quality rules from examples.",
+      "first_author": "Pranav Garg",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886866",
+      "doi": "https://doi.org/10.1145/3563350",
+      "institution": "AWS, USA",
+      "institution_country": null,
+      "raw_affiliation": "AWS, USA"
+    },
+    {
+      "title": "Plausible sealing for gradual parametricity.",
+      "first_author": "Elizabeth Labrada",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225139538",
+      "doi": "https://doi.org/10.1145/3527314",
+      "institution": "University of Chile",
+      "institution_country": "CL",
+      "institution_ror": "https://ror.org/047gc3g35"
+    },
+    {
+      "title": "This is the moment for probabilistic loops.",
+      "first_author": "Marcel Moosbrugger",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731812",
+      "doi": "https://doi.org/10.1145/3563341",
+      "institution": "TU Wien",
+      "institution_country": "AT",
+      "institution_ror": "https://ror.org/04d836q62"
+    },
+    {
+      "title": "The road not taken: exploring alias analysis based optimizations missed by the compiler.",
+      "first_author": "Khushboo Chitre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731867",
+      "doi": "https://doi.org/10.1145/3563316",
+      "institution": "Indraprastha Institute of Information Technology Delhi",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/03vfp4g33"
+    },
+    {
+      "title": "Optimal heap limits for reducing browser memory use.",
+      "first_author": "Marisa Kirisame",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888121",
+      "doi": "https://doi.org/10.1145/3563323",
+      "institution": "University of Utah",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03r0ha626"
+    },
+    {
+      "title": "A fast in-place interpreter for WebAssembly.",
+      "first_author": "Ben L. Titzer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307886860",
+      "doi": "https://doi.org/10.1145/3563311",
+      "institution": "Carnegie Mellon University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05x2bcf33"
+    },
+    {
+      "title": "On incorrectness logic for Quantum programs.",
+      "first_author": "Peng Yan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225141106",
+      "doi": "https://doi.org/10.1145/3527316",
+      "institution": "University of Technology Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/03f0f6041"
+    },
+    {
+      "title": "Neurosymbolic repair for low-code formula languages.",
+      "first_author": "Rohan Bavishi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887045",
+      "doi": "https://doi.org/10.1145/3563327",
+      "institution": "University of California, Berkeley",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an7q238"
+    },
+    {
+      "title": "Oracle-free repair synthesis for floating-point programs.",
+      "first_author": "Daming Zou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307887474",
+      "doi": "https://doi.org/10.1145/3563322",
+      "institution": "ETH Zurich",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/05a28rw58"
+    },
+    {
+      "title": "Veracity: declarative multicore programming with commutativity.",
+      "first_author": "Adam Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4225309661",
+      "doi": "https://doi.org/10.1145/3563349",
+      "institution": "Stevens Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02z43xh36"
+    },
+    {
+      "title": "Seq2Parse: neurosymbolic parse error repair.",
+      "first_author": "Georgios Sakkas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307888113",
+      "doi": "https://doi.org/10.1145/3563330",
+      "institution": "University of California San Diego",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0168r3w48"
+    },
+    {
+      "title": "Data-driven lemma synthesis for interactive proofs.",
+      "first_author": "Aishwarya Sivaraman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4297780507",
+      "doi": "https://doi.org/10.1145/3563306",
+      "institution": "University of California, Los Angeles",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/046rm7j60"
+    },
+    {
+      "title": "Overwatch: learning patterns in code edit sequences.",
+      "first_author": "Yuhao Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731832",
+      "doi": "https://doi.org/10.1145/3563302",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Solo: a lightweight static analysis for differential privacy.",
+      "first_author": "Chike Abuah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3207101484",
+      "doi": "https://doi.org/10.1145/3563313",
+      "institution": "University of Vermont",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0155zta11"
+    },
+    {
+      "title": "A case for DOT: theoretical foundations for objects with pattern matching and GADT-style reasoning.",
+      "first_author": "Aleksander Boruch-Gruszecki",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4307731841",
+      "doi": "https://doi.org/10.1145/3563342",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    }
+  ]
+}

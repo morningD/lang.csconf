@@ -1,0 +1,295 @@
+{
+  "conference": "EUROSYS",
+  "year": 2021,
+  "total_papers": 38,
+  "total_matched": 14,
+  "total_with_affiliation": 14,
+  "coverage_pct": 36.8,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "REBOUND: defending distributed systems against attacks with bounded-time recovery.",
+      "first_author": "Neeraj Gandhi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SmartHarvest: harvesting idle CPUs safely and efficiently in the cloud.",
+      "first_author": "Yawen Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PaSh: light-touch data-parallel shell processing.",
+      "first_author": "Nikos Vasilakis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "rkt-io: a direct I/O stack for shielded execution.",
+      "first_author": "Jörg Thalheim",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Memory-mapped I/O on steroids.",
+      "first_author": "Anastasios Papagiannis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3157418947",
+      "doi": "https://doi.org/10.1145/3447786.3456242",
+      "institution": "University of Crete",
+      "institution_country": "GR",
+      "institution_ror": "https://ror.org/00dr28g20"
+    },
+    {
+      "title": "Profiling dataflow systems on multiple abstraction levels.",
+      "first_author": "Alexander Beischl",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3157967382",
+      "doi": "https://doi.org/10.1145/3447786.3456254",
+      "institution": "Technical University of Munich",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/02kkvpp62"
+    },
+    {
+      "title": "Achieving low tail-latency and high scalability for serializable transactions in edge computing.",
+      "first_author": "Xusheng Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3158900323",
+      "doi": "https://doi.org/10.1145/3447786.3456238",
+      "institution": "University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/02zhqgq86"
+    },
+    {
+      "title": "Tahoe: tree structure-aware high performance inference engine for decision tree ensemble on GPU.",
+      "first_author": "Zhen Xie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Site-to-site internet traffic control.",
+      "first_author": "Frank Cangialosi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3097409820",
+      "doi": "https://doi.org/10.1145/3447786.3456260",
+      "institution": "MIT Computer Science and Artificial Intelligence Laboratory",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01e85r662"
+    },
+    {
+      "title": "Finding heterogeneous-unsafe configuration parameters in cloud systems.",
+      "first_author": "Sixiang Ma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3159195453",
+      "doi": "https://doi.org/10.1145/3447786.3456250",
+      "institution": "The Ohio State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00rs6vg23"
+    },
+    {
+      "title": "Virtual machine preserving host updates for zero day patching in public cloud.",
+      "first_author": "Mark Russinovich",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3158694064",
+      "doi": "https://doi.org/10.1145/3447786.3456232",
+      "institution": "Microsoft (Finland)",
+      "institution_country": "FI",
+      "institution_ror": "https://ror.org/01nehjf29"
+    },
+    {
+      "title": "DZiG: sparsity-aware incremental processing of streaming graphs.",
+      "first_author": "Mugilan Mariappan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Efficient replication via timestamp stability.",
+      "first_author": "Vitor Enes",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3158781877",
+      "doi": "https://doi.org/10.1145/3447786.3456236",
+      "institution": "INESC TEC",
+      "institution_country": "PT",
+      "institution_ror": "https://ror.org/05fa8ka61"
+    },
+    {
+      "title": "RubberBand: cloud-based hyperparameter tuning.",
+      "first_author": "Ujval Misra",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ChameleonDB: a key-value store for optane persistent memory.",
+      "first_author": "Wenhui Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On-demand-fork: a microsecond fork for memory-intensive and latency-sensitive applications.",
+      "first_author": "Kaiyang Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TraceSplitter: a new paradigm for downscaling traces.",
+      "first_author": "Sultan Mahmud Sajal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mitigating vulnerability windows with hypervisor transplant.",
+      "first_author": "Tu Dinh Ngoc",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3158996431",
+      "doi": "https://doi.org/10.1145/3447786.3456235",
+      "institution": "Université Fédérale de Toulouse Midi-Pyrénées",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/004raaa70"
+    },
+    {
+      "title": "FlexGraph: a flexible and efficient distributed framework for GNN training.",
+      "first_author": "Lei Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Zeus: locality-aware distributed transactions.",
+      "first_author": "Antonios Katsarakis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating graph sampling for graph machine learning using GPUs.",
+      "first_author": "Abhinav Jangda",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3159894882",
+      "doi": "https://doi.org/10.1145/3447786.3456244",
+      "institution": "University of Massachusetts Amherst",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0072zz521"
+    },
+    {
+      "title": "DGCL: an efficient communication library for distributed GNN training.",
+      "first_author": "Zhenkun Cai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Odyssey: the impact of modern hardware on strongly-consistent replication protocols.",
+      "first_author": "Vasilis Gavrielatos",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards timeout-less transport in commodity datacenter networks.",
+      "first_author": "Hwijoon Lim",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3157806499",
+      "doi": "https://doi.org/10.1145/3447786.3456227",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/05apxxy63"
+    },
+    {
+      "title": "OFC: an opportunistic caching system for FaaS platforms.",
+      "first_author": "Djob Mvondo",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Understanding and dealing with hard faults in persistent memory systems.",
+      "first_author": "Brian Choi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3157657083",
+      "doi": "https://doi.org/10.1145/3447786.3456252",
+      "institution": "Johns Hopkins University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00za53h95"
+    },
+    {
+      "title": "Tripoline: generalized incremental graph processing via graph triangle inequality.",
+      "first_author": "Xiaolin Jiang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Seastar: vertex-centric programming for graph neural networks.",
+      "first_author": "Yidi Wu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Confidential computing for OpenPOWER.",
+      "first_author": "Guerney D. H. Hunt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3159718887",
+      "doi": "https://doi.org/10.1145/3447786.3456243",
+      "institution": "IBM Research",
+      "institution_country": null,
+      "raw_affiliation": "IBM Research"
+    },
+    {
+      "title": "Characterizing, exploiting, and detecting DMA code injection vulnerabilities in the presence of an IOMMU.",
+      "first_author": "Alex Markuze",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Parallelizing packet processing in container overlay networks.",
+      "first_author": "Jiaxin Lei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3159169547",
+      "doi": "https://doi.org/10.1145/3447786.3456241",
+      "institution": "Binghamton University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/008rmbt77"
+    },
+    {
+      "title": "Home, safehome: smart home reliability with visibility and atomicity.",
+      "first_author": "Shegufta Bakht Ahsan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Tesseract: distributed, general graph pattern mining on evolving graphs.",
+      "first_author": "Laurent Bindschaedler",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "M3: end-to-end memory management in elastic system software stacks.",
+      "first_author": "David Lion",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Unikraft: fast, specialized unikernels the easy way.",
+      "first_author": "Simon Kuenzer",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Ethanos: efficient bootstrapping for full nodes on account-based blockchain.",
+      "first_author": "Jae-Yun Kim",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Take it to the limit: peak prediction-driven resource overcommitment in datacenters.",
+      "first_author": "Noman Bashir",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Bridging the performance gap for copy-based garbage collectors atop non-volatile memory.",
+      "first_author": "Yanfei Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3159375933",
+      "doi": "https://doi.org/10.1145/3447786.3456246",
+      "institution": "Shanghai Jiao Tong University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0220qvk04"
+    }
+  ]
+}
