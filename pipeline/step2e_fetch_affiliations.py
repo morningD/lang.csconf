@@ -44,6 +44,22 @@ _global_profile_cache: dict | None = None
 _OA_WORKERS = 8
 _tls = threading.local()
 
+# Conferences whose OpenAlex coverage is below this percentage get their
+# remaining years skipped: index quality is stable across years, so further
+# title.search queries are wasted budget.
+LOW_YIELD_THRESHOLD = 25
+LOW_YIELD_FILE = AFFIL_DIR / "_low_yield_confs.json"
+
+
+def _load_low_yield() -> set:
+    if LOW_YIELD_FILE.exists():
+        return set(json.loads(LOW_YIELD_FILE.read_text()))
+    return set()
+
+
+def _save_low_yield(confs: set) -> None:
+    LOW_YIELD_FILE.write_text(json.dumps(sorted(confs), indent=1))
+
 
 def _load_profile_cache() -> dict:
     """Load persistent profile cache from disk."""
@@ -340,6 +356,11 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
 
     OpenReview conferences use profile-based lookup (no title matching).
     Other conferences use OpenAlex title matching.
+
+    Conferences whose OpenAlex coverage is persistently below
+    LOW_YIELD_THRESHOLD are added to a persistent skip list — their index
+    quality is stable across years, so burning queries on remaining years
+    is a waste. Files already written are never re-fetched (incremental).
     """
     conferences = _load_conferences()
     if conferences_filter:
@@ -352,6 +373,7 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
     or_session = _openreview_session()
     oa_session = _openalex_session()
     or_confs = set(registered_conferences())
+    low_yield = _load_low_yield()
 
     total_conf_years = 0
     total_papers_with_affil = 0
@@ -367,6 +389,14 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
             years = list(range(YEAR_FLOOR, ceiling + 1))
 
         use_openreview = conf_id in or_confs
+
+        if not use_openreview and conf_id in low_yield and not force:
+            skipped += sum(
+                1 for y in years
+                if (AUTHORS_DIR / f"{conf_id.replace('/', '-')}_{y}.json").exists()
+                and not (AFFIL_DIR / f"{conf_id.replace('/', '-')}_{y}.json").exists()
+            )
+            continue
 
         for year in years:
             safe_id = conf_id.replace("/", "-")
@@ -396,6 +426,14 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
                 pct = d["coverage_pct"]
                 print(f"  → {conf_id} {year}: {d['total_with_affiliation']}/{d['total_papers']} "
                       f"({pct}%) [{d['source']}]")
+
+                # Online bail-out: this conference's OpenAlex indexing is poor;
+                # don't spend queries on its remaining years.
+                if not use_openreview and pct < LOW_YIELD_THRESHOLD and len(years) > 1:
+                    low_yield.add(conf_id)
+                    _save_low_yield(low_yield)
+                    print(f"    ⚠ coverage {pct}% < {LOW_YIELD_THRESHOLD}% — "
+                          f"added {conf_id} to low-yield skip list")
 
     print(f"\nStep 2e complete: {total_conf_years} conference-years processed, "
           f"{skipped} skipped (already exist)")
