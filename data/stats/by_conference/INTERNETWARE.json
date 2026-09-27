@@ -24,13 +24,14 @@
   "by_year": {
     "2010": {
       "Chinese": 21,
-      "English": 1,
-      "German": 1
+      "English": 2
     },
     "2012": {
       "Chinese": 22,
-      "English": 3,
-      "Other": 1
+      "Vietnamese": 1,
+      "Other": 1,
+      "German": 1,
+      "English": 1
     },
     "2013": {
       "Chinese": 33,
@@ -43,25 +44,25 @@
     },
     "2015": {
       "Chinese": 28,
-      "English": 2,
-      "Vietnamese": 1
+      "Other": 1,
+      "Vietnamese": 1,
+      "English": 1
     },
     "2016": {
       "Chinese": 14,
-      "Other": 2
+      "German": 2
     },
     "2017": {
       "Chinese": 20
     },
     "2018": {
-      "French": 1,
+      "English": 3,
       "Chinese": 16,
-      "Other": 2,
-      "English": 1
+      "German": 1
     },
     "2019": {
-      "Chinese": 19,
-      "English": 1
+      "Chinese": 18,
+      "English": 2
     },
     "2020": {
       "Chinese": 23,
@@ -71,35 +72,35 @@
     },
     "2022": {
       "Chinese": 27,
-      "Other": 1,
-      "English": 2
+      "English": 3
     },
     "2023": {
       "Chinese": 27,
       "English": 3
     },
     "2024": {
-      "Chinese": 49,
-      "Other": 4,
-      "Italian": 1,
-      "Vietnamese": 1,
-      "English": 1
+      "Chinese": 48,
+      "Other": 2,
+      "Italian": 2,
+      "German": 1,
+      "English": 2,
+      "Vietnamese": 1
     },
     "2025": {
-      "English": 6,
-      "Chinese": 46,
+      "English": 7,
+      "Chinese": 45,
       "German": 1,
       "Other": 2
     }
   },
   "total": {
-    "Chinese": 362,
-    "English": 26,
-    "German": 3,
-    "Other": 13,
-    "French": 2,
-    "Vietnamese": 2,
-    "Italian": 1
+    "Chinese": 359,
+    "English": 30,
+    "Vietnamese": 3,
+    "Other": 7,
+    "German": 7,
+    "French": 1,
+    "Italian": 2
   },
   "venues": {
     "2025": {
@@ -166,5 +167,514 @@
   "rank_history": {
     "2022": "C",
     "2026": "C"
+  },
+  "affiliations": {
+    "total_covered": 81,
+    "total_papers": 85,
+    "coverage_pct": 95.3,
+    "top": [
+      {
+        "name": "Nanjing University",
+        "count": 17,
+        "pct": 20.0,
+        "country": "CN",
+        "rank": 1
+      },
+      {
+        "name": "Nanjing University of Aeronautics and Astronautics",
+        "count": 5,
+        "pct": 5.88,
+        "country": "CN",
+        "rank": 2
+      },
+      {
+        "name": "National University of Defense Technology",
+        "count": 4,
+        "pct": 4.71,
+        "country": "CN",
+        "rank": 3
+      },
+      {
+        "name": "Peking University",
+        "count": 4,
+        "pct": 4.71,
+        "country": "CN",
+        "rank": 3
+      },
+      {
+        "name": "Chinese Academy of Sciences",
+        "count": 4,
+        "pct": 4.71,
+        "country": "CN",
+        "rank": 3
+      },
+      {
+        "name": "Beijing University of Posts and Telecommunications",
+        "count": 3,
+        "pct": 3.53,
+        "country": "CN",
+        "rank": 6
+      },
+      {
+        "name": "Xi'an Jiaotong University",
+        "count": 3,
+        "pct": 3.53,
+        "country": "CN",
+        "rank": 6
+      },
+      {
+        "name": "Beihang University",
+        "count": 3,
+        "pct": 3.53,
+        "country": "CN",
+        "rank": 6
+      },
+      {
+        "name": "Wuhan University",
+        "count": 2,
+        "pct": 2.35,
+        "country": "CN",
+        "rank": 9
+      },
+      {
+        "name": "Zhejiang University",
+        "count": 2,
+        "pct": 2.35,
+        "country": "CN",
+        "rank": 9
+      },
+      {
+        "name": "Huazhong University of Science and Technology",
+        "count": 2,
+        "pct": 2.35,
+        "country": "CN",
+        "rank": 9
+      },
+      {
+        "name": "Xidian University",
+        "count": 2,
+        "pct": 2.35,
+        "country": "CN",
+        "rank": 9
+      },
+      {
+        "name": "Shanghai Jiao Tong University",
+        "count": 2,
+        "pct": 2.35,
+        "country": "CN",
+        "rank": 9
+      },
+      {
+        "name": "Zhejiang University of Technology",
+        "count": 1,
+        "pct": 1.18,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Southwest University",
+        "count": 1,
+        "pct": 1.18,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Nantong University",
+        "count": 1,
+        "pct": 1.18,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Wuhan University of Technology",
+        "count": 1,
+        "pct": 1.18,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Tianjin University",
+        "count": 1,
+        "pct": 1.18,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Hainan University",
+        "count": 1,
+        "pct": 1.18,
+        "country": "CN",
+        "rank": 14
+      },
+      {
+        "name": "Lanzhou Jiaotong University",
+        "count": 1,
+        "pct": 1.18,
+        "country": "CN",
+        "rank": 14
+      }
+    ],
+    "by_year": {
+      "2023": {
+        "total_covered": 28,
+        "total_papers": 30,
+        "coverage_pct": 93.3,
+        "top": [
+          {
+            "name": "Nanjing University",
+            "count": 6,
+            "pct": 20.0,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 2,
+            "pct": 6.67,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Beijing University of Posts and Telecommunications",
+            "count": 2,
+            "pct": 6.67,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Peking University",
+            "count": 2,
+            "pct": 6.67,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Zhejiang University of Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Southwest University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Nantong University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Wuhan University of Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Tianjin University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Wuhan University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Hainan University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Nanjing University of Aeronautics and Astronautics",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Lanzhou Jiaotong University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Shandong Normal University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Anhui University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Northwestern Polytechnical University",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Zhejiang University of Science and Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          },
+          {
+            "name": "Southern University of Science and Technology",
+            "count": 1,
+            "pct": 3.33,
+            "country": "CN",
+            "rank": 5
+          }
+        ]
+      },
+      "2025": {
+        "total_covered": 53,
+        "total_papers": 55,
+        "coverage_pct": 96.4,
+        "top": [
+          {
+            "name": "Nanjing University",
+            "count": 11,
+            "pct": 20.0,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Chinese Academy of Sciences",
+            "count": 4,
+            "pct": 7.27,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Nanjing University of Aeronautics and Astronautics",
+            "count": 4,
+            "pct": 7.27,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "Xi'an Jiaotong University",
+            "count": 3,
+            "pct": 5.45,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "Beihang University",
+            "count": 3,
+            "pct": 5.45,
+            "country": "CN",
+            "rank": 4
+          },
+          {
+            "name": "Xidian University",
+            "count": 2,
+            "pct": 3.64,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Shanghai Jiao Tong University",
+            "count": 2,
+            "pct": 3.64,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "National University of Defense Technology",
+            "count": 2,
+            "pct": 3.64,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Peking University",
+            "count": 2,
+            "pct": 3.64,
+            "country": "CN",
+            "rank": 6
+          },
+          {
+            "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "count": 1,
+            "pct": 1.82,
+            "country": "DE",
+            "rank": 10
+          },
+          {
+            "name": "Nanjing Tech University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Changsha University of Science and Technology",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Fudan University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Guangxi Normal University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Guangdong University of Technology",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Beijing University of Technology",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Shenzhen University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "PLA Information Engineering University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Wuhan University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Nanjing University of Science and Technology",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Beijing University of Posts and Telecommunications",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Jiangxi Normal University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Zhejiang University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "Computer Network Information Center",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "HKUST",
+            "count": 1,
+            "pct": 1.82,
+            "country": "HK",
+            "rank": 10
+          },
+          {
+            "name": "Key Laboratory of Cyberspace Security, Ministry of Education, ZhengZhou",
+            "count": 1,
+            "pct": 1.82,
+            "country": "",
+            "rank": 10
+          },
+          {
+            "name": "Sun Yat-sen University",
+            "count": 1,
+            "pct": 1.82,
+            "country": "CN",
+            "rank": 10
+          },
+          {
+            "name": "University of Jyväskylä",
+            "count": 1,
+            "pct": 1.82,
+            "country": "FI",
+            "rank": 10
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }

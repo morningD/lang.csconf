@@ -1,0 +1,1961 @@
+{
+  "conference": "MSR",
+  "year": 2025,
+  "total_papers": 254,
+  "total_matched": 115,
+  "total_with_affiliation": 98,
+  "coverage_pct": 38.6,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "An Empirical Study on Leveraging Images in Automated Bug Report Reproduction.",
+      "first_author": "Dingbang Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271501",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00019",
+      "institution": "University of Connecticut",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02der9h97"
+    },
+    {
+      "title": "Tracing Vulnerabilities in Maven: A Study of CVE lifecycles and Dependency Networks.",
+      "first_author": "Corey Yang-Smith",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271558",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00064",
+      "institution": "University of Calgary",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03yjb2x39"
+    },
+    {
+      "title": "Do LLMs Provide Links to Code Similar to What They Generate? A Study with Gemini and Bing CoPilot.",
+      "first_author": "Daniele Bifolco",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Cascading Effects: Analyzing Project Failure Impact in the Maven Central Ecosystem.",
+      "first_author": "Mina Shehata",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272069",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00056",
+      "institution": "Belmont University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/033vjpd42"
+    },
+    {
+      "title": "Inferring Questions from Programming Screenshots.",
+      "first_author": "Faiz Ahmed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272438",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00111",
+      "institution": "York University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05fq50484"
+    },
+    {
+      "title": "SCRUBD: Smart Contracts Reentrancy and Unhandled Exceptions Vulnerability Dataset.",
+      "first_author": "Chavhan Sujeet Yashavant",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271367",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00033",
+      "institution": "Indian Institute of Technology Kanpur",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/05pjsgx75"
+    },
+    {
+      "title": "DPy: Code Smells Detection Tool for Python.",
+      "first_author": "Aryan Boloori",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271539",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00119",
+      "institution": "Dalhousie University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01e6qks80"
+    },
+    {
+      "title": "Under the Blueprints: Parsing Unreal Engine's Visual Scripting at Scale.",
+      "first_author": "Kalvin Eng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Build Code Needs Maintenance Too: A Study on Refactoring and Technical Debt in Build Systems.",
+      "first_author": "Anwar Ghammam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271084",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00098",
+      "institution": "Oakland University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ythxj32"
+    },
+    {
+      "title": "JPerfEvo: A Tool for Tracking Method-Level Performance Changes in Java Projects.",
+      "first_author": "Kaveh Shahedi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271527",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00125",
+      "institution": "Polytechnique Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05f8d4e86"
+    },
+    {
+      "title": "TestMigrationsInPy: A Dataset of Test Migrations from Unittest to Pytest.",
+      "first_author": "Altino Alves",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272467",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00122",
+      "institution": "Universidade Federal de Minas Gerais",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/0176yjw32"
+    },
+    {
+      "title": "Dependency Update Adoption Patterns in the Maven Software Ecosystem.",
+      "first_author": "Baltasar Berretta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271161",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00053",
+      "institution": "College of Wooster",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/029zqs055"
+    },
+    {
+      "title": "Faster Releases, Fewer Risks: A Study on Maven Artifact Vulnerabilities and Lifecycle Management.",
+      "first_author": "Md Shafiullah Shafin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Prompt Engineering or Fine-Tuning: An Empirical Assessment of LLMs for Code.",
+      "first_author": "Jiho Shin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271504",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00082",
+      "institution": "York University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05fq50484"
+    },
+    {
+      "title": "TriGraph: A Probabilistic Subgraph-Based Model for Visual Code Completion in Pure Data.",
+      "first_author": "Anisha Islam",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271784",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00110",
+      "institution": "University of Alberta",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0160cpw27"
+    },
+    {
+      "title": "Understanding the Popularity of Packages in Maven Ecosystem.",
+      "first_author": "Sadman Jashim Sakib",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4409911945",
+      "doi": "https://doi.org/10.20944/preprints202504.2296.v1",
+      "institution": "University of Windsor",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01gw3d370"
+    },
+    {
+      "title": "How Do Infrastructure-as-Code Practitioners Update Their Dependencies? An Empirical Study on Terraform Module Updates.",
+      "first_author": "Mahi Begoug",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Ripple Effect of Vulnerabilities in Maven Central: Prevalence, Propagation, and Mitigation Challenges.",
+      "first_author": "Ehtisham Ul Haq",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SPRINT: An Assistant for Issue Report Management.",
+      "first_author": "Ahmed Adnan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271212",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00025",
+      "institution": "University of Dhaka",
+      "institution_country": "BD",
+      "institution_ror": "https://ror.org/05wv2vq37"
+    },
+    {
+      "title": "GitProjectHealth: an Extensible Framework for Git Social Platform Mining.",
+      "first_author": "Nicolas Hlad",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272098",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00094",
+      "institution": "Berger-Levrault (France)",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/013zjdj28"
+    },
+    {
+      "title": "It's About Time: An Empirical Study of Date and Time Bugs in Open-Source Python Software.",
+      "first_author": "Shrey Tiwari",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Too Noisy To Learn: Enhancing Data Quality for Code Review Comment Generation.",
+      "first_author": "Chunhua Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271723",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00043",
+      "institution": "The University of Melbourne",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/01ej9dk98"
+    },
+    {
+      "title": "Investigating the Understandability of Review Comments on Code Change Requests.",
+      "first_author": "Md Shamimur Rahman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271537",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00087",
+      "institution": "University of Saskatchewan",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/010x8gc63"
+    },
+    {
+      "title": "Chasing the Clock: How Fast Are Vulnerabilities Fixed in the Maven Ecosystem?",
+      "first_author": "Md. Fazle Rabbi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mining a Decade of Event Impacts on Contributor Dynamics in Ethereum: A Longitudinal Study.",
+      "first_author": "Matteo Vaccargiu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272165",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00088",
+      "institution": "University of Cagliari",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/003109y17"
+    },
+    {
+      "title": "Drawing Pandas: A Benchmark for LLMs in Generating Plotting Code.",
+      "first_author": "Timur Galimzyanov",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271799",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00083",
+      "institution": "JetBrains Research",
+      "institution_country": null,
+      "raw_affiliation": "JetBrains Research"
+    },
+    {
+      "title": "Dependency Dilemmas: A Comparative Study of Independent and Dependent Artifacts in Maven Central Ecosystem.",
+      "first_author": "Mehedi Hasan Shanto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271208",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00055",
+      "institution": "Khulna University",
+      "institution_country": "BD",
+      "institution_ror": "https://ror.org/05pny7s12"
+    },
+    {
+      "title": "Understanding Test Deletion in Java Applications.",
+      "first_author": "Suraj Bhatta",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272157",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00071",
+      "institution": "North Dakota State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05h1bnb22"
+    },
+    {
+      "title": "Out of Sight, Still at Risk: The Lifecycle of Transitive Vulnerabilities in Maven.",
+      "first_author": "Piotr Przymus",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "From Industrial Practices to Academia: Uncovering the Gap in Vulnerability Research and Practice.",
+      "first_author": "Zhuang Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272133",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00030",
+      "institution": "Zhejiang University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/00a2xv884"
+    },
+    {
+      "title": "CoUpJava: A Dataset of Code Upgrade Histories in Open-Source Java Repositories.",
+      "first_author": "Kaihang Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271466",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00075",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "On the Evolution of Unused Dependencies in Java Project Releases: An Empirical Study.",
+      "first_author": "Nabhan Suwanachote",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271674",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00059",
+      "institution": "Nara Institute of Science and Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/05bhada84"
+    },
+    {
+      "title": "Understanding Software Vulnerabilities in the Maven Ecosystem: Patterns, Timelines, and Risks.",
+      "first_author": "Md. Fazle Rabbi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CoMRAT: Commit Message Rationale Analysis Tool.",
+      "first_author": "Mouna Dhaouadi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271495",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00120",
+      "institution": "Université de Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0161xgx34"
+    },
+    {
+      "title": "50 Years of Programming Language Evolution through the Software Heritage looking glass.",
+      "first_author": "Adèle Desmazières",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4407091897",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00068",
+      "institution": "Sorbonne Université",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02en5vm52"
+    },
+    {
+      "title": "Combining Large Language Models with Static Analyzers for Code Review Generation.",
+      "first_author": "Imen Jaoua",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271588",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00038",
+      "institution": "Université de Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0161xgx34"
+    },
+    {
+      "title": "A Dataset of Software Bill of Materials for Evaluating SBOM Consumption Tools.",
+      "first_author": "Rio Kishimoto",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271800",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00090",
+      "institution": "The University of Osaka,Japan",
+      "institution_country": null,
+      "raw_affiliation": "The University of Osaka,Japan"
+    },
+    {
+      "title": "RepoChat: An LLM-Powered Chatbot for GitHub Repository Question-Answering.",
+      "first_author": "Samuel Abedu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271283",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00045",
+      "institution": "Concordia University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0420zvk78"
+    },
+    {
+      "title": "E2EGit: A Dataset of End-to-End Web Tests in Open Source Projects.",
+      "first_author": "Sergio Di Meglio",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272052",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00121",
+      "institution": "University of Naples Federico II",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/05290cv24"
+    },
+    {
+      "title": "LLMSecConfig: An LLM-Based Approach for Fixing Software Container Misconfigurations.",
+      "first_author": "Ziyang Ye",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271286",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00099",
+      "institution": "CREST - The Centre for Research on Engineering Software Technologies,Adelaide,Australia",
+      "institution_country": null,
+      "raw_affiliation": "CREST - The Centre for Research on Engineering Software Technologies,Adelaide,Australia"
+    },
+    {
+      "title": "Automatic High-Level Test Case Generation using Large Language Models.",
+      "first_author": "Navid Bin Hasan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271549",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00105",
+      "institution": "Bangladesh University of Engineering and Technology",
+      "institution_country": "BD",
+      "institution_ror": "https://ror.org/05a1qpv97"
+    },
+    {
+      "title": "Do Developers Depend on Deprecated Library Versions? A Mining Study of Log4j.",
+      "first_author": "Haruhiko Yoshioka",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Should Code Models Learn Pedagogically? A Preliminary Evaluation of Curriculum Learning for Real-World Software Engineering Tasks.",
+      "first_author": "Kyi Shin Khant",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mining for Lags in Updating Critical Security Threats: A Case Study of Log4j Library.",
+      "first_author": "Hidetake Tanaka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271326",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00058",
+      "institution": "Nara Institute of Science and Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/05bhada84"
+    },
+    {
+      "title": "Characterizing Packages for Vulnerability Prediction.",
+      "first_author": "Saviour Owolabi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271062",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00066",
+      "institution": "University of Calgary",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03yjb2x39"
+    },
+    {
+      "title": "DataTD: A Dataset of Java Projects Including Test Doubles.",
+      "first_author": "Mengzhen Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271425",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00124",
+      "institution": "University of Minnesota",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/017zqws13"
+    },
+    {
+      "title": "How Much Do Code Language Models Remember? An Investigation on Data Extraction Attacks Before and After Fine-tuning.",
+      "first_author": "Fabio Salerno",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Ecosystem of Open-Source Music Production Software - A Mining Study on the Development Practices of VST Plugins on GitHub.",
+      "first_author": "Andrei Bogdan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271061",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00085",
+      "institution": "University of Amsterdam",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/04dkp9463"
+    },
+    {
+      "title": "EvoChain: A Framework for Tracking and Visualizing Smart Contract Evolution.",
+      "first_author": "Ilham A. Qasse",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271711",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00076",
+      "institution": "Reykjavík University",
+      "institution_country": "IS",
+      "institution_ror": "https://ror.org/05d2kyx68"
+    },
+    {
+      "title": "Mining Bug Repositories for Multi-Fault Programs.",
+      "first_author": "Dylan Callaghan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271590",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00023",
+      "institution": "Stellenbosch University",
+      "institution_country": "ZA",
+      "institution_ror": "https://ror.org/05bk57929"
+    },
+    {
+      "title": "Good practice versus reality: A landscape analysis of Research Software metadata adoption in European Open Science Clusters.",
+      "first_author": "Anas El Hounsri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271790",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00028",
+      "institution": "Universidad Politécnica de Madrid",
+      "institution_country": "ES",
+      "institution_ror": "https://ror.org/03n6nwv02"
+    },
+    {
+      "title": "OpenMent: A Dataset of Mentor-Mentee Interactions in Google Summer of Code.",
+      "first_author": "Erfan Raoofian",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272160",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00096",
+      "institution": "University of British Columbia",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03rmrcq20"
+    },
+    {
+      "title": "MARIN: A Research-Centric Interface for Querying Software Artifacts on Maven Repositories.",
+      "first_author": "Johannes Düsing",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271596",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00093",
+      "institution": "TU Dortmund University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/01k97gp34"
+    },
+    {
+      "title": "Are the Majority of Public Computational Notebooks Pathologically Non-Executable?",
+      "first_author": "Tien Nguyen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "OSS License Identification at Scale: A Comprehensive Dataset Using World of Code.",
+      "first_author": "Mahmoud Jahanshahi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271531",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00032",
+      "institution": "University of Tennessee at Knoxville",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/020f3ap87"
+    },
+    {
+      "title": "Decoding Dependency Risks: A Quantitative Study of Vulnerabilities in the Maven Ecosystem.",
+      "first_author": "Costain Nachuma",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271429",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00048",
+      "institution": "Idaho State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0162z8b04"
+    },
+    {
+      "title": "PyExamine: A Comprehensive, Un-Opinionated Smell Detection Tool for Python.",
+      "first_author": "Karthik Shivashankar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Prompting in the Wild: An Empirical Study of Prompt Evolution in Software Repositories.",
+      "first_author": "Mahan Tafreshipour",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272485",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00106",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "HaPy-Bug - Human Annotated Python Bug Resolution Dataset.",
+      "first_author": "Piotr Przymus",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271866",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00024",
+      "institution": "Nicolaus Copernicus University",
+      "institution_country": "PL",
+      "institution_ror": "https://ror.org/0102mm775"
+    },
+    {
+      "title": "TerraDS: A Dataset for Terraform HCL Programs.",
+      "first_author": "Christoph Bühler",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272026",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00101",
+      "institution": "University of St.Gallen",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/0561a3s31"
+    },
+    {
+      "title": "On the calibration of Just-in-time Defect Prediction.",
+      "first_author": "Xhulja Shahini",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271483",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00018",
+      "institution": "University of Duisburg-Essen",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04mz5ra38"
+    },
+    {
+      "title": "Language Models in Software Development Tasks: An Experimental Analysis of Energy and Accuracy.",
+      "first_author": "Negar Alizadeh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271106",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00109",
+      "institution": "Utrecht University",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/04pp8hn57"
+    },
+    {
+      "title": "How Effective are LLMs for Data Science Coding? A Controlled Experiment.",
+      "first_author": "Nathalia Nascimento",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MaLAware: Automating the Comprehension of Malicious Software Behaviours using Large Language Models (LLMs).",
+      "first_author": "Bikash Saha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271530",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00037",
+      "institution": "Indian Institute of Technology Kanpur",
+      "institution_country": "IN",
+      "institution_ror": "https://ror.org/05pjsgx75"
+    },
+    {
+      "title": "SMATCH-M-LLM: Semantic Similarity in Metamodel Matching With Large Language Models.",
+      "first_author": "Nafisa Ahmed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271581",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00040",
+      "institution": "Polytechnique Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05f8d4e86"
+    },
+    {
+      "title": "MYRIAD PEOPLE Open Source Software for New Media Arts.",
+      "first_author": "Benoit Baudry",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272119",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00095",
+      "institution": "Universit&#x00E9; de Montr&#x00E9;al,QC,Canada",
+      "institution_country": null,
+      "raw_affiliation": "Universit&#x00E9; de Montr&#x00E9;al,QC,Canada"
+    },
+    {
+      "title": "CoDocBench: A Dataset for Code-Documentation Alignment in Software Maintenance.",
+      "first_author": "Kunal Suresh Pai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271580",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00077",
+      "institution": "University of California, Davis",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05rrcem69"
+    },
+    {
+      "title": "Jupyter Notebook Activity Dataset.",
+      "first_author": "Tomoki Nakamaru",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272077",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00091",
+      "institution": "Tokyo University of the Arts",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/00y809n33"
+    },
+    {
+      "title": "CARDS: A collection of package, revision, and miscellaneous dependency graphs.",
+      "first_author": "Euxane Tran-Girard",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Can LLMs Generate Higher Quality Code Than Humans? An Empirical Study.",
+      "first_author": "Mohammad Talal Jamil",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "pyMethods2Test: A Dataset of Python Tests Mapped to Focal Methods.",
+      "first_author": "Idriss Abdelmadjid",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271428",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00123",
+      "institution": "University of Nebraska–Lincoln",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/043mer456"
+    },
+    {
+      "title": "Popularity and Innovation in Maven Central.",
+      "first_author": "Nkiru Ede",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271591",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00061",
+      "institution": "Victoria University of Wellington",
+      "institution_country": "NZ",
+      "institution_ror": "https://ror.org/0040r6f76"
+    },
+    {
+      "title": "GHALogs: Large-Scale Dataset of GitHub Actions Runs.",
+      "first_author": "Florent Moriconi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272059",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00104",
+      "institution": "EURECOM",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/00sse7z02"
+    },
+    {
+      "title": "Refactoring for Dockerfile Quality: A Dive into Developer Practices and Automation Potential.",
+      "first_author": "Emna Ksontini",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271237",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00116",
+      "institution": "University of Michigan–Flint",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01c3xc117"
+    },
+    {
+      "title": "Does Functional Package Management Enable Reproducible Builds at Scale? Yes.",
+      "first_author": "Julien Malka",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Public Benchmark of REST APIs.",
+      "first_author": "Alix Decrop",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271368",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00072",
+      "institution": "University of Namur",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/03d1maw17"
+    },
+    {
+      "title": "ICVul: A Well-labeled C/C++ Vulnerability Dataset with Comprehensive Metadata and VCCs.",
+      "first_author": "Chaomeng Lu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271779",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00034",
+      "institution": "KU Leuven",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/05f950310"
+    },
+    {
+      "title": "Wolves in the Repository: A Software Engineering Analysis of the XZ Utils Supply Chain Attack.",
+      "first_author": "Piotr Przymus",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271230",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00026",
+      "institution": "Nicolaus Copernicus University",
+      "institution_country": "PL",
+      "institution_ror": "https://ror.org/0102mm775"
+    },
+    {
+      "title": "A Dataset of Contributor Activities in the NumFocus Open-Source Community.",
+      "first_author": "Youness Hourri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271087",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00035",
+      "institution": "University of Mons",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/02qnnz951"
+    },
+    {
+      "title": "What Do Contribution Guidelines Say About Software Testing?",
+      "first_author": "Bruna Falcucci",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Is it Really Fun? Detecting Low Engagement Events in Video Games.",
+      "first_author": "Emanuela Guglielmi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SnipGen: A Mining Repository Framework for Evaluating LLMs for Code.",
+      "first_author": "Daniel Rodríguez-Cárdenas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271605",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00084",
+      "institution": "William & Mary",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03hsf0573"
+    },
+    {
+      "title": "Understanding Abandonment and Slowdown Dynamics in the Maven Ecosystem.",
+      "first_author": "Kazi Amit Hasan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271592",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00065",
+      "institution": "Queen's University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/02y72wh86"
+    },
+    {
+      "title": "Towards Detecting Prompt Knowledge Gaps for Improved LLM-guided Issue Resolution.",
+      "first_author": "Ramtin Ehsani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272368",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00107",
+      "institution": "Drexel University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04bdffz58"
+    },
+    {
+      "title": "Can LLMs Replace Manual Annotation of Software Engineering Artifacts?",
+      "first_author": "Toufique Ahmed",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Software Composition Analysis and Supply Chain Security in Apache Projects: an Empirical Study.",
+      "first_author": "Sabato Nocera",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271455",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00027",
+      "institution": "University of Salerno",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/0192m2k53"
+    },
+    {
+      "title": "It Works (only) on My Machine: A Study on Reproducibility Smells in Ansible Scripts.",
+      "first_author": "Ghazal Sobhani",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271665",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00069",
+      "institution": "Dalhousie University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01e6qks80"
+    },
+    {
+      "title": "Analyzing Vulnerability Overestimation in the Maven Ecosystem.",
+      "first_author": "Taha Draoui",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272131",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00054",
+      "institution": "University of Michigan–Flint",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01c3xc117"
+    },
+    {
+      "title": "Intelligent Semantic Matching (ISM) for Video Tutorial Search using Transformer Models.",
+      "first_author": "Ahmad J. Tayeb",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272280",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00108",
+      "institution": "King Abdulaziz University",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/02ma4wv74"
+    },
+    {
+      "title": "Navigating and Exploring Software Dependency Graphs Using Goblin.",
+      "first_author": "Damien Jaime",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4404347037",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00029",
+      "institution": "Centre National de la Recherche Scientifique",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/02feahw73"
+    },
+    {
+      "title": "FormalSpecCpp: A Dataset of C++ Formal Specifications created using LLMs.",
+      "first_author": "Madhurima Chakraborty",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272344",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00113",
+      "institution": "University of California, Riverside",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03nawhv43"
+    },
+    {
+      "title": "Measuring InnerSource Value.",
+      "first_author": "Chamindra de Silva",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272348",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00074",
+      "institution": "FINOS Innersource SIG Lead Citibank,London,United Kingdom",
+      "institution_country": null,
+      "raw_affiliation": "FINOS Innersource SIG Lead Citibank,London,United Kingdom"
+    },
+    {
+      "title": "OSPtrack: A Labeled Dataset Targeting Simulated Execution of Open-Source Software.",
+      "first_author": "Zhuoran Tan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271228",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00102",
+      "institution": "University of Glasgow",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/00vtgdb53"
+    },
+    {
+      "title": "Evidence is All We Need: Do Self-Admitted Technical Debts Impact Method-Level Maintenance?",
+      "first_author": "Shaiful Chowdhury",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Harnessing Large Language Models for Curated Code Reviews.",
+      "first_author": "Oussama Ben Sghaier",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271494",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00039",
+      "institution": "Université de Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0161xgx34"
+    },
+    {
+      "title": "Learning from Mistakes: Understanding Ad-hoc Logs through Analyzing Accidental Commits.",
+      "first_author": "Yi-Hung Chou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272318",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00017",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "Wild SBOMs: a Large-scale Dataset of Software Bills of Materials from Public Code.",
+      "first_author": "Luis Soeiro",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271442",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00036",
+      "institution": "Laboratoire Traitement et Communication de l’Information",
+      "institution_country": "FR",
+      "institution_ror": "https://ror.org/057er4c39"
+    },
+    {
+      "title": "Insights into Dependency Maintenance Trends in the Maven Ecosystem.",
+      "first_author": "Barisha Chowdhury",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271226",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00050",
+      "institution": "Rajshahi University of Engineering and Technology",
+      "institution_country": "BD",
+      "institution_ror": "https://ror.org/049ysg747"
+    },
+    {
+      "title": "Human-In-The-Loop Software Development Agents: Challenges and Future Directions.",
+      "first_author": "Jirat Pasuksmit",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271192",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00112",
+      "institution": "Atlassian,Australia",
+      "institution_country": null,
+      "raw_affiliation": "Atlassian,Australia"
+    },
+    {
+      "title": "Analyzing Dependency Clusters and Security Risks in the Maven Central Repository.",
+      "first_author": "George Lake",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271458",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00046",
+      "institution": "Idaho State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/0162z8b04"
+    },
+    {
+      "title": "Revisiting Defects4J for Fault Localization in Diverse Development Scenarios.",
+      "first_author": "Md Nakhla Rafi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271577",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00022",
+      "institution": "Concordia University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0420zvk78"
+    },
+    {
+      "title": "CoPhi - Mining C/C++ Packages for Conan Ecosystem Analysis.",
+      "first_author": "Vivek Sarkar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271459",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00092",
+      "institution": "University of Washington",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00cvxb145"
+    },
+    {
+      "title": "Smells-sus: Sustainability Smells in IaC.",
+      "first_author": "Seif Kosbar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411272387",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00117",
+      "institution": "Polytechnique Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05f8d4e86"
+    },
+    {
+      "title": "Enhancing Just-In-Time Defect Prediction Models with Developer-Centric Features.",
+      "first_author": "Emanuela Guglielmi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271406",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00021",
+      "institution": "University of Molise",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/04z08z627"
+    },
+    {
+      "title": "Insights into Vulnerability Trends in Maven Artifacts: Recurrence, Popularity, and User Behavior.",
+      "first_author": "Courtney Bodily",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Patch Me If You Can - Securing the Linux Kernel.",
+      "first_author": "Gunnar Kudrjavets",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271468",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00031",
+      "institution": "Amazon (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04mv4n011"
+    },
+    {
+      "title": "Software Bills of Materials in Maven Central.",
+      "first_author": "Yogya Gamage",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271523",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00062",
+      "institution": "Université de Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0161xgx34"
+    },
+    {
+      "title": "RefExpo: Unveiling Software Project Structures through Advanced Dependency Graph Extraction.",
+      "first_author": "Vahid Haratian",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271510",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00078",
+      "institution": "Bilkent University",
+      "institution_country": "TR",
+      "institution_ror": "https://ror.org/02vh8a032"
+    },
+    {
+      "title": "HyperAST: Incrementally Mining Large Source Code Repositories.",
+      "first_author": "Quentin Le Dilavrec",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4411271202",
+      "doi": "https://doi.org/10.1109/msr66628.2025.00079",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "On the Footprints of Reviewer Bots' Feedback on Agentic Pull Requests in OSS GitHub Repositories.",
+      "first_author": "Syeda Kaneez Fatima",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7111200665",
+      "doi": "https://doi.org/10.5281/zenodo.17866386",
+      "institution": "Lahore University of Management Sciences",
+      "institution_country": "PK",
+      "institution_ror": "https://ror.org/05b5x4a35"
+    },
+    {
+      "title": "When is Generated Code Difficult to Comprehend? Assessing AI Agent Python Code Proficiency in the Wild.",
+      "first_author": "Nanthit Temkulkiat",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AIDev: Studying AI Coding Agents on GitHub.",
+      "first_author": "Hao Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4417420254",
+      "doi": "https://doi.org/10.5281/zenodo.16899501",
+      "institution": null
+    },
+    {
+      "title": "AndroT: A Dataset of Android Apps with Tests.",
+      "first_author": "Hovhannes Muradyan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7105008883",
+      "doi": "https://doi.org/10.5281/zenodo.17577006",
+      "institution": null
+    },
+    {
+      "title": "Source Code Hotspots: A Diagnostic Method for Quality Issues.",
+      "first_author": "Saleha Muzammil",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Empirical Study of Policy as Code: Adoption, Purpose, and Maintenance.",
+      "first_author": "Ruben Opdebeeck",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Safer Builders, Risky Maintainers: A Comparative Study of Breaking Changes in Human vs Agentic PRs.",
+      "first_author": "K. M. Ferdous",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "OSSGameBench: A Large-Scale Dataset of Development Activities in Open-Source Video Games.",
+      "first_author": "Faiz Marsad",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How Do Agents Perform Code Optimization? An Empirical Study.",
+      "first_author": "Huiyun Peng",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "DBSecQA: A Curated Dataset of Developer Discussions on Database Security from Stack Exchange.",
+      "first_author": "Md. Rakibul Islam",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Beyond Single Code Changes: An Empirical Study of Topic-Based Code Review Practices in Gerrit for OpenStack.",
+      "first_author": "Moataz Chouchen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Coordination at Scale in Large Distributed Development: The Case of Kubernetes.",
+      "first_author": "Sabrina Aufiero",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Early-Stage Prediction of Review Effort in AI-Generated Pull Requests.",
+      "first_author": "Dao Sy Duy Minh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7116397299",
+      "doi": "https://doi.org/10.5281/zenodo.17993900",
+      "institution": null
+    },
+    {
+      "title": "Linux Kernel Recency Matters, CVE Severity Doesn't, and History Fades.",
+      "first_author": "Piotr Przymus",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Does Programming Language Matter? An Empirical Study of Fuzzing Bug Detection.",
+      "first_author": "Tatsuya Shirai",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mining Type Constructs Using Patterns in AI-Generated Code.",
+      "first_author": "Imgyeong Lee",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Where Do Smart Contract Security Analyzers Fall Short?",
+      "first_author": "Tamer Abdelaziz",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Readability of AI-Generated Pull Request Descriptions Across Pull Request Types.",
+      "first_author": "Aidan Tobar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Behind Agentic Pull Requests: An Empirical Study on Developer Interventions in AI Agent-Authored Pull Requests.",
+      "first_author": "Syrine Khelifi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Selecting the Data Source that Matter: Fine-Tuning Domain-Specific Ecosystem Studies with MARIN.",
+      "first_author": "Johannes Düsing",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Consistent or Sensitive? Automated Code Revision Tools Against Semantics-Preserving Perturbations.",
+      "first_author": "Shirin Pirouzkhah",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "VoxTransPD: A Reusable Framework for Noise-Resilient Speech Analysis and Early Parkinson's Detection.",
+      "first_author": "Tengfei Qu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Speed at the Cost of Quality: How Cursor AI Increases Short-Term Velocity and Long-Term Complexity in Open-Source Projects.",
+      "first_author": "Hao He",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Behavioral Analysis of AI Code Generation Agents: Edit, Rewrite, and Repetition.",
+      "first_author": "Mahdieh Abazar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "When Bots Get the Boot: Understanding Pull Request Rejections in the Era of AI Coders.",
+      "first_author": "Karla Gonzalez",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learning Compiler Fuzzing Mutators from Historical Bugs.",
+      "first_author": "Lingjun Liu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "From Industry Claims to Empirical Reality: An Empirical Study of Code Review Agents in Pull Requests.",
+      "first_author": "Kowshik Chowdhury",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Toward Instructions-as-Code: Understanding the Impact of Instruction Files on Agentic Pull Requests.",
+      "first_author": "Ali Arabat",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117366067",
+      "doi": "https://doi.org/10.6084/m9.figshare.30951116",
+      "institution": null
+    },
+    {
+      "title": "Comparing AI Coding Agents: A Task-Stratified Analysis of Pull Request Acceptance.",
+      "first_author": "Giovanni Pinna",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Characterizing Self-Admitted Technical Debt Generated by AI Coding Agents.",
+      "first_author": "Zaki Brahmi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "World of Logs: A Dataset of Logs from Online Documents.",
+      "first_author": "Xiaohui Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Code Change Characteristics and Description Alignment: A Comparative Study of Agentic versus Human Pull Requests.",
+      "first_author": "Dung Pham",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "InEx-Bug: A Human Annotated Dataset of Intrinsic and Extrinsic Bugs in the NPM Ecosystem.",
+      "first_author": "Tanner Wright",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Testing with AI Agents: An Empirical Study of Test Generation Frequency, Quality, and Coverage.",
+      "first_author": "Suzuka Yoshimoto",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LGTM! Characteristics of Auto-Merged LLM-based Agentic PRs.",
+      "first_author": "Ruben Branco",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Understanding Dominant Themes in Reviewing Agentic AI-authored Code.",
+      "first_author": "Md. Asif Haider",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117875495",
+      "doi": "https://doi.org/10.5281/zenodo.18067241",
+      "institution": null
+    },
+    {
+      "title": "From Logic to Toolchains: An Empirical Study of Bugs in the TypeScript Ecosystem.",
+      "first_author": "TianYi Tang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PoolinGH: Fast, Efficient, and Robust GitHub Repository Mining.",
+      "first_author": "Maxime André",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How are MLOps Frameworks Used in Open Source Projects? An Empirical Characterization.",
+      "first_author": "Fiorella Zampetti",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AI builds, We Analyze: An Empirical Study of AI-Generated Build Code Quality.",
+      "first_author": "Anwar Ghammam",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LogSieve: Task-Aware CI Log Reduction for Sustainable LLM-Based Analysis.",
+      "first_author": "Marcus Emmanuel Barnes",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Do We Agree on What an \"Audit\" Is? Toward Standardized Smart Contract Audit Reporting.",
+      "first_author": "Ilham A. Qasse",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Beyond the Prompt: An Empirical Study of Cursor Rules.",
+      "first_author": "Shaokang Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117132958",
+      "doi": "https://doi.org/10.48550/arxiv.2512.18925",
+      "institution": null
+    },
+    {
+      "title": "Model See, Model Do? Exposure-Aware Evaluation of Bug-vs-Fix Preference in Code LLMs.",
+      "first_author": "Ali Al-Kaswan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Evaluating the Use of LLMs for Automated DOM-Level Resolution of Web Performance Issues.",
+      "first_author": "Gideon Peters",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Human-Agent versus Human Pull Requests: A Testing-Focused Characterization and Comparison.",
+      "first_author": "Roberto Milanese",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117935893",
+      "doi": "https://doi.org/10.5281/zenodo.18098186",
+      "institution": "University of Molise",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/04z08z627"
+    },
+    {
+      "title": "Finding Important Stack Frames in Large Systems.",
+      "first_author": "Aleksandr Khvorov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Study of Library Usage in Agent-Authored Pull Requests.",
+      "first_author": "Lukas Twist",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7115595216",
+      "doi": "https://doi.org/10.48550/arxiv.2512.11589",
+      "institution": null
+    },
+    {
+      "title": "Analyzing Message-Code Inconsistency in AI Coding Agent-Authored Pull Requests.",
+      "first_author": "Jingzhi Gong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117355619",
+      "doi": "https://doi.org/10.5281/zenodo.18056865",
+      "institution": null
+    },
+    {
+      "title": "Characterizing and Modeling the GitHub Security Advisories Review Pipeline.",
+      "first_author": "Claudio Marcos Durand Segal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SMELLDroid: A Dataset for Code Smells in Android Apps.",
+      "first_author": "Joyce Champie",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How Do Agentic AI Systems Deal With Software Energy Concerns? A Pull Request-Based Study.",
+      "first_author": "Tanjum Motin Mitul",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ML in a Box: Analyzing Containerization Practices in Open Source ML Projects.",
+      "first_author": "Faten Jebari",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Assessing Task-based Chatbots: Snapshot and Curated Datasets for Dialogflow.",
+      "first_author": "Elena Masserini",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "HackRep: A Large-Scale Dataset of GitHub Hackathon Projects.",
+      "first_author": "Sjoerd Halmans",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7104970364",
+      "doi": "https://doi.org/10.5281/zenodo.17572683",
+      "institution": "Eindhoven University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02c2kyt77"
+    },
+    {
+      "title": "GivenWhenThen: A Dataset of BDD Test Scenarios Mined from Open Source Projects.",
+      "first_author": "Luciano Belo de Alcântara Júnior",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "KubeObjects: A Dataset of Real-World Kubernetes Objects.",
+      "first_author": "Matteo Grella",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Empirical Study on Deep Learning-based Line-Level Software Defect Prediction.",
+      "first_author": "Enci Zhang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Studying the Footprints of AI Coding Agents in Blockchain Repositories.",
+      "first_author": "Munim Iftikhar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117165200",
+      "doi": "https://doi.org/10.5281/zenodo.18040009",
+      "institution": "Lahore University of Management Sciences",
+      "institution_country": "PK",
+      "institution_ror": "https://ror.org/05b5x4a35"
+    },
+    {
+      "title": "Who Writes the Docs in SE 3.0?: Agent vs. Human Documentation Pull Requests.",
+      "first_author": "Kazuma Yamasaki",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Evolving Kubernetes: A Technical Debt Perspective.",
+      "first_author": "Jesse Maarleveld",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Empirical Analysis of Cross-OS Portability Issues in Python Projects.",
+      "first_author": "Denini Gabriel Silva",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Understanding the Rejection of Fixes Generated by Agentic Pull Requests - Insights from the AIDev Dataset.",
+      "first_author": "Mahmoud Abujadallah",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Large-Scale Dataset of MCP Implementations on GitHub.",
+      "first_author": "Benny Toeppe",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7104624807",
+      "doi": "https://doi.org/10.5281/zenodo.17573071",
+      "institution": null
+    },
+    {
+      "title": "Context Engineering for AI Agents in Open-Source Software.",
+      "first_author": "Seyedmoein Mohsenimofidi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Stop Comparing Apples and Oranges: Matching for Better Results in Mining Software Repositories Studies.",
+      "first_author": "Sabato Nocera",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time.",
+      "first_author": "Razvan Mihai Popescu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How do third-party Python libraries use type annotations?",
+      "first_author": "Eric Asare",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "What to Cut? Predicting Unnecessary Methods in Agentic Code Generation.",
+      "first_author": "Kan Watanabe",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Why Are AI Agent-Involved Pull Requests (Fix-Related) Remain Unmerged? An Empirical Study.",
+      "first_author": "Khairul Alam",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On Autopilot? An Empirical Study of Human-AI Teaming and Review Practices in Open Source.",
+      "first_author": "Haoyu Gao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Tracing Stereotypes in Pre-trained Transformers: From Biased Neurons to Fairer Models.",
+      "first_author": "Gianmario Voria",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Blueprint for Trustworthy Code Annotation at Scale: An LLM-Powered Pipeline for Industrial Software Analytics.",
+      "first_author": "Ailon dos Santos Teixeira",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "When AI Teammates Meet Code Review: Collaboration Signals Shaping the Integration of Agent-Authored Pull Requests.",
+      "first_author": "Costain Nachuma",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation.",
+      "first_author": "Sadif Ahmed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7114919120",
+      "doi": "https://doi.org/10.5281/zenodo.17903162",
+      "institution": "Bangladesh University of Engineering and Technology",
+      "institution_country": "BD",
+      "institution_ror": "https://ror.org/05a1qpv97"
+    },
+    {
+      "title": "How AI Coding Agents Communicate: A Study of Pull Request Characteristics and Human Review Responses.",
+      "first_author": "Kan Watanabe",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117128599",
+      "doi": "https://doi.org/10.5281/zenodo.18031372",
+      "institution": "Nara Institute of Science and Technology",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/05bhada84"
+    },
+    {
+      "title": "When AI Code Doesn't Stick: An Empirical Study on Reverted Changes Introduced by AI Coding Agents.",
+      "first_author": "Issam Oukhay",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Are Coding Agents Generating Over-Mocked Tests? An Empirical Study.",
+      "first_author": "Andre Hora",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Novice Developers Produce Larger Review Overhead for Project Maintainers while Vibe Coding.",
+      "first_author": "Syed Ammar Asdaque",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Beyond Bug Fixes: An Empirical Investigation of Post-Merge Code Quality Issues in Agent-Generated Pull Requests.",
+      "first_author": "Shamse Tasnim Cynthia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents on Software Development.",
+      "first_author": "Shyam Agarwal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Do AI-Generated Pull Requests Get Rejected More? (Yes but Why?).",
+      "first_author": "Yiru Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Test Coverage of Code Changes in AI-Generated Pull Requests.",
+      "first_author": "Tales Alves",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7116851181",
+      "doi": "https://doi.org/10.5281/zenodo.18019124",
+      "institution": null
+    },
+    {
+      "title": "RustXec: A Vulnerability Reproduction Dataset for Assessing Security Risks in Open-Source Rust Applications.",
+      "first_author": "Zhengjie Ji",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7125595483",
+      "doi": "https://doi.org/10.5281/zenodo.17508733",
+      "institution": null
+    },
+    {
+      "title": "Analyzing Dependency Distribution Changes Arising from Code Smell Interactions.",
+      "first_author": "Zushuai Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7114995017",
+      "doi": "https://doi.org/10.5281/zenodo.17899076",
+      "institution": null
+    },
+    {
+      "title": "Web3BlockSet: A Dataset for Empirical Research in Blockchain-Oriented Software Engineering.",
+      "first_author": "Pamella Soares",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7104856243",
+      "doi": "https://doi.org/10.5281/zenodo.17576503",
+      "institution": null
+    },
+    {
+      "title": "Analyzing GitHub Issues and Pull Requests in nf-core Pipelines: Insights into nf-core Pipeline Repositories.",
+      "first_author": "Khairul Alam",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MOOT: a Repository of many Multi-objective Optimization Tasks.",
+      "first_author": "Tim Menzies",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "OmniCCG: Agnostic Code Clone Genealogy Extractor.",
+      "first_author": "Denis Sousa",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Empirical Analysis of Test Failures in AI-Generated Pull Requests.",
+      "first_author": "Alireza Hoseinpour",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "IssuePilot: An Agentic Framework for Personalized Issue Recommendation and Onboarding in Open-Source Projects.",
+      "first_author": "Shlok Pandey",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Who Said CVE? How Vulnerability Identifiers Are Mentioned by Humans, Bots, and Agents in Pull Requests.",
+      "first_author": "Pien Rooijendijk",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Can Data Mining Help to Survive the Annual Compiler Upgrade?",
+      "first_author": "Gunnar Kudrjavets",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "More Code, Less Reuse: Investigation on Code Quality and Reviewer Sentiment towards AI-generated Pull Requests.",
+      "first_author": "Haoming Huang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study.",
+      "first_author": "Sien Reeve Ordonez Peralta",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Reliability of AI Bots Footprints in GitHub Actions CI/CD Workflows.",
+      "first_author": "Syed Muhammad Ashhar Shah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7111411710",
+      "doi": "https://doi.org/10.5281/zenodo.17867301",
+      "institution": "Lahore University of Management Sciences",
+      "institution_country": "PK",
+      "institution_ror": "https://ror.org/05b5x4a35"
+    },
+    {
+      "title": "Modeling Sampling Workflows for Code Repositories.",
+      "first_author": "Romain Lefeuvre",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Let's Make Every Pull Request Meaningful: An Empirical Analysis of Developer and Agentic Pull Requests.",
+      "first_author": "Haruhiko Yoshioka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117298385",
+      "doi": "https://doi.org/10.5281/zenodo.18053516",
+      "institution": null
+    },
+    {
+      "title": "An Empirical Study of Vulnerabilities in Python Packages and Their Detection.",
+      "first_author": "Haowei Quan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On the Reliability of Agentic AI in Continuous Integration Pipelines.",
+      "first_author": "Moataz Chouchen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fingerprinting AI Coding Agents on GitHub.",
+      "first_author": "Taher A. Ghaleb",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "On the Adoption of AI Coding Agents in Open-source Android and iOS Development.",
+      "first_author": "Muhammad Ahmad Khan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7114767309",
+      "doi": "https://doi.org/10.5281/zenodo.17874505",
+      "institution": "Lahore University of Management Sciences",
+      "institution_country": "PK",
+      "institution_ror": "https://ror.org/05b5x4a35"
+    },
+    {
+      "title": "GLiSE: A Prompt-Driven and ML-Powered Tool for Automated Grey Literature Extraction in Software Engineering.",
+      "first_author": "Brahim Mahmoudi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7117747479",
+      "doi": "https://doi.org/10.48550/arxiv.2512.23066",
+      "institution": null
+    },
+    {
+      "title": "AnoMod: A Dataset for Anomaly Detection and Root Cause Analysis in Microservice System.",
+      "first_author": "Ke Ping",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Empirical Study of Code Clone Genealogies in Human-AI Collaborative Development.",
+      "first_author": "Denis Sousa",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Match Made in Heaven? AI-driven Matching of Vulnerabilities and Security Unit Tests.",
+      "first_author": "Emanuele Iannone",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "IntelliSA: An Intelligent Static Analyzer for IaC Security Smell Detection Using Symbolic Rules and Neural Inference.",
+      "first_author": "Qiyue Mei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mining Kubernetes Repositories: The Cloud was Not Built in a Day.",
+      "first_author": "Giuseppe Destefanis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "LILA: Decentralized Build Reproducibility Monitoring for the Functional Package Management Model.",
+      "first_author": "Julien Malka",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Humans Integrate, Agents Fix: How Agent-Authored Pull Requests Are Referenced in Practice.",
+      "first_author": "Islem Khemissi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How do Agents Refactor: An Empirical Study.",
+      "first_author": "Lukas Ottenhof",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7125652610",
+      "doi": "https://doi.org/10.5281/zenodo.18363535",
+      "institution": "University of Alberta",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0160cpw27"
+    },
+    {
+      "title": "Do AI Agents Really Improve Code Readability?",
+      "first_author": "Kyogo Horikawa",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AndroMetric: Bridging Multi-Dimensional Software Metrics and Mobile Application Security.",
+      "first_author": "Sebastian Siedler",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Quantifying Competitive Relationships Among Open-Source Software Projects.",
+      "first_author": "Yuki Takei",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mining Quantum Software Patterns in Open-Source Projects.",
+      "first_author": "Neilson Carlos Leite Ramalho",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Role of CI Adoption in Mobile App Success: An Empirical Study of Open-Source Android Projects.",
+      "first_author": "Xiaoxin Zhou",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Dose Makes the Agent: Therapeutic Index Analysis of AI Coding Contributions.",
+      "first_author": "Giuseppe Destefanis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How AI Coding Agents Modify Code: A Large-Scale Study of GitHub Pull Requests.",
+      "first_author": "Daniel Ogenrwot",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Combining Example-Based and Rule-Based Program Transformations to Resolve Build Conflicts.",
+      "first_author": "Sheikh Shadab Towqir",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Are We All Using Agents the Same Way? An Empirical Study of Core and Peripheral Developers' Use of Coding Agents.",
+      "first_author": "Shamse Tasnim Cynthia",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "JavaBackports: A Dataset for Benchmarking Automated Backporting in Java.",
+      "first_author": "Kaushal Kahapola",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PhantomRun: Auto Repair of Compilation Errors in Embedded Open Source Software.",
+      "first_author": "Han Fu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7125479989",
+      "doi": "https://doi.org/10.5281/zenodo.18348758",
+      "institution": "Ericsson (Sweden)",
+      "institution_country": "SE",
+      "institution_ror": "https://ror.org/05a7rhx54"
+    },
+    {
+      "title": "Bridging Design and Implementation: A Study of Multi-Agent LLM Architectures for Automated Front-End Generation.",
+      "first_author": "Caren Rizk",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7166959618",
+      "doi": null,
+      "institution": "Concordia University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04dwckp88"
+    },
+    {
+      "title": "A Task-Level Evaluation of AI Agents in Open-Source Projects.",
+      "first_author": "Shojibur Rahman",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Adversarial Bug Reports as a Security Risk in Language Model-Based Automated Program Repair.",
+      "first_author": "Piotr Przymus",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Underutilization in Research GPU Clusters: SE Challenges.",
+      "first_author": "Krzysztof Kaczmarski",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "AFGNN: API Misuse Detection using Graph Neural Networks and Clustering.",
+      "first_author": "Ponnampalam Pirapuraj",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SQuaD: The Software Quality Dataset.",
+      "first_author": "Mikel Robredo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7104757876",
+      "doi": "https://doi.org/10.23729/fd-f9dc7d2c-0465-3991-961f-56128ee518d0",
+      "institution": "University of Oulu",
+      "institution_country": "FI",
+      "institution_ror": "https://ror.org/03yj89h83"
+    },
+    {
+      "title": "Promises, Perils, and (Timely) Heuristics for Mining Coding Agent Activity.",
+      "first_author": "Romain Robbes",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "When AI Agents Touch CI/CD Configurations: Frequency and Success.",
+      "first_author": "Taher A. Ghaleb",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Quiet Contributions: Insights into AI-Generated Silent Pull Requests.",
+      "first_author": "S. M. Mahedy Hasan",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Toward Linking Declined Proposals and Source Code: An Exploratory Study on the Go Repository.",
+      "first_author": "Sota Nakashima",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7130950092",
+      "doi": "https://doi.org/10.5281/zenodo.18732456",
+      "institution": null
+    },
+    {
+      "title": "Skyt: Prompt Contracts for Software Repeatability in LLM-Assisted Development.",
+      "first_author": "Heitor Roriz Filho",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "GitEvo: Code Evolution Analysis for Git Repositories.",
+      "first_author": "Andre Hora",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "The Value of Effective Pull Request Description.",
+      "first_author": "Shirin Pirouzkhah",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7114915829",
+      "doi": "https://doi.org/10.5281/zenodo.17901064",
+      "institution": null
+    },
+    {
+      "title": "LLM-Based Detection of Tangled Code Changes for Higher-Quality Method-Level Bug Datasets.",
+      "first_author": "Md. Nahidul Islam Opu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "How Do Agentic AI Systems Address Performance Optimizations? A BERTopic-Based Analysis of Pull Requests.",
+      "first_author": "Md. Nahidul Islam Opu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Study on Code Clone Lifecycles in Pull Requests Created by AI Agents.",
+      "first_author": "Italo Uchoa",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "An Empirical Study of Tests in Agentic Pull Requests.",
+      "first_author": "Sabrina Haque",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Mapping Decentralized Autonomous Organization Governance Across Chains: An Updated, Multi-Platform Dataset.",
+      "first_author": "Mashiat Amin Farin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Where Do AI Coding Agents Fail? An Empirical Study of Failed Agentic Pull Requests in GitHub.",
+      "first_author": "Ramtin Ehsani",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Bug-Fixing in the Age of AI: Human vs. Agentic Pull Requests.",
+      "first_author": "Renato Domingues",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "When AI Writes Code: Investigating Security Issues in Agentic Software Changes.",
+      "first_author": "Esteban Dectot-Le Monnier de Gouville",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Why and When Agentic Pull Requests are (not) Accepted: An Exploratory Study.",
+      "first_author": "Marius Christoph Strauss",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Running Large Language Models at Scale for Mining Software Repositories: Lessons Learned from HPC-Based Batch Inference.",
+      "first_author": "Ruoyu Su",
+      "matched": false,
+      "institution": null
+    }
+  ]
+}

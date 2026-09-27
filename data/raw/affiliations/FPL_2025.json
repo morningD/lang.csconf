@@ -1,0 +1,567 @@
+{
+  "conference": "FPL",
+  "year": 2025,
+  "total_papers": 56,
+  "total_matched": 55,
+  "total_with_affiliation": 55,
+  "coverage_pct": 98.2,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Multiplexer Optimizations for Virtex FPGAs.",
+      "first_author": "Nicolai Fiege",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140566263",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00019",
+      "institution": "University of Kassel",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04zc7p361"
+    },
+    {
+      "title": "URAM-Based Asynchronous FIFO Design for Improved Throughput and FPGA RAM Usage.",
+      "first_author": "Martim Rosado",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140830317",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00021",
+      "institution": "Center for Migration Studies of New York",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/058zr4t24"
+    },
+    {
+      "title": "SparseDPD: A Sparse Neural Network-Based Digital Predistortion FPGA Accelerator for RF Power Amplifier Linearization.",
+      "first_author": "Manno Versluis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4417538799",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00031",
+      "institution": "Delft University of Technology",
+      "institution_country": "NL",
+      "institution_ror": "https://ror.org/02e2c7k09"
+    },
+    {
+      "title": "Refining Datapath for Microscaling ViTs.",
+      "first_author": "Can Xiao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140886584",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00044",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "F2Opt: Novel Fine-Tuning and Folding Algorithms for FPGA-Based DNN Accelerators.",
+      "first_author": "Muhammad Shakeel Akram",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Instruction-Controlled In-Pipeline GEMM Acceleration in a Dual-Issue RISC-V Core for Edge Applications.",
+      "first_author": "Ahmad Othman",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140442739",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00045",
+      "institution": "Dynamic Systems (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/043vm9914"
+    },
+    {
+      "title": "TRPlaceFPGA-MP: A Two-Stage Reinforcement Learning Framework for Fast FPGA Macro Placer.",
+      "first_author": "Qin Luo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140771247",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00023",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "AffiNiTy: A Multi-Scalar Multiplication Accelerator with a Novel Batched Inversion Architecture.",
+      "first_author": "Tong Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140621766",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00028",
+      "institution": "UNSW Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/03r8z3t63"
+    },
+    {
+      "title": "GEF: A GNN-Based Evaluation Framework for FPGA Routing Architecture.",
+      "first_author": "Yuanqi Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140781380",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00024",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Hybrid Weightless Neural Networks for Efficient Edge Inference.",
+      "first_author": "Mugdha P. Jadhao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140590399",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00048",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Aspo: Constraint-Aware Bayesian Optimization for Fpga-Based Soft Processors.",
+      "first_author": "Haoran Wu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140797057",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00036",
+      "institution": "University of Cambridge",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/013meh722"
+    },
+    {
+      "title": "NeuGEMM: A Reordering-Free Unified GEMM-Conv2D Accelerator for Lightweight Neuromorphic Processors.",
+      "first_author": "Hyeonguk Jang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140928645",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00052",
+      "institution": "Electronics and Telecommunications Research Institute",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03ysstz10"
+    },
+    {
+      "title": "Versatile Place and Route with Continuous Routing Runtime Prediction and Smart Route Termination.",
+      "first_author": "Andrew David Gunter",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140790900",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00066",
+      "institution": "University of British Columbia",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03rmrcq20"
+    },
+    {
+      "title": "Routing Struggle: A Metric to Quantify Routability.",
+      "first_author": "Sadegh Yazdanshenas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140364372",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00035",
+      "institution": "Altera (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/017b7j426"
+    },
+    {
+      "title": "FPGAs with FABulous - Framework and Chips.",
+      "first_author": "Dirk Koch",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140507981",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00063",
+      "institution": "Heidelberg University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/038t36y30"
+    },
+    {
+      "title": "Double Duty: FPGA Architecture to Enable Concurrent LUT and Adder Chain Usage.",
+      "first_author": "Junius Pun",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140497416",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00016",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "Reducing FPGA Placement Runtime by Clustering of Netlist Blocks.",
+      "first_author": "Markus Rein",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140534338",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00058",
+      "institution": "Ghent University",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/00cv9y106"
+    },
+    {
+      "title": "DMA Calypte: Open-Source Ultra-Low Latency DMA Engine for FPGAs.",
+      "first_author": "Vladislav Válek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140475202",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00047",
+      "institution": "CESNET, zájmové sdružení právnických osob",
+      "institution_country": "CZ",
+      "institution_ror": "https://ror.org/050dkka69"
+    },
+    {
+      "title": "Cocotb-Pynq: Co-Simulating Python+RTL Applications Targeting Pynq Platforms with Cocotb.",
+      "first_author": "Gavin Lusby",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140625958",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00039",
+      "institution": "University of Waterloo",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/01aff2v68"
+    },
+    {
+      "title": "FAME: FPGA Acceleration of Secure Matrix Multiplication with Homomorphic Encryption.",
+      "first_author": "Zhihan Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140695130",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00025",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Programmable Congestion Generator for Evaluating FPGA Interconnect Robustness.",
+      "first_author": "Atreyee Saha",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140848240",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00032",
+      "institution": "Advanced Micro Devices (Canada)",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/02yh0k313"
+    },
+    {
+      "title": "NPX: Automating Neuromorphic Processor Design from Spike-Based Learning to FPGA Prototyping.",
+      "first_author": "Kyuseung Han",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140560101",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00064",
+      "institution": "Electronics and Telecommunications Research Institute",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/03ysstz10"
+    },
+    {
+      "title": "Identifying Sat Resilient Blocks Through LUT Switching Analysis for Breaking Compound Logic Locking Schemes.",
+      "first_author": "Binbin Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140397772",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00020",
+      "institution": "Northwestern Polytechnical University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/01y0j0j86"
+    },
+    {
+      "title": "Maximum FPGA: A 32K-Point 32-Parallel Floating Point FFT.",
+      "first_author": "Martin Langhammer",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140505309",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00038",
+      "institution": "Altera (United Kingdom)",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/00m96gg93"
+    },
+    {
+      "title": "AMD Versal Implementations of FAM and SSCA Estimators.",
+      "first_author": "Carol Jingyi Li",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140556583",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00050",
+      "institution": "The University of Sydney",
+      "institution_country": "AU",
+      "institution_ror": "https://ror.org/0384j8v12"
+    },
+    {
+      "title": "FINN-GL: Generalized Mixed-Precision Extensions for FPGA-Accelerated LSTMS.",
+      "first_author": "Shashwat Khandelwal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140600106",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00018",
+      "institution": "Trinity College Dublin",
+      "institution_country": "IE",
+      "institution_ror": "https://ror.org/02tyrky19"
+    },
+    {
+      "title": "From Errors to Solutions: LLM-Powered Command Scripting for FPGA Cad Tools.",
+      "first_author": "Mohamed A. Elgammal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140900529",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00022",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "Towards Accelerated Healthcare Federated System Through Heterogeneous Accelerators.",
+      "first_author": "Giuseppe Sorrentino",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140746315",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00055",
+      "institution": "Politecnico di Milano",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/01nffqt88"
+    },
+    {
+      "title": "Energy-Efficient DNNs on FPGAs for Edge-Cloud Computer Vision.",
+      "first_author": "Qaisar Farooq",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140641708",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00054",
+      "institution": "University of Turin",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/048tbm396"
+    },
+    {
+      "title": "Live Demonstration: Continuous Processing of Event-Data with Graph Convolutional Neural Networks Implemented for SoC FPGA.",
+      "first_author": "Piotr Wzorek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140681743",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00065",
+      "institution": "Embedded Systems (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04742eh45"
+    },
+    {
+      "title": "FPGA Stereo Visual Slam with Efficient Stereo Feature Matching and Key-Frame Generation.",
+      "first_author": "Miyuru Thathsara",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140942668",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00041",
+      "institution": "Nanyang Technological University",
+      "institution_country": "SG",
+      "institution_ror": "https://ror.org/02e7b5302"
+    },
+    {
+      "title": "Accelerating Transposed Convolutions on FPGA-Based Edge Devices.",
+      "first_author": "Jude Haris",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140546034",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00049",
+      "institution": "University of Glasgow",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/00vtgdb53"
+    },
+    {
+      "title": "Connection Tracking at 400 Gbps.",
+      "first_author": "David Vodák",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140744533",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00067",
+      "institution": "CESNET, zájmové sdružení právnických osob",
+      "institution_country": "CZ",
+      "institution_ror": "https://ror.org/050dkka69"
+    },
+    {
+      "title": "ATAPP: Architecture and Technology Aware Power Predictor for Unseen FPGAS.",
+      "first_author": "Zhigang Wei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140364537",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00030",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "Accelerating K-Means: A Vectorized Approach for AI Engines & Neural Processing Units.",
+      "first_author": "Eleonora Cabai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140789122",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00053",
+      "institution": "Politecnico di Milano",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/01nffqt88"
+    },
+    {
+      "title": "Design Space Exploration of Fast RISC-V Processors for Scalable Kilo-Core FPGA Systems.",
+      "first_author": "Riadh Ben Abdelhamid",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140845379",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00046",
+      "institution": "Heidelberg University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/038t36y30"
+    },
+    {
+      "title": "A High-Performance and Resource-Efficient FPGA-Based Multi-Object Tracking System Using Event Cameras.",
+      "first_author": "Wei Xiong",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140728659",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00042",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Improving Boolean Satisfiability-Based Modulo Scheduling.",
+      "first_author": "Nicolai Fiege",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140753793",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00037",
+      "institution": "University of Kassel",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04zc7p361"
+    },
+    {
+      "title": "Compile in Seconds and Run on an FPGA with DynaRapid.",
+      "first_author": "Andrea Guerrieri",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140692658",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00068",
+      "institution": "HES-SO Valais-Wallis",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/03r5zec51"
+    },
+    {
+      "title": "Routino: Accelerating FPGA Routing Through Efficient Memory Representation.",
+      "first_author": "Davide Nicolini",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140721912",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00033",
+      "institution": "Politecnico di Torino",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/00bgk9508"
+    },
+    {
+      "title": "Maximizing Resource Utilization for Stencil Computing.",
+      "first_author": "Pedro Henrique Di Francia Rosso",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140607559",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00057",
+      "institution": "Universidade Estadual de Campinas (UNICAMP)",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/04wffgt70"
+    },
+    {
+      "title": "EQViTA: an End-To-End Quantized Vision Transformer Accelerator Implemented on Resource-Constrained FPGAs.",
+      "first_author": "Jiacheng Cao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140462333",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00040",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Analytical Buffer Sizing for Neural Network Inference Applications on FPGAs.",
+      "first_author": "Lukas Stasytis",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140681269",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00062",
+      "institution": "Technische Universität Darmstadt",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/05n911h24"
+    },
+    {
+      "title": "Virtualization and Dynamic Reconfiguration of Custom Instruction Accelerators (CIA) in RISC-V Embedded Systems.",
+      "first_author": "Bea Healy",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140887359",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00013",
+      "institution": "U. Cambridge",
+      "institution_country": null,
+      "raw_affiliation": "U. Cambridge"
+    },
+    {
+      "title": "ReconFormer: A Multi-Level Run-Time Reconfigurable System-on-Chip for Accelerating Transformers.",
+      "first_author": "Je Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140602559",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00014",
+      "institution": "Columbia University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj8s172"
+    },
+    {
+      "title": "EViL: An Efficient Vision-LSTM Accelerator Based on FPGA.",
+      "first_author": "Zexuan Deng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140731839",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00029",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "FLAIC: A Novel FPGA Logic Architecture via Fine-Grained Cut Topology Analysis.",
+      "first_author": "Xianfeng Cao",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140522235",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00015",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Four-Input Lookup Table (LUT4) and Architectural Enhancements Enable Power Efficient Mid-Range FPGAs.",
+      "first_author": "Satwant Singh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140645691",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00043",
+      "institution": "Lattice Semiconductor (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01hght844"
+    },
+    {
+      "title": "GAMA: High-Performance GEMM Acceleration on AMD Versal ML-Optimized AI Engines.",
+      "first_author": "Kaustubh Manohar Mhatre",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140373340",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00051",
+      "institution": "Arizona State University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03efmqc40"
+    },
+    {
+      "title": "Performance Impact on Reducing Energy Consumption Applying Adaptive Stream-Based Entropy Coding on FPGA.",
+      "first_author": "Taku Nishikawa",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140644275",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00061",
+      "institution": "University of Tsukuba",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/02956yf07"
+    },
+    {
+      "title": "Interconnection-Aware Resynthesis for Improving FPGA Physical Design.",
+      "first_author": "Xiaoke Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140359886",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00059",
+      "institution": "Ghent University Hospital",
+      "institution_country": "BE",
+      "institution_ror": "https://ror.org/00xmkp704"
+    },
+    {
+      "title": "FPGA-Based MPSoCs for High-Performance Sensor Fusion: Accelerating Covariance Intersection.",
+      "first_author": "Hazem M. Sharf",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140635141",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00027",
+      "institution": "McMaster University",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/02fa3aq29"
+    },
+    {
+      "title": "DEFA: Design Space Exploration for FPGA Overlay Accelerators Through Frequency Prediction and Bayesian Optimization.",
+      "first_author": "Qilong Zhu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140359799",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00017",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Multi-FPGA Programming Using OpenMP.",
+      "first_author": "Pedro Henrique Di Francia Rosso",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140428879",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00060",
+      "institution": "Universidade Estadual de Campinas (UNICAMP)",
+      "institution_country": "BR",
+      "institution_ror": "https://ror.org/04wffgt70"
+    },
+    {
+      "title": "Open-Source FPGA Routing Runtime Prediction for Improved Productivity Via Smart Route Termination.",
+      "first_author": "Andrew David Gunter",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140582821",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00034",
+      "institution": "University of British Columbia",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03rmrcq20"
+    },
+    {
+      "title": "Using Data to Reduce Uncertainty in FPGA Routing.",
+      "first_author": "Andrew David Gunter",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W7140458299",
+      "doi": "https://doi.org/10.1109/fpl68686.2025.00056",
+      "institution": "University of British Columbia",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03rmrcq20"
+    }
+  ]
+}

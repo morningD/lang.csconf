@@ -24,84 +24,83 @@
   ],
   "by_year": {
     "2010": {
-      "English": 5,
-      "German": 2,
+      "English": 6,
+      "German": 1,
       "Japanese": 1,
       "Indian": 1,
       "French": 1
     },
     "2011": {
-      "Other": 3,
-      "English": 5,
+      "English": 6,
       "Korean": 1,
+      "German": 1,
+      "Other": 1,
       "Chinese": 1
     },
     "2012": {
-      "English": 7,
-      "Chinese": 2,
-      "Other": 3,
+      "French": 1,
+      "English": 9,
+      "Chinese": 1,
+      "Other": 1,
       "Korean": 2
     },
     "2013": {
       "English": 5,
-      "Chinese": 4,
-      "Other": 2,
-      "Dutch": 1,
+      "Chinese": 5,
+      "Italian": 1,
       "Korean": 3,
-      "Russian": 1
+      "Russian": 1,
+      "Other": 1
     },
     "2014": {
       "Chinese": 5,
-      "Other": 2,
-      "English": 2,
+      "English": 3,
+      "Spanish": 1,
       "Korean": 2,
       "Indian": 1
     },
     "2015": {
       "Korean": 1,
-      "Other": 8,
+      "English": 8,
+      "Other": 3,
       "Chinese": 6,
       "Russian": 1,
-      "English": 4
+      "Spanish": 1
     },
     "2016": {
       "Korean": 4,
-      "Italian": 1,
+      "Spanish": 3,
       "Chinese": 7,
-      "Other": 4,
-      "English": 5,
+      "English": 8,
       "Japanese": 1,
-      "German": 1,
-      "Spanish": 1
+      "German": 1
     },
     "2017": {
-      "English": 9,
-      "Other": 5,
-      "Korean": 4,
+      "English": 12,
+      "Other": 3,
       "Indian": 2,
-      "Chinese": 3,
+      "Korean": 3,
       "German": 1,
-      "Dutch": 1,
-      "French": 1,
-      "Italian": 1,
-      "Spanish": 1
+      "Russian": 1,
+      "French": 2,
+      "Spanish": 2,
+      "Chinese": 2
     },
     "2018": {
-      "Korean": 6,
-      "English": 5,
-      "Chinese": 4,
-      "Other": 4,
+      "Korean": 5,
+      "Other": 3,
+      "English": 7,
+      "Chinese": 5,
       "Italian": 1,
-      "Portuguese": 1,
       "Indian": 1
     },
     "2019": {
-      "Other": 13,
+      "Other": 16,
       "English": 11,
       "Indian": 1,
       "Korean": 9,
       "French": 1,
-      "Chinese": 18,
+      "Chinese": 19,
       "Vietnamese": 1,
       "Italian": 1,
       "German": 2
@@ -110,59 +109,52 @@
       "Chinese": 5,
       "Indian": 1,
       "Spanish": 1,
-      "German": 1,
-      "English": 4,
+      "English": 5,
       "Korean": 2,
       "French": 1
     },
     "2022": {
-      "Korean": 5,
-      "English": 7,
+      "Korean": 6,
+      "English": 9,
       "Chinese": 1,
       "Spanish": 1,
       "German": 1,
-      "Other": 3,
       "Indian": 1
     },
     "2023": {
-      "Korean": 6,
-      "English": 5,
+      "Korean": 5,
+      "English": 7,
       "Chinese": 4,
-      "Other": 1,
       "Vietnamese": 1
     },
     "2024": {
-      "English": 5,
+      "English": 6,
       "Chinese": 9,
       "Korean": 2,
-      "Russian": 1,
-      "Other": 1
+      "Russian": 1
     },
     "2025": {
-      "Other": 3,
-      "English": 3,
+      "English": 5,
       "Chinese": 9,
-      "Korean": 2,
-      "Turkish": 1,
-      "Vietnamese": 1
+      "Other": 2,
+      "German": 1,
+      "Vietnamese": 1,
+      "Korean": 1
     }
   },
   "total": {
-    "English": 82,
+    "English": 107,
     "German": 8,
     "Japanese": 2,
     "Indian": 8,
-    "French": 4,
-    "Other": 52,
-    "Korean": 49,
-    "Chinese": 78,
-    "Dutch": 2,
-    "Russian": 3,
-    "Italian": 4,
-    "Spanish": 4,
-    "Portuguese": 1,
-    "Vietnamese": 3,
-    "Turkish": 1
+    "French": 6,
+    "Korean": 46,
+    "Other": 30,
+    "Chinese": 79,
+    "Italian": 3,
+    "Russian": 4,
+    "Spanish": 9,
+    "Vietnamese": 3
   },
   "venues": {
     "2025": {
@@ -238,5 +230,1557 @@
       "status": "virtual",
       "note": "Virtual event due to COVID-19. SPARQL returned 0 (gap), 36 papers recovered via Search API. DBLP venue page has no h2 heading for 2020."
     }
+  },
+  "affiliations": {
+    "total_covered": 206,
+    "total_papers": 305,
+    "coverage_pct": 67.5,
+    "top": [
+      {
+        "name": "Sungkyunkwan University",
+        "count": 9,
+        "pct": 2.95,
+        "country": "KR",
+        "rank": 1
+      },
+      {
+        "name": "Stony Brook University",
+        "count": 9,
+        "pct": 2.95,
+        "country": "US",
+        "rank": 1
+      },
+      {
+        "name": "Seoul National University",
+        "count": 8,
+        "pct": 2.62,
+        "country": "KR",
+        "rank": 3
+      },
+      {
+        "name": "Samsung",
+        "count": 7,
+        "pct": 2.3,
+        "country": "KR",
+        "rank": 4
+      },
+      {
+        "name": "University of Wisconsin-Madison",
+        "count": 6,
+        "pct": 1.97,
+        "country": "US",
+        "rank": 5
+      },
+      {
+        "name": "University of Texas at Austin",
+        "count": 5,
+        "pct": 1.64,
+        "country": "US",
+        "rank": 6
+      },
+      {
+        "name": "Florida International University",
+        "count": 5,
+        "pct": 1.64,
+        "country": "US",
+        "rank": 6
+      },
+      {
+        "name": "Syracuse University",
+        "count": 5,
+        "pct": 1.64,
+        "country": "US",
+        "rank": 6
+      },
+      {
+        "name": "University of Toronto",
+        "count": 4,
+        "pct": 1.31,
+        "country": "CA",
+        "rank": 9
+      },
+      {
+        "name": "Microsoft Research",
+        "count": 4,
+        "pct": 1.31,
+        "country": "US",
+        "rank": 9
+      },
+      {
+        "name": "Universidad del Noreste",
+        "count": 4,
+        "pct": 1.31,
+        "country": "MX",
+        "rank": 9
+      },
+      {
+        "name": "NetApp",
+        "count": 4,
+        "pct": 1.31,
+        "country": "US",
+        "rank": 9
+      },
+      {
+        "name": "Sogang University",
+        "count": 4,
+        "pct": 1.31,
+        "country": "KR",
+        "rank": 9
+      },
+      {
+        "name": "KAIST",
+        "count": 4,
+        "pct": 1.31,
+        "country": "KR",
+        "rank": 9
+      },
+      {
+        "name": "City University of Hong Kong",
+        "count": 3,
+        "pct": 0.98,
+        "country": "HK",
+        "rank": 15
+      },
+      {
+        "name": "Ulsan National Institute of Science and Technology",
+        "count": 3,
+        "pct": 0.98,
+        "country": "KR",
+        "rank": 15
+      },
+      {
+        "name": "Intel",
+        "count": 3,
+        "pct": 0.98,
+        "country": "US",
+        "rank": 15
+      },
+      {
+        "name": "University of California, Santa Cruz",
+        "count": 3,
+        "pct": 0.98,
+        "country": "US",
+        "rank": 15
+      },
+      {
+        "name": "IBM",
+        "count": 3,
+        "pct": 0.98,
+        "country": "US",
+        "rank": 15
+      },
+      {
+        "name": "Microsoft",
+        "count": 3,
+        "pct": 0.98,
+        "country": "US",
+        "rank": 15
+      }
+    ],
+    "by_year": {
+      "2016": {
+        "total_covered": 19,
+        "total_papers": 24,
+        "coverage_pct": 79.2,
+        "top": [
+          {
+            "name": "Kitware",
+            "count": 2,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 4.17,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 4.17,
+            "country": "CA",
+            "rank": 2
+          },
+          {
+            "name": "Sungkyunkwan University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Microsoft Research",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "The University of Texas at Arlington",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Education Management Corporation",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Hewlett Packard Enterprise",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Fujitsu",
+            "count": 1,
+            "pct": 4.17,
+            "country": "JP",
+            "rank": 2
+          },
+          {
+            "name": "University at Buffalo, State University of New York",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Universidad del Noreste",
+            "count": 1,
+            "pct": 4.17,
+            "country": "MX",
+            "rank": 2
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Hong Kong Polytechnic University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "HK",
+            "rank": 2
+          },
+          {
+            "name": "Datos IO#TAB#",
+            "count": 1,
+            "pct": 4.17,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "Virginia Tech",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Ohio State University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "City University of Hong Kong",
+            "count": 1,
+            "pct": 4.17,
+            "country": "HK",
+            "rank": 2
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 4.17,
+            "country": "KR",
+            "rank": 2
+          }
+        ]
+      },
+      "2017": {
+        "total_covered": 23,
+        "total_papers": 28,
+        "coverage_pct": 82.1,
+        "top": [
+          {
+            "name": "Sungkyunkwan University",
+            "count": 3,
+            "pct": 10.71,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "University of Texas at Austin",
+            "count": 3,
+            "pct": 10.71,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Samsung",
+            "count": 2,
+            "pct": 7.14,
+            "country": "IN",
+            "rank": 3
+          },
+          {
+            "name": "Emory University",
+            "count": 2,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "NetApp",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "New Mexico State University",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Seagate",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Universidad del Noreste",
+            "count": 1,
+            "pct": 3.57,
+            "country": "MX",
+            "rank": 5
+          },
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Ulsan National Institute of Science and Technology",
+            "count": 1,
+            "pct": 3.57,
+            "country": "KR",
+            "rank": 5
+          },
+          {
+            "name": "The University of Texas at San Antonio",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Temple College",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Intel",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Microsoft Research",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Oracle Labs",
+            "count": 1,
+            "pct": 3.57,
+            "country": "",
+            "rank": 5
+          },
+          {
+            "name": "Western Digital",
+            "count": 1,
+            "pct": 3.57,
+            "country": "JP",
+            "rank": 5
+          },
+          {
+            "name": "Massachusetts Institute of Technology",
+            "count": 1,
+            "pct": 3.57,
+            "country": "US",
+            "rank": 5
+          }
+        ]
+      },
+      "2018": {
+        "total_covered": 16,
+        "total_papers": 22,
+        "coverage_pct": 72.7,
+        "top": [
+          {
+            "name": "Seoul National University",
+            "count": 2,
+            "pct": 9.09,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Wuhan National Laboratory for Optoelectronics",
+            "count": 2,
+            "pct": 9.09,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Yonsei University",
+            "count": 2,
+            "pct": 9.09,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 2,
+            "pct": 9.09,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Sungkyunkwan University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "KR",
+            "rank": 5
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Chungbuk National University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "KR",
+            "rank": 5
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "University of Texas at Austin",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "Florida International University",
+            "count": 1,
+            "pct": 4.55,
+            "country": "US",
+            "rank": 5
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 4.55,
+            "country": "CA",
+            "rank": 5
+          },
+          {
+            "name": "Ulsan National Institute of Science and Technology",
+            "count": 1,
+            "pct": 4.55,
+            "country": "KR",
+            "rank": 5
+          }
+        ]
+      },
+      "2019": {
+        "total_covered": 20,
+        "total_papers": 61,
+        "coverage_pct": 32.8,
+        "top": [
+          {
+            "name": "City University of Hong Kong",
+            "count": 2,
+            "pct": 3.28,
+            "country": "HK",
+            "rank": 1
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Microsoft",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Texas at Austin",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Ajou University",
+            "count": 1,
+            "pct": 1.64,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "eBay",
+            "count": 1,
+            "pct": 1.64,
+            "country": "IE",
+            "rank": 2
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Rice University",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 1.64,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 1.64,
+            "country": "CN",
+            "rank": 2
+          },
+          {
+            "name": "IMDEA Software Institute",
+            "count": 1,
+            "pct": 1.64,
+            "country": "ES",
+            "rank": 2
+          },
+          {
+            "name": "Intel",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Rutgers University *",
+            "count": 1,
+            "pct": 1.64,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Peoples' Friendship University of Russia",
+            "count": 1,
+            "pct": 1.64,
+            "country": "RU",
+            "rank": 2
+          },
+          {
+            "name": "Universidad del Noreste",
+            "count": 1,
+            "pct": 1.64,
+            "country": "MX",
+            "rank": 2
+          },
+          {
+            "name": "Pennsylvania State University",
+            "count": 1,
+            "pct": 1.64,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Tartu",
+            "count": 1,
+            "pct": 1.64,
+            "country": "EE",
+            "rank": 2
+          }
+        ]
+      },
+      "2021": {
+        "total_covered": 8,
+        "total_papers": 15,
+        "coverage_pct": 53.3,
+        "top": [
+          {
+            "name": "Stony Brook University",
+            "count": 2,
+            "pct": 13.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 6.67,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Intel",
+            "count": 1,
+            "pct": 6.67,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Sogang University",
+            "count": 1,
+            "pct": 6.67,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Scality",
+            "count": 1,
+            "pct": 6.67,
+            "country": "",
+            "rank": 2
+          },
+          {
+            "name": "University of North Carolina at Chapel Hill",
+            "count": 1,
+            "pct": 6.67,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 6.67,
+            "country": "CN",
+            "rank": 2
+          }
+        ]
+      },
+      "2022": {
+        "total_covered": 13,
+        "total_papers": 19,
+        "coverage_pct": 68.4,
+        "top": [
+          {
+            "name": "Sungkyunkwan University",
+            "count": 3,
+            "pct": 15.79,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Syracuse University",
+            "count": 3,
+            "pct": 15.79,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Sogang University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "KR",
+            "rank": 3
+          },
+          {
+            "name": "Iowa State University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Florida International University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "University of Utah",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "KAIST",
+            "count": 1,
+            "pct": 5.26,
+            "country": "KR",
+            "rank": 3
+          },
+          {
+            "name": "University of Louisville Hospital",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "IBM",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 3
+          }
+        ]
+      },
+      "2023": {
+        "total_covered": 14,
+        "total_papers": 17,
+        "coverage_pct": 82.4,
+        "top": [
+          {
+            "name": "KAIST",
+            "count": 3,
+            "pct": 17.65,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Seoul National University",
+            "count": 2,
+            "pct": 11.76,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "University of Louisville",
+            "count": 1,
+            "pct": 5.88,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Binghamton University",
+            "count": 1,
+            "pct": 5.88,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Xiamen University",
+            "count": 1,
+            "pct": 5.88,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "UCLA, Los Angeles, United States of America",
+            "count": 1,
+            "pct": 5.88,
+            "country": "",
+            "rank": 3
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 5.88,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "East China Normal University",
+            "count": 1,
+            "pct": 5.88,
+            "country": "CN",
+            "rank": 3
+          },
+          {
+            "name": "Syracuse University",
+            "count": 1,
+            "pct": 5.88,
+            "country": "US",
+            "rank": 3
+          },
+          {
+            "name": "Sogang University",
+            "count": 1,
+            "pct": 5.88,
+            "country": "KR",
+            "rank": 3
+          },
+          {
+            "name": "University of Alabama in Huntsville",
+            "count": 1,
+            "pct": 5.88,
+            "country": "US",
+            "rank": 3
+          }
+        ]
+      },
+      "2024": {
+        "total_covered": 14,
+        "total_papers": 18,
+        "coverage_pct": 77.8,
+        "top": [
+          {
+            "name": "Colorado State University",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of California, Irvine",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Panmnesia, Inc",
+            "count": 1,
+            "pct": 5.56,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Academic College of Tel Aviv-Yafo",
+            "count": 1,
+            "pct": 5.56,
+            "country": "IL",
+            "rank": 1
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Carnegie Mellon University",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Rutgers Sexual and Reproductive Health and Rights",
+            "count": 1,
+            "pct": 5.56,
+            "country": "NL",
+            "rank": 1
+          },
+          {
+            "name": "Iowa State University",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Syracuse University",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of North Carolina at Charlotte",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Ulsan National Institute of Science and Technology",
+            "count": 1,
+            "pct": 5.56,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "University of Delaware",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Illinois Chicago",
+            "count": 1,
+            "pct": 5.56,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
+      "2025": {
+        "total_covered": 14,
+        "total_papers": 19,
+        "coverage_pct": 73.7,
+        "top": [
+          {
+            "name": "Florida International University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 5.26,
+            "country": "CA",
+            "rank": 1
+          },
+          {
+            "name": "Soongsil University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Arizona State University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Minnesota",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Huawei Technologies",
+            "count": 1,
+            "pct": 5.26,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "National Technical University of Athens",
+            "count": 1,
+            "pct": 5.26,
+            "country": "GR",
+            "rank": 1
+          },
+          {
+            "name": "Technion",
+            "count": 1,
+            "pct": 5.26,
+            "country": "IL",
+            "rank": 1
+          },
+          {
+            "name": "Tsinghua University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Boston University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "ShanghaiTech University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "University of California, Santa Cruz",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Sogang University",
+            "count": 1,
+            "pct": 5.26,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "ON Semiconductor",
+            "count": 1,
+            "pct": 5.26,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
+      "2010": {
+        "total_covered": 8,
+        "total_papers": 10,
+        "coverage_pct": 80.0,
+        "top": [
+          {
+            "name": "Meta",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of British Columbia",
+            "count": 1,
+            "pct": 10.0,
+            "country": "CA",
+            "rank": 1
+          },
+          {
+            "name": "NEC",
+            "count": 1,
+            "pct": 10.0,
+            "country": "JP",
+            "rank": 1
+          },
+          {
+            "name": "Vrije Universiteit Amsterdam",
+            "count": 1,
+            "pct": 10.0,
+            "country": "NL",
+            "rank": 1
+          },
+          {
+            "name": "NortonLifeLock",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Microsoft Research",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Virginia",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
+      "2011": {
+        "total_covered": 7,
+        "total_papers": 10,
+        "coverage_pct": 70.0,
+        "top": [
+          {
+            "name": "University of British Columbia",
+            "count": 1,
+            "pct": 10.0,
+            "country": "CA",
+            "rank": 1
+          },
+          {
+            "name": "NetApp",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Johns Hopkins University",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Hanyang University",
+            "count": 1,
+            "pct": 10.0,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Florida International University",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Acunu#TAB#",
+            "count": 1,
+            "pct": 10.0,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Rensselaer Polytechnic Institute",
+            "count": 1,
+            "pct": 10.0,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
+      "2012": {
+        "total_covered": 12,
+        "total_papers": 14,
+        "coverage_pct": 85.7,
+        "top": [
+          {
+            "name": "Microsoft",
+            "count": 2,
+            "pct": 14.29,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "NetApp",
+            "count": 1,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 7.14,
+            "country": "KR",
+            "rank": 2
+          },
+          {
+            "name": "Johns Hopkins University",
+            "count": 1,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Rice University",
+            "count": 1,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Indian Institute of Science Bangalore",
+            "count": 1,
+            "pct": 7.14,
+            "country": "IN",
+            "rank": 2
+          },
+          {
+            "name": "Education Management Corporation",
+            "count": 1,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Yale University",
+            "count": 1,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "University of Toronto",
+            "count": 1,
+            "pct": 7.14,
+            "country": "CA",
+            "rank": 2
+          },
+          {
+            "name": "Cornell University",
+            "count": 1,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 2
+          },
+          {
+            "name": "Pennsylvania State University",
+            "count": 1,
+            "pct": 7.14,
+            "country": "US",
+            "rank": 2
+          }
+        ]
+      },
+      "2013": {
+        "total_covered": 13,
+        "total_papers": 16,
+        "coverage_pct": 81.2,
+        "top": [
+          {
+            "name": "Berkeley College",
+            "count": 1,
+            "pct": 6.25,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Oak Ridge National Laboratory",
+            "count": 1,
+            "pct": 6.25,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of California, Santa Barbara",
+            "count": 1,
+            "pct": 6.25,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Backup Recovery Systems Division, EMC Corporation#TAB#",
+            "count": 1,
+            "pct": 6.25,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Universidad del Noreste",
+            "count": 1,
+            "pct": 6.25,
+            "country": "MX",
+            "rank": 1
+          },
+          {
+            "name": "Carnegie Mellon University",
+            "count": 1,
+            "pct": 6.25,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Texas A&M University#TAB#",
+            "count": 1,
+            "pct": 6.25,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 6.25,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Pennsylvania State University",
+            "count": 1,
+            "pct": 6.25,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Seoul National University",
+            "count": 1,
+            "pct": 6.25,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Foundation for Research and Technology Hellas",
+            "count": 1,
+            "pct": 6.25,
+            "country": "GR",
+            "rank": 1
+          },
+          {
+            "name": "NEC Labs America#TAB#",
+            "count": 1,
+            "pct": 6.25,
+            "country": "",
+            "rank": 1
+          },
+          {
+            "name": "University of Wisconsin-Madison",
+            "count": 1,
+            "pct": 6.25,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      },
+      "2014": {
+        "total_covered": 11,
+        "total_papers": 12,
+        "coverage_pct": 91.7,
+        "top": [
+          {
+            "name": "University of Washington",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Microsoft Research",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Nebraska–Lincoln",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Minnesota",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Rutgers, The State University of New Jersey",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "IBM Research - Almaden",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Florida International University",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Sungkyunkwan University",
+            "count": 1,
+            "pct": 8.33,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Indian Institute of Science Bangalore",
+            "count": 1,
+            "pct": 8.33,
+            "country": "IN",
+            "rank": 1
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Samsung",
+            "count": 1,
+            "pct": 8.33,
+            "country": "KR",
+            "rank": 1
+          }
+        ]
+      },
+      "2015": {
+        "total_covered": 14,
+        "total_papers": 20,
+        "coverage_pct": 70.0,
+        "top": [
+          {
+            "name": "Hanyang University",
+            "count": 1,
+            "pct": 5.0,
+            "country": "KR",
+            "rank": 1
+          },
+          {
+            "name": "Los Alamos National Laboratory",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "NetApp",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "count": 1,
+            "pct": 5.0,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Princeton University",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Stony Brook University",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Michigan",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of California, Berkeley",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Utah",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Stanford University",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Xilinx",
+            "count": 1,
+            "pct": 5.0,
+            "country": "IE",
+            "rank": 1
+          },
+          {
+            "name": "Rensselaer Polytechnic Institute",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of Arizona",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Virginia Tech",
+            "count": 1,
+            "pct": 5.0,
+            "country": "US",
+            "rank": 1
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }

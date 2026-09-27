@@ -138,13 +138,15 @@ def load_affiliations() -> dict[str, dict[int, dict]]:
 
     result: dict[str, dict[int, dict]] = {}
     for f in sorted(affil_dir.glob("*.json")):
+        if f.name.startswith("_"):
+            continue  # metadata files (_profile_cache.json, _low_yield_confs.json, ...)
         try:
             data = json.loads(f.read_text(encoding="utf-8"))
             conf_id = data.get("conference", "").replace("/", "-")
             year = data.get("year", 0)
             if conf_id and year:
                 result.setdefault(conf_id, {})[year] = data
-        except (json.JSONDecodeError, KeyError):
+        except (json.JSONDecodeError, KeyError, AttributeError, TypeError):
             continue
     return result
 

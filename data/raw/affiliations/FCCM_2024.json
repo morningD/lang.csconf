@@ -1,0 +1,479 @@
+{
+  "conference": "FCCM",
+  "year": 2024,
+  "total_papers": 48,
+  "total_matched": 45,
+  "total_with_affiliation": 45,
+  "coverage_pct": 93.8,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Accelerating ViT Inference on FPGA through Static and Dynamic Pruning.",
+      "first_author": "Dhruv Parikh",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187405",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00018",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Learned Index Acceleration with FPGAs: A SMART Approach.",
+      "first_author": "Geetesh More",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4399723139",
+      "doi": "https://doi.org/10.1145/3665283.3665287",
+      "institution": "University of New Brunswick",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/05nkf0n29"
+    },
+    {
+      "title": "FINESSD: Near-Storage Feature Selection with Mutual Information for Resource-Limited FPGAs.",
+      "first_author": "Nikolaos Kyparissas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187411",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00028",
+      "institution": "University of Manchester",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/027m9bs27"
+    },
+    {
+      "title": "HiHiSpMV: Sparse Matrix Vector Multiplication with Hierarchical Row Reductions on FPGAs with High Bandwidth Memory.",
+      "first_author": "Abdul Rehman Tareen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196491",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00014",
+      "institution": "Paderborn University",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/058kzsd48"
+    },
+    {
+      "title": "Ph.D. Project: ManAge: A Tool for Timing Characterization of FPGAs.",
+      "first_author": "Bardia Babaei",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196869",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00054",
+      "institution": "University of Manchester",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/027m9bs27"
+    },
+    {
+      "title": "Stay Flexible: A High-Performance FPGA NPU Overlay for Graph Neural Networks.",
+      "first_author": "Taikun Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402195674",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00044",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "Ph.D. Project: Systems-on-Chip to Implement Zero-Trust Architectures.",
+      "first_author": "Abigail N. Butka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187354",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00058",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "A Data-Driven, Congestion-Aware and Open-Source Timing-Driven FPGA Placer Accelerated by GPUs.",
+      "first_author": "Zhili Xiong",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Ph.D. Project: A Compiler-Driven Approach to HW/SW Co-Design of Deep-Learning Accelerators.",
+      "first_author": "Tendayi Kamucheka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402167897",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00053",
+      "institution": "University of Arkansas at Fayetteville",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05jbt9m15"
+    },
+    {
+      "title": "Ph.D. Project: Investigating oneAPI Performance & Scalability using Feedforward FFT Architectures.",
+      "first_author": "James Bickerstaff",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402192748",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00051",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "Bandwidth Efficient Homomorphic Encrypted Discrete Fourier Transform Acceleration on FPGA.",
+      "first_author": "Zhihan Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402194615",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00010",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "HardCilk: Cilk-like Task Parallelism for FPGAs.",
+      "first_author": "Mohamed Shahawy",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187391",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00025",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "institution_country": "CH",
+      "institution_ror": "https://ror.org/02s376052"
+    },
+    {
+      "title": "SMOF: Streaming Modern CNNs on FPGAs with Smart Off-Chip Eviction.",
+      "first_author": "Petros Toupas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196902",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00029",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "OS4C: An Open-Source SR-IOV System for SmartNIC-based Cloud Platforms.",
+      "first_author": "Scott Smith",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4401943318",
+      "doi": "https://doi.org/10.1109/cloud62652.2024.00048",
+      "institution": "International University of the Caribbean",
+      "institution_country": "JM",
+      "institution_ror": "https://ror.org/02rv57d03"
+    },
+    {
+      "title": "MPC-Wrapper: Fully Harnessing the Potential of Samsung Aquabolt-XL HBM2-PIM on FPGAs.",
+      "first_author": "Jinwoo Choi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187366",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00027",
+      "institution": "Yonsei University",
+      "institution_country": "KR",
+      "institution_ror": "https://ror.org/01wjejq96"
+    },
+    {
+      "title": "Ph.D. Project: Accelerated Machine Learning for On-Orbit OPIR Target Detection.",
+      "first_author": "Daniel C. Stumpp",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402195968",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00052",
+      "institution": "University of Pittsburgh",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an3r305"
+    },
+    {
+      "title": "GCV-Turbo: End-to-end Acceleration of GNN-based Computer Vision Tasks on FPGA.",
+      "first_author": "Bingyi Zhang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402193767",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00017",
+      "institution": "University of Southern California",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/03taz7m60"
+    },
+    {
+      "title": "Etna: MLIR-Based System-Level Design and Optimization for Transparent Application Execution on CPU-FPGA Nodes.",
+      "first_author": "Stephanie Soldavini",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402192255",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00012",
+      "institution": "Politecnico di Milano",
+      "institution_country": "IT",
+      "institution_ror": "https://ror.org/01nffqt88"
+    },
+    {
+      "title": "LAMPS: A Layer-wised Mixed-Precision-and-Sparsity Accelerator for NAS-Optimized CNNs on FPGA.",
+      "first_author": "Shuxin Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196566",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00019",
+      "institution": "Southern University of Science and Technology",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/049tv2d57"
+    },
+    {
+      "title": "HBMorphic: FHE Acceleration via HBM-Enabled Recursive Karatsuba Multiplier on FPGA.",
+      "first_author": "Hassan Nassar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402193421",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00038",
+      "institution": "Karlsruhe Institute of Technology",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04t3en479"
+    },
+    {
+      "title": "The BRAM is the Limit: Shattering Myths, Shaping Standards, and Building Scalable PIM Accelerators.",
+      "first_author": "M. D. Arafat Kabir",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Near-Sensor Image Processing Accelerator for Low-end FPGA Design.",
+      "first_author": "Peter Mbua",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196934",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00032",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "Synthesis of LUT Networks for Random-Looking Dense Functions with Don't Cares - Towards Efficient FPGA Implementation of DNN.",
+      "first_author": "Yukio Miyasaka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402167889",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00023",
+      "institution": "University of California, Berkeley",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01an7q238"
+    },
+    {
+      "title": "Efficient Approaches for GEMM Acceleration on Leading AI-Optimized FPGAs.",
+      "first_author": "Endri Taka",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196533",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00015",
+      "institution": "The University of Texas at Austin",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/00hj54h04"
+    },
+    {
+      "title": "High Throughput Massive MIMO Signal Decoding Using Multi-Level Tree Search on FPGAs.",
+      "first_author": "Mohamed W. Hassan",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187426",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00011",
+      "institution": "King Abdullah University of Science and Technology",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/01q3tbs38"
+    },
+    {
+      "title": "if-ZKP: Intel FPGA-Based Acceleration of Zero Knowledge Proofs.",
+      "first_author": "Shahzad Ahmad Butt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196163",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00033",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "PCQ: Parallel Compact Quantum Circuit Simulation.",
+      "first_author": "Shuang Liang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402192480",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00013",
+      "institution": "Imperial College London",
+      "institution_country": "GB",
+      "institution_ror": "https://ror.org/041kmwe10"
+    },
+    {
+      "title": "Ph.D. Project: Field-Programmable Computing for Bayesian Network Structure Learning.",
+      "first_author": "Ryota Miyagi",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402195276",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00049",
+      "institution": "The University of Tokyo",
+      "institution_country": "JP",
+      "institution_ror": "https://ror.org/057zh3y96"
+    },
+    {
+      "title": "FPGA Benchmark for Unrolled DNNs with Fine-Grained Sparsity and Mixed Precision.",
+      "first_author": "Xilai Dai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4403278093",
+      "doi": "https://doi.org/10.1109/fpl64840.2024.00030",
+      "institution": "Cornell University",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/05bnh6r87"
+    },
+    {
+      "title": "Ph.D. Project: Modernizing High-Level Hardware Design Workflows.",
+      "first_author": "Rishov Sarkar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402167893",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00057",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "Mapping Enumeration for Multi-Context CGRAs Using Zero-Suppressed Binary Decision Diagrams.",
+      "first_author": "Rami Beidas",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402193695",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00026",
+      "institution": "University of Toronto",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/03dbr7087"
+    },
+    {
+      "title": "SpGCN: An FPGA-Based Graph Convolutional Network Accelerator for Sparse Graphs.",
+      "first_author": "Xiangzhi Xu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196897",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00037",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "LightningSimV2: Faster and Scalable Simulation for High-Level Synthesis via Graph Compilation and Optimization.",
+      "first_author": "Rishov Sarkar",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402193793",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00021",
+      "institution": "Georgia Institute of Technology",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01zkghx44"
+    },
+    {
+      "title": "MRH-GCN: An Efficient GCN Accelerator for Multi-Relation Heterogeneous Graph.",
+      "first_author": "Wenlu Peng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402195560",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00030",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "RingTK: A Ring, Parallel and High Performance Top-K Sorter on FPGA.",
+      "first_author": "Huawen Liang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Ph.D. Project - IsoFPGA - A Novel CMOS Galvanic Isolation for Remote Physical Attacks in Multi-tenant Cloud FPGA.",
+      "first_author": "Muhammed Kawser Ahmed",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402167891",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00041",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "High-Performance Reconfigurable Accelerator for Knowledge Graph Reasoning.",
+      "first_author": "Hanning Chen",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187409",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00040",
+      "institution": "University of California, Irvine",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/04gyf1771"
+    },
+    {
+      "title": "Ph.D. Project Investigating Chiplet Interfaces for Efficient Near-Sensor Computing in Visual On-Device Intelligence.",
+      "first_author": "Peter Mbua",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187389",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00056",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "SDAcc: A Stable Diffusion Accelerator on FPGA via Software-Hardware Co-Design.",
+      "first_author": "Hao Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187408",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00035",
+      "institution": "Fudan University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/013q1eq08"
+    },
+    {
+      "title": "Ph.D. Project: Achieving Low-Latency Acceleration on Multi-FPGA for GPT Application.",
+      "first_author": "Zhendong Zheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402194976",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00050",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "Ph.D. Project: Optimizing the Data Traffic for Large Graph Processing on FPGA via a Stateful Approach.",
+      "first_author": "Qianyu Cheng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187421",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00047",
+      "institution": "University of Science and Technology of China",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/04c4dkn09"
+    },
+    {
+      "title": "PhD Project: Reconfigurable Network on Chip Architecture Through Topology Obfuscation For Protecting SoC Against Reverse Engineering.",
+      "first_author": "Dipal Halder",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196710",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00048",
+      "institution": "University of Florida",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/02y3ad647"
+    },
+    {
+      "title": "A Routability-Driven Ultrascale FPGA Macro Placer with Complex Design Constraints.",
+      "first_author": "Qin Luo",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402195488",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00024",
+      "institution": "Chinese University of Hong Kong",
+      "institution_country": "HK",
+      "institution_ror": "https://ror.org/00t33hh48"
+    },
+    {
+      "title": "Efficient 8-bit Matrix Multiplication on Intel Agilex-5 FPGAs.",
+      "first_author": "Sergey Gribok",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402148001",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00016",
+      "institution": "Intel (United States)",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01ek73717"
+    },
+    {
+      "title": "BitSys: Bitwise Systolic Array Architecture for Multi-precision Quantized Hardware Accelerators.",
+      "first_author": "Yuhao Liu",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187401",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00042",
+      "institution": "Technische Universität Dresden",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/042aqky30"
+    },
+    {
+      "title": "A Novel FPGA Accelerator of R(2+1)D.",
+      "first_author": "Dehao Xiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402193986",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00031",
+      "institution": "Sun Yat-sen University",
+      "institution_country": "CN",
+      "institution_ror": "https://ror.org/0064kty71"
+    },
+    {
+      "title": "Ph.D. Project: Compiler-Driven Hardware/Software Co- Design for Embedded AI.",
+      "first_author": "Patrick Schmidt",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402187364",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00055",
+      "institution": "Karlsruhe Institute of Technology",
+      "institution_country": "DE",
+      "institution_ror": "https://ror.org/04t3en479"
+    },
+    {
+      "title": "LGBM2VHDL: Mapping of LightGBM Models to FPGA.",
+      "first_author": "Tomás Martínek",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4402196955",
+      "doi": "https://doi.org/10.1109/fccm60383.2024.00020",
+      "institution": "Brno University of Technology",
+      "institution_country": "CZ",
+      "institution_ror": "https://ror.org/03613d656"
+    }
+  ]
+}

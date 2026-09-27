@@ -100,5 +100,234 @@
       "status": "ok",
       "note": "DRM venue name contains 'Workshop' — caught by filter. 7 papers recovered via HTML fallback (Search API returned 500)."
     }
+  },
+  "affiliations": {
+    "total_covered": 16,
+    "total_papers": 20,
+    "coverage_pct": 80.0,
+    "top": [
+      {
+        "name": "University of Calgary",
+        "count": 2,
+        "pct": 10.0,
+        "country": "CA",
+        "rank": 1
+      },
+      {
+        "name": "Technicolor",
+        "count": 2,
+        "pct": 10.0,
+        "country": "FR",
+        "rank": 1
+      },
+      {
+        "name": "University of New Mexico",
+        "count": 2,
+        "pct": 10.0,
+        "country": "US",
+        "rank": 1
+      },
+      {
+        "name": "Imperial College London",
+        "count": 1,
+        "pct": 5.0,
+        "country": "GB",
+        "rank": 4
+      },
+      {
+        "name": "KU Leuven",
+        "count": 1,
+        "pct": 5.0,
+        "country": "BE",
+        "rank": 4
+      },
+      {
+        "name": "National University of Singapore",
+        "count": 1,
+        "pct": 5.0,
+        "country": "SG",
+        "rank": 4
+      },
+      {
+        "name": "NTT",
+        "count": 1,
+        "pct": 5.0,
+        "country": "JP",
+        "rank": 4
+      },
+      {
+        "name": "Y-Parc",
+        "count": 1,
+        "pct": 5.0,
+        "country": "CH",
+        "rank": 4
+      },
+      {
+        "name": "Peking University",
+        "count": 1,
+        "pct": 5.0,
+        "country": "CN",
+        "rank": 4
+      },
+      {
+        "name": "Weizmann Institute of Science",
+        "count": 1,
+        "pct": 5.0,
+        "country": "IL",
+        "rank": 4
+      },
+      {
+        "name": "University of California, Los Angeles",
+        "count": 1,
+        "pct": 5.0,
+        "country": "US",
+        "rank": 4
+      },
+      {
+        "name": "Microsoft",
+        "count": 1,
+        "pct": 5.0,
+        "country": "US",
+        "rank": 4
+      },
+      {
+        "name": "Fraunhofer Institute for Secure Information Technology",
+        "count": 1,
+        "pct": 5.0,
+        "country": "DE",
+        "rank": 4
+      }
+    ],
+    "by_year": {
+      "2010": {
+        "total_covered": 10,
+        "total_papers": 12,
+        "coverage_pct": 83.3,
+        "top": [
+          {
+            "name": "University of Calgary",
+            "count": 1,
+            "pct": 8.33,
+            "country": "CA",
+            "rank": 1
+          },
+          {
+            "name": "Technicolor",
+            "count": 1,
+            "pct": 8.33,
+            "country": "FR",
+            "rank": 1
+          },
+          {
+            "name": "Imperial College London",
+            "count": 1,
+            "pct": 8.33,
+            "country": "GB",
+            "rank": 1
+          },
+          {
+            "name": "University of New Mexico",
+            "count": 1,
+            "pct": 8.33,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "KU Leuven",
+            "count": 1,
+            "pct": 8.33,
+            "country": "BE",
+            "rank": 1
+          },
+          {
+            "name": "National University of Singapore",
+            "count": 1,
+            "pct": 8.33,
+            "country": "SG",
+            "rank": 1
+          },
+          {
+            "name": "NTT",
+            "count": 1,
+            "pct": 8.33,
+            "country": "JP",
+            "rank": 1
+          },
+          {
+            "name": "Y-Parc",
+            "count": 1,
+            "pct": 8.33,
+            "country": "CH",
+            "rank": 1
+          },
+          {
+            "name": "Peking University",
+            "count": 1,
+            "pct": 8.33,
+            "country": "CN",
+            "rank": 1
+          },
+          {
+            "name": "Weizmann Institute of Science",
+            "count": 1,
+            "pct": 8.33,
+            "country": "IL",
+            "rank": 1
+          }
+        ]
+      },
+      "2011": {
+        "total_covered": 6,
+        "total_papers": 8,
+        "coverage_pct": 75.0,
+        "top": [
+          {
+            "name": "University of Calgary",
+            "count": 1,
+            "pct": 12.5,
+            "country": "CA",
+            "rank": 1
+          },
+          {
+            "name": "University of California, Los Angeles",
+            "count": 1,
+            "pct": 12.5,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "University of New Mexico",
+            "count": 1,
+            "pct": 12.5,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Technicolor",
+            "count": 1,
+            "pct": 12.5,
+            "country": "FR",
+            "rank": 1
+          },
+          {
+            "name": "Microsoft",
+            "count": 1,
+            "pct": 12.5,
+            "country": "US",
+            "rank": 1
+          },
+          {
+            "name": "Fraunhofer Institute for Secure Information Technology",
+            "count": 1,
+            "pct": 12.5,
+            "country": "DE",
+            "rank": 1
+          }
+        ]
+      }
+    },
+    "sources": [
+      "openalex"
+    ]
   }
 }
