@@ -21,6 +21,10 @@ from pipeline.utils.openreview import (
 )
 from pipeline.utils.years import YEAR_FLOOR, year_ceiling
 
+# An OpenReview-sourced file smaller than this for a year OpenReview reports
+# as having more papers is treated as an interrupted crawl and re-fetched.
+MIN_STUB_PAPERS = 50
+
 DATA_DIR = Path(__file__).parent.parent / "data"
 RAW_DIR = DATA_DIR / "raw"
 AUTHORS_DIR = RAW_DIR / "authors"
@@ -107,7 +111,27 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
                 else:
                     continue
             elif not force and year in existing:
-                continue
+                # Sanity check: a suspiciously tiny OpenReview-sourced file for a
+                # year that OpenReview says has many papers means a previous crawl
+                # was interrupted (e.g. SSL failure). Re-crawl it instead of keeping
+                # the broken stub forever (incremental skip would preserve it).
+                safe_id = conf_id.replace("/", "-")
+                fpath = AUTHORS_DIR / f"{safe_id}_{year}.json"
+                if fpath.exists():
+                    try:
+                        with open(fpath) as f:
+                            data = json.load(f)
+                    except json.JSONDecodeError:
+                        data = {}
+                    if (data.get("_source") == "openreview"
+                            and data.get("total_papers", 0) < MIN_STUB_PAPERS):
+                        print(f"  {conf_id} {year}: stub file with "
+                              f"{data.get('total_papers', 0)} papers — re-crawling")
+                        existing.discard(year)
+                    else:
+                        continue
+                else:
+                    continue
 
             # Check if OpenReview has data for this year
             count = fetch_paper_count(conf_id, year, session=session)
