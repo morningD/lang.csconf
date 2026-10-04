@@ -1,1603 +1,196 @@
 {
-  "id": "CoRL",
+  "id": "CORL",
   "title": "CoRL",
-  "description": "",
-  "category": "MX",
+  "description": "The Conference on Robot Learning",
+  "category": "AI",
   "rank": "N",
-  "dblp": "",
+  "dblp": "corl",
   "years": [
-    2024,
-    2025
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
   ],
   "by_year": {
-    "2024": {
-      "Italian": 5,
-      "Vietnamese": 2,
-      "Chinese": 141,
-      "English": 42,
-      "German": 8,
-      "Other": 34,
-      "Russian": 2,
-      "Korean": 13,
-      "French": 2,
-      "Spanish": 5,
-      "Indian": 6,
-      "Japanese": 1,
-      "Dutch": 1,
-      "Persian": 1,
-      "Turkish": 1
-    },
-    "2025": {
-      "Chinese": 132,
-      "Korean": 16,
-      "English": 49,
-      "Other": 34,
-      "French": 3,
-      "Japanese": 3,
-      "Spanish": 5,
-      "Indian": 9,
+    "2017": {
+      "Spanish": 2,
       "German": 6,
-      "Turkish": 1,
+      "English": 20,
+      "Chinese": 4,
+      "Other": 9,
+      "Japanese": 1,
+      "Korean": 1,
       "Italian": 1,
+      "Russian": 1,
+      "Indian": 3,
+      "Persian": 1
+    },
+    "2018": {
+      "Other": 21,
+      "French": 2,
+      "Chinese": 12,
+      "Italian": 3,
+      "English": 16,
+      "Russian": 3,
+      "Indian": 5,
+      "Turkish": 1,
+      "German": 8,
+      "Spanish": 1,
+      "Korean": 1,
+      "Portuguese": 1,
+      "Japanese": 1
+    },
+    "2019": {
+      "Chinese": 25,
+      "English": 26,
+      "Other": 22,
+      "Indian": 5,
+      "Spanish": 3,
+      "Korean": 8,
+      "Russian": 4,
+      "Persian": 1,
+      "Japanese": 1,
+      "German": 6,
+      "Italian": 1,
+      "Turkish": 1,
+      "Portuguese": 2,
+      "French": 4,
+      "Dutch": 1
+    },
+    "2020": {
+      "Japanese": 2,
+      "Other": 39,
+      "Korean": 8,
+      "Russian": 2,
+      "Chinese": 52,
+      "English": 29,
+      "Vietnamese": 2,
+      "Indian": 13,
+      "Spanish": 3,
       "Dutch": 2,
+      "Portuguese": 2,
+      "German": 6,
+      "French": 4,
+      "Italian": 2
+    },
+    "2021": {
+      "French": 6,
+      "Korean": 9,
+      "English": 42,
+      "Chinese": 59,
+      "Other": 23,
+      "Turkish": 1,
+      "Russian": 6,
+      "German": 5,
+      "Indian": 7,
+      "Persian": 2,
+      "Spanish": 5,
+      "Italian": 1,
+      "Dutch": 1
+    },
+    "2022": {
+      "German": 12,
+      "English": 39,
+      "Indian": 11,
+      "Other": 32,
+      "Chinese": 74,
+      "Russian": 6,
+      "Korean": 6,
+      "Dutch": 2,
+      "Persian": 3,
+      "Italian": 2,
+      "Vietnamese": 2,
+      "French": 4,
+      "Portuguese": 3,
+      "Spanish": 1,
+      "Japanese": 1
+    },
+    "2023": {
+      "Chinese": 83,
+      "English": 39,
+      "Other": 37,
+      "Korean": 8,
+      "German": 4,
+      "Indian": 13,
+      "Russian": 2,
+      "French": 5,
+      "Turkish": 1,
+      "Dutch": 3,
       "Vietnamese": 1,
-      "Russian": 1
+      "Italian": 3,
+      "Spanish": 1
+    },
+    "2024": {
+      "German": 8,
+      "Chinese": 141,
+      "French": 2,
+      "Other": 33,
+      "Vietnamese": 2,
+      "Persian": 1,
+      "English": 45,
+      "Korean": 13,
+      "Italian": 5,
+      "Indian": 6,
+      "Spanish": 5,
+      "Russian": 2,
+      "Japanese": 1,
+      "Dutch": 1
     }
   },
   "total": {
-    "Italian": 6,
-    "Vietnamese": 3,
-    "Chinese": 273,
-    "English": 91,
-    "German": 14,
-    "Other": 68,
-    "Russian": 3,
-    "Korean": 29,
-    "French": 5,
-    "Spanish": 10,
-    "Indian": 15,
-    "Japanese": 4,
-    "Dutch": 3,
-    "Persian": 1,
-    "Turkish": 2
+    "Spanish": 21,
+    "German": 55,
+    "English": 256,
+    "Chinese": 450,
+    "Other": 216,
+    "Japanese": 7,
+    "Korean": 54,
+    "Italian": 18,
+    "Russian": 26,
+    "Indian": 63,
+    "Persian": 8,
+    "French": 27,
+    "Turkish": 4,
+    "Portuguese": 8,
+    "Dutch": 10,
+    "Vietnamese": 7
   },
-  "year_notes": {
+  "venues": {
     "2024": {
-      "paper_source": "openreview",
-      "paper_source_url": "https://openreview.net/group?id=robot-learning.org/CoRL/2024/Conference",
-      "status": "ok",
-      "note": "DBLP had no raw author file. Crawled from OpenReview: 264 papers."
+      "city": "Munich",
+      "country": "Germany"
     },
-    "2025": {
-      "paper_source": "openreview",
-      "paper_source_url": "https://openreview.net/group?id=robot-learning.org/CoRL/2025/Conference",
-      "status": "ok",
-      "note": "DBLP not yet indexed. Crawled from OpenReview: 263 papers."
+    "2023": {
+      "city": "Atlanta",
+      "country": "USA"
+    },
+    "2022": {
+      "city": "Auckland",
+      "country": "New Zealand"
+    },
+    "2021": {
+      "city": "London",
+      "country": "UK"
+    },
+    "2020": {
+      "city": "Cambridge",
+      "country": "USA"
+    },
+    "2019": {
+      "city": "Osaka",
+      "country": "Japan"
+    },
+    "2018": {
+      "city": "Zürich",
+      "country": "Switzerland"
+    },
+    "2017": {
+      "city": "Mountain View",
+      "country": "USA"
     }
-  },
-  "affiliations": {
-    "total_covered": 445,
-    "total_papers": 527,
-    "coverage_pct": 84.4,
-    "top": [
-      {
-        "name": "Stanford University",
-        "count": 37,
-        "pct": 7.02,
-        "country": "US",
-        "rank": 1
-      },
-      {
-        "name": "University of California, Berkeley",
-        "count": 28,
-        "pct": 5.31,
-        "country": "US",
-        "rank": 2
-      },
-      {
-        "name": "Tsinghua University",
-        "count": 19,
-        "pct": 3.61,
-        "country": "CN",
-        "rank": 3
-      },
-      {
-        "name": "Carnegie Mellon University",
-        "count": 19,
-        "pct": 3.61,
-        "country": "US",
-        "rank": 3
-      },
-      {
-        "name": "Massachusetts Institute of Technology",
-        "count": 12,
-        "pct": 2.28,
-        "country": "US",
-        "rank": 5
-      },
-      {
-        "name": "University of Texas at Austin",
-        "count": 11,
-        "pct": 2.09,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "University of Washington",
-        "count": 11,
-        "pct": 2.09,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "NVIDIA",
-        "count": 11,
-        "pct": 2.09,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "University of California, San Diego",
-        "count": 11,
-        "pct": 2.09,
-        "country": "US",
-        "rank": 6
-      },
-      {
-        "name": "University of Southern California",
-        "count": 10,
-        "pct": 1.9,
-        "country": "US",
-        "rank": 10
-      },
-      {
-        "name": "University of Illinois at Urbana-Champaign",
-        "count": 10,
-        "pct": 1.9,
-        "country": "US",
-        "rank": 10
-      },
-      {
-        "name": "Georgia Institute of Technology",
-        "count": 10,
-        "pct": 1.9,
-        "country": "US",
-        "rank": 10
-      },
-      {
-        "name": "University of Pennsylvania",
-        "count": 8,
-        "pct": 1.52,
-        "country": "US",
-        "rank": 13
-      },
-      {
-        "name": "ETH Zurich",
-        "count": 7,
-        "pct": 1.33,
-        "country": "CH",
-        "rank": 14
-      },
-      {
-        "name": "National University of Singapore",
-        "count": 7,
-        "pct": 1.33,
-        "country": "SG",
-        "rank": 14
-      },
-      {
-        "name": "Peking University",
-        "count": 7,
-        "pct": 1.33,
-        "country": "CN",
-        "rank": 14
-      },
-      {
-        "name": "Shanghai Jiao Tong University",
-        "count": 7,
-        "pct": 1.33,
-        "country": "CN",
-        "rank": 14
-      },
-      {
-        "name": "Princeton University",
-        "count": 6,
-        "pct": 1.14,
-        "country": "US",
-        "rank": 18
-      },
-      {
-        "name": "Cornell University",
-        "count": 6,
-        "pct": 1.14,
-        "country": "US",
-        "rank": 18
-      },
-      {
-        "name": "Northeastern University",
-        "count": 6,
-        "pct": 1.14,
-        "country": "US",
-        "rank": 18
-      }
-    ],
-    "by_year": {
-      "2024": {
-        "total_covered": 243,
-        "total_papers": 264,
-        "coverage_pct": 92.0,
-        "top": [
-          {
-            "name": "Stanford University",
-            "count": 21,
-            "pct": 7.95,
-            "country": "US",
-            "rank": 1
-          },
-          {
-            "name": "University of California, Berkeley",
-            "count": 16,
-            "pct": 6.06,
-            "country": "US",
-            "rank": 2
-          },
-          {
-            "name": "Tsinghua University",
-            "count": 12,
-            "pct": 4.55,
-            "country": "CN",
-            "rank": 3
-          },
-          {
-            "name": "Carnegie Mellon University",
-            "count": 12,
-            "pct": 4.55,
-            "country": "US",
-            "rank": 3
-          },
-          {
-            "name": "University of Illinois at Urbana-Champaign",
-            "count": 7,
-            "pct": 2.65,
-            "country": "US",
-            "rank": 5
-          },
-          {
-            "name": "University of Texas at Austin",
-            "count": 6,
-            "pct": 2.27,
-            "country": "US",
-            "rank": 6
-          },
-          {
-            "name": "Princeton University",
-            "count": 5,
-            "pct": 1.89,
-            "country": "US",
-            "rank": 7
-          },
-          {
-            "name": "University of Southern California",
-            "count": 5,
-            "pct": 1.89,
-            "country": "US",
-            "rank": 7
-          },
-          {
-            "name": "Peking University",
-            "count": 5,
-            "pct": 1.89,
-            "country": "CN",
-            "rank": 7
-          },
-          {
-            "name": "University of Washington",
-            "count": 5,
-            "pct": 1.89,
-            "country": "US",
-            "rank": 7
-          },
-          {
-            "name": "Northeastern University",
-            "count": 5,
-            "pct": 1.89,
-            "country": "US",
-            "rank": 7
-          },
-          {
-            "name": "NVIDIA",
-            "count": 5,
-            "pct": 1.89,
-            "country": "US",
-            "rank": 7
-          },
-          {
-            "name": "University of California, San Diego",
-            "count": 5,
-            "pct": 1.89,
-            "country": "US",
-            "rank": 7
-          },
-          {
-            "name": "ETH Zurich",
-            "count": 4,
-            "pct": 1.52,
-            "country": "CH",
-            "rank": 14
-          },
-          {
-            "name": "Georgia Institute of Technology",
-            "count": 4,
-            "pct": 1.52,
-            "country": "US",
-            "rank": 14
-          },
-          {
-            "name": "University of Pennsylvania",
-            "count": 4,
-            "pct": 1.52,
-            "country": "US",
-            "rank": 14
-          },
-          {
-            "name": "Massachusetts Institute of Technology",
-            "count": 4,
-            "pct": 1.52,
-            "country": "US",
-            "rank": 14
-          },
-          {
-            "name": "Columbia University",
-            "count": 4,
-            "pct": 1.52,
-            "country": "US",
-            "rank": 14
-          },
-          {
-            "name": "Karlsruher Institut für Technologie",
-            "count": 3,
-            "pct": 1.14,
-            "country": "",
-            "rank": 19
-          },
-          {
-            "name": "University of Michigan",
-            "count": 3,
-            "pct": 1.14,
-            "country": "US",
-            "rank": 19
-          },
-          {
-            "name": "National University of Singapore",
-            "count": 3,
-            "pct": 1.14,
-            "country": "SG",
-            "rank": 19
-          },
-          {
-            "name": "Seoul National University",
-            "count": 3,
-            "pct": 1.14,
-            "country": "KR",
-            "rank": 19
-          },
-          {
-            "name": "Rutgers University",
-            "count": 3,
-            "pct": 1.14,
-            "country": "US",
-            "rank": 19
-          },
-          {
-            "name": "Google DeepMind",
-            "count": 3,
-            "pct": 1.14,
-            "country": "GB",
-            "rank": 19
-          },
-          {
-            "name": "Technical University of Munich",
-            "count": 3,
-            "pct": 1.14,
-            "country": "DE",
-            "rank": 19
-          },
-          {
-            "name": "Dyson",
-            "count": 3,
-            "pct": 1.14,
-            "country": "",
-            "rank": 19
-          },
-          {
-            "name": "Shanghai Jiao Tong University",
-            "count": 3,
-            "pct": 1.14,
-            "country": "CN",
-            "rank": 19
-          },
-          {
-            "name": "Toyota Central R&D Labs., Inc",
-            "count": 2,
-            "pct": 0.76,
-            "country": "",
-            "rank": 28
-          },
-          {
-            "name": "Aalto University",
-            "count": 2,
-            "pct": 0.76,
-            "country": "FI",
-            "rank": 28
-          },
-          {
-            "name": "National Taiwan University",
-            "count": 2,
-            "pct": 0.76,
-            "country": "TW",
-            "rank": 28
-          },
-          {
-            "name": "University of Toronto",
-            "count": 2,
-            "pct": 0.76,
-            "country": "CA",
-            "rank": 28
-          },
-          {
-            "name": "Cornell University",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 28
-          },
-          {
-            "name": "Oregon State University",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 28
-          },
-          {
-            "name": "KTH Royal Institute of Technology",
-            "count": 2,
-            "pct": 0.76,
-            "country": "SE",
-            "rank": 28
-          },
-          {
-            "name": "HKUST",
-            "count": 2,
-            "pct": 0.76,
-            "country": "HK",
-            "rank": 28
-          },
-          {
-            "name": "Imperial College London",
-            "count": 2,
-            "pct": 0.76,
-            "country": "GB",
-            "rank": 28
-          },
-          {
-            "name": "Toyota Research Institute",
-            "count": 2,
-            "pct": 0.76,
-            "country": "",
-            "rank": 28
-          },
-          {
-            "name": "Technische Universität Darmstadt",
-            "count": 2,
-            "pct": 0.76,
-            "country": "",
-            "rank": 28
-          },
-          {
-            "name": "Duke University",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 28
-          },
-          {
-            "name": "Renmin University of China",
-            "count": 2,
-            "pct": 0.76,
-            "country": "CN",
-            "rank": 28
-          },
-          {
-            "name": "Max Planck Institute for Intelligent Systems",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 41
-          },
-          {
-            "name": "University of Groningen",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "BMW Group",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Chinese University of Hong Kong",
-            "count": 1,
-            "pct": 0.38,
-            "country": "HK",
-            "rank": 41
-          },
-          {
-            "name": "Informatics, University of Zurich, University of Zurich",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Universität Freiburg",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Fraunhofer IML",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Beijing Institute of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Volkswagen Group",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Albert-Ludwigs-Universität Freiburg",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "University of British Columbia",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CA",
-            "rank": 41
-          },
-          {
-            "name": "University of California, Davis",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 41
-          },
-          {
-            "name": "Purdue University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 41
-          },
-          {
-            "name": "Department of Computer Science",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 41
-          },
-          {
-            "name": "University of Massachusetts at Amherst",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Whiting School of Engineering",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Google",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 41
-          },
-          {
-            "name": "LAAS / CNRS",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Istituto Italiano di Tecnologia",
-            "count": 1,
-            "pct": 0.38,
-            "country": "IT",
-            "rank": 41
-          },
-          {
-            "name": "Honda Research Institution US",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Idiap Research Institute",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Norwegian University of Science and Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "EPFL",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CH",
-            "rank": 41
-          },
-          {
-            "name": "IDEAS NCBR Sp.",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Iowa State University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "University of Bristol",
-            "count": 1,
-            "pct": 0.38,
-            "country": "GB",
-            "rank": 41
-          },
-          {
-            "name": "University of Electronic Science and Technology of China",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Shanghai AI Lab",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Nanjing University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Karlsruhe Institute of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 41
-          },
-          {
-            "name": "Beijing University of Posts and Telecommunications",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "ShanghaiTech University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "PsiRobot",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "George Mason University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 41
-          },
-          {
-            "name": "State University of New York at Stony Brook",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Allen Institute for Artificial Intelligence",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "University of St. Andrews",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Mines ParisTech",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "University of Oxford",
-            "count": 1,
-            "pct": 0.38,
-            "country": "GB",
-            "rank": 41
-          },
-          {
-            "name": "CIDI Intelligent Driving(Chengdu) Technology Co., Ltd.",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "TU Wien",
-            "count": 1,
-            "pct": 0.38,
-            "country": "AT",
-            "rank": 41
-          },
-          {
-            "name": "Keio University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Beihang University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Queensland University of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Fudan University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Liquid AI",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Disney Research|Studios",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "University of Cambridge",
-            "count": 1,
-            "pct": 0.38,
-            "country": "GB",
-            "rank": 41
-          },
-          {
-            "name": "Computer Science, State University of New York, Stony Brook",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Indiana University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Woven by Toyota, Inc.",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Chinese Academy of Sciences",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "New York University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 41
-          },
-          {
-            "name": "University of Hong Kong",
-            "count": 1,
-            "pct": 0.38,
-            "country": "HK",
-            "rank": 41
-          },
-          {
-            "name": "University of Maryland, College Park",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 41
-          },
-          {
-            "name": "KU Leuven",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 41
-          },
-          {
-            "name": "Beijing Jiaotong University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Yonsei University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "KR",
-            "rank": 41
-          },
-          {
-            "name": "Zhejiang University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          },
-          {
-            "name": "Sun Yat-sen University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 41
-          }
-        ]
-      },
-      "2025": {
-        "total_covered": 202,
-        "total_papers": 263,
-        "coverage_pct": 76.8,
-        "top": [
-          {
-            "name": "Stanford University",
-            "count": 16,
-            "pct": 6.08,
-            "country": "US",
-            "rank": 1
-          },
-          {
-            "name": "University of California, Berkeley",
-            "count": 12,
-            "pct": 4.56,
-            "country": "US",
-            "rank": 2
-          },
-          {
-            "name": "Massachusetts Institute of Technology",
-            "count": 8,
-            "pct": 3.04,
-            "country": "US",
-            "rank": 3
-          },
-          {
-            "name": "Carnegie Mellon University",
-            "count": 7,
-            "pct": 2.66,
-            "country": "US",
-            "rank": 4
-          },
-          {
-            "name": "Tsinghua University",
-            "count": 7,
-            "pct": 2.66,
-            "country": "CN",
-            "rank": 4
-          },
-          {
-            "name": "University of California, San Diego",
-            "count": 6,
-            "pct": 2.28,
-            "country": "US",
-            "rank": 6
-          },
-          {
-            "name": "NVIDIA",
-            "count": 6,
-            "pct": 2.28,
-            "country": "US",
-            "rank": 6
-          },
-          {
-            "name": "Georgia Institute of Technology",
-            "count": 6,
-            "pct": 2.28,
-            "country": "US",
-            "rank": 6
-          },
-          {
-            "name": "University of Washington",
-            "count": 6,
-            "pct": 2.28,
-            "country": "US",
-            "rank": 6
-          },
-          {
-            "name": "University of Southern California",
-            "count": 5,
-            "pct": 1.9,
-            "country": "US",
-            "rank": 10
-          },
-          {
-            "name": "University of Texas at Austin",
-            "count": 5,
-            "pct": 1.9,
-            "country": "US",
-            "rank": 10
-          },
-          {
-            "name": "Shanghai Jiao Tong University",
-            "count": 4,
-            "pct": 1.52,
-            "country": "CN",
-            "rank": 12
-          },
-          {
-            "name": "University of Pennsylvania",
-            "count": 4,
-            "pct": 1.52,
-            "country": "US",
-            "rank": 12
-          },
-          {
-            "name": "Cornell University",
-            "count": 4,
-            "pct": 1.52,
-            "country": "US",
-            "rank": 12
-          },
-          {
-            "name": "National University of Singapore",
-            "count": 4,
-            "pct": 1.52,
-            "country": "SG",
-            "rank": 12
-          },
-          {
-            "name": "HKUST",
-            "count": 3,
-            "pct": 1.14,
-            "country": "HK",
-            "rank": 16
-          },
-          {
-            "name": "KAIST",
-            "count": 3,
-            "pct": 1.14,
-            "country": "KR",
-            "rank": 16
-          },
-          {
-            "name": "ETH Zurich",
-            "count": 3,
-            "pct": 1.14,
-            "country": "CH",
-            "rank": 16
-          },
-          {
-            "name": "University of Virginia",
-            "count": 3,
-            "pct": 1.14,
-            "country": "US",
-            "rank": 16
-          },
-          {
-            "name": "University of Illinois at Urbana-Champaign",
-            "count": 3,
-            "pct": 1.14,
-            "country": "US",
-            "rank": 16
-          },
-          {
-            "name": "Beijing Institute for General Artificial Intelligence",
-            "count": 2,
-            "pct": 0.76,
-            "country": "CN",
-            "rank": 21
-          },
-          {
-            "name": "University College London",
-            "count": 2,
-            "pct": 0.76,
-            "country": "GB",
-            "rank": 21
-          },
-          {
-            "name": "University of Maryland, College Park",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 21
-          },
-          {
-            "name": "Allen Institute for Artificial Intelligence",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 21
-          },
-          {
-            "name": "Google",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 21
-          },
-          {
-            "name": "University of Michigan",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 21
-          },
-          {
-            "name": "University of Massachusetts at Amherst",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 21
-          },
-          {
-            "name": "Technion",
-            "count": 2,
-            "pct": 0.76,
-            "country": "IL",
-            "rank": 21
-          },
-          {
-            "name": "Columbia University",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 21
-          },
-          {
-            "name": "University of Edinburgh",
-            "count": 2,
-            "pct": 0.76,
-            "country": "GB",
-            "rank": 21
-          },
-          {
-            "name": "Amazon",
-            "count": 2,
-            "pct": 0.76,
-            "country": "US",
-            "rank": 21
-          },
-          {
-            "name": "Chinese University of Hong Kong",
-            "count": 2,
-            "pct": 0.76,
-            "country": "HK",
-            "rank": 21
-          },
-          {
-            "name": "Peking University",
-            "count": 2,
-            "pct": 0.76,
-            "country": "CN",
-            "rank": 21
-          },
-          {
-            "name": "Amazon FAR Lab",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "KTH Royal Institute of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "SE",
-            "rank": 34
-          },
-          {
-            "name": "Agency for Defense Development",
-            "count": 1,
-            "pct": 0.38,
-            "country": "KR",
-            "rank": 34
-          },
-          {
-            "name": "Technische Universität Berlin",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 34
-          },
-          {
-            "name": "University of Bristol",
-            "count": 1,
-            "pct": 0.38,
-            "country": "GB",
-            "rank": 34
-          },
-          {
-            "name": "Institute of Cartography and Geoinformatics",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 34
-          },
-          {
-            "name": "IIIT-H",
-            "count": 1,
-            "pct": 0.38,
-            "country": "IN",
-            "rank": 34
-          },
-          {
-            "name": "EPFL",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CH",
-            "rank": 34
-          },
-          {
-            "name": "Chinese Academy of Sciences",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "Shanghai Qi Zhi Institute",
-            "count": 1,
-            "pct": 0.38,
-            "country": "",
-            "rank": 34
-          },
-          {
-            "name": "Saitama University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "JP",
-            "rank": 34
-          },
-          {
-            "name": "Oregon State University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "University of Colorado at Boulder",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Northeastern University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "University of Utah",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Northwestern University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Universität Stuttgart",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 34
-          },
-          {
-            "name": "Central South University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "University of Toronto",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CA",
-            "rank": 34
-          },
-          {
-            "name": "Technical University of Munich",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 34
-          },
-          {
-            "name": "University of Freiburg",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 34
-          },
-          {
-            "name": "Universita della Svizzera Italiana",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CH",
-            "rank": 34
-          },
-          {
-            "name": "Google DeepMind",
-            "count": 1,
-            "pct": 0.38,
-            "country": "GB",
-            "rank": 34
-          },
-          {
-            "name": "Rheinisch Westfälische Technische Hochschule Aachen",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 34
-          },
-          {
-            "name": "Università degli Studi di Genova, Istituto Italiano di Tecnologia",
-            "count": 1,
-            "pct": 0.38,
-            "country": "IT",
-            "rank": 34
-          },
-          {
-            "name": "Tufts University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Technical University of Poznan",
-            "count": 1,
-            "pct": 0.38,
-            "country": "PL",
-            "rank": 34
-          },
-          {
-            "name": "Indian Institute of Technology, Delhi",
-            "count": 1,
-            "pct": 0.38,
-            "country": "IN",
-            "rank": 34
-          },
-          {
-            "name": "East China Normal University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "Computer Science Department, School of Computer Science",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Toyota Technological Institute at Chicago",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Physical Intelligence",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "University of Victoria",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CA",
-            "rank": 34
-          },
-          {
-            "name": "University of Cambridge",
-            "count": 1,
-            "pct": 0.38,
-            "country": "GB",
-            "rank": 34
-          },
-          {
-            "name": "Princeton University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Nanyang Technological University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "SG",
-            "rank": 34
-          },
-          {
-            "name": "Jozef Stefan Institute",
-            "count": 1,
-            "pct": 0.38,
-            "country": "SI",
-            "rank": 34
-          },
-          {
-            "name": "Hunan University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "Seoul National University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "KR",
-            "rank": 34
-          },
-          {
-            "name": "Beijing University of Posts and Telecommunications",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "Queensland University of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "AU",
-            "rank": 34
-          },
-          {
-            "name": "Beijing Institute of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "Arizona State University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Tencent Robotics X",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "University of California, Riverside",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "University of Hong Kong",
-            "count": 1,
-            "pct": 0.38,
-            "country": "HK",
-            "rank": 34
-          },
-          {
-            "name": "Tokyo Institute of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "JP",
-            "rank": 34
-          },
-          {
-            "name": "South China University of Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "Dexterity, Inc",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "University of Electronic Science and Technology of China",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "National University of Defense Technology",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CN",
-            "rank": 34
-          },
-          {
-            "name": "Yonsei University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "KR",
-            "rank": 34
-          },
-          {
-            "name": "University of Texas at Dallas",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Bosch",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "New York University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Sakana AI",
-            "count": 1,
-            "pct": 0.38,
-            "country": "JP",
-            "rank": 34
-          },
-          {
-            "name": "April Robotics",
-            "count": 1,
-            "pct": 0.38,
-            "country": "CH",
-            "rank": 34
-          },
-          {
-            "name": "Boston University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Skild AI",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "Rutgers University",
-            "count": 1,
-            "pct": 0.38,
-            "country": "US",
-            "rank": 34
-          },
-          {
-            "name": "KE:SAI",
-            "count": 1,
-            "pct": 0.38,
-            "country": "DE",
-            "rank": 34
-          }
-        ]
-      }
-    },
-    "sources": [
-      "openreview",
-      "papercopilot"
-    ]
   }
 }
