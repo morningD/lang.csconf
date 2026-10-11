@@ -1,0 +1,31 @@
+{
+ "conf_id": "IJCAI",
+ "tax_period": "201712",
+ "form_type": "990",
+ "total_revenue": 411365,
+ "total_expenses": 540170,
+ "net_assets_end": 4657864,
+ "revenue_mix": {
+  "contributions": 0,
+  "program": 193374,
+  "investment": 212205,
+  "royalties": 0,
+  "misc": 5786
+ },
+ "expense_mix": {
+  "accounting_fees": 375,
+  "investment_mgmt_fees": 41008,
+  "office_expenses": 7113,
+  "travel": 25065,
+  "conferences": 336282,
+  "depreciation": 5290,
+  "insurance": 875,
+  "conference_deficit": 38554,
+  "awards": 37680,
+  "administrative_costs": 34818,
+  "bank_charges": 5949,
+  "misc": 7161
+ },
+ "officers": null,
+ "notes": "Revenue 校验精确: 193374(=183673 royalty+9701 proceeds-sales, line 2a/2b)+212205(=171038 line3+41167 line7d)+5786(11a foreign currency gain)=411365。Expense: 各行之和533009, 加24e小计7161(=24a-d之和, 未重复计入)精确=540170。Part IX A/B/C三列加总均自洽。 [merge] 24e other-expense subtotal 7,161 (net of original-form discrepancy) folded into misc so mix sums to total."
+}

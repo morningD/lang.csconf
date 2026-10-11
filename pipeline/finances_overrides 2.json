@@ -1,0 +1,22 @@
+{
+  "_comment": "Manual corrections/supplements merged on top of ProPublica fetches by step2f. Typical use: latest fiscal year not yet digitized by ProPublica (IRS processing lags ~1 year) — numbers are extracted from the Form 990 PDF by vision read with arithmetic cross-checks (Part VIII/IX totals, Part X balance sheet). Archive: data/raw/finances/pdfs/{CONF}_{TAXPERIOD}.pdf; transcripts: data/raw/finances/transcripts/{CONF}_{TAXPERIOD}.md; web copies of both under website/public/data/finances/. 'transcript' is a BASE_URL-relative path for the Finances view.",
+  "NEURIPS": {
+    "note": "FY2025 (tax period 202505, conference year 2024) manually extracted from the IRS Form 990 PDF on 2026-10-10, pending ProPublica digitization. Figures cross-checked across Part I, Part VIII/IX totals and Part X balance sheet; prior-year column matches ProPublica exactly.",
+    "years": {
+      "2024": {
+        "tax_period": "202505",
+        "tax_year": 2025,
+        "conference_year": 2024,
+        "revenue": 15159148,
+        "expenses": 9976932,
+        "net_income": 5182216,
+        "net_assets": 22336052,
+        "revenue_mix": {"contributions": 5091600, "program": 8254337, "investment": 1226978, "royalties": 1632, "misc": 584601},
+        "expense_mix": {"grants": 304583, "professional_fees": 2366191, "conferences": 5614007, "occupancy": 1355926, "advertising": 119653, "travel": 112757, "office": 78614, "insurance": 8201, "taxes": 12500, "awards": 4500},
+        "pdf_url": "https://apps.irs.gov/pub/epostcard/cor/954364881_202505_990_2026020223896556.pdf",
+        "transcript": "data/finances/NEURIPS_202505.md",
+        "manual": true
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+ "conf_id": "USENIXSECURITY",
+ "tax_period": "202412",
+ "form_type": "990",
+ "total_revenue": 5570885,
+ "total_expenses": 6180423,
+ "net_assets_end": 5806626,
+ "revenue_mix": {
+  "contributions": 2571533,
+  "program": 2497382,
+  "investment": 501970,
+  "royalties": 0,
+  "misc": 0
+ },
+ "expense_mix": {
+  "grants_individuals": 87150,
+  "grants_foreign": 56800,
+  "officer_key_employee_compensation": 500439,
+  "salaries_wages": 1002193,
+  "employee_benefits": 268693,
+  "payroll_taxes": 119640,
+  "legal_fees": 4678,
+  "accounting_fees": 175681,
+  "professional_fees_other": 26500,
+  "advertising_promotion": 7555,
+  "office_expenses": 3638,
+  "information_technology": 151025,
+  "occupancy": 11947,
+  "travel": 17301,
+  "conferences": 3593894,
+  "interest": 10386,
+  "depreciation": 36129,
+  "insurance": 39038,
+  "misc": 42172,
+  "printing_publications": 21833,
+  "board_meetings": 3731
+ },
+ "officers": [
+  {
+   "name": "Casey Henderson",
+   "title": "Executive Director",
+   "hours": 32.0,
+   "compensation": 261622,
+   "affiliation": "USENIX Association",
+   "country": "US"
+  },
+  {
+   "name": "Camille Mulligan",
+   "title": "Development Director",
+   "hours": 32.0,
+   "compensation": 182475,
+   "affiliation": "USENIX Association",
+   "country": "US"
+  },
+  {
+   "name": "Hyejean Jessica Kim",
+   "title": "Operations Director",
+   "hours": 32.0,
+   "compensation": 139710,
+   "affiliation": "USENIX Association",
+   "country": "US"
+  },
+  {
+   "name": "Virginia Staubach",
+   "title": "Finance and HR Director",
+   "hours": 32.0,
+   "compensation": 128328,
+   "affiliation": "USENIX Association",
+   "country": "US"
+  },
+  {
+   "name": "Catherine Bergman",
+   "title": "Dev./Grants Manager",
+   "hours": 32.0,
+   "compensation": 103315,
+   "affiliation": "USENIX Association",
+   "country": "US"
+  },
+  {
+   "name": "Karen Wong",
+   "title": "Conference Director",
+   "hours": 32.0,
+   "compensation": 110944,
+   "affiliation": "USENIX Association",
+   "country": "US"
+  },
+  {
+   "name": "Amy Rich",
+   "title": "President",
+   "hours": 5.0,
+   "compensation": 0,
+   "affiliation": "Google",
+   "country": "US"
+  },
+  {
+   "name": "William Enck",
+   "title": "Vice President",
+   "hours": 5.0,
+   "compensation": 0,
+   "affiliation": "North Carolina State University",
+   "country": "US"
+  },
+  {
+   "name": "Lea Kissner",
+   "title": "Secretary",
+   "hours": 4.0,
+   "compensation": 0,
+   "affiliation": "Independent consultant",
+   "country": "US"
+  },
+  {
+   "name": "Kurt Andersen",
+   "title": "Treasurer",
+   "hours": 5.0,
+   "compensation": 0,
+   "affiliation": "Independent",
+   "country": "US"
+  },
+  {
+   "name": "Sujata Banerjee",
+   "title": "Director",
+   "hours": 4.0,
+   "compensation": 0,
+   "affiliation": "VMware Research",
+   "country": "US"
+  },
+  {
+   "name": "Thorsten Holz",
+   "title": "Director",
+   "hours": 4.0,
+   "compensation": 0,
+   "affiliation": "Ruhr University Bochum",
+   "country": "DE"
+  },
+  {
+   "name": "Laura Nolan",
+   "title": "Director",
+   "hours": 4.0,
+   "compensation": 0,
+   "affiliation": "Independent",
+   "country": "IE"
+  },
+  {
+   "name": "George Porter",
+   "title": "Director",
+   "hours": 4.0,
+   "compensation": 0,
+   "affiliation": "University of California, San Diego",
+   "country": "US"
+  }
+ ],
+ "notes": "Officers, revenue and expense lines extracted from the 2024 Form 990 PDF (tax period 202412); every figure cross-checked arithmetically against Parts I, VIII, IX and X.",
+ "extraction_notes": "赤字年: revenue less expenses = -609,538。Part VIII 明细: 1e government grants 140,000 + 1f 2,431,533 = 1h 2,571,533; program = 2a Conferences 2,381,655 + 2b Membership and Projects 115,727 = 2,497,382; investment = line3 501,970; line5 royalties 0; 其余各行(7d/8c/9c/10c/11e)均为 0。revenue_mix 合计 = 5,570,885 = Part I line 12 精确。expense_mix 行加总 = 6,180,423 = Part I line 18 / Part IX line 25 精确 (lines 5-10 = 1,890,965 = line 15; 11a-24e = 4,145,508 = line 17)。Part IX 非零新行: travel 17,301, interest 10,386, line24a 'Other' 42,172, line24c 'BOD Meetings and Expenses' 3,731 (标签经局部放大确认)。officers 为 Part VII Section A 全部 14 人, 姓名/头衔/小时/薪酬经 300dpi 分段放大复核 (整页初读的 Carrie Coligan/Karen Yang/William Arick 系误读, 修正为 Camille Mulligan/Karen Wong/William Enck; Amy Rich 头衔为 President); hours 取 B 列本组织周小时数, compensation 取 D 列 W-2/1099 报告薪酬; 前 6 名带薪员工另有 F 列其他薪酬 (34,342/22,000/18,754/19,857/25,774/17,193) 未计入 compensation。net_assets_end = Part I line 22 = 5,806,626 (= 6,265,302 - 458,676)。"
+}

@@ -1,0 +1,29 @@
+{
+ "conf_id": "VLDB",
+ "tax_period": "202112",
+ "form_type": "990",
+ "total_revenue": 482854,
+ "total_expenses": 523213,
+ "net_assets_end": 436523,
+ "revenue_mix": {
+  "contributions": 0,
+  "program": 478241,
+  "investment": 72,
+  "royalties": 4541,
+  "misc": 0
+ },
+ "expense_mix": {
+  "management_fees": 2550,
+  "legal_fees": 37024,
+  "accounting_fees": 7035,
+  "office_expenses": 833,
+  "information_technology": 203,
+  "conferences": 454044,
+  "insurance": 1044,
+  "vldb_awards": 13418,
+  "student_travel": 5800,
+  "foreign_exchange": 1262
+ },
+ "officers": null,
+ "notes": "Form 990 (2021 版)，税期 2021-01-01 至 2021-12-31，EIN 31-0997196。p-01 即 Part I 首页（无 public.resource.org 隐私页偏移）；Part VIII=p-09、Part III=p-02、Part IX=p-10、Part X=p-11、Part XI/XII=p-12。全部关键数字经 600dpi 局部裁剪复核（spot/VLDB_202112/）。收入（Part VIII col A，全部 unrelated col C）：line 2a CONFERENCE SPONSORSHIPS 278,055 + 2b CONFERENCE REGISTRATIONS FEES 196,671 + 2c GRANTS FROM FOUNDATIONS 3,515 = 2g program service revenue 478,241；line 3 investment income 72；line 5 ROYALTIES 4,541；line 1 contributions 区全空=0。本年 royalties 填在 line 5 标准位置（未如早年放 program 区 business code 900099），按实际行归 royalties。校验1：478,241+72+4,541 = 482,854 = Part VIII line 12（col B 亦 482,854）= Part I line 12，diff=0 通过。支出 Part IX 非零行（col A / 功能列）：11a management 2,550(C) + 11b legal 37,024(C) + 11c accounting 7,035(C) + 13 office 833(C) + 14 information technology 203(B) + 19 conferences 454,044(B) + 23 insurance 1,044(C) + 24a VLDB AWARDS 13,418(B) + 24b SPEND STUDENT REGISTRATION(S) 5,800(C) + 24c CURRENCY EXCHANGE 1,262(C) = 523,213 = line 25 = Part I line 18，diff=0 通过（B program 467,665 = Part III 4e；C mgmt&general 55,548；B+C 亦闭合）。24b 行描述为 SPEND STUDENT REGISTRATION(S)（学生注册费相关支出），按学生类归 student_travel 并在此注明；该行计入 Part IX C 列（管理费用）而非 B 列。Part I 交叉：line 19 = -40,359 = 482,854-523,213 ✓；line 22 net assets EOY 436,523 = assets 453,231 - liabilities 16,708 ✓；line 20/22 Prior(2020 末)=476,882。Part X 交叉：line 16 assets BOY 476,882（210,527+171,888+94,467 行和=476,882 ✓）/ EOY 453,231（150,550+171,974+130,707 行和=453,231 ✓，EOY savings 171,974 为正数）；line 26 liabilities 0/16,708；line 32 net assets 476,882/436,523 ✓。Part XI（p-12）：482,854-523,213=-40,359；BOY 476,882-40,359=436,523=EOY ✓ 四处（I/VIII/IX/X/XI）diff=0 闭合。年度衔接：EOY 436,523 与 VLDB_202212 表 BOY 436,523 完全衔接 ✓。当年亏损 -40,359（疫情亏损年）。注意：任务参考锚点（202012 期末净资产 7,481,164、2021 rev≈397K/exp≈741K）与本 PDF 实际数据不符，PDF 内部完全自洽且与 202212 表衔接，故以 PDF 为准。Prior 列自检（2020）：387,387+88+4,311=391,786；391,786-373,328=18,458 ✓。无薪酬类支出，accrual 制。"
+}

@@ -1091,7 +1091,6 @@ const compareChartOption = computed(() => {
         <!-- Host organization -->
         <div v-if="currentEntry?.entity" class="card p-6 bg-gray-800/50 border-gray-700/50 mb-8">
           <h3 class="text-lg font-semibold text-white mb-1">🏛️ {{ t('finances.entity_title') }}</h3>
-          <p v-if="localizedText(currentEntry.entity.notes)" class="text-xs text-gray-500 mb-4">{{ localizedText(currentEntry.entity.notes) }}</p>
 
           <!-- Country distribution of board members' institutions -->
           <div v-if="officerCountries.length" class="mb-5">
@@ -1165,7 +1164,7 @@ const compareChartOption = computed(() => {
           <!-- Disclosed paid staff & contractors (Part VII) -->
           <div v-if="currentEntry.entity.top_employees?.length || currentEntry.entity.contractors?.length" class="mt-5 pt-4 border-t border-gray-700/50">
             <p class="text-[11px] uppercase tracking-wide text-gray-500 mb-2">{{ t('finances.entity_payroll_title') }}</p>
-            <ul class="space-y-1">
+            <ul class="list-none space-y-1">
               <li v-for="e in currentEntry.entity.top_employees" :key="'e' + e.name" class="text-sm text-gray-300">
                 • {{ e.name }} <span class="text-gray-500">— {{ officerTitleOf(e.title ?? '') }}</span>
                 <span class="text-gray-400 ml-1">{{ e.compensation ? fmtMoney(e.compensation) : '' }}</span>
