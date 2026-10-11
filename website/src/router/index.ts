@@ -12,6 +12,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/ConferenceView.vue'),
   },
   {
+    path: '/conference/:id/finances',
+    name: 'conference-finances',
+    component: () => import('@/views/FinancesView.vue'),
+  },
+  {
     path: '/compare',
     name: 'compare',
     component: () => import('@/views/CompareView.vue'),
@@ -25,6 +30,11 @@ const routes: RouteRecordRaw[] = [
     path: '/about',
     name: 'about',
     component: () => import('@/views/AboutView.vue'),
+  },
+  {
+    path: '/organizers',
+    name: 'organizers',
+    component: () => import('@/views/OrganizersView.vue'),
   },
 ]
 

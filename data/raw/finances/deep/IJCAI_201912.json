@@ -1,0 +1,32 @@
+{
+ "conf_id": "IJCAI",
+ "tax_period": "201912",
+ "form_type": "990",
+ "total_revenue": 5226042,
+ "total_expenses": 2888936,
+ "net_assets_end": 7558578,
+ "revenue_mix": {
+  "contributions": 0,
+  "program": 4903153,
+  "investment": 314979,
+  "royalties": 0,
+  "misc": 7910
+ },
+ "expense_mix": {
+  "accounting_fees": 426,
+  "investment_mgmt_fees": 39968,
+  "office_expenses": 5931,
+  "information_technology": 6397,
+  "travel": 39853,
+  "conferences": 2732254,
+  "depreciation": 267,
+  "insurance": 875,
+  "administrative_costs": 25852,
+  "awards": 18000,
+  "bank_charges": 10698,
+  "design": 4078,
+  "misc": 4337
+ },
+ "officers": null,
+ "notes": "Revenue 校验精确: 4903153(=4679094 conference+164059 program+60000 sponsorships, line 2a-2c)+314979(=196835 line3+118144 line7d)+7910(11a foreign currency exchange)=5226042。Expense: 各行之和2884599, 加24e小计4337(未重复计入)精确=2888936=Part I line18, line19 2337106 自洽。A列全部行加总与line25精确一致。 [merge] 24e other-expense subtotal 4,337 (net of original-form discrepancy) folded into misc so mix sums to total."
+}

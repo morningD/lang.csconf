@@ -2209,12 +2209,12 @@ function onSnakeClick(idx) {
         <!-- Eye stalks -->
         <line
           :x1="16.5 + s.bodyStretch" y1="13"
-          :x2="15.5 + s.bodyStretch + Math.sin(s.antennaPhase) * 0.8" y2="9.5 + Math.sin(s.antennaPhase * 1.3) * 0.5"
+          :x2="15.5 + s.bodyStretch + Math.sin(s.antennaPhase) * 0.8" :y2="9.5 + Math.sin(s.antennaPhase * 1.3) * 0.5"
           :stroke="s.colors.body" stroke-width="0.7" stroke-linecap="round"
         />
         <line
           :x1="18 + s.bodyStretch" y1="12.5"
-          :x2="18.5 + s.bodyStretch + Math.sin(s.antennaPhase + 1) * 0.8" y2="9 + Math.sin(s.antennaPhase * 1.3 + 0.5) * 0.5"
+          :x2="18.5 + s.bodyStretch + Math.sin(s.antennaPhase + 1) * 0.8" :y2="9 + Math.sin(s.antennaPhase * 1.3 + 0.5) * 0.5"
           :stroke="s.colors.body" stroke-width="0.7" stroke-linecap="round"
         />
         <!-- Eyes -->

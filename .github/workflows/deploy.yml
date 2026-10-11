@@ -34,6 +34,7 @@ jobs:
         working-directory: website
         run: |
           pnpm install --frozen-lockfile
+          pnpm check:i18n
           pnpm build
           cp dist/index.html dist/404.html
 

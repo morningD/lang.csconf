@@ -44,6 +44,10 @@ const dblpLinks = computed(() => {
   const keys = Array.isArray(dblp) ? dblp : dblp ? [dblp] : []
   return keys.map(k => ({ key: k, url: `https://dblp.org/db/conf/${k}/` }))
 })
+
+const hostName = computed(() =>
+  conference.value?.finances?.org_name || conference.value?.finances_unavailable?.org_name || null
+)
 const areaMode = ref<'absolute' | 'ratio' | 'cumulative'>('absolute')
 
 onMounted(async () => {
@@ -708,7 +712,16 @@ const affiliationChartOption = computed(() => {
               class="inline-block ml-1.5 align-middle opacity-50 hover:opacity-100 transition-opacity"
               :title="`DBLP: ${link.key}`"
             ><img :src="`${baseUrl}dblp-logo.png`" class="w-4 h-4" alt="DBLP"></a>
-            <div class="flex gap-6 mt-4 text-sm text-gray-500">
+            <router-link
+              v-if="hostName"
+              :to="{ name: 'conference-finances', params: { id: confId } }"
+              class="block mt-1 text-sm no-underline group/host w-fit"
+              :title="t('finances.title')"
+            >
+              <span class="text-gray-500 mr-1.5">{{ t('conference.hosted_by') }}</span>
+              <span class="text-blue-400/80 group-hover/host:text-blue-300 transition-colors">{{ hostName }}</span>
+            </router-link>
+            <div class="flex gap-6 mt-4 text-sm text-gray-500 flex-wrap items-center">
               <span>{{ t('conference.total_papers') }}: <strong class="text-white">{{ totalPapers.toLocaleString() }}</strong></span>
               <span>{{ t('conference.years_covered') }}: <strong class="text-white">{{ conference.years[0] }}–{{ conference.years[conference.years.length - 1] }}</strong></span>
               <span

@@ -6,7 +6,7 @@ import { createApp } from 'vue'
 import { createHead } from '@unhead/vue/client'
 import ECharts from 'vue-echarts'
 import { use } from 'echarts/core'
-import { SVGRenderer } from 'echarts/renderers'
+import { CanvasRenderer } from 'echarts/renderers'
 import { PieChart, LineChart, BarChart, RadarChart, CustomChart, TreemapChart } from 'echarts/charts'
 import {
   TitleComponent,
@@ -17,7 +17,10 @@ import {
 } from 'echarts/components'
 
 use([
-  SVGRenderer,
+  // canvas is echarts' default renderer; registering only SVG used to make
+  // zrender fall back to SVG (zrender.js falls back to the first registered
+  // painter), which triggered <line y2> attribute errors during animations.
+  CanvasRenderer,
   PieChart,
   LineChart,
   BarChart,

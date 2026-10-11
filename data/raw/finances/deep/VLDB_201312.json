@@ -1,0 +1,26 @@
+{
+ "conf_id": "VLDB",
+ "tax_period": "201312",
+ "form_type": "990",
+ "total_revenue": 615555,
+ "total_expenses": 558090,
+ "net_assets_end": 321551,
+ "revenue_mix": {
+  "contributions": 0,
+  "program": 615416,
+  "investment": 139,
+  "royalties": 0,
+  "misc": 0
+ },
+ "expense_mix": {
+  "accounting_fees": 1350,
+  "conferences": 510707,
+  "student_travel": 26100,
+  "vldb_conference_endowment": 6176,
+  "data_base_school_china": 6000,
+  "mm_school": 5000,
+  "misc": 2757
+ },
+ "officers": null,
+ "notes": "Form 990 (2013 版)，非 990-EZ。PDF 第 1 页为 public.resource.org 隐私声明页，表格自 PDF p-02 起（PDF 页码 = 表格页码 + 1），Part VIII=p-10, Part IX=p-11, Part X=p-12。收入几乎全部为 program service revenue（2a ANNUAL CONFERENCES 608,944 + 2b ROYALTIES 6,472 = 2g 615,416，全额计入 unrelated business revenue 列），investment income (line 3) 139。royalties 已作为 program service 子行计入 program，Part VIII line 5 Royalties 为空，故 royalties 类别为 0。支出无薪酬（Part IX 全部行均为 0，除 accounting 11c=1,350、conferences 19=510,707、24a-24e 明细）；24e All other expenses = 2,757（program 507 + management 2,250）。校验：revenue_mix 合计 615,555 = Part I line 12 ✓；expense_mix 合计 558,090 = Part I line 18 ✓（Part IX program 554,490 + management 3,600 = 558,090）；net assets end 321,551 = Part X line 33（assets 321,551 - liabilities 0）✓；Part III program service expenses 554,490 与 Part IX 列 (B) 一致。principal officer / treasurer: Michael J Carey。"
+}

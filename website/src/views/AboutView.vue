@@ -115,6 +115,16 @@ useSeo({
               </div>
             </li>
           </ul>
+          <p class="text-gray-400 text-sm mt-4 mb-3">{{ t('about.data_sources_finances') }}</p>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-400 mt-1">•</span>
+              <div>
+                <a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener" class="text-blue-400 hover:underline">ProPublica Nonprofit Explorer</a>
+                — {{ t('about.src_irs') }}
+              </div>
+            </li>
+          </ul>
           <p class="text-gray-400 text-sm mt-4 mb-3">{{ t('about.data_sources_affiliations') }}</p>
           <ul class="space-y-3 text-gray-300">
             <li class="flex items-start gap-2">
@@ -193,6 +203,16 @@ useSeo({
             {{ t('about.open_data_text') }}
             <a href="https://github.com/morningD/lang.csconf/releases" target="_blank" rel="noopener" class="text-green-400 hover:underline">GitHub Releases</a>.
           </p>
+        </section>
+
+        <!-- Organizers: pointer to the dedicated directory page -->
+        <section class="card p-6 bg-gray-800/50 border-gray-700/50">
+          <h2 class="text-xl font-semibold text-white mb-3">{{ t('about.organizers_title') }}</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">{{ t('about.organizers_text') }}</p>
+          <router-link
+            :to="{ name: 'organizers' }"
+            class="inline-block text-blue-400 hover:text-blue-300 hover:underline"
+          >{{ t('about.organizers_link') }} →</router-link>
         </section>
 
         <!-- Credits -->

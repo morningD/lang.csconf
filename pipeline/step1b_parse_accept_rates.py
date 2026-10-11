@@ -82,20 +82,42 @@ ALIASES = {
 }
 
 
-def _clone_or_pull(url: str, dest: Path):
-    """Clone or pull a git repository."""
+def _configure_sparse_checkout(dest: Path, sparse_paths: tuple[str, ...], *, check: bool) -> None:
+    """Configure a repository to materialize only selected working-tree paths."""
+    subprocess.run(
+        ["git", "sparse-checkout", "init", "--no-cone"],
+        cwd=dest, check=check, capture_output=True,
+    )
+    subprocess.run(
+        ["git", "sparse-checkout", "set", "--no-cone", *sparse_paths],
+        cwd=dest, check=check, capture_output=True,
+    )
+
+
+def _clone_or_pull(url: str, dest: Path, *, sparse_paths: tuple[str, ...] | None = None) -> None:
+    """Clone or update a git repository, optionally using sparse checkout."""
     dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists():
+        if sparse_paths:
+            _configure_sparse_checkout(dest, sparse_paths, check=True)
         print(f"  Pulling {dest.name}...")
         subprocess.run(
             ["git", "pull", "--ff-only"],
             cwd=dest, check=False, capture_output=True,
         )
-    else:
-        print(f"  Cloning {dest.name}...")
+        return
+
+    print(f"  Cloning {dest.name}...")
+    clone_command = ["git", "clone", "--depth", "1"]
+    if sparse_paths:
+        clone_command.append("--no-checkout")
+    clone_command.extend([url, str(dest)])
+    subprocess.run(clone_command, check=True, capture_output=True)
+    if sparse_paths:
+        _configure_sparse_checkout(dest, sparse_paths, check=True)
         subprocess.run(
-            ["git", "clone", "--depth", "1", url, str(dest)],
-            check=True, capture_output=True,
+            ["git", "checkout"],
+            cwd=dest, check=True, capture_output=True,
         )
 
 
@@ -442,7 +464,7 @@ def run(force: bool = False, conferences_filter: list[str] | None = None):
     """Run step 1b: parse and merge acceptance rates."""
     print("Fetching acceptance rate sources...")
     _clone_or_pull(CS_CONF_STATS_URL, CS_CONF_STATS_DIR)
-    _clone_or_pull(CSCONFERENCES_URL, CSCONFERENCES_DIR)
+    _clone_or_pull(CSCONFERENCES_URL, CSCONFERENCES_DIR, sparse_paths=("/csconferences.csv",))
     _clone_or_pull(LIXIN4EVER_URL, LIXIN4EVER_DIR)
     _clone_or_pull(SECURITY_RATES_URL, SECURITY_RATES_DIR)
     # ccf-deadlines is already cloned by step 1

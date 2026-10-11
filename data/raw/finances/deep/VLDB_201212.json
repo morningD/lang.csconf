@@ -1,0 +1,26 @@
+{
+ "conf_id": "VLDB",
+ "tax_period": "201212",
+ "form_type": "990",
+ "total_revenue": 678771,
+ "total_expenses": 736957,
+ "net_assets_end": 264086,
+ "revenue_mix": {
+  "contributions": 0,
+  "program": 678457,
+  "investment": 314,
+  "royalties": 0,
+  "misc": 0
+ },
+ "expense_mix": {
+  "accounting_fees": 1350,
+  "conferences": 667019,
+  "student_travel_to_conf": 21000,
+  "vldb_conf_endowment_exp": 17042,
+  "database_school_china": 14000,
+  "student_fellowship_turkey": 9720,
+  "misc": 6826
+ },
+ "officers": null,
+ "notes": "Form 990 (2012 版，结构同 2011 旧表)。p-01 为隐私声明页，Part I 在 p-02；Part VIII=p-10、Part IX=p-11、Part X=p-12。全部关键数字经 600dpi 局部裁剪复核（spot/VLDB_201212/；300dpi 误读已修正：line 9 为 678,457 非 679,857、line 12 为 678,771 非 680,171、line 19 为 -58,186 非 -59,186、line 21 为 15,750 非 17,550、line 22 为 264,086 非 262,286）。收入（Part VIII col A）：line 2a ANNUAL CONFERENCES 672,610 + line 2b ROYALTIES 5,847 = 2g program service revenue 678,457；line 3 investment income 314。VLDB 惯例把 royalties 填在 program service revenue 区，照抄 program=678,457，royalties 类别留 0。校验1：678,457+314 = 678,771 = Part VIII line 12 = Part I line 12，diff=0 通过。支出：Part IX 仅 7 个非零行：11c accounting 1,350 + 19 conferences 667,019 + 24a STUDENT TRAVEL TO CONF 21,000 + 24b VLDB CONF ENDOWMENT EXP 17,042 + 24c DATABASE SCHOOL CHINA 14,000 + 24d STUDENT FLLWSHP IN TURKEY 9,720 + 24e all other 6,826 (B 4,076/C 2,750) = 736,957 = line 25 = Part I line 18，diff=0 通过（B 732,857 / C 4,100 亦闭合）。Part I 交叉：line 19 = -58,186 = 678,771-736,957 ✓；line 22 = 264,086 = 279,836-15,750 ✓，Part X line 26 liabilities 15,750 / line 32 EOY 264,086 一致 ✓。当年收不抵支 -58,186。无薪酬支出。"
+}

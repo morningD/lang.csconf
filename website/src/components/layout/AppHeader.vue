@@ -16,8 +16,11 @@ const languages = [
 ]
 
 function setLocale(code: string) {
-  locale.value = code
+  // Persist first, then reload: switching locale reactively leaves some
+  // precompiled bindings on the page in the previous language (observed on
+  // the finances view), so a full load guarantees a consistent render.
   localStorage.setItem('lang-csconf-locale', code)
+  if (locale.value !== code) window.location.reload()
 }
 
 const navItems = [

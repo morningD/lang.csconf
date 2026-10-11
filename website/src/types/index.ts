@@ -30,6 +30,100 @@ export interface ConferenceDetail {
   accept_rates?: Array<{ year: number; submitted: number; accepted: number }>
   note?: string
   affiliations?: AffiliationData
+  finances?: FinancesData
+  finances_unavailable?: FinancesUnavailable
+}
+
+export interface FinanceYear {
+  tax_period: string
+  tax_year: number
+  conference_year: number
+  revenue: number | null
+  expenses: number | null
+  net_income: number | null
+  net_assets: number | null
+  pdf_url: string | null
+  transcript?: string
+  manual?: boolean
+  revenue_mix?: Record<string, number> | null
+  expense_mix?: Record<string, number> | null
+  expense_partial?: Record<string, number | null> | null
+  /** Per-locale findings ({en,zh,ja,de}); legacy years may hold a plain string[]. */
+  findings?: Record<string, string[]> | string[]
+}
+
+export interface EntityOfficer {
+  name: string
+  title: string
+  hours?: number | null
+  compensation?: number | null
+  affiliation?: string | null
+  /** ISO country code of the affiliation's institution. */
+  country?: string | null
+}
+
+export interface EntityCommitteeMember {
+  name: string
+  title: string
+  affiliation?: string | null
+  country?: string | null
+}
+
+export interface EntityContractor {
+  name: string
+  description?: string | null
+  compensation: number
+}
+
+export interface EntityInsight {
+  formation_year?: number | null
+  state?: string | null
+  officers?: EntityOfficer[]
+  /** Official foundation board & advisors from the conference website (beyond the 990 officers). */
+  board?: { members: EntityCommitteeMember[]; source?: string }
+  /** Conference organizing committees by edition year, each with its source URL. */
+  committee?: Record<string, { members: EntityCommitteeMember[]; source?: string }>
+  /** Independent contractors ≥$100K disclosed in Part VII Section B. */
+  contractors?: EntityContractor[]
+  /** Highest compensated employees disclosed in Part VII Section A. */
+  top_employees?: EntityOfficer[]
+  findings?: string[]
+  /** Localized explanation {en,zh,ja,de} (older data: plain string). */
+  notes?: Record<string, string> | string | null
+  tax_period?: string | null
+}
+
+export interface FinancesData {
+  /** Official display name (e.g. "NeurIPS"), from the conference registry. */
+  title?: string
+  org_name: string
+  ein: string
+  scope: 'single_conference' | 'society' | 'foundation'
+  /** Localized scope explanation {en,zh,ja,de} (older data: plain string). */
+  scope_note: Record<string, string> | string
+  usable: boolean
+  propublica_url: string
+  source: string
+  fiscal_note: string
+  /** Fiscal-year end month; drives the localized fiscal-note template. */
+  fiscal_end_month?: number
+  years: Record<string, FinanceYear>
+  /** Per-year submission counts (accept_rates), for the chart overlay. */
+  submissions?: Record<string, number>
+  /** Per-year acceptance rate in percent (accepted/submitted), for the chart overlay. */
+  accept_rates_pct?: Record<string, number>
+  entity?: EntityInsight
+}
+
+export interface FinancesUnavailable {
+  org_name: string
+  scope_note: string
+  source: string
+}
+
+export interface FinancesIndex {
+  last_updated: string
+  conferences: Record<string, FinancesData>
 }
 
 export interface GlobalSummary {

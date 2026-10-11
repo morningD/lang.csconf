@@ -1,0 +1,27 @@
+{
+ "conf_id": "VLDB",
+ "tax_period": "201912",
+ "form_type": "990",
+ "total_revenue": 1140363,
+ "total_expenses": 1109376,
+ "net_assets_end": 458424,
+ "revenue_mix": {
+  "contributions": 0,
+  "program": 1140332,
+  "investment": 31,
+  "royalties": 0,
+  "misc": 0
+ },
+ "expense_mix": {
+  "legal_fees": 2925,
+  "accounting_fees": 2190,
+  "conferences": 1079696,
+  "student_travel": 11500,
+  "teaching_big_data_courses": 4734,
+  "amw_school": 4250,
+  "administrative_services": 2500,
+  "misc": 1581
+ },
+ "officers": null,
+ "notes": "Form 990 (2019 版)。p-01 即 Part I 首页（无隐私页偏移）；Part VIII=p-09 (Page 9)、Part IX=p-10 (Page 10)。全部关键数字经 600dpi 局部裁剪复核（spot/VLDB_201912/；300dpi 误读已修正：Part I line 12 / Part VIII line 12 为 1,140,363 非 1,140,353——2g 1,140,332 + line 3 的 31 = 1,140,363 精确闭合）。收入（Part VIII col A）：line 2a CONFERENCE REGISTRATIONS FEES 692,217 + line 2b CONFERENCE SPONSORSHIPS 443,900 + line 2c ROYALTIES 4,215 = 2g program service revenue 1,140,332；line 3 investment income 31。VLDB 惯例把 royalties 填在 program service revenue 区，照抄 program=1,140,332，royalties 类别留 0。校验1：1,140,332+31 = 1,140,363 = Part VIII line 12 = Part I line 12，diff=0 通过。支出：Part IX 仅 8 个非零行：11b legal 2,925 + 11c accounting 2,190 + 19 conferences 1,079,696 + 24a STUDENT TRAVEL TO CONF 11,500 + 24b TEACHING BIG DATA COURSES 4,734 + 24c AMW SCHOOL 4,250 + 24d ADMINISTRATIVE SERVICES 2,500 + 24e all other 1,581 (B 581/C 1,000) = 1,109,376 = line 25 = Part I line 18，diff=0 通过（B 1,100,761 / C 8,615 亦闭合）。Part I 交叉：line 19 = 30,987 = 1,140,363-1,109,376 ✓；line 22 net assets 458,424 = assets 458,424 - liabilities 0 ✓；BOY 427,437 + 30,987 = 458,424 ✓（BOY 与 VLDB_201812 EOY 一致）。expense_mix 命名沿用 VLDB_201812.json 风格。当年盈余 +30,987。无薪酬支出。"
+}

@@ -14,8 +14,8 @@ Visualizing the linguistic diversity of first authors across CCF-rated CS confer
 
 | Metric | Value |
 |--------|-------|
-| **Conferences** | 416 (CCF A/B/C + non-ranked) |
-| **Papers** | 909,106 |
+| **Conferences** | 413 (CCF A/B/C + non-ranked) |
+| **Papers** | 940,876 |
 | **Year range** | 2010–2026 |
 | **Categories** | 10 (AI, DB, NW, SE, CG, CT, HI, SC, DS, MX) |
 | **Languages tracked** | 17 |
@@ -31,6 +31,7 @@ The raw crawled dataset (909k+ first-author records from DBLP + OpenReview, 2010
 - **Compare Conferences** — Side-by-side radar charts for 2–4 conferences
 - **Trends** — Filter by CCF category (AI/DB/SE...) and rank (A/B/C/N) to see how things change over time
 - **CCF Rank History** — Track how conference rankings evolved across 6 CCF editions (2011–2026)
+- **Financial Analysis** — Revenue, expenses, and expense composition of 12 CCF-A conference foundations (IRS Form 990 via ProPublica), 2011–2024, with submission/acceptance overlays and AI-generated yearly insights
 - **4 Languages** — UI available in English, 中文, 日本語, Deutsch
 
 ## Architecture
@@ -45,14 +46,17 @@ lang.csconf/
 │   ├── step2b_crawl_venues.py     # Crawl DBLP for venue city/country
 │   ├── step2c_fill_gaps.py        # Fill SPARQL indexing gaps via Search API
 │   ├── step2d_crawl_openreview.py # Crawl OpenReview for AI/ML conferences
+│   ├── step2f_fetch_finances.py   # Fetch conference finances from IRS Form 990 (ProPublica)
 │   ├── step3_classify_names.py    # Predict language from names (fastText + rules)
 │   ├── step4_generate_stats.py    # Aggregate statistics
 │   └── run_all.py                 # Orchestrator
 ├── scripts/
-│   └── extract_ccf_ranks.py       # Extract ranks + categories from CCF PDFs
+│   ├── extract_ccf_ranks.py       # Extract ranks + categories from CCF PDFs
+│   ├── check_i18n.py              # i18n regression guard (locale sync, title/mix-key coverage)
+│   └── finances/                  # IRS TEOS XML batch extraction tooling
 ├── website/           # Vue 3 + Vite: static site consuming JSON stats
 │   └── src/
-│       ├── views/     # 5 pages: Home, Conference, Compare, Trends, About
+│       ├── views/     # 6 pages: Home, Conference, Compare, Trends, Finances, About
 │       ├── components/# ECharts wrappers, layout, PixelRobots animation
 │       └── i18n/      # 4 locale files (en/zh/ja/de)
 ├── data/              # Generated data (committed to repo)
@@ -103,6 +107,7 @@ python -m pipeline.run_all --force
 | 2b. Crawl venues | Scrapes DBLP HTML for conference city/country |
 | 2c. Fill gaps | Fills SPARQL indexing gaps via DBLP Search API |
 | 2d. OpenReview | Crawls OpenReview for AI/ML conferences (NeurIPS, ICLR, ICML, etc.) |
+| 2f. Finances | Fetches conference-foundation finances from IRS Form 990 via ProPublica |
 | 3. Classify names | Predicts language using fastText + rule-based surname ensemble |
 | 4. Generate stats | Aggregates by conference, category, rank, year → JSON |
 
@@ -158,8 +163,8 @@ The dry-run reads no API keys, makes no network request, and only accepts existi
 
 | 指标 | 数值 |
 |------|------|
-| **会议数** | 416（CCF A/B/C + 未评级） |
-| **论文数** | 909,106 |
+| **会议数** | 413（CCF A/B/C + 未评级） |
+| **论文数** | 940,876 |
 | **年份范围** | 2010–2026 |
 | **学科分类** | 10（AI、DB、NW、SE、CG、CT、HI、SC、DS、MX） |
 | **追踪语言数** | 17 |
@@ -175,6 +180,7 @@ The dry-run reads no API keys, makes no network request, and only accepts existi
 - **会议对比** — 2–4 个会议的雷达图并排对比
 - **趋势分析** — 按 CCF 分类（AI/DB/SE...）和等级（A/B/C/N）筛选，观察历年变化
 - **CCF 等级变迁** — 追踪 6 版 CCF 推荐列表（2011–2026）中会议等级的变化
+- **财务分析** — 12 个 CCF-A 会议主办机构的收入、支出与支出构成（IRS Form 990，经 ProPublica），覆盖 2011–2024，叠加投稿量/接收率曲线与 AI 年度解读
 - **4 种界面语言** — 支持 English、中文、日本語、Deutsch
 
 ## 数据管道
@@ -187,6 +193,7 @@ The dry-run reads no API keys, makes no network request, and only accepts existi
 | 2b. 爬取会议地点 | 从 DBLP HTML 抓取城市/国家信息 |
 | 2c. 补充缺失 | 通过 DBLP Search API 补充 SPARQL 索引空缺 |
 | 2d. OpenReview | 爬取 AI/ML 会议数据（NeurIPS、ICLR、ICML 等） |
+| 2f. 财务数据 | 经 ProPublica 获取会议主办机构的 IRS Form 990 财务申报 |
 | 3. 姓名分类 | 使用 fastText + 规则姓氏匹配组合预测语言 |
 | 4. 生成统计 | 按会议、分类、等级、年份聚合 → JSON |
 
@@ -201,6 +208,16 @@ python -m pipeline.run_all
 # 同步统计数据到网站
 rsync -av --delete data/stats/ website/public/data/stats/
 ```
+
+### i18n 校验
+
+修改数据字段或界面文案后运行（CI 部署前也会自动执行）：
+
+```bash
+cd website && pnpm check:i18n
+```
+
+脚本会检查四种语言的词条同步、财务页面所有数据驱动文案（支出分类、头衔、国家、范围徽章）的翻译覆盖，防止出现漏翻的英文原文。
 
 如需重新爬取某个会议（例如 DBLP 后续新增了论文）：
 

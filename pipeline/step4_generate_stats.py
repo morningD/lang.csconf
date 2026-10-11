@@ -118,6 +118,63 @@ def load_year_notes() -> dict[str, dict[str, dict]]:
     return result
 
 
+def load_finances() -> dict[str, dict]:
+    """Load conference finances from step2f. Returns {conf_id: finance_data}.
+
+    Entries with usable=False (e.g. CVPR/ICCV: registration revenue held by
+    IEEE, CVF 990 not representative) are kept for reference in a separate
+    dict so the UI can explain why data is missing.
+    """
+    finances_dir = Path(__file__).parent.parent / "data" / "raw" / "finances"
+    result: dict[str, dict] = {}
+    if not finances_dir.exists():
+        return {}
+    for f in sorted(finances_dir.glob("*.json")):
+        if f.name.startswith("_"):
+            continue
+        with open(f, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        conf_id = f.stem
+        entry = {k: data[k] for k in (
+            "org_name", "ein", "scope", "scope_note", "usable",
+            "propublica_url", "source", "fiscal_note", "fiscal_end_month", "years",
+        ) if k in data}
+        result[conf_id] = entry
+    return result
+
+
+def load_finances_extras() -> tuple[dict[str, dict], dict[str, dict]]:
+    """Load AI-generated finances analysis data.
+
+    Returns (insights, deep):
+      insights: {conf_id: {year_str: {lang: [finding]*3}}} — per-year
+        four-language findings (data/raw/finances/insights/{CONF}.json)
+      deep: {conf_id: {tax_period: data}} — per-filing deep extractions:
+        expense_mix (+ officers/notes on the latest filing)
+        (data/raw/finances/deep/{CONF}_{TAXPERIOD}.json)
+    """
+    base = Path(__file__).parent.parent / "data" / "raw" / "finances"
+    insights: dict[str, dict] = {}
+    insights_dir = base / "insights"
+    if insights_dir.exists():
+        for f in sorted(insights_dir.glob("*.json")):
+            with open(f, "r", encoding="utf-8") as fh:
+                data = json.load(fh)
+            insights[data.get("conf_id", f.stem)] = data.get("years", {})
+
+    deep: dict[str, dict[str, dict]] = {}
+    deep_dir = base / "deep"
+    if deep_dir.exists():
+        for f in sorted(deep_dir.glob("*.json")):
+            if f.name.startswith("_"):
+                continue
+            with open(f, "r", encoding="utf-8") as fh:
+                data = json.load(fh)
+            conf_id = data.get("conf_id", f.stem.rsplit("_", 1)[0])
+            deep.setdefault(conf_id, {})[str(data.get("tax_period", ""))] = data
+    return insights, deep
+
+
 def compute_language_distribution(authors: list[dict]) -> dict[str, int]:
     """Count authors by language group."""
     counts = defaultdict(int)
@@ -830,6 +887,7 @@ def run(force: bool = False):
     accept_rates = load_accept_rates()
     year_notes = load_year_notes()
     all_affiliations = load_affiliations()
+    all_finances = load_finances()
 
     if not all_data:
         print("No classified data found. Run step 3 first.")
@@ -968,6 +1026,15 @@ def run(force: bool = False):
         # Add per-year notes if available
         if conf_id in year_notes:
             conf_stats["year_notes"] = year_notes[conf_id]
+        # Add finances data if available (only usable entries)
+        if conf_id in all_finances and all_finances[conf_id].get("usable", True):
+            conf_stats["finances"] = all_finances[conf_id]
+        elif conf_id in all_finances:
+            conf_stats["finances_unavailable"] = {
+                "org_name": all_finances[conf_id]["org_name"],
+                "scope_note": all_finances[conf_id]["scope_note"],
+                "source": all_finances[conf_id]["source"],
+            }
         # Add affiliation data if available
         if conf_id in all_affiliations:
             conf_affils = all_affiliations[conf_id]
@@ -1069,10 +1136,97 @@ def run(force: bool = False):
     # 7. affiliation trend SQLite archive and lazy-loaded web chunks
     generate_affiliation_trends(all_affiliations, conf_meta)
 
+    # 7b. lightweight finances file for the Finances view
+    fin_insights, fin_deep = load_finances_extras()
+    generate_finances_stats(all_finances, fin_insights, fin_deep, conf_meta, accept_rates)
+
     # 8. affiliation_index.json — lightweight index for Compare page
     generate_affiliation_index()
 
     print(f"Stats generated: {total_papers} papers across {len(conf_years_seen)} conferences → {STATS_DIR}")
+
+
+def generate_finances_stats(all_finances: dict[str, dict],
+                            insights: dict[str, dict] | None = None,
+                            deep: dict[str, dict] | None = None,
+                            conf_meta_map: dict[str, dict] | None = None,
+                            accept_rates: dict[str, list] | None = None) -> None:
+    """Generate lightweight data/stats/finances.json for the Finances view.
+
+    Contains only finances metadata (no paper data) so the view can fetch
+    all conferences in one small request. Merges in per-year AI findings
+    (insights) and latest-filing entity/expense data (deep).
+    """
+    insights = insights or {}
+    deep = deep or {}
+    conf_meta_map = conf_meta_map or {}
+    out: dict[str, dict] = {}
+    for conf_id, data in all_finances.items():
+        meta = conf_meta_map.get(conf_id, {})
+        entry: dict = {
+            "title": meta.get("title", conf_id),
+            "org_name": data["org_name"],
+            "scope": data.get("scope", "society"),
+            "scope_note": data.get("scope_note", ""),
+            "usable": data.get("usable", True),
+            "source": data.get("source", "propublica"),
+            "fiscal_note": data.get("fiscal_note", ""),
+            "fiscal_end_month": data.get("fiscal_end_month"),
+            "years": data.get("years", {}),
+        }
+        # Per-year submission counts (for the submissions overlay in the main chart)
+        ars = (accept_rates or {}).get(conf_id) or []
+        subs = {str(ar["year"]): ar["submitted"] for ar in ars if ar.get("submitted")}
+        if subs:
+            entry["submissions"] = subs
+        acc = {str(ar["year"]): round(ar["accepted"] / ar["submitted"] * 100, 1) for ar in ars if ar.get("submitted") and ar.get("accepted")}
+        if acc:
+            entry["accept_rates_pct"] = acc
+        if not entry["usable"]:
+            entry["unavailable_reason"] = entry["scope_note"]
+        # Per-year findings from the analysis step
+        conf_findings = insights.get(conf_id, {})
+        for yr, ydata in entry["years"].items():
+            if yr in conf_findings:
+                ydata["findings"] = conf_findings[yr]
+        # Deep extractions: expense_mix per filing tax_period, entity/officers from the latest
+        d_map = deep.get(conf_id, {})
+        if d_map:
+            latest_tp = max(d_map)
+            latest = d_map[latest_tp]
+            if latest.get("officers"):
+                # 新税期 PDF 通常只提取 officers/expense_mix；committee、contractors 等
+                # 从较早的税期继承（逐字段取最新有值者）。
+                def _latest_field(key: str) -> list:
+                    for tp in sorted(d_map, reverse=True):
+                        v = d_map[tp].get(key)
+                        if v:
+                            return v
+                    return []
+                entry["entity"] = {
+                    "officers": latest.get("officers", []),
+                    "notes": latest.get("notes", ""),
+                    "tax_period": latest_tp,
+                    "board": _latest_field("board"),
+                    "committee": _latest_field("committee"),
+                    "contractors": _latest_field("contractors"),
+                    "top_employees": _latest_field("top_employees"),
+                }
+            for yr, ydata in entry["years"].items():
+                dd = d_map.get(str(ydata.get("tax_period", "")))
+                if dd and dd.get("expense_mix"):
+                    ydata["expense_mix"] = dd["expense_mix"]
+        out[conf_id] = entry
+    payload = {
+        "last_updated": datetime.now().strftime("%Y-%m-%d"),
+        "conferences": dict(sorted(out.items())),
+    }
+    _write_json(STATS_DIR / "finances.json", payload)
+    n_usable = sum(1 for e in out.values() if e["usable"])
+    total_years = sum(len(e["years"]) for e in out.values() if e["usable"])
+    n_findings = sum(1 for e in out.values() for y in e["years"].values() if y.get("findings"))
+    print(f"Finances: {n_usable} usable conferences, {total_years} fiscal years, "
+          f"{n_findings} years with findings -> finances.json")
 
 
 def generate_affiliation_trends(
