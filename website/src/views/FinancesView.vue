@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataFetch } from '@/composables/useDataFetch'
@@ -8,7 +8,7 @@ import type { FinancesIndex, FinancesData, FinanceYear } from '@/types'
 
 const route = useRoute()
 const { t, te, locale } = useI18n()
-const { fetchFinances } = useDataFetch()
+const { fetchFinances, fetchConference } = useDataFetch()
 
 const confId = computed(() => route.params.id as string)
 
@@ -63,6 +63,30 @@ onMounted(async () => {
     loading.value = false
   }
 })
+
+// ---- Venue labels under the year axis (from the conference page's venue data) ----
+const venueMap = ref<Record<string, { city: string; country: string }>>({})
+watch(confId, async (id) => {
+  try {
+    const detail = await fetchConference(id)
+    venueMap.value = detail.venues ?? {}
+  } catch {
+    venueMap.value = {}
+  }
+}, { immediate: true })
+
+/** Two-line axis label: year over host city (truncated), plain year when unknown. */
+function venueAxisLabel(y: number): string {
+  const v = venueMap.value[String(y)]
+  if (!v?.city) return String(y)
+  const city = v.city.length > 12 ? `${v.city.slice(0, 11)}…` : v.city
+  return `{yr|${y}}\n{loc|${city}}`
+}
+
+const VENUE_AXIS_RICH = {
+  yr: { color: '#9ca3af', fontSize: 10, lineHeight: 13, align: 'center' as const },
+  loc: { color: '#6b7280', fontSize: 9, lineHeight: 11, align: 'center' as const },
+}
 
 const currentEntry = computed<FinancesData | null>(() => {
   return financesIndex.value?.conferences[confId.value] ?? null
@@ -625,11 +649,16 @@ const mixStackOption = computed(() => {
         return lines.length ? `${axisValue}<br/>` + lines.join('<br/>') : ''
       },
     },
-    grid: { left: 60, right: hasSubs && hasAcc ? 95 : hasSubs || hasAcc ? 50 : 20, top: 36, bottom: 30 },
+    grid: { left: 60, right: hasSubs && hasAcc ? 95 : hasSubs || hasAcc ? 50 : 20, top: 36, bottom: 44 },
     xAxis: {
       type: 'category',
       data: years,
-      axisLabel: { color: '#9ca3af' },
+      axisLabel: {
+        color: '#9ca3af',
+        interval: 0,
+        formatter: (y: number) => venueAxisLabel(y),
+        rich: VENUE_AXIS_RICH,
+      },
       axisLine: { lineStyle: { color: '#4b5563' } },
     },
     yAxis: [
@@ -841,11 +870,16 @@ const confChartOption = computed(() => {
       },
     },
     legend: { textStyle: { color: '#9ca3af' }, top: 0 },
-    grid: { left: 60, right: rightAxes.length === 2 ? 95 : rightAxes.length === 1 ? 50 : 20, top: 36, bottom: 30 },
+    grid: { left: 60, right: rightAxes.length === 2 ? 95 : rightAxes.length === 1 ? 50 : 20, top: 36, bottom: 44 },
     xAxis: {
       type: 'category',
       data: years,
-      axisLabel: { color: '#9ca3af' },
+      axisLabel: {
+        color: '#9ca3af',
+        interval: 0,
+        formatter: (y: number) => venueAxisLabel(y),
+        rich: VENUE_AXIS_RICH,
+      },
       axisLine: { lineStyle: { color: '#4b5563' } },
     },
     yAxis: [moneyAxis, ...rightAxes],
