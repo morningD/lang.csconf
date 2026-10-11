@@ -1,0 +1,371 @@
+{
+  "conference": "MLSYS",
+  "year": 2021,
+  "total_papers": 52,
+  "total_matched": 21,
+  "total_with_affiliation": 3,
+  "coverage_pct": 5.8,
+  "source": "openalex",
+  "papers": [
+    {
+      "title": "Amazon SageMaker Debugger: A System for Real-Time Insights into Machine Learning Model Training.",
+      "first_author": "Nathalie Rauschmayr",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Horizontally Fused Training Array: An Effective Hardware Utilization Squeezer for Training Novel Deep Learning Models.",
+      "first_author": "Shang Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ModularNAS: Towards Modularized and Reusable Neural Architecture Search.",
+      "first_author": "Yunfeng Lin",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers.",
+      "first_author": "Colby R. Banbury",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "PipeMare: Asynchronous Pipeline Parallel DNN Training.",
+      "first_author": "Bowen Yang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "To Bridge Neural Network Design and Real-World Performance: A Behaviour Study for Neural Networks.",
+      "first_author": "Xiaohu Tang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Deep Learning Based Cost Model for Automatic Code Optimization.",
+      "first_author": "Riyadh Baghdadi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models.",
+      "first_author": "Chunxing Yin",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3121395088",
+      "doi": "https://doi.org/10.48550/arxiv.2101.11714",
+      "institution": null
+    },
+    {
+      "title": "Data Movement Is All You Need: A Case Study on Optimizing Transformers.",
+      "first_author": "Andrei Ivanov",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Value Learning for Throughput Optimization of Deep Learning Workloads.",
+      "first_author": "Benoit Steiner",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FirePlace: Placing Firecraker Virtual Machines with Hindsight Imitation.",
+      "first_author": "Bharathan Balaji",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Cortex: A Compiler for Recursive Deep Learning Models.",
+      "first_author": "Pratik Fegade",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "FLAML: A Fast and Lightweight AutoML Library.",
+      "first_author": "Chi Wang",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "A Distributed Graph-Theoretic Framework for Automatic Parallelization in Multi-core Systems.",
+      "first_author": "Guixiang Ma",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Scaling Polyhedral Neural Network Verification on GPUs.",
+      "first_author": "Christoph Müller",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Towards Scalable Distributed Training of Deep Learning on Public Cloud Clusters.",
+      "first_author": "Shaohuai Shi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "ByzShield: An Efficient and Robust System for Distributed Training.",
+      "first_author": "Konstantinos Konstantinidis",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Fluid: Resource-aware Hyperparameter Tuning Engine.",
+      "first_author": "Peifeng Yu",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "TensorFlow Lite Micro: Embedded Machine Learning for TinyML Systems.",
+      "first_author": "Robert David",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "SUOD: Accelerating Large-Scale Unsupervised Heterogeneous Outlier Detection.",
+      "first_author": "Yue Zhao",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerating SLIDE Deep Learning on Modern CPUs: Vectorization, Quantizations, Memory Optimizations, and More.",
+      "first_author": "Shabnam Daghaghi",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "CODE: Compiler-based Neuron-aware Ensemble training.",
+      "first_author": "Ettore M. G. Trainiti",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Learning Fitness Functions for Machine Programming.",
+      "first_author": "Shantanu Mandal",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Scaling Distributed Training with Adaptive Summation.",
+      "first_author": "Saeed Maleki",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Nimble: Efficiently Compiling Dynamic Neural Networks for Model Inference.",
+      "first_author": "Haichen Shen",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Don't Forget to Sign the Gradients!",
+      "first_author": "Omid Aramoon",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3137108939",
+      "doi": "https://doi.org/10.48550/arxiv.2103.03701",
+      "institution": null
+    },
+    {
+      "title": "Accounting for Variance in Machine Learning Benchmarks.",
+      "first_author": "Xavier Bouthillier",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3135261467",
+      "doi": "https://doi.org/10.48550/arxiv.2103.03098",
+      "institution": "Université de Montréal",
+      "institution_country": "CA",
+      "institution_ror": "https://ror.org/0161xgx34"
+    },
+    {
+      "title": "Boveda: Building an On-Chip Deep Learning Memory Hierarchy Brick by Brick.",
+      "first_author": "Isak Edo Vivancos",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3136484378",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "IOS: Inter-Operator Scheduler for CNN Acceleration.",
+      "first_author": "Yaoyao Ding",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Larq Compute Engine: Design, Benchmark and Deploy State-of-the-Art Binarized Neural Networks.",
+      "first_author": "Tom Bannink",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Lost in Pruning: The Effects of Pruning Neural Networks beyond Test Accuracy.",
+      "first_author": "Lucas Liebenwein",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3139460307",
+      "doi": "https://doi.org/10.48550/arxiv.2103.03014",
+      "institution": null
+    },
+    {
+      "title": "An Efficient Statistical-based Gradient Compression Technique for Distributed Training Systems.",
+      "first_author": "Ahmed M. Abdelmoniem",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3124349893",
+      "doi": "https://doi.org/10.48550/arxiv.2101.10761",
+      "institution": "King Abdullah University of Science and Technology",
+      "institution_country": "SA",
+      "institution_ror": "https://ror.org/01q3tbs38"
+    },
+    {
+      "title": "Pufferfish: Communication-efficient Models At No Extra Cost.",
+      "first_author": "Hongyi Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3134833401",
+      "doi": "https://doi.org/10.48550/arxiv.2103.03936",
+      "institution": "University of Wisconsin–Madison",
+      "institution_country": "US",
+      "institution_ror": "https://ror.org/01y2jtd41"
+    },
+    {
+      "title": "Learning on Distributed Traces for Data Center Storage Systems.",
+      "first_author": "Giulio Zhou",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3138510784",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "In-network Aggregation for Shared Machine Learning Clusters.",
+      "first_author": "Nadeen Gebara",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3137135510",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "VS-Quant: Per-vector Scaled Quantization for Accurate Low-Precision Neural Network Inference.",
+      "first_author": "Steve Dai",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3136994305",
+      "doi": "https://doi.org/10.48550/arxiv.2102.04503",
+      "institution": null
+    },
+    {
+      "title": "Bit Error Robustness for Energy-Efficient DNN Accelerators.",
+      "first_author": "David Stutz",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W4287209357",
+      "doi": "https://doi.org/10.48550/arxiv.2104.08323",
+      "institution": null
+    },
+    {
+      "title": "Understanding and Improving Failure Tolerant Training for Deep Learning Recommendation with Partial Recovery.",
+      "first_author": "Kiwan Maeng",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3137114593",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "sensAI: ConvNets Decomposition via Class Parallelism for Fast Inference on Live Data.",
+      "first_author": "Guanhua Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3137813374",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "A Learned Performance Model for Tensor Processing Units.",
+      "first_author": "Samuel J. Kaufman",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Equality Saturation for Tensor Graph Superoptimization.",
+      "first_author": "Yichen Yang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3120853372",
+      "doi": "https://doi.org/10.48550/arxiv.2101.01332",
+      "institution": null
+    },
+    {
+      "title": "RL-Scope: Cross-stack Profiling for Deep Reinforcement Learning Workloads.",
+      "first_author": "James Gleeson",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3137508551",
+      "doi": "https://doi.org/10.48550/arxiv.2102.04285",
+      "institution": null
+    },
+    {
+      "title": "Adaptive Gradient Communication via Critical Learning Regime Identification.",
+      "first_author": "Saurabh Agarwal",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3137328576",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Pipelined Backpropagation at Scale: Training Large Models without Batches.",
+      "first_author": "Atli Kosson",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Swift for TensorFlow: A portable, flexible platform for deep learning.",
+      "first_author": "Brennan Saeta",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Rethinking Floating Point Overheads for Mixed Precision DNN Accelerators.",
+      "first_author": "Hamzah Abdel-Aziz",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3136197290",
+      "doi": "https://doi.org/10.48550/arxiv.2101.11748",
+      "institution": null
+    },
+    {
+      "title": "Wavelet: Efficient DNN Training with Tick-Tock Scheduling.",
+      "first_author": "Guanhua Wang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3138327474",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "Doping: A technique for Extreme Compression of LSTM Models using Sparse Structured Additive Matrices.",
+      "first_author": "Urmish Thakker",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3136481171",
+      "doi": null,
+      "institution": null
+    },
+    {
+      "title": "MicroRec: Efficient Recommendation Inference by Hardware and Data Structure Solutions.",
+      "first_author": "Wenqi Jiang",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3133241465",
+      "doi": "https://doi.org/10.3929/ethz-b-000470540",
+      "institution": null
+    },
+    {
+      "title": "Characterizing and Taming Model Instability Across Edge Devices.",
+      "first_author": "Eyal Cidon",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Exploring the Limits of Concurrency in ML Training on Google TPUS.",
+      "first_author": "Sameer Kumar",
+      "matched": false,
+      "institution": null
+    },
+    {
+      "title": "Accelerate Inference of CNNs for Video Analysis While Preserving Exactness Exploiting Activation Sparsity.",
+      "first_author": "Toshiaki Wakatsuki",
+      "matched": true,
+      "openalex_id": "https://openalex.org/W3138288535",
+      "doi": null,
+      "institution": null
+    }
+  ]
+}
