@@ -56,7 +56,7 @@ lang.csconf/
 │   └── finances/                  # IRS TEOS XML batch extraction tooling
 ├── website/           # Vue 3 + Vite: static site consuming JSON stats
 │   └── src/
-│       ├── views/     # 6 pages: Home, Conference, Compare, Trends, Finances, About
+│       ├── views/     # 7 pages: Home, Conference, Compare, Trends, Finances, Organizers, About
 │       ├── components/# ECharts wrappers, layout, PixelRobots animation
 │       └── i18n/      # 4 locale files (en/zh/ja/de)
 ├── data/              # Generated data (committed to repo)
