@@ -1,0 +1,13 @@
+#!/bin/sh
+# Reject any macOS Finder duplicate ("file 2.ext", "file 13.sqlite", ...)
+# from entering the repository. .gitignore already hides them; this is the
+# backstop in case an ignore rule is ever edited away or a path is forced.
+hits=$(git diff --cached --name-only | grep -E '(^|/)[^/]* [0-9]+\.[^/]+$')
+if [ -n "$hits" ]; then
+  echo "ERROR: macOS duplicate files staged — commit refused:" >&2
+  echo "$hits" >&2
+  echo "" >&2
+  echo "These are Finder copy artifacts (\"Keep Both\"). Delete them:" >&2
+  echo "  git restore --staged --worktree '<file>'   # or rm the file" >&2
+  exit 1
+fi

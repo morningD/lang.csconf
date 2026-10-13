@@ -70,6 +70,10 @@ lang.csconf/
 
 ## Quick Start
 
+```bash
+git config core.hooksPath .githooks   # enable the pre-commit guard (once per clone)
+```
+
 ### Website Development
 
 ```bash
