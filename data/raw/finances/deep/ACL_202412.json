@@ -1,0 +1,108 @@
+{
+  "conf_id": "ACL",
+  "tax_period": "202412",
+  "form_type": "990-EZ",
+  "total_revenue": 8415185,
+  "total_expenses": 6494013,
+  "net_assets_end": 8951225,
+  "revenue_mix": {
+    "contributions": 1322158,
+    "program": 7091209,
+    "investment": 0,
+    "royalties": 0,
+    "misc": 1818
+  },
+  "officers": [
+    {
+      "name": "Mohit Bansal",
+      "title": "Trustee",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "University of North Carolina at Chapel Hill",
+      "country": "US"
+    },
+    {
+      "name": "Vera Demberg",
+      "title": "Trustee",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "Saarland University",
+      "country": "DE"
+    },
+    {
+      "name": "Yuki Arase",
+      "title": "Trustee",
+      "hours": 2.0,
+      "compensation": 0
+    },
+    {
+      "name": "Wei Lu",
+      "title": "CL Editor",
+      "hours": 2.0,
+      "compensation": 0
+    },
+    {
+      "name": "Roberto Basili",
+      "title": "Chair of EACL",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "University of Rome Tor Vergata",
+      "country": "IT"
+    },
+    {
+      "name": "Emily M. Bender",
+      "title": "President",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "University of Washington",
+      "country": "US"
+    },
+    {
+      "name": "Chengqing Zong",
+      "title": "Vice President",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "Soochow University",
+      "country": "CN"
+    },
+    {
+      "name": "Barbara Plank",
+      "title": "Vice President Elect",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "LMU Munich",
+      "country": "DE"
+    },
+    {
+      "name": "Iryna Gurevych",
+      "title": "Past President",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "Technical University of Darmstadt (UKP Lab)",
+      "country": "DE"
+    },
+    {
+      "name": "David Yarowsky",
+      "title": "Treasurer",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "Johns Hopkins University",
+      "country": "US"
+    },
+    {
+      "name": "Shiqi Zhao",
+      "title": "Secretary",
+      "hours": 2.0,
+      "compensation": 0,
+      "affiliation": "Rutgers University–Camden",
+      "country": "US"
+    }
+  ],
+  "notes": {
+    "en": "11 volunteer officers (compensation all $0). ACL filed the condensed 990-EZ form for 2024, so no expense breakdown and no compensation detail are disclosed this year.",
+    "zh": "11 名志愿官员（薪酬均为 0 美元）。ACL 2024 年度改报 990-EZ 简表，本年度未披露支出明细与薪酬明细。",
+    "ja": "11名のボランティア役員（報酬は全員0ドル）。ACLは2024年度から990-EZ簡易様式で申告したため、本年度は支出内訳と報酬の詳細が開示されていません。",
+    "de": "11 ehrenamtliche Amtsträger (alle Vergütungen 0 $). Die ACL hat für 2024 das Kurzformular 990-EZ verwendet, daher gibt es in diesem Jahr keine Aufschlüsselung der Ausgaben und Vergütungen."
+  },
+  "extraction_notes": "Extracted from IRS TEOS e-file XML (object 202503189349303605_public.xml, zip 2025_TEOS_XML_11A, filed 2025-03-18). Closure: revenue mix 1322158+7091209+0+0+1818 = 8415185 = CYTotalRevenueAmt (exact); expenses 96579+6397434 = 6494013 = CYTotalExpensesAmt (exact); net assets 6872051+1921172 differs by +841998 from EOY 8951225 (990-EZ carries OtherChangesInNetAssetsAmt, expected). ProPublica had not ingested this filing as of 2026-10-13."
+}

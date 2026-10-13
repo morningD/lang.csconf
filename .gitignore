@@ -76,3 +76,7 @@ data/raw/finances/pdfs/
 .agents/
 .zcode/
 agent/
+
+# macOS Finder duplicates ("file 2.json") — never commit these again
+*\ [0-9].*
+*\ [0-9][0-9].*
