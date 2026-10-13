@@ -119,6 +119,14 @@ pip install fast-langdetect              # Name classifier (fastText)
 cd website && pnpm install               # Frontend dependencies
 ```
 
+## CRITICAL: Network Traffic Discipline
+The user pays for this machine's bandwidth and crawls have burned multi-GB before. Hard rules:
+- **Any download that is not a small known JSON (few KB) goes through `scripts/safe_fetch.sh <url> <out> [max_mb]`**: HEAD pre-check (rejects oversized targets before pulling a byte), `curl --max-filesize` hard cap, usage ledger `~/.zcode-netlog`, daily budget `NET_BUDGET_MB` (default 300; lowering it is fine, raising it needs the user's say-so). Exit 2 = budget exhausted, 3 = oversized, 4 = failed.
+- **Ranged reads must verify the response is actually `206 Partial Content`**. The IRS apps host silently ignores `Range` and returns 200 with the full ~340MB zip; plain `urllib`/`requests` do not surface this (that mistake cost ~680MB in one session). `scripts/finances/teos3.fetch_range` now raises on non-206 — keep it that way, and use `curl -r start-end` for one-off extractions.
+- **Retries need caps and backoff.** No unbounded `while True: fetch()` loops; curl side uses `--retry 2 --max-time`.
+- **Before a crawl-heavy session, state the expected volume** (sources × sizes) so the user can veto it; for saved workflows, put the budget in the prompt.
+- Playwright on the live site is not free either: the Trends page alone downloads the 59MB sqlite. Prefer local `data/` or the dev server for verification.
+
 ## Website Development
 ```bash
 cd website && pnpm dev                   # Dev server (Vite)

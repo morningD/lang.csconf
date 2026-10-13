@@ -7,7 +7,14 @@ def fetch_range(url, rng, tries=3):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers={**UA, 'Range': f'bytes={rng}'})
-            return urllib.request.urlopen(req, timeout=180).read()
+            resp = urllib.request.urlopen(req, timeout=180)
+            data = resp.read()
+            # Some hosts silently ignore Range and return 200 with the whole
+            # body (IRS apps host did exactly that -> 340MB per call). Never
+            # accept a non-206 answer for a ranged read.
+            if resp.status != 206:
+                raise IOError(f'Range not honored (HTTP {resp.status}) for bytes={rng}')
+            return data
         except Exception:
             if i == tries - 1: raise
             import time; time.sleep(3)
