@@ -56,7 +56,8 @@ jobs:
         run: echo "::error::Pipeline step failed. Check logs for details."
 
       - name: Sync stats to website
-        run: rsync -av --delete data/stats/ website/public/data/stats/
+        # *.sqlite stays a local analysis ledger only — never published or committed
+        run: rsync -av --delete --exclude='*.sqlite' data/stats/ website/public/data/stats/
 
       - name: Check for changes
         id: changes

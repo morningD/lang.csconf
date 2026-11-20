@@ -82,3 +82,7 @@ agent/
 *\ [0-9][0-9].*
 *\ [0-9][0-9][0-9].*
 .zcode-netlog
+
+# Trends full-aggregate SQLite is a local-only analysis ledger (website serves JSON chunks)
+data/stats/affiliation_trends.sqlite
+website/public/data/stats/affiliation_trends.sqlite

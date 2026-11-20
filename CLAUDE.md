@@ -125,7 +125,8 @@ The user pays for this machine's bandwidth and crawls have burned multi-GB befor
 - **Ranged reads must verify the response is actually `206 Partial Content`**. The IRS apps host silently ignores `Range` and returns 200 with the full ~340MB zip; plain `urllib`/`requests` do not surface this (that mistake cost ~680MB in one session). `scripts/finances/teos3.fetch_range` now raises on non-206 — keep it that way, and use `curl -r start-end` for one-off extractions.
 - **Retries need caps and backoff.** No unbounded `while True: fetch()` loops; curl side uses `--retry 2 --max-time`.
 - **Before a crawl-heavy session, state the expected volume** (sources × sizes) so the user can veto it; for saved workflows, put the budget in the prompt.
-- Playwright on the live site is not free either: the Trends page alone downloads the 59MB sqlite. Prefer local `data/` or the dev server for verification.
+- Playwright on the live site is not free either — prefer local `data/` or the dev server for verification. (Correction: the Trends page loads only the JSON chunks; `affiliation_trends.sqlite` is never fetched by the browser.)
+- `affiliation_trends.sqlite` (59MB) is step4's full-aggregate local analysis ledger (all institutions × years × slices) — the website serves the JSON chunks instead, per the docstring "without publishing it to the web". It must stay out of git and out of `website/public/`: `.gitignore` blocks it and the rsync step (local + update-data.yml) excludes `*.sqlite`. It regenerated every Sunday by Update Data, so without the exclusion the repo used to grow by a new 59MB blob per week.
 
 ## Website Development
 ```bash
